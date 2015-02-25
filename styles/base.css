@@ -14,6 +14,30 @@
   font-style: normal;
   font-weight: 400;
 }
+.font-family-base {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+.font-family-monospace {
+  font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+.font-family-sans-serif {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+.font-family-serif {
+  font-family: 'Libre Baskerville', serif;
+}
+.bold {
+  font-style: normal;
+  font-weight: 700;
+}
+.normal {
+  font-style: normal;
+  font-weight: 400;
+}
+.oblique {
+  font-style: oblique;
+  font-weight: normal;
+}
 .full-height {
   height: 100%;
 }

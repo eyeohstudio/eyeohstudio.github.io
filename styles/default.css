@@ -14,6 +14,30 @@
   font-style: normal;
   font-weight: 400;
 }
+.font-family-base {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+.font-family-monospace {
+  font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+.font-family-sans-serif {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+.font-family-serif {
+  font-family: 'Libre Baskerville', serif;
+}
+.bold {
+  font-style: normal;
+  font-weight: 700;
+}
+.normal {
+  font-style: normal;
+  font-weight: 400;
+}
+.oblique {
+  font-style: oblique;
+  font-weight: normal;
+}
 .full-height {
   height: 100%;
 }
@@ -84,8 +108,16 @@ input[type="search"] {
   -o-transition: .3s ease;
   transition: .3s ease;
 }
+/* The Grid System
+ *
+ * .col-md-12
+ * .col-md-6 .col-md-6
+ * .col-md-6 .col-md-6
+ *
+ */
 html {
-  background-color: #ffffff;
+  height: 100%;
+  background-color: #f44073;
   font-size: 62.5%;
   /* Sets up the Base 10 stuff */
 
@@ -93,8 +125,20 @@ html {
 html body {
   display: none;
   background-color: #ffffff;
+  overflow: auto;
+  /* The Grid System
+         *
+         * .col-md-12
+         * .col-md-6 .col-md-6
+         * .col-md-6 .col-md-6
+         *
+         */
+
 }
-html body > header > .header-main #primary-navigation > ul {
+html body .container .row > header > .header-main #primary-navigation {
+  display: none;
+}
+html body .container .row > header > .header-main #primary-navigation > ul {
   margin: 0;
   padding: 0;
   list-style-type: none;
@@ -102,18 +146,18 @@ html body > header > .header-main #primary-navigation > ul {
   text-align: center;
   width: auto;
 }
-html body > header > .header-main #primary-navigation > ul > li {
-  font-size: 16px;
-  font-size: 1.6rem;
+html body .container .row > header > .header-main #primary-navigation > ul > li {
   font-family: 'Libre Baskerville', serif;
   font-style: normal;
   font-weight: 400;
+  font-size: 16px;
+  font-size: 1.6rem;
   display: inline-block;
 }
-html body > header > .header-main #primary-navigation > ul > li > a,
-html body > header > .header-main #primary-navigation > ul > li a:active,
-html body > header > .header-main #primary-navigation > ul > li a:link,
-html body > header > .header-main #primary-navigation > ul > li a:visited {
+html body .container .row > header > .header-main #primary-navigation > ul > li > a,
+html body .container .row > header > .header-main #primary-navigation > ul > li a:active,
+html body .container .row > header > .header-main #primary-navigation > ul > li a:link,
+html body .container .row > header > .header-main #primary-navigation > ul > li a:visited {
   -webkit-backface-visibility: hidden;
   -webkit-transition: .3s ease;
   -moz-transition: .3s ease;
@@ -125,37 +169,40 @@ html body > header > .header-main #primary-navigation > ul > li a:visited {
   padding: 0.4rem 0.8rem;
   text-decoration: none;
 }
-html body > header > .header-main #primary-navigation > ul > li > a:hover {
+html body .container .row > header > .header-main #primary-navigation > ul > li > a:hover {
   color: #292929;
 }
-html body > #main {
+html body .container .row > #main {
   margin: 0 auto;
-  padding: 16% 0;
-  width: 80%;
+  padding: 8% 0;
+  overflow: auto;
+  width: 64%;
 }
-html body > #main #content {
-  font-size: 16px;
-  font-size: 1.6rem;
+html body .container .row > #main #content {
   font-family: 'Libre Baskerville', serif;
   font-style: normal;
   font-weight: 400;
-  text-align: center;
+  font-size: 16px;
+  font-size: 1.6rem;
 }
-html body > footer .site-info {
+html body .container .row > footer {
+  overflow: auto;
+}
+html body .container .row > footer .site-info {
+  font-family: 'Libre Baskerville', serif;
+  font-style: oblique;
+  font-weight: normal;
   font-size: 14px;
   font-size: 1.4rem;
-  font-family: 'Libre Baskerville', serif;
-  font-style: italic;
-  font-weight: 400;
   text-align: center;
 }
-html body > footer .site-info a,
-html body > footer .site-info a:active,
-html body > footer .site-info a:link,
-html body > footer .site-info a:visited {
+html body .container .row > footer .site-info a,
+html body .container .row > footer .site-info a:active,
+html body .container .row > footer .site-info a:link,
+html body .container .row > footer .site-info a:visited {
   color: #a3a3a3;
   text-decoration: none;
 }
-html body > footer .site-info a:hover {
+html body .container .row > footer .site-info a:hover {
   color: #292929;
 }
