@@ -15,7 +15,7 @@
   font-weight: 400;
 }
 .font-family-base {
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Libre Baskerville', serif;
 }
 .font-family-monospace {
   font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
@@ -108,37 +108,80 @@ input[type="search"] {
   -o-transition: .3s ease;
   transition: .3s ease;
 }
+*::selection {
+  background-color: yellow;
+  color: #000000;
+}
 /* The Grid System
  *
  * .col-md-12
- * .col-md-6 .col-md-6
- * .col-md-6 .col-md-6
+ * .col-md-12
+ * .col-md-6 + .col-md-6
+ * .col-md-12
  *
  */
 html {
   height: 100%;
-  background-color: #f44073;
+  background-color: #ffffff;
   font-size: 62.5%;
   /* Sets up the Base 10 stuff */
 
 }
 html body {
+  height: 100%;
+  font-family: 'Libre Baskerville', serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  font-size: 1.6rem;
   display: none;
   background-color: #ffffff;
   overflow: auto;
-  /* The Grid System
-         *
-         * .col-md-12
-         * .col-md-6 .col-md-6
-         * .col-md-6 .col-md-6
-         *
-         */
-
+  padding: 32px 0;
 }
-html body .container .row > header > .header-main #primary-navigation {
+html body a,
+html body a:active,
+html body a:link,
+html body a:visited {
+  color: #292929;
+  text-decoration: underline;
+}
+html body a:hover {
+  color: #7a7a7a;
+}
+html body header {
+  margin: 32px 0;
+}
+html body header .header-main {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+html body header .header-main hgroup {
+  text-transform: uppercase;
+}
+html body header .header-main hgroup h1 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  font-size: 3.2rem;
+}
+html body header .header-main hgroup h2 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  font-size: 2.2rem;
+}
+html body header .header-main hgroup h2 a[href="#colophon"] {
+  font-family: 'Libre Baskerville', serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  font-size: 1.6rem;
+  text-transform: capitalize;
+}
+html body header .header-main #primary-navigation {
   display: none;
 }
-html body .container .row > header > .header-main #primary-navigation > ul {
+html body header .header-main #primary-navigation > ul {
   margin: 0;
   padding: 0;
   list-style-type: none;
@@ -146,18 +189,16 @@ html body .container .row > header > .header-main #primary-navigation > ul {
   text-align: center;
   width: auto;
 }
-html body .container .row > header > .header-main #primary-navigation > ul > li {
+html body header .header-main #primary-navigation > ul > li {
   font-family: 'Libre Baskerville', serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
-  font-size: 1.6rem;
   display: inline-block;
 }
-html body .container .row > header > .header-main #primary-navigation > ul > li > a,
-html body .container .row > header > .header-main #primary-navigation > ul > li a:active,
-html body .container .row > header > .header-main #primary-navigation > ul > li a:link,
-html body .container .row > header > .header-main #primary-navigation > ul > li a:visited {
+html body header .header-main #primary-navigation > ul > li > a,
+html body header .header-main #primary-navigation > ul > li a:active,
+html body header .header-main #primary-navigation > ul > li a:link,
+html body header .header-main #primary-navigation > ul > li a:visited {
   -webkit-backface-visibility: hidden;
   -webkit-transition: .3s ease;
   -moz-transition: .3s ease;
@@ -169,40 +210,37 @@ html body .container .row > header > .header-main #primary-navigation > ul > li 
   padding: 0.4rem 0.8rem;
   text-decoration: none;
 }
-html body .container .row > header > .header-main #primary-navigation > ul > li > a:hover {
+html body header .header-main #primary-navigation > ul > li > a:hover {
   color: #292929;
 }
-html body .container .row > #main {
-  margin: 0 auto;
-  padding: 8% 0;
-  overflow: auto;
-  width: 64%;
+html body #colophon {
+  margin-bottom: 32px;
 }
-html body .container .row > #main #content {
-  font-family: 'Libre Baskerville', serif;
+html body #main {
+  overflow: auto;
+  margin-bottom: 32px;
+}
+html body #main #content h2 {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  font-size: 1.8rem;
+  margin: 32px 0;
+  text-transform: uppercase;
+}
+html body footer {
+  margin: 32px 0;
+  overflow: auto;
+}
+html body footer address strong {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   font-size: 1.6rem;
+  text-transform: uppercase;
 }
-html body .container .row > footer {
-  overflow: auto;
-}
-html body .container .row > footer .site-info {
-  font-family: 'Libre Baskerville', serif;
-  font-style: oblique;
-  font-weight: normal;
-  font-size: 14px;
-  font-size: 1.4rem;
-  text-align: center;
-}
-html body .container .row > footer .site-info a,
-html body .container .row > footer .site-info a:active,
-html body .container .row > footer .site-info a:link,
-html body .container .row > footer .site-info a:visited {
-  color: #a3a3a3;
-  text-decoration: none;
-}
-html body .container .row > footer .site-info a:hover {
-  color: #292929;
+html body footer .site-info {
+  display: none;
 }
