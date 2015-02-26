@@ -108,9 +108,36 @@ input[type="search"] {
   -o-transition: .3s ease;
   transition: .3s ease;
 }
-*::selection {
-  background-color: yellow;
+::selection {
+  background-color: #fffab2;
   color: #000000;
+}
+::-moz-selection {
+  background-color: #fffab2;
+  color: #000000;
+}
+mark {
+  background-color: #fffab2;
+}
+@media (min-width: 480px) {
+  body {
+    padding: 0;
+  }
+}
+@media (min-width: 768px) {
+  body {
+    padding: 64px 0;
+  }
+}
+@media (min-width: 992px) {
+  body {
+    padding: 64px 0;
+  }
+}
+@media (min-width: 1200px) {
+  body {
+    padding: 64px 0;
+  }
 }
 /* The Grid System
  *
@@ -136,8 +163,8 @@ html body {
   font-size: 1.6rem;
   display: none;
   background-color: #ffffff;
+  color: #000000;
   overflow: auto;
-  padding: 32px 0;
 }
 html body a,
 html body a:active,
@@ -170,7 +197,7 @@ html body header .header-main hgroup h2 {
   font-size: 22px;
   font-size: 2.2rem;
 }
-html body header .header-main hgroup h2 a[href="#colophon"] {
+html body header .header-main hgroup h2 a[href="#read-more"] {
   font-family: 'Libre Baskerville', serif;
   font-style: normal;
   font-weight: 400;
@@ -213,8 +240,17 @@ html body header .header-main #primary-navigation > ul > li a:visited {
 html body header .header-main #primary-navigation > ul > li > a:hover {
   color: #292929;
 }
-html body #colophon {
+html body #read-more {
   margin-bottom: 32px;
+}
+html body #read-more h2 {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  font-size: 1.8rem;
+  margin: 32px 0;
+  text-transform: uppercase;
 }
 html body #main {
   overflow: auto;
