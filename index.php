@@ -22,8 +22,8 @@
 
 include 'includes/random.php';
 
-$graphic = 'Fine Arts,<br>Brand Identity,<br>Editorial Design,<br>UX/UI Design, and<br>all sorts of<br>Visual Communication.';
-$digital = 'Creative Coding,<br>Web Design & Development<br>and, CMS Implementation<br>powered by<br>Progressive enhancement<br>and Open Standards.';
+$graphic = 'Brand Identity,<br>Data Aesthetics,<br>Editorial Design,<br>UX/UI Design, and<br>all sorts of<br>Visual Communication.';
+$digital = 'Creative Coding,<br>Web Design & Development,<br>and CMS Implementation<br>powered by<br>Progressive enhancement<br>and Open Standards.';
 
 ?>
 <!DOCTYPE html>
@@ -50,38 +50,28 @@ $digital = 'Creative Coding,<br>Web Design & Development<br>and, CMS Implementat
                         <div class="header-main">
                             <hgroup>
                                 <h1>i/o studio</h1>
-                                <h2 class="lead">We are <?php echo $selectedWho; ?> working together to <?php echo $selectedHow; ?> <abbr class="initialism" data-toggle="tooltip" data-html="true" title="<?php echo $graphic; ?>">graphic</abbr> and <abbr class="initialism" data-toggle="tooltip" data-html="true" title="<?php echo $digital; ?>">digital</abbr> solutions through <?php echo $selectedWhat; ?> and <?php echo $selectedWhatelse; ?> <mark>design</mark>, based in <del><?php echo $selectedCity; ?></del> Barcelona. <a data-toggle="collapse" href="#read-more" aria-expanded="false" aria-controls="read-more">Read More →</a></h2>
+                                <h2 class="lead">We are <?php echo $selectedWho; ?> working together to <?php echo $selectedHow; ?> <abbr class="initialism" data-toggle="tooltip" data-html="true" title="<?php echo $graphic; ?>">graphic</abbr> and <abbr class="initialism" data-toggle="tooltip" data-html="true" title="<?php echo $digital; ?>">digital</abbr> solutions through <?php echo $selectedWhat; ?> and <?php echo $selectedWhatelse; ?> <mark>design</mark>. We are based in <del><?php echo $selectedCity; ?></del> Barcelona. <a data-toggle="collapse" href="#read-more" aria-expanded="false" aria-controls="read-more">Read More →</a></h2>
                             </hgroup>
                         </div>
                     </header><!-- #masthead -->
                 </div><!-- .col-md-12 -->
             </div><!-- .row -->
-            <div class="row collapse" id="read-more">
-                <div class="col-md-12">
-                    <div>
-                        <h2>What's i/o studio?</h2>
-                        <p>Fruitcake powder tiramisu I love. Pastry halvah cookie oat cake dragée muffin pastry candy canes. I love I love ice cream icing fruitcake I love soufflé candy.</p>
+            <div class="collapse" id="read-more">
+                <div class="row">
+                    <div class="col-md-4">
                         <h2>Who are we?</h2>
-                        <p>Candy ice cream fruitcake lemon drops I love muffin toffee tart. Caramels apple pie marshmallow caramels. Pie cookie jelly topping tootsie roll danish. Cupcake wafer I love chocolate bar jelly beans gummies chocolate cake.</p>
-                        <h2>How it's built with.</h2>
-                        <p>Tiramisu sweet jelly sesame snaps halvah. Cheesecake donut candy canes gingerbread croissant bear claw I love bear claw. Bear claw cookie carrot cake biscuit pastry cake croissant.</p>
-                        <h2>Open Standards and Accessibility Declaration</h2>
-                        <p>Cupcake ipsum dolor. Sit amet topping. Sweet roll cookie powder topping chocolate bar oat cake bonbon chocolate soufflé. Pudding brownie apple pie jelly-o pudding carrot cake.</p>
-                        <h2>Grahics</h2>
-                        <p>Icing croissant I love topping sweet roll gummi bears sweet sugar plum donut. Jelly beans soufflé chupa chups tootsie roll cupcake cake jelly beans. Carrot cake apple pie macaroon sesame snaps apple pie cheesecake cake icing I love.</p>
-                        <h2>Pictures</h2>
-                        <p>I love I love candy canes liquorice bear claw I love biscuit ice cream. Wafer liquorice soufflé dragée I love sweet roll dragée sweet roll. Marzipan cookie cheesecake I love.</p>
+                        <p>We are designers and developers focused on research, technology and the pursuit of new aesthetics and techniques. We love exploring and playing with new technologies, sometimes resulting in offbeat pieces of work. We have fun pushing boundaries but <a href="">our experiments</a> always serve our client's purpose.</p>
+                    </div><!-- .col-md-4 -->
+                    <div class="col-md-4">
+                        <h2>Our ethical statement</h2>
+                        <p>...</p>
+                    </div><!-- .col-md-4 -->
+                    <div class="col-md-4">
                         <h2>License</h2>
-                        <p>Bonbon I love oat cake caramels jelly-o. I love carrot cake macaroon halvah sesame snaps gummies powder jelly-o. Fruitcake muffin I love candy canes. Macaroon bear claw chupa chups tiramisu muffin cake croissant gummi bears I love.</p>
-                        <h2>One last thing</h2>
-                        <p><img class="img-responsive" src="https://d13yacurqjgara.cloudfront.net/users/187497/screenshots/1933823/dinos-walking01.gif"></p>
-                        <blockquote>
-                            <p>Embrace change or become a Design-O-Saur.</p>
-                            <footer>Von Glitschka</footer>
-                        </blockquote>
-                    </div><!-- #colophon -->
-                </div><!-- .col-md-12 -->
-            </div><!-- .row -->
+                        <p>Our self-initiated works are licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License <abbr class="initialism" data-toggle="tooltip" title="Attribution-NonCommercial-ShareAlike 4.0 International">(CC BY-NC-SA 4.0)</abbr>. Please, read <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/legalcode">the full license</a> or at least <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">this human-readable summary</a>.</p>
+                    </div><!-- .col-md-4 -->
+                </div><!-- .row -->
+            </div><!-- #read-more -->
             <hr>
             <div class="row">
                     <div id="main" class="site-main">
@@ -90,11 +80,11 @@ $digital = 'Creative Coding,<br>Web Design & Development<br>and, CMS Implementat
                                 <div id="content" class="site-content" role="main">
                                     <div class="col-md-6">
                                         <h2 id="work">Work</h2>
-                                        <p>We plan, design and build websites and interfaces, across all digital platforms, for projects ranging from interaction design and creative coding to information architecture or data aesthetics.</p>
+                                        <p>We plan, design and build websites and interfaces across all digital platforms. Our work is built around the principles of <a href="http://lawsofsimplicity.com/" >simplicity</a> and <a href="http://project.cyberpunk.ru/idb/hacker_ethics.html">clever problem-solving</a>. We also collaborate with teams of complementary skills, including photographers, illustrators, copywriters, filmmakers and motion designers. <mark>We share a passion for excellence in everything we do</mark>.</p>
                                     </div><!-- .col-md-6 -->
                                     <div class="col-md-6">
                                         <h2>Contact</h2>
-                                        <p>Cookie jelly beans chupa chups oat cake bear claw chocolate bar marshmallow. Toffee soufflé sweet. Chocolate bar gummi bears cookie bonbon toffee icing topping. Biscuit ice cream I love tart I love pudding dessert apple pie. Marshmallow cake gummi bears. Caramels gummies cake I love bear claw cookie toffee cheesecake sugar plum.</p>
+                                        <p>We are currently taking on new projects. We enjoy working with businesses and individuals who think about, plan for, or consider the future, rather than just the present. If that is you, <a data-toggle="tooltip" href="mailto:hello@wearestudio.io" title="Drop us a line!">we’d love to hear from you</a>. For more information and detailed case studies of our work, please get in touch. We speak <a href="">english</a>, <a href="">catalan</a> and <a href="">spanish</a>.</p>
                                     </div><!-- .col-md-6 -->
                                 </div><!-- #content -->
                             </div><!-- #primary -->
@@ -109,7 +99,7 @@ $digital = 'Creative Coding,<br>Web Design & Development<br>and, CMS Implementat
                             <strong>i/o studio</strong>
                             <p>7th Floor, <a href="https://goo.gl/maps/x5j9b" target="_blank" data-toggle="tooltip" title="View map">313 Trav. de les Corts, Barcelona 08029</a>.<br>
                                 (+34) 934 103 368 / (+34) 618 261 598<br></p>
-                             <p><a href="#" target="_blank">Bēhance</a>, <a href="http://eyeohstudio.tumblr.com/" target="_blank">Tumblr</a>.</p>
+                             <p><a href="#" target="_blank">Bēhance</a>, <a href="https://github.com/eyeohstudio" target="_blank">GitHub</a>, <a href="http://eyeohstudio.tumblr.com/" target="_blank">Tumblr</a>.</p>
                         </address><!-- address -->
                         <div class="site-info">
                             <p>i/o studio (cc) <a href="http://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">Some Rights Reserved</a>.</p>
