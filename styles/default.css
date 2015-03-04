@@ -123,20 +123,38 @@ mark {
   body {
     padding: 0;
   }
+  #read-more > div > div {
+    padding-bottom: 0;
+  }
+  #read-more > div > div:last-of-type {
+    padding-bottom: 32px;
+  }
 }
 @media (min-width: 768px) {
   body {
     padding: 64px 0;
+  }
+  #read-more > div > div {
+    padding-bottom: 0;
+  }
+  #read-more > div > div:last-of-type {
+    padding-bottom: 32px;
   }
 }
 @media (min-width: 992px) {
   body {
     padding: 64px 0;
   }
+  #read-more > div > div {
+    padding-bottom: 32px;
+  }
 }
 @media (min-width: 1200px) {
   body {
     padding: 64px 0;
+  }
+  #read-more > div > div {
+    padding-bottom: 32px;
   }
 }
 /* The Grid System
@@ -239,9 +257,6 @@ html body header .header-main #primary-navigation > ul > li a:visited {
 }
 html body header .header-main #primary-navigation > ul > li > a:hover {
   color: #292929;
-}
-html body #read-more {
-  margin-bottom: 32px;
 }
 html body #read-more h2 {
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
