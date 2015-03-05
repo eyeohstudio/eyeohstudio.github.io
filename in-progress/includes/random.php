@@ -1,4 +1,6 @@
 <?php
+
+    header("Content-type: text/javascript");
     
     $who = array(
         'interesting people',
@@ -52,5 +54,11 @@
     $c = rand(0, count($what)-1); $selectedWhat = "$what[$c]";
     $d = rand(0, count($whatelse)-1); $selectedWhatelse = "$whatelse[$d]";
     $z = rand(0, count($city)-1); $selectedCity = "$city[$z]";
+
+    echo json_encode($selectedWho);
+    echo json_encode($selectedHow);
+    echo json_encode($selectedWhat);
+    echo json_encode($selectedWhatelse);
+    echo json_encode($selectedCity);
     
 ?>
