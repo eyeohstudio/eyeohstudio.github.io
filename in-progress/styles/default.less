@@ -5,6 +5,32 @@
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
 
+.fadeIn {
+    -webkit-animation-name: fadeIn;
+            animation-name: fadeIn;
+
+	-webkit-animation-duration: .32s;
+            animation-duration: .32s;
+
+	-webkit-animation-timing-function: ease;
+            animation-timing-function: ease;
+}
+
+@keyframes fadeIn {
+	0% { opacity: 0.0; }
+	100% { opacity: 1; }
+}
+
+@-webkit-keyframes fadeIn {
+	0% { opacity: 0.0; }
+	100% { opacity: 1; }
+}
+
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+
 ::selection {
     background-color: @bleach;
     color: @black;
@@ -21,6 +47,13 @@ a[target="_blank"]:after {
 
 mark {
     background-color: @bleach;
+}
+
+.container.collapsing {
+    .fadeIn;
+    -webkit-transition: none;
+            transition: none
+    
 }
 
 .tooltip {
@@ -154,7 +187,6 @@ html {
         .full-height;
         .font-family-base; .normal;
         .font-size(1.6);
-		.hidden;
 		background-color: @white;
         color: @black;
         overflow: auto;
@@ -190,38 +222,12 @@ html {
                         .normal;
                         .font-size(2.2);
                         
-                        a[href="#read-more"] {
+                        a[href="#llegir-mes"],
+                        a[href="#read-more"],
+                        a[href="#leer-mas"] {
                             .font-family-serif; .normal;
                             .font-size(1.6);
                             text-transform: capitalize;
-                        }
-                    }
-                }
-
-                #primary-navigation { .hidden;
-
-                    > ul {
-                        .zero;
-                        list-style-type: none;
-                        overflow: auto;
-                        text-align: center;
-                        width: auto;
-
-                        > li {
-                            .font-family-serif; .normal;
-                            display: inline-block;
-
-                            > a, a:active, a:link, a:visited {
-                                .transition;
-                                color: lighten(@black, 64%);
-                                display: block;
-                                padding: 0.4rem 0.8rem;
-                                text-decoration: none;
-                            }
-
-                            > a:hover {
-                                color: lighten(@black, 16%);
-                            }
                         }
                     }
                 }
@@ -236,7 +242,9 @@ html {
         ////////////////////////////////////////////////////////////////
         // BEGIN OF: #read-more
 
-        #read-more {
+        #llegir-mes,
+        #read-more,
+        #leer-mas {
             
             h2 {
                 .font-family-sans-serif; .bold;
