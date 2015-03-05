@@ -108,6 +108,30 @@ input[type="search"] {
   -o-transition: .3s ease;
   transition: .3s ease;
 }
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+  -webkit-animation-duration: .32s;
+  animation-duration: .32s;
+  -webkit-animation-timing-function: ease;
+  animation-timing-function: ease;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0.0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0.0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 ::selection {
   background-color: #fffab2;
   color: #000000;
@@ -118,6 +142,16 @@ input[type="search"] {
 }
 mark {
   background-color: #fffab2;
+}
+.container.collapsing {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+  -webkit-animation-duration: .32s;
+  animation-duration: .32s;
+  -webkit-animation-timing-function: ease;
+  animation-timing-function: ease;
+  -webkit-transition: none;
+  transition: none;
 }
 @media (min-width: 480px) {
   body {
@@ -179,7 +213,6 @@ html body {
   font-weight: 400;
   font-size: 16px;
   font-size: 1.6rem;
-  display: none;
   background-color: #ffffff;
   color: #000000;
   overflow: auto;
@@ -215,7 +248,9 @@ html body header .header-main hgroup h2 {
   font-size: 22px;
   font-size: 2.2rem;
 }
-html body header .header-main hgroup h2 a[href="#read-more"] {
+html body header .header-main hgroup h2 a[href="#llegir-mes"],
+html body header .header-main hgroup h2 a[href="#read-more"],
+html body header .header-main hgroup h2 a[href="#leer-mas"] {
   font-family: 'Libre Baskerville', serif;
   font-style: normal;
   font-weight: 400;
@@ -223,42 +258,9 @@ html body header .header-main hgroup h2 a[href="#read-more"] {
   font-size: 1.6rem;
   text-transform: capitalize;
 }
-html body header .header-main #primary-navigation {
-  display: none;
-}
-html body header .header-main #primary-navigation > ul {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-  overflow: auto;
-  text-align: center;
-  width: auto;
-}
-html body header .header-main #primary-navigation > ul > li {
-  font-family: 'Libre Baskerville', serif;
-  font-style: normal;
-  font-weight: 400;
-  display: inline-block;
-}
-html body header .header-main #primary-navigation > ul > li > a,
-html body header .header-main #primary-navigation > ul > li a:active,
-html body header .header-main #primary-navigation > ul > li a:link,
-html body header .header-main #primary-navigation > ul > li a:visited {
-  -webkit-backface-visibility: hidden;
-  -webkit-transition: .3s ease;
-  -moz-transition: .3s ease;
-  -ms-transition: .3s ease;
-  -o-transition: .3s ease;
-  transition: .3s ease;
-  color: #a3a3a3;
-  display: block;
-  padding: 0.4rem 0.8rem;
-  text-decoration: none;
-}
-html body header .header-main #primary-navigation > ul > li > a:hover {
-  color: #292929;
-}
-html body #read-more h2 {
+html body #llegir-mes h2,
+html body #read-more h2,
+html body #leer-mas h2 {
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-style: normal;
   font-weight: 700;
