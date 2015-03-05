@@ -144,12 +144,6 @@ mark {
   background-color: #fffab2;
 }
 .container.collapsing {
-  -webkit-animation-name: fadeIn;
-  animation-name: fadeIn;
-  -webkit-animation-duration: .32s;
-  animation-duration: .32s;
-  -webkit-animation-timing-function: ease;
-  animation-timing-function: ease;
   -webkit-transition: none;
   transition: none;
 }
