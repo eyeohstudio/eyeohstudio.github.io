@@ -147,6 +147,9 @@ mark {
   -webkit-transition: none;
   transition: none;
 }
+.tooltip .tooltip-inner {
+  text-transform: none;
+}
 @media (min-width: 480px) {
   body {
     padding: 0;
