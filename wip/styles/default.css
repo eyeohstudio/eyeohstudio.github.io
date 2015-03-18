@@ -245,6 +245,10 @@ html body header .header-main hgroup h2 {
   font-size: 22px;
   font-size: 2.2rem;
 }
+html body header .header-main hgroup h2 a.giraffe-toggle {
+  border-bottom: 1px dotted #777;
+  text-decoration: none;
+}
 html body header .header-main hgroup h2 a[href="#llegir-mes"],
 html body header .header-main hgroup h2 a[href="#read-more"],
 html body header .header-main hgroup h2 a[href="#leer-mas"] {
@@ -253,7 +257,9 @@ html body header .header-main hgroup h2 a[href="#leer-mas"] {
   font-weight: 400;
   font-size: 16px;
   font-size: 1.6rem;
-  text-transform: capitalize;
+  border-bottom: 1px dotted #777;
+  text-decoration: none;
+  text-transform: none;
 }
 html body #llegir-mes h2,
 html body #read-more h2,
