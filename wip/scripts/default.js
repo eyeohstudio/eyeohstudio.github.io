@@ -35,7 +35,7 @@ jQuery(document).ready(function($) {
     
     // randomWho
     var who = new Array(
-        'a multi-displinary team',
+        'a multi-disciplinary team',
         'interesting people'
     ),
     randomWho = who[Math.floor( Math.random() * who.length )];
