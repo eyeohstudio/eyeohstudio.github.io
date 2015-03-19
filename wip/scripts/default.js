@@ -33,46 +33,46 @@ jQuery(document).ready(function($) {
         }
     });
     
-    // randomWho
-    var who = new Array(
+    // randomWhoEn
+    var whoEn = new Array(
         'a multi-disciplinary team',
         'interesting people'
     ),
-    randomWho = who[Math.floor( Math.random() * who.length )];
-    $('.randomWho').text( randomWho );
+    randomWhoEn = whoEn[Math.floor( Math.random() * whoEn.length )];
+    $('.randomWhoEn').text( randomWhoEn );
     
-    // randomHow
-    var how = new Array(
+    // randomHowEn
+    var HowEn = new Array(
         'craft',
         'develop',
         'make',
         'produce'
     ),
-    randomHow = how[Math.floor( Math.random() * how.length )];
-    $('.randomHow').text( randomHow );
+    randomHowEn = HowEn[Math.floor( Math.random() * HowEn.length )];
+    $('.randomHowEn').text( randomHowEn );
     
-    // randomWhat
-    var what = new Array(
+    // randomWhatEn
+    var WhatEn = new Array(
         'effective',
         'powerful',
         'remarkable',
         'striking'
     ),
-    randomWhat = what[Math.floor( Math.random() * what.length )];
-    $('.randomWhat').text( randomWhat );
+    randomWhatEn = WhatEn[Math.floor( Math.random() * WhatEn.length )];
+    $('.randomWhatEn').text( randomWhatEn );
     
-    // randomWhatelse
-    var whatelse = new Array(
+    // randomWhatelseEn
+    var whatelseEn = new Array(
         'creative',
         'imaginative',
         'innovative',
         'unconventional'
     ),
-    randomWhatelse = whatelse[Math.floor( Math.random() * whatelse.length )];
-    $('.randomWhatelse').text( randomWhatelse );
+    randomWhatelseEn = whatelseEn[Math.floor( Math.random() * whatelseEn.length )];
+    $('.randomWhatelseEn').text( randomWhatelseEn );
     
-    // randomCity
-    var city = new Array(
+    // randomCityEn
+    var cityEn = new Array(
         'Arkham',
         'Bikini Bottom',
         'Coruscant',
@@ -87,8 +87,8 @@ jQuery(document).ready(function($) {
         'San Fransokyo',
         'Twin Peaks'
     ),
-    randomCity = city[Math.floor( Math.random() * city.length )];
-    $('.randomCity').text( randomCity );
+    randomCityEn = cityEn[Math.floor( Math.random() * cityEn.length )];
+    $('.randomCityEn').text( randomCityEn );
     
     //
     $(document).on('click', '.giraffe-toggle', function(event) {
