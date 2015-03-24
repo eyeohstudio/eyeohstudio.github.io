@@ -96,9 +96,9 @@ jQuery(document).ready(function($) {
     
     // randomHowCa
     var HowCa = new Array(
+        'crear',
         'fabricar',
         'desenvolupar',
-        'fer',
         'produïr'
     ),
     randomHowCa = HowCa[Math.floor( Math.random() * HowCa.length )];
@@ -107,8 +107,8 @@ jQuery(document).ready(function($) {
     // randomHowEn
     var HowEn = new Array(
         'craft',
+        'create',
         'develop',
-        'make',
         'produce'
     ),
     randomHowEn = HowEn[Math.floor( Math.random() * HowEn.length )];
@@ -116,9 +116,9 @@ jQuery(document).ready(function($) {
     
     // randomHowEs
     var HowEs = new Array(
+        'crear',
         'elaborar',
         'desarrollar',
-        'hacer',
         'producir'
     ),
     randomHowEs = HowEs[Math.floor( Math.random() * HowEs.length )];
@@ -129,10 +129,7 @@ jQuery(document).ready(function($) {
     
     // randomWhatCa
     var WhatCa = new Array(
-        'efectiu',
-        'enèrgic',
-        'notable',
-        'llampant'
+        'efectiu'
     ),
     randomWhatCa = WhatCa[Math.floor( Math.random() * WhatCa.length )];
     $('.randomWhatCa').text( randomWhatCa );
@@ -149,10 +146,7 @@ jQuery(document).ready(function($) {
     
     // randomWhatEs
     var WhatEs = new Array(
-        'efectivo',
-        'firme',
-        'notable',
-        'llamativo'
+        'efectivo'
     ),
     randomWhatEs = WhatEs[Math.floor( Math.random() * WhatEs.length )];
     $('.randomWhatEs').text( randomWhatEs );
