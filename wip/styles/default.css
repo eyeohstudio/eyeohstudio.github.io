@@ -272,6 +272,11 @@ html body #leer-mas h2 {
   margin: 32px 0;
   text-transform: uppercase;
 }
+html body #llegir-mes p .initialism a,
+html body #read-more p .initialism a,
+html body #leer-mas p .initialism a {
+  text-decoration: none;
+}
 html body #main {
   overflow: auto;
   margin-bottom: 32px;
@@ -284,6 +289,9 @@ html body #main #content h2 {
   font-size: 1.8rem;
   margin: 32px 0;
   text-transform: uppercase;
+}
+html body #main #content p .initialism a {
+  text-decoration: none;
 }
 html body footer {
   margin: 32px 0;

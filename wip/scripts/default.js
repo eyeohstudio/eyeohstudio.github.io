@@ -45,9 +45,10 @@ jQuery(document).ready(function($) {
     ////////////////////////////////////////////////////////////////
     ////////////////////////////////////////////////////////////////
     
-    var graphicCa = 'Publi i Comunicació,<br>Identitat Corporativa,<br>Disseny Editorial,<br>Disseny d\'Entorns i Exposicions, i<br>UX/UI.';
+    /*
+    var graphicCa = 'Publi i Comunicació,<br>Identitat Corporativa,<br>Disseny Editorial,<br>Espais i Exposicions, i<br>UX/UI.';
     var graphicEn = 'Ad & Communication,<br>Brand Identity,<br>Editorial Design,<br>Environmental & Exhibitions, and<br>UX/UI Design.';
-    var graphicEs = 'Publi y Comunicación,<br>Identidad Corporativa,<br>Diseño Editorial,<br>Diseño Ambiental y Exposiciones, y<br>UX/UI.';
+    var graphicEs = 'Publi y Comunicación,<br>Identidad Corporativa,<br>Diseño Editorial,<br>Espacios y Exposiciones, y<br>UX/UI.';
     
     var digitalCa = 'Programació Creativa,<br>Disseny i Desenvolupament Web,<br>i implementació de CMS<br>a partir d\'Estàndards Oberts.';
     var digitalEn = 'Creative Coding,<br>Web Design & Development,<br>and CMS Implementation<br>powered by Open Standards.';
@@ -59,6 +60,7 @@ jQuery(document).ready(function($) {
     $( '.digitalCa' ).attr( 'title', digitalCa );
     $( '.digitalEn' ).attr( 'title', digitalEn );
     $( '.digitalEs' ).attr( 'title', digitalEs );
+    */
     
     ////////////////////////////////////////////////////////////////
     ////////////////////////////////////////////////////////////////
