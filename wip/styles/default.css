@@ -290,8 +290,12 @@ html body #main #content h2 {
   margin: 32px 0;
   text-transform: uppercase;
 }
+html body #main #content p .initialism {
+  border-bottom: 1px dotted #777;
+}
 html body #main #content p .initialism a {
   text-decoration: none;
+  text-transform: none;
 }
 html body footer {
   margin: 32px 0;
@@ -305,6 +309,10 @@ html body footer address strong {
   font-size: 1.6rem;
   text-transform: uppercase;
 }
-html body footer .site-info {
-  display: none;
+html body footer .initialism {
+  border-bottom: 1px dotted #777;
+}
+html body footer .initialism a {
+  text-decoration: none;
+  text-transform: none;
 }
