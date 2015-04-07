@@ -1,17 +1,5 @@
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+{% include header.html %}
 
-  {% include head.html %}
+  {{ content }}
 
-  <body class="hidden">
-
-    {% include sidebar.html %}
-
-    <div class="content container">
-      {{ content }}
-    </div>
-
-    {% include footer.html %}
-
-  </body>
-</html>
+{% include footer.html %}
