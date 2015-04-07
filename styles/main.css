@@ -146,3 +146,15 @@
  * A helper mixin for applying high-resolution background images.
  * http://www.retinajs.com
  */
+::selection {
+  background-color: #000000;
+  color: #ffffff;
+}
+::-moz-selection {
+  background-color: #000000;
+  color: #ffffff;
+}
+.container.collapsing {
+  -webkit-transition: none;
+  transition: none;
+}
