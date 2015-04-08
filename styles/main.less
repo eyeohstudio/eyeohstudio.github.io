@@ -26,6 +26,32 @@ section.collapsing {
           transition: none
 }
 
+.lead {
+  .font-size(2.7);
+  .line-height(3.6);
+  margin: 47px 0;
+  margin-bottom: 47px - 3; /* border-bottom thickness is deducted */
+  text-transform: uppercase;
+
+  a:after {
+    border-bottom: 3px solid @black;
+    right: 0; bottom: -1px; left: 0; /* bottom: -1px equals to 5px underline displacement */
+  }
+  
+  del,
+  s,
+  strike {
+    white-space: nowrap;
+  }
+
+  del:after,
+  s:after,
+  strike:after {
+    border-bottom: 4px solid @black;
+    right: 0; bottom: 14px; left: 0; /* bottom: 14px equals to expected strikethrough displacement */
+  }
+}
+
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
@@ -35,23 +61,60 @@ html {
   
   body {
     .font-family-normal;
-    font-size: 19px;
+    .font-size(1.9);
+    .line-height(2.5);
+    
+    a,
+    a:active,
+    a:link,
+    a:visited {
+      color: @black;
+      position: relative;
+      text-decoration: none;
+    }
+    
+    a:focus,
+    a:hover {
+    }
+
+    a:after {
+      content: "";
+      position: absolute;
+    }
 
     header {
+      margin: 51px 0 45px 0;
 
       h1 {
+        .font-size(0);
+        .line-height(0);
+        .zero;
+        display: block;
+        height: auto;
+        width: 153px;
+        
+        svg {
+          
+          path {
+            fill: @black;
+          }
+        }
       }
+    }
+    
+    hr {
+      .font-size(0);
+      .line-height(0);
+      .zero;
+      background: @black;
+      border: 0;
+      color: @black;
+      height: 1px;
     }
     
     main {
       
       section {
-        
-        a,
-        a:active,
-        a:link,
-        a:visited {
-        }
         
         aside {
           
@@ -59,17 +122,32 @@ html {
             .font-family-bold;
           }
         }
-        
-        a:focus,
-        a:hover {
-        }
-        
+
         h2 {
+          .font-family-bold;
+          .font-size(1.9);
+          margin: 51px 0 33px 0;
+          text-transform: uppercase;
         }
         
         p {
         }
       }
+    }
+
+    del,
+    strike,
+    s {
+      color: @black;
+      position: relative;
+      text-decoration: none;
+    }
+
+    del:after,
+    s:after,
+    strike:after {
+      content: "";
+      position: absolute;
     }
   }
 }

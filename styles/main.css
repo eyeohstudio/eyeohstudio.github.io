@@ -101,25 +101,125 @@
  * http://www.retinajs.com
  */
 ::selection {
-  background-color: #000000;
+  background-color: #212322;
   color: #ffffff;
 }
 ::-moz-selection {
-  background-color: #000000;
+  background-color: #212322;
   color: #ffffff;
 }
 section.collapsing {
   -webkit-transition: none;
   transition: none;
 }
+.lead {
+  font-size: 27px;
+  font-size: 2.7rem;
+  line-height: 36px;
+  line-height: 3.6rem;
+  margin: 47px 0;
+  margin-bottom: 44px;
+  /* border-bottom thickness is deducted */
+
+  text-transform: uppercase;
+}
+.lead a:after {
+  border-bottom: 3px solid #212322;
+  right: 0;
+  bottom: -1px;
+  left: 0;
+  /* bottom: -1px equals to 5px underline displacement */
+
+}
+.lead del,
+.lead s,
+.lead strike {
+  white-space: nowrap;
+}
+.lead del:after,
+.lead s:after,
+.lead strike:after {
+  border-bottom: 4px solid #212322;
+  right: 0;
+  bottom: 14px;
+  left: 0;
+  /* bottom: 14px equals to expected strikethrough displacement */
+
+}
 html body {
   font-family: 'BrixSlab';
   font-weight: normal;
   font-style: normal;
   font-size: 19px;
+  font-size: 1.9rem;
+  line-height: 25px;
+  line-height: 2.5rem;
+}
+html body a,
+html body a:active,
+html body a:link,
+html body a:visited {
+  color: #212322;
+  position: relative;
+  text-decoration: none;
+}
+html body a:after {
+  content: "";
+  position: absolute;
+}
+html body header {
+  margin: 51px 0 45px 0;
+}
+html body header h1 {
+  font-size: 0px;
+  font-size: 0rem;
+  line-height: 0px;
+  line-height: 0rem;
+  margin: 0;
+  padding: 0;
+  display: block;
+  height: auto;
+  width: 153px;
+}
+html body header h1 svg path {
+  fill: #212322;
+}
+html body hr {
+  font-size: 0px;
+  font-size: 0rem;
+  line-height: 0px;
+  line-height: 0rem;
+  margin: 0;
+  padding: 0;
+  background: #212322;
+  border: 0;
+  color: #212322;
+  height: 1px;
 }
 html body main section aside strong {
   font-family: 'BrixSans';
   font-weight: bold;
   font-style: normal;
+}
+html body main section h2 {
+  font-family: 'BrixSans';
+  font-weight: bold;
+  font-style: normal;
+  font-size: 19px;
+  font-size: 1.9rem;
+  margin: 51px 0 33px 0;
+  text-transform: uppercase;
+}
+html body del,
+html body strike,
+html body s {
+  color: #212322;
+  position: relative;
+  text-decoration: none;
+}
+html body del:after,
+html body s:after,
+html body strike:after {
+  content: "";
+  position: absolute;
 }
