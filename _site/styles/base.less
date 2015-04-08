@@ -1,11 +1,11 @@
-@import url('fonts.less');
+@import url('fonts.css');
 
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
 
-@black: #000000;
+@black: #212322;
 @white: #ffffff;
 
 ////////////////////////////////////////////////////////////////
@@ -13,12 +13,8 @@
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
 
-.BrixSansBold { font-family: BrixSansBold; }
-.BrixSlab-ExtraLight { font-family: BrixSlab-ExtraLight; }
-
-.bold { .BrixSansBold; font-style: normal; font-weight: normal; }
-.normal { .BrixSlab-ExtraLight; font-style: normal; font-weight: normal; }
-//.oblique { .BrixSlab-ExtraLight font-style: oblique; font-weight: normal; }
+.font-family-bold { font-family: 'BrixSans'; font-weight: bold; font-style: normal; }
+.font-family-normal { font-family: 'BrixSlab'; font-weight: normal; font-style: normal; }
 
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
@@ -30,10 +26,18 @@
   font-size: ~"@{remValue}rem";
 }
 
+.line-height(@heightValue) {
+  @remValue: @heightValue;
+  @pxValue: (@heightValue * 10);
+  line-height: ~"@{pxValue}px";
+  line-height: ~"@{remValue}rem";
+}
+
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
 
 * {
+  -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   -webkit-text-stroke: 1px transparent;
   text-shadow: 0 1px 0 rgba(0,0,0,0.01);
