@@ -1,0 +1,176 @@
+@import url('base.less');
+
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+
+::selection {
+  background-color: @black;
+  color: @white;
+}
+
+::-moz-selection {
+  background-color: @black;
+  color: @white;
+}
+
+section.collapsing {
+  //.fadeIn;
+  -webkit-transition: none;
+          transition: none
+}
+
+.lead {
+  .font-size(2.7);
+  .line-height(3.6);
+  margin: 0;
+  margin-bottom: -2px; /* border-bottom thickness is deducted */
+  text-transform: uppercase;
+
+  a,
+  a:active,
+  a:link,
+  a:visited {
+    border-bottom-width: 2px;
+    padding-bottom: 0;
+  }
+
+  del:after,
+  s:after,
+  strike:after {
+    border-bottom: 2px solid @black;
+    right: 0; bottom: 15px; left: 0;
+  }
+}
+
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+
+html {
+
+  body {
+    .font-family-normal;
+    .font-size(1.9);
+    .line-height(2.5);
+    margin: 47px 0;
+
+    a,
+    a:active,
+    a:link,
+    a:visited {
+      border-bottom-width: 1px;
+      border-bottom-color: @black;
+      border-bottom-style: solid;
+      color: @black;
+      padding-bottom: 1px;
+      text-decoration: none;
+    }
+
+    a:focus,
+    a:hover {
+      .transition;
+      border-bottom-color: lighten(@black, 50%);
+      color: lighten(@black, 50%);
+    }
+
+    abbr {
+      white-space: nowrap;
+    }
+
+    header {
+
+      h1 {
+        .font-size(0);
+        .line-height(0);
+        .zero;
+        display: block;
+        height: auto;
+        width: 153px;
+
+        svg {
+
+          path {
+            fill: @black;
+          }
+        }
+      }
+    }
+
+    hr {
+      .font-size(0);
+      .line-height(0);
+      .zero;
+      background: @black;
+      border: 0;
+      color: @black;
+      height: 1px;
+      margin: 47px 0;
+    }
+
+    main {
+
+      section {
+
+        aside {
+
+          strong {
+            .font-family-bold;
+            .font-size(2.0);
+          }
+
+          small {
+            .font-family-bold;
+            text-transform: uppercase;
+
+            a,
+            a:active,
+            a:link,
+            a:visited {
+              border-bottom-width: 0;
+              padding-bottom: 0;
+            }
+          }
+        }
+
+        h2 {
+          .font-family-bold;
+          .font-size(1.9);
+          margin: 0 0 33px 0;
+          text-transform: uppercase;
+        }
+
+        p {
+        }
+      }
+    }
+
+    del,
+    strike,
+    s {
+      color: @black;
+      position: relative;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+
+    del:after,
+    s:after,
+    strike:after {
+      content: "";
+      position: absolute;
+    }
+
+    small {
+      .font-size(1.4);
+      .line-height(2.0);
+    }
+  }
+}
