@@ -101,12 +101,12 @@
  * http://www.retinajs.com
  */
 ::selection {
-  background-color: #212322;
-  color: #ffffff;
+  background-color: #d3d6d4;
+  color: #212322;
 }
 ::-moz-selection {
-  background-color: #212322;
-  color: #ffffff;
+  background-color: #d3d6d4;
+  color: #212322;
 }
 section.collapsing {
   -webkit-transition: none;
@@ -117,6 +117,7 @@ section.collapsing {
   font-size: 2.7rem;
   line-height: 36px;
   line-height: 3.6rem;
+  letter-spacing: 0.2px;
   margin: 0;
   margin-bottom: -2px;
   /* border-bottom thickness is deducted */
@@ -172,6 +173,11 @@ html body a:hover {
 }
 html body abbr {
   white-space: nowrap;
+}
+html body header {
+  margin-bottom: 9px;
+  /* Add additional pixels to hr margin which is 47px by increasing header margin resulting in 56px (47 + 9) equal to logo height */
+
 }
 html body header h1 {
   font-size: 0px;
