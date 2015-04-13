@@ -122,6 +122,9 @@ section > div:nth-of-type(2) {
   padding-left: 50px;
   padding-right: 50px;
 }
+.container > hr:first-of-type {
+  background: transparent;
+}
 .lead {
   margin: 0;
   margin-bottom: -2px;
@@ -174,6 +177,9 @@ html body a:hover {
 }
 html body abbr {
   white-space: nowrap;
+}
+html body address {
+  line-height: inherit;
 }
 html body header {
   margin-bottom: 4px;
@@ -230,6 +236,9 @@ html body main section h2 {
   text-transform: uppercase;
   margin: 50px 0 33px 0;
 }
+html body main section p {
+  margin-bottom: 17px;
+}
 html body del,
 html body strike,
 html body s {
@@ -256,12 +265,14 @@ html body strike:after {
 html body {
   font-size: 26px;
   font-size: 2.6rem;
-  line-height: 30px;
-  line-height: 3rem;
+  line-height: 32px;
+  line-height: 3.2rem;
 }
 html body header h1 {
   width: 293px;
   height: 107px;
+  /* fixed size for <svg> calc the % from */
+
 }
 html body main section aside strong {
   font-size: 27px;
@@ -293,12 +304,14 @@ html body small {
   html body {
     font-size: 26px;
     font-size: 2.6rem;
-    line-height: 30px;
-    line-height: 3rem;
+    line-height: 32px;
+    line-height: 3.2rem;
   }
   html body header h1 {
     width: 147px;
     height: 54px;
+    /* fixed size for <svg> calc the % from */
+  
   }
   html body main section aside strong {
     font-size: 27px;
@@ -340,6 +353,8 @@ html body small {
   html body header h1 {
     width: 147px;
     height: 54px;
+    /* fixed size for <svg> calc the % from */
+  
   }
   html body main section aside strong {
     font-size: 20px;
@@ -381,6 +396,8 @@ html body small {
   html body header h1 {
     width: 147px;
     height: 54px;
+    /* fixed size for <svg> calc the % from */
+  
   }
   html body main section aside strong {
     font-size: 20px;
