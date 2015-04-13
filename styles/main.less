@@ -1,0 +1,415 @@
+@import url('base.less');
+
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+
+/* Global or main styles. */
+
+::selection {
+  background-color: lighten(@black, 70%);
+  color: @black;
+}
+
+::-moz-selection {
+  background-color: lighten(@black, 70%);
+  color: @black;
+}
+
+section.collapsing {
+  //.fadeIn;
+  -webkit-transition: none;
+          transition: none
+}
+
+section > div:nth-of-type(2) {
+  margin-top: -50px; /* <h2> margin-top is absorbed */
+}
+
+.container {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.lead {
+  margin: 0;
+  margin-bottom: -2px; /* border-bottom thickness is deducted */
+  text-transform: uppercase;
+
+  a,
+  a:active,
+  a:link,
+  a:visited {
+    border-bottom-width: 2px;
+    padding-bottom: 0;
+  }
+
+  del:after,
+  s:after,
+  strike:after {
+    border-bottom: 2px solid @black;
+    right: 0; bottom: 15px; left: 0;
+  }
+}
+
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+
+html {
+
+  body {
+    .font-family-normal;
+    margin: 50px 0;
+
+    a,
+    a:active,
+    a:link,
+    a:visited {
+      border-bottom-width: 1px;
+      border-bottom-color: @black;
+      border-bottom-style: solid;
+      color: @black;
+      padding-bottom: 1px;
+      text-decoration: none;
+    }
+
+    a:focus,
+    a:hover {
+      .transition;
+      border-bottom-color: lighten(@black, 50%);
+      color: lighten(@black, 50%);
+    }
+
+    abbr {
+      white-space: nowrap;
+    }
+
+    header {
+      margin-bottom: 4px; /* add additional pixels to <hr> margin-bottom (50px) by increasing header margin resulting in 56px (50 + 4) equal to logo height */
+
+      h1 {
+        .font-size(0);
+        .line-height(0);
+        .zero;
+        display: block;
+        height: auto;
+
+        svg {
+
+          path {
+            fill: @black;
+          }
+        }
+      }
+    }
+
+    hr {
+      .font-size(0);
+      .line-height(0);
+      .zero;
+      background: @black;
+      border: 0;
+      color: @black;
+      height: 1px;
+      margin: 50px 0;
+    }
+
+    main {
+
+      section {
+
+        aside {
+
+          strong {
+            .font-family-bold;
+          }
+
+          small {
+            .font-family-bold;
+            text-transform: uppercase;
+
+            a,
+            a:active,
+            a:link,
+            a:visited {
+              border-bottom-width: 0;
+              padding-bottom: 0;
+            }
+          }
+        }
+
+        h2 {
+          .font-family-bold;
+          text-transform: uppercase;
+          margin: 50px 0 33px 0;
+        }
+
+        p {
+        }
+      }
+    }
+
+    del,
+    strike,
+    s {
+      color: @black;
+      position: relative;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+
+    del:after,
+    s:after,
+    strike:after {
+      content: "";
+      position: absolute;
+    }
+
+    small {
+    }
+  }
+}
+
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+
+/* Default styles for extra-small devices. No media query since 
+   this is the default in Bootstrap.                          */
+
+.lead {
+  .font-size(3.6);
+  .line-height(4.8);
+  letter-spacing: 0.2px;
+}
+
+//////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////
+
+html {
+
+  body {
+    .font-size(2.6);
+    .line-height(3.0);
+
+    header {
+
+      h1 {
+        width: 293px;
+      }
+    }
+
+    main {
+
+      section {
+
+        aside {
+
+          strong {
+            .font-size(2.7);
+          }
+        }
+
+        h2 {
+          .font-size(2.7);
+        }
+      }
+    }
+
+    small {
+      .font-size(2.1);
+      .line-height(2.5);
+    }
+  }
+}
+
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+
+/* Gracefully changing styles distributed in media queries.   */
+
+/* small ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+@media (min-width: @screen-sm-min) {
+
+  .lead {
+    .font-size(3.2);
+    .line-height(4.0);
+    letter-spacing: 0.2px;
+  }
+
+  //////////////////////////////////////////////////////////////
+  //////////////////////////////////////////////////////////////
+
+  html {
+
+    body {
+      .font-size(2.6);
+      .line-height(3.0);
+
+      header {
+
+        h1 {
+          width: 147px;
+        }
+      }
+
+      main {
+
+        section {
+
+          aside {
+
+            strong {
+              .font-size(2.7);
+            }
+          }
+
+          h2 {
+            .font-size(2.7);
+          }
+        }
+      }
+
+      small {
+        .font-size(2.1);
+        .line-height(2.5);
+      }
+    }
+  }
+}
+
+/*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ /small */
+
+/* medium ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+@media (min-width: @screen-md-min) {
+
+  .lead {
+    .font-size(2.7);
+    .line-height(3.6);
+    letter-spacing: 0.2px;
+  }
+
+  //////////////////////////////////////////////////////////////
+  //////////////////////////////////////////////////////////////
+
+  html {
+
+    body {
+      .font-size(1.9);
+      .line-height(2.5);
+
+      header {
+
+        h1 {
+          width: 147px;
+        }
+      }
+
+      main {
+
+        section {
+
+          aside {
+
+            strong {
+              .font-size(2.0);
+            }
+          }
+
+          h2 {
+            .font-size(1.9);
+          }
+        }
+      }
+
+      small {
+        .font-size(1.4);
+        .line-height(2.0);
+      }
+    }
+  }
+}
+
+/*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ /medium */
+
+/* large ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+@media (min-width: @screen-lg-min) {
+
+  .lead {
+    .font-size(2.7);
+    .line-height(3.6);
+    letter-spacing: 0.2px;
+  }
+
+  //////////////////////////////////////////////////////////////
+  //////////////////////////////////////////////////////////////
+
+  html {
+
+    body {
+      .font-size(1.9);
+      .line-height(2.5);
+
+      header {
+
+        h1 {
+          width: 147px;
+        }
+      }
+
+      main {
+
+        section {
+
+          aside {
+
+            strong {
+              .font-size(2.0);
+            }
+          }
+
+          h2 {
+            .font-size(1.9);
+          }
+        }
+      }
+
+      small {
+        .font-size(1.4);
+        .line-height(2.0);
+      }
+    }
+  }
+}
+
+/*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ /large */
+
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
