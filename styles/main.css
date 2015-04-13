@@ -100,6 +100,7 @@
  * A helper mixin for applying high-resolution background images.
  * http://www.retinajs.com
  */
+/* Global or main styles. */
 ::selection {
   background-color: #d3d6d4;
   color: #212322;
@@ -112,12 +113,16 @@ section.collapsing {
   -webkit-transition: none;
   transition: none;
 }
+section > div:nth-of-type(2) {
+  margin-top: -50px;
+  /* <h2> margin-top is absorbed */
+
+}
+.container {
+  padding-left: 50px;
+  padding-right: 50px;
+}
 .lead {
-  font-size: 27px;
-  font-size: 2.7rem;
-  line-height: 36px;
-  line-height: 3.6rem;
-  letter-spacing: 0.2px;
   margin: 0;
   margin-bottom: -2px;
   /* border-bottom thickness is deducted */
@@ -143,11 +148,7 @@ html body {
   font-family: 'BrixSlab';
   font-weight: normal;
   font-style: normal;
-  font-size: 19px;
-  font-size: 1.9rem;
-  line-height: 25px;
-  line-height: 2.5rem;
-  margin: 47px 0;
+  margin: 50px 0;
 }
 html body a,
 html body a:active,
@@ -175,8 +176,8 @@ html body abbr {
   white-space: nowrap;
 }
 html body header {
-  margin-bottom: 9px;
-  /* Add additional pixels to hr margin which is 47px by increasing header margin resulting in 56px (47 + 9) equal to logo height */
+  margin-bottom: 4px;
+  /* add additional pixels to <hr> margin-bottom (50px) by increasing header margin resulting in 56px (50 + 4) equal to logo height */
 
 }
 html body header h1 {
@@ -188,7 +189,6 @@ html body header h1 {
   padding: 0;
   display: block;
   height: auto;
-  width: 153px;
 }
 html body header h1 svg path {
   fill: #212322;
@@ -204,14 +204,12 @@ html body hr {
   border: 0;
   color: #212322;
   height: 1px;
-  margin: 47px 0;
+  margin: 50px 0;
 }
 html body main section aside strong {
   font-family: 'BrixSans';
   font-weight: bold;
   font-style: normal;
-  font-size: 20px;
-  font-size: 2rem;
 }
 html body main section aside small {
   font-family: 'BrixSans';
@@ -230,10 +228,8 @@ html body main section h2 {
   font-family: 'BrixSans';
   font-weight: bold;
   font-style: normal;
-  font-size: 19px;
-  font-size: 1.9rem;
-  margin: 0 0 33px 0;
   text-transform: uppercase;
+  margin: 50px 0 33px 0;
 }
 html body del,
 html body strike,
@@ -249,9 +245,156 @@ html body strike:after {
   content: "";
   position: absolute;
 }
-html body small {
-  font-size: 14px;
-  font-size: 1.4rem;
-  line-height: 20px;
-  line-height: 2rem;
+/* Default styles for extra-small devices. No media query since 
+   this is the default in Bootstrap.                          */
+.lead {
+  font-size: 36px;
+  font-size: 3.6rem;
+  line-height: 48px;
+  line-height: 4.8rem;
+  letter-spacing: 0.2px;
 }
+html body {
+  font-size: 26px;
+  font-size: 2.6rem;
+  line-height: 30px;
+  line-height: 3rem;
+}
+html body header h1 {
+  width: 293px;
+}
+html body main section aside strong {
+  font-size: 27px;
+  font-size: 2.7rem;
+}
+html body main section h2 {
+  font-size: 27px;
+  font-size: 2.7rem;
+}
+html body small {
+  font-size: 21px;
+  font-size: 2.1rem;
+  line-height: 25px;
+  line-height: 2.5rem;
+}
+/* Gracefully changing styles distributed in media queries.   */
+/* small ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+@media (min-width: 768px) {
+  .lead {
+    font-size: 32px;
+    font-size: 3.2rem;
+    line-height: 40px;
+    line-height: 4rem;
+    letter-spacing: 0.2px;
+  }
+  html body {
+    font-size: 26px;
+    font-size: 2.6rem;
+    line-height: 30px;
+    line-height: 3rem;
+  }
+  html body header h1 {
+    width: 147px;
+  }
+  html body main section aside strong {
+    font-size: 27px;
+    font-size: 2.7rem;
+  }
+  html body main section h2 {
+    font-size: 27px;
+    font-size: 2.7rem;
+  }
+  html body small {
+    font-size: 21px;
+    font-size: 2.1rem;
+    line-height: 25px;
+    line-height: 2.5rem;
+  }
+}
+/*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ /small */
+/* medium ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+@media (min-width: 992px) {
+  .lead {
+    font-size: 27px;
+    font-size: 2.7rem;
+    line-height: 36px;
+    line-height: 3.6rem;
+    letter-spacing: 0.2px;
+  }
+  html body {
+    font-size: 19px;
+    font-size: 1.9rem;
+    line-height: 25px;
+    line-height: 2.5rem;
+  }
+  html body header h1 {
+    width: 147px;
+  }
+  html body main section aside strong {
+    font-size: 20px;
+    font-size: 2rem;
+  }
+  html body main section h2 {
+    font-size: 19px;
+    font-size: 1.9rem;
+  }
+  html body small {
+    font-size: 14px;
+    font-size: 1.4rem;
+    line-height: 20px;
+    line-height: 2rem;
+  }
+}
+/*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ /medium */
+/* large ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+@media (min-width: 1200px) {
+  .lead {
+    font-size: 27px;
+    font-size: 2.7rem;
+    line-height: 36px;
+    line-height: 3.6rem;
+    letter-spacing: 0.2px;
+  }
+  html body {
+    font-size: 19px;
+    font-size: 1.9rem;
+    line-height: 25px;
+    line-height: 2.5rem;
+  }
+  html body header h1 {
+    width: 147px;
+  }
+  html body main section aside strong {
+    font-size: 20px;
+    font-size: 2rem;
+  }
+  html body main section h2 {
+    font-size: 19px;
+    font-size: 1.9rem;
+  }
+  html body small {
+    font-size: 14px;
+    font-size: 1.4rem;
+    line-height: 20px;
+    line-height: 2rem;
+  }
+}
+/*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ /large */
