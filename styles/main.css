@@ -188,7 +188,6 @@ html body header h1 {
   margin: 0;
   padding: 0;
   display: block;
-  height: auto;
 }
 html body header h1 svg path {
   fill: #212322;
@@ -262,6 +261,7 @@ html body {
 }
 html body header h1 {
   width: 293px;
+  height: 107px;
 }
 html body main section aside strong {
   font-size: 27px;
@@ -298,6 +298,7 @@ html body small {
   }
   html body header h1 {
     width: 147px;
+    height: 54px;
   }
   html body main section aside strong {
     font-size: 27px;
@@ -338,6 +339,7 @@ html body small {
   }
   html body header h1 {
     width: 147px;
+    height: 54px;
   }
   html body main section aside strong {
     font-size: 20px;
@@ -378,6 +380,7 @@ html body small {
   }
   html body header h1 {
     width: 147px;
+    height: 54px;
   }
   html body main section aside strong {
     font-size: 20px;
