@@ -27,9 +27,27 @@ section > div:nth-of-type(2) {
   margin-top: -50px; /* <h2> margin-top is absorbed */
 }
 
+#boojum {
+  height: 100%;
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  width: 100%;
+  
+  svg {
+    height: 100%;
+    width: 100%;
+    
+    > g {
+      height: 100%;
+      width: 100%;
+    }
+  }
+}
+
 .container {
   padding-left: 50px;
   padding-right: 50px;
+  position: relative; /* support position: absolute for child elements */
 }
 
 .container > hr:first-of-type {
@@ -71,7 +89,7 @@ html {
     a:link,
     a:visited {
       border-bottom-width: 1px;
-      border-bottom-color: @black;
+      border-bottom-color: lighten(@black, 40%);
       border-bottom-style: solid;
       color: @black;
       padding-bottom: 1px;

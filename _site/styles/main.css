@@ -118,9 +118,29 @@ section > div:nth-of-type(2) {
   /* <h2> margin-top is absorbed */
 
 }
+#boojum {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+#boojum svg {
+  height: 100%;
+  width: 100%;
+}
+#boojum svg > g {
+  height: 100%;
+  width: 100%;
+}
 .container {
   padding-left: 50px;
   padding-right: 50px;
+  position: relative;
+  /* support position: absolute for child elements */
+
 }
 .container > hr:first-of-type {
   background: transparent;
@@ -158,7 +178,7 @@ html body a:active,
 html body a:link,
 html body a:visited {
   border-bottom-width: 1px;
-  border-bottom-color: #212322;
+  border-bottom-color: #858c88;
   border-bottom-style: solid;
   color: #212322;
   padding-bottom: 1px;
