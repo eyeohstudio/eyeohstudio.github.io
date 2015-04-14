@@ -157,6 +157,7 @@ section > div:nth-of-type(2) {
 .lead a:link,
 .lead a:visited {
   border-bottom-width: 2px;
+  border-bottom-color: #212322;
   padding-bottom: 0;
 }
 .lead del:after,
