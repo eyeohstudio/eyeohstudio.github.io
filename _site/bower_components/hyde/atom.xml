@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
- <title>I/O studio</title>
+ <title>I/O</title>
  <link href="http://localhost/atom.xml" rel="self"/>
  <link href="http://localhost/"/>
- <updated>2015-04-14T15:08:26+02:00</updated>
+ <updated>2015-04-14T15:28:07+02:00</updated>
  <id>http://localhost</id>
  <author>
-   <name>I/O studio</name>
+   <name>Eye Oh Design Studio, SL</name>
    <email></email>
  </author>
 
