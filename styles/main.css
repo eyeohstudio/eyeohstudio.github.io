@@ -119,28 +119,29 @@ section > div:nth-of-type(2) {
 
 }
 #boojum {
+  background-repeat: no-repeat;
+  background-size: 100% auto;
   height: 100%;
   position: absolute;
   top: 0;
-  right: 0;
-  bottom: 0;
+  /* right: 0; bottom: 0; */
   left: 0;
   width: 100%;
+  z-index: -1;
 }
-#boojum svg {
-  height: 100%;
-  width: 100%;
+#boojum {
+  background-image: url('../images/W&1404.png');
 }
-#boojum svg > g {
-  height: 100%;
-  width: 100%;
+#title {
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+#title {
+  background-image: url('../images/logo.png');
 }
 .container {
-  padding-left: 50px;
-  padding-right: 50px;
-  position: relative;
-  /* support position: absolute for child elements */
-
+  padding-left: 0;
+  padding-right: 0;
 }
 .container > hr:first-of-type {
   background: transparent;
@@ -160,6 +161,17 @@ section > div:nth-of-type(2) {
   border-bottom-color: #212322;
   padding-bottom: 0;
 }
+.lead a:focus,
+.lead a:hover {
+  -webkit-backface-visibility: hidden;
+  -webkit-transition: .3s ease;
+  -moz-transition: .3s ease;
+  -ms-transition: .3s ease;
+  -o-transition: .3s ease;
+  transition: .3s ease;
+  border-bottom-color: #b9bdbb;
+  color: #9fa4a2;
+}
 .lead del:after,
 .lead s:after,
 .lead strike:after {
@@ -172,7 +184,8 @@ html body {
   font-family: 'BrixSlab';
   font-weight: normal;
   font-style: normal;
-  margin: 50px 0;
+  margin: 0;
+  margin-top: 50px;
 }
 html body a,
 html body a:active,
@@ -193,7 +206,7 @@ html body a:hover {
   -ms-transition: .3s ease;
   -o-transition: .3s ease;
   transition: .3s ease;
-  border-bottom-color: #9fa4a2;
+  border-bottom-color: #b9bdbb;
   color: #9fa4a2;
 }
 html body abbr {
@@ -206,6 +219,8 @@ html body header {
   margin-bottom: 4px;
   /* add additional pixels to <hr> margin-bottom (50px) by increasing header margin resulting in 56px (50 + 4) equal to logo height */
 
+  padding-left: 50px;
+  padding-right: 50px;
 }
 html body header h1 {
   font-size: 0px;
@@ -215,9 +230,6 @@ html body header h1 {
   margin: 0;
   padding: 0;
   display: block;
-}
-html body header h1 svg path {
-  fill: #212322;
 }
 html body hr {
   font-size: 0px;
@@ -231,6 +243,20 @@ html body hr {
   color: #212322;
   height: 1px;
   margin: 50px 0;
+}
+html body main {
+  margin-top: -50px;
+  /* <hr> margin-bottom is deducted */
+
+  padding-top: 50px;
+  padding-right: 50px;
+  padding-bottom: 50px;
+  padding-left: 50px;
+  /* Please, don't come to tell I can use padding: 50px instead. */
+
+  position: relative;
+  /* support position: absolute for child elements */
+
 }
 html body main section aside strong {
   font-family: 'BrixSans';
