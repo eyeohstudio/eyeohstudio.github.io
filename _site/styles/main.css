@@ -135,8 +135,12 @@ section.collapsing {
   background-image: url('../images/logo.png');
 }
 .container {
-  padding-left: 0;
   padding-right: 0;
+  padding-left: 0;
+}
+.container .row {
+  margin-right: 0;
+  margin-left: 0;
 }
 .container > hr:first-of-type {
   background: transparent;
@@ -280,19 +284,26 @@ html body strike:after {
   content: "";
   position: absolute;
 }
-/* Default styles for extra-small devices. No media query since 
-   this is the default in Bootstrap.                          */
+/* Default styles for extra-small devices (0 < 480px). No media-
+   query since this is the default in Bootstrap.              */
 section > div:nth-of-type(2) {
   margin-top: -25px;
   /* <h2> margin-top is absorbed */
 
+}
+section > .row > div {
+  padding-right: 25px;
+  padding-left: 25px;
+}
+.container > .row > div {
+  padding-right: 25px;
+  padding-left: 25px;
 }
 .lead {
   font-size: 18px;
   font-size: 1.8rem;
   line-height: 26px;
   line-height: 2.6rem;
-  color: red;
 }
 .lead del:after,
 .lead s:after,
@@ -308,11 +319,6 @@ html body {
   line-height: 1.8rem;
   margin-top: 25px;
 }
-html body header {
-  margin-bottom: 0;
-  padding-left: 25px;
-  padding-right: 25px;
-}
 html body header h1 {
   width: 136px;
   height: 50px;
@@ -320,18 +326,14 @@ html body header h1 {
 
 }
 html body hr {
-  margin: 25px 0;
+  margin: 25px;
 }
 html body main {
   margin-top: -25px;
   /* <hr> margin-bottom is deducted */
 
   padding-top: 25px;
-  padding-right: 25px;
   padding-bottom: 25px;
-  padding-left: 25px;
-  /* Please, don't come to tell me I can use padding: 25px instead. */
-
 }
 html body main section aside strong {
   font-size: 13px;
@@ -361,7 +363,7 @@ html body small {
   line-height: 1.8rem;
 }
 /* Gracefully changing styles distributed in media queries.   */
-/* extra-small ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/* extra-small (480px < 640px) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
@@ -371,12 +373,19 @@ html body small {
     /* <h2> margin-top is absorbed */
   
   }
+  section > .row > div {
+    padding-right: 35px;
+    padding-left: 35px;
+  }
+  .container > .row > div {
+    padding-right: 35px;
+    padding-left: 35px;
+  }
   .lead {
     font-size: 28px;
     font-size: 2.8rem;
     line-height: 36px;
     line-height: 3.6rem;
-    color: green;
   }
   .lead del:after,
   .lead s:after,
@@ -394,8 +403,6 @@ html body small {
   }
   html body header {
     margin-bottom: 0;
-    padding-left: 35px;
-    padding-right: 35px;
   }
   html body header h1 {
     width: 204px;
@@ -404,18 +411,18 @@ html body small {
   
   }
   html body hr {
-    margin: 35px 0;
+    margin: 35px;
   }
   html body main {
     margin-top: -35px;
     /* <hr> margin-bottom is deducted */
   
     padding-top: 35px;
-    padding-right: 35px;
     padding-bottom: 35px;
-    padding-left: 35px;
-    /* Please, don't come to tell me I can use padding: 35px instead. */
-  
+  }
+  html body main section {
+    padding-right: 0;
+    padding-left: 0;
   }
   html body main section aside strong {
     font-size: 20px;
@@ -449,22 +456,29 @@ html body small {
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ /extra-small */
-/* small ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/* very-small (640px < 768px) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-@media (min-width: 768px) {
+@media (min-width: 640px) {
   section > div:nth-of-type(2) {
     margin-top: 50px;
     /* <h2> margin-top is absorbed */
   
+  }
+  section > .row > div {
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+  .container > .row > div {
+    padding-right: 50px;
+    padding-left: 50px;
   }
   .lead {
     font-size: 32px;
     font-size: 3.2rem;
     line-height: 40px;
     line-height: 4rem;
-    color: blue;
   }
   .lead del:after,
   .lead s:after,
@@ -482,8 +496,6 @@ html body small {
   }
   html body header {
     margin-bottom: 0;
-    padding-left: 50px;
-    padding-right: 50px;
   }
   html body header h1 {
     width: 147px;
@@ -492,18 +504,103 @@ html body small {
   
   }
   html body hr {
-    margin: 50px 0;
+    margin: 50px;
   }
   html body main {
     margin-top: -50px;
     /* <hr> margin-bottom is deducted */
   
     padding-top: 50px;
-    padding-right: 50px;
     padding-bottom: 50px;
-    padding-left: 50px;
-    /* Please, don't come to tell me I can use padding: 35px instead. */
+  }
+  html body main section aside strong {
+    font-size: 26px;
+    font-size: 2.6rem;
+    line-height: 32px;
+    line-height: 3.2rem;
+    margin-bottom: 12px;
+  }
+  html body main section h2 {
+    font-size: 26px;
+    font-size: 2.6rem;
+    line-height: 32px;
+    line-height: 3.2rem;
+    margin-bottom: 50px;
+    margin-top: 50px;
+  }
+  html body main section hr:nth-of-type(1) {
+    margin-bottom: -50px;
+  }
+  html body main section p {
+    margin-bottom: 24px;
+  }
+  html body small {
+    font-size: 22px;
+    font-size: 2.2rem;
+    line-height: 32px;
+    line-height: 3.2rem;
+  }
+}
+/*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ /very-small */
+/* small (768px < 992px) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+@media (min-width: 768px) {
+  section > div:nth-of-type(2) {
+    margin-top: 50px;
+    /* <h2> margin-top is absorbed */
   
+  }
+  section > .row > div {
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+  .container > .row > div {
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+  .lead {
+    font-size: 32px;
+    font-size: 3.2rem;
+    line-height: 40px;
+    line-height: 4rem;
+  }
+  .lead del:after,
+  .lead s:after,
+  .lead strike:after {
+    right: 0;
+    bottom: 18px;
+    left: 0;
+  }
+  html body {
+    font-size: 26px;
+    font-size: 2.6rem;
+    line-height: 32px;
+    line-height: 3.2rem;
+    margin-top: 50px;
+  }
+  html body header {
+    margin-bottom: 0;
+  }
+  html body header h1 {
+    width: 147px;
+    height: 54px;
+    /* fixed size for <svg> calc the % from */
+  
+  }
+  html body hr {
+    margin: 50px;
+  }
+  html body main {
+    margin-top: -50px;
+    /* <hr> margin-bottom is deducted */
+  
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
   html body main section aside strong {
     font-size: 26px;
@@ -537,28 +634,35 @@ html body small {
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ /small */
-/* medium ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/* medium (992px < 1200px) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 @media (min-width: 992px) {
   section > div:nth-of-type(2) {
-    margin-top: -50px;
+    margin-top: 50px;
     /* <h2> margin-top is absorbed */
   
   }
+  section > .row > div {
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+  .container > .row > div {
+    padding-right: 50px;
+    padding-left: 50px;
+  }
   .lead {
-    font-size: 27px;
-    font-size: 2.7rem;
+    font-size: 28px;
+    font-size: 2.8rem;
     line-height: 36px;
     line-height: 3.6rem;
-    color: yellow;
   }
   .lead del:after,
   .lead s:after,
   .lead strike:after {
     right: 0;
-    bottom: 10px;
+    bottom: 16px;
     left: 0;
   }
   html body {
@@ -569,95 +673,7 @@ html body small {
     margin-top: 50px;
   }
   html body header {
-    margin-bottom: 82px;
-    /* add additional pixels to header margin so it's equal to <h1> height */
-  
-    padding-left: 50px;
-    padding-right: 50px;
-  }
-  html body header h1 {
-    width: 225px;
-    height: 82px;
-    /* fixed size for <svg> calc the % from */
-  
-  }
-  html body hr {
-    margin: 50px 0;
-  }
-  html body main {
-    margin-top: -50px;
-    /* <hr> margin-bottom is deducted */
-  
-    padding-top: 50px;
-    padding-right: 50px;
-    padding-bottom: 50px;
-    padding-left: 50px;
-    /* Please, don't come to tell me I can use padding: 50px instead. */
-  
-  }
-  html body main section aside strong {
-    font-size: 20px;
-    font-size: 2rem;
-  }
-  html body main section h2 {
-    font-size: 26px;
-    font-size: 2.6rem;
-    line-height: 32px;
-    line-height: 3.2rem;
-    margin-bottom: 50px;
-    margin-top: 50px;
-  }
-  html body main section p {
-    margin-bottom: 20px;
-  }
-  html body small {
-    font-size: 14px;
-    font-size: 1.4rem;
-    line-height: 20px;
-    line-height: 2rem;
-  }
-}
-/*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ /medium */
-/* large ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-@media (min-width: 1200px) {
-  section > div:nth-of-type(2) {
-    margin-top: -50px;
-    /* <h2> margin-top is absorbed */
-  
-  }
-  .lead {
-    font-size: 27px;
-    font-size: 2.7rem;
-    line-height: 36px;
-    line-height: 3.6rem;
-    color: magenta;
-  }
-  .lead del:after,
-  .lead s:after,
-  .lead strike:after {
-    right: 0;
-    bottom: 10px;
-    left: 0;
-  }
-  html body {
-    font-size: 19px;
-    font-size: 1.9rem;
-    line-height: 25px;
-    line-height: 2.5rem;
-    margin-top: 50px;
-  }
-  html body header {
-    margin-bottom: 54px;
-    /* add additional pixels to header margin so it's equal to <h1> height */
-  
-    padding-left: 50px;
-    padding-right: 50px;
+    margin-bottom: 0;
   }
   html body header h1 {
     width: 147px;
@@ -666,39 +682,130 @@ html body small {
   
   }
   html body hr {
-    margin: 50px 0;
+    margin: 50px;
   }
   html body main {
     margin-top: -50px;
     /* <hr> margin-bottom is deducted */
   
     padding-top: 50px;
-    padding-right: 50px;
     padding-bottom: 50px;
-    padding-left: 50px;
-    /* Please, don't come to tell me I can use padding: 50px instead. */
-  
   }
   html body main section aside strong {
     font-size: 20px;
     font-size: 2rem;
+    line-height: 28px;
+    line-height: 2.8rem;
+    margin-bottom: 6px;
   }
   html body main section h2 {
-    font-size: 26px;
-    font-size: 2.6rem;
-    line-height: 32px;
-    line-height: 3.2rem;
-    margin-bottom: 50px;
+    font-size: 19px;
+    font-size: 1.9rem;
+    line-height: 28px;
+    line-height: 2.8rem;
+    margin-bottom: 30px;
     margin-top: 50px;
   }
+  html body main section hr:nth-of-type(1) {
+    margin-bottom: -50px;
+  }
   html body main section p {
-    margin-bottom: 20px;
+    margin-bottom: 18px;
   }
   html body small {
     font-size: 14px;
     font-size: 1.4rem;
-    line-height: 20px;
-    line-height: 2rem;
+    line-height: 35px;
+    line-height: 3.5rem;
+  }
+}
+/*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ /medium */
+/* large (1200px > ∞) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+@media (min-width: 1200px) {
+  section > div:nth-of-type(2) {
+    margin-top: 50px;
+    /* <h2> margin-top is absorbed */
+  
+  }
+  section > .row > div {
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+  .container > .row > div {
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+  .lead {
+    font-size: 28px;
+    font-size: 2.8rem;
+    line-height: 36px;
+    line-height: 3.6rem;
+  }
+  .lead del:after,
+  .lead s:after,
+  .lead strike:after {
+    right: 0;
+    bottom: 16px;
+    left: 0;
+  }
+  html body {
+    font-size: 19px;
+    font-size: 1.9rem;
+    line-height: 25px;
+    line-height: 2.5rem;
+    margin-top: 50px;
+  }
+  html body header {
+    margin-bottom: 0;
+  }
+  html body header h1 {
+    width: 147px;
+    height: 54px;
+    /* fixed size for <svg> calc the % from */
+  
+  }
+  html body hr {
+    margin: 50px;
+  }
+  html body main {
+    margin-top: -50px;
+    /* <hr> margin-bottom is deducted */
+  
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  html body main section aside strong {
+    font-size: 20px;
+    font-size: 2rem;
+    line-height: 28px;
+    line-height: 2.8rem;
+    margin-bottom: 6px;
+  }
+  html body main section h2 {
+    font-size: 19px;
+    font-size: 1.9rem;
+    line-height: 28px;
+    line-height: 2.8rem;
+    margin-bottom: 30px;
+    margin-top: 50px;
+  }
+  html body main section hr:nth-of-type(1) {
+    margin-bottom: -50px;
+  }
+  html body main section p {
+    margin-bottom: 18px;
+  }
+  html body small {
+    font-size: 14px;
+    font-size: 1.4rem;
+    line-height: 35px;
+    line-height: 3.5rem;
   }
 }
 /*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
