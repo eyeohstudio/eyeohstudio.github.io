@@ -58,6 +58,7 @@ section.collapsing {
 
 .container {
   padding-right: 0; padding-left: 0;
+  position: relative; /* support position: absolute for child elements */
 }
 
 .container .row {
@@ -154,7 +155,6 @@ html {
     }
 
     main {
-      position: relative; /* support position: absolute for child elements */
 
       section {
         
@@ -229,6 +229,10 @@ section > div:nth-of-type(2) {
 section > .row > div {
   padding-right: 25px; padding-left: 25px;
 }
+
+.container {
+    padding-top: 25px;
+  }
   
 .container > .row > div {
   padding-right: 25px; padding-left: 25px;
@@ -253,7 +257,6 @@ html {
   body {
     .font-size(1.3);
     .line-height(1.8);
-    margin-top: 25px;
 
     header {
 
@@ -328,6 +331,10 @@ html {
     padding-right: 35px; padding-left: 35px;
   }
   
+  .container {
+    padding-top: 35px;
+  }
+  
   .container > .row > div {
     padding-right: 35px; padding-left: 35px;
   }
@@ -351,7 +358,6 @@ html {
     body {
       .font-size(2.0);
       .line-height(2.6);
-      margin-top: 35px;
 
       header {
         margin-bottom: 0;
@@ -427,6 +433,10 @@ section > div:nth-of-type(2) {
     padding-right: 50px; padding-left: 50px;
   }
   
+  .container {
+    padding-top: 50px;
+  }
+  
   .container > .row > div {
     padding-right: 50px; padding-left: 50px;
   }
@@ -450,7 +460,6 @@ section > div:nth-of-type(2) {
     body {
       .font-size(2.6);
       .line-height(3.2);
-      margin-top: 50px;
 
       header {
         margin-bottom: 0;
@@ -525,6 +534,10 @@ section > div:nth-of-type(2) {
     padding-right: 50px; padding-left: 50px;
   }
   
+  .container {
+    padding-top: 50px;
+  }
+  
   .container > .row > div {
     padding-right: 50px; padding-left: 50px;
   }
@@ -548,7 +561,6 @@ section > div:nth-of-type(2) {
     body {
       .font-size(2.6);
       .line-height(3.2);
-      margin-top: 50px;
 
       header {
         margin-bottom: 0;
@@ -619,6 +631,10 @@ section > div:nth-of-type(2) {
     margin-top: 50px; /* <h2> margin-top is absorbed */
   }
   
+  .container {
+    padding-top: 50px;
+  }
+  
   section > .row > div {
     padding-right: 50px; padding-left: 50px;
   }
@@ -646,7 +662,6 @@ section > div:nth-of-type(2) {
     body {
       .font-size(1.9);
       .line-height(2.5);
-      margin-top: 50px;
 
       header {
         margin-bottom: 0;
@@ -721,6 +736,10 @@ section > div:nth-of-type(2) {
     padding-right: 50px; padding-left: 50px;
   }
   
+  .container {
+    padding-top: 50px;
+  }
+  
   .container > .row > div {
     padding-right: 50px; padding-left: 50px;
   }
@@ -744,7 +763,6 @@ section > div:nth-of-type(2) {
     body {
       .font-size(1.9);
       .line-height(2.5);
-      margin-top: 50px;
 
       header {
         margin-bottom: 0;

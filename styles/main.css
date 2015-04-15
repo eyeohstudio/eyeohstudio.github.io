@@ -142,6 +142,9 @@ section.collapsing {
 .container {
   padding-right: 0;
   padding-left: 0;
+  position: relative;
+  /* support position: absolute for child elements */
+
 }
 .container .row {
   margin-right: 0;
@@ -237,11 +240,6 @@ html body hr {
   color: #212322;
   height: 1px;
 }
-html body main {
-  position: relative;
-  /* support position: absolute for child elements */
-
-}
 html body main section *:last-child {
   margin-bottom: 0;
   /* avoid <p> or <address> or other block elemements at the bottom incrase margin */
@@ -300,6 +298,9 @@ section > .row > div {
   padding-right: 25px;
   padding-left: 25px;
 }
+.container {
+  padding-top: 25px;
+}
 .container > .row > div {
   padding-right: 25px;
   padding-left: 25px;
@@ -322,7 +323,6 @@ html body {
   font-size: 1.3rem;
   line-height: 18px;
   line-height: 1.8rem;
-  margin-top: 25px;
 }
 html body header h1 {
   width: 136px;
@@ -382,6 +382,9 @@ html body small {
     padding-right: 35px;
     padding-left: 35px;
   }
+  .container {
+    padding-top: 35px;
+  }
   .container > .row > div {
     padding-right: 35px;
     padding-left: 35px;
@@ -404,7 +407,6 @@ html body small {
     font-size: 2rem;
     line-height: 26px;
     line-height: 2.6rem;
-    margin-top: 35px;
   }
   html body header {
     margin-bottom: 0;
@@ -475,6 +477,9 @@ html body small {
     padding-right: 50px;
     padding-left: 50px;
   }
+  .container {
+    padding-top: 50px;
+  }
   .container > .row > div {
     padding-right: 50px;
     padding-left: 50px;
@@ -497,7 +502,6 @@ html body small {
     font-size: 2.6rem;
     line-height: 32px;
     line-height: 3.2rem;
-    margin-top: 50px;
   }
   html body header {
     margin-bottom: 0;
@@ -564,6 +568,9 @@ html body small {
     padding-right: 50px;
     padding-left: 50px;
   }
+  .container {
+    padding-top: 50px;
+  }
   .container > .row > div {
     padding-right: 50px;
     padding-left: 50px;
@@ -586,7 +593,6 @@ html body small {
     font-size: 2.6rem;
     line-height: 32px;
     line-height: 3.2rem;
-    margin-top: 50px;
   }
   html body header {
     margin-bottom: 0;
@@ -649,6 +655,9 @@ html body small {
     /* <h2> margin-top is absorbed */
   
   }
+  .container {
+    padding-top: 50px;
+  }
   section > .row > div {
     padding-right: 50px;
     padding-left: 50px;
@@ -675,7 +684,6 @@ html body small {
     font-size: 1.9rem;
     line-height: 25px;
     line-height: 2.5rem;
-    margin-top: 50px;
   }
   html body header {
     margin-bottom: 0;
@@ -742,6 +750,9 @@ html body small {
     padding-right: 50px;
     padding-left: 50px;
   }
+  .container {
+    padding-top: 50px;
+  }
   .container > .row > div {
     padding-right: 50px;
     padding-left: 50px;
@@ -764,7 +775,6 @@ html body small {
     font-size: 1.9rem;
     line-height: 25px;
     line-height: 2.5rem;
-    margin-top: 50px;
   }
   html body header {
     margin-bottom: 0;
