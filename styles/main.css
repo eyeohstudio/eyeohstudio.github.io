@@ -185,6 +185,31 @@ section.collapsing {
 .lead strike:after {
   border-bottom: 2px solid #212322;
 }
+.tooltip {
+  padding: 18px 0 !important;
+}
+.tooltip .tooltip-inner {
+  font-family: 'BrixSans';
+  font-weight: bold;
+  font-style: normal;
+  font-size: 14px;
+  font-size: 1.4rem;
+  line-height: 17px;
+  line-height: 1.7rem;
+  background-color: #212322;
+  border-radius: 0;
+  color: #ffffff;
+  max-width: 204px;
+  padding: 6px 18px 8px 18px;
+  text-align: left;
+}
+.tooltip.top .tooltip-arrow {
+  border-top-color: #212322;
+  border-width: 18px 18px 0 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -18px;
+}
 html body {
   font-family: 'BrixSlab';
   font-weight: normal;
@@ -196,11 +221,12 @@ html body a:active,
 html body a:link,
 html body a:visited {
   border-bottom-width: 1px;
-  border-bottom-color: #858c88;
+  border-bottom-color: #535855;
   border-bottom-style: solid;
   color: #212322;
   padding-bottom: 1px;
   text-decoration: none;
+  white-space: nowrap;
 }
 html body a:focus,
 html body a:hover {
@@ -658,9 +684,13 @@ html body small {
   .container {
     padding-top: 50px;
   }
-  section > .row > div {
-    padding-right: 50px;
+  section > .row > .col-md-6:nth-of-type(1) {
+    padding-right: 25px;
     padding-left: 50px;
+  }
+  section > .row > .col-md-6:nth-of-type(2) {
+    padding-right: 50px;
+    padding-left: 25px;
   }
   .container > .row > div {
     padding-right: 50px;
@@ -746,9 +776,13 @@ html body small {
     /* <h2> margin-top is absorbed */
   
   }
-  section > .row > div {
-    padding-right: 50px;
+  section > .row > .col-md-6:nth-of-type(1) {
+    padding-right: 25px;
     padding-left: 50px;
+  }
+  section > .row > .col-md-6:nth-of-type(2) {
+    padding-right: 50px;
+    padding-left: 25px;
   }
   .container {
     padding-top: 50px;
