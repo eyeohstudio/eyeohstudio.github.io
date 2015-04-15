@@ -23,31 +23,39 @@ section.collapsing {
           transition: none
 }
 
-section > div:nth-of-type(2) {
-  margin-top: -50px; /* <h2> margin-top is absorbed */
-}
-
 #boojum {
+  //background-image: url('../objects/W&1404.svg');
+  background-repeat: no-repeat;
+  background-size: 100% auto;
   height: 100%;
   position: absolute;
-  top: 0; right: 0; bottom: 0; left: 0;
+  top: 0; /* right: 0; bottom: 0; */ left: 0;
   width: 100%;
-  
-  svg {
-    height: 100%;
-    width: 100%;
-    
-    > g {
-      height: 100%;
-      width: 100%;
-    }
-  }
+  z-index: -1;
+}
+
+//.no-svg
+#boojum {
+  background-image: url('../images/W&1404.png');
+}
+
+#title {
+  //background-image: url('../objects/logo.svg');
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+
+//.no-svg
+#title {
+  background-image: url('../images/logo.png');
 }
 
 .container {
-  padding-left: 50px;
-  padding-right: 50px;
-  position: relative; /* support position: absolute for child elements */
+  padding-right: 0; padding-left: 0;
+}
+
+.container .row {
+  margin-right: 0; margin-left: 0;
 }
 
 .container > hr:first-of-type {
@@ -55,6 +63,7 @@ section > div:nth-of-type(2) {
 }
 
 .lead {
+  letter-spacing: 0.2px;
   margin: 0;
   margin-bottom: -2px; /* border-bottom thickness is deducted */
   text-transform: uppercase;
@@ -67,12 +76,18 @@ section > div:nth-of-type(2) {
     border-bottom-color: @black;
     padding-bottom: 0;
   }
+  
+  a:focus,
+  a:hover {
+    .transition;
+    border-bottom-color: lighten(@black, 60%);
+    color: lighten(@black, 50%);
+  }
 
   del:after,
   s:after,
   strike:after {
     border-bottom: 2px solid @black;
-    right: 0; bottom: 15px; left: 0;
   }
 }
 
@@ -83,7 +98,7 @@ html {
 
   body {
     .font-family-normal;
-    margin: 50px 0;
+    margin: 0;
 
     a,
     a:active,
@@ -100,7 +115,7 @@ html {
     a:focus,
     a:hover {
       .transition;
-      border-bottom-color: lighten(@black, 50%);
+      border-bottom-color: lighten(@black, 60%);
       color: lighten(@black, 50%);
     }
 
@@ -113,20 +128,12 @@ html {
     }
 
     header {
-      margin-bottom: 4px; /* add additional pixels to <hr> margin-bottom (50px) by increasing header margin resulting in 56px (50 + 4) equal to logo height */
 
       h1 {
         .font-size(0);
         .line-height(0);
         .zero;
         display: block;
-
-        svg {
-
-          path {
-            fill: @black;
-          }
-        }
       }
     }
 
@@ -138,17 +145,23 @@ html {
       border: 0;
       color: @black;
       height: 1px;
-      margin: 50px 0;
     }
 
     main {
+      position: relative; /* support position: absolute for child elements */
 
       section {
+        
+        *:last-child {
+          margin-bottom: 0; /* avoid <p> or <address> or other block elemements at the bottom incrase margin */
+        }
 
         aside {
 
           strong {
             .font-family-bold;
+            display: block;
+            letter-spacing: 0.2px;
           }
 
           small {
@@ -168,11 +181,8 @@ html {
         h2 {
           .font-family-bold;
           text-transform: uppercase;
-          margin: 50px 0 33px 0;
-        }
-
-        p {
-          margin-bottom: 17px;
+          letter-spacing: 0.2px;
+          margin: 0;
         }
       }
     }
@@ -203,13 +213,30 @@ html {
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
 
-/* Default styles for extra-small devices. No media query since 
-   this is the default in Bootstrap.                          */
+/* Default styles for extra-small devices (0 < 480px). No media-
+   query since this is the default in Bootstrap.              */
+
+section > div:nth-of-type(2) {
+  margin-top: -25px; /* <h2> margin-top is absorbed */
+}
+
+section > .row > div {
+  padding-right: 25px; padding-left: 25px;
+}
+  
+.container > .row > div {
+  padding-right: 25px; padding-left: 25px;
+}
 
 .lead {
-  .font-size(3.6);
-  .line-height(4.8);
-  letter-spacing: 0.2px;
+  .font-size(1.8);
+  .line-height(2.6);
+  
+  del:after,
+  s:after,
+  strike:after {
+    right: 0; bottom: 10px; left: 0;
+  }
 }
 
 //////////////////////////////////////////////////////////////
@@ -218,37 +245,57 @@ html {
 html {
 
   body {
-    .font-size(2.6);
-    .line-height(3.2);
+    .font-size(1.3);
+    .line-height(1.8);
+    margin-top: 25px;
 
     header {
 
       h1 {
-        width: 293px; /* fixed size for <svg> calc the % from */
-        height: 107px; /* fixed size for <svg> calc the % from */
+        width: 136px; /* fixed size for <svg> calc the % from */
+        height: 50px; /* fixed size for <svg> calc the % from */
       }
+    }
+    
+    hr {
+      margin: 25px;
     }
 
     main {
+      margin-top: -25px; /* <hr> margin-bottom is deducted */
+      padding-top: 25px;padding-bottom: 25px;
 
       section {
 
         aside {
 
           strong {
-            .font-size(2.7);
+            .font-size(1.3);
+            .line-height(1.8);
+            margin-bottom: 6px;
           }
         }
 
         h2 {
-          .font-size(2.7);
+          .font-size(1.3);
+          .line-height(1.9);
+          margin-bottom: 22px;
+          margin-top: 25px;
+        }
+        
+        hr:nth-of-type(1) {
+            margin-bottom: 25px;
+          }
+        
+        p {
+          margin-bottom: 12px;
         }
       }
     }
 
     small {
-      .font-size(2.1);
-      .line-height(2.5);
+      .font-size(0.9);
+      .line-height(1.8);
     }
   }
 }
@@ -260,17 +307,133 @@ html {
 
 /* Gracefully changing styles distributed in media queries.   */
 
-/* small ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/* extra-small (480px < 640px) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
-@media (min-width: @screen-sm-min) {
+@media (min-width: @screen-xs-min) {
 
+  section > div:nth-of-type(2) {
+    margin-top: -35px; /* <h2> margin-top is absorbed */
+  }
+  
+  section > .row > div {
+    padding-right: 35px; padding-left: 35px;
+  }
+  
+  .container > .row > div {
+    padding-right: 35px; padding-left: 35px;
+  }
+  
+  .lead {
+    .font-size(2.8);
+    .line-height(3.6);
+    
+    del:after,
+    s:after,
+    strike:after {
+      right: 0; bottom: 16px; left: 0;
+    }
+  }
+
+  //////////////////////////////////////////////////////////////
+  //////////////////////////////////////////////////////////////
+
+  html {
+
+    body {
+      .font-size(2.0);
+      .line-height(2.6);
+      margin-top: 35px;
+
+      header {
+        margin-bottom: 0;
+
+        h1 {
+          width: 204px; /* fixed size for <svg> calc the % from */
+          height: 74px; /* fixed size for <svg> calc the % from */
+        }
+      }
+      
+      hr {
+        margin: 35px;
+      }
+
+      main {
+        margin-top: -35px; /* <hr> margin-bottom is deducted */
+        padding-top: 35px; padding-bottom: 35px;
+
+        section {
+          padding-right: 0; padding-left: 0;
+
+          aside {
+
+            strong {
+              .font-size(2.0);
+              .line-height(2.6);
+              margin-bottom: 9px;
+            }
+          }
+
+          h2 {
+            .font-size(2.0);
+            .line-height(2.6);
+            margin-bottom: 33px;
+            margin-top: 35px;
+          }
+          
+          hr:nth-of-type(1) {
+            margin-bottom: 35px;
+          }
+          
+          p {
+            margin-bottom: 18px;
+          }
+        }
+      }
+
+      small {
+        .font-size(1.6);
+        .line-height(2.6);
+      }
+    }
+  }
+}
+
+/*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ /extra-small */
+
+/* very-small (640px < 768px) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+@media (min-width: 640px) {
+
+section > div:nth-of-type(2) {
+    margin-top: 50px; /* <h2> margin-top is absorbed */
+  }
+  
+  section > .row > div {
+    padding-right: 50px; padding-left: 50px;
+  }
+  
+  .container > .row > div {
+    padding-right: 50px; padding-left: 50px;
+  }
+  
   .lead {
     .font-size(3.2);
     .line-height(4.0);
-    letter-spacing: 0.2px;
+    
+    del:after,
+    s:after,
+    strike:after {
+      right: 0; bottom: 18px; left: 0;
+    }
   }
 
   //////////////////////////////////////////////////////////////
@@ -281,35 +444,154 @@ html {
     body {
       .font-size(2.6);
       .line-height(3.2);
+      margin-top: 50px;
 
       header {
+        margin-bottom: 0;
 
         h1 {
           width: 147px; /* fixed size for <svg> calc the % from */
           height: 54px; /* fixed size for <svg> calc the % from */
         }
       }
-
+      
+      hr {
+        margin: 50px;
+      }
+      
       main {
+        margin-top: -50px; /* <hr> margin-bottom is deducted */
+        padding-top: 50px; padding-bottom: 50px;
 
         section {
 
           aside {
 
             strong {
-              .font-size(2.7);
+              .font-size(2.6);
+              .line-height(3.2);
+              margin-bottom: 12px;
             }
           }
 
           h2 {
-            .font-size(2.7);
+            .font-size(2.6);
+            .line-height(3.2);
+            margin-bottom: 50px;
+            margin-top: 50px;
+          }
+          
+          hr:nth-of-type(1) {
+            margin-bottom: -50px;
+          }
+          
+          p {
+            margin-bottom: 24px;
           }
         }
       }
 
       small {
-        .font-size(2.1);
-        .line-height(2.5);
+        .font-size(2.2);
+        .line-height(3.2);
+      }
+    }
+  }
+}
+
+/*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ /very-small */
+
+/* small (768px < 992px) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+@media (min-width: @screen-sm-min) {
+
+  section > div:nth-of-type(2) {
+    margin-top: 50px; /* <h2> margin-top is absorbed */
+  }
+  
+  section > .row > div {
+    padding-right: 50px; padding-left: 50px;
+  }
+  
+  .container > .row > div {
+    padding-right: 50px; padding-left: 50px;
+  }
+  
+  .lead {
+    .font-size(3.2);
+    .line-height(4.0);
+    
+    del:after,
+    s:after,
+    strike:after {
+      right: 0; bottom: 18px; left: 0;
+    }
+  }
+
+  //////////////////////////////////////////////////////////////
+  //////////////////////////////////////////////////////////////
+
+  html {
+
+    body {
+      .font-size(2.6);
+      .line-height(3.2);
+      margin-top: 50px;
+
+      header {
+        margin-bottom: 0;
+
+        h1 {
+          width: 147px; /* fixed size for <svg> calc the % from */
+          height: 54px; /* fixed size for <svg> calc the % from */
+        }
+      }
+      
+      hr {
+        margin: 50px;
+      }
+      
+      main {
+        margin-top: -50px; /* <hr> margin-bottom is deducted */
+        padding-top: 50px; padding-bottom: 50px;
+
+        section {
+
+          aside {
+
+            strong {
+              .font-size(2.6);
+              .line-height(3.2);
+              margin-bottom: 12px;
+            }
+          }
+
+          h2 {
+            .font-size(2.6);
+            .line-height(3.2);
+            margin-bottom: 50px;
+            margin-top: 50px;
+          }
+          
+          hr:nth-of-type(1) {
+            margin-bottom: -50px;
+          }
+          
+          p {
+            margin-bottom: 24px;
+          }
+        }
+      }
+
+      small {
+        .font-size(2.2);
+        .line-height(3.2);
       }
     }
   }
@@ -320,17 +602,34 @@ html {
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ /small */
 
-/* medium ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/* medium (992px < 1200px) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 @media (min-width: @screen-md-min) {
 
+  section > div:nth-of-type(2) {
+    margin-top: 50px; /* <h2> margin-top is absorbed */
+  }
+  
+  section > .row > div {
+    padding-right: 50px; padding-left: 50px;
+  }
+  
+  .container > .row > div {
+    padding-right: 50px; padding-left: 50px;
+  }
+
   .lead {
-    .font-size(2.7);
+    .font-size(2.8);
     .line-height(3.6);
-    letter-spacing: 0.2px;
+    
+    del:after,
+    s:after,
+    strike:after {
+      right: 0; bottom: 16px; left: 0;
+    }
   }
 
   //////////////////////////////////////////////////////////////
@@ -341,16 +640,24 @@ html {
     body {
       .font-size(1.9);
       .line-height(2.5);
+      margin-top: 50px;
 
       header {
+        margin-bottom: 0;
 
         h1 {
           width: 147px; /* fixed size for <svg> calc the % from */
           height: 54px; /* fixed size for <svg> calc the % from */
         }
       }
-
+      
+      hr {
+        margin: 50px;
+      }
+      
       main {
+        margin-top: -50px; /* <hr> margin-bottom is deducted */
+        padding-top: 50px; padding-bottom: 50px;
 
         section {
 
@@ -358,18 +665,31 @@ html {
 
             strong {
               .font-size(2.0);
+              .line-height(2.8);
+              margin-bottom: 6px;
             }
           }
 
           h2 {
             .font-size(1.9);
+            .line-height(2.8);
+            margin-bottom: 30px;
+            margin-top: 50px;
+          }
+          
+          hr:nth-of-type(1) {
+            margin-bottom: -50px;
+          }
+          
+          p {
+            margin-bottom: 18px;
           }
         }
       }
 
       small {
         .font-size(1.4);
-        .line-height(2.0);
+        .line-height(3.5);
       }
     }
   }
@@ -380,17 +700,34 @@ html {
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ /medium */
 
-/* large ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/* large (1200px > ∞) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 @media (min-width: @screen-lg-min) {
 
+  section > div:nth-of-type(2) {
+    margin-top: 50px; /* <h2> margin-top is absorbed */
+  }
+  
+  section > .row > div {
+    padding-right: 50px; padding-left: 50px;
+  }
+  
+  .container > .row > div {
+    padding-right: 50px; padding-left: 50px;
+  }
+
   .lead {
-    .font-size(2.7);
+    .font-size(2.8);
     .line-height(3.6);
-    letter-spacing: 0.2px;
+    
+    del:after,
+    s:after,
+    strike:after {
+      right: 0; bottom: 16px; left: 0;
+    }
   }
 
   //////////////////////////////////////////////////////////////
@@ -401,16 +738,24 @@ html {
     body {
       .font-size(1.9);
       .line-height(2.5);
+      margin-top: 50px;
 
       header {
+        margin-bottom: 0;
 
         h1 {
           width: 147px; /* fixed size for <svg> calc the % from */
           height: 54px; /* fixed size for <svg> calc the % from */
         }
       }
-
+      
+      hr {
+        margin: 50px;
+      }
+      
       main {
+        margin-top: -50px; /* <hr> margin-bottom is deducted */
+        padding-top: 50px; padding-bottom: 50px;
 
         section {
 
@@ -418,18 +763,31 @@ html {
 
             strong {
               .font-size(2.0);
+              .line-height(2.8);
+              margin-bottom: 6px;
             }
           }
 
           h2 {
             .font-size(1.9);
+            .line-height(2.8);
+            margin-bottom: 30px;
+            margin-top: 50px;
+          }
+          
+          hr:nth-of-type(1) {
+            margin-bottom: -50px;
+          }
+          
+          p {
+            margin-bottom: 18px;
           }
         }
       }
 
       small {
         .font-size(1.4);
-        .line-height(2.0);
+        .line-height(3.5);
       }
     }
   }

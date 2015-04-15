@@ -45,7 +45,7 @@ jQuery(document).ready(function($) {
 
   // randomWhatelseCa
   var whatelseCa = new Array(
-    'creatiu',
+    //'creatiu',
     'imaginatiu',
     'innovador',
     'poc convencional'
@@ -55,7 +55,7 @@ jQuery(document).ready(function($) {
 
   // randomWhatelseEn
   var whatelseEn = new Array(
-    'creative',
+    //'creative',
     'imaginative',
     'innovative',
     'unconventional'
@@ -65,7 +65,7 @@ jQuery(document).ready(function($) {
 
   // randomWhatelseEs
   var whatelseEs = new Array(
-    'y creativo',
+    //'y creativo',
     'e imaginativo',
     'e innovador',
     'y poco convencional'
