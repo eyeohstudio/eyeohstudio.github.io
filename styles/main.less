@@ -51,8 +51,11 @@ section.collapsing {
 }
 
 .container {
-  padding-left: 0;
-  padding-right: 0;
+  padding-right: 0; padding-left: 0;
+}
+
+.container .row {
+  margin-right: 0; margin-left: 0;
 }
 
 .container > hr:first-of-type {
@@ -210,17 +213,24 @@ html {
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
 
-/* Default styles for extra-small devices. No media query since 
-   this is the default in Bootstrap.                          */
+/* Default styles for extra-small devices (0 < 480px). No media-
+   query since this is the default in Bootstrap.              */
 
 section > div:nth-of-type(2) {
   margin-top: -25px; /* <h2> margin-top is absorbed */
 }
 
+section > .row > div {
+  padding-right: 25px; padding-left: 25px;
+}
+  
+.container > .row > div {
+  padding-right: 25px; padding-left: 25px;
+}
+
 .lead {
   .font-size(1.8);
   .line-height(2.6);
-  color: red;
   
   del:after,
   s:after,
@@ -240,9 +250,6 @@ html {
     margin-top: 25px;
 
     header {
-      margin-bottom: 0;
-      padding-left: 25px;
-      padding-right: 25px;
 
       h1 {
         width: 136px; /* fixed size for <svg> calc the % from */
@@ -251,12 +258,12 @@ html {
     }
     
     hr {
-      margin: 25px 0;
+      margin: 25px;
     }
 
     main {
       margin-top: -25px; /* <hr> margin-bottom is deducted */
-      padding-top: 25px; padding-right: 25px; padding-bottom: 25px; padding-left: 25px; /* Please, don't come to tell me I can use padding: 25px instead. */
+      padding-top: 25px;padding-bottom: 25px;
 
       section {
 
@@ -300,7 +307,7 @@ html {
 
 /* Gracefully changing styles distributed in media queries.   */
 
-/* extra-small ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/* extra-small (480px < 640px) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
@@ -311,10 +318,17 @@ html {
     margin-top: -35px; /* <h2> margin-top is absorbed */
   }
   
+  section > .row > div {
+    padding-right: 35px; padding-left: 35px;
+  }
+  
+  .container > .row > div {
+    padding-right: 35px; padding-left: 35px;
+  }
+  
   .lead {
     .font-size(2.8);
     .line-height(3.6);
-    color: green;
     
     del:after,
     s:after,
@@ -335,8 +349,6 @@ html {
 
       header {
         margin-bottom: 0;
-        padding-left: 35px;
-        padding-right: 35px;
 
         h1 {
           width: 204px; /* fixed size for <svg> calc the % from */
@@ -345,14 +357,15 @@ html {
       }
       
       hr {
-        margin: 35px 0;
+        margin: 35px;
       }
 
       main {
         margin-top: -35px; /* <hr> margin-bottom is deducted */
-        padding-top: 35px; padding-right: 35px; padding-bottom: 35px; padding-left: 35px; /* Please, don't come to tell me I can use padding: 35px instead. */
+        padding-top: 35px; padding-bottom: 35px;
 
         section {
+          padding-right: 0; padding-left: 0;
 
           aside {
 
@@ -393,21 +406,28 @@ html {
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ /extra-small */
 
-/* small ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/* very-small (640px < 768px) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
-@media (min-width: @screen-sm-min) {
+@media (min-width: 640px) {
 
-  section > div:nth-of-type(2) {
+section > div:nth-of-type(2) {
     margin-top: 50px; /* <h2> margin-top is absorbed */
+  }
+  
+  section > .row > div {
+    padding-right: 50px; padding-left: 50px;
+  }
+  
+  .container > .row > div {
+    padding-right: 50px; padding-left: 50px;
   }
   
   .lead {
     .font-size(3.2);
     .line-height(4.0);
-    color: blue;
     
     del:after,
     s:after,
@@ -428,8 +448,6 @@ html {
 
       header {
         margin-bottom: 0;
-        padding-left: 50px;
-        padding-right: 50px;
 
         h1 {
           width: 147px; /* fixed size for <svg> calc the % from */
@@ -438,12 +456,110 @@ html {
       }
       
       hr {
-        margin: 50px 0;
+        margin: 50px;
       }
       
       main {
         margin-top: -50px; /* <hr> margin-bottom is deducted */
-        padding-top: 50px; padding-right: 50px; padding-bottom: 50px; padding-left: 50px; /* Please, don't come to tell me I can use padding: 35px instead. */
+        padding-top: 50px; padding-bottom: 50px;
+
+        section {
+
+          aside {
+
+            strong {
+              .font-size(2.6);
+              .line-height(3.2);
+              margin-bottom: 12px;
+            }
+          }
+
+          h2 {
+            .font-size(2.6);
+            .line-height(3.2);
+            margin-bottom: 50px;
+            margin-top: 50px;
+          }
+          
+          hr:nth-of-type(1) {
+            margin-bottom: -50px;
+          }
+          
+          p {
+            margin-bottom: 24px;
+          }
+        }
+      }
+
+      small {
+        .font-size(2.2);
+        .line-height(3.2);
+      }
+    }
+  }
+}
+
+/*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ /very-small */
+
+/* small (768px < 992px) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+@media (min-width: @screen-sm-min) {
+
+  section > div:nth-of-type(2) {
+    margin-top: 50px; /* <h2> margin-top is absorbed */
+  }
+  
+  section > .row > div {
+    padding-right: 50px; padding-left: 50px;
+  }
+  
+  .container > .row > div {
+    padding-right: 50px; padding-left: 50px;
+  }
+  
+  .lead {
+    .font-size(3.2);
+    .line-height(4.0);
+    
+    del:after,
+    s:after,
+    strike:after {
+      right: 0; bottom: 18px; left: 0;
+    }
+  }
+
+  //////////////////////////////////////////////////////////////
+  //////////////////////////////////////////////////////////////
+
+  html {
+
+    body {
+      .font-size(2.6);
+      .line-height(3.2);
+      margin-top: 50px;
+
+      header {
+        margin-bottom: 0;
+
+        h1 {
+          width: 147px; /* fixed size for <svg> calc the % from */
+          height: 54px; /* fixed size for <svg> calc the % from */
+        }
+      }
+      
+      hr {
+        margin: 50px;
+      }
+      
+      main {
+        margin-top: -50px; /* <hr> margin-bottom is deducted */
+        padding-top: 50px; padding-bottom: 50px;
 
         section {
 
@@ -486,7 +602,7 @@ html {
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ /small */
 
-/* medium ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/* medium (992px < 1200px) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
@@ -494,18 +610,25 @@ html {
 @media (min-width: @screen-md-min) {
 
   section > div:nth-of-type(2) {
-    margin-top: -50px; /* <h2> margin-top is absorbed */
+    margin-top: 50px; /* <h2> margin-top is absorbed */
   }
   
+  section > .row > div {
+    padding-right: 50px; padding-left: 50px;
+  }
+  
+  .container > .row > div {
+    padding-right: 50px; padding-left: 50px;
+  }
+
   .lead {
-    .font-size(2.7);
+    .font-size(2.8);
     .line-height(3.6);
-    color: yellow;
     
     del:after,
     s:after,
     strike:after {
-      right: 0; bottom: 10px; left: 0;
+      right: 0; bottom: 16px; left: 0;
     }
   }
 
@@ -520,23 +643,21 @@ html {
       margin-top: 50px;
 
       header {
-        margin-bottom: 50px + 32; /* add additional pixels to header margin so it's equal to <h1> height */
-        padding-left: 50px;
-        padding-right: 50px;
+        margin-bottom: 0;
 
         h1 {
-          width: 225px; /* fixed size for <svg> calc the % from */
-          height: 82px; /* fixed size for <svg> calc the % from */
+          width: 147px; /* fixed size for <svg> calc the % from */
+          height: 54px; /* fixed size for <svg> calc the % from */
         }
       }
       
       hr {
-        margin: 50px 0;
+        margin: 50px;
       }
-
+      
       main {
         margin-top: -50px; /* <hr> margin-bottom is deducted */
-        padding-top: 50px; padding-right: 50px; padding-bottom: 50px; padding-left: 50px; /* Please, don't come to tell me I can use padding: 50px instead. */
+        padding-top: 50px; padding-bottom: 50px;
 
         section {
 
@@ -544,25 +665,31 @@ html {
 
             strong {
               .font-size(2.0);
+              .line-height(2.8);
+              margin-bottom: 6px;
             }
           }
 
           h2 {
-            .font-size(2.6);
-            .line-height(3.2);
-            margin-bottom: 50px;
+            .font-size(1.9);
+            .line-height(2.8);
+            margin-bottom: 30px;
             margin-top: 50px;
           }
           
+          hr:nth-of-type(1) {
+            margin-bottom: -50px;
+          }
+          
           p {
-            margin-bottom: 20px;
+            margin-bottom: 18px;
           }
         }
       }
 
       small {
         .font-size(1.4);
-        .line-height(2.0);
+        .line-height(3.5);
       }
     }
   }
@@ -573,7 +700,7 @@ html {
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ /medium */
 
-/* large ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/* large (1200px > ∞) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
@@ -581,18 +708,25 @@ html {
 @media (min-width: @screen-lg-min) {
 
   section > div:nth-of-type(2) {
-    margin-top: -50px; /* <h2> margin-top is absorbed */
+    margin-top: 50px; /* <h2> margin-top is absorbed */
   }
   
+  section > .row > div {
+    padding-right: 50px; padding-left: 50px;
+  }
+  
+  .container > .row > div {
+    padding-right: 50px; padding-left: 50px;
+  }
+
   .lead {
-    .font-size(2.7);
+    .font-size(2.8);
     .line-height(3.6);
-    color: magenta;
     
     del:after,
     s:after,
     strike:after {
-      right: 0; bottom: 10px; left: 0;
+      right: 0; bottom: 16px; left: 0;
     }
   }
 
@@ -607,9 +741,7 @@ html {
       margin-top: 50px;
 
       header {
-        margin-bottom: 50px + 4; /* add additional pixels to header margin so it's equal to <h1> height */
-        padding-left: 50px;
-        padding-right: 50px;
+        margin-bottom: 0;
 
         h1 {
           width: 147px; /* fixed size for <svg> calc the % from */
@@ -618,12 +750,12 @@ html {
       }
       
       hr {
-        margin: 50px 0;
+        margin: 50px;
       }
-
+      
       main {
         margin-top: -50px; /* <hr> margin-bottom is deducted */
-        padding-top: 50px; padding-right: 50px; padding-bottom: 50px; padding-left: 50px; /* Please, don't come to tell me I can use padding: 50px instead. */
+        padding-top: 50px; padding-bottom: 50px;
 
         section {
 
@@ -631,25 +763,31 @@ html {
 
             strong {
               .font-size(2.0);
+              .line-height(2.8);
+              margin-bottom: 6px;
             }
           }
 
           h2 {
-            .font-size(2.6);
-            .line-height(3.2);
-            margin-bottom: 50px;
+            .font-size(1.9);
+            .line-height(2.8);
+            margin-bottom: 30px;
             margin-top: 50px;
           }
           
+          hr:nth-of-type(1) {
+            margin-bottom: -50px;
+          }
+          
           p {
-            margin-bottom: 20px;
+            margin-bottom: 18px;
           }
         }
       }
 
       small {
         .font-size(1.4);
-        .line-height(2.0);
+        .line-height(3.5);
       }
     }
   }
