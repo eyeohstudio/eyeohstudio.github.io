@@ -114,24 +114,29 @@ section.collapsing {
   transition: none;
 }
 #boojum {
+  background-image: url('../objects/W&1404.svg');
   background-repeat: no-repeat;
   background-size: 100% auto;
   height: 100%;
   position: absolute;
   top: 0;
-  /* right: 0; bottom: 0; */
   left: 0;
   width: 100%;
   z-index: -1;
+  /*
+   * Please, uncomment the correct position.                */
+
+  background-position: center bottom;
 }
-#boojum {
+.no-svg #boojum {
   background-image: url('../images/W&1404.png');
 }
 #title {
+  background-image: url('../objects/logo.svg');
   background-repeat: no-repeat;
   background-size: 100% auto;
 }
-#title {
+.no-svg #title {
   background-image: url('../images/logo.png');
 }
 .container {
