@@ -116,17 +116,16 @@ section.collapsing {
 #boojum {
   background-image: url('../objects/W&1404.svg');
   background-repeat: no-repeat;
-  background-size: 100% auto;
-  height: 100%;
-  position: absolute;
-  top: 0;
   left: 0;
-  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  right: 0;
   z-index: -1;
   /*
-   * Please, uncomment the correct position.                */
-
-  background-position: center bottom;
+   * Please, uncomment the correct position.
+   * If background-position: center top deactivate the      
+   * affix plugin.                                          */
+  background-position: center top;
 }
 .no-svg #boojum {
   background-image: url('../images/W&1404.png');
@@ -139,12 +138,12 @@ section.collapsing {
 .no-svg #title {
   background-image: url('../images/logo.png');
 }
+.affix-top {
+  position: absolute;
+}
 .container {
   padding-right: 0;
   padding-left: 0;
-  position: relative;
-  /* support position: absolute for child elements */
-
 }
 .container .row {
   margin-right: 0;
@@ -158,7 +157,6 @@ section.collapsing {
   margin: 0;
   margin-bottom: -2px;
   /* border-bottom thickness is deducted */
-
   text-transform: uppercase;
 }
 .lead a,
@@ -266,10 +264,13 @@ html body hr {
   color: #212322;
   height: 1px;
 }
+html body main {
+  position: relative;
+  /* support position: absolute for child elements */
+}
 html body main section *:last-child {
   margin-bottom: 0;
   /* avoid <p> or <address> or other block elemements at the bottom incrase margin */
-
 }
 html body main section aside strong {
   font-family: 'BrixSans';
@@ -318,11 +319,23 @@ html body strike:after {
 section > div:nth-of-type(2) {
   margin-top: -25px;
   /* <h2> margin-top is absorbed */
-
 }
 section > .row > div {
   padding-right: 25px;
   padding-left: 25px;
+}
+#boojum {
+  background-size: 100% auto;
+  height: -webkit-calc(100% - 100px);
+  height: -moz-calc(100% - 100px);
+  height: -o-calc(100% - 100px);
+  height: calc(100% - 100px);
+  /* Deduct .afix-top { top: 100px; } */
+  width: 100%;
+}
+.affix-top {
+  top: 100px;
+  /* .container { padding-top: 25px; } + header h1 { height: 50px; } + main { padding-top: 25px; } */
 }
 .container {
   padding-top: 25px;
@@ -352,9 +365,9 @@ html body {
 }
 html body header h1 {
   width: 136px;
+  /* fixed size for <svg> calc the % from */
   height: 50px;
   /* fixed size for <svg> calc the % from */
-
 }
 html body hr {
   margin: 25px;
@@ -362,7 +375,6 @@ html body hr {
 html body main {
   margin-top: -25px;
   /* <hr> margin-bottom is deducted */
-
   padding-top: 25px;
   padding-bottom: 25px;
 }
@@ -402,11 +414,23 @@ html body small {
   section > div:nth-of-type(2) {
     margin-top: -35px;
     /* <h2> margin-top is absorbed */
-  
   }
   section > .row > div {
     padding-right: 35px;
     padding-left: 35px;
+  }
+  #boojum {
+    background-size: 100% auto;
+    height: -webkit-calc(100% - 144px);
+    height: -moz-calc(100% - 144px);
+    height: -o-calc(100% - 144px);
+    height: calc(100% - 144px);
+    /* Deduct .afix-top { top: 100px; } */
+    width: 100%;
+  }
+  .affix-top {
+    top: 144px;
+    /* .container { padding-top: 35px; } + header h1 { height: 74px; } + main { padding-top: 35px; } */
   }
   .container {
     padding-top: 35px;
@@ -439,9 +463,9 @@ html body small {
   }
   html body header h1 {
     width: 204px;
+    /* fixed size for <svg> calc the % from */
     height: 74px;
     /* fixed size for <svg> calc the % from */
-  
   }
   html body hr {
     margin: 35px;
@@ -449,7 +473,6 @@ html body small {
   html body main {
     margin-top: -35px;
     /* <hr> margin-bottom is deducted */
-  
     padding-top: 35px;
     padding-bottom: 35px;
   }
@@ -497,11 +520,23 @@ html body small {
   section > div:nth-of-type(2) {
     margin-top: 50px;
     /* <h2> margin-top is absorbed */
-  
   }
   section > .row > div {
     padding-right: 50px;
     padding-left: 50px;
+  }
+  #boojum {
+    background-size: 100% auto;
+    height: -webkit-calc(100% - 154px);
+    height: -moz-calc(100% - 154px);
+    height: -o-calc(100% - 154px);
+    height: calc(100% - 154px);
+    /* Deduct .afix-top { top: 100px; } */
+    width: 100%;
+  }
+  .affix-top {
+    top: 154px;
+    /* .container { padding-top: 50px; } + header h1 { height: 54px; } + main { padding-top: 50px; } */
   }
   .container {
     padding-top: 50px;
@@ -534,9 +569,9 @@ html body small {
   }
   html body header h1 {
     width: 147px;
+    /* fixed size for <svg> calc the % from */
     height: 54px;
     /* fixed size for <svg> calc the % from */
-  
   }
   html body hr {
     margin: 50px;
@@ -544,7 +579,6 @@ html body small {
   html body main {
     margin-top: -50px;
     /* <hr> margin-bottom is deducted */
-  
     padding-top: 50px;
     padding-bottom: 50px;
   }
@@ -588,11 +622,23 @@ html body small {
   section > div:nth-of-type(2) {
     margin-top: 50px;
     /* <h2> margin-top is absorbed */
-  
   }
   section > .row > div {
     padding-right: 50px;
     padding-left: 50px;
+  }
+  #boojum {
+    background-size: 770px auto;
+    height: -webkit-calc(100% - 154px);
+    height: -moz-calc(100% - 154px);
+    height: -o-calc(100% - 154px);
+    height: calc(100% - 154px);
+    /* Deduct .afix-top { top: 100px; } */
+    width: 770px;
+  }
+  .affix-top {
+    top: 154px;
+    /* .container { padding-top: 50px; } + header h1 { height: 54px; } + main { padding-top: 50px; } */
   }
   .container {
     padding-top: 50px;
@@ -625,9 +671,9 @@ html body small {
   }
   html body header h1 {
     width: 147px;
+    /* fixed size for <svg> calc the % from */
     height: 54px;
     /* fixed size for <svg> calc the % from */
-  
   }
   html body hr {
     margin: 50px;
@@ -635,7 +681,6 @@ html body small {
   html body main {
     margin-top: -50px;
     /* <hr> margin-bottom is deducted */
-  
     padding-top: 50px;
     padding-bottom: 50px;
   }
@@ -679,7 +724,6 @@ html body small {
   section > div:nth-of-type(2) {
     margin-top: 50px;
     /* <h2> margin-top is absorbed */
-  
   }
   .container {
     padding-top: 50px;
@@ -691,6 +735,19 @@ html body small {
   section > .row > .col-md-6:nth-of-type(2) {
     padding-right: 50px;
     padding-left: 25px;
+  }
+  #boojum {
+    background-size: 990px auto;
+    height: -webkit-calc(100% - 154px);
+    height: -moz-calc(100% - 154px);
+    height: -o-calc(100% - 154px);
+    height: calc(100% - 154px);
+    /* Deduct .afix-top { top: 100px; } */
+    width: 990px;
+  }
+  .affix-top {
+    top: 154px;
+    /* .container { padding-top: 50px; } + header h1 { height: 54px; } + main { padding-top: 50px; } */
   }
   .container > .row > div {
     padding-right: 50px;
@@ -720,9 +777,9 @@ html body small {
   }
   html body header h1 {
     width: 147px;
+    /* fixed size for <svg> calc the % from */
     height: 54px;
     /* fixed size for <svg> calc the % from */
-  
   }
   html body hr {
     margin: 50px;
@@ -730,7 +787,6 @@ html body small {
   html body main {
     margin-top: -50px;
     /* <hr> margin-bottom is deducted */
-  
     padding-top: 50px;
     padding-bottom: 50px;
   }
@@ -774,7 +830,6 @@ html body small {
   section > div:nth-of-type(2) {
     margin-top: 50px;
     /* <h2> margin-top is absorbed */
-  
   }
   section > .row > .col-md-6:nth-of-type(1) {
     padding-right: 25px;
@@ -783,6 +838,19 @@ html body small {
   section > .row > .col-md-6:nth-of-type(2) {
     padding-right: 50px;
     padding-left: 25px;
+  }
+  #boojum {
+    background-size: 1190px auto;
+    height: -webkit-calc(100% - 154px);
+    height: -moz-calc(100% - 154px);
+    height: -o-calc(100% - 154px);
+    height: calc(100% - 154px);
+    /* Deduct .afix-top { top: 100px; } */
+    width: 1190px;
+  }
+  .affix-top {
+    top: 154px;
+    /* .container { padding-top: 50px; } + header h1 { height: 54px; } + main { padding-top: 50px; } */
   }
   .container {
     padding-top: 50px;
@@ -815,9 +883,9 @@ html body small {
   }
   html body header h1 {
     width: 147px;
+    /* fixed size for <svg> calc the % from */
     height: 54px;
     /* fixed size for <svg> calc the % from */
-  
   }
   html body hr {
     margin: 50px;
@@ -825,7 +893,6 @@ html body small {
   html body main {
     margin-top: -50px;
     /* <hr> margin-bottom is deducted */
-  
     padding-top: 50px;
     padding-bottom: 50px;
   }

@@ -26,18 +26,20 @@ section.collapsing {
 #boojum {
   background-image: url('../objects/W&1404.svg');
   background-repeat: no-repeat;
-  background-size: 100% auto;
-  height: 100%;
-  position: absolute;
-  top: 0; left: 0;
-  width: 100%;
+  left: 0;
+  margin-left: auto;
+  margin-right: auto;
+  //position: absolute;
+  right: 0;
   z-index: -1;
   
   /*
-   * Please, uncomment the correct position.                */
+   * Please, uncomment the correct position.
+   * If background-position: center top deactivate the      
+   * affix plugin.                                          */
   
-  background-position: center bottom;
-  //background-position: center top;
+  //background-position: center bottom;
+  background-position: center top;
 }
 
 .no-svg
@@ -56,9 +58,12 @@ section.collapsing {
   background-image: url('../images/logo.png');
 }
 
+.affix-top {
+  position: absolute;
+}
+
 .container {
   padding-right: 0; padding-left: 0;
-  position: relative; /* support position: absolute for child elements */
 }
 
 .container .row {
@@ -179,6 +184,7 @@ html {
     }
 
     main {
+      position: relative; /* support position: absolute for child elements */
 
       section {
         
@@ -254,6 +260,19 @@ section > .row > div {
   padding-right: 25px; padding-left: 25px;
 }
 
+#boojum {
+  background-size: 100% auto;
+  height: -webkit-calc(100% - 100px);
+  height:    -moz-calc(100% - 100px);
+  height:      -o-calc(100% - 100px);
+  height:         calc(100% - 100px); /* Deduct .afix-top { top: 100px; } */
+  width: 100%;
+}
+
+.affix-top {
+  top: 100px; /* .container { padding-top: 25px; } + header h1 { height: 50px; } + main { padding-top: 25px; } */
+}
+
 .container {
     padding-top: 25px;
   }
@@ -296,7 +315,7 @@ html {
 
     main {
       margin-top: -25px; /* <hr> margin-bottom is deducted */
-      padding-top: 25px;padding-bottom: 25px;
+      padding-top: 25px; padding-bottom: 25px;
 
       section {
 
@@ -353,6 +372,19 @@ html {
   
   section > .row > div {
     padding-right: 35px; padding-left: 35px;
+  }
+  
+  #boojum {
+    background-size: 100% auto;
+    height: -webkit-calc(100% - 144px);
+    height:    -moz-calc(100% - 144px);
+    height:      -o-calc(100% - 144px);
+    height:         calc(100% - 144px); /* Deduct .afix-top { top: 100px; } */
+    width: 100%;
+  }
+
+  .affix-top {
+    top: 144px; /* .container { padding-top: 35px; } + header h1 { height: 74px; } + main { padding-top: 35px; } */
   }
   
   .container {
@@ -457,6 +489,19 @@ section > div:nth-of-type(2) {
     padding-right: 50px; padding-left: 50px;
   }
   
+  #boojum {
+    background-size: 100% auto;
+    height: -webkit-calc(100% - 154px);
+    height:    -moz-calc(100% - 154px);
+    height:      -o-calc(100% - 154px);
+    height:         calc(100% - 154px); /* Deduct .afix-top { top: 100px; } */
+    width: 100%;
+  }
+
+  .affix-top {
+    top: 154px; /* .container { padding-top: 50px; } + header h1 { height: 54px; } + main { padding-top: 50px; } */
+  }
+  
   .container {
     padding-top: 50px;
   }
@@ -556,6 +601,20 @@ section > div:nth-of-type(2) {
   
   section > .row > div {
     padding-right: 50px; padding-left: 50px;
+  }
+
+  
+  #boojum {
+    background-size: 770px auto;
+    height: -webkit-calc(100% - 154px);
+    height:    -moz-calc(100% - 154px);
+    height:      -o-calc(100% - 154px);
+    height:         calc(100% - 154px); /* Deduct .afix-top { top: 100px; } */
+    width: 770px;
+  }
+
+  .affix-top {
+    top: 154px; /* .container { padding-top: 50px; } + header h1 { height: 54px; } + main { padding-top: 50px; } */
   }
   
   .container {
@@ -667,6 +726,19 @@ section > div:nth-of-type(2) {
     padding-right: 50px; padding-left: 25px;
   }
   
+  #boojum {
+    background-size: 990px auto;
+    height: -webkit-calc(100% - 154px);
+    height:    -moz-calc(100% - 154px);
+    height:      -o-calc(100% - 154px);
+    height:         calc(100% - 154px); /* Deduct .afix-top { top: 100px; } */
+    width: 990px;
+  }
+
+  .affix-top {
+    top: 154px; /* .container { padding-top: 50px; } + header h1 { height: 54px; } + main { padding-top: 50px; } */
+  }
+  
   .container > .row > div {
     padding-right: 50px; padding-left: 50px;
   }
@@ -766,6 +838,19 @@ section > div:nth-of-type(2) {
   
   section > .row > .col-md-6:nth-of-type(2) {
     padding-right: 50px; padding-left: 25px;
+  }
+  
+  #boojum {
+    background-size: 1190px auto;
+    height: -webkit-calc(100% - 154px);
+    height:    -moz-calc(100% - 154px);
+    height:      -o-calc(100% - 154px);
+    height:         calc(100% - 154px); /* Deduct .afix-top { top: 100px; } */
+    width: 1190px;
+  }
+
+  .affix-top {
+    top: 154px; /* .container { padding-top: 50px; } + header h1 { height: 54px; } + main { padding-top: 50px; } */
   }
   
   .container {
