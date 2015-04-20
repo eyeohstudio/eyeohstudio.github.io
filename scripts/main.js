@@ -4,28 +4,6 @@ jQuery(document).ready(function($) {
   ////////////////////////////////////////////////////////////////
   ////////////////////////////////////////////////////////////////
   ////////////////////////////////////////////////////////////////
-    
-       if ($(window).width() < 480) { $('#boojum').affix({ offset: { top: 100 } }) }
-  else if ($(window).width() < 640) { $('#boojum').affix({ offset: { top: 144 } }) }
-  else if ($(window).width() < 768) { $('#boojum').affix({ offset: { top: 154 } }) }
-  else if ($(window).width() > 768) { $('#boojum').affix({ offset: { top: 154 } }) }
-    
-  $( window ).resize(function() {
-        // This will fire each time the window is resized:
-        if($(window).width() <= 480) {
-            $('#boojum').affix({
-              offset: {
-                top: 100
-              }
-            })
-        } else {
-            $('#boojum').affix({
-              offset: {
-                top: 144
-              }
-            })
-        }
-  });
   
   $(function () {
     $('[data-toggle="tooltip"]').tooltip()

@@ -42,8 +42,7 @@ section.collapsing {
    * Please, uncomment the correct position.
    * If background-position: center top deactivate the      
    * affix plugin.                                          */
-  
-  //background-position: center bottom;
+
   background-position: center top;
 }
 
@@ -271,12 +270,24 @@ section > .row > div {
 }
 
 #boojum {
-  background-size: 100% auto;
+  background-size: contain;
   height: -webkit-calc(100% - 100px);
   height:    -moz-calc(100% - 100px);
   height:      -o-calc(100% - 100px);
   height:         calc(100% - 100px); /* Deduct .afix-top { top: 100px; } */
   width: 100%;
+}
+
+#boojum.s {
+  display: block;
+}
+
+#boojum.m {
+  .hidden;
+}
+
+#boojum.l {
+  .hidden;
 }
 
 .affix-top {
@@ -385,12 +396,24 @@ html {
   }
   
   #boojum {
-    background-size: 100% auto;
+    background-size: contain;
     height: -webkit-calc(100% - 144px);
     height:    -moz-calc(100% - 144px);
     height:      -o-calc(100% - 144px);
     height:         calc(100% - 144px); /* Deduct .afix-top { top: 100px; } */
     width: 100%;
+  }
+  
+  #boojum.s {
+    .hidden;
+  }
+
+  #boojum.m {
+    display: block;
+  }
+
+  #boojum.l {
+    .hidden;
   }
 
   .affix-top {
@@ -500,12 +523,24 @@ section > div:nth-of-type(2) {
   }
   
   #boojum {
-    background-size: 100% auto;
+    background-size: 100%;
     height: -webkit-calc(100% - 154px);
     height:    -moz-calc(100% - 154px);
     height:      -o-calc(100% - 154px);
     height:         calc(100% - 154px); /* Deduct .afix-top { top: 100px; } */
     width: 100%;
+  }
+  
+  #boojum.s {
+    .hidden;
+  }
+
+  #boojum.m {
+    .hidden;
+  }
+
+  #boojum.l {
+    display: block;
   }
 
   .affix-top {
@@ -615,12 +650,24 @@ section > div:nth-of-type(2) {
 
   
   #boojum {
-    background-size: 770px auto;
+    background-size: 100%;
     height: -webkit-calc(100% - 154px);
     height:    -moz-calc(100% - 154px);
     height:      -o-calc(100% - 154px);
     height:         calc(100% - 154px); /* Deduct .afix-top { top: 100px; } */
     width: 770px;
+  }
+  
+  #boojum.s {
+    .hidden;
+  }
+
+  #boojum.m {
+    .hidden;
+  }
+
+  #boojum.l {
+    display: block;
   }
 
   .affix-top {
@@ -737,12 +784,24 @@ section > div:nth-of-type(2) {
   }
   
   #boojum {
-    background-size: 990px auto;
+    background-size: 100%;
     height: -webkit-calc(100% - 154px);
     height:    -moz-calc(100% - 154px);
     height:      -o-calc(100% - 154px);
     height:         calc(100% - 154px); /* Deduct .afix-top { top: 100px; } */
     width: 990px;
+  }
+  
+  #boojum.s {
+    .hidden;
+  }
+
+  #boojum.m {
+    .hidden;
+  }
+
+  #boojum.l {
+    display: block;
   }
 
   .affix-top {
@@ -851,12 +910,24 @@ section > div:nth-of-type(2) {
   }
   
   #boojum {
-    background-size: 1190px auto;
+    background-size: 100%;
     height: -webkit-calc(100% - 154px);
     height:    -moz-calc(100% - 154px);
     height:      -o-calc(100% - 154px);
     height:         calc(100% - 154px); /* Deduct .afix-top { top: 100px; } */
     width: 1190px;
+  }
+  
+  #boojum.s {
+    .hidden;
+  }
+
+  #boojum.m {
+    .hidden;
+  }
+
+  #boojum.l {
+    display: block;
   }
 
   .affix-top {
