@@ -1,4 +1,6 @@
 @import url('fonts.css');
+
+@import url('fonts.css');
 .font-family-bold {
   font-family: 'BrixSans';
   font-weight: bold;
@@ -100,6 +102,333 @@
  * A helper mixin for applying high-resolution background images.
  * http://www.retinajs.com
  */
+.font-family-bold {
+  font-family: 'BrixSans';
+  font-weight: bold;
+  font-style: normal;
+}
+.font-family-normal {
+  font-family: 'BrixSlab';
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke: 1px transparent;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.01);
+}
+.full-height {
+  height: 100%;
+}
+.full-width {
+  width: 100%;
+}
+.hidden {
+  display: none;
+}
+.list-style-none {
+  list-style-type: none;
+}
+.no-repeat {
+  background-repeat: no-repeat;
+}
+.table {
+  display: table;
+}
+.vertical-centering {
+  vertical-align: middle;
+  display: table-cell;
+}
+.zero {
+  margin: 0;
+  padding: 0;
+}
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+  -webkit-animation-duration: .32s;
+  animation-duration: .32s;
+  -webkit-animation-timing-function: ease;
+  animation-timing-function: ease;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0.0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0.0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.flip {
+  -webkit-transform: scaleX(-1);
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  transform: scaleX(-1);
+  -ms-filter: "FlipH";
+  filter: FlipH;
+}
+.opaque {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+.translucent {
+  opacity: 0.50;
+  filter: alpha(opacity=50);
+}
+.transparent {
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+.transition {
+  -webkit-backface-visibility: hidden;
+  -webkit-transition: .3s ease;
+  -moz-transition: .3s ease;
+  -ms-transition: .3s ease;
+  -o-transition: .3s ease;
+  transition: .3s ease;
+}
+/*
+ * Useful Bootstrap variables for media queries made available for main.less.
+ */
+/*
+ * A helper mixin for applying high-resolution background images.
+ * http://www.retinajs.com
+ */
+.affix-top {
+  position: absolute;
+}
+.boojum {
+  background-image: url('../objects/W&0414.svg');
+  background-repeat: no-repeat;
+  left: 0;
+  margin-left: auto;
+  margin-right: auto;
+  right: 0;
+  z-index: -1;
+}
+.left.bottom {
+  background-position: left bottom;
+}
+.left.top {
+  background-position: left top;
+}
+.right.bottom {
+  background-position: right bottom;
+}
+.right.top {
+  background-position: right top;
+}
+.no-svg .boojum {
+  background-image: url('../images/W&0414.png');
+}
+/* Default styles for extra-small devices (0 < 480px). No media-
+   query since this is the default in Bootstrap.              */
+.boojum {
+  background-size: contain;
+  height: -webkit-calc(0%);
+  height: -moz-calc(0%);
+  height: -o-calc(0%);
+  height: calc(0%);
+  /* Deduct .afix-top { top: 100px; } */
+
+  width: 100%;
+}
+.boojum.affix-top {
+  top: 100px;
+}
+.boojum.s {
+  display: block;
+}
+.boojum.m {
+  display: none;
+}
+.boojum.l {
+  display: none;
+}
+.left.bottom {
+  background-position: left top;
+}
+/* force background-position: top */
+.left.top {
+  background-position: left top;
+}
+.right.bottom {
+  background-position: right top;
+}
+/* force background-position: top */
+.right.top {
+  background-position: right top;
+}
+/* Gracefully changing styles distributed in media queries.   */
+/* extra-small (480px < 640px) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+@media (min-width: 480px) {
+  .boojum {
+    background-size: contain;
+    height: -webkit-calc(-44%);
+    height: -moz-calc(-44%);
+    height: -o-calc(-44%);
+    height: calc(-44%);
+    /* Deduct .afix-top { top: 100px; } */
+  
+    width: 100%;
+  }
+  .boojum.affix-top {
+    top: 144px;
+  }
+  .boojum.s {
+    display: none;
+  }
+  .boojum.m {
+    display: block;
+  }
+  .boojum.l {
+    display: none;
+  }
+}
+/*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ /extra-small */
+/* very-small (640px < 768px) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+@media (min-width: 640px) {
+  .boojum {
+    background-size: contain;
+    height: -webkit-calc(-54%);
+    height: -moz-calc(-54%);
+    height: -o-calc(-54%);
+    height: calc(-54%);
+    /* Deduct .afix-top { top: 100px; } */
+  
+    width: 100%;
+  }
+  .boojum.affix-top {
+    top: 154px;
+  }
+  .boojum.s {
+    display: none;
+  }
+  .boojum.m {
+    display: none;
+  }
+  .boojum.l {
+    display: block;
+  }
+}
+/*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ /very-small */
+/* small (768px < 992px) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+@media (min-width: 768px) {
+  .boojum {
+    background-size: contain;
+    height: -webkit-calc(-54%);
+    height: -moz-calc(-54%);
+    height: -o-calc(-54%);
+    height: calc(-54%);
+    /* Deduct .afix-top { top: 100px; } */
+  
+    width: 770px;
+  }
+  .boojum.affix-top {
+    top: 154px;
+  }
+  .boojum.s {
+    display: none;
+  }
+  .boojum.m {
+    display: none;
+  }
+  .boojum.l {
+    display: block;
+  }
+}
+/*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ /small */
+/* medium (992px < 1200px) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+@media (min-width: 992px) {
+  .boojum {
+    background-size: contain;
+    height: -webkit-calc(-54%);
+    height: -moz-calc(-54%);
+    height: -o-calc(-54%);
+    height: calc(-54%);
+    /* Deduct .afix-top { top: 100px; } */
+  
+    width: 990px;
+  }
+  .boojum.affix-top {
+    top: 154px;
+  }
+  .boojum.s {
+    display: none;
+  }
+  .boojum.m {
+    display: none;
+  }
+  .boojum.l {
+    display: block;
+  }
+}
+/*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ /medium */
+/* large (1200px > ∞) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+@media (min-width: 1200px) {
+  .boojum {
+    background-size: contain;
+    height: -webkit-calc(-54%);
+    height: -moz-calc(-54%);
+    height: -o-calc(-54%);
+    height: calc(-54%);
+    /* Deduct .afix-top { top: 100px; } */
+  
+    width: 1190px;
+  }
+  .boojum.affix-top {
+    top: 154px;
+  }
+  .boojum.s {
+    display: none;
+  }
+  .boojum.m {
+    display: none;
+  }
+  .boojum.l {
+    display: block;
+  }
+}
+/*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ /large */
 /* Global or main styles. */
 ::selection {
   background-color: #d3d6d4;
@@ -113,24 +442,6 @@ section.collapsing {
   -webkit-transition: none;
   transition: none;
 }
-#boojum {
-  background-image: url('../objects/W&1404.svg');
-  background-repeat: no-repeat;
-  left: 0;
-  margin-left: auto;
-  margin-right: auto;
-  right: 0;
-  z-index: -1;
-  /*
-   * Please, uncomment the correct position.
-   * If background-position: center top deactivate the      
-   * affix plugin.                                          */
-
-  background-position: left top;
-}
-.no-svg #boojum {
-  background-image: url('../images/W&1404.png');
-}
 #title {
   background-image: url('../objects/logo.svg');
   background-repeat: no-repeat;
@@ -138,9 +449,6 @@ section.collapsing {
 }
 .no-svg #title {
   background-image: url('../images/logo.png');
-}
-.affix-top {
-  position: absolute;
 }
 .container {
   padding-right: 0;
@@ -185,6 +493,9 @@ section.collapsing {
 .lead strike:after {
   border-bottom: 2px solid #212322;
 }
+.off {
+  cursor: default;
+}
 .tooltip {
   padding: 18px 0 !important;
 }
@@ -199,13 +510,13 @@ section.collapsing {
   background-color: #212322;
   border-radius: 0;
   color: #ffffff;
-  max-width: 204px;
-  padding: 13px 19px;
+  max-width: 248px;
+  padding: 8px 18px 10px 18px;
   text-align: left;
 }
 .tooltip img {
-  height: 19px;
-  width: 19px;
+  height: auto;
+  width: 18px;
 }
 .tooltip.top .tooltip-arrow {
   border-top-color: #212322;
@@ -333,30 +644,6 @@ section > .row > div {
   padding-right: 25px;
   padding-left: 25px;
 }
-#boojum {
-  background-size: contain;
-  height: -webkit-calc(0%);
-  height: -moz-calc(0%);
-  height: -o-calc(0%);
-  height: calc(0%);
-  /* Deduct .afix-top { top: 100px; } */
-
-  width: 100%;
-}
-#boojum.s {
-  display: block;
-}
-#boojum.m {
-  display: none;
-}
-#boojum.l {
-  display: none;
-}
-.affix-top {
-  top: 100px;
-  /* .container { padding-top: 25px; } + header h1 { height: 50px; } + main { padding-top: 25px; } */
-
-}
 .container {
   padding-top: 25px;
 }
@@ -440,30 +727,6 @@ html body small {
   section > .row > div {
     padding-right: 35px;
     padding-left: 35px;
-  }
-  #boojum {
-    background-size: contain;
-    height: -webkit-calc(-44%);
-    height: -moz-calc(-44%);
-    height: -o-calc(-44%);
-    height: calc(-44%);
-    /* Deduct .afix-top { top: 100px; } */
-  
-    width: 100%;
-  }
-  #boojum.s {
-    display: none;
-  }
-  #boojum.m {
-    display: block;
-  }
-  #boojum.l {
-    display: none;
-  }
-  .affix-top {
-    top: 144px;
-    /* .container { padding-top: 35px; } + header h1 { height: 74px; } + main { padding-top: 35px; } */
-  
   }
   .container {
     padding-top: 35px;
@@ -560,30 +823,6 @@ html body small {
     padding-right: 50px;
     padding-left: 50px;
   }
-  #boojum {
-    background-size: 100%;
-    height: -webkit-calc(-54%);
-    height: -moz-calc(-54%);
-    height: -o-calc(-54%);
-    height: calc(-54%);
-    /* Deduct .afix-top { top: 100px; } */
-  
-    width: 100%;
-  }
-  #boojum.s {
-    display: none;
-  }
-  #boojum.m {
-    display: none;
-  }
-  #boojum.l {
-    display: block;
-  }
-  .affix-top {
-    top: 154px;
-    /* .container { padding-top: 50px; } + header h1 { height: 54px; } + main { padding-top: 50px; } */
-  
-  }
   .container {
     padding-top: 50px;
   }
@@ -674,30 +913,6 @@ html body small {
   section > .row > div {
     padding-right: 50px;
     padding-left: 50px;
-  }
-  #boojum {
-    background-size: 100%;
-    height: -webkit-calc(-54%);
-    height: -moz-calc(-54%);
-    height: -o-calc(-54%);
-    height: calc(-54%);
-    /* Deduct .afix-top { top: 100px; } */
-  
-    width: 770px;
-  }
-  #boojum.s {
-    display: none;
-  }
-  #boojum.m {
-    display: none;
-  }
-  #boojum.l {
-    display: block;
-  }
-  .affix-top {
-    top: 154px;
-    /* .container { padding-top: 50px; } + header h1 { height: 54px; } + main { padding-top: 50px; } */
-  
   }
   .container {
     padding-top: 50px;
@@ -797,30 +1012,6 @@ html body small {
     padding-right: 50px;
     padding-left: 25px;
   }
-  #boojum {
-    background-size: 100%;
-    height: -webkit-calc(-54%);
-    height: -moz-calc(-54%);
-    height: -o-calc(-54%);
-    height: calc(-54%);
-    /* Deduct .afix-top { top: 100px; } */
-  
-    width: 990px;
-  }
-  #boojum.s {
-    display: none;
-  }
-  #boojum.m {
-    display: none;
-  }
-  #boojum.l {
-    display: block;
-  }
-  .affix-top {
-    top: 154px;
-    /* .container { padding-top: 50px; } + header h1 { height: 54px; } + main { padding-top: 50px; } */
-  
-  }
   .container > .row > div {
     padding-right: 50px;
     padding-left: 50px;
@@ -912,30 +1103,6 @@ html body small {
   section > .row > .col-md-6:nth-of-type(2) {
     padding-right: 50px;
     padding-left: 25px;
-  }
-  #boojum {
-    background-size: 100%;
-    height: -webkit-calc(-54%);
-    height: -moz-calc(-54%);
-    height: -o-calc(-54%);
-    height: calc(-54%);
-    /* Deduct .afix-top { top: 100px; } */
-  
-    width: 1190px;
-  }
-  #boojum.s {
-    display: none;
-  }
-  #boojum.m {
-    display: none;
-  }
-  #boojum.l {
-    display: block;
-  }
-  .affix-top {
-    top: 154px;
-    /* .container { padding-top: 50px; } + header h1 { height: 54px; } + main { padding-top: 50px; } */
-  
   }
   .container {
     padding-top: 50px;
