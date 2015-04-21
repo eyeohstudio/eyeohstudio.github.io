@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="object-0411-0420" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="-66 -66 132 132" xml:space="preserve">
+  <g>
+    <g>
+      <polygon class="hue" fill="#D4E458" points="-66,66 -22,66 44,0 44,-44"/>
+    </g>
+    <g>
+      <polygon class="color" points="22,-66 -66,22 -66,66 66,-66"/>
+    </g>
+  </g>
+  <style type="text/css">.color, .hue { fill: #d4e458; } * { stroke-width: 0; } .hue { opacity: .4; }</style>
+</svg>
