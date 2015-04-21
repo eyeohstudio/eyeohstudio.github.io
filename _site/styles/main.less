@@ -1,3 +1,8 @@
+// compress: true, strictMath: true
+// https://github.com/jdiehl/brackets-less-autocompile
+// LESS AutoCompile
+// LESS AutoCompile is an extension for the code editor Brackets that adds automatic compilation of LESS files upon saving.
+
 @import url('base.less');
 
 ////////////////////////////////////////////////////////////////
@@ -26,18 +31,19 @@ section.collapsing {
 #boojum {
   background-image: url('../objects/W&1404.svg');
   background-repeat: no-repeat;
-  background-size: 100% auto;
-  height: 100%;
-  position: absolute;
-  top: 0; left: 0;
-  width: 100%;
+  left: 0;
+  margin-left: auto;
+  margin-right: auto;
+  //position: absolute;
+  right: 0;
   z-index: -1;
   
   /*
-   * Please, uncomment the correct position.                */
-  
-  background-position: center bottom;
-  //background-position: center top;
+   * Please, uncomment the correct position.
+   * If background-position: center top deactivate the      
+   * affix plugin.                                          */
+
+  background-position: center top;
 }
 
 .no-svg
@@ -54,6 +60,10 @@ section.collapsing {
 .no-svg
 #title {
   background-image: url('../images/logo.png');
+}
+
+.affix-top {
+  position: absolute;
 }
 
 .container {
@@ -109,9 +119,20 @@ section.collapsing {
     border-radius: 0;
     color: @white;
     max-width: 204px;
+<<<<<<< HEAD
     padding: 6px 18px 8px 18px;
     text-align: left;
   }
+=======
+    padding: 13px 19px;
+    text-align: left;
+  }
+  
+  img {
+    height: 19px;
+    width: 19px;
+  }
+>>>>>>> sid
 }
 
 .tooltip.top .tooltip-arrow {
@@ -254,6 +275,34 @@ section > .row > div {
   padding-right: 25px; padding-left: 25px;
 }
 
+<<<<<<< HEAD
+=======
+#boojum {
+  background-size: contain;
+  height: -webkit-calc(100% - 100px);
+  height:    -moz-calc(100% - 100px);
+  height:      -o-calc(100% - 100px);
+  height:         calc(100% - 100px); /* Deduct .afix-top { top: 100px; } */
+  width: 100%;
+}
+
+#boojum.s {
+  display: block;
+}
+
+#boojum.m {
+  .hidden;
+}
+
+#boojum.l {
+  .hidden;
+}
+
+.affix-top {
+  top: 100px; /* .container { padding-top: 25px; } + header h1 { height: 50px; } + main { padding-top: 25px; } */
+}
+
+>>>>>>> sid
 .container {
     padding-top: 25px;
   }
@@ -296,7 +345,7 @@ html {
 
     main {
       margin-top: -25px; /* <hr> margin-bottom is deducted */
-      padding-top: 25px;padding-bottom: 25px;
+      padding-top: 25px; padding-bottom: 25px;
 
       section {
 
@@ -355,6 +404,34 @@ html {
     padding-right: 35px; padding-left: 35px;
   }
   
+<<<<<<< HEAD
+=======
+  #boojum {
+    background-size: contain;
+    height: -webkit-calc(100% - 144px);
+    height:    -moz-calc(100% - 144px);
+    height:      -o-calc(100% - 144px);
+    height:         calc(100% - 144px); /* Deduct .afix-top { top: 100px; } */
+    width: 100%;
+  }
+  
+  #boojum.s {
+    .hidden;
+  }
+
+  #boojum.m {
+    display: block;
+  }
+
+  #boojum.l {
+    .hidden;
+  }
+
+  .affix-top {
+    top: 144px; /* .container { padding-top: 35px; } + header h1 { height: 74px; } + main { padding-top: 35px; } */
+  }
+  
+>>>>>>> sid
   .container {
     padding-top: 35px;
   }
@@ -457,6 +534,34 @@ section > div:nth-of-type(2) {
     padding-right: 50px; padding-left: 50px;
   }
   
+<<<<<<< HEAD
+=======
+  #boojum {
+    background-size: 100%;
+    height: -webkit-calc(100% - 154px);
+    height:    -moz-calc(100% - 154px);
+    height:      -o-calc(100% - 154px);
+    height:         calc(100% - 154px); /* Deduct .afix-top { top: 100px; } */
+    width: 100%;
+  }
+  
+  #boojum.s {
+    .hidden;
+  }
+
+  #boojum.m {
+    .hidden;
+  }
+
+  #boojum.l {
+    display: block;
+  }
+
+  .affix-top {
+    top: 154px; /* .container { padding-top: 50px; } + header h1 { height: 54px; } + main { padding-top: 50px; } */
+  }
+  
+>>>>>>> sid
   .container {
     padding-top: 50px;
   }
@@ -556,6 +661,36 @@ section > div:nth-of-type(2) {
   
   section > .row > div {
     padding-right: 50px; padding-left: 50px;
+  }
+
+  
+  #boojum {
+    background-size: 100%;
+    height: -webkit-calc(100% - 154px);
+    height:    -moz-calc(100% - 154px);
+    height:      -o-calc(100% - 154px);
+    height:         calc(100% - 154px); /* Deduct .afix-top { top: 100px; } */
+    width: 770px;
+  }
+  
+  #boojum.s {
+    .hidden;
+  }
+
+  #boojum.m {
+    .hidden;
+  }
+
+  #boojum.l {
+    display: block;
+  }
+
+  .affix-top {
+    top: 154px; /* .container { padding-top: 50px; } + header h1 { height: 54px; } + main { padding-top: 50px; } */
+  }
+  
+  .container {
+    padding-top: 50px;
   }
   
   .container {
@@ -665,6 +800,34 @@ section > div:nth-of-type(2) {
   
   section > .row > .col-md-6:nth-of-type(2) {
     padding-right: 50px; padding-left: 25px;
+<<<<<<< HEAD
+=======
+  }
+  
+  #boojum {
+    background-size: 100%;
+    height: -webkit-calc(100% - 154px);
+    height:    -moz-calc(100% - 154px);
+    height:      -o-calc(100% - 154px);
+    height:         calc(100% - 154px); /* Deduct .afix-top { top: 100px; } */
+    width: 990px;
+  }
+  
+  #boojum.s {
+    .hidden;
+  }
+
+  #boojum.m {
+    .hidden;
+  }
+
+  #boojum.l {
+    display: block;
+  }
+
+  .affix-top {
+    top: 154px; /* .container { padding-top: 50px; } + header h1 { height: 54px; } + main { padding-top: 50px; } */
+>>>>>>> sid
   }
   
   .container > .row > div {
@@ -768,6 +931,34 @@ section > div:nth-of-type(2) {
     padding-right: 50px; padding-left: 25px;
   }
   
+<<<<<<< HEAD
+=======
+  #boojum {
+    background-size: 100%;
+    height: -webkit-calc(100% - 154px);
+    height:    -moz-calc(100% - 154px);
+    height:      -o-calc(100% - 154px);
+    height:         calc(100% - 154px); /* Deduct .afix-top { top: 100px; } */
+    width: 1190px;
+  }
+  
+  #boojum.s {
+    .hidden;
+  }
+
+  #boojum.m {
+    .hidden;
+  }
+
+  #boojum.l {
+    display: block;
+  }
+
+  .affix-top {
+    top: 154px; /* .container { padding-top: 50px; } + header h1 { height: 54px; } + main { padding-top: 50px; } */
+  }
+  
+>>>>>>> sid
   .container {
     padding-top: 50px;
   }
