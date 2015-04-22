@@ -1,10 +1,4 @@
-// compress: false, strictMath: false
-// https://github.com/jdiehl/brackets-less-autocompile
-// LESS AutoCompile
-// LESS AutoCompile is an extension for the code editor Brackets that adds automatic compilation of LESS files upon saving.
-
 @import url('base.less');
-@import url('boojum.less');
 
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
@@ -37,7 +31,7 @@ section.collapsing {
 
 .no-svg
 #title {
-  background-image: url('../images/logo.png');
+  background-image: url('../images/logo.png'); /* fallback */
 }
 
 .container {
@@ -82,7 +76,7 @@ section.collapsing {
 }
 
 .off {
-  cursor: default;
+  cursor: default; /* (kind of) deactivation for links */
 }
 
 .tooltip {
