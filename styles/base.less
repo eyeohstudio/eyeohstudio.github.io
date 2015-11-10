@@ -1,14 +1,23 @@
 // compress: false, strictMath: false
-// https://github.com/jdiehl/brackets-less-autocompile
-// LESS AutoCompile
-// LESS AutoCompile is an extension for the code editor Brackets that adds automatic compilation of LESS files upon saving.
+// LESS compile options can be set in the first line of the edited file.
+// @link https://github.com/jdiehl/brackets-less-autocompile
+
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////// THIS IS THE BEGINNING
+
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////// IMPORTS
 
 @import url('fonts.css');
 
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////// COLORS
 
 @black: #212322;
 @white: #ffffff;
@@ -16,13 +25,46 @@
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////// FONTS
 
 .font-family-bold { font-family: 'BrixSans'; font-weight: bold; font-style: normal; }
 .font-family-normal { font-family: 'BrixSlab'; font-weight: normal; font-style: normal; }
 
+// TRADE GOTHIC LT STD
+.font-family-trade-gothic-light { font-family: 'TradeGothicLtStdLight', sans-serif; }
+.font-family-trade-gothic-light-oblique { font-family: 'TradeGothicLtStdLightOblique', sans-serif; }
+.font-family-trade-gothic-regular { font-family: 'TradeGothicLtStdRegular', sans-serif; }
+.font-family-trade-gothic-regular-oblique { font-family: 'TradeGothicLtStdRegularOblique', sans-serif; }
+.font-family-trade-gothic-regular-extended { font-family: 'TradeGothicLtStdExtended', sans-serif; }
+.font-family-trade-gothic-bold { font-family: 'TradeGothicLtStdBold', sans-serif; }
+.font-family-trade-gothic-bold-oblique { font-family: 'TradeGothicLtStdBoldOblique', sans-serif; }
+.font-family-trade-gothic-bold-extended { font-family: 'TradeGothicLtStdBoldExtended', sans-serif; }
+.font-family-trade-gothic-bold2 { font-family: 'TradeGothicLtStdBold2', sans-serif; }
+.font-family-trade-gothic-bold2-oblique { font-family: 'TradeGothicLtStdBold2Oblique', sans-serif; }
+.font-family-trade-gothic-boldcond18 { font-family: 'TradeGothicLtStdBoldCond18', sans-serif; }
+.font-family-trade-gothic-boldcond18-oblique { font-family: 'TradeGothicLtStdBoldCond18Oblique', sans-serif; }
+.font-family-trade-gothic-boldcond20 { font-family: 'TradeGothicLtStdBoldCond20', sans-serif; }
+.font-family-trade-gothic-boldcond20-oblique { font-family: 'TradeGothicLtStdBoldCond20Oblique', sans-serif; }
+
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////// FONT-WEIGHT
+
+.thin { font-weight: 100; }
+.extra-light { font-weight: 200; }
+.light { font-weight: 300; }
+.normal { font-weight: 400; }
+.medium { font-weight: 500; }
+.semi-bold { font-weight: 600; }
+.bold { font-weight: 700; }
+.extra-bold { font-weight: 800; }
+.ultra-bold { font-weight: 900; }
+
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////// TYPOGRAPHY MIXINS
 
 .font-size(@sizeValue) {
   @remValue: @sizeValue;
@@ -40,6 +82,8 @@
 
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////// BROWSER FIX
 
 * {
   -moz-osx-font-smoothing: grayscale;
@@ -51,26 +95,14 @@
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////
-
-.full-height { height: 100%; }
-.full-width { width: 100%; }
-.hidden { display: none; }
-.list-style-none { list-style-type: none; }
-.no-repeat { background-repeat: no-repeat; }
-.table { display: table; }
-.vertical-centering { vertical-align: middle; display: table-cell; }
-.zero { margin: 0; padding: 0; }
-
-////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////// USEFUL CLASSES
 
 .fadeIn {
   -webkit-animation-name: fadeIn;
           animation-name: fadeIn;
 
-  -webkit-animation-duration: .32s;
-          animation-duration: .32s;
+  -webkit-animation-duration: .3s;
+          animation-duration: .3s;
 
   -webkit-animation-timing-function: ease;
           animation-timing-function: ease;
@@ -86,10 +118,7 @@
   100% { opacity: 1; }
 }
 
-////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////
-
-.flip {
+.fliph {
   -webkit-transform: scaleX(-1);
      -moz-transform: scaleX(-1);
        -o-transform: scaleX(-1);
@@ -98,9 +127,30 @@
       filter: FlipH;
 }
 
+.flipv {
+  -webkit-transform: scaleY(-1);
+     -moz-transform: scaleY(-1);
+       -o-transform: scaleY(-1);
+          transform: scaleY(-1);
+  -ms-filter: "FlipV";
+      filter: FlipV;
+}
+
+.hide {
+  display: none;
+}
+
+.invisible {
+  visibility: hidden;
+}
+
 .opaque {
   opacity: 1;
   filter:alpha(opacity=100);
+}
+
+.show {
+  display: block;
 }
 
 .translucent {
@@ -115,65 +165,42 @@
 
 .transition {
   -webkit-backface-visibility: hidden; // fix for transition flickering
-  -webkit-transition: .3s ease;
-     -moz-transition: .3s ease;
-      -ms-transition: .3s ease;
-       -o-transition: .3s ease;
-          transition: .3s ease;
+  -webkit-transition: .3s ease-in-out;
+     -moz-transition: .3s ease-in-out;
+      -ms-transition: .3s ease-in-out;
+       -o-transition: .3s ease-in-out;
+          transition: .3s ease-in-out;
 }
 
-////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////
+.visible {
+  visibility: visible;
+}
 
-/*
- * Useful Bootstrap variables for media queries made available for main.less.
+/**
+ * Clearfix
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ *
+ * @source http://nicolasgallagher.com/micro-clearfix-hack/
  */
-
-// Extra small screen / phone
-@screen-xs:                  480px;
-@screen-xs-min:              @screen-xs;
-@screen-phone:               @screen-xs-min;
-
-// Small screen / tablet
-@screen-sm:                  768px;
-@screen-sm-min:              @screen-sm;
-@screen-tablet:              @screen-sm-min;
-
-// Medium screen / desktop
-@screen-md:                  992px;
-@screen-md-min:              @screen-md;
-@screen-desktop:             @screen-md-min;
-
-// Large screen / wide desktop
-@screen-lg:                  1200px;
-@screen-lg-min:              @screen-lg;
-@screen-lg-desktop:          @screen-lg-min;
-
-////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////
-
-/*
- * A helper mixin for applying high-resolution background images.
- * http://www.retinajs.com
- */
-
-@highdpi: ~"(-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-resolution: 1.5dppx)";
-
-.at2x(@path, @w: auto, @h: auto) {
-  background-image: url(@path);
-  @at2x_path: ~`@{path}.replace(/\.\w+$/, function(match) { return "@2x" + match; })`;
-
-  @media @highdpi {
-    background-image: url("@{at2x_path}");
-    background-size: @w @h;
+.clearfix() {
+  &:before,
+  &:after {
+    content: " "; // 1
+    display: table; // 2
+  }
+  &:after {
+    clear: both;
   }
 }
 
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////// THIS IS THE END

@@ -1,8 +1,8 @@
 # Permalinks
-permalink:        pretty
+permalink:        none
 
 # Setup
-title:            I/O
+title:            I/O studio
 url:              http://wearestudio.io
 
 author:
@@ -14,3 +14,16 @@ version:          0.0.0
 
 github:
   repo:           https://github.com/eyeohstudio/eyeohstudio.github.io
+
+# Misc
+timezone:         Europe/Madrid
+encoding:         utf-8
+
+# Defaults
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
