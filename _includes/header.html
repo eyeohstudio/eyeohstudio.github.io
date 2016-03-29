@@ -26,14 +26,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="format-detection" content="telephone=no">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>{{ site.title }}</title>
-    <!-- Styles -->
-    <link rel="stylesheet" href="/style.css">
-    <!-- Icons -->
+    <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+    <link rel="stylesheet" href="{{ "/style.css" | prepend: site.baseurl }}">
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+    <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
     {% include icons.html %}
-    <!-- Feeds -->
-    <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -41,8 +39,8 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
     <!-- Modernizr
-         Custom built: Inline SVG, SVG, SVG clip paths -->
-    <script src="/scripts/modernizr.js"></script>
+         Custom built: SVG, SVG as an <img> tag source, SVG clip paths, SVG filters, SVG foreignObject, Inline SVG, SVG SMIL animation -->
+    <script src="/scripts/modernizr-custom.min.js"></script>
     <script> /*
       var password;
       var secret = 'Joffrey';
@@ -51,4 +49,4 @@
       window.location = 'https://youtu.be/010KyIQjkTk'; */
     </script>
   </head>
-  <body id="giraffe" class="hidden">
+  <body class="hide">

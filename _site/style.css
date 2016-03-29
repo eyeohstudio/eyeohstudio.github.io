@@ -5,6 +5,5 @@ Up above the world you fly,
 Like a tea-tray in the sky.
 */
 
-@import url('styles/foundation.min.css');
-@import url('styles/normalize.min.css');
+@import url('styles/bootstrap.min.css');
 @import url('styles/main.css');

@@ -9,14 +9,9 @@
   "private": true,
   "ignore": [
     "**/.*",
-    "node_modules",
     "_bower_components"
   ],
   "dependencies": {
-    "foundation": "~5.5.3",
-    "jekyll-and-zurb": "~2.11.6"
-  },
-  "resolutions": {
-    "foundation": "~5.5.3"
+    "bootstrap": "^3.3.6"
   }
 }
