@@ -10,9 +10,296 @@
   html {
 
     body {
-      background: grey;
+      background: @white;
+      color: @black;
+
+      header {
+        .clearfix;
+        margin: 35px / 1.5;
+
+        nav.navbar.navbar-default {
+          border: none;
+          background-color: transparent;
+          float: right;
+          margin-bottom: 0;
+          height: auto; width: 100%;
+          position: relative;
+
+
+          .navbar-header {
+            position: relative;
+            -webkit-transform-style: preserve-3d;
+               -moz-transform-style: preserve-3d;
+                    transform-style: preserve-3d;
+
+            h1 {
+              .show;
+              float: left;
+              height: auto; width: 50%;
+              margin-top: 0; margin-bottom: 0;
+
+              a {
+                .show;
+                border: none;
+
+                &:hover {
+                }
+
+                img {
+                  object-fit: contain;
+                }
+              }
+            }
+
+            button {
+              background-color: transparent;
+              border: none;
+              border-radius: 0;
+              margin: 0;
+              padding: 0;
+              top: 50%;
+              transform: translateY(50%);
+
+              .icon-bar {
+                background-color: @black;
+                border-radius: 0;
+                height: 4px; width: 32px;
+                margin-top: 6px;
+
+                &:nth-of-type(2) {
+                  margin-top: 0;
+                }
+              }
+            }
+          }
+
+          .navbar-collapse {
+            border: none;
+            margin-top: 35px / 1.5;
+            padding-right: 0; padding-left: 0;
+
+            ul {
+              margin: 0;
+
+              li {
+                .BrixSans-Bold;
+                border-bottom: 1px solid @black;
+                font-size: 14px;
+                text-transform: uppercase;
+
+                &:nth-of-type(1) {
+                  border-top: 1px solid @black;
+                }
+
+                a {
+                  border: none;
+                  color: @black;
+                  padding: 0;
+                  padding-top: 3px; padding-bottom: 3px;
+
+                  &:active,
+                  &:focus,
+                  &:hover,
+                  &:visited {
+                  }
+
+                  &:hover {
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+
+      div.spring {
+        margin: 35px / 1.5;
+
+        p {
+          .BrixSlab-ExtraLight;
+          .show;
+          font-size: 18px;
+          line-height: 1.3em;
+          margin: 0;
+          text-transform: uppercase;
+        }
+      }
+
+      ul.summer {
+        background: LemonChiffon;
+        margin-bottom: 0;
+        padding: 0;
+        list-style-type: none;
+      }
+
+      div.autumn {
+        margin: 35px / 1.5;
+
+        h2 {
+          .BrixSans-Bold;
+          font-size: 14px;
+          margin: 0;
+          margin-bottom: 35px / 1.5;
+          text-transform: uppercase;
+        }
+
+        p {
+          .BrixSlab-ExtraLight;
+          font-size: 13px;
+          line-height: 1.3em;
+          margin: 0;
+          margin-bottom: 1em;
+
+          a {
+
+            &:hover {
+            }
+          }
+        }
+      }
+
+      div.winter {
+        margin: 35px / 1.5;
+
+        p {
+          .BrixSlab-ExtraLight;
+          font-size: 13px;
+          line-height: 1.3em;
+          margin: 0;
+
+          span {
+            .show;
+
+            &:nth-of-type(1) {
+              .BrixSans-Bold;
+              margin-bottom: 35px / 10;
+            }
+
+            &:nth-of-type(2) {
+              overflow-x: visible;
+              white-space: nowrap;
+            }
+
+            &:nth-of-type(3) {
+
+              a {
+                border: none;
+
+                &:hover {
+                }
+              }
+            }
+
+            &:nth-of-type(4) {
+
+              a {
+                border: none;
+
+                &:hover {
+                }
+              }
+            }
+          }
+        }
+
+        aside {
+          .BrixSans-Bold;
+          font-size: 12px;
+          margin-top: 35px / (1.5 * 2);
+          text-transform: uppercase;
+
+          a {
+            border: none;
+
+            &:hover {
+            }
+          }
+        }
+      }
+
+      a {
+        .transition;
+        border-bottom: 1px solid fade(@black, 50%);
+        color: @black;
+        text-decoration: none;
+
+        &:active,
+        &:focus,
+        &:hover,
+        &:visited {
+          color: @black;
+          text-decoration: none;
+        }
+
+        &:hover {
+          opacity: 0.8;
+        }
+      }
     }
   }
+
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+
+.container-fluid {
+  padding-right: 0; padding-left: 0;
+
+  .row {
+
+    .col-xs-12 {
+    }
+
+    &:nth-of-type(1) {
+    }
+
+    &:nth-of-type(2) {
+    }
+
+    &:nth-of-type(3) {
+    }
+
+    &:nth-of-type(4) {
+
+      .col-xs-12 {
+
+        &:nth-of-type(1) {
+
+          div.autumn {
+            margin-bottom: 0;
+
+            p {
+
+              &:last-of-type {
+                border-bottom: 1px solid @black;
+                margin-bottom: 0;
+                padding-bottom: 35px / 1.5;
+              }
+            }
+          }
+        }
+
+        &:nth-of-type(2) {
+
+          div.autumn {
+            margin-bottom: 0;
+
+            p {
+
+              &:last-of-type {
+                border-bottom: 1px solid @black;
+                margin-bottom: 0;
+                padding-bottom: 35px / 1.5;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    &:nth-of-type(5) {
+    }
+  }
+}
 
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////

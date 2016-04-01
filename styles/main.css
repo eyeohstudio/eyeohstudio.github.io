@@ -128,7 +128,203 @@
  * @source http://nicolasgallagher.com/micro-clearfix-hack/
  */
 html body {
-  background: grey;
+  background: #ffffff;
+  color: #212322;
+}
+html body header {
+  margin: 23.33333333px;
+}
+html body header:before,
+html body header:after {
+  content: " ";
+  display: table;
+}
+html body header:after {
+  clear: both;
+}
+html body header nav.navbar.navbar-default {
+  border: none;
+  background-color: transparent;
+  float: right;
+  margin-bottom: 0;
+  height: auto;
+  width: 100%;
+  position: relative;
+}
+html body header nav.navbar.navbar-default .navbar-header {
+  position: relative;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+html body header nav.navbar.navbar-default .navbar-header h1 {
+  display: block;
+  float: left;
+  height: auto;
+  width: 50%;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+html body header nav.navbar.navbar-default .navbar-header h1 a {
+  display: block;
+  border: none;
+}
+html body header nav.navbar.navbar-default .navbar-header h1 a img {
+  object-fit: contain;
+}
+html body header nav.navbar.navbar-default .navbar-header button {
+  background-color: transparent;
+  border: none;
+  border-radius: 0;
+  margin: 0;
+  padding: 0;
+  top: 50%;
+  transform: translateY(50%);
+}
+html body header nav.navbar.navbar-default .navbar-header button .icon-bar {
+  background-color: #212322;
+  border-radius: 0;
+  height: 4px;
+  width: 32px;
+  margin-top: 6px;
+}
+html body header nav.navbar.navbar-default .navbar-header button .icon-bar:nth-of-type(2) {
+  margin-top: 0;
+}
+html body header nav.navbar.navbar-default .navbar-collapse {
+  border: none;
+  margin-top: 23.33333333px;
+  padding-right: 0;
+  padding-left: 0;
+}
+html body header nav.navbar.navbar-default .navbar-collapse ul {
+  margin: 0;
+}
+html body header nav.navbar.navbar-default .navbar-collapse ul li {
+  font-family: BrixSansBold;
+  border-bottom: 1px solid #212322;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+html body header nav.navbar.navbar-default .navbar-collapse ul li:nth-of-type(1) {
+  border-top: 1px solid #212322;
+}
+html body header nav.navbar.navbar-default .navbar-collapse ul li a {
+  border: none;
+  color: #212322;
+  padding: 0;
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+html body div.spring {
+  margin: 23.33333333px;
+}
+html body div.spring p {
+  font-family: BrixSlab-ExtraLight;
+  display: block;
+  font-size: 18px;
+  line-height: 1.3em;
+  margin: 0;
+  text-transform: uppercase;
+}
+html body ul.summer {
+  background: LemonChiffon;
+  margin-bottom: 0;
+  padding: 0;
+  list-style-type: none;
+}
+html body div.autumn {
+  margin: 23.33333333px;
+}
+html body div.autumn h2 {
+  font-family: BrixSansBold;
+  font-size: 14px;
+  margin: 0;
+  margin-bottom: 23.33333333px;
+  text-transform: uppercase;
+}
+html body div.autumn p {
+  font-family: BrixSlab-ExtraLight;
+  font-size: 13px;
+  line-height: 1.3em;
+  margin: 0;
+  margin-bottom: 1em;
+}
+html body div.winter {
+  margin: 23.33333333px;
+}
+html body div.winter p {
+  font-family: BrixSlab-ExtraLight;
+  font-size: 13px;
+  line-height: 1.3em;
+  margin: 0;
+}
+html body div.winter p span {
+  display: block;
+}
+html body div.winter p span:nth-of-type(1) {
+  font-family: BrixSansBold;
+  margin-bottom: 3.5px;
+}
+html body div.winter p span:nth-of-type(2) {
+  overflow-x: visible;
+  white-space: nowrap;
+}
+html body div.winter p span:nth-of-type(3) a {
+  border: none;
+}
+html body div.winter p span:nth-of-type(4) a {
+  border: none;
+}
+html body div.winter aside {
+  font-family: BrixSansBold;
+  font-size: 12px;
+  margin-top: 11.66666667px;
+  text-transform: uppercase;
+}
+html body div.winter aside a {
+  border: none;
+}
+html body a {
+  -webkit-backface-visibility: hidden;
+  -webkit-transition: 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out;
+  -ms-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  border-bottom: 1px solid rgba(33, 35, 34, 0.5);
+  color: #212322;
+  text-decoration: none;
+}
+html body a:active,
+html body a:focus,
+html body a:hover,
+html body a:visited {
+  color: #212322;
+  text-decoration: none;
+}
+html body a:hover {
+  opacity: 0.8;
+}
+.container-fluid {
+  padding-right: 0;
+  padding-left: 0;
+}
+.container-fluid .row:nth-of-type(4) .col-xs-12:nth-of-type(1) div.autumn {
+  margin-bottom: 0;
+}
+.container-fluid .row:nth-of-type(4) .col-xs-12:nth-of-type(1) div.autumn p:last-of-type {
+  border-bottom: 1px solid #212322;
+  margin-bottom: 0;
+  padding-bottom: 23.33333333px;
+}
+.container-fluid .row:nth-of-type(4) .col-xs-12:nth-of-type(2) div.autumn {
+  margin-bottom: 0;
+}
+.container-fluid .row:nth-of-type(4) .col-xs-12:nth-of-type(2) div.autumn p:last-of-type {
+  border-bottom: 1px solid #212322;
+  margin-bottom: 0;
+  padding-bottom: 23.33333333px;
 }
 @media (min-width: 480px) {
   html body {
