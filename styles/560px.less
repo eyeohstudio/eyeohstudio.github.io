@@ -2,7 +2,7 @@
 
 @import url('base.less');
 
-@media (min-width: 480px) {
+@media (min-width: 560px) {
 
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
@@ -17,8 +17,8 @@
 
       header {
         .clearfix;
-        margin: 35px;
-        margin-bottom: (35px / 1.5) / 1.5;
+        margin: 35px * 1.25;
+        margin-bottom: (35px * 1.25) / 1.5;
 
         nav.navbar.navbar-default {
           border: none;
@@ -78,7 +78,7 @@
 
           .navbar-collapse {
             border: none;
-            margin-top: 35px; margin-bottom: (-35px / 1.5) / 1.5;
+            margin-top: 35px * 1.25; margin-bottom: (-35px * 1.25) / 1.5;
             padding-right: 0; padding-left: 0;
 
             ul {
@@ -87,7 +87,7 @@
               li {
                 .BrixSans-Bold;
                 border-bottom: 1px solid @black;
-                font-size: 18px;
+                font-size: 20px;
                 text-transform: uppercase;
 
                 &:nth-of-type(1) {
@@ -98,7 +98,7 @@
                   border: none;
                   color: @black;
                   padding: 0;
-                  padding-top: 6px; padding-bottom: 6px;
+                  padding-top: 8px; padding-bottom: 8px;
 
                   &:active,
                   &:focus,
@@ -116,12 +116,12 @@
       }
 
       div.spring {
-        margin: 35px;
+        margin: 35px * 1.25;
 
         p {
           .BrixSlab-ExtraLight;
           .show;
-          font-size: 26px;
+          font-size: 30px;
           line-height: 1.3em;
           margin: 0;
           text-transform: uppercase;
@@ -136,19 +136,19 @@
       }
 
       div.autumn {
-        margin: 35px;
+        margin: 35px * 1.25;
 
         h2 {
           .BrixSans-Bold;
-          font-size: 20px;
+          font-size: 22px;
           margin: 0;
-          margin-bottom: 35px / 2;
+          margin-bottom: (35px * 1.25) / 2;
           text-transform: uppercase;
         }
 
         p {
           .BrixSlab-ExtraLight;
-          font-size: 20px;
+          font-size: 22px;
           line-height: 1.3em;
           margin: 0;
           margin-bottom: 1em;
@@ -162,11 +162,11 @@
       }
 
       div.winter {
-        margin: 35px;
+        margin: 35px * 1.25;
 
         p {
           .BrixSlab-ExtraLight;
-          font-size: 20px;
+          font-size: 22px;
           line-height: 1.3em;
           margin: 0;
 
@@ -175,7 +175,7 @@
 
             &:nth-of-type(1) {
               .BrixSans-Bold;
-              margin-bottom: 35px / 10;
+              margin-bottom: 35px * 1.25 / 10;
             }
 
             &:nth-of-type(2) {
@@ -207,8 +207,8 @@
 
         aside {
           .BrixSans-Bold;
-          font-size: 16px;
-          margin-top: 35px / (1.5 * 1);
+          font-size: 18px;
+          margin-top: 35px / (1.25 * 1);
           text-transform: uppercase;
 
           a {
@@ -281,7 +281,7 @@
                 &:last-of-type {
                   border-bottom: 1px solid @black;
                   margin-bottom: 0;
-                  padding-bottom: 35px;
+                  padding-bottom: 35px * 1.25;
                 }
               }
             }
@@ -297,7 +297,7 @@
                 &:last-of-type {
                   border-bottom: 1px solid @black;
                   margin-bottom: 0;
-                  padding-bottom: 35px;
+                  padding-bottom: 35px * 1.25;
                 }
               }
             }

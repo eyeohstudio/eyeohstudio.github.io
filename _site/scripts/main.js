@@ -7,7 +7,7 @@ jQuery(document).ready(function ($) {
 
   // Can bootstrap tooltips be turned off based on device screen size?
   // http://stackoverflow.com/questions/23048990/can-bootstrap-tooltips-be-turned-off-based-on-device-screen-size
-  if(!('ontouchstart' in window)) {
+  if (!('ontouchstart' in window)) {
     $('[data-toggle="tooltip"]').tooltip()
   }
 
@@ -62,8 +62,8 @@ jQuery(document).ready(function ($) {
     'Twin Peaks',
     'la Vila del Pingüí'
   ),
-  randomCityCa = cityCa[Math.floor( Math.random() * cityCa.length )];
-  $('.randomCityCa').text( randomCityCa );
+  randomCityCa = cityCa[Math.floor(Math.random() * cityCa.length)];
+  $('.randomCityCa').text(randomCityCa);
 
   var cityEn = new Array(
     'Bikini Bottom',
@@ -80,8 +80,8 @@ jQuery(document).ready(function ($) {
     'Twin Peaks',
     'Winterfell'
   ),
-  randomCityEn = cityEn[Math.floor( Math.random() * cityEn.length )];
-  $('.randomCityEn').text( randomCityEn );
+  randomCityEn = cityEn[Math.floor(Math.random() * cityEn.length)];
+  $('.randomCityEn').text(randomCityEn);
 
   var cityEs = new Array(
     'Fondo de Bikini',
@@ -98,15 +98,15 @@ jQuery(document).ready(function ($) {
     'Twin Peaks',
     'Villa Pingüino'
   ),
-  randomCityEs = cityEs[Math.floor( Math.random() * cityEs.length )];
-  $('.randomCityEs').text( randomCityEs );
+  randomCityEs = cityEs[Math.floor(Math.random() * cityEs.length)];
+  $('.randomCityEs').text(randomCityEs);
 
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
 
-  $(document).on('click', '.giraffe-toggle', function(event) {
+  $(document).on('click', '.giraffa-camelopardalis-toggle', function(event) {
     event.stopPropagation();
     var $this = $(this);
 
