@@ -13,6 +13,26 @@
       background: @white;
       color: @black;
 
+      a {
+        .transition;
+        border-bottom: 1px solid fade(@black, 64%);
+        color: @black;
+        text-decoration: none;
+        opacity: 1;
+
+        &:active,
+        &:focus,
+        &:hover,
+        &:visited {
+          color: @black;
+          text-decoration: none;
+        }
+
+        &:hover {
+          opacity: 0.64;
+        }
+      }
+
       header {
         .clearfix;
         margin: 35px / 1.5;
@@ -91,6 +111,22 @@
                   border-top: 1px solid @black;
                 }
 
+                &:nth-of-type(3),
+                &:nth-of-type(4) {
+
+                  a {
+
+                    &:after {
+                      .show;
+                      content: attr(alt);
+                    }
+
+                    abbr {
+                      .hide;
+                    }
+                  }
+                }
+
                 a {
                   border: none;
                   color: @black;
@@ -104,6 +140,11 @@
                   }
 
                   &:hover {
+                  }
+
+                  abbr {
+                    border-bottom: none;
+                    cursor: pointer;
                   }
                 }
               }
@@ -134,6 +175,7 @@
 
       div.autumn {
         margin: 35px / 1.5;
+        margin-bottom: 0;
 
         h2 {
           .BrixSans-Bold;
@@ -150,16 +192,26 @@
           margin: 0;
           margin-bottom: 1em;
 
+          &:last-of-type {
+            border-bottom: 1px solid @black;
+            margin-bottom: 0;
+            padding-bottom: 35px / 1.5;
+          }
+
           a {
 
             &:hover {
+              opacity: 1;
             }
           }
         }
       }
 
       div.winter {
-        margin: 35px / 1.5;
+        margin: 0 35px / 1.5;
+        margin-bottom: 0;
+        padding-top: 35px / 1.5;
+        position: relative;
 
         p {
           .BrixSlab-ExtraLight;
@@ -178,6 +230,13 @@
             &:nth-of-type(2) {
               overflow-x: visible;
               white-space: nowrap;
+
+              a {
+
+                &:hover {
+                  opacity: 1;
+                }
+              }
             }
 
             &:nth-of-type(3) {
@@ -215,24 +274,18 @@
             }
           }
         }
-      }
 
-      a {
-        .transition;
-        border-bottom: 1px solid fade(@black, 50%);
-        color: @black;
-        text-decoration: none;
+        footer {
+          height: auto; width: 100%;
+          padding-bottom: 35px / 1.5;
+          position: absolute;
+          bottom: 0; left: 0;
 
-        &:active,
-        &:focus,
-        &:hover,
-        &:visited {
-          color: @black;
-          text-decoration: none;
-        }
-
-        &:hover {
-          opacity: 0.8;
+          small {
+            .show;
+            font-size: 0.5em;
+            text-align: center;
+          }
         }
       }
     }
@@ -241,6 +294,10 @@
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
 
+a[data-toggle="tooltip"] {
+  white-space: nowrap;
+}
+
 section.collapsing {
   .transition;
   -webkit-transition: none;
@@ -248,7 +305,6 @@ section.collapsing {
 }
 
 .container-fluid {
-  padding-right: 0; padding-left: 0;
 
   .row {
 
@@ -271,15 +327,14 @@ section.collapsing {
         &:nth-of-type(1) {
 
           div.autumn {
-            margin-bottom: 0;
 
-            p {
+            h2 {
+            }
 
-              &:last-of-type {
-                border-bottom: 1px solid @black;
-                margin-bottom: 0;
-                padding-bottom: 35px / 1.5;
-              }
+            p:last-of-type {
+              border-bottom: none;
+              margin-bottom: 1em;
+              padding-bottom: 0;
             }
           }
         }
@@ -287,15 +342,11 @@ section.collapsing {
         &:nth-of-type(2) {
 
           div.autumn {
-            margin-bottom: 0;
+            margin-top: 0;
 
-            p {
-
-              &:last-of-type {
-                border-bottom: 1px solid @black;
-                margin-bottom: 0;
-                padding-bottom: 35px / 1.5;
-              }
+            h2 {
+              .hide;
+              .invisible;
             }
           }
         }
@@ -304,6 +355,42 @@ section.collapsing {
 
     &:nth-of-type(5) {
     }
+  }
+}
+
+.tooltip {
+  .BrixSans-Bold;
+  font-size: 12px;
+
+  .tooltip-arrow {
+    border-color: transparent;
+    border-style: solid;
+    height: 0; width: 0;
+    opacity: 0.9;
+    position: absolute;
+  }
+
+  .tooltip-inner {
+    background-color: @black;
+    border-radius: 0;
+    color: @white;
+    line-height: 1.4em;
+    padding: 0.25em 0.5em;
+    text-align: center;
+  }
+}
+
+.tooltip.top {
+  margin-top: -4px;
+  padding: 5px 0;
+
+  .tooltip-arrow {
+    margin-left: -4px;
+    border-left: 0 solid transparent !important;
+    border-right: 8px solid transparent !important;
+    border-top: 8px solid @black !important;
+    border-top-color: @black;
+    bottom: -3px; left: 50%;
   }
 }
 

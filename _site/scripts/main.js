@@ -106,6 +106,26 @@ jQuery(document).ready(function ($) {
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
 
+  $(function() {
+    $('.navbar-collapse ul li a[href*="#"]:not([class="giraffa-camelopardalis-toggle"]):not([href="#"])').click(function() {
+      if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+        if (target.length) {
+          $('html, body').animate({
+            scrollTop: target.offset().top + 1
+          }, 1000);
+          return false;
+        }
+      }
+    });
+  });
+
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+
   $(document).on('click', '.giraffa-camelopardalis-toggle', function(event) {
     event.stopPropagation();
     var $this = $(this);
@@ -123,6 +143,23 @@ jQuery(document).ready(function ($) {
     var target = $this.attr('data-target') || (href = $this.attr('href')) && href.replace(/.*(?=#[^\s]+$)/, ''); //strip for ie7
 
     $(target).collapse('toggle');
+  });
+
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+
+  $(document).ready(function() {
+    function setHeight() {
+      windowHeight = $(window).innerHeight();
+      $('.winter').css('min-height', windowHeight);
+    };
+    setHeight();
+
+    $(window).resize(function() {
+      setHeight();
+    });
   });
 
 ////////////////////////////////////////////////////////////////

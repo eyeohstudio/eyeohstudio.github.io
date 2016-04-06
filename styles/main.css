@@ -131,6 +131,28 @@ html body {
   background: #ffffff;
   color: #212322;
 }
+html body a {
+  -webkit-backface-visibility: hidden;
+  -webkit-transition: 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out;
+  -ms-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  border-bottom: 1px solid rgba(33, 35, 34, 0.64);
+  color: #212322;
+  text-decoration: none;
+  opacity: 1;
+}
+html body a:active,
+html body a:focus,
+html body a:hover,
+html body a:visited {
+  color: #212322;
+  text-decoration: none;
+}
+html body a:hover {
+  opacity: 0.64;
+}
 html body header {
   margin: 23.33333333px;
   margin-bottom: 15.55555556px;
@@ -211,12 +233,25 @@ html body header nav.navbar.navbar-default .navbar-collapse ul li {
 html body header nav.navbar.navbar-default .navbar-collapse ul li:nth-of-type(1) {
   border-top: 1px solid #212322;
 }
+html body header nav.navbar.navbar-default .navbar-collapse ul li:nth-of-type(3) a:after,
+html body header nav.navbar.navbar-default .navbar-collapse ul li:nth-of-type(4) a:after {
+  display: block;
+  content: attr(alt);
+}
+html body header nav.navbar.navbar-default .navbar-collapse ul li:nth-of-type(3) a abbr,
+html body header nav.navbar.navbar-default .navbar-collapse ul li:nth-of-type(4) a abbr {
+  display: none;
+}
 html body header nav.navbar.navbar-default .navbar-collapse ul li a {
   border: none;
   color: #212322;
   padding: 0;
   padding-top: 3px;
   padding-bottom: 3px;
+}
+html body header nav.navbar.navbar-default .navbar-collapse ul li a abbr {
+  border-bottom: none;
+  cursor: pointer;
 }
 html body div.spring {
   margin: 23.33333333px;
@@ -237,6 +272,7 @@ html body ul.summer {
 }
 html body div.autumn {
   margin: 23.33333333px;
+  margin-bottom: 0;
 }
 html body div.autumn h2 {
   font-family: BrixSansBold;
@@ -252,8 +288,19 @@ html body div.autumn p {
   margin: 0;
   margin-bottom: 1em;
 }
+html body div.autumn p:last-of-type {
+  border-bottom: 1px solid #212322;
+  margin-bottom: 0;
+  padding-bottom: 23.33333333px;
+}
+html body div.autumn p a:hover {
+  opacity: 1;
+}
 html body div.winter {
-  margin: 23.33333333px;
+  margin: 0 23.33333333px;
+  margin-bottom: 0;
+  padding-top: 23.33333333px;
+  position: relative;
 }
 html body div.winter p {
   font-family: BrixSlab-ExtraLight;
@@ -272,6 +319,9 @@ html body div.winter p span:nth-of-type(2) {
   overflow-x: visible;
   white-space: nowrap;
 }
+html body div.winter p span:nth-of-type(2) a:hover {
+  opacity: 1;
+}
 html body div.winter p span:nth-of-type(3) a {
   border: none;
 }
@@ -287,26 +337,21 @@ html body div.winter aside {
 html body div.winter aside a {
   border: none;
 }
-html body a {
-  -webkit-backface-visibility: hidden;
-  -webkit-transition: 0.3s ease-in-out;
-  -moz-transition: 0.3s ease-in-out;
-  -ms-transition: 0.3s ease-in-out;
-  -o-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
-  border-bottom: 1px solid rgba(33, 35, 34, 0.5);
-  color: #212322;
-  text-decoration: none;
+html body div.winter footer {
+  height: auto;
+  width: 100%;
+  padding-bottom: 23.33333333px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
-html body a:active,
-html body a:focus,
-html body a:hover,
-html body a:visited {
-  color: #212322;
-  text-decoration: none;
+html body div.winter footer small {
+  display: block;
+  font-size: 0.5em;
+  text-align: center;
 }
-html body a:hover {
-  opacity: 0.8;
+a[data-toggle="tooltip"] {
+  white-space: nowrap;
 }
 section.collapsing {
   -webkit-backface-visibility: hidden;
@@ -318,25 +363,50 @@ section.collapsing {
   -webkit-transition: none;
   transition: none;
 }
-.container-fluid {
-  padding-right: 0;
-  padding-left: 0;
-}
-.container-fluid .row:nth-of-type(4) .col-xs-12:nth-of-type(1) div.autumn {
-  margin-bottom: 0;
-}
 .container-fluid .row:nth-of-type(4) .col-xs-12:nth-of-type(1) div.autumn p:last-of-type {
-  border-bottom: 1px solid #212322;
-  margin-bottom: 0;
-  padding-bottom: 23.33333333px;
+  border-bottom: none;
+  margin-bottom: 1em;
+  padding-bottom: 0;
 }
 .container-fluid .row:nth-of-type(4) .col-xs-12:nth-of-type(2) div.autumn {
-  margin-bottom: 0;
+  margin-top: 0;
 }
-.container-fluid .row:nth-of-type(4) .col-xs-12:nth-of-type(2) div.autumn p:last-of-type {
-  border-bottom: 1px solid #212322;
-  margin-bottom: 0;
-  padding-bottom: 23.33333333px;
+.container-fluid .row:nth-of-type(4) .col-xs-12:nth-of-type(2) div.autumn h2 {
+  display: none;
+  visibility: hidden;
+}
+.tooltip {
+  font-family: BrixSansBold;
+  font-size: 12px;
+}
+.tooltip .tooltip-arrow {
+  border-color: transparent;
+  border-style: solid;
+  height: 0;
+  width: 0;
+  opacity: 0.9;
+  position: absolute;
+}
+.tooltip .tooltip-inner {
+  background-color: #212322;
+  border-radius: 0;
+  color: #ffffff;
+  line-height: 1.4em;
+  padding: 0.25em 0.5em;
+  text-align: center;
+}
+.tooltip.top {
+  margin-top: -4px;
+  padding: 5px 0;
+}
+.tooltip.top .tooltip-arrow {
+  margin-left: -4px;
+  border-left: 0 solid transparent !important;
+  border-right: 8px solid transparent !important;
+  border-top: 8px solid #212322 !important;
+  border-top-color: #212322;
+  bottom: -3px;
+  left: 50%;
 }
 @media (min-width: 375px) {
   html body {
@@ -423,6 +493,15 @@ section.collapsing {
   html body header nav.navbar.navbar-default .navbar-collapse ul li:nth-of-type(1) {
     border-top: 1px solid #212322;
   }
+  html body header nav.navbar.navbar-default .navbar-collapse ul li:nth-of-type(3) a:after,
+  html body header nav.navbar.navbar-default .navbar-collapse ul li:nth-of-type(4) a:after {
+    display: block;
+    content: attr(alt);
+  }
+  html body header nav.navbar.navbar-default .navbar-collapse ul li:nth-of-type(3) a abbr,
+  html body header nav.navbar.navbar-default .navbar-collapse ul li:nth-of-type(4) a abbr {
+    display: none;
+  }
   html body header nav.navbar.navbar-default .navbar-collapse ul li a {
     border: none;
     color: #212322;
@@ -449,6 +528,7 @@ section.collapsing {
   }
   html body div.autumn {
     margin: 28px;
+    margin-bottom: 0;
   }
   html body div.autumn h2 {
     font-family: BrixSansBold;
@@ -464,8 +544,19 @@ section.collapsing {
     margin: 0;
     margin-bottom: 1em;
   }
+  html body div.autumn p:last-of-type {
+    border-bottom: 1px solid #212322;
+    margin-bottom: 0;
+    padding-bottom: 28px;
+  }
+  html body div.autumn p a:hover {
+    opacity: 1;
+  }
   html body div.winter {
-    margin: 28px;
+    margin: 0 28px;
+    margin-bottom: 0;
+    padding-top: 28px;
+    position: relative;
   }
   html body div.winter p {
     font-family: BrixSlab-ExtraLight;
@@ -484,6 +575,9 @@ section.collapsing {
     overflow-x: visible;
     white-space: nowrap;
   }
+  html body div.winter p span:nth-of-type(2) a:hover {
+    opacity: 1;
+  }
   html body div.winter p span:nth-of-type(3) a {
     border: none;
   }
@@ -499,26 +593,18 @@ section.collapsing {
   html body div.winter aside a {
     border: none;
   }
-  html body a {
-    -webkit-backface-visibility: hidden;
-    -webkit-transition: 0.3s ease-in-out;
-    -moz-transition: 0.3s ease-in-out;
-    -ms-transition: 0.3s ease-in-out;
-    -o-transition: 0.3s ease-in-out;
-    transition: 0.3s ease-in-out;
-    border-bottom: 1px solid rgba(33, 35, 34, 0.5);
-    color: #212322;
-    text-decoration: none;
+  html body div.winter footer {
+    height: auto;
+    width: 100%;
+    padding-bottom: 28px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
   }
-  html body a:active,
-  html body a:focus,
-  html body a:hover,
-  html body a:visited {
-    color: #212322;
-    text-decoration: none;
-  }
-  html body a:hover {
-    opacity: 0.8;
+  html body div.winter footer small {
+    display: block;
+    font-size: 0.5em;
+    text-align: center;
   }
   section.collapsing {
     -webkit-backface-visibility: hidden;
@@ -529,26 +615,6 @@ section.collapsing {
     transition: 0.3s ease-in-out;
     -webkit-transition: none;
     transition: none;
-  }
-  .container-fluid {
-    padding-right: 0;
-    padding-left: 0;
-  }
-  .container-fluid .row:nth-of-type(4) .col-xs-12:nth-of-type(1) div.autumn {
-    margin-bottom: 0;
-  }
-  .container-fluid .row:nth-of-type(4) .col-xs-12:nth-of-type(1) div.autumn p:last-of-type {
-    border-bottom: 1px solid #212322;
-    margin-bottom: 0;
-    padding-bottom: 28px;
-  }
-  .container-fluid .row:nth-of-type(4) .col-xs-12:nth-of-type(2) div.autumn {
-    margin-bottom: 0;
-  }
-  .container-fluid .row:nth-of-type(4) .col-xs-12:nth-of-type(2) div.autumn p:last-of-type {
-    border-bottom: 1px solid #212322;
-    margin-bottom: 0;
-    padding-bottom: 28px;
   }
 }
 @media (min-width: 480px) {
@@ -636,6 +702,15 @@ section.collapsing {
   html body header nav.navbar.navbar-default .navbar-collapse ul li:nth-of-type(1) {
     border-top: 1px solid #212322;
   }
+  html body header nav.navbar.navbar-default .navbar-collapse ul li:nth-of-type(3) a:after,
+  html body header nav.navbar.navbar-default .navbar-collapse ul li:nth-of-type(4) a:after {
+    display: block;
+    content: attr(alt);
+  }
+  html body header nav.navbar.navbar-default .navbar-collapse ul li:nth-of-type(3) a abbr,
+  html body header nav.navbar.navbar-default .navbar-collapse ul li:nth-of-type(4) a abbr {
+    display: none;
+  }
   html body header nav.navbar.navbar-default .navbar-collapse ul li a {
     border: none;
     color: #212322;
@@ -662,6 +737,7 @@ section.collapsing {
   }
   html body div.autumn {
     margin: 35px;
+    margin-bottom: 0;
   }
   html body div.autumn h2 {
     font-family: BrixSansBold;
@@ -677,8 +753,19 @@ section.collapsing {
     margin: 0;
     margin-bottom: 1em;
   }
+  html body div.autumn p:last-of-type {
+    border-bottom: 1px solid #212322;
+    margin-bottom: 0;
+    padding-bottom: 35px;
+  }
+  html body div.autumn p a:hover {
+    opacity: 1;
+  }
   html body div.winter {
-    margin: 35px;
+    margin: 0 35px;
+    margin-bottom: 0;
+    padding-top: 35px;
+    position: relative;
   }
   html body div.winter p {
     font-family: BrixSlab-ExtraLight;
@@ -697,6 +784,9 @@ section.collapsing {
     overflow-x: visible;
     white-space: nowrap;
   }
+  html body div.winter p span:nth-of-type(2) a:hover {
+    opacity: 1;
+  }
   html body div.winter p span:nth-of-type(3) a {
     border: none;
   }
@@ -712,26 +802,18 @@ section.collapsing {
   html body div.winter aside a {
     border: none;
   }
-  html body a {
-    -webkit-backface-visibility: hidden;
-    -webkit-transition: 0.3s ease-in-out;
-    -moz-transition: 0.3s ease-in-out;
-    -ms-transition: 0.3s ease-in-out;
-    -o-transition: 0.3s ease-in-out;
-    transition: 0.3s ease-in-out;
-    border-bottom: 1px solid rgba(33, 35, 34, 0.5);
-    color: #212322;
-    text-decoration: none;
+  html body div.winter footer {
+    height: auto;
+    width: 100%;
+    padding-bottom: 35px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
   }
-  html body a:active,
-  html body a:focus,
-  html body a:hover,
-  html body a:visited {
-    color: #212322;
-    text-decoration: none;
-  }
-  html body a:hover {
-    opacity: 0.8;
+  html body div.winter footer small {
+    display: block;
+    font-size: 0.5em;
+    text-align: center;
   }
   section.collapsing {
     -webkit-backface-visibility: hidden;
@@ -742,26 +824,6 @@ section.collapsing {
     transition: 0.3s ease-in-out;
     -webkit-transition: none;
     transition: none;
-  }
-  .container-fluid {
-    padding-right: 0;
-    padding-left: 0;
-  }
-  .container-fluid .row:nth-of-type(4) .col-xs-12:nth-of-type(1) div.autumn {
-    margin-bottom: 0;
-  }
-  .container-fluid .row:nth-of-type(4) .col-xs-12:nth-of-type(1) div.autumn p:last-of-type {
-    border-bottom: 1px solid #212322;
-    margin-bottom: 0;
-    padding-bottom: 35px;
-  }
-  .container-fluid .row:nth-of-type(4) .col-xs-12:nth-of-type(2) div.autumn {
-    margin-bottom: 0;
-  }
-  .container-fluid .row:nth-of-type(4) .col-xs-12:nth-of-type(2) div.autumn p:last-of-type {
-    border-bottom: 1px solid #212322;
-    margin-bottom: 0;
-    padding-bottom: 35px;
   }
 }
 @media (min-width: 560px) {
@@ -849,6 +911,15 @@ section.collapsing {
   html body header nav.navbar.navbar-default .navbar-collapse ul li:nth-of-type(1) {
     border-top: 1px solid #212322;
   }
+  html body header nav.navbar.navbar-default .navbar-collapse ul li:nth-of-type(3) a:after,
+  html body header nav.navbar.navbar-default .navbar-collapse ul li:nth-of-type(4) a:after {
+    display: block;
+    content: attr(alt);
+  }
+  html body header nav.navbar.navbar-default .navbar-collapse ul li:nth-of-type(3) a abbr,
+  html body header nav.navbar.navbar-default .navbar-collapse ul li:nth-of-type(4) a abbr {
+    display: none;
+  }
   html body header nav.navbar.navbar-default .navbar-collapse ul li a {
     border: none;
     color: #212322;
@@ -875,6 +946,7 @@ section.collapsing {
   }
   html body div.autumn {
     margin: 43.75px;
+    margin-bottom: 0;
   }
   html body div.autumn h2 {
     font-family: BrixSansBold;
@@ -890,8 +962,19 @@ section.collapsing {
     margin: 0;
     margin-bottom: 1em;
   }
+  html body div.autumn p:last-of-type {
+    border-bottom: 1px solid #212322;
+    margin-bottom: 0;
+    padding-bottom: 43.75px;
+  }
+  html body div.autumn p a:hover {
+    opacity: 1;
+  }
   html body div.winter {
-    margin: 43.75px;
+    margin: 0 43.75px;
+    margin-bottom: 0;
+    padding-top: 43.75px;
+    position: relative;
   }
   html body div.winter p {
     font-family: BrixSlab-ExtraLight;
@@ -910,6 +993,9 @@ section.collapsing {
     overflow-x: visible;
     white-space: nowrap;
   }
+  html body div.winter p span:nth-of-type(2) a:hover {
+    opacity: 1;
+  }
   html body div.winter p span:nth-of-type(3) a {
     border: none;
   }
@@ -925,26 +1011,18 @@ section.collapsing {
   html body div.winter aside a {
     border: none;
   }
-  html body a {
-    -webkit-backface-visibility: hidden;
-    -webkit-transition: 0.3s ease-in-out;
-    -moz-transition: 0.3s ease-in-out;
-    -ms-transition: 0.3s ease-in-out;
-    -o-transition: 0.3s ease-in-out;
-    transition: 0.3s ease-in-out;
-    border-bottom: 1px solid rgba(33, 35, 34, 0.5);
-    color: #212322;
-    text-decoration: none;
+  html body div.winter footer {
+    height: auto;
+    width: 100%;
+    padding-bottom: 43.75px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
   }
-  html body a:active,
-  html body a:focus,
-  html body a:hover,
-  html body a:visited {
-    color: #212322;
-    text-decoration: none;
-  }
-  html body a:hover {
-    opacity: 0.8;
+  html body div.winter footer small {
+    display: block;
+    font-size: 0.5em;
+    text-align: center;
   }
   section.collapsing {
     -webkit-backface-visibility: hidden;
@@ -955,26 +1033,6 @@ section.collapsing {
     transition: 0.3s ease-in-out;
     -webkit-transition: none;
     transition: none;
-  }
-  .container-fluid {
-    padding-right: 0;
-    padding-left: 0;
-  }
-  .container-fluid .row:nth-of-type(4) .col-xs-12:nth-of-type(1) div.autumn {
-    margin-bottom: 0;
-  }
-  .container-fluid .row:nth-of-type(4) .col-xs-12:nth-of-type(1) div.autumn p:last-of-type {
-    border-bottom: 1px solid #212322;
-    margin-bottom: 0;
-    padding-bottom: 43.75px;
-  }
-  .container-fluid .row:nth-of-type(4) .col-xs-12:nth-of-type(2) div.autumn {
-    margin-bottom: 0;
-  }
-  .container-fluid .row:nth-of-type(4) .col-xs-12:nth-of-type(2) div.autumn p:last-of-type {
-    border-bottom: 1px solid #212322;
-    margin-bottom: 0;
-    padding-bottom: 43.75px;
   }
 }
 @media (min-width: 640px) {
@@ -1062,6 +1120,15 @@ section.collapsing {
   html body header nav.navbar.navbar-default .navbar-collapse ul li:nth-of-type(1) {
     border-top: 1px solid #212322;
   }
+  html body header nav.navbar.navbar-default .navbar-collapse ul li:nth-of-type(3) a:after,
+  html body header nav.navbar.navbar-default .navbar-collapse ul li:nth-of-type(4) a:after {
+    display: block;
+    content: attr(alt);
+  }
+  html body header nav.navbar.navbar-default .navbar-collapse ul li:nth-of-type(3) a abbr,
+  html body header nav.navbar.navbar-default .navbar-collapse ul li:nth-of-type(4) a abbr {
+    display: none;
+  }
   html body header nav.navbar.navbar-default .navbar-collapse ul li a {
     border: none;
     color: #212322;
@@ -1088,6 +1155,7 @@ section.collapsing {
   }
   html body div.autumn {
     margin: 50px;
+    margin-bottom: 0;
   }
   html body div.autumn h2 {
     font-family: BrixSansBold;
@@ -1103,8 +1171,19 @@ section.collapsing {
     margin: 0;
     margin-bottom: 1em;
   }
+  html body div.autumn p:last-of-type {
+    border-bottom: 1px solid #212322;
+    margin-bottom: 0;
+    padding-bottom: 50px;
+  }
+  html body div.autumn p a:hover {
+    opacity: 1;
+  }
   html body div.winter {
-    margin: 50px;
+    margin: 0 50px;
+    margin-bottom: 0;
+    padding-top: 50px;
+    position: relative;
   }
   html body div.winter p {
     font-family: BrixSlab-ExtraLight;
@@ -1123,6 +1202,9 @@ section.collapsing {
     overflow-x: visible;
     white-space: nowrap;
   }
+  html body div.winter p span:nth-of-type(2) a:hover {
+    opacity: 1;
+  }
   html body div.winter p span:nth-of-type(3) a {
     border: none;
   }
@@ -1138,26 +1220,18 @@ section.collapsing {
   html body div.winter aside a {
     border: none;
   }
-  html body a {
-    -webkit-backface-visibility: hidden;
-    -webkit-transition: 0.3s ease-in-out;
-    -moz-transition: 0.3s ease-in-out;
-    -ms-transition: 0.3s ease-in-out;
-    -o-transition: 0.3s ease-in-out;
-    transition: 0.3s ease-in-out;
-    border-bottom: 1px solid rgba(33, 35, 34, 0.5);
-    color: #212322;
-    text-decoration: none;
+  html body div.winter footer {
+    height: auto;
+    width: 100%;
+    padding-bottom: 50px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
   }
-  html body a:active,
-  html body a:focus,
-  html body a:hover,
-  html body a:visited {
-    color: #212322;
-    text-decoration: none;
-  }
-  html body a:hover {
-    opacity: 0.8;
+  html body div.winter footer small {
+    display: block;
+    font-size: 0.5em;
+    text-align: center;
   }
   section.collapsing {
     -webkit-backface-visibility: hidden;
@@ -1168,26 +1242,6 @@ section.collapsing {
     transition: 0.3s ease-in-out;
     -webkit-transition: none;
     transition: none;
-  }
-  .container-fluid {
-    padding-right: 0;
-    padding-left: 0;
-  }
-  .container-fluid .row:nth-of-type(4) .col-xs-12:nth-of-type(1) div.autumn {
-    margin-bottom: 0;
-  }
-  .container-fluid .row:nth-of-type(4) .col-xs-12:nth-of-type(1) div.autumn p:last-of-type {
-    border-bottom: 1px solid #212322;
-    margin-bottom: 0;
-    padding-bottom: 50px;
-  }
-  .container-fluid .row:nth-of-type(4) .col-xs-12:nth-of-type(2) div.autumn {
-    margin-bottom: 0;
-  }
-  .container-fluid .row:nth-of-type(4) .col-xs-12:nth-of-type(2) div.autumn p:last-of-type {
-    border-bottom: 1px solid #212322;
-    margin-bottom: 0;
-    padding-bottom: 50px;
   }
 }
 @media (min-width: 940px) {
@@ -1294,35 +1348,49 @@ section.collapsing {
     text-transform: uppercase;
   }
   html body header nav.navbar.navbar-default .navbar-collapse ul li:nth-of-type(1) {
-    display: none;
     border-top: none;
   }
-  html body header nav.navbar.navbar-default .navbar-collapse ul li:nth-of-type(2):after {
+  html body header nav.navbar.navbar-default .navbar-collapse ul li:nth-of-type(1):after {
     content: "/";
     margin: 0 0.45em 0 0.3em;
     font-style: italic;
   }
-  html body header nav.navbar.navbar-default .navbar-collapse ul li:nth-of-type(3) {
+  html body header nav.navbar.navbar-default .navbar-collapse ul li:nth-of-type(2) {
     margin-right: -50px;
   }
-  html body header nav.navbar.navbar-default .navbar-collapse ul li:nth-of-type(4) {
+  html body header nav.navbar.navbar-default .navbar-collapse ul li:nth-of-type(3) {
     float: left;
   }
-  html body header nav.navbar.navbar-default .navbar-collapse ul li:nth-of-type(4):after {
+  html body header nav.navbar.navbar-default .navbar-collapse ul li:nth-of-type(3):after {
     content: "/";
-    margin: 0 0.45em 0 0.3em;
+    margin: 0 0.45em 0 0;
     font-style: italic;
   }
-  html body header nav.navbar.navbar-default .navbar-collapse ul li:nth-of-type(5) {
+  html body header nav.navbar.navbar-default .navbar-collapse ul li:nth-of-type(4) {
     float: right;
   }
-  html body header nav.navbar.navbar-default .navbar-collapse ul li:nth-of-type(4),
-  html body header nav.navbar.navbar-default .navbar-collapse ul li:nth-of-type(5) {
+  html body header nav.navbar.navbar-default .navbar-collapse ul li:nth-of-type(3),
+  html body header nav.navbar.navbar-default .navbar-collapse ul li:nth-of-type(4) {
     font-family: BrixSansExtraLight;
     display: block;
     font-size: 12px;
     line-height: 1.3em;
     margin-top: -38px;
+  }
+  html body header nav.navbar.navbar-default .navbar-collapse ul li:nth-of-type(3) a,
+  html body header nav.navbar.navbar-default .navbar-collapse ul li:nth-of-type(4) a {
+    display: inline-block;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  html body header nav.navbar.navbar-default .navbar-collapse ul li:nth-of-type(3) a:after,
+  html body header nav.navbar.navbar-default .navbar-collapse ul li:nth-of-type(4) a:after {
+    display: none;
+    content: attr(alt);
+  }
+  html body header nav.navbar.navbar-default .navbar-collapse ul li:nth-of-type(3) a abbr,
+  html body header nav.navbar.navbar-default .navbar-collapse ul li:nth-of-type(4) a abbr {
+    display: block;
   }
   html body header nav.navbar.navbar-default .navbar-collapse ul li a {
     border: none;
@@ -1351,6 +1419,7 @@ section.collapsing {
   }
   html body div.autumn {
     margin: 50px;
+    margin-bottom: 0;
   }
   html body div.autumn h2 {
     font-family: BrixSansBold;
@@ -1366,18 +1435,23 @@ section.collapsing {
     margin: 0;
     margin-bottom: 1em;
   }
-  html body div.autumn-left {
-    margin-right: 0;
+  html body div.autumn p:last-of-type {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 50px;
   }
-  html body div.autumn-right {
-    margin-left: 0;
+  html body div.autumn p a:hover {
+    opacity: 1;
   }
   html body hr {
     border-top: 1px solid #212322;
     margin: 0 50px;
   }
   html body div.winter {
-    margin: 50px;
+    margin: 0 50px;
+    margin-bottom: 0;
+    padding-top: 50px;
+    position: relative;
   }
   html body div.winter p {
     font-family: BrixSlab-ExtraLight;
@@ -1396,6 +1470,9 @@ section.collapsing {
     overflow-x: visible;
     white-space: nowrap;
   }
+  html body div.winter p span:nth-of-type(2) a:hover {
+    opacity: 1;
+  }
   html body div.winter p span:nth-of-type(3) a {
     border: none;
   }
@@ -1411,53 +1488,18 @@ section.collapsing {
   html body div.winter aside a {
     border: none;
   }
-  html body a {
-    -webkit-backface-visibility: hidden;
-    -webkit-transition: 0.3s ease-in-out;
-    -moz-transition: 0.3s ease-in-out;
-    -ms-transition: 0.3s ease-in-out;
-    -o-transition: 0.3s ease-in-out;
-    transition: 0.3s ease-in-out;
-    border-bottom: 1px solid rgba(33, 35, 34, 0.5);
-    color: #212322;
-    text-decoration: none;
+  html body div.winter footer {
+    height: auto;
+    width: 100%;
+    padding-bottom: 50px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
   }
-  html body a:active,
-  html body a:focus,
-  html body a:hover,
-  html body a:visited {
-    color: #212322;
-    text-decoration: none;
-  }
-  html body a:hover {
-    opacity: 0.8;
-  }
-  #girafa .navbar-collapse ul li:nth-of-type(4) a:before {
-    content: "eng";
-  }
-  #girafa .navbar-collapse ul li:nth-of-type(5) a:before {
-    content: "esp";
-  }
-  #girafa .navbar-collapse ul li a span {
-    display: none;
-  }
-  #giraffe .navbar-collapse ul li:nth-of-type(4) a:before {
-    content: "cat";
-  }
-  #giraffe .navbar-collapse ul li:nth-of-type(5) a:before {
-    content: "esp";
-  }
-  #giraffe .navbar-collapse ul li a span {
-    display: none;
-  }
-  #jirafa .navbar-collapse ul li:nth-of-type(4) a:before {
-    content: "cat";
-  }
-  #jirafa .navbar-collapse ul li:nth-of-type(5) a:before {
-    content: "eng";
-  }
-  #jirafa .navbar-collapse ul li a span {
-    display: none;
+  html body div.winter footer small {
+    display: block;
+    font-size: 0.5em;
+    text-align: center;
   }
   section.collapsing {
     -webkit-backface-visibility: hidden;
@@ -1469,12 +1511,9 @@ section.collapsing {
     -webkit-transition: none;
     transition: none;
   }
-  .container-fluid {
-    padding-right: 0;
-    padding-left: 0;
-  }
   .container-fluid .row:nth-of-type(4) .col-xs-12:nth-of-type(1) div.autumn {
-    margin-bottom: 0;
+    margin-right: 0;
+    padding-right: 30px;
   }
   .container-fluid .row:nth-of-type(4) .col-xs-12:nth-of-type(1) div.autumn p:last-of-type {
     border-bottom: none;
@@ -1482,12 +1521,13 @@ section.collapsing {
     padding-bottom: 50px;
   }
   .container-fluid .row:nth-of-type(4) .col-xs-12:nth-of-type(2) div.autumn {
-    margin-bottom: 0;
+    margin-top: 50px;
+    margin-left: 0;
+    padding-left: 30px;
   }
-  .container-fluid .row:nth-of-type(4) .col-xs-12:nth-of-type(2) div.autumn p:last-of-type {
-    border-bottom: none;
-    margin-bottom: 0;
-    padding-bottom: 50px;
+  .container-fluid .row:nth-of-type(4) .col-xs-12:nth-of-type(2) div.autumn h2 {
+    display: block;
+    visibility: hidden;
   }
 }
 @media (min-width: 1024px) {
