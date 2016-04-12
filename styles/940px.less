@@ -9,6 +9,20 @@
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////// THIS IS THE BEGINNING
 
+  div.summer {
+
+    a {
+
+      &:before {
+        font-size: 20px;
+        line-height: 1em;
+      }
+    }
+  }
+
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+
   html {
 
     body {
@@ -78,13 +92,14 @@
           .navbar-collapse {
             .clearfix;
             border: none;
-            margin-top: 0; margin-bottom: -50px / 1.5;
+            margin-top: 0; margin-bottom: -60px / 1.5;
             padding-right: 0; padding-left: 0;
             position: relative;
 
             ul {
               .clearfix;
               margin: 0;
+              margin-top: 0;
               position: absolute;
               bottom: 0; right: 0;
 
@@ -169,7 +184,8 @@
       }
 
       div.spring {
-        margin: 50px;
+        margin: 60px;
+        margin-top: 60px;
 
         p {
           .BrixSlab-ExtraLight;
@@ -181,22 +197,21 @@
         }
       }
 
-      ul.summer {
-        background: LemonChiffon;
+      div.summer {
         margin-bottom: 0;
         padding: 0;
-        list-style-type: none;
       }
 
       div.autumn {
-        margin: 50px;
+        margin: 60px;
         margin-bottom: 0;
 
         h2 {
           .BrixSans-Bold;
           font-size: 18px;
+          font-weight: normal;
           margin: 0;
-          margin-bottom: 50px / 2;
+          margin-bottom: 60px / 2;
           text-transform: uppercase;
         }
 
@@ -210,7 +225,7 @@
           &:last-of-type {
             border-bottom: none;
             margin-bottom: 0;
-            padding-bottom: 50px;
+            padding-bottom: 60px;
           }
 
           a {
@@ -224,13 +239,13 @@
 
       hr {
         border-top: 1px solid @black;
-        margin: 0 50px;
+        margin: 0 60px;
       }
 
       div.winter {
-        margin: 0 50px;
+        margin: 0 60px;
         margin-bottom: 0;
-        padding-top: 50px;
+        padding-top: 60px;
         position: relative;
 
         p {
@@ -244,7 +259,7 @@
 
             &:nth-of-type(1) {
               .BrixSans-Bold;
-              margin-bottom: 50px / 10;
+              margin-bottom: 60px / 10;
             }
 
             &:nth-of-type(2) {
@@ -284,7 +299,7 @@
         aside {
           .BrixSans-Bold;
           font-size: 16px;
-          margin-top: 50px / (1.25 * 1);
+          margin-top: 60px / (1.25 * 1);
           text-transform: uppercase;
 
           a {
@@ -297,7 +312,7 @@
 
         footer {
           height: auto; width: 100%;
-          padding-bottom: 50px;
+          padding-bottom: 60px;
           position: absolute;
           bottom: 0; left: 0;
 
@@ -313,12 +328,6 @@
 
   ////////////////////////////////////////////////////////////////
   ////////////////////////////////////////////////////////////////
-
-  section.collapsing {
-    .transition;
-    -webkit-transition: none;
-            transition: none;
-  }
 
   .container-fluid {
 
@@ -344,7 +353,7 @@
 
             div.autumn {
               margin-right: 0;
-              padding-right: 60px / 2;
+              padding-right: 45px / 2;
 
               h2 {
               }
@@ -352,7 +361,7 @@
               p:last-of-type {
                 border-bottom: none;
                 margin-bottom: 0;
-                padding-bottom: 50px;
+                padding-bottom: 60px;
               }
             }
           }
@@ -360,8 +369,8 @@
           &:nth-of-type(2) {
 
             div.autumn {
-              margin-top: 50px; margin-left: 0;
-              padding-left: 60px / 2;
+              margin-top: 60px; margin-left: 0;
+              padding-left: 45px / 2;
 
               h2 {
                 .show;

@@ -9,6 +9,20 @@
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////// THIS IS THE BEGINNING
 
+  div.summer {
+
+    a {
+
+      &:before {
+        font-size: 16px;
+        line-height: 1em;
+      }
+    }
+  }
+
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+
   html {
 
     body {
@@ -77,11 +91,11 @@
 
           .navbar-collapse {
             border: none;
-            margin-top: 35px; margin-bottom: (-35px / 1.5) / 1.5;
             padding-right: 0; padding-left: 0;
 
             ul {
               margin: 0;
+              margin-top: 35px;
 
               li {
                 .BrixSans-Bold;
@@ -132,6 +146,7 @@
 
       div.spring {
         margin: 35px;
+        margin-top: (35px / 1.5) / 1.5;
 
         p {
           .BrixSlab-ExtraLight;
@@ -143,11 +158,9 @@
         }
       }
 
-      ul.summer {
-        background: LemonChiffon;
+      div.summer {
         margin-bottom: 0;
         padding: 0;
-        list-style-type: none;
       }
 
       div.autumn {
@@ -157,6 +170,7 @@
         h2 {
           .BrixSans-Bold;
           font-size: 20px;
+          font-weight: normal;
           margin: 0;
           margin-bottom: 35px / 2;
           text-transform: uppercase;
@@ -271,11 +285,7 @@
   ////////////////////////////////////////////////////////////////
   ////////////////////////////////////////////////////////////////
 
-  section.collapsing {
-    .transition;
-    -webkit-transition: none;
-            transition: none;
-  }
+
 
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////

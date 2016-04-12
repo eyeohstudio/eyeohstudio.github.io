@@ -13,8 +13,8 @@
         </div>
         <div class="collapse navbar-collapse" id="navigation-en">
           <ul class="nav navbar-nav">
-            <li><a href="#さん">Work</a></li>
-            <li><a href="#ご">Contact</a></li>
+            <li><a href="#さん-en">Work</a></li>
+            <li><a href="#ご-en">Contact</a></li>
             <li>
               <a href="#girafa" aria-controls="girafa" aria-expanded="false" class="giraffa-camelopardalis-toggle" data-parent="#giraffa-camelopardalis" data-toggle="collapse" alt="Català">
                 <abbr data-container="body" data-html="true" data-placement="top" data-toggle="tooltip" title="Hola!">CAT</abbr>
@@ -33,7 +33,7 @@
 </div>
 
 <div class="row">
-  <div id="いち" class="col-xs-12">
+  <div id="いち-en" class="col-xs-12">
     <div class="spring">
       <p>We are a multi-disciplinary team working together to create graphic and digital solutions through effective and <span class="randomWhatelseEn"><!-- randomWhatelseEn--></span> design. We are based in <del><span class="randomCityEn"><!-- randomCityEn--></span></del> Barcelona.</p>
     </div>
@@ -41,20 +41,25 @@
 </div>
 
 <div class="row">
-  <div id="に" class="col-xs-12">
-    <ul class="summer">
-      {% for post in site.posts %}
-        <li>
-          <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-          <span><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></span>
-        </li>
-      {% endfor %}
-    </ul>
+  <div id="に-en" class="col-xs-12">
+    <div class="summer">
+      <div class="container-fluid">
+        <div class="row">
+          {% for post in site.posts reversed %}
+            <div class="col-xs-6 col-lg-4">
+              <a href="#" style="background-image: url({{ post.boojum }})" title="{{ post.title }}">
+                <img src="{{ site.url}}/images/{{ post.featured_image }}" alt="Featured image for {{ post.title }}" title="{{ post.title }}">
+              </a>
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 
 <div class="row">
-  <div id="さん" class="col-xs-12 col-md-6">
+  <div id="さん-en" class="col-xs-12 col-md-6">
     <div class="autumn">
       <h2>Work</h2>
       <p>We plan, design and develop cross platform and/or multi-media visual communication projects: advertisement, brand identity, editorial design, exhibitions, front-end and back-end development, user interfaces, wayfinding, and web services.</p>
@@ -62,7 +67,7 @@
       <p>We love playing with new aesthetics and techniques, sometimes resulting in interesting pieces of work and/or unexpected side projects that we proudly share under a creative commons license <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/legalcode" target="_blank" data-toggle="tooltip" data-placement="top" data-html="true" title="Attribution-NonCommercial-<br>ShareAlike 4.0 International">(CC BY-NC-SA 4.0)</a>.</p>
     </div>
   </div>
-  <div id="よん" class="col-xs-12 col-md-6">
+  <div id="よん-en" class="col-xs-12 col-md-6">
     <div class="autumn">
       <h2>…</h2>
       <p>We enjoy working with businesses and individuals who think about, plan for, or consider the future, rather than just the present. We love to support charitable initiatives, non-profit organisations, and startups and we offer reduced rates for them. If that is you, we’d love to hear from you.</p>
@@ -75,7 +80,7 @@
 <hr class="hidden-xs hidden-sm">
 
 <div class="row">
-  <div id="ご" class="col-xs-12">
+  <div id="ご-en" class="col-xs-12">
     <div class="winter">
       <p>
         <span>I/O studio</span>

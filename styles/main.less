@@ -7,6 +7,72 @@
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////// THIS IS THE BEGINNING
 
+div.summer {
+
+  a {
+    .show;
+    background-position: 50% 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-bottom: none;
+    mix-blend-mode: multiply;
+    position: relative;
+
+    &:active,
+    &:focus,
+    &:hover,
+    &:visited {
+    }
+
+    &:hover {
+      opacity: 1;
+    }
+
+    &:hover:before {
+      opacity: 1 !important;
+    }
+
+    &:hover img {
+      opacity: 0;
+    }
+
+    &:before {
+      .BrixSans-Bold;
+      .transition;
+      content: attr(title);
+      font-size: 12px;
+      height: auto; width: 100%;
+      line-height: 1em;
+      padding: 0 100% / 6;
+      position: absolute;
+      opacity: 0;
+      top: 50%; left: 0;
+      text-align: center;
+      text-transform: uppercase;
+      transform: translateY(-50%);
+      white-space: pre;
+    }
+
+    img {
+      .transition;
+      background-position: 0 0;
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: auto; width: 100%;
+      mix-blend-mode: multiply;
+      opacity: 1;
+
+      -webkit-filter: grayscale(1);
+         -moz-filter: grayscale(1);
+              filter: grayscale(1);
+              filter: gray;
+    }
+  }
+}
+
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+
   html {
 
     body {
@@ -95,11 +161,11 @@
 
           .navbar-collapse {
             border: none;
-            margin-top: 35px / 1.5; margin-bottom: (-35px / 1.5) / 1.5;
             padding-right: 0; padding-left: 0;
 
             ul {
               margin: 0;
+              margin-top: 35px / 1.5;
 
               li {
                 .BrixSans-Bold;
@@ -155,6 +221,7 @@
 
       div.spring {
         margin: 35px / 1.5;
+        margin-top: (35px / 1.5) / 1.5;
 
         p {
           .BrixSlab-ExtraLight;
@@ -166,11 +233,9 @@
         }
       }
 
-      ul.summer {
-        background: LemonChiffon;
+      div.summer {
         margin-bottom: 0;
         padding: 0;
-        list-style-type: none;
       }
 
       div.autumn {
@@ -180,6 +245,7 @@
         h2 {
           .BrixSans-Bold;
           font-size: 14px;
+          font-weight: normal;
           margin: 0;
           margin-bottom: (35px / 1.5) / 2;
           text-transform: uppercase;
