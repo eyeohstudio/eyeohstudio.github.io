@@ -32,7 +32,8 @@
       header {
         .clearfix;
         margin: 45px 45px;
-        margin-bottom: 45px / 1.5;
+        margin-bottom: 45px - (45 / 10);
+        margin-top: 45px - (45 / 10);
 
         nav.navbar.navbar-default {
           border: none;
@@ -71,21 +72,9 @@
               background-color: transparent;
               border: none;
               border-radius: 0;
+              float: right;
               margin: 0;
               padding: 0;
-              top: 50%;
-              transform: translateY(50%);
-
-              .icon-bar {
-                background-color: @black;
-                border-radius: 0;
-                height: 4px * 1.25; width: 32px * 1.25;
-                margin-top: 6px * 1.25;
-
-                &:nth-of-type(2) {
-                  margin-top: 0;
-                }
-              }
             }
           }
 
@@ -185,7 +174,7 @@
 
       div.spring {
         margin: 45px;
-        margin-top: 45px;
+        margin-top: 45px - (45 / 10);
 
         p {
           .BrixSlab-ExtraLight;
@@ -369,7 +358,7 @@
           &:nth-of-type(2) {
 
             div.autumn {
-              margin-top: 60px; margin-left: 0;
+              margin-top: 45px; margin-left: 0;
               padding-left: 45px / 2;
 
               h2 {

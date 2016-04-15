@@ -61,11 +61,12 @@ div.summer {
       height: auto; width: 100%;
       mix-blend-mode: multiply;
       opacity: 1;
-
+      /*
       -webkit-filter: grayscale(1);
          -moz-filter: grayscale(1);
               filter: grayscale(1);
               filter: gray;
+      */
     }
   }
 }
@@ -102,7 +103,8 @@ div.summer {
       header {
         .clearfix;
         margin: 35px / 1.5;
-        margin-bottom: (35px / 1.5) / 1.5;
+        margin-bottom: (35px / 1.5) - ((35px / 1.5) / 10);
+        margin-top: (35px / 1.5) - ((35px / 1.5) / 10);
 
         nav.navbar.navbar-default {
           border: none;
@@ -121,7 +123,7 @@ div.summer {
             h1 {
               .show;
               float: left;
-              height: auto; width: 140px;
+              height: auto; width: 130px;
               margin-top: 0; margin-bottom: 0;
 
               a {
@@ -138,22 +140,34 @@ div.summer {
             }
 
             button {
+              .show;
               background-color: transparent;
               border: none;
               border-radius: 0;
+              float: right;
               margin: 0;
               padding: 0;
-              top: 50%;
-              transform: translateY(50%);
+              margin-top: 4px !important;
 
-              .icon-bar {
-                background-color: @black;
-                border-radius: 0;
-                height: 4px; width: 32px;
-                margin-top: 6px;
+              span {
+                .show;
+                background-repeat: no-repeat;
+                background-position: center center;
+                cursor: pointer;
 
-                &:nth-of-type(2) {
-                  margin-top: 0;
+                svg {
+                  fill: none;
+                  stroke: @black;
+
+                  .top-bread,
+                  .bottom-bread {
+                    -webkit-backface-visibility: hidden; // fix for transition flickering
+                    -webkit-transition: .1s ease;
+                       -moz-transition: .1s ease;
+                        -ms-transition: .1s ease;
+                         -o-transition: .1s ease;
+                            transition: .1s ease;
+                  }
                 }
               }
             }
@@ -165,7 +179,7 @@ div.summer {
 
             ul {
               margin: 0;
-              margin-top: 35px / 1.5;
+              margin-top: ((35px / 1.5) - ((35px / 1.5) / 10)) * 2;
 
               li {
                 .BrixSans-Bold;
@@ -221,7 +235,7 @@ div.summer {
 
       div.spring {
         margin: 35px / 1.5;
-        margin-top: (35px / 1.5) / 1.5;
+        margin-top: (35px / 1.5) - ((35px / 1.5) / 10);
 
         p {
           .BrixSlab-ExtraLight;
@@ -422,6 +436,30 @@ section.collapsing {
     &:nth-of-type(5) {
     }
   }
+}
+
+.top-bread-in {
+  -webkit-transform: translateY(-5px);
+     -moz-transform: translateY(-5px);
+          transform: translateY(-5px);
+}
+
+.top-bread-out {
+  -webkit-transform: translateY(0);
+     -moz-transform: translateY(0);
+          transform: translateY(0);
+}
+
+.bottom-bread-in {
+  -webkit-transform: translateY(5px);
+     -moz-transform: translateY(5px);
+          transform: translateY(5px);
+}
+
+.bottom-bread-out {
+  -webkit-transform: translateY(0);
+     -moz-transform: translateY(0);
+          transform: translateY(0);
 }
 
 .tooltip {

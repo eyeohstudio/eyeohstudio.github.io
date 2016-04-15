@@ -20,7 +20,7 @@
 
 -->
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" class="no-js">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -56,9 +56,12 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <!-- Snap.svg
+         The JavaScript SVG library for the modern web. -->
+    <script src="http://127.0.0.1:4000/scripts/snap.svg.min.js"></script>
     <!-- Modernizr
          Custom built: SVG, SVG as an <img> tag source, SVG clip paths, SVG filters, SVG foreignObject, Inline SVG, SVG SMIL animation -->
-    <script src="/scripts/modernizr-custom.min.js"></script>
+    <script src="http://127.0.0.1:4000/scripts/modernizr-custom.min.js"></script>
     <!--
     <script>
       var password;
@@ -79,17 +82,14 @@
       <nav class="navbar navbar-default">
         <div class="navbar-header">
           <h1><a href="#"><img src="objects/logo.svg" alt="I/O studio" title="I/O studio"></a></h1>
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navigation-en" aria-expanded="false">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navigation-girafa" aria-expanded="false">
+            <span data-icon-name="hamburger"></span>
           </button>
         </div>
-        <div class="collapse navbar-collapse" id="navigation-en">
+        <div class="navbar-collapse collapse" id="navigation-girafa">
           <ul class="nav navbar-nav">
-            <li><a href="#さん-ca">Projectes</a></li>
-            <li><a href="#ご-ca">Contacte</a></li>
+            <li><a href="#さん-girafa">Projectes</a></li>
+            <li><a href="#ご-girafa">Contacte</a></li>
             <li>
               <a href="#giraffe" aria-controls="giraffe" aria-expanded="false" class="giraffa-camelopardalis-toggle" data-parent="#giraffa-camelopardalis" data-toggle="collapse" alt="English">
                 <abbr data-container="body" data-html="true" data-placement="top" data-toggle="tooltip" title="Hola!">ENG</abbr>
@@ -118,17 +118,14 @@
       <nav class="navbar navbar-default">
         <div class="navbar-header">
           <h1><a href="#"><img src="objects/logo.svg" alt="I/O studio" title="I/O studio"></a></h1>
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navigation-en" aria-expanded="false">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navigation-giraffe" aria-expanded="false">
+            <span data-icon-name="hamburger"></span>
           </button>
         </div>
-        <div class="collapse navbar-collapse" id="navigation-en">
+        <div class="navbar-collapse collapse" id="navigation-giraffe">
           <ul class="nav navbar-nav">
-            <li><a href="#さん-en">Work</a></li>
-            <li><a href="#ご-en">Contact</a></li>
+            <li><a href="#さん-giraffe">Work</a></li>
+            <li><a href="#ご-giraffe">Contact</a></li>
             <li>
               <a href="#girafa" aria-controls="girafa" aria-expanded="false" class="giraffa-camelopardalis-toggle" data-parent="#giraffa-camelopardalis" data-toggle="collapse" alt="Català">
                 <abbr data-container="body" data-html="true" data-placement="top" data-toggle="tooltip" title="Hola!">CAT</abbr>
@@ -147,7 +144,7 @@
 </div>
 
 <div class="row">
-  <div id="いち-en" class="col-xs-12">
+  <div id="いち-giraffe" class="col-xs-12">
     <div class="spring">
       <p>We are a multi-disciplinary team working together to create graphic and digital solutions through effective and <span class="randomWhatelseEn"><!-- randomWhatelseEn--></span> design. We are based in <del><span class="randomCityEn"><!-- randomCityEn--></span></del> Barcelona.</p>
     </div>
@@ -155,147 +152,129 @@
 </div>
 
 <div class="row">
-  <div id="に-en" class="col-xs-12">
+  <div id="に-giraffe" class="col-xs-12">
     <div class="summer">
       <div class="container-fluid">
         <div class="row">
           
-            <div class="col-xs-6 col-lg-4">
-              <a href="#" style="background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgaWQ9Im9iamVjdC0wMTExLTAxMjAiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgMzIwIDEzMiIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgd2lkdGg9IjE0NDMiIGhlaWdodD0ibnVsbCI+CiAgICA8Zz4KICAgICAgICA8Zz4KICAgICAgICAgICAgPHBvbHlnb24gY2xhc3M9Imh1ZSIgcG9pbnRzPSIxMzgsMCA5NCw0NCA5NCw4OCAxODIsMCIvPgogICAgICAgICAgICA8cG9seWdvbiBjbGFzcz0iaHVlIiBwb2ludHM9IjE4Miw0NCAyMjYsNDQgMjI2LDAiLz4KICAgICAgICA8L2c+CiAgICAgICAgPGc+CiAgICAgICAgICAgIDxwb2x5Z29uIGNsYXNzPSJjb2xvciIgcG9pbnRzPSIxODIsMCA5NCw4OCA5NCwxMzIgMTgyLDQ0IDIyNiwwIi8+CiAgICAgICAgPC9nPgogICAgPC9nPgo8c3R5bGUgdHlwZT0idGV4dC9jc3MiPi5jb2xvciwgLmh1ZSB7IGZpbGw6ICNmZmU4NzU7IH0gKiB7IHN0cm9rZS13aWR0aDogMDsgfSAuaHVlIHsgb3BhY2l0eTogLjQ7IH08L3N0eWxlPjwvc3ZnPg==)" title="Pere Salinas&#xa;Catàleg d'Art">
-                <img src="http://127.0.0.1:4000/images/ffffound-001.jpg" alt="Featured image for Pere Salinas&#xa;Catàleg d'Art" title="Pere Salinas&#xa;Catàleg d'Art">
+            <div class="col-xs-6 col-md-4 col-lg-3 post-excerpt">
+              <a href="#" style="background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgaWQ9Im9iamVjdC0xMTExLTExMjAiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgMzIwIDEzMiIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgd2lkdGg9IjE4MjUiIGhlaWdodD0ibnVsbCI+CiAgICA8Zz4KICAgICAgICA8Zz4KICAgICAgICAgICAgPHBvbHlnb24gY2xhc3M9Imh1ZSIgcG9pbnRzPSIxNjAsNjYgMTE2LDY2IDk0LDg4IDk0LDEzMiIvPgogICAgICAgICAgICA8cG9seWdvbiBjbGFzcz0iaHVlIiBwb2ludHM9IjE4Miw4OCAxMzgsMTMyIDE4MiwxMzIgMjI2LDg4Ii8+CiAgICAgICAgPC9nPgogICAgICAgIDxnPgogICAgICAgICAgICA8cG9seWdvbiBjbGFzcz0iY29sb3IiIHBvaW50cz0iOTQsMTMyIDEzOCwxMzIgMjI2LDQ0IDIyNiwwICIvPgogICAgICAgIDwvZz4KICAgIDwvZz4KPHN0eWxlIHR5cGU9InRleHQvY3NzIj4uY29sb3IsIC5odWUgeyBmaWxsOiAjYTdkOWJjOyB9ICogeyBzdHJva2Utd2lkdGg6IDA7IH0gLmh1ZSB7IG9wYWNpdHk6IC40OyB9PC9zdHlsZT48L3N2Zz4=)" title="Cupcake ipsum&#xa;dolor sit amet">
+                <img src="http://127.0.0.1:4000/images/ffffound-001.jpg" alt="Featured image for Cupcake ipsum&#xa;dolor sit amet" title="Cupcake ipsum&#xa;dolor sit amet">
               </a>
             </div>
-          
-            <div class="col-xs-6 col-lg-4">
-              <a href="#" style="background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgaWQ9Im9iamVjdC0wMTIxLTAxMzEiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgMzIwIDEzMiIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgd2lkdGg9IjE0NDMiIGhlaWdodD0ibnVsbCI+CiAgICA8Zz4KICAgICAgICA8Zz4KICAgICAgICAgICAgPHBvbHlnb24gY2xhc3M9Imh1ZSIgcG9pbnRzPSIxMzgsMCAxMTYsMjIgMTE2LDY2IDE4MiwwIi8+CiAgICAgICAgICAgIDxwb2x5Z29uIGNsYXNzPSJodWUiIHBvaW50cz0iMTgyLDQ0IDE4Miw4OCAyMjYsNDQgMjI2LDAiLz4KICAgICAgICA8L2c+CiAgICAgICAgPGc+CiAgICAgICAgICAgIDxwb2x5Z29uIGNsYXNzPSJjb2xvciIgcG9pbnRzPSIxODIsMCA5NCw4OCA5NCwxMzIgMjI2LDAgIi8+CiAgICAgICAgPC9nPgogICAgPC9nPgo8c3R5bGUgdHlwZT0idGV4dC9jc3MiPi5jb2xvciwgLmh1ZSB7IGZpbGw6ICNmZmQzNzg7IH0gKiB7IHN0cm9rZS13aWR0aDogMDsgfSAuaHVlIHsgb3BhY2l0eTogLjQ7IH08L3N0eWxlPjwvc3ZnPg==)" title="じゅうににち">
-                <img src="http://127.0.0.1:4000/images/ffffound-002.jpg" alt="Featured image for じゅうににち" title="じゅうににち">
-              </a>
+            <div class="hide col-xs-12 post-content">
+              <ul>
+                <p><img src="http://127.0.0.1:4000/images/ffffound-001.jpg" alt="alt" /></p>
+
+              </ul>
             </div>
           
-            <div class="col-xs-6 col-lg-4">
-              <a href="#" style="background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgaWQ9Im9iamVjdC0wMjAxLTAyMTAiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgMzIwIDEzMiIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgd2lkdGg9IjE0NDMiIGhlaWdodD0ibnVsbCI+CiAgICA8Zz4KICAgICAgICA8Zz4KICAgICAgICAgICAgPHBvbHlnb24gY2xhc3M9Imh1ZSIgcG9pbnRzPSIxMzgsMCA5NCw0NCAxMzgsNDQgMTgyLDAiLz4KICAgICAgICAgICAgPHBvbHlnb24gY2xhc3M9Imh1ZSIgcG9pbnRzPSIxODIsNDQgMTgyLDg4IDIyNiw0NCAyMjYsMCIvPgogICAgICAgIDwvZz4KICAgICAgICA8Zz4KICAgICAgICAgICAgPHBvbHlnb24gY2xhc3M9ImNvbG9yIiBwb2ludHM9IjE4MiwwIDk0LDg4IDk0LDEzMiAyMjYsMCAiLz4KICAgICAgICA8L2c+CiAgICA8L2c+CjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+LmNvbG9yLCAuaHVlIHsgZmlsbDogI2ZmYzE4NzsgfSAqIHsgc3Ryb2tlLXdpZHRoOiAwOyB9IC5odWUgeyBvcGFjaXR5OiAuNDsgfTwvc3R5bGU+PC9zdmc+)" title="じゅうさんいち">
-                <img src="http://127.0.0.1:4000/images/ffffound-003.jpg" alt="Featured image for じゅうさんいち" title="じゅうさんいち">
+            <div class="col-xs-6 col-md-4 col-lg-3 post-excerpt">
+              <a href="#" style="background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgaWQ9Im9iamVjdC0xMTExLTExMjAiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgMzIwIDEzMiIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgd2lkdGg9IjE4MjUiIGhlaWdodD0ibnVsbCI+CiAgICA8Zz4KICAgICAgICA8Zz4KICAgICAgICAgICAgPHBvbHlnb24gY2xhc3M9Imh1ZSIgcG9pbnRzPSIxNjAsNjYgMTE2LDY2IDk0LDg4IDk0LDEzMiIvPgogICAgICAgICAgICA8cG9seWdvbiBjbGFzcz0iaHVlIiBwb2ludHM9IjE4Miw4OCAxMzgsMTMyIDE4MiwxMzIgMjI2LDg4Ii8+CiAgICAgICAgPC9nPgogICAgICAgIDxnPgogICAgICAgICAgICA8cG9seWdvbiBjbGFzcz0iY29sb3IiIHBvaW50cz0iOTQsMTMyIDEzOCwxMzIgMjI2LDQ0IDIyNiwwICIvPgogICAgICAgIDwvZz4KICAgIDwvZz4KPHN0eWxlIHR5cGU9InRleHQvY3NzIj4uY29sb3IsIC5odWUgeyBmaWxsOiAjYTdkOWJjOyB9ICogeyBzdHJva2Utd2lkdGg6IDA7IH0gLmh1ZSB7IG9wYWNpdHk6IC40OyB9PC9zdHlsZT48L3N2Zz4=)" title="Cupcake ipsum&#xa;dolor sit amet">
+                <img src="http://127.0.0.1:4000/images/ffffound-002.jpg" alt="Featured image for Cupcake ipsum&#xa;dolor sit amet" title="Cupcake ipsum&#xa;dolor sit amet">
               </a>
             </div>
-          
-            <div class="col-xs-6 col-lg-4">
-              <a href="#" style="background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgaWQ9Im9iamVjdC0wMjExLTAyMjAiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgMzIwIDEzMiIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgd2lkdGg9IjE0NDMiIGhlaWdodD0ibnVsbCI+CiAgICA8Zz4KICAgICAgICA8Zz4KICAgICAgICAgICAgPHBvbHlnb24gY2xhc3M9Imh1ZSIgcG9pbnRzPSIxODIsMCAxMzgsMCA5NCw0NCAxMzgsNDQiLz4KICAgICAgICAgICAgPHBvbHlnb24gY2xhc3M9Imh1ZSIgcG9pbnRzPSIxNjAsNjYgMjA0LDY2IDIyNiw0NCAyMjYsMCIvPgogICAgICAgIDwvZz4KICAgICAgICA8Zz4KICAgICAgICAgICAgPHBvbHlnb24gY2xhc3M9ImNvbG9yIiBwb2ludHM9IjE4MiwwIDk0LDg4IDk0LDEzMiAyMjYsMCIvPgogICAgICAgIDwvZz4KICAgIDwvZz4KPHN0eWxlIHR5cGU9InRleHQvY3NzIj4uY29sb3IsIC5odWUgeyBmaWxsOiAjZmZiN2FlOyB9ICogeyBzdHJva2Utd2lkdGg6IDA7IH0gLmh1ZSB7IG9wYWNpdHk6IC40OyB9PC9zdHlsZT48L3N2Zz4=)" title="じゅうよっか">
-                <img src="http://127.0.0.1:4000/images/ffffound-004.jpg" alt="Featured image for じゅうよっか" title="じゅうよっか">
-              </a>
+            <div class="hide col-xs-12 post-content">
+              <ul>
+                
+
+              </ul>
             </div>
           
-            <div class="col-xs-6 col-lg-4">
-              <a href="#" style="background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgaWQ9Im9iamVjdC0wMjIxLTAyMjkiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgMzIwIDEzMiIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgd2lkdGg9IjE0NDMiIGhlaWdodD0ibnVsbCI+CiAgICA8Zz4KICAgICAgICA8Zz4KICAgICAgICAgICAgPHBvbHlnb24gY2xhc3M9Imh1ZSIgcG9pbnRzPSIxODIsMCAxMzgsMCAxMTYsMjIgMTE2LDY2Ii8+CiAgICAgICAgICAgIDxwb2x5Z29uIGNsYXNzPSJodWUiIHBvaW50cz0iMTYwLDY2IDIwNCw2NiAyMjYsNDQgMjI2LDAiLz4KICAgICAgICA8L2c+CiAgICAgICAgPGc+CiAgICAgICAgICAgIDxwb2x5Z29uIGNsYXNzPSJjb2xvciIgcG9pbnRzPSIxODIsMCA5NCw4OCA5NCwxMzIgMjI2LDAgIi8+CiAgICAgICAgPC9nPgogICAgPC9nPgo8c3R5bGUgdHlwZT0idGV4dC9jc3MiPi5jb2xvciwgLmh1ZSB7IGZpbGw6ICNmZjljNzY7IH0gKiB7IHN0cm9rZS13aWR0aDogMDsgfSAuaHVlIHsgb3BhY2l0eTogLjQ7IH08L3N0eWxlPjwvc3ZnPg==)" title="じゅうごにち">
-                <img src="http://127.0.0.1:4000/images/ffffound-005.jpg" alt="Featured image for じゅうごにち" title="じゅうごにち">
+            <div class="col-xs-6 col-md-4 col-lg-3 post-excerpt">
+              <a href="#" style="background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgaWQ9Im9iamVjdC0xMTExLTExMjAiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgMzIwIDEzMiIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgd2lkdGg9IjE4MjUiIGhlaWdodD0ibnVsbCI+CiAgICA8Zz4KICAgICAgICA8Zz4KICAgICAgICAgICAgPHBvbHlnb24gY2xhc3M9Imh1ZSIgcG9pbnRzPSIxNjAsNjYgMTE2LDY2IDk0LDg4IDk0LDEzMiIvPgogICAgICAgICAgICA8cG9seWdvbiBjbGFzcz0iaHVlIiBwb2ludHM9IjE4Miw4OCAxMzgsMTMyIDE4MiwxMzIgMjI2LDg4Ii8+CiAgICAgICAgPC9nPgogICAgICAgIDxnPgogICAgICAgICAgICA8cG9seWdvbiBjbGFzcz0iY29sb3IiIHBvaW50cz0iOTQsMTMyIDEzOCwxMzIgMjI2LDQ0IDIyNiwwICIvPgogICAgICAgIDwvZz4KICAgIDwvZz4KPHN0eWxlIHR5cGU9InRleHQvY3NzIj4uY29sb3IsIC5odWUgeyBmaWxsOiAjYTdkOWJjOyB9ICogeyBzdHJva2Utd2lkdGg6IDA7IH0gLmh1ZSB7IG9wYWNpdHk6IC40OyB9PC9zdHlsZT48L3N2Zz4=)" title="Cupcake ipsum&#xa;dolor sit amet">
+                <img src="http://127.0.0.1:4000/images/ffffound-003.jpg" alt="Featured image for Cupcake ipsum&#xa;dolor sit amet" title="Cupcake ipsum&#xa;dolor sit amet">
               </a>
             </div>
-          
-            <div class="col-xs-6 col-lg-4">
-              <a href="#" style="background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgaWQ9Im9iamVjdC0wMzAxLTAzMTAiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgMzIwIDEzMiIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgd2lkdGg9IjE0NDMiIGhlaWdodD0ibnVsbCI+CiAgICA8Zz4KICAgICAgICA8Zz4KICAgICAgICAgICAgPHBvbHlnb24gY2xhc3M9Imh1ZSIgcG9pbnRzPSIxODIsMCAxMzgsMCAxMzgsNDQiLz4KICAgICAgICAgICAgPHBvbHlnb24gY2xhc3M9Imh1ZSIgcG9pbnRzPSIxMzgsODggMTgyLDg4IDIyNiw0NCAyMjYsMCIvPgogICAgICAgIDwvZz4KICAgICAgICA8Zz4KICAgICAgICAgICAgPHBvbHlnb24gY2xhc3M9ImNvbG9yIiBwb2ludHM9IjE4MiwwIDk0LDg4IDk0LDEzMiAyMjYsMCAiLz4KICAgICAgICA8L2c+CiAgICA8L2c+CjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+LmNvbG9yLCAuaHVlIHsgZmlsbDogI2VhYzRiZTsgfSAqIHsgc3Ryb2tlLXdpZHRoOiAwOyB9IC5odWUgeyBvcGFjaXR5OiAuNDsgfTwvc3R5bGU+PC9zdmc+)" title="じゅうろくにち">
-                <img src="http://127.0.0.1:4000/images/ffffound-006.jpg" alt="Featured image for じゅうろくにち" title="じゅうろくにち">
-              </a>
+            <div class="hide col-xs-12 post-content">
+              <ul>
+                
+
+              </ul>
             </div>
           
-            <div class="col-xs-6 col-lg-4">
-              <a href="#" style="background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgaWQ9Im9iamVjdC0wMzExLTAzMjAiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgMzIwIDEzMiIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgd2lkdGg9IjE0NDMiIGhlaWdodD0ibnVsbCI+CiAgICA8Zz4KICAgICAgICA8Zz4KICAgICAgICAgICAgPHBvbHlnb24gY2xhc3M9Imh1ZSIgcG9pbnRzPSIxMzgsODggMjI2LDg4IDIyNiwwIi8+CiAgICAgICAgPC9nPgogICAgICAgIDxnPgogICAgICAgICAgICA8cG9seWdvbiBjbGFzcz0iY29sb3IiIHBvaW50cz0iMTgyLDAgOTQsODggOTQsMTMyIDIyNiwwICIvPgogICAgICAgIDwvZz4KICAgIDwvZz4KPHN0eWxlIHR5cGU9InRleHQvY3NzIj4uY29sb3IsIC5odWUgeyBmaWxsOiAjZmZhYmMyOyB9ICogeyBzdHJva2Utd2lkdGg6IDA7IH0gLmh1ZSB7IG9wYWNpdHk6IC40OyB9PC9zdHlsZT48L3N2Zz4=)" title="じゅうしちにち">
-                <img src="http://127.0.0.1:4000/images/ffffound-007.jpg" alt="Featured image for じゅうしちにち" title="じゅうしちにち">
+            <div class="col-xs-6 col-md-4 col-lg-3 post-excerpt">
+              <a href="#" style="background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgaWQ9Im9iamVjdC0xMTExLTExMjAiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgMzIwIDEzMiIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgd2lkdGg9IjE4MjUiIGhlaWdodD0ibnVsbCI+CiAgICA8Zz4KICAgICAgICA8Zz4KICAgICAgICAgICAgPHBvbHlnb24gY2xhc3M9Imh1ZSIgcG9pbnRzPSIxNjAsNjYgMTE2LDY2IDk0LDg4IDk0LDEzMiIvPgogICAgICAgICAgICA8cG9seWdvbiBjbGFzcz0iaHVlIiBwb2ludHM9IjE4Miw4OCAxMzgsMTMyIDE4MiwxMzIgMjI2LDg4Ii8+CiAgICAgICAgPC9nPgogICAgICAgIDxnPgogICAgICAgICAgICA8cG9seWdvbiBjbGFzcz0iY29sb3IiIHBvaW50cz0iOTQsMTMyIDEzOCwxMzIgMjI2LDQ0IDIyNiwwICIvPgogICAgICAgIDwvZz4KICAgIDwvZz4KPHN0eWxlIHR5cGU9InRleHQvY3NzIj4uY29sb3IsIC5odWUgeyBmaWxsOiAjYTdkOWJjOyB9ICogeyBzdHJva2Utd2lkdGg6IDA7IH0gLmh1ZSB7IG9wYWNpdHk6IC40OyB9PC9zdHlsZT48L3N2Zz4=)" title="Cupcake ipsum&#xa;dolor sit amet">
+                <img src="http://127.0.0.1:4000/images/ffffound-004.jpg" alt="Featured image for Cupcake ipsum&#xa;dolor sit amet" title="Cupcake ipsum&#xa;dolor sit amet">
               </a>
             </div>
-          
-            <div class="col-xs-6 col-lg-4">
-              <a href="#" style="background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgaWQ9Im9iamVjdC0wMzIxLTAzMzEiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgMzIwIDEzMiIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgd2lkdGg9IjE0NDMiIGhlaWdodD0ibnVsbCI+CiAgICA8Zz4KICAgICAgICA8Zz4KICAgICAgICAgICAgPHBvbHlnb24gY2xhc3M9Imh1ZSIgcG9pbnRzPSIxMTYsMTEwIDE2MCwxMTAgMjI2LDQ0IDIyNiwwIi8+CiAgICAgICAgPC9nPgogICAgICAgIDxnPgogICAgICAgICAgICA8cG9seWdvbiBjbGFzcz0iY29sb3IiIHBvaW50cz0iMTgyLDAgOTQsODggOTQsMTMyIDIyNiwwICIvPgogICAgICAgIDwvZz4KICAgIDwvZz4KPHN0eWxlIHR5cGU9InRleHQvY3NzIj4uY29sb3IsIC5odWUgeyBmaWxsOiAjZTRiZGQwOyB9ICogeyBzdHJva2Utd2lkdGg6IDA7IH0gLmh1ZSB7IG9wYWNpdHk6IC40OyB9PC9zdHlsZT48L3N2Zz4=)" title="じゅうはちにち">
-                <img src="http://127.0.0.1:4000/images/ffffound-008.jpg" alt="Featured image for じゅうはちにち" title="じゅうはちにち">
-              </a>
+            <div class="hide col-xs-12 post-content">
+              <ul>
+                
+
+              </ul>
             </div>
           
-            <div class="col-xs-6 col-lg-4">
-              <a href="#" style="background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgaWQ9Im9iamVjdC0wNDAxLTA0MTAiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgMzIwIDEzMiIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgd2lkdGg9IjE0NDMiIGhlaWdodD0ibnVsbCI+CiAgICA8Zz4KICAgICAgICA8Zz4KICAgICAgICAgICAgPHBvbHlnb24gY2xhc3M9Imh1ZSIgcG9pbnRzPSIxMTYsMTEwIDIwNCwxMTAgMjA0LDIyIi8+CiAgICAgICAgPC9nPgogICAgICAgIDxnPgogICAgICAgICAgICA8cG9seWdvbiBjbGFzcz0iY29sb3IiIHBvaW50cz0iMTgyLDAgOTQsODggOTQsMTMyIDIyNiwwICIvPgogICAgICAgIDwvZz4KICAgIDwvZz4KPHN0eWxlIHR5cGU9InRleHQvY3NzIj4uY29sb3IsIC5odWUgeyBmaWxsOiAjY2Y4ZmE0OyB9ICogeyBzdHJva2Utd2lkdGg6IDA7IH0gLmh1ZSB7IG9wYWNpdHk6IC40OyB9PC9zdHlsZT48L3N2Zz4=)" title="じゅうきゅうにち">
-                <img src="http://127.0.0.1:4000/images/ffffound-009.jpg" alt="Featured image for じゅうきゅうにち" title="じゅうきゅうにち">
+            <div class="col-xs-6 col-md-4 col-lg-3 post-excerpt">
+              <a href="#" style="background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgaWQ9Im9iamVjdC0xMTExLTExMjAiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgMzIwIDEzMiIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgd2lkdGg9IjE4MjUiIGhlaWdodD0ibnVsbCI+CiAgICA8Zz4KICAgICAgICA8Zz4KICAgICAgICAgICAgPHBvbHlnb24gY2xhc3M9Imh1ZSIgcG9pbnRzPSIxNjAsNjYgMTE2LDY2IDk0LDg4IDk0LDEzMiIvPgogICAgICAgICAgICA8cG9seWdvbiBjbGFzcz0iaHVlIiBwb2ludHM9IjE4Miw4OCAxMzgsMTMyIDE4MiwxMzIgMjI2LDg4Ii8+CiAgICAgICAgPC9nPgogICAgICAgIDxnPgogICAgICAgICAgICA8cG9seWdvbiBjbGFzcz0iY29sb3IiIHBvaW50cz0iOTQsMTMyIDEzOCwxMzIgMjI2LDQ0IDIyNiwwICIvPgogICAgICAgIDwvZz4KICAgIDwvZz4KPHN0eWxlIHR5cGU9InRleHQvY3NzIj4uY29sb3IsIC5odWUgeyBmaWxsOiAjYTdkOWJjOyB9ICogeyBzdHJva2Utd2lkdGg6IDA7IH0gLmh1ZSB7IG9wYWNpdHk6IC40OyB9PC9zdHlsZT48L3N2Zz4=)" title="Cupcake ipsum&#xa;dolor sit amet">
+                <img src="http://127.0.0.1:4000/images/ffffound-005.jpg" alt="Featured image for Cupcake ipsum&#xa;dolor sit amet" title="Cupcake ipsum&#xa;dolor sit amet">
               </a>
             </div>
-          
-            <div class="col-xs-6 col-lg-4">
-              <a href="#" style="background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgaWQ9Im9iamVjdC0wNDExLTA0MjAiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgMzIwIDEzMiIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgd2lkdGg9IjE0NDMiIGhlaWdodD0ibnVsbCI+CiAgICA8Zz4KICAgICAgICA8Zz4KICAgICAgICAgICAgPHBvbHlnb24gY2xhc3M9Imh1ZSIgcG9pbnRzPSI5NCwxMzIgMTM4LDEzMiAyMDQsNjYgMjA0LDIyIi8+CiAgICAgICAgPC9nPgogICAgICAgIDxnPgogICAgICAgICAgICA8cG9seWdvbiBjbGFzcz0iY29sb3IiIHBvaW50cz0iMTgyLDAgOTQsODggOTQsMTMyIDIyNiwwICIvPgogICAgICAgIDwvZz4KICAgIDwvZz4KPHN0eWxlIHR5cGU9InRleHQvY3NzIj4uY29sb3IsIC5odWUgeyBmaWxsOiAjZGNiNmJhOyB9ICogeyBzdHJva2Utd2lkdGg6IDA7IH0gLmh1ZSB7IG9wYWNpdHk6IC40OyB9PC9zdHlsZT48L3N2Zz4=)" title="はつか">
-                <img src="http://127.0.0.1:4000/images/ffffound-010.jpg" alt="Featured image for はつか" title="はつか">
-              </a>
+            <div class="hide col-xs-12 post-content">
+              <ul>
+                
+
+              </ul>
             </div>
           
-            <div class="col-xs-6 col-lg-4">
-              <a href="#" style="background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgaWQ9Im9iamVjdC0wNDIxLTA0MzAiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgMzIwIDEzMiIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgd2lkdGg9IjE0NDMiIGhlaWdodD0ibnVsbCI+CiAgICA8Zz4KICAgICAgICA8Zz4KICAgICAgICAgICAgPHBvbHlnb24gY2xhc3M9Imh1ZSIgcG9pbnRzPSI5NCwxMzIgMTgyLDEzMiAxODIsNDQiLz4KICAgICAgICA8L2c+CiAgICAgICAgPGc+CiAgICAgICAgICAgIDxwb2x5Z29uIGNsYXNzPSJjb2xvciIgcG9pbnRzPSIxODIsMCA5NCw4OCA5NCwxMzIgMjI2LDAgIi8+CiAgICAgICAgPC9nPgogICAgPC9nPgo8c3R5bGUgdHlwZT0idGV4dC9jc3MiPi5jb2xvciwgLmh1ZSB7IGZpbGw6ICNlZWJhZTk7IH0gKiB7IHN0cm9rZS13aWR0aDogMDsgfSAuaHVlIHsgb3BhY2l0eTogLjQ7IH08L3N0eWxlPjwvc3ZnPg==)" title="にじゅういちにち">
-                <img src="http://127.0.0.1:4000/images/ffffound-011.jpg" alt="Featured image for にじゅういちにち" title="にじゅういちにち">
+            <div class="col-xs-6 col-md-4 col-lg-3 post-excerpt">
+              <a href="#" style="background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgaWQ9Im9iamVjdC0xMTExLTExMjAiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgMzIwIDEzMiIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgd2lkdGg9IjE4MjUiIGhlaWdodD0ibnVsbCI+CiAgICA8Zz4KICAgICAgICA8Zz4KICAgICAgICAgICAgPHBvbHlnb24gY2xhc3M9Imh1ZSIgcG9pbnRzPSIxNjAsNjYgMTE2LDY2IDk0LDg4IDk0LDEzMiIvPgogICAgICAgICAgICA8cG9seWdvbiBjbGFzcz0iaHVlIiBwb2ludHM9IjE4Miw4OCAxMzgsMTMyIDE4MiwxMzIgMjI2LDg4Ii8+CiAgICAgICAgPC9nPgogICAgICAgIDxnPgogICAgICAgICAgICA8cG9seWdvbiBjbGFzcz0iY29sb3IiIHBvaW50cz0iOTQsMTMyIDEzOCwxMzIgMjI2LDQ0IDIyNiwwICIvPgogICAgICAgIDwvZz4KICAgIDwvZz4KPHN0eWxlIHR5cGU9InRleHQvY3NzIj4uY29sb3IsIC5odWUgeyBmaWxsOiAjYTdkOWJjOyB9ICogeyBzdHJva2Utd2lkdGg6IDA7IH0gLmh1ZSB7IG9wYWNpdHk6IC40OyB9PC9zdHlsZT48L3N2Zz4=)" title="Cupcake ipsum&#xa;dolor sit amet">
+                <img src="http://127.0.0.1:4000/images/ffffound-006.jpg" alt="Featured image for Cupcake ipsum&#xa;dolor sit amet" title="Cupcake ipsum&#xa;dolor sit amet">
               </a>
             </div>
-          
-            <div class="col-xs-6 col-lg-4">
-              <a href="#" style="background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgaWQ9Im9iamVjdC0wNTAxLTA1MTAiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgMzIwIDEzMiIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgd2lkdGg9IjE0NDMiIGhlaWdodD0ibnVsbCI+ICAKICAgIDxnPgogICAgICAgIDxnPgogICAgICAgICAgICA8cG9seWdvbiBjbGFzcz0iY29sb3IiIHBvaW50cz0iMTgyLDAgOTQsODggOTQsMTMyIDIyNiwwIi8+CiAgICAgICAgPC9nPgogICAgICAgIDxnPgogICAgICAgICAgICA8cG9seWdvbiBjbGFzcz0iaHVlIiBwb2ludHM9IjEzOCw0NCA5NCw0NCA5NCw4OCIvPgogICAgICAgICAgICA8cG9seWdvbiBjbGFzcz0iaHVlIiBwb2ludHM9Ijk0LDEzMiAxMzgsMTMyIDE4Miw4OCAxODIsNDQiLz4KICAgICAgICA8L2c+CiAgICA8L2c+CjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+LmNvbG9yLCAuaHVlIHsgZmlsbDogI2UwY2ZkNjsgfSAqIHsgc3Ryb2tlLXdpZHRoOiAwOyB9IC5odWUgeyBvcGFjaXR5OiAuNDsgfTwvc3R5bGU+PC9zdmc+)" title="にじゅうににち">
-                <img src="http://127.0.0.1:4000/images/ffffound-012.jpg" alt="Featured image for にじゅうににち" title="にじゅうににち">
-              </a>
+            <div class="hide col-xs-12 post-content">
+              <ul>
+                
+
+              </ul>
             </div>
           
-            <div class="col-xs-6 col-lg-4">
-              <a href="#" style="background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgaWQ9Im9iamVjdC0wNTExLTA1MjAiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgMzIwIDEzMiIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgd2lkdGg9IjE0NDMiIGhlaWdodD0ibnVsbCI+IAogICAgPGc+CiAgICAgICAgPGc+CiAgICAgICAgICAgIDxwb2x5Z29uIGNsYXNzPSJjb2xvciIgcG9pbnRzPSIxODIsMCA5NCw4OCA5NCwxMzIgMjI2LDAiLz4KICAgICAgICA8L2c+CiAgICAgICAgPGc+CiAgICAgICAgICAgIDxwb2x5Z29uIGNsYXNzPSJodWUiIHBvaW50cz0iMTM4LDQ0IDEzOCwwIDk0LDQ0IDk0LDg4Ii8+CiAgICAgICAgICAgIDxwb2x5Z29uIGNsYXNzPSJodWUiIHBvaW50cz0iOTQsMTMyIDEzOCwxMzIgMTYwLDExMCAxNjAsNjYiLz4KICAgICAgICA8L2c+CiAgICA8L2c+CjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+LmNvbG9yLCAuaHVlIHsgZmlsbDogI2NkYTJkOTsgfSAqIHsgc3Ryb2tlLXdpZHRoOiAwOyB9IC5odWUgeyBvcGFjaXR5OiAuNDsgfTwvc3R5bGU+PC9zdmc+)" title="にじゅうさんいち">
-                <img src="http://127.0.0.1:4000/images/ffffound-013.jpg" alt="Featured image for にじゅうさんいち" title="にじゅうさんいち">
+            <div class="col-xs-6 col-md-4 col-lg-3 post-excerpt">
+              <a href="#" style="background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgaWQ9Im9iamVjdC0xMTExLTExMjAiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgMzIwIDEzMiIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgd2lkdGg9IjE4MjUiIGhlaWdodD0ibnVsbCI+CiAgICA8Zz4KICAgICAgICA8Zz4KICAgICAgICAgICAgPHBvbHlnb24gY2xhc3M9Imh1ZSIgcG9pbnRzPSIxNjAsNjYgMTE2LDY2IDk0LDg4IDk0LDEzMiIvPgogICAgICAgICAgICA8cG9seWdvbiBjbGFzcz0iaHVlIiBwb2ludHM9IjE4Miw4OCAxMzgsMTMyIDE4MiwxMzIgMjI2LDg4Ii8+CiAgICAgICAgPC9nPgogICAgICAgIDxnPgogICAgICAgICAgICA8cG9seWdvbiBjbGFzcz0iY29sb3IiIHBvaW50cz0iOTQsMTMyIDEzOCwxMzIgMjI2LDQ0IDIyNiwwICIvPgogICAgICAgIDwvZz4KICAgIDwvZz4KPHN0eWxlIHR5cGU9InRleHQvY3NzIj4uY29sb3IsIC5odWUgeyBmaWxsOiAjYTdkOWJjOyB9ICogeyBzdHJva2Utd2lkdGg6IDA7IH0gLmh1ZSB7IG9wYWNpdHk6IC40OyB9PC9zdHlsZT48L3N2Zz4=)" title="Cupcake ipsum&#xa;dolor sit amet">
+                <img src="http://127.0.0.1:4000/images/ffffound-007.jpg" alt="Featured image for Cupcake ipsum&#xa;dolor sit amet" title="Cupcake ipsum&#xa;dolor sit amet">
               </a>
             </div>
-          
-            <div class="col-xs-6 col-lg-4">
-              <a href="#" style="background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgaWQ9Im9iamVjdC0wNTIxLTA1MzEiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgMzIwIDEzMiIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgd2lkdGg9IjE0NDMiIGhlaWdodD0ibnVsbCI+CiAgICA8Zz4KICAgICAgICA8Zz4KICAgICAgICAgICAgPHBvbHlnb24gY2xhc3M9ImNvbG9yIiBwb2ludHM9IjE4MiwwIDk0LDg4IDk0LDEzMiAyMjYsMCIvPgogICAgICAgIDwvZz4KICAgICAgICA8Zz4KICAgICAgICAgICAgPHBvbHlnb24gY2xhc3M9Imh1ZSIgcG9pbnRzPSIxMzgsNDQgMTM4LDAgOTQsNDQgOTQsODgiLz4KICAgICAgICAgICAgPHBvbHlnb24gY2xhc3M9Imh1ZSIgcG9pbnRzPSIxMzgsODggOTQsMTMyIDEzOCwxMzIgMTgyLDg4Ii8+CiAgICAgICAgPC9nPgogICAgPC9nPgo8c3R5bGUgdHlwZT0idGV4dC9jc3MiPi5jb2xvciwgLmh1ZSB7IGZpbGw6ICNjOWI3ZTg7IH0gKiB7IHN0cm9rZS13aWR0aDogMDsgfSAuaHVlIHsgb3BhY2l0eTogLjQ7IH08L3N0eWxlPjwvc3ZnPg==)" title="にゆうよっか">
-                <img src="http://127.0.0.1:4000/images/ffffound-014.jpg" alt="Featured image for にゆうよっか" title="にゆうよっか">
-              </a>
+            <div class="hide col-xs-12 post-content">
+              <ul>
+                
+
+              </ul>
             </div>
           
-            <div class="col-xs-6 col-lg-4">
-              <a href="#" style="background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgaWQ9Im9iamVjdC0wNjAxLTA2MTAiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgMzIwIDEzMiIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgd2lkdGg9IjE0NDMiIGhlaWdodD0ibnVsbCI+CiAgICA8Zz4KICAgICAgICA8Zz4KICAgICAgICAgICAgPHBvbHlnb24gY2xhc3M9ImNvbG9yIiBwb2ludHM9IjE4MiwwIDk0LDg4IDk0LDEzMiAyMjYsMCIvPgogICAgICAgIDwvZz4KICAgICAgICA8Zz4KICAgICAgICAgICAgPHBvbHlnb24gY2xhc3M9Imh1ZSIgcG9pbnRzPSIxNjAsMjIgMTE2LDIyIDk0LDQ0IDk0LDg4Ii8+CiAgICAgICAgICAgIDxwb2x5Z29uIGNsYXNzPSJodWUiIHBvaW50cz0iMTM4LDg4IDk0LDEzMiAxMzgsMTMyIDE4Miw4OCIvPgogICAgICAgIDwvZz4KICAgIDwvZz4KPHN0eWxlIHR5cGU9InRleHQvY3NzIj4uY29sb3IsIC5odWUgeyBmaWxsOiAjYWNhOGM3OyB9ICogeyBzdHJva2Utd2lkdGg6IDA7IH0gLmh1ZSB7IG9wYWNpdHk6IC40OyB9PC9zdHlsZT48L3N2Zz4=)" title="にじゅうよっか">
-                <img src="http://127.0.0.1:4000/images/ffffound-015.jpg" alt="Featured image for にじゅうよっか" title="にじゅうよっか">
+            <div class="col-xs-6 col-md-4 col-lg-3 post-excerpt">
+              <a href="#" style="background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgaWQ9Im9iamVjdC0xMTExLTExMjAiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgMzIwIDEzMiIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgd2lkdGg9IjE4MjUiIGhlaWdodD0ibnVsbCI+CiAgICA8Zz4KICAgICAgICA8Zz4KICAgICAgICAgICAgPHBvbHlnb24gY2xhc3M9Imh1ZSIgcG9pbnRzPSIxNjAsNjYgMTE2LDY2IDk0LDg4IDk0LDEzMiIvPgogICAgICAgICAgICA8cG9seWdvbiBjbGFzcz0iaHVlIiBwb2ludHM9IjE4Miw4OCAxMzgsMTMyIDE4MiwxMzIgMjI2LDg4Ii8+CiAgICAgICAgPC9nPgogICAgICAgIDxnPgogICAgICAgICAgICA8cG9seWdvbiBjbGFzcz0iY29sb3IiIHBvaW50cz0iOTQsMTMyIDEzOCwxMzIgMjI2LDQ0IDIyNiwwICIvPgogICAgICAgIDwvZz4KICAgIDwvZz4KPHN0eWxlIHR5cGU9InRleHQvY3NzIj4uY29sb3IsIC5odWUgeyBmaWxsOiAjYTdkOWJjOyB9ICogeyBzdHJva2Utd2lkdGg6IDA7IH0gLmh1ZSB7IG9wYWNpdHk6IC40OyB9PC9zdHlsZT48L3N2Zz4=)" title="Cupcake ipsum&#xa;dolor sit amet">
+                <img src="http://127.0.0.1:4000/images/ffffound-008.jpg" alt="Featured image for Cupcake ipsum&#xa;dolor sit amet" title="Cupcake ipsum&#xa;dolor sit amet">
               </a>
             </div>
-          
-            <div class="col-xs-6 col-lg-4">
-              <a href="#" style="background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgaWQ9Im9iamVjdC0wNjExLTA2MjAiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgMzIwIDEzMiIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgd2lkdGg9IjE0NDMiIGhlaWdodD0ibnVsbCI+CiAgICA8Zz4KICAgICAgICA8Zz4KICAgICAgICAgICAgPHBvbHlnb24gY2xhc3M9Imh1ZSIgcG9pbnRzPSIxNjAsMjIgMTE2LDIyIDk0LDQ0IDk0LDg4Ii8+CiAgICAgICAgICAgIDxwb2x5Z29uIGNsYXNzPSJodWUiIHBvaW50cz0iOTQsMTMyIDEzOCwxMzIgMTYwLDExMCAxNjAsNjYiLz4KICAgICAgICA8L2c+CiAgICAgICAgPGc+CiAgICAgICAgICAgIDxwb2x5Z29uIGNsYXNzPSJjb2xvciIgcG9pbnRzPSIxODIsMCA5NCw4OCA5NCwxMzIgMjI2LDAgIi8+CiAgICAgICAgPC9nPgogICAgPC9nPgo8c3R5bGUgdHlwZT0idGV4dC9jc3MiPi5jb2xvciwgLmh1ZSB7IGZpbGw6ICNhN2IyZTg7IH0gKiB7IHN0cm9rZS13aWR0aDogMDsgfSAuaHVlIHsgb3BhY2l0eTogLjQ7IH08L3N0eWxlPjwvc3ZnPg==)" title="にじゅうろくにち">
-                <img src="http://127.0.0.1:4000/images/ffffound-016.jpg" alt="Featured image for にじゅうろくにち" title="にじゅうろくにち">
-              </a>
+            <div class="hide col-xs-12 post-content">
+              <ul>
+                
+
+              </ul>
             </div>
           
-            <div class="col-xs-6 col-lg-4">
-              <a href="#" style="background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgaWQ9Im9iamVjdC0wNjIxLTA2MzAiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgMzIwIDEzMiIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgd2lkdGg9IjE0NDMiIGhlaWdodD0ibnVsbCI+CiAgICA8Zz4KICAgICAgICA8Zz4KICAgICAgICAgICAgPHBvbHlnb24gY2xhc3M9ImNvbG9yIiBwb2ludHM9IjE4MiwwIDk0LDg4IDk0LDEzMiAyMjYsMCIvPgogICAgICAgIDwvZz4KICAgICAgICA8Zz4KICAgICAgICAgICAgPHBvbHlnb24gY2xhc3M9Imh1ZSIgcG9pbnRzPSIxMzgsMCA5NCw0NCA5NCw4OCAxODIsMCIvPgogICAgICAgICAgICA8cG9seWdvbiBjbGFzcz0iaHVlIiBwb2ludHM9Ijk0LDEzMiAxMzgsMTMyIDEzOCw4OCIvPgogICAgICAgIDwvZz4KICAgIDwvZz4KPHN0eWxlIHR5cGU9InRleHQvY3NzIj4uY29sb3IsIC5odWUgeyBmaWxsOiAjNzk5M2E1OyB9ICogeyBzdHJva2Utd2lkdGg6IDA7IH0gLmh1ZSB7IG9wYWNpdHk6IC40OyB9PC9zdHlsZT48L3N2Zz4=)" title="にじゅうしちにち">
-                <img src="http://127.0.0.1:4000/images/ffffound-017.jpg" alt="Featured image for にじゅうしちにち" title="にじゅうしちにち">
+            <div class="col-xs-6 col-md-4 col-lg-3 post-excerpt">
+              <a href="#" style="background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgaWQ9Im9iamVjdC0xMTExLTExMjAiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgMzIwIDEzMiIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgd2lkdGg9IjE4MjUiIGhlaWdodD0ibnVsbCI+CiAgICA8Zz4KICAgICAgICA8Zz4KICAgICAgICAgICAgPHBvbHlnb24gY2xhc3M9Imh1ZSIgcG9pbnRzPSIxNjAsNjYgMTE2LDY2IDk0LDg4IDk0LDEzMiIvPgogICAgICAgICAgICA8cG9seWdvbiBjbGFzcz0iaHVlIiBwb2ludHM9IjE4Miw4OCAxMzgsMTMyIDE4MiwxMzIgMjI2LDg4Ii8+CiAgICAgICAgPC9nPgogICAgICAgIDxnPgogICAgICAgICAgICA8cG9seWdvbiBjbGFzcz0iY29sb3IiIHBvaW50cz0iOTQsMTMyIDEzOCwxMzIgMjI2LDQ0IDIyNiwwICIvPgogICAgICAgIDwvZz4KICAgIDwvZz4KPHN0eWxlIHR5cGU9InRleHQvY3NzIj4uY29sb3IsIC5odWUgeyBmaWxsOiAjYTdkOWJjOyB9ICogeyBzdHJva2Utd2lkdGg6IDA7IH0gLmh1ZSB7IG9wYWNpdHk6IC40OyB9PC9zdHlsZT48L3N2Zz4=)" title="Cupcake ipsum&#xa;dolor sit amet">
+                <img src="http://127.0.0.1:4000/images/ffffound-009.jpg" alt="Featured image for Cupcake ipsum&#xa;dolor sit amet" title="Cupcake ipsum&#xa;dolor sit amet">
               </a>
             </div>
-          
-            <div class="col-xs-6 col-lg-4">
-              <a href="#" style="background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgaWQ9Im9iamVjdC0wNzAxLTA3MTAiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgMzIwIDEzMiIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgd2lkdGg9IjE0NDMiIGhlaWdodD0ibnVsbCI+CiAgICA8Zz4KICAgICAgICA8Zz4KICAgICAgICAgICAgPHBvbHlnb24gY2xhc3M9Imh1ZSIgcG9pbnRzPSIyMjYsMCAxODIsMCAxODIsNDQiLz4KICAgICAgICAgICAgPHBvbHlnb24gY2xhc3M9Imh1ZSIgcG9pbnRzPSIxMzgsMTMyIDE4MiwxMzIgMjI2LDg4IDIyNiw0NCIvPgogICAgICAgIDwvZz4KICAgICAgICA8Zz4KICAgICAgICAgICAgPHBvbHlnb24gY2xhc3M9ImNvbG9yIiBwb2ludHM9Ijk0LDEzMiAxMzgsMTMyIDIyNiw0NCAyMjYsMCAiLz4KICAgICAgICA8L2c+CiAgICA8L2c+CjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+LmNvbG9yLCAuaHVlIHsgZmlsbDogI2FmYzNkYzsgfSAqIHsgc3Ryb2tlLXdpZHRoOiAwOyB9IC5odWUgeyBvcGFjaXR5OiAuNDsgfTwvc3R5bGU+PC9zdmc+)" title="にいじゅうはちにち">
-                <img src="http://127.0.0.1:4000/images/ffffound-018.jpg" alt="Featured image for にいじゅうはちにち" title="にいじゅうはちにち">
-              </a>
+            <div class="hide col-xs-12 post-content">
+              <ul>
+                
+
+              </ul>
             </div>
           
-            <div class="col-xs-6 col-lg-4">
-              <a href="#" style="background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgaWQ9Im9iamVjdC0wNzExLTA3MjAiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgMzIwIDEzMiIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgd2lkdGg9IjE0NDMiIGhlaWdodD0ibnVsbCI+CiAgICA8Zz4KICAgICAgICA8Zz4KICAgICAgICAgICAgPHBvbHlnb24gY2xhc3M9Imh1ZSIgcG9pbnRzPSIyMjYsMCAxODIsMCAxNjAsMjIgMTYwLDY2Ii8+CiAgICAgICAgICAgIDxwb2x5Z29uIGNsYXNzPSJodWUiIHBvaW50cz0iMTYwLDExMCAyMDQsMTEwIDIyNiw4OCAyMjYsNDQiLz4KICAgICAgICA8L2c+CiAgICAgICAgPGc+CiAgICAgICAgICAgIDxwb2x5Z29uIGNsYXNzPSJjb2xvciIgcG9pbnRzPSI5NCwxMzIgMTM4LDEzMiAyMjYsNDQgMjI2LDAgIi8+CiAgICAgICAgPC9nPgogICAgPC9nPgo8c3R5bGUgdHlwZT0idGV4dC9jc3MiPi5jb2xvciwgLmh1ZSB7IGZpbGw6ICNhOWM4ZjQ7IH0gKiB7IHN0cm9rZS13aWR0aDogMDsgfSAuaHVlIHsgb3BhY2l0eTogLjQ7IH08L3N0eWxlPjwvc3ZnPg==)" title="にじゅうきゅうにち">
-                <img src="http://127.0.0.1:4000/images/ffffound-019.jpg" alt="Featured image for にじゅうきゅうにち" title="にじゅうきゅうにち">
+            <div class="col-xs-6 col-md-4 col-lg-3 post-excerpt">
+              <a href="#" style="background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgaWQ9Im9iamVjdC0xMTExLTExMjAiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgMzIwIDEzMiIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgd2lkdGg9IjE4MjUiIGhlaWdodD0ibnVsbCI+CiAgICA8Zz4KICAgICAgICA8Zz4KICAgICAgICAgICAgPHBvbHlnb24gY2xhc3M9Imh1ZSIgcG9pbnRzPSIxNjAsNjYgMTE2LDY2IDk0LDg4IDk0LDEzMiIvPgogICAgICAgICAgICA8cG9seWdvbiBjbGFzcz0iaHVlIiBwb2ludHM9IjE4Miw4OCAxMzgsMTMyIDE4MiwxMzIgMjI2LDg4Ii8+CiAgICAgICAgPC9nPgogICAgICAgIDxnPgogICAgICAgICAgICA8cG9seWdvbiBjbGFzcz0iY29sb3IiIHBvaW50cz0iOTQsMTMyIDEzOCwxMzIgMjI2LDQ0IDIyNiwwICIvPgogICAgICAgIDwvZz4KICAgIDwvZz4KPHN0eWxlIHR5cGU9InRleHQvY3NzIj4uY29sb3IsIC5odWUgeyBmaWxsOiAjYTdkOWJjOyB9ICogeyBzdHJva2Utd2lkdGg6IDA7IH0gLmh1ZSB7IG9wYWNpdHk6IC40OyB9PC9zdHlsZT48L3N2Zz4=)" title="Cupcake ipsum&#xa;dolor sit amet">
+                <img src="http://127.0.0.1:4000/images/ffffound-010.jpg" alt="Featured image for Cupcake ipsum&#xa;dolor sit amet" title="Cupcake ipsum&#xa;dolor sit amet">
               </a>
             </div>
-          
-            <div class="col-xs-6 col-lg-4">
-              <a href="#" style="background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgaWQ9Im9iamVjdC0wNzIxLTA3MzEiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgMzIwIDEzMiIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgd2lkdGg9IjE0NDMiIGhlaWdodD0ibnVsbCI+CiAgICA8Zz4KICAgICAgICA8Zz4KICAgICAgICAgICAgPHBvbHlnb24gY2xhc3M9Imh1ZSIgcG9pbnRzPSIxODIsNDQgMjI2LDAgMTgyLDAgMTM4LDQ0Ii8+CiAgICAgICAgICAgIDxwb2x5Z29uIGNsYXNzPSJodWUiIHBvaW50cz0iMTYwLDExMCAyMDQsMTEwIDIyNiw4OCAyMjYsNDQiLz4KICAgICAgICA8L2c+CiAgICAgICAgPGc+CiAgICAgICAgICAgIDxwb2x5Z29uIGNsYXNzPSJjb2xvciIgcG9pbnRzPSI5NCwxMzIgMTM4LDEzMiAyMjYsNDQgMjI2LDAgIi8+CiAgICAgICAgPC9nPgogICAgPC9nPgo8c3R5bGUgdHlwZT0idGV4dC9jc3MiPi5jb2xvciwgLmh1ZSB7IGZpbGw6ICNhN2Q0ZWU7IH0gKiB7IHN0cm9rZS13aWR0aDogMDsgfSAuaHVlIHsgb3BhY2l0eTogLjQ7IH08L3N0eWxlPjwvc3ZnPg==)" title="さんじゅうにち">
-                <img src="http://127.0.0.1:4000/images/ffffound-020.jpg" alt="Featured image for さんじゅうにち" title="さんじゅうにち">
-              </a>
-            </div>
-          
-            <div class="col-xs-6 col-lg-4">
-              <a href="#" style="background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgaWQ9Im9iamVjdC0wODAxLTA4MTAiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgMzIwIDEzMiIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgd2lkdGg9IjE0NDMiIGhlaWdodD0ibnVsbCI+CiAgICA8Zz4KICAgICAgICA8Zz4KICAgICAgICAgICAgPHBvbHlnb24gY2xhc3M9Imh1ZSIgcG9pbnRzPSIyMjYsMCAxODIsMCAxMzgsNDQgMTgyLDQ0Ii8+CiAgICAgICAgICAgIDxwb2x5Z29uIGNsYXNzPSJodWUiIHBvaW50cz0iMTgyLDg4IDE4MiwxMzIgMjI2LDg4IDIyNiw0NCIvPgogICAgICAgIDwvZz4KICAgICAgICA8Zz4KICAgICAgICAgICAgPHBvbHlnb24gY2xhc3M9ImNvbG9yIiBwb2ludHM9Ijk0LDEzMiAxMzgsMTMyIDIyNiw0NCAyMjYsMCAiLz4KICAgICAgICA8L2c+CiAgICA8L2c+CjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+LmNvbG9yLCAuaHVlIHsgZmlsbDogIzgyOThiZDsgfSAqIHsgc3Ryb2tlLXdpZHRoOiAwOyB9IC5odWUgeyBvcGFjaXR5OiAuNDsgfTwvc3R5bGU+PC9zdmc+)" title="ついたち">
-                <img src="http://127.0.0.1:4000/images/ffffound-021.jpg" alt="Featured image for ついたち" title="ついたち">
-              </a>
-            </div>
-          
-            <div class="col-xs-6 col-lg-4">
-              <a href="#" style="background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgaWQ9Im9iamVjdC0wODExLTA4MjAiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgMzIwIDEzMiIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgd2lkdGg9IjE0NDMiIGhlaWdodD0ibnVsbCI+CiAgICA8Zz4KICAgICAgICA8Zz4KICAgICAgICAgICAgPHBvbHlnb24gY2xhc3M9Imh1ZSIgcG9pbnRzPSIyMjYsMCAxODIsMCAxNjAsMjIgMTYwLDY2Ii8+CiAgICAgICAgICAgIDxwb2x5Z29uIGNsYXNzPSJodWUiIHBvaW50cz0iMTgyLDg4IDE4MiwxMzIgMjI2LDg4IDIyNiw0NCIvPgogICAgICAgIDwvZz4KICAgICAgICA8Zz4KICAgICAgICAgICAgPHBvbHlnb24gY2xhc3M9ImNvbG9yIiBwb2ludHM9Ijk0LDEzMiAxMzgsMTMyIDIyNiw0NCAyMjYsMCAiLz4KICAgICAgICA8L2c+CiAgICA8L2c+CjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+LmNvbG9yLCAuaHVlIHsgZmlsbDogIzY3YTViZjsgfSAqIHsgc3Ryb2tlLXdpZHRoOiAwOyB9IC5odWUgeyBvcGFjaXR5OiAuNDsgfTwvc3R5bGU+PC9zdmc+)" title="ふつか">
-                <img src="http://127.0.0.1:4000/images/ffffound-022.jpg" alt="Featured image for ふつか" title="ふつか">
-              </a>
-            </div>
-          
-            <div class="col-xs-6 col-lg-4">
-              <a href="#" style="background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgaWQ9Im9iamVjdC0wODIxLTA4MzEiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgMzIwIDEzMiIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgd2lkdGg9IjE0NDMiIGhlaWdodD0ibnVsbCI+CiAgICA8Zz4KICAgICAgICA8Zz4KICAgICAgICAgICAgPHBvbHlnb24gY2xhc3M9Imh1ZSIgcG9pbnRzPSIyMjYsMCAxODIsMCAxMzgsNDQgMTM4LDg4Ii8+CiAgICAgICAgICAgIDxwb2x5Z29uIGNsYXNzPSJodWUiIHBvaW50cz0iMTgyLDg4IDIyNiw4OCAyMjYsNDQiLz4KICAgICAgICA8L2c+CiAgICAgICAgPGc+CiAgICAgICAgICAgIDxwb2x5Z29uIGNsYXNzPSJjb2xvciIgcG9pbnRzPSI5NCwxMzIgMTM4LDEzMiAyMjYsNDQgMjI2LDAgIi8+CiAgICAgICAgPC9nPgogICAgPC9nPgo8c3R5bGUgdHlwZT0idGV4dC9jc3MiPi5jb2xvciwgLmh1ZSB7IGZpbGw6ICM2ZWIyYmQ7IH0gKiB7IHN0cm9rZS13aWR0aDogMDsgfSAuaHVlIHsgb3BhY2l0eTogLjQ7IH08L3N0eWxlPjwvc3ZnPg==)" title="みっか">
-                <img src="http://127.0.0.1:4000/images/ffffound-023.jpg" alt="Featured image for みっか" title="みっか">
-              </a>
+            <div class="hide col-xs-12 post-content">
+              <ul>
+                
+
+              </ul>
             </div>
           
         </div>
@@ -305,7 +284,7 @@
 </div>
 
 <div class="row">
-  <div id="さん-en" class="col-xs-12 col-md-6">
+  <div id="さん-giraffe" class="col-xs-12 col-md-6">
     <div class="autumn">
       <h2>Work</h2>
       <p>We plan, design and develop cross platform and/or multi-media visual communication projects: advertisement, brand identity, editorial design, exhibitions, front-end and back-end development, user interfaces, wayfinding, and web services.</p>
@@ -313,7 +292,7 @@
       <p>We love playing with new aesthetics and techniques, sometimes resulting in interesting pieces of work and/or unexpected side projects that we proudly share under a creative commons license <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/legalcode" target="_blank" data-toggle="tooltip" data-placement="top" data-html="true" title="Attribution-NonCommercial-<br>ShareAlike 4.0 International">(CC BY-NC-SA 4.0)</a>.</p>
     </div>
   </div>
-  <div id="よん-en" class="col-xs-12 col-md-6">
+  <div id="よん-giraffe" class="col-xs-12 col-md-6">
     <div class="autumn">
       <h2>…</h2>
       <p>We enjoy working with businesses and individuals who think about, plan for, or consider the future, rather than just the present. We love to support charitable initiatives, non-profit organisations, and startups and we offer reduced rates for them. If that is you, we’d love to hear from you.</p>
@@ -326,7 +305,7 @@
 <hr class="hidden-xs hidden-sm">
 
 <div class="row">
-  <div id="ご-en" class="col-xs-12">
+  <div id="ご-giraffe" class="col-xs-12">
     <div class="winter">
       <p>
         <span>I/O studio</span>
@@ -355,17 +334,14 @@
       <nav class="navbar navbar-default">
         <div class="navbar-header">
           <h1><a href="#"><img src="objects/logo.svg" alt="I/O studio" title="I/O studio"></a></h1>
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navigation-en" aria-expanded="false">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navigation-jirafa" aria-expanded="false">
+            <span data-icon-name="hamburger"></span>
           </button>
         </div>
-        <div class="collapse navbar-collapse" id="navigation-en">
+        <div class="navbar-collapse collapse" id="navigation-jirafa">
           <ul class="nav navbar-nav">
-            <li><a href="#さん-es">Proyectos</a></li>
-            <li><a href="#ご-es">Contacto</a></li>
+            <li><a href="#さん-jirafa">Proyectos</a></li>
+            <li><a href="#ご-jirafa">Contacto</a></li>
             <li>
               <a href="#girafa" aria-controls="girafa" aria-expanded="false" class="giraffa-camelopardalis-toggle" data-parent="#giraffa-camelopardalis" data-toggle="collapse" alt="Català">
                 <abbr data-container="body" data-html="true" data-placement="top" data-toggle="tooltip" title="Hola!">CAT</abbr>
@@ -383,136 +359,56 @@
   </div>
 </div>
 
-<div class="row">
-  <div id="に-es" class="col-xs-12">
-    <ul class="summer">
-      
-        <li>
-          <span class="post-meta">Dec 3, 2015</span>
-          <span><a class="post-link" href="/2015/12/03/mikka/">みっか</a></span>
-        </li>
-      
-        <li>
-          <span class="post-meta">Dec 2, 2015</span>
-          <span><a class="post-link" href="/2015/12/02/futsuka/">ふつか</a></span>
-        </li>
-      
-        <li>
-          <span class="post-meta">Dec 1, 2015</span>
-          <span><a class="post-link" href="/2015/12/01/tsuitachi/">ついたち</a></span>
-        </li>
-      
-        <li>
-          <span class="post-meta">Nov 30, 2015</span>
-          <span><a class="post-link" href="/2015/11/30/san-juu-nichi/">さんじゅうにち</a></span>
-        </li>
-      
-        <li>
-          <span class="post-meta">Nov 29, 2015</span>
-          <span><a class="post-link" href="/2015/11/29/ni-juu-kyuu-nichi/">にじゅうきゅうにち</a></span>
-        </li>
-      
-        <li>
-          <span class="post-meta">Nov 28, 2015</span>
-          <span><a class="post-link" href="/2015/11/28/ni-juu-hachi-nichi/">にいじゅうはちにち</a></span>
-        </li>
-      
-        <li>
-          <span class="post-meta">Nov 27, 2015</span>
-          <span><a class="post-link" href="/2015/11/27/ni-juu-shichi-nichi/">にじゅうしちにち</a></span>
-        </li>
-      
-        <li>
-          <span class="post-meta">Nov 26, 2015</span>
-          <span><a class="post-link" href="/2015/11/26/ni-juu-roku-nichi/">にじゅうろくにち</a></span>
-        </li>
-      
-        <li>
-          <span class="post-meta">Nov 25, 2015</span>
-          <span><a class="post-link" href="/2015/11/25/ni-juu-go-nichi/">にじゅうよっか</a></span>
-        </li>
-      
-        <li>
-          <span class="post-meta">Nov 24, 2015</span>
-          <span><a class="post-link" href="/2015/11/24/ni-juu-yokka/">にゆうよっか</a></span>
-        </li>
-      
-        <li>
-          <span class="post-meta">Nov 23, 2015</span>
-          <span><a class="post-link" href="/2015/11/23/ni-juu-san-nichi/">にじゅうさんいち</a></span>
-        </li>
-      
-        <li>
-          <span class="post-meta">Nov 22, 2015</span>
-          <span><a class="post-link" href="/2015/11/22/ni-juu-ni-nichi/">にじゅうににち</a></span>
-        </li>
-      
-        <li>
-          <span class="post-meta">Nov 21, 2015</span>
-          <span><a class="post-link" href="/2015/11/21/ni-juu-ichi-nichi/">にじゅういちにち</a></span>
-        </li>
-      
-        <li>
-          <span class="post-meta">Nov 20, 2015</span>
-          <span><a class="post-link" href="/2015/11/20/hatsuka/">はつか</a></span>
-        </li>
-      
-        <li>
-          <span class="post-meta">Nov 19, 2015</span>
-          <span><a class="post-link" href="/2015/11/19/juu-kyuu-nichi/">じゅうきゅうにち</a></span>
-        </li>
-      
-        <li>
-          <span class="post-meta">Nov 18, 2015</span>
-          <span><a class="post-link" href="/2015/11/18/juu-hachi-nichi/">じゅうはちにち</a></span>
-        </li>
-      
-        <li>
-          <span class="post-meta">Nov 17, 2015</span>
-          <span><a class="post-link" href="/2015/11/17/juu-shichi-nichi/">じゅうしちにち</a></span>
-        </li>
-      
-        <li>
-          <span class="post-meta">Nov 16, 2015</span>
-          <span><a class="post-link" href="/2015/11/16/juu-roku-nichi/">じゅうろくにち</a></span>
-        </li>
-      
-        <li>
-          <span class="post-meta">Nov 15, 2015</span>
-          <span><a class="post-link" href="/2015/11/15/juu-go-nichi/">じゅうごにち</a></span>
-        </li>
-      
-        <li>
-          <span class="post-meta">Nov 14, 2015</span>
-          <span><a class="post-link" href="/2015/11/14/juu-yokka/">じゅうよっか</a></span>
-        </li>
-      
-        <li>
-          <span class="post-meta">Nov 13, 2015</span>
-          <span><a class="post-link" href="/2015/11/13/juu-san-nichi/">じゅうさんいち</a></span>
-        </li>
-      
-        <li>
-          <span class="post-meta">Nov 12, 2015</span>
-          <span><a class="post-link" href="/2015/11/12/juu-ni-nichi/">じゅうににち</a></span>
-        </li>
-      
-        <li>
-          <span class="post-meta">Nov 11, 2015</span>
-          <span><a class="post-link" href="/2015/11/11/juu-ichi-nichi/">Pere Salinas&#xa;Catàleg d'Art</a></span>
-        </li>
-      
-    </ul>
-  </div>
-</div>
-
   </div>
 </section>
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
-    <script src="/scripts/bootstrap.min.js"></script>
-    <script src="/scripts/main.js"></script>
+    <script src="http://127.0.0.1:4000/scripts/bootstrap.min.js"></script>
+    <script src="http://127.0.0.1:4000/scripts/svgicons.js"></script>
+    <script src="http://127.0.0.1:4000/scripts/main.js"></script>
+    <script>
+      var svgIconConfig = {
+        hamburger : {
+          url : 'http://127.0.0.1:4000/objects/hamburger.svg',
+          animation : [
+            {
+              el : 'path:nth-child(1)',
+              animProperties : {
+                from : { val : '{"path" : "m 5.0916789,20.818994 53.8166421,0"}' },
+                to : { val : '{"path" : "M 12.972944,50.936147 51.027056,12.882035"}' }
+              }
+            },
+            {
+              el : 'path:nth-child(2)',
+              animProperties : {
+                from : { val : '{"transform" : "s1 1", "opacity" : 1}', before : '{"transform" : "s0 0"}' },
+                to : { val : '{"opacity" : 0}' }
+              }
+            },
+            {
+              el : 'path:nth-child(3)',
+              animProperties : {
+                from : { val : '{"path" : "m 5.0916788,42.95698 53.8166422,0"}' },
+                to : { val : '{"path" : "M 12.972944,12.882035 51.027056,50.936147"}' }
+              }
+            }
+          ]
+        }
+      };
+      (function() {
+        [].slice.call( document.querySelectorAll('.navbar button > span') ).forEach( function( el ) {
+          var svgicon = new svgIcon( el, svgIconConfig, {
+            speed : 200,
+            easing : mina.linear,
+            evtoggle : 'click',
+            size : { w : 40, h : 40 },
+            onLoad : function() { return false; },
+            onToggle : function() { return false; }
+          });
+        });
+      })();
+    </script>
   </body>
 </html>
 

@@ -31,8 +31,9 @@
 
       header {
         .clearfix;
-        margin: 35px / 1.25;
-        margin-bottom: (35px / 1.25) / 1.5;
+        margin: 35px / 1.5;
+        margin-bottom: ((35px / 1.5) - ((35px / 1.5) / 10));
+        margin-top: (35px / 1.5) - ((35px / 1.5) / 10);
 
         nav.navbar.navbar-default {
           border: none;
@@ -71,21 +72,9 @@
               background-color: transparent;
               border: none;
               border-radius: 0;
+              float: right;
               margin: 0;
               padding: 0;
-              top: 50%;
-              transform: translateY(50%);
-
-              .icon-bar {
-                background-color: @black;
-                border-radius: 0;
-                height: 4px * 1.25; width: 32px * 1.25;
-                margin-top: 6px * 1.25;
-
-                &:nth-of-type(2) {
-                  margin-top: 0;
-                }
-              }
             }
           }
 
@@ -95,7 +84,7 @@
 
             ul {
               margin: 0;
-              margin-top: 35px / 1.25;
+              margin-top: ((35px / 1.5) - ((35px / 1.5) / 10)) * 2;
 
               li {
                 .BrixSans-Bold;
@@ -145,8 +134,8 @@
       }
 
       div.spring {
-        margin: 35px / 1.25;
-        margin-top: (35px / 1.25) / 1.5;
+        margin: 35px / 1.5;
+        margin-top: (35px / 1.5) - ((35px / 1.5) / 10);
 
         p {
           .BrixSlab-ExtraLight;
@@ -164,7 +153,7 @@
       }
 
       div.autumn {
-        margin: 35px / 1.25;
+        margin: 35px / 1.5;
         margin-bottom: 0;
 
         h2 {
@@ -172,7 +161,7 @@
           font-size: 18px;
           font-weight: normal;
           margin: 0;
-          margin-bottom: (35px / 1.25) / 2;
+          margin-bottom: (35px / 1.5) / 2;
           text-transform: uppercase;
         }
 
@@ -186,7 +175,7 @@
           &:last-of-type {
             border-bottom: 1px solid @black;
             margin-bottom: 0;
-            padding-bottom: 35px / 1.25;
+            padding-bottom: 35px / 1.5;
           }
 
           a {
@@ -199,9 +188,9 @@
       }
 
       div.winter {
-        margin: 0 35px / 1.25;
+        margin: 0 35px / 1.5;
         margin-bottom: 0;
-        padding-top: 35px / 1.25;
+        padding-top: 35px / 1.5;
         position: relative;
 
         p {
@@ -268,7 +257,7 @@
 
         footer {
           height: auto; width: 100%;
-          padding-bottom: 35px / 1.25;
+          padding-bottom: 35px / 1.5;
           position: absolute;
           bottom: 0; left: 0;
 
@@ -285,7 +274,24 @@
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
 
-// :)
+  .si-icons {
+    .show;
+    margin: 0;
+    margin-top: 8px !important;
+    padding: 0;
+
+    span {
+      .show;
+      background-repeat: no-repeat;
+      background-position: center center;
+      cursor: pointer;
+
+      svg {
+        fill: none;
+        stroke: @black;
+      }
+    }
+  }
 
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////

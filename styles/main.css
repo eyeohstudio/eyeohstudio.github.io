@@ -224,10 +224,12 @@ div.summer a img {
   width: 100%;
   mix-blend-mode: multiply;
   opacity: 1;
-  -webkit-filter: grayscale(1);
-  -moz-filter: grayscale(1);
-  filter: grayscale(1);
-  filter: gray;
+  /*
+      -webkit-filter: grayscale(1);
+         -moz-filter: grayscale(1);
+              filter: grayscale(1);
+              filter: gray;
+      */
 }
 html body {
   background: #ffffff;
@@ -257,7 +259,8 @@ html body a:hover {
 }
 html body header {
   margin: 23.33333333px;
-  margin-bottom: 15.55555556px;
+  margin-bottom: 21px;
+  margin-top: 21px;
 }
 html body header:before,
 html body header:after {
@@ -286,7 +289,7 @@ html body header nav.navbar.navbar-default .navbar-header h1 {
   display: block;
   float: left;
   height: auto;
-  width: 140px;
+  width: 130px;
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -298,23 +301,33 @@ html body header nav.navbar.navbar-default .navbar-header h1 a img {
   object-fit: contain;
 }
 html body header nav.navbar.navbar-default .navbar-header button {
+  display: block;
   background-color: transparent;
   border: none;
   border-radius: 0;
+  float: right;
   margin: 0;
   padding: 0;
-  top: 50%;
-  transform: translateY(50%);
+  margin-top: 4px !important;
 }
-html body header nav.navbar.navbar-default .navbar-header button .icon-bar {
-  background-color: #212322;
-  border-radius: 0;
-  height: 4px;
-  width: 32px;
-  margin-top: 6px;
+html body header nav.navbar.navbar-default .navbar-header button span {
+  display: block;
+  background-repeat: no-repeat;
+  background-position: center center;
+  cursor: pointer;
 }
-html body header nav.navbar.navbar-default .navbar-header button .icon-bar:nth-of-type(2) {
-  margin-top: 0;
+html body header nav.navbar.navbar-default .navbar-header button span svg {
+  fill: none;
+  stroke: #212322;
+}
+html body header nav.navbar.navbar-default .navbar-header button span svg .top-bread,
+html body header nav.navbar.navbar-default .navbar-header button span svg .bottom-bread {
+  -webkit-backface-visibility: hidden;
+  -webkit-transition: .1s ease;
+  -moz-transition: .1s ease;
+  -ms-transition: .1s ease;
+  -o-transition: .1s ease;
+  transition: .1s ease;
 }
 html body header nav.navbar.navbar-default .navbar-collapse {
   border: none;
@@ -323,7 +336,7 @@ html body header nav.navbar.navbar-default .navbar-collapse {
 }
 html body header nav.navbar.navbar-default .navbar-collapse ul {
   margin: 0;
-  margin-top: 23.33333333px;
+  margin-top: 42px;
 }
 html body header nav.navbar.navbar-default .navbar-collapse ul li {
   font-family: BrixSansBold;
@@ -356,7 +369,7 @@ html body header nav.navbar.navbar-default .navbar-collapse ul li a abbr {
 }
 html body div.spring {
   margin: 23.33333333px;
-  margin-top: 15.55555556px;
+  margin-top: 21px;
 }
 html body div.spring p {
   font-family: BrixSlab-ExtraLight;
@@ -476,6 +489,26 @@ section.collapsing {
   display: none;
   visibility: hidden;
 }
+.top-bread-in {
+  -webkit-transform: translateY(-5px);
+  -moz-transform: translateY(-5px);
+  transform: translateY(-5px);
+}
+.top-bread-out {
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  transform: translateY(0);
+}
+.bottom-bread-in {
+  -webkit-transform: translateY(5px);
+  -moz-transform: translateY(5px);
+  transform: translateY(5px);
+}
+.bottom-bread-out {
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  transform: translateY(0);
+}
 .tooltip {
   font-family: BrixSansBold;
   font-size: 12px;
@@ -519,8 +552,9 @@ section.collapsing {
     color: #212322;
   }
   html body header {
-    margin: 28px;
-    margin-bottom: 18.66666667px;
+    margin: 23.33333333px;
+    margin-bottom: 21px;
+    margin-top: 21px;
   }
   html body header:before,
   html body header:after {
@@ -564,20 +598,9 @@ section.collapsing {
     background-color: transparent;
     border: none;
     border-radius: 0;
+    float: right;
     margin: 0;
     padding: 0;
-    top: 50%;
-    transform: translateY(50%);
-  }
-  html body header nav.navbar.navbar-default .navbar-header button .icon-bar {
-    background-color: #212322;
-    border-radius: 0;
-    height: 5px;
-    width: 40px;
-    margin-top: 7.5px;
-  }
-  html body header nav.navbar.navbar-default .navbar-header button .icon-bar:nth-of-type(2) {
-    margin-top: 0;
   }
   html body header nav.navbar.navbar-default .navbar-collapse {
     border: none;
@@ -586,7 +609,7 @@ section.collapsing {
   }
   html body header nav.navbar.navbar-default .navbar-collapse ul {
     margin: 0;
-    margin-top: 28px;
+    margin-top: 42px;
   }
   html body header nav.navbar.navbar-default .navbar-collapse ul li {
     font-family: BrixSansBold;
@@ -614,8 +637,8 @@ section.collapsing {
     padding-bottom: 4px;
   }
   html body div.spring {
-    margin: 28px;
-    margin-top: 18.66666667px;
+    margin: 23.33333333px;
+    margin-top: 21px;
   }
   html body div.spring p {
     font-family: BrixSlab-ExtraLight;
@@ -630,7 +653,7 @@ section.collapsing {
     padding: 0;
   }
   html body div.autumn {
-    margin: 28px;
+    margin: 23.33333333px;
     margin-bottom: 0;
   }
   html body div.autumn h2 {
@@ -638,7 +661,7 @@ section.collapsing {
     font-size: 18px;
     font-weight: normal;
     margin: 0;
-    margin-bottom: 14px;
+    margin-bottom: 11.66666667px;
     text-transform: uppercase;
   }
   html body div.autumn p {
@@ -651,15 +674,15 @@ section.collapsing {
   html body div.autumn p:last-of-type {
     border-bottom: 1px solid #212322;
     margin-bottom: 0;
-    padding-bottom: 28px;
+    padding-bottom: 23.33333333px;
   }
   html body div.autumn p a:hover {
     opacity: 1;
   }
   html body div.winter {
-    margin: 0 28px;
+    margin: 0 23.33333333px;
     margin-bottom: 0;
-    padding-top: 28px;
+    padding-top: 23.33333333px;
     position: relative;
   }
   html body div.winter p {
@@ -700,7 +723,7 @@ section.collapsing {
   html body div.winter footer {
     height: auto;
     width: 100%;
-    padding-bottom: 28px;
+    padding-bottom: 23.33333333px;
     position: absolute;
     bottom: 0;
     left: 0;
@@ -709,6 +732,22 @@ section.collapsing {
     display: block;
     font-size: 0.5em;
     text-align: center;
+  }
+  .si-icons {
+    display: block;
+    margin: 0;
+    margin-top: 8px !important;
+    padding: 0;
+  }
+  .si-icons span {
+    display: block;
+    background-repeat: no-repeat;
+    background-position: center center;
+    cursor: pointer;
+  }
+  .si-icons span svg {
+    fill: none;
+    stroke: #212322;
   }
 }
 @media (min-width: 480px) {
@@ -722,7 +761,8 @@ section.collapsing {
   }
   html body header {
     margin: 35px;
-    margin-bottom: 15.55555556px;
+    margin-bottom: 31.5px;
+    margin-top: 31.5px;
   }
   html body header:before,
   html body header:after {
@@ -766,20 +806,9 @@ section.collapsing {
     background-color: transparent;
     border: none;
     border-radius: 0;
+    float: right;
     margin: 0;
     padding: 0;
-    top: 50%;
-    transform: translateY(50%);
-  }
-  html body header nav.navbar.navbar-default .navbar-header button .icon-bar {
-    background-color: #212322;
-    border-radius: 0;
-    height: 5px;
-    width: 40px;
-    margin-top: 7.5px;
-  }
-  html body header nav.navbar.navbar-default .navbar-header button .icon-bar:nth-of-type(2) {
-    margin-top: 0;
   }
   html body header nav.navbar.navbar-default .navbar-collapse {
     border: none;
@@ -788,7 +817,7 @@ section.collapsing {
   }
   html body header nav.navbar.navbar-default .navbar-collapse ul {
     margin: 0;
-    margin-top: 35px;
+    margin-top: 63px;
   }
   html body header nav.navbar.navbar-default .navbar-collapse ul li {
     font-family: BrixSansBold;
@@ -817,7 +846,7 @@ section.collapsing {
   }
   html body div.spring {
     margin: 35px;
-    margin-top: 15.55555556px;
+    margin-top: 31.5px;
   }
   html body div.spring p {
     font-family: BrixSlab-ExtraLight;
@@ -893,7 +922,7 @@ section.collapsing {
   html body div.winter aside {
     font-family: BrixSansBold;
     font-size: 16px;
-    margin-top: 23.33333333px;
+    margin-top: 28px;
     text-transform: uppercase;
   }
   html body div.winter aside a {
@@ -923,8 +952,9 @@ section.collapsing {
     color: #212322;
   }
   html body header {
-    margin: 43.75px;
-    margin-bottom: 29.16666667px;
+    margin: 35px;
+    margin-bottom: 31.5px;
+    margin-top: 31.5px;
   }
   html body header:before,
   html body header:after {
@@ -968,20 +998,9 @@ section.collapsing {
     background-color: transparent;
     border: none;
     border-radius: 0;
+    float: right;
     margin: 0;
     padding: 0;
-    top: 50%;
-    transform: translateY(50%);
-  }
-  html body header nav.navbar.navbar-default .navbar-header button .icon-bar {
-    background-color: #212322;
-    border-radius: 0;
-    height: 5px;
-    width: 40px;
-    margin-top: 7.5px;
-  }
-  html body header nav.navbar.navbar-default .navbar-header button .icon-bar:nth-of-type(2) {
-    margin-top: 0;
   }
   html body header nav.navbar.navbar-default .navbar-collapse {
     border: none;
@@ -990,7 +1009,7 @@ section.collapsing {
   }
   html body header nav.navbar.navbar-default .navbar-collapse ul {
     margin: 0;
-    margin-top: 43.75px;
+    margin-top: 63px;
   }
   html body header nav.navbar.navbar-default .navbar-collapse ul li {
     font-family: BrixSansBold;
@@ -1018,8 +1037,8 @@ section.collapsing {
     padding-bottom: 8px;
   }
   html body div.spring {
-    margin: 43.75px;
-    margin-top: 29.16666667px;
+    margin: 35px;
+    margin-top: 31.5px;
   }
   html body div.spring p {
     font-family: BrixSlab-ExtraLight;
@@ -1034,7 +1053,7 @@ section.collapsing {
     padding: 0;
   }
   html body div.autumn {
-    margin: 43.75px;
+    margin: 35px;
     margin-bottom: 0;
   }
   html body div.autumn h2 {
@@ -1042,7 +1061,7 @@ section.collapsing {
     font-size: 22px;
     font-weight: normal;
     margin: 0;
-    margin-bottom: 21.875px;
+    margin-bottom: 17.5px;
     text-transform: uppercase;
   }
   html body div.autumn p {
@@ -1055,15 +1074,15 @@ section.collapsing {
   html body div.autumn p:last-of-type {
     border-bottom: 1px solid #212322;
     margin-bottom: 0;
-    padding-bottom: 43.75px;
+    padding-bottom: 35px;
   }
   html body div.autumn p a:hover {
     opacity: 1;
   }
   html body div.winter {
-    margin: 0 43.75px;
+    margin: 0 35px;
     margin-bottom: 0;
-    padding-top: 43.75px;
+    padding-top: 35px;
     position: relative;
   }
   html body div.winter p {
@@ -1077,7 +1096,7 @@ section.collapsing {
   }
   html body div.winter p span:nth-of-type(1) {
     font-family: BrixSansBold;
-    margin-bottom: 4.375px;
+    margin-bottom: 3.5px;
   }
   html body div.winter p span:nth-of-type(2) {
     overflow-x: visible;
@@ -1095,7 +1114,7 @@ section.collapsing {
   html body div.winter aside {
     font-family: BrixSansBold;
     font-size: 18px;
-    margin-top: 28px;
+    margin-top: 35px;
     text-transform: uppercase;
   }
   html body div.winter aside a {
@@ -1104,7 +1123,7 @@ section.collapsing {
   html body div.winter footer {
     height: auto;
     width: 100%;
-    padding-bottom: 43.75px;
+    padding-bottom: 35px;
     position: absolute;
     bottom: 0;
     left: 0;
@@ -1126,7 +1145,8 @@ section.collapsing {
   }
   html body header {
     margin: 50px;
-    margin-bottom: 33.33333333px;
+    margin-bottom: 40.5px;
+    margin-top: 40.5px;
   }
   html body header:before,
   html body header:after {
@@ -1170,20 +1190,9 @@ section.collapsing {
     background-color: transparent;
     border: none;
     border-radius: 0;
+    float: right;
     margin: 0;
     padding: 0;
-    top: 50%;
-    transform: translateY(50%);
-  }
-  html body header nav.navbar.navbar-default .navbar-header button .icon-bar {
-    background-color: #212322;
-    border-radius: 0;
-    height: 5px;
-    width: 40px;
-    margin-top: 7.5px;
-  }
-  html body header nav.navbar.navbar-default .navbar-header button .icon-bar:nth-of-type(2) {
-    margin-top: 0;
   }
   html body header nav.navbar.navbar-default .navbar-collapse {
     border: none;
@@ -1192,7 +1201,7 @@ section.collapsing {
   }
   html body header nav.navbar.navbar-default .navbar-collapse ul {
     margin: 0;
-    margin-top: 50px;
+    margin-top: 81px;
   }
   html body header nav.navbar.navbar-default .navbar-collapse ul li {
     font-family: BrixSansBold;
@@ -1220,8 +1229,8 @@ section.collapsing {
     padding-bottom: 10px;
   }
   html body div.spring {
-    margin: 50px;
-    margin-top: 33.33333333px;
+    margin: 45px;
+    margin-top: 40.5px;
   }
   html body div.spring p {
     font-family: BrixSlab-ExtraLight;
@@ -1328,7 +1337,8 @@ section.collapsing {
   }
   html body header {
     margin: 45px 60px;
-    margin-bottom: 30px;
+    margin-bottom: 40.5px;
+    margin-top: 40.5px;
   }
   html body header:before,
   html body header:after {
@@ -1372,20 +1382,9 @@ section.collapsing {
     background-color: transparent;
     border: none;
     border-radius: 0;
+    float: right;
     margin: 0;
     padding: 0;
-    top: 50%;
-    transform: translateY(50%);
-  }
-  html body header nav.navbar.navbar-default .navbar-header button .icon-bar {
-    background-color: #212322;
-    border-radius: 0;
-    height: 5px;
-    width: 40px;
-    margin-top: 7.5px;
-  }
-  html body header nav.navbar.navbar-default .navbar-header button .icon-bar:nth-of-type(2) {
-    margin-top: 0;
   }
   html body header nav.navbar.navbar-default .navbar-collapse {
     border: none;
@@ -1480,7 +1479,7 @@ section.collapsing {
   }
   html body div.spring {
     margin: 60px;
-    margin-top: 60px;
+    margin-top: 40.5px;
   }
   html body div.spring p {
     font-family: BrixSlab-ExtraLight;
@@ -1589,13 +1588,29 @@ section.collapsing {
     padding-bottom: 60px;
   }
   .container-fluid .row:nth-of-type(4) .col-xs-12:nth-of-type(2) div.autumn {
-    margin-top: 60px;
+    margin-top: 45px;
     margin-left: 0;
     padding-left: 22.5px;
   }
   .container-fluid .row:nth-of-type(4) .col-xs-12:nth-of-type(2) div.autumn h2 {
     display: block;
     visibility: hidden;
+  }
+  .si-icons {
+    display: none;
+    margin: 0;
+    margin-top: 6px !important;
+    padding: 0;
+  }
+  .si-icons span {
+    display: block;
+    background-repeat: no-repeat;
+    background-position: center center;
+    cursor: pointer;
+  }
+  .si-icons span svg {
+    fill: none;
+    stroke: #212322;
   }
 }
 @media (min-width: 1024px) {
@@ -1609,7 +1624,8 @@ section.collapsing {
   }
   html body header {
     margin: 45px 45px;
-    margin-bottom: 30px;
+    margin-bottom: 40.5px;
+    margin-top: 40.5px;
   }
   html body header:before,
   html body header:after {
@@ -1653,20 +1669,9 @@ section.collapsing {
     background-color: transparent;
     border: none;
     border-radius: 0;
+    float: right;
     margin: 0;
     padding: 0;
-    top: 50%;
-    transform: translateY(50%);
-  }
-  html body header nav.navbar.navbar-default .navbar-header button .icon-bar {
-    background-color: #212322;
-    border-radius: 0;
-    height: 5px;
-    width: 40px;
-    margin-top: 7.5px;
-  }
-  html body header nav.navbar.navbar-default .navbar-header button .icon-bar:nth-of-type(2) {
-    margin-top: 0;
   }
   html body header nav.navbar.navbar-default .navbar-collapse {
     border: none;
@@ -1761,7 +1766,7 @@ section.collapsing {
   }
   html body div.spring {
     margin: 45px;
-    margin-top: 45px;
+    margin-top: 40.5px;
   }
   html body div.spring p {
     font-family: BrixSlab-ExtraLight;
@@ -1870,7 +1875,7 @@ section.collapsing {
     padding-bottom: 45px;
   }
   .container-fluid .row:nth-of-type(4) .col-xs-12:nth-of-type(2) div.autumn {
-    margin-top: 60px;
+    margin-top: 45px;
     margin-left: 0;
     padding-left: 22.5px;
   }
@@ -1890,7 +1895,8 @@ section.collapsing {
   }
   html body header {
     margin: 45px auto;
-    margin-bottom: 30px;
+    margin-bottom: 40.5px;
+    margin-top: 40.5px;
     height: auto;
     width: 800px;
   }
@@ -1936,20 +1942,9 @@ section.collapsing {
     background-color: transparent;
     border: none;
     border-radius: 0;
+    float: right;
     margin: 0;
     padding: 0;
-    top: 50%;
-    transform: translateY(50%);
-  }
-  html body header nav.navbar.navbar-default .navbar-header button .icon-bar {
-    background-color: #212322;
-    border-radius: 0;
-    height: 5px;
-    width: 40px;
-    margin-top: 7.5px;
-  }
-  html body header nav.navbar.navbar-default .navbar-header button .icon-bar:nth-of-type(2) {
-    margin-top: 0;
   }
   html body header nav.navbar.navbar-default .navbar-collapse {
     border: none;
@@ -2044,7 +2039,7 @@ section.collapsing {
   }
   html body div.spring {
     margin: 45px auto;
-    margin-top: 45px;
+    margin-top: 40.5px;
     height: auto;
     width: 800px;
   }
@@ -2161,7 +2156,7 @@ section.collapsing {
     padding-bottom: 45px;
   }
   .container-fluid .row:nth-of-type(4) .col-xs-12:nth-of-type(2) div.autumn {
-    margin-top: 60px;
+    margin-top: 45px;
     margin-left: 0;
     padding-left: 22.5px;
   }
@@ -2181,9 +2176,10 @@ section.collapsing {
   }
   html body header {
     margin: 45px auto;
-    margin-bottom: 30px;
+    margin-bottom: 40.5px;
+    margin-top: 40.5px;
     height: auto;
-    width: 1115px;
+    width: 1120px;
   }
   html body header:before,
   html body header:after {
@@ -2227,20 +2223,9 @@ section.collapsing {
     background-color: transparent;
     border: none;
     border-radius: 0;
+    float: right;
     margin: 0;
     padding: 0;
-    top: 50%;
-    transform: translateY(50%);
-  }
-  html body header nav.navbar.navbar-default .navbar-header button .icon-bar {
-    background-color: #212322;
-    border-radius: 0;
-    height: 5px;
-    width: 40px;
-    margin-top: 7.5px;
-  }
-  html body header nav.navbar.navbar-default .navbar-header button .icon-bar:nth-of-type(2) {
-    margin-top: 0;
   }
   html body header nav.navbar.navbar-default .navbar-collapse {
     border: none;
@@ -2335,9 +2320,9 @@ section.collapsing {
   }
   html body div.spring {
     margin: 45px auto;
-    margin-top: 45px;
+    margin-top: 40.5px;
     height: auto;
-    width: 1115px;
+    width: 1120px;
   }
   html body div.spring p {
     font-family: BrixSlab-ExtraLight;
@@ -2355,7 +2340,7 @@ section.collapsing {
     margin: 45px auto;
     margin-bottom: 0;
     height: auto;
-    width: 557.5px;
+    width: 560px;
   }
   html body div.autumn h2 {
     font-family: BrixSansBold;
@@ -2383,12 +2368,12 @@ section.collapsing {
   html body hr {
     border-top: 1px solid #212322;
     height: auto;
-    width: 1115px;
+    width: 1120px;
     margin: 0 auto;
   }
   html body div.winter {
     height: auto;
-    width: 1115px;
+    width: 1120px;
     margin: 0 auto;
     margin-bottom: 0;
     padding-top: 45px;
@@ -2452,7 +2437,7 @@ section.collapsing {
     padding-bottom: 45px;
   }
   .container-fluid .row:nth-of-type(4) .col-xs-12:nth-of-type(2) div.autumn {
-    margin-top: 60px;
+    margin-top: 45px;
     margin-left: 0;
     padding-left: 22.5px;
   }
@@ -2472,9 +2457,10 @@ section.collapsing {
   }
   html body header {
     margin: 45px auto;
-    margin-bottom: 30px;
+    margin-bottom: 40.5px;
+    margin-top: 40.5px;
     height: auto;
-    width: 1115px;
+    width: 1120px;
   }
   html body header:before,
   html body header:after {
@@ -2518,20 +2504,9 @@ section.collapsing {
     background-color: transparent;
     border: none;
     border-radius: 0;
+    float: right;
     margin: 0;
     padding: 0;
-    top: 50%;
-    transform: translateY(50%);
-  }
-  html body header nav.navbar.navbar-default .navbar-header button .icon-bar {
-    background-color: #212322;
-    border-radius: 0;
-    height: 5px;
-    width: 40px;
-    margin-top: 7.5px;
-  }
-  html body header nav.navbar.navbar-default .navbar-header button .icon-bar:nth-of-type(2) {
-    margin-top: 0;
   }
   html body header nav.navbar.navbar-default .navbar-collapse {
     border: none;
@@ -2626,9 +2601,9 @@ section.collapsing {
   }
   html body div.spring {
     margin: 45px auto;
-    margin-top: 45px;
+    margin-top: 40.5px;
     height: auto;
-    width: 1115px;
+    width: 1120px;
   }
   html body div.spring p {
     font-family: BrixSlab-ExtraLight;
@@ -2646,7 +2621,7 @@ section.collapsing {
     margin: 45px auto;
     margin-bottom: 0;
     height: auto;
-    width: 557.5px;
+    width: 560px;
   }
   html body div.autumn h2 {
     font-family: BrixSansBold;
@@ -2674,12 +2649,12 @@ section.collapsing {
   html body hr {
     border-top: 1px solid #212322;
     height: auto;
-    width: 1115px;
+    width: 1120px;
     margin: 0 auto;
   }
   html body div.winter {
     height: auto;
-    width: 1115px;
+    width: 1120px;
     margin: 0 auto;
     margin-bottom: 0;
     padding-top: 45px;
@@ -2743,7 +2718,7 @@ section.collapsing {
     padding-bottom: 45px;
   }
   .container-fluid .row:nth-of-type(4) .col-xs-12:nth-of-type(2) div.autumn {
-    margin-top: 60px;
+    margin-top: 45px;
     margin-left: 0;
     padding-left: 22.5px;
   }
