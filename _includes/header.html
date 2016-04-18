@@ -20,7 +20,7 @@
 
 -->
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" class="no-js">
+<html xmlns="http://www.w3.org/1999/xhtml" class="no-js">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -38,9 +38,22 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-    <!-- Snap.svg
-         The JavaScript SVG library for the modern web. -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
     <script src="{{ site.url }}/scripts/snap.svg.min.js"></script>
+    <script src="{{ site.url }}/scripts/js.cookie.js"></script>
+    <script src="{{ site.url }}/scripts/jquery-lang.js"></script>
+    <script src="{{ site.url }}/languages/ca.js"></script>
+    <script src="{{ site.url }}/languages/es.js"></script>
+    <script>
+      var lang = new Lang();
+
+      Lang.prototype.attrList.push('class');
+      Lang.prototype.attrList.push('data-language');
+
+      lang.init({
+        defaultLang: 'en'
+      });
+    </script>
     <!-- Modernizr
          Custom built: SVG, SVG as an <img> tag source, SVG clip paths, SVG filters, SVG foreignObject, Inline SVG, SVG SMIL animation -->
     <script src="{{ site.url }}/scripts/modernizr-custom.min.js"></script>
@@ -53,4 +66,4 @@
       window.location = 'https://youtu.be/010KyIQjkTk';
     </script> -->
   </head>
-  <body id="giraffa-camelopardalis" class="hide">
+  <body class="en" lang="en">

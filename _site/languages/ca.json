@@ -1,0 +1,15 @@
+{
+  'token': {
+    'en' : 'ca',
+    'Work' : 'Projectes',
+    'Contact' : 'Contacte',
+    'View map' : 'Mira el plànol',
+    'randomWhatelseEn' : 'randomWhatelseCa',
+    'randomCityEn' : 'randomCityCa',
+    'text-1' : 'Som un equip multidisciplinar que treballem conjuntament per crear solucions gràfiques i/o digitals amb un disseny efectiu i',
+    'text-2' : '. Estem a',
+    'text-3' : 'Barcelona'
+  },
+  'regex': [
+  ]
+}

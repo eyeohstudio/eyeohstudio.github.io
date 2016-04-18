@@ -1,0 +1,15 @@
+{
+  'token': {
+    'en' : 'es',
+    'Work' : 'Proyectos',
+    'Contact' : 'Contacto',
+    'View map' : 'Ver mapa',
+    'randomWhatelseEn' : 'randomWhatelseEs',
+    'randomCityEn' : 'randomCityEs',
+    'text-1' : '',
+    'text-2' : '',
+    'text-3' : ''
+  },
+  'regex': [
+  ]
+}

@@ -77,6 +77,7 @@ div.summer {
   html {
 
     body {
+      .hide;
       background: @white;
       color: @black;
 
@@ -376,6 +377,69 @@ div.summer {
 
 a[data-toggle="tooltip"] {
   white-space: nowrap;
+}
+
+body.ca li.language-change-ca,
+body.en li.language-change-en,
+body.es li.language-change-es {
+  .hide;
+}
+
+body.ca .navbar-collapse ul li {
+
+  &:nth-of-type(4),
+  &:nth-of-type(5) {
+
+    a {
+
+      &:after {
+        .show;
+        content: attr(alt);
+      }
+
+      abbr {
+        .hide;
+      }
+    }
+  }
+}
+
+body.en .navbar-collapse ul li {
+
+  &:nth-of-type(3),
+  &:nth-of-type(5) {
+
+    a {
+
+      &:after {
+        .show;
+        content: attr(alt);
+      }
+
+      abbr {
+        .hide;
+      }
+    }
+  }
+}
+
+body.es .navbar-collapse ul li {
+
+  &:nth-of-type(3),
+  &:nth-of-type(4) {
+
+    a {
+
+      &:after {
+        .show;
+        content: attr(alt);
+      }
+
+      abbr {
+        .hide;
+      }
+    }
+  }
 }
 
 section.collapsing {

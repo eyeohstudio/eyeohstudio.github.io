@@ -17,7 +17,6 @@ jQuery(document).ready(function ($) {
 ////////////////////////////////////////////////////////////////
 
   var whatelseCa = new Array(
-    //'creatiu',
     'imaginatiu',
     'innovador',
     'poc convencional'
@@ -26,7 +25,6 @@ jQuery(document).ready(function ($) {
   $('.randomWhatelseCa').text( randomWhatelseCa );
 
   var whatelseEn = new Array(
-    //'creative',
     'imaginative',
     'innovative',
     'unconventional'
@@ -35,13 +33,26 @@ jQuery(document).ready(function ($) {
   $('.randomWhatelseEn').text( randomWhatelseEn );
 
   var whatelseEs = new Array(
-    //'y creativo',
     'e imaginativo',
     'e innovador',
     'y poco convencional'
   ),
   randomWhatelseEs = whatelseEs[Math.floor( Math.random() * whatelseEs.length )];
   $('.randomWhatelseEs').text( randomWhatelseEs );
+
+  $('#randomWhatelse').attrchange({
+    trackValues: true,
+    callback: function(evnt) {
+      if(evnt.attributeName == 'class') {
+        if(evnt.newValue.search(/inline/i) == -1) {
+
+          $('.randomWhatelseCa').text( randomWhatelseCa );
+          $('.randomWhatelseEn').text( randomWhatelseEn );
+          $('.randomWhatelseEs').text( randomWhatelseEs );
+        }
+      }
+    }
+  });
 
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
@@ -101,13 +112,27 @@ jQuery(document).ready(function ($) {
   randomCityEs = cityEs[Math.floor(Math.random() * cityEs.length)];
   $('.randomCityEs').text(randomCityEs);
 
+  $('#randomCity').attrchange({
+    trackValues: true,
+    callback: function(evnt) {
+      if(evnt.attributeName == 'class') {
+        if(evnt.newValue.search(/inline/i) == -1) {
+
+          $('.randomCityCa').text( randomCityCa );
+          $('.randomCityEn').text( randomCityEn );
+          $('.randomCityEs').text( randomCityEs );
+        }
+      }
+    }
+  });
+
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
 
   $(function() {
-    $('.navbar-collapse ul li a[href*="#"]:not([class="giraffa-camelopardalis-toggle"]):not([href="#"])').click(function() {
+    $('.navbar-collapse ul li a[href*="#"]:not([href="#"])').click(function() {
       if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
         var target = $(this.hash);
         target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
@@ -119,30 +144,6 @@ jQuery(document).ready(function ($) {
         }
       }
     });
-  });
-
-////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////
-
-  $(document).on('click', '.giraffa-camelopardalis-toggle', function(event) {
-    event.stopPropagation();
-    var $this = $(this);
-
-    var parent = $this.data('parent');
-    var actives = parent && $(parent).find('.collapse.in');
-
-    // From bootstrap itself
-    if (actives && actives.length) {
-      hasData = actives.data('collapse');
-      //if (hasData && hasData.transitioning) return;
-      actives.collapse('hide');
-    }
-
-    var target = $this.attr('data-target') || (href = $this.attr('href')) && href.replace(/.*(?=#[^\s]+$)/, ''); //strip for ie7
-
-    $(target).collapse('toggle');
   });
 
 ////////////////////////////////////////////////////////////////
@@ -189,16 +190,7 @@ jQuery(document).ready(function ($) {
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
 
-  $('.giraffa-camelopardalis-toggle').click(function() {
-    $('.navbar button > span').click();
-  });
-
-////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////
-
-  $('body').removeClass('hide').addClass('fadeIn');
+  $('body').removeClass('hide').addClass('fadeIn').css('display', 'block');
 
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////

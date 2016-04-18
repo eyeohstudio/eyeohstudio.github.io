@@ -232,6 +232,7 @@ div.summer a img {
       */
 }
 html body {
+  display: none;
   background: #ffffff;
   color: #212322;
 }
@@ -467,6 +468,38 @@ html body div.winter footer small {
 a[data-toggle="tooltip"] {
   white-space: nowrap;
 }
+body.ca li.language-change-ca,
+body.en li.language-change-en,
+body.es li.language-change-es {
+  display: none;
+}
+body.ca .navbar-collapse ul li:nth-of-type(4) a:after,
+body.ca .navbar-collapse ul li:nth-of-type(5) a:after {
+  display: block;
+  content: attr(alt);
+}
+body.ca .navbar-collapse ul li:nth-of-type(4) a abbr,
+body.ca .navbar-collapse ul li:nth-of-type(5) a abbr {
+  display: none;
+}
+body.en .navbar-collapse ul li:nth-of-type(3) a:after,
+body.en .navbar-collapse ul li:nth-of-type(5) a:after {
+  display: block;
+  content: attr(alt);
+}
+body.en .navbar-collapse ul li:nth-of-type(3) a abbr,
+body.en .navbar-collapse ul li:nth-of-type(5) a abbr {
+  display: none;
+}
+body.es .navbar-collapse ul li:nth-of-type(3) a:after,
+body.es .navbar-collapse ul li:nth-of-type(4) a:after {
+  display: block;
+  content: attr(alt);
+}
+body.es .navbar-collapse ul li:nth-of-type(3) a abbr,
+body.es .navbar-collapse ul li:nth-of-type(4) a abbr {
+  display: none;
+}
 section.collapsing {
   -webkit-backface-visibility: hidden;
   -webkit-transition: 0.3s ease-in-out;
@@ -548,6 +581,7 @@ section.collapsing {
     line-height: 1em;
   }
   html body {
+    display: none;
     background: #ffffff;
     color: #212322;
   }
@@ -756,6 +790,7 @@ section.collapsing {
     line-height: 1em;
   }
   html body {
+    display: none;
     background: #ffffff;
     color: #212322;
   }
@@ -948,6 +983,7 @@ section.collapsing {
     line-height: 1em;
   }
   html body {
+    display: none;
     background: #ffffff;
     color: #212322;
   }
@@ -1140,6 +1176,7 @@ section.collapsing {
     line-height: 1em;
   }
   html body {
+    display: none;
     background: #ffffff;
     color: #212322;
   }
@@ -1332,6 +1369,7 @@ section.collapsing {
     line-height: 1em;
   }
   html body {
+    display: none;
     background: #ffffff;
     color: #212322;
   }
@@ -1434,40 +1472,6 @@ section.collapsing {
   }
   html body header nav.navbar.navbar-default .navbar-collapse ul li:nth-of-type(2) {
     margin-right: -50px;
-  }
-  html body header nav.navbar.navbar-default .navbar-collapse ul li:nth-of-type(3) {
-    float: left;
-  }
-  html body header nav.navbar.navbar-default .navbar-collapse ul li:nth-of-type(3):after {
-    content: "/";
-    margin: 0 0.45em 0 0;
-    font-style: italic;
-  }
-  html body header nav.navbar.navbar-default .navbar-collapse ul li:nth-of-type(4) {
-    float: right;
-  }
-  html body header nav.navbar.navbar-default .navbar-collapse ul li:nth-of-type(3),
-  html body header nav.navbar.navbar-default .navbar-collapse ul li:nth-of-type(4) {
-    font-family: BrixSansExtraLight;
-    display: block;
-    font-size: 12px;
-    line-height: 1.3em;
-    margin-top: -38px;
-  }
-  html body header nav.navbar.navbar-default .navbar-collapse ul li:nth-of-type(3) a,
-  html body header nav.navbar.navbar-default .navbar-collapse ul li:nth-of-type(4) a {
-    display: inline-block;
-    padding-top: 0;
-    padding-bottom: 0;
-  }
-  html body header nav.navbar.navbar-default .navbar-collapse ul li:nth-of-type(3) a:after,
-  html body header nav.navbar.navbar-default .navbar-collapse ul li:nth-of-type(4) a:after {
-    display: none;
-    content: attr(alt);
-  }
-  html body header nav.navbar.navbar-default .navbar-collapse ul li:nth-of-type(3) a abbr,
-  html body header nav.navbar.navbar-default .navbar-collapse ul li:nth-of-type(4) a abbr {
-    display: block;
   }
   html body header nav.navbar.navbar-default .navbar-collapse ul li a {
     border: none;
@@ -1578,6 +1582,117 @@ section.collapsing {
     font-size: 0.5em;
     text-align: center;
   }
+  body.ca .navbar-collapse ul li:nth-of-type(4) {
+    float: left !important;
+  }
+  body.ca .navbar-collapse ul li:nth-of-type(4):after {
+    content: "/" !important;
+    margin: 0 0.45em 0 0 !important;
+    font-style: italic !important;
+  }
+  body.ca .navbar-collapse ul li:nth-of-type(3) {
+    display: none !important;
+  }
+  body.ca .navbar-collapse ul li:nth-of-type(5) {
+    float: right !important;
+  }
+  body.ca .navbar-collapse ul li:nth-of-type(4),
+  body.ca .navbar-collapse ul li:nth-of-type(5) {
+    font-family: BrixSansExtraLight !important;
+    display: block !important;
+    font-size: 12px !important;
+    line-height: 1.3em !important;
+    margin-top: -38px !important;
+  }
+  body.ca .navbar-collapse ul li:nth-of-type(4) a,
+  body.ca .navbar-collapse ul li:nth-of-type(5) a {
+    display: inline-block !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+  }
+  body.ca .navbar-collapse ul li:nth-of-type(4) a:after,
+  body.ca .navbar-collapse ul li:nth-of-type(5) a:after {
+    display: none !important;
+    content: attr(alt) !important;
+  }
+  body.ca .navbar-collapse ul li:nth-of-type(4) a abbr,
+  body.ca .navbar-collapse ul li:nth-of-type(5) a abbr {
+    display: block !important;
+  }
+  body.en .navbar-collapse ul li:nth-of-type(3) {
+    float: left !important;
+  }
+  body.en .navbar-collapse ul li:nth-of-type(3):after {
+    content: "/" !important;
+    margin: 0 0.45em 0 0 !important;
+    font-style: italic !important;
+  }
+  body.en .navbar-collapse ul li:nth-of-type(4) {
+    display: none !important;
+  }
+  body.en .navbar-collapse ul li:nth-of-type(5) {
+    float: right !important;
+  }
+  body.en .navbar-collapse ul li:nth-of-type(3),
+  body.en .navbar-collapse ul li:nth-of-type(5) {
+    font-family: BrixSansExtraLight !important;
+    display: block !important;
+    font-size: 12px !important;
+    line-height: 1.3em !important;
+    margin-top: -38px !important;
+  }
+  body.en .navbar-collapse ul li:nth-of-type(3) a,
+  body.en .navbar-collapse ul li:nth-of-type(5) a {
+    display: inline-block !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+  }
+  body.en .navbar-collapse ul li:nth-of-type(3) a:after,
+  body.en .navbar-collapse ul li:nth-of-type(5) a:after {
+    display: none !important;
+    content: attr(alt) !important;
+  }
+  body.en .navbar-collapse ul li:nth-of-type(3) a abbr,
+  body.en .navbar-collapse ul li:nth-of-type(5) a abbr {
+    display: block !important;
+  }
+  body.es .navbar-collapse ul li:nth-of-type(3) {
+    float: left !important;
+  }
+  body.es .navbar-collapse ul li:nth-of-type(3):after {
+    content: "/" !important;
+    margin: 0 0.45em 0 0 !important;
+    font-style: italic !important;
+  }
+  body.es .navbar-collapse ul li:nth-of-type(5) {
+    display: none !important;
+  }
+  body.es .navbar-collapse ul li:nth-of-type(4) {
+    float: right !important;
+  }
+  body.es .navbar-collapse ul li:nth-of-type(3),
+  body.es .navbar-collapse ul li:nth-of-type(4) {
+    font-family: BrixSansExtraLight !important;
+    display: block !important;
+    font-size: 12px !important;
+    line-height: 1.3em !important;
+    margin-top: -38px !important;
+  }
+  body.es .navbar-collapse ul li:nth-of-type(3) a,
+  body.es .navbar-collapse ul li:nth-of-type(4) a {
+    display: inline-block !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+  }
+  body.es .navbar-collapse ul li:nth-of-type(3) a:after,
+  body.es .navbar-collapse ul li:nth-of-type(4) a:after {
+    display: none !important;
+    content: attr(alt) !important;
+  }
+  body.es .navbar-collapse ul li:nth-of-type(3) a abbr,
+  body.es .navbar-collapse ul li:nth-of-type(4) a abbr {
+    display: block !important;
+  }
   .container-fluid .row:nth-of-type(4) .col-xs-12:nth-of-type(1) div.autumn {
     margin-right: 0;
     padding-right: 22.5px;
@@ -1619,6 +1734,7 @@ section.collapsing {
     line-height: 1em;
   }
   html body {
+    display: none;
     background: #ffffff;
     color: #212322;
   }
@@ -1721,40 +1837,6 @@ section.collapsing {
   }
   html body header nav.navbar.navbar-default .navbar-collapse ul li:nth-of-type(2) {
     margin-right: -50px;
-  }
-  html body header nav.navbar.navbar-default .navbar-collapse ul li:nth-of-type(3) {
-    float: left;
-  }
-  html body header nav.navbar.navbar-default .navbar-collapse ul li:nth-of-type(3):after {
-    content: "/";
-    margin: 0 0.45em 0 0;
-    font-style: italic;
-  }
-  html body header nav.navbar.navbar-default .navbar-collapse ul li:nth-of-type(4) {
-    float: right;
-  }
-  html body header nav.navbar.navbar-default .navbar-collapse ul li:nth-of-type(3),
-  html body header nav.navbar.navbar-default .navbar-collapse ul li:nth-of-type(4) {
-    font-family: BrixSansExtraLight;
-    display: block;
-    font-size: 12px;
-    line-height: 1.3em;
-    margin-top: -38px;
-  }
-  html body header nav.navbar.navbar-default .navbar-collapse ul li:nth-of-type(3) a,
-  html body header nav.navbar.navbar-default .navbar-collapse ul li:nth-of-type(4) a {
-    display: inline-block;
-    padding-top: 0;
-    padding-bottom: 0;
-  }
-  html body header nav.navbar.navbar-default .navbar-collapse ul li:nth-of-type(3) a:after,
-  html body header nav.navbar.navbar-default .navbar-collapse ul li:nth-of-type(4) a:after {
-    display: none;
-    content: attr(alt);
-  }
-  html body header nav.navbar.navbar-default .navbar-collapse ul li:nth-of-type(3) a abbr,
-  html body header nav.navbar.navbar-default .navbar-collapse ul li:nth-of-type(4) a abbr {
-    display: block;
   }
   html body header nav.navbar.navbar-default .navbar-collapse ul li a {
     border: none;
@@ -1890,6 +1972,7 @@ section.collapsing {
     line-height: 1em;
   }
   html body {
+    display: none;
     background: #ffffff;
     color: #212322;
   }
@@ -1994,40 +2077,6 @@ section.collapsing {
   }
   html body header nav.navbar.navbar-default .navbar-collapse ul li:nth-of-type(2) {
     margin-right: -50px;
-  }
-  html body header nav.navbar.navbar-default .navbar-collapse ul li:nth-of-type(3) {
-    float: left;
-  }
-  html body header nav.navbar.navbar-default .navbar-collapse ul li:nth-of-type(3):after {
-    content: "/";
-    margin: 0 0.45em 0 0;
-    font-style: italic;
-  }
-  html body header nav.navbar.navbar-default .navbar-collapse ul li:nth-of-type(4) {
-    float: right;
-  }
-  html body header nav.navbar.navbar-default .navbar-collapse ul li:nth-of-type(3),
-  html body header nav.navbar.navbar-default .navbar-collapse ul li:nth-of-type(4) {
-    font-family: BrixSansExtraLight;
-    display: block;
-    font-size: 12px;
-    line-height: 1.3em;
-    margin-top: -38px;
-  }
-  html body header nav.navbar.navbar-default .navbar-collapse ul li:nth-of-type(3) a,
-  html body header nav.navbar.navbar-default .navbar-collapse ul li:nth-of-type(4) a {
-    display: inline-block;
-    padding-top: 0;
-    padding-bottom: 0;
-  }
-  html body header nav.navbar.navbar-default .navbar-collapse ul li:nth-of-type(3) a:after,
-  html body header nav.navbar.navbar-default .navbar-collapse ul li:nth-of-type(4) a:after {
-    display: none;
-    content: attr(alt);
-  }
-  html body header nav.navbar.navbar-default .navbar-collapse ul li:nth-of-type(3) a abbr,
-  html body header nav.navbar.navbar-default .navbar-collapse ul li:nth-of-type(4) a abbr {
-    display: block;
   }
   html body header nav.navbar.navbar-default .navbar-collapse ul li a {
     border: none;
@@ -2171,6 +2220,7 @@ section.collapsing {
     line-height: 1em;
   }
   html body {
+    display: none;
     background: #ffffff;
     color: #212322;
   }
@@ -2275,40 +2325,6 @@ section.collapsing {
   }
   html body header nav.navbar.navbar-default .navbar-collapse ul li:nth-of-type(2) {
     margin-right: -50px;
-  }
-  html body header nav.navbar.navbar-default .navbar-collapse ul li:nth-of-type(3) {
-    float: left;
-  }
-  html body header nav.navbar.navbar-default .navbar-collapse ul li:nth-of-type(3):after {
-    content: "/";
-    margin: 0 0.45em 0 0;
-    font-style: italic;
-  }
-  html body header nav.navbar.navbar-default .navbar-collapse ul li:nth-of-type(4) {
-    float: right;
-  }
-  html body header nav.navbar.navbar-default .navbar-collapse ul li:nth-of-type(3),
-  html body header nav.navbar.navbar-default .navbar-collapse ul li:nth-of-type(4) {
-    font-family: BrixSansExtraLight;
-    display: block;
-    font-size: 12px;
-    line-height: 1.3em;
-    margin-top: -38px;
-  }
-  html body header nav.navbar.navbar-default .navbar-collapse ul li:nth-of-type(3) a,
-  html body header nav.navbar.navbar-default .navbar-collapse ul li:nth-of-type(4) a {
-    display: inline-block;
-    padding-top: 0;
-    padding-bottom: 0;
-  }
-  html body header nav.navbar.navbar-default .navbar-collapse ul li:nth-of-type(3) a:after,
-  html body header nav.navbar.navbar-default .navbar-collapse ul li:nth-of-type(4) a:after {
-    display: none;
-    content: attr(alt);
-  }
-  html body header nav.navbar.navbar-default .navbar-collapse ul li:nth-of-type(3) a abbr,
-  html body header nav.navbar.navbar-default .navbar-collapse ul li:nth-of-type(4) a abbr {
-    display: block;
   }
   html body header nav.navbar.navbar-default .navbar-collapse ul li a {
     border: none;
@@ -2452,6 +2468,7 @@ section.collapsing {
     line-height: 1em;
   }
   html body {
+    display: none;
     background: #ffffff;
     color: #212322;
   }
@@ -2556,40 +2573,6 @@ section.collapsing {
   }
   html body header nav.navbar.navbar-default .navbar-collapse ul li:nth-of-type(2) {
     margin-right: -50px;
-  }
-  html body header nav.navbar.navbar-default .navbar-collapse ul li:nth-of-type(3) {
-    float: left;
-  }
-  html body header nav.navbar.navbar-default .navbar-collapse ul li:nth-of-type(3):after {
-    content: "/";
-    margin: 0 0.45em 0 0;
-    font-style: italic;
-  }
-  html body header nav.navbar.navbar-default .navbar-collapse ul li:nth-of-type(4) {
-    float: right;
-  }
-  html body header nav.navbar.navbar-default .navbar-collapse ul li:nth-of-type(3),
-  html body header nav.navbar.navbar-default .navbar-collapse ul li:nth-of-type(4) {
-    font-family: BrixSansExtraLight;
-    display: block;
-    font-size: 12px;
-    line-height: 1.3em;
-    margin-top: -38px;
-  }
-  html body header nav.navbar.navbar-default .navbar-collapse ul li:nth-of-type(3) a,
-  html body header nav.navbar.navbar-default .navbar-collapse ul li:nth-of-type(4) a {
-    display: inline-block;
-    padding-top: 0;
-    padding-bottom: 0;
-  }
-  html body header nav.navbar.navbar-default .navbar-collapse ul li:nth-of-type(3) a:after,
-  html body header nav.navbar.navbar-default .navbar-collapse ul li:nth-of-type(4) a:after {
-    display: none;
-    content: attr(alt);
-  }
-  html body header nav.navbar.navbar-default .navbar-collapse ul li:nth-of-type(3) a abbr,
-  html body header nav.navbar.navbar-default .navbar-collapse ul li:nth-of-type(4) a abbr {
-    display: block;
   }
   html body header nav.navbar.navbar-default .navbar-collapse ul li a {
     border: none;
