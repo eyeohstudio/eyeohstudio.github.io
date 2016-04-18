@@ -441,17 +441,21 @@ html body div.winter p span:nth-of-type(1) {
   font-family: BrixSansBold;
   margin-bottom: 3.5px;
 }
-html body div.winter p span:nth-of-type(2) {
+html body div.winter p span:nth-of-type(2),
+html body div.winter p span:nth-of-type(3),
+html body div.winter p span:nth-of-type(4) {
   overflow-x: visible;
   white-space: nowrap;
 }
-html body div.winter p span:nth-of-type(2) a:hover {
+html body div.winter p span:nth-of-type(2) a:hover,
+html body div.winter p span:nth-of-type(3) a:hover,
+html body div.winter p span:nth-of-type(4) a:hover {
   opacity: 1;
 }
-html body div.winter p span:nth-of-type(3) a {
+html body div.winter p span:nth-of-type(5) a {
   border: none;
 }
-html body div.winter p span:nth-of-type(4) a {
+html body div.winter p span:nth-of-type(6) a {
   border: none;
 }
 html body div.winter aside {
@@ -744,19 +748,6 @@ body.es .navbar-collapse ul li:nth-of-type(4) a abbr {
     font-family: BrixSansBold;
     margin-bottom: 3.5px;
   }
-  html body div.winter p span:nth-of-type(2) {
-    overflow-x: visible;
-    white-space: nowrap;
-  }
-  html body div.winter p span:nth-of-type(2) a:hover {
-    opacity: 1;
-  }
-  html body div.winter p span:nth-of-type(3) a {
-    border: none;
-  }
-  html body div.winter p span:nth-of-type(4) a {
-    border: none;
-  }
   html body div.winter aside {
     font-family: BrixSansBold;
     font-size: 13px;
@@ -952,19 +943,6 @@ body.es .navbar-collapse ul li:nth-of-type(4) a abbr {
     font-family: BrixSansBold;
     margin-bottom: 3.5px;
   }
-  html body div.winter p span:nth-of-type(2) {
-    overflow-x: visible;
-    white-space: nowrap;
-  }
-  html body div.winter p span:nth-of-type(2) a:hover {
-    opacity: 1;
-  }
-  html body div.winter p span:nth-of-type(3) a {
-    border: none;
-  }
-  html body div.winter p span:nth-of-type(4) a {
-    border: none;
-  }
   html body div.winter aside {
     font-family: BrixSansBold;
     font-size: 16px;
@@ -1144,19 +1122,6 @@ body.es .navbar-collapse ul li:nth-of-type(4) a abbr {
     font-family: BrixSansBold;
     margin-bottom: 3.5px;
   }
-  html body div.winter p span:nth-of-type(2) {
-    overflow-x: visible;
-    white-space: nowrap;
-  }
-  html body div.winter p span:nth-of-type(2) a:hover {
-    opacity: 1;
-  }
-  html body div.winter p span:nth-of-type(3) a {
-    border: none;
-  }
-  html body div.winter p span:nth-of-type(4) a {
-    border: none;
-  }
   html body div.winter aside {
     font-family: BrixSansBold;
     font-size: 18px;
@@ -1335,19 +1300,6 @@ body.es .navbar-collapse ul li:nth-of-type(4) a abbr {
   html body div.winter p span:nth-of-type(1) {
     font-family: BrixSansBold;
     margin-bottom: 5px;
-  }
-  html body div.winter p span:nth-of-type(2) {
-    overflow-x: visible;
-    white-space: nowrap;
-  }
-  html body div.winter p span:nth-of-type(2) a:hover {
-    opacity: 1;
-  }
-  html body div.winter p span:nth-of-type(3) a {
-    border: none;
-  }
-  html body div.winter p span:nth-of-type(4) a {
-    border: none;
   }
   html body div.winter aside {
     font-family: BrixSansBold;
@@ -1554,19 +1506,6 @@ body.es .navbar-collapse ul li:nth-of-type(4) a abbr {
   html body div.winter p span:nth-of-type(1) {
     font-family: BrixSansBold;
     margin-bottom: 6px;
-  }
-  html body div.winter p span:nth-of-type(2) {
-    overflow-x: visible;
-    white-space: nowrap;
-  }
-  html body div.winter p span:nth-of-type(2) a:hover {
-    opacity: 1;
-  }
-  html body div.winter p span:nth-of-type(3) a {
-    border: none;
-  }
-  html body div.winter p span:nth-of-type(4) a {
-    border: none;
   }
   html body div.winter aside {
     font-family: BrixSansBold;
@@ -1919,19 +1858,6 @@ body.es .navbar-collapse ul li:nth-of-type(4) a abbr {
     font-family: BrixSansBold;
     margin-bottom: 4.5px;
   }
-  html body div.winter p span:nth-of-type(2) {
-    overflow-x: visible;
-    white-space: nowrap;
-  }
-  html body div.winter p span:nth-of-type(2) a:hover {
-    opacity: 1;
-  }
-  html body div.winter p span:nth-of-type(3) a {
-    border: none;
-  }
-  html body div.winter p span:nth-of-type(4) a {
-    border: none;
-  }
   html body div.winter aside {
     font-family: BrixSansBold;
     font-size: 16px;
@@ -2165,19 +2091,6 @@ body.es .navbar-collapse ul li:nth-of-type(4) a abbr {
   html body div.winter p span:nth-of-type(1) {
     font-family: BrixSansBold;
     margin-bottom: 4.5px;
-  }
-  html body div.winter p span:nth-of-type(2) {
-    overflow-x: visible;
-    white-space: nowrap;
-  }
-  html body div.winter p span:nth-of-type(2) a:hover {
-    opacity: 1;
-  }
-  html body div.winter p span:nth-of-type(3) a {
-    border: none;
-  }
-  html body div.winter p span:nth-of-type(4) a {
-    border: none;
   }
   html body div.winter aside {
     font-family: BrixSansBold;
@@ -2413,19 +2326,6 @@ body.es .navbar-collapse ul li:nth-of-type(4) a abbr {
     font-family: BrixSansBold;
     margin-bottom: 4.5px;
   }
-  html body div.winter p span:nth-of-type(2) {
-    overflow-x: visible;
-    white-space: nowrap;
-  }
-  html body div.winter p span:nth-of-type(2) a:hover {
-    opacity: 1;
-  }
-  html body div.winter p span:nth-of-type(3) a {
-    border: none;
-  }
-  html body div.winter p span:nth-of-type(4) a {
-    border: none;
-  }
   html body div.winter aside {
     font-family: BrixSansBold;
     font-size: 16px;
@@ -2659,19 +2559,6 @@ body.es .navbar-collapse ul li:nth-of-type(4) a abbr {
   html body div.winter p span:nth-of-type(1) {
     font-family: BrixSansBold;
     margin-bottom: 4.5px;
-  }
-  html body div.winter p span:nth-of-type(2) {
-    overflow-x: visible;
-    white-space: nowrap;
-  }
-  html body div.winter p span:nth-of-type(2) a:hover {
-    opacity: 1;
-  }
-  html body div.winter p span:nth-of-type(3) a {
-    border: none;
-  }
-  html body div.winter p span:nth-of-type(4) a {
-    border: none;
   }
   html body div.winter aside {
     font-family: BrixSansBold;
