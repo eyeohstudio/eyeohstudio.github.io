@@ -40,20 +40,6 @@ jQuery(document).ready(function ($) {
   randomWhatelseEs = whatelseEs[Math.floor( Math.random() * whatelseEs.length )];
   $('.randomWhatelseEs').text( randomWhatelseEs );
 
-  $('#randomWhatelse').attrchange({
-    trackValues: true,
-    callback: function(evnt) {
-      if(evnt.attributeName == 'class') {
-        if(evnt.newValue.search(/inline/i) == -1) {
-
-          $('.randomWhatelseCa').text( randomWhatelseCa );
-          $('.randomWhatelseEn').text( randomWhatelseEn );
-          $('.randomWhatelseEs').text( randomWhatelseEs );
-        }
-      }
-    }
-  });
-
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
@@ -112,20 +98,6 @@ jQuery(document).ready(function ($) {
   randomCityEs = cityEs[Math.floor(Math.random() * cityEs.length)];
   $('.randomCityEs').text(randomCityEs);
 
-  $('#randomCity').attrchange({
-    trackValues: true,
-    callback: function(evnt) {
-      if(evnt.attributeName == 'class') {
-        if(evnt.newValue.search(/inline/i) == -1) {
-
-          $('.randomCityCa').text( randomCityCa );
-          $('.randomCityEn').text( randomCityEn );
-          $('.randomCityEs').text( randomCityEs );
-        }
-      }
-    }
-  });
-
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
@@ -173,6 +145,12 @@ jQuery(document).ready(function ($) {
       $('.navbar-toggle.collapsed svg .top-bread').removeClass('top-bread-out').addClass('top-bread-in');
       $('.navbar-toggle.collapsed svg .bottom-bread').removeClass('bottom-bread-out').addClass('bottom-bread-in');
     },
+    function () {
+      $('.navbar-toggle.collapsed svg .top-bread').removeClass('top-bread-in').addClass('top-bread-out');
+      $('.navbar-toggle.collapsed svg .bottom-bread').removeClass('bottom-bread-in').addClass('bottom-bread-out');
+    }
+  );
+  $('.navbar-toggle.collapsed').click(
     function () {
       $('.navbar-toggle.collapsed svg .top-bread').removeClass('top-bread-in').addClass('top-bread-out');
       $('.navbar-toggle.collapsed svg .bottom-bread').removeClass('bottom-bread-in').addClass('bottom-bread-out');
