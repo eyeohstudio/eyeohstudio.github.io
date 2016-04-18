@@ -20,7 +20,7 @@
 
 -->
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" class="no-js">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" class="no-js">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -58,20 +58,6 @@
     <![endif]-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
     <script src="http://127.0.0.1:4000/scripts/snap.svg.min.js"></script>
-    <script src="http://127.0.0.1:4000/scripts/js.cookie.js"></script>
-    <script src="http://127.0.0.1:4000/scripts/jquery-lang.js"></script>
-    <script src="http://127.0.0.1:4000/languages/ca.js"></script>
-    <script src="http://127.0.0.1:4000/languages/es.js"></script>
-    <script>
-      var lang = new Lang();
-
-      Lang.prototype.attrList.push('class');
-      Lang.prototype.attrList.push('data-language');
-
-      lang.init({
-        defaultLang: 'en'
-      });
-    </script>
     <!-- Modernizr
          Custom built: SVG, SVG as an <img> tag source, SVG clip paths, SVG filters, SVG foreignObject, Inline SVG, SVG SMIL animation -->
     <script src="http://127.0.0.1:4000/scripts/modernizr-custom.min.js"></script>
@@ -84,12 +70,11 @@
       window.location = 'https://youtu.be/010KyIQjkTk';
     </script> -->
   </head>
-  <body class="en" lang="en">
+  <body class="hide en">
+    <div class="container-fluid">
 
 
-  <section id="giraffe">
-  <div class="container-fluid">
-    <div class="row">
+  <div class="row">
   <div class="col-xs-12">
     <header>
       <nav class="navbar navbar-default">
@@ -101,20 +86,32 @@
         </div>
         <div class="navbar-collapse collapse" id="navigation">
           <ul class="nav navbar-nav">
-            <li><a href="#さん" lang="en">Work</a></li>
-            <li><a href="#ご" lang="en">Contact</a></li>
+            <li>
+              <a href="#さん">
+                <span lang="ca">Projectes</span>
+                <span lang="en">Work</span>
+                <span lang="es">Proyectos</span>
+              </a>
+            </li>
+            <li>
+              <a href="#ご">
+                <span lang="ca">Contacte</span>
+                <span lang="en">Contact</span>
+                <span lang="es">Contacto</span>
+              </a>
+            </li>
             <li class="language-change-ca">
-              <a href="" onclick="window.lang.change('ca'); return false;" alt="Català">
+              <a href="" alt="Català">
                 <abbr data-container="body" data-html="true" data-placement="top" data-toggle="tooltip" title="Hola!">CAT</abbr>
               </a>
             </li>
             <li class="language-change-en">
-              <a href="" onclick="window.lang.change('en'); return false;" alt="English">
+              <a href="" alt="English">
                 <abbr data-container="body" data-html="true" data-placement="top" data-toggle="tooltip" title="Hi!">ENG</abbr>
               </a>
             </li>
             <li class="language-change-es">
-              <a href="" onclick="window.lang.change('es'); return false;" alt="Español">
+              <a href="" alt="Español">
                 <abbr data-container="body" data-html="true" data-placement="top" data-toggle="tooltip" title="¡Hola!">ESP</abbr>
               </a>
             </li>
@@ -127,13 +124,14 @@
 
 <div class="row">
   <div id="いち" class="col-xs-12">
-    <div class="spring">
-      <p>
-        <span lang="en">We are a multi-disciplinary team working together to create graphic and digital solutions through effective and</span>
-        <span id="randomWhatelse" class="randomWhatelseEn" lang="en"><!-- randomWhatelse--></span>&nbsp;<span lang="en">design. We are based in</span>
-        <del><span id="randomCity" class="randomCityEn" lang="en"><!-- randomCity--></span></del>
-        <span lang="en">Barcelona</span>.
-      </p>
+    <div class="spring" lang="ca">
+      <p>We are a multi-disciplinary team working together to create graphic and digital solutions through effective and <span id="randomWhatelse" class="randomWhatelseCa"><!-- randomWhatelse--></span> design. We are based in <del><span id="randomCity" class="randomCityCa"><!-- randomCity--></span></del> Barcelona.</p>
+    </div>
+    <div class="spring" lang="en">
+      <p lang="en">We are a multi-disciplinary team working together to create graphic and digital solutions through effective and <span id="randomWhatelse" class="randomWhatelseEn"><!-- randomWhatelse--></span> design. We are based in <del><span id="randomCity" class="randomCityEn"><!-- randomCity--></span></del> Barcelona.</p>
+    </div>
+    <div class="spring" lang="es">
+      <p lang="es">We are a multi-disciplinary team working together to create graphic and digital solutions through effective and <span id="randomWhatelse" class="randomWhatelseEs"><!-- randomWhatelse--></span> design. We are based in <del><span id="randomCity" class="randomCityEs"><!-- randomCity--></span></del> Barcelona.</p>
     </div>
   </div>
 </div>
@@ -272,18 +270,42 @@
 
 <div class="row">
   <div id="さん" class="col-xs-12 col-md-6">
-    <div class="autumn">
-      <h2 lang="en">Work</h2>
-      <p lang="en">We plan, design and develop cross platform and/or multi-media visual communication projects: advertisement, brand identity, editorial design, exhibitions, front-end and back-end development, user interfaces, wayfinding, and web services.</p>
-      <p lang="en">We are designers and developers in favor of useful, lasting, and innovative design and deeply committed to progressive enhancement and open source technologies. Our work is built around the principles of <a href="http://lawsofsimplicity.com/" target="_blank" data-toggle="tooltip" data-placement="top" data-html="true" title="We turn against technology<br>that's too complicated">simplicity</a> and <a href="http://project.cyberpunk.ru/idb/hacker_ethics.html" target="_blank" data-toggle="tooltip" data-placement="top" data-html="true" title="We solve problems through<br>creativity and technology">hacking</a> and emphasizes both the look and functionality.</p>
-      <p lang="en">We love playing with new aesthetics and techniques, sometimes resulting in interesting pieces of work and/or unexpected side projects that we proudly share under a creative commons license <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/legalcode" target="_blank" data-toggle="tooltip" data-placement="top" data-html="true" title="Attribution-NonCommercial-<br>ShareAlike 4.0 International">(CC BY-NC-SA 4.0)</a>.</p>
+    <div class="autumn" lang="ca">
+      <h2>Projectes</h2>
+      <p>We plan, design and develop cross platform and/or multi-media visual communication projects: advertisement, brand identity, editorial design, exhibitions, front-end and back-end development, user interfaces, wayfinding, and web services.</p>
+      <p>We are designers and developers in favor of useful, lasting, and innovative design and deeply committed to progressive enhancement and open source technologies. Our work is built around the principles of <a href="http://lawsofsimplicity.com/" target="_blank" data-toggle="tooltip" data-placement="top" data-html="true" title="We turn against technology<br>that's too complicated">simplicity</a> and <a href="http://project.cyberpunk.ru/idb/hacker_ethics.html" target="_blank" data-toggle="tooltip" data-placement="top" data-html="true" title="We solve problems through<br>creativity and technology">hacking</a> and emphasizes both the look and functionality.</p>
+      <p>We love playing with new aesthetics and techniques, sometimes resulting in interesting pieces of work and/or unexpected side projects that we proudly share under a creative commons license <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/legalcode" target="_blank" data-toggle="tooltip" data-placement="top" data-html="true" title="Attribution-NonCommercial-<br>ShareAlike 4.0 International">(CC BY-NC-SA 4.0)</a>.</p>
+    </div>
+    <div class="autumn" lang="en">
+      <h2>Work</h2>
+      <p>We plan, design and develop cross platform and/or multi-media visual communication projects: advertisement, brand identity, editorial design, exhibitions, front-end and back-end development, user interfaces, wayfinding, and web services.</p>
+      <p>We are designers and developers in favor of useful, lasting, and innovative design and deeply committed to progressive enhancement and open source technologies. Our work is built around the principles of <a href="http://lawsofsimplicity.com/" target="_blank" data-toggle="tooltip" data-placement="top" data-html="true" title="We turn against technology<br>that's too complicated">simplicity</a> and <a href="http://project.cyberpunk.ru/idb/hacker_ethics.html" target="_blank" data-toggle="tooltip" data-placement="top" data-html="true" title="We solve problems through<br>creativity and technology">hacking</a> and emphasizes both the look and functionality.</p>
+      <p>We love playing with new aesthetics and techniques, sometimes resulting in interesting pieces of work and/or unexpected side projects that we proudly share under a creative commons license <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/legalcode" target="_blank" data-toggle="tooltip" data-placement="top" data-html="true" title="Attribution-NonCommercial-<br>ShareAlike 4.0 International">(CC BY-NC-SA 4.0)</a>.</p>
+    </div>
+    <div class="autumn" lang="es">
+      <h2>Proyectos</h2>
+      <p>We plan, design and develop cross platform and/or multi-media visual communication projects: advertisement, brand identity, editorial design, exhibitions, front-end and back-end development, user interfaces, wayfinding, and web services.</p>
+      <p>We are designers and developers in favor of useful, lasting, and innovative design and deeply committed to progressive enhancement and open source technologies. Our work is built around the principles of <a href="http://lawsofsimplicity.com/" target="_blank" data-toggle="tooltip" data-placement="top" data-html="true" title="We turn against technology<br>that's too complicated">simplicity</a> and <a href="http://project.cyberpunk.ru/idb/hacker_ethics.html" target="_blank" data-toggle="tooltip" data-placement="top" data-html="true" title="We solve problems through<br>creativity and technology">hacking</a> and emphasizes both the look and functionality.</p>
+      <p>We love playing with new aesthetics and techniques, sometimes resulting in interesting pieces of work and/or unexpected side projects that we proudly share under a creative commons license <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/legalcode" target="_blank" data-toggle="tooltip" data-placement="top" data-html="true" title="Attribution-NonCommercial-<br>ShareAlike 4.0 International">(CC BY-NC-SA 4.0)</a>.</p>
     </div>
   </div>
   <div id="よん" class="col-xs-12 col-md-6">
-    <div class="autumn">
+    <div class="autumn" lang="ca">
       <h2>…</h2>
-      <p lang="en">We enjoy working with businesses and individuals who think about, plan for, or consider the future, rather than just the present. We love to support charitable initiatives, non-profit organisations, and startups and we offer reduced rates for them. If that is you, we’d love to hear from you.</p>
-      <p lang="en">We also collaborate with teams of complementary skills, including photographers, illustrators, motion designers, and copywriters to take demanding projects to the next level. If you pertain to any creative field, and you feel the way we do, drop us a line!</p>
+      <p>We enjoy working with businesses and individuals who think about, plan for, or consider the future, rather than just the present. We love to support charitable initiatives, non-profit organisations, and startups and we offer reduced rates for them. If that is you, we’d love to hear from you.</p>
+      <p>We also collaborate with teams of complementary skills, including photographers, illustrators, motion designers, and copywriters to take demanding projects to the next level. If you pertain to any creative field, and you feel the way we do, drop us a line!</p>
+      <p>For further collaborations or more information and detailed case studies of our work, please get in touch.</p>
+    </div>
+    <div class="autumn" lang="en">
+      <h2>…</h2>
+      <p>We enjoy working with businesses and individuals who think about, plan for, or consider the future, rather than just the present. We love to support charitable initiatives, non-profit organisations, and startups and we offer reduced rates for them. If that is you, we’d love to hear from you.</p>
+      <p>We also collaborate with teams of complementary skills, including photographers, illustrators, motion designers, and copywriters to take demanding projects to the next level. If you pertain to any creative field, and you feel the way we do, drop us a line!</p>
+      <p>For further collaborations or more information and detailed case studies of our work, please get in touch.</p>
+    </div>
+    <div class="autumn" lang="es">
+      <h2>…</h2>
+      <p>We enjoy working with businesses and individuals who think about, plan for, or consider the future, rather than just the present. We love to support charitable initiatives, non-profit organisations, and startups and we offer reduced rates for them. If that is you, we’d love to hear from you.</p>
+      <p>We also collaborate with teams of complementary skills, including photographers, illustrators, motion designers, and copywriters to take demanding projects to the next level. If you pertain to any creative field, and you feel the way we do, drop us a line!</p>
       <p>For further collaborations or more information and detailed case studies of our work, please get in touch.</p>
     </div>
   </div>
@@ -296,7 +318,9 @@
     <div class="winter">
       <p>
         <span>I/O studio</span>
-        <span lang="en">7th Floor, <a href="https://goo.gl/maps/x5j9b" target="_blank" data-toggle="tooltip" data-placement="top" data-html="true" title="View map" lang="en">313 Trav. de les Corts, Barcelona 08029</a></span>
+        <span lang="ca">7th Floor, <a href="https://goo.gl/maps/x5j9b" target="_blank" data-toggle="tooltip" data-placement="top" data-html="true" title="View map">313 Trav. de les Corts, Barcelona 08029</a></span>
+        <span lang="en">7th Floor, <a href="https://goo.gl/maps/x5j9b" target="_blank" data-toggle="tooltip" data-placement="top" data-html="true" title="View map">313 Trav. de les Corts, Barcelona 08029</a></span>
+        <span lang="es">7th Floor, <a href="https://goo.gl/maps/x5j9b" target="_blank" data-toggle="tooltip" data-placement="top" data-html="true" title="View map">313 Trav. de les Corts, Barcelona 08029</a></span>
         <span><a href="tel:+34934103368" target="_blank">(+34) 934 103 368</a> / <a href="tel:+34618261598" target="_blank">(+34) 618 261 598</a></span>
         <span><a href="mailto:hello@wearestudio.io" target="_blank">hello@wearestudio.io</a></span>
       </p>
@@ -310,10 +334,8 @@
   </div>
 </div>
 
-  </div>
-</section>
 
-
+    </div>
     <script src="http://127.0.0.1:4000/scripts/bootstrap.min.js"></script>
     <script src="http://127.0.0.1:4000/scripts/svgicons.js"></script>
     <script src="http://127.0.0.1:4000/scripts/attrchange.js"></script>

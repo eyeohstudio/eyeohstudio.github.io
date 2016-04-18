@@ -169,6 +169,18 @@
  *
  * @source http://nicolasgallagher.com/micro-clearfix-hack/
  */
+body.ca [lang="en"],
+body.ca [lang="es"] {
+  display: none;
+}
+body.en [lang="ca"],
+body.en [lang="es"] {
+  display: none;
+}
+body.es [lang="ca"],
+body.es [lang="en"] {
+  display: none;
+}
 div.summer a {
   display: block;
   background-position: 50% 0;
@@ -232,7 +244,6 @@ div.summer a img {
       */
 }
 html body {
-  display: none;
   background: #ffffff;
   color: #212322;
 }
@@ -473,6 +484,18 @@ body.en li.language-change-en,
 body.es li.language-change-es {
   display: none;
 }
+body.ca [lang="en"],
+body.ca [lang="es"] {
+  display: none;
+}
+body.en [lang="ca"],
+body.en [lang="es"] {
+  display: none;
+}
+body.es [lang="ca"],
+body.es [lang="en"] {
+  display: none;
+}
 body.ca .navbar-collapse ul li:nth-of-type(4) a:after,
 body.ca .navbar-collapse ul li:nth-of-type(5) a:after {
   display: block;
@@ -499,16 +522,6 @@ body.es .navbar-collapse ul li:nth-of-type(4) a:after {
 body.es .navbar-collapse ul li:nth-of-type(3) a abbr,
 body.es .navbar-collapse ul li:nth-of-type(4) a abbr {
   display: none;
-}
-section.collapsing {
-  -webkit-backface-visibility: hidden;
-  -webkit-transition: 0.3s ease-in-out;
-  -moz-transition: 0.3s ease-in-out;
-  -ms-transition: 0.3s ease-in-out;
-  -o-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
-  -webkit-transition: none;
-  transition: none;
 }
 .container-fluid .row:nth-of-type(4) .col-xs-12:nth-of-type(1) div.autumn p:last-of-type {
   border-bottom: none;
@@ -581,7 +594,6 @@ section.collapsing {
     line-height: 1em;
   }
   html body {
-    display: none;
     background: #ffffff;
     color: #212322;
   }
@@ -790,7 +802,6 @@ section.collapsing {
     line-height: 1em;
   }
   html body {
-    display: none;
     background: #ffffff;
     color: #212322;
   }
@@ -983,7 +994,6 @@ section.collapsing {
     line-height: 1em;
   }
   html body {
-    display: none;
     background: #ffffff;
     color: #212322;
   }
@@ -1176,7 +1186,6 @@ section.collapsing {
     line-height: 1em;
   }
   html body {
-    display: none;
     background: #ffffff;
     color: #212322;
   }
@@ -1369,7 +1378,6 @@ section.collapsing {
     line-height: 1em;
   }
   html body {
-    display: none;
     background: #ffffff;
     color: #212322;
   }
@@ -1734,7 +1742,6 @@ section.collapsing {
     line-height: 1em;
   }
   html body {
-    display: none;
     background: #ffffff;
     color: #212322;
   }
@@ -1972,7 +1979,6 @@ section.collapsing {
     line-height: 1em;
   }
   html body {
-    display: none;
     background: #ffffff;
     color: #212322;
   }
@@ -2220,7 +2226,6 @@ section.collapsing {
     line-height: 1em;
   }
   html body {
-    display: none;
     background: #ffffff;
     color: #212322;
   }
@@ -2468,7 +2473,6 @@ section.collapsing {
     line-height: 1em;
   }
   html body {
-    display: none;
     background: #ffffff;
     color: #212322;
   }

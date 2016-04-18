@@ -178,19 +178,39 @@ jQuery(document).ready(function ($) {
       $('.navbar-toggle.collapsed svg .bottom-bread').removeClass('bottom-bread-in').addClass('bottom-bread-out');
     }
   );
-  $('.navbar-toggle.collapsed').click(
-    function () {
-      $('.navbar-toggle.collapsed svg .top-bread').removeClass('top-bread-in').addClass('top-bread-out');
-      $('.navbar-toggle.collapsed svg .bottom-bread').removeClass('bottom-bread-in').addClass('bottom-bread-out');
-    }
-  );
 
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
 
-  $('body').removeClass('hide').addClass('fadeIn').css('display', 'block');
+  $('.language-change-ca a').click(function() {
+    $('html').attr('xml:lang', 'ca').attr('lang', 'ca');
+    $('body').removeClass('en').addClass('ca');
+    $('body').removeClass('es').addClass('ca');
+    return false;
+  });
+
+  $('.language-change-en a').click(function() {
+    $('html').attr('xml:lang', 'en').attr('lang', 'en');
+    $('body').removeClass('ca').addClass('en');
+    $('body').removeClass('es').addClass('en');
+    return false;
+  });
+
+  $('.language-change-es a').click(function() {
+    $('html').attr('xml:lang', 'es').attr('lang', 'es');
+    $('body').removeClass('ca').addClass('es');
+    $('body').removeClass('en').addClass('es');
+    return false;
+  });
+
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+
+  $('body').removeClass('hide').addClass('fadeIn');
 
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
