@@ -16,87 +16,40 @@ jQuery(document).ready(function ($) {
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
 
-  var whatelseCa = new Array(
-    'imaginatiu',
-    'innovador',
-    'poc convencional'
-  ),
-  randomWhatelseCa = whatelseCa[Math.floor( Math.random() * whatelseCa.length )];
-  $('.randomWhatelseCa').text( randomWhatelseCa );
+  var what01 = new Array('imaginatiu', 'imaginative', 'e imaginativo')
+  var what02 = new Array('innovador', 'innovative', 'e innovador')
+  var what03 = new Array('poc convencional', 'unconventional', 'y poco convencional')
+  var what00 = new Array(what01, what02, what03)
 
-  var whatelseEn = new Array(
-    'imaginative',
-    'innovative',
-    'unconventional'
-  ),
-  randomWhatelseEn = whatelseEn[Math.floor( Math.random() * whatelseEn.length )];
-  $('.randomWhatelseEn').text( randomWhatelseEn );
-
-  var whatelseEs = new Array(
-    'e imaginativo',
-    'e innovador',
-    'y poco convencional'
-  ),
-  randomWhatelseEs = whatelseEs[Math.floor( Math.random() * whatelseEs.length )];
-  $('.randomWhatelseEs').text( randomWhatelseEs );
+  randomWhat = what00[Math.floor(Math.random() * what00.length)];
+  $('.randomWhatCa').text(randomWhat[0]);
+  $('.randomWhatEn').text(randomWhat[1]);
+  $('.randomWhatEs').text(randomWhat[2]);
 
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
 
-  var cityCa = new Array(
-    'Fons de Bikini',
-    'Coruscant',
-    'Ciutat Maragda',
-    'Ciutat Gotham',
-    'Hivèrnia',
-    'Metropolis',
-    'Neo Tokyo',
-    'Nova Nova York',
-    'Raccoon City',
-    'San Fransokyo',
-    'Twin Peaks',
-    'la Vila del Pingüí'
-  ),
-  randomCityCa = cityCa[Math.floor(Math.random() * cityCa.length)];
-  $('.randomCityCa').text(randomCityCa);
+  var city01 = new Array('Fons de Bikini', 'Bikini Bottom', 'Fondo de Bikini')
+  var city02 = new Array('Coruscant', 'Coruscant', 'Coruscant')
+  var city03 = new Array('Ciutat Maragda','Emerald City','Ciudad Esmeralda')
+  var city04 = new Array('Ciutat Gotham', 'Gotham City', 'Gotham City')
+  var city05 = new Array('Hivèrnia', 'Winterfell', 'Invernalia')
+  var city06 = new Array('Metropolis', 'Metropolis', 'Metropolis')
+  var city07 = new Array('Neo Tokyo', 'Neo Tokyo', 'Neo Tokyo')
+  var city08 = new Array('Nova Nova York', 'New New York', 'Nueva Nueva York')
+  var city09 = new Array('Raccoon City', 'Raccoon City', 'Raccoon City')
+  var city10 = new Array('San Fransokyo', 'San Fransokyo', 'San Fransokyo')
+  var city11 = new Array('Twin Peaks', 'Twin Peaks', 'Twin Peaks')
+  var city12 = new Array('la Vila del Pingüí', 'Penguin Village', 'Villa Pingüino')
+  var city13 = new Array('Port Reial', 'King\'s Landing', 'Desembarco del Rey')
+  var city00 = new Array(city01, city02, city03, city04, city05, city06, city07, city08, city09, city10, city11, city12, city13)
 
-  var cityEn = new Array(
-    'Bikini Bottom',
-    'Coruscant',
-    'Emerald City',
-    'Gotham City',
-    'King\'s Landing',
-    'Metropolis',
-    'Neo Tokyo',
-    'New New York',
-    'Penguin Village',
-    'Raccoon City',
-    'San Fransokyo',
-    'Twin Peaks',
-    'Winterfell'
-  ),
-  randomCityEn = cityEn[Math.floor(Math.random() * cityEn.length)];
-  $('.randomCityEn').text(randomCityEn);
-
-  var cityEs = new Array(
-    'Fondo de Bikini',
-    'Coruscant',
-    'Ciudad Esmeralda',
-    'Gotham City',
-    'Invernalia',
-    'Desembarco del Rey',
-    'Metropolis',
-    'Neo Tokyo',
-    'Nueva Nueva York',
-    'Raccoon City',
-    'San Fransokyo',
-    'Twin Peaks',
-    'Villa Pingüino'
-  ),
-  randomCityEs = cityEs[Math.floor(Math.random() * cityEs.length)];
-  $('.randomCityEs').text(randomCityEs);
+  randomCity = city00[Math.floor(Math.random() * city00.length)];
+  $('.randomCityCa').text(randomCity[0]);
+  $('.randomCityEn').text(randomCity[1]);
+  $('.randomCityEs').text(randomCity[2]);
 
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
@@ -126,7 +79,9 @@ jQuery(document).ready(function ($) {
   $(document).ready(function() {
     function setHeight() {
       windowHeight = $(window).innerHeight();
+      summerHeight = $('body .container-fluid .row:nth-of-type(2)').innerHeight();
       $('.winter').css('min-height', windowHeight);
+      $('.summer .container-fluid .row:nth-of-type(2)').css('margin-top', -summerHeight);
     };
     setHeight();
 
@@ -182,6 +137,35 @@ jQuery(document).ready(function ($) {
     $('body').removeClass('en').addClass('es');
     return false;
   });
+
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+
+  $('.post-thumbnail a').click(function() {
+    $(this).each(function() {
+      var postName = jQuery(this).attr('data-post-name');
+      $('#' + postName).removeClass('hide').addClass('show').attr('aria-expanded', 'true');
+      $('.post-thumbnail').parent().removeClass('show').addClass('hide');
+
+      if ( $('.navbar-header button').attr('aria-expanded') == 'true' ) {
+        $('.navbar-header button span').click();
+      }
+    });
+  });
+
+  $('.post-content .post-excerpt button').click(function() {
+    $('.post-content').removeClass('show').addClass('hide').attr('aria-expanded', 'false');
+    $('.post-thumbnail').parent().removeClass('hide').addClass('show');
+  });
+
+//  $('.navbar-header button').click(function() {
+//    if ( $('.post-content').attr('aria-expanded') == 'true' ) {
+//      $(this).removeClass('show').addClass('hide').attr('aria-expanded', 'false');
+//    }
+//  });
+
 
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////

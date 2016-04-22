@@ -53,13 +53,13 @@ layout: default
 <div class="row">
   <div id="いち" class="col-xs-12">
     <div class="spring" lang="ca" style="color: red;">
-      <p>We are a multi-disciplinary team working together to create graphic and digital solutions through effective and <span id="randomWhatelse" class="randomWhatelseCa"><!-- randomWhatelse--></span> design. We are based in <del><span id="randomCity" class="randomCityCa"><!-- randomCity--></span></del> Barcelona.</p>
+      <p>We are a multi-disciplinary team working together to create graphic and digital solutions through effective and <span class="randomWhatCa"><!-- randomWhat--></span> design. We are based in <del><span class="randomCityCa"><!-- randomCity--></span></del> Barcelona.</p>
     </div>
     <div class="spring" lang="en">
-      <p lang="en">We are a multi-disciplinary team working together to create graphic and digital solutions through effective and <span id="randomWhatelse" class="randomWhatelseEn"><!-- randomWhatelse--></span> design. We are based in <del><span id="randomCity" class="randomCityEn"><!-- randomCity--></span></del> Barcelona.</p>
+      <p lang="en">We are a multi-disciplinary team working together to create graphic and digital solutions through effective and <span class="randomWhatEn"><!-- randomWhat--></span> design. We are based in <del><span class="randomCityEn"><!-- randomCity--></span></del> Barcelona.</p>
     </div>
     <div class="spring" lang="es" style="color: red;">
-      <p lang="es">We are a multi-disciplinary team working together to create graphic and digital solutions through effective and <span id="randomWhatelse" class="randomWhatelseEs"><!-- randomWhatelse--></span> design. We are based in <del><span id="randomCity" class="randomCityEs"><!-- randomCity--></span></del> Barcelona.</p>
+      <p lang="es">We are a multi-disciplinary team working together to create graphic and digital solutions through effective and <span class="randomWhatEs"><!-- randomWhat--></span> design. We are based in <del><span class="randomCityEs"><!-- randomCity--></span></del> Barcelona.</p>
     </div>
   </div>
 </div>
@@ -70,14 +70,38 @@ layout: default
       <div class="container-fluid">
         <div class="row">
           {% for post in site.posts reversed %}
-            <div class="col-xs-6 col-md-4 col-lg-3 post-excerpt">
-              <a href="#" style="background-image: url({{ post.boojum }})" title="{{ post.title }}">
-                <img src="{{ site.url}}/images/{{ post.featured_image }}" alt="Featured image for {{ post.title }}" title="{{ post.title }}">
+            <div class="col-xs-6 col-md-4 col-lg-3 post-thumbnail post-thumbnail-{{ post.url | remove: '/' | remove: '.html' }}">
+              <a href="#" style="background-image: url({{ post.boojum }})" data-post-name="{{ post.url | remove: '/' | remove: '.html' }}" title="$%&@#!">
+                <img src="{{ site.url}}/images/{{ post.featured_image }}" alt="$%&@#!" title="$%&@#!">
+                <span lang="ca">{{ post.titleCa }}</span>
+                <span lang="en">{{ post.titleEn }}</span>
+                <span lang="es">{{ post.titleEs }}</span>
               </a>
             </div>
-            <div class="hide col-xs-12 post-content">
-              <ul>
-                {{ post.content }}
+          {% endfor %}
+        </div>
+        <div class="row">
+          {% for post in site.posts reversed %}
+            <div id="{{ post.url | remove: '/' | remove: '.html' }}" class="col-xs-12 post-content post-content-{{ post.url | remove: '/' | remove: '.html' }} hide" aria-expanded="false">
+              <div class="post-excerpt">
+                <button type="button" class="hidden-md">
+                  <svg width="64" height="64" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+                    <g>
+                      <path fill="none" stroke-width="5" stroke-linejoin="bevel" d="M 12.972944,50.936147 51.027056,12.882035" />
+                      <path fill="none" stroke-width="5" stroke-linejoin="bevel" d="m 5.1969746,31.909063 53.8166424,0" style="opacity: 0;" />
+                      <path fill="none" stroke-width="5" stroke-linejoin="bevel" d="M 12.972944,12.882035 51.027056,50.936147" />
+                    </g>
+                  </svg>
+                </button>
+                <h2 lang="ca">{{ post.titleCa }}</h2>
+                <h2 lang="en">{{ post.titleEn }}</h2>
+                <h2 lang="es">{{ post.titleEs }}</h2>
+                <p lang="ca">{{ post.excerptCa }}</p>
+                <p lang="en">{{ post.excerptEn }}</p>
+                <p lang="es">{{ post.excerptEs }}</p>
+              </div>
+              <ul style="background-color: #{{ post.hue }}">
+                {{ post.content | remove: '<p>' | remove: '</p>' | remove: '<ul>' | remove: '</ul>' }}
               </ul>
             </div>
           {% endfor %}
