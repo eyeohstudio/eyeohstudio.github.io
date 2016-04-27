@@ -162,13 +162,13 @@
   display: block;
 }
 .slideDown {
+  visibility: hidden;
   -webkit-animation-name: slideDown;
   animation-name: slideDown;
   -webkit-animation-duration: .3s;
   animation-duration: .3s;
   -webkit-animation-timing-function: ease;
   animation-timing-function: ease;
-  visibility: visible !important;
 }
 @keyframes slideDown {
   0% {
@@ -187,13 +187,13 @@
   }
 }
 .slideUp {
+  visibility: visible;
   -webkit-animation-name: slideUp;
   animation-name: slideUp;
   -webkit-animation-duration: .3s;
   animation-duration: .3s;
   -webkit-animation-timing-function: ease;
   animation-timing-function: ease;
-  visibility: visible !important;
 }
 @keyframes slideUp {
   0% {
@@ -255,10 +255,10 @@ body.es [lang="ca"],
 body.es [lang="en"] {
   display: none !important;
 }
-div.summer .post-thumbnail {
-  z-index: 666666;
+div.summer .project-thumbnail {
+  z-index: 99999999;
 }
-div.summer .post-thumbnail a {
+div.summer .project-thumbnail a {
   display: block;
   background-position: 50% 0;
   background-repeat: no-repeat;
@@ -267,16 +267,16 @@ div.summer .post-thumbnail a {
   mix-blend-mode: multiply;
   position: relative;
 }
-div.summer .post-thumbnail a:hover {
+div.summer .project-thumbnail a:hover {
   opacity: 1;
 }
-div.summer .post-thumbnail a:hover span {
+div.summer .project-thumbnail a:hover span {
   opacity: 1;
 }
-div.summer .post-thumbnail a:hover img {
+div.summer .project-thumbnail a:hover img {
   opacity: 0;
 }
-div.summer .post-thumbnail a span {
+div.summer .project-thumbnail a span {
   font-family: BrixSansBold;
   display: block;
   -webkit-backface-visibility: hidden;
@@ -299,7 +299,7 @@ div.summer .post-thumbnail a span {
   transform: translateY(-50%);
   white-space: pre;
 }
-div.summer .post-thumbnail a img {
+div.summer .project-thumbnail a img {
   -webkit-backface-visibility: hidden;
   -webkit-transition: 0.3s ease-in-out;
   -moz-transition: 0.3s ease-in-out;
@@ -320,56 +320,54 @@ div.summer .post-thumbnail a img {
                 filter: gray;
         */
 }
-div.summer .post-content {
+div.summer .project-content {
   background-color: #ffffff;
   float: left;
   height: auto;
   width: 100%;
   z-index: 999999999;
 }
-div.summer .post-content .post-excerpt {
+div.summer .project-content .project-excerpt {
   margin: 23.33333333px;
   position: relative;
 }
-div.summer .post-content .post-excerpt button {
+div.summer .project-content .project-excerpt button {
   background-color: transparent;
   border: none;
   float: right;
   height: 40px;
   width: 40px;
-  margin-top: 11.66666667px;
+  margin-top: -19.44444444px;
   padding: 0;
 }
-div.summer .post-content .post-excerpt button:active,
-div.summer .post-content .post-excerpt button:focus,
-div.summer .post-content .post-excerpt button:hover,
-div.summer .post-content .post-excerpt button:visited {
+div.summer .project-content .project-excerpt button:active,
+div.summer .project-content .project-excerpt button:focus,
+div.summer .project-content .project-excerpt button:hover,
+div.summer .project-content .project-excerpt button:visited {
   outline: -webkit-focus-ring-color auto 0;
 }
-div.summer .post-content .post-excerpt button svg {
+div.summer .project-content .project-excerpt button svg {
   fill: none;
   height: 100%;
   width: 100%;
   stroke: #212322;
 }
-div.summer .post-content .post-excerpt h2 {
+div.summer .project-content .project-excerpt h2 {
   font-family: BrixSansBold;
-  border-top: 1px solid #212322;
   font-size: 13px;
   font-weight: normal;
   margin: 0;
   margin-bottom: 23.33333333px;
-  padding-top: 35px;
   text-transform: uppercase;
 }
-div.summer .post-content .post-excerpt p {
+div.summer .project-content .project-excerpt p {
   font-family: BrixSlab-ExtraLight;
   font-size: 14px;
   line-height: 1.3em;
   margin: 0;
   margin-bottom: 1em;
 }
-div.summer .post-content ul {
+div.summer .project-content ul {
   height: auto;
   width: 100%;
   list-style-type: none;
@@ -377,15 +375,15 @@ div.summer .post-content ul {
   margin: 0;
   padding: 0;
 }
-div.summer .post-content ul li {
+div.summer .project-content ul li {
   height: auto;
   width: 100%;
   margin-bottom: 11.66666667px;
 }
-div.summer .post-content ul li:li:last-of-type {
+div.summer .project-content ul li:li:last-of-type {
   margin-bottom: 0;
 }
-div.summer .post-content ul li img {
+div.summer .project-content ul li img {
   height: auto;
   width: 100%;
 }
@@ -417,7 +415,6 @@ html body a:hover {
 }
 html body header {
   margin: 23.33333333px;
-  margin-bottom: 21px;
   margin-top: 21px;
 }
 html body header:before,
@@ -455,6 +452,9 @@ html body header nav.navbar.navbar-default .navbar-header h1 a {
   display: block;
   border: none;
   cursor: default;
+}
+html body header nav.navbar.navbar-default .navbar-header h1 a:hover {
+  opacity: 1;
 }
 html body header nav.navbar.navbar-default .navbar-header h1 a img {
   object-fit: contain;
@@ -674,16 +674,14 @@ body.es .navbar-collapse ul li:nth-of-type(3) a abbr,
 body.es .navbar-collapse ul li:nth-of-type(4) a abbr {
   display: none;
 }
-.container-fluid .row {
-  position: relative;
+iframe {
+  display: block;
 }
-.container-fluid .row:before,
-.container-fluid .row:after {
-  content: " ";
-  display: table;
+.container-fluid .row:nth-of-type(3) .row:nth-of-type(1) {
+  background-color: #ffffff;
 }
-.container-fluid .row:after {
-  clear: both;
+.container-fluid .row:nth-of-type(3) .row:nth-of-type(2) {
+  background-color: #ffffff;
 }
 .container-fluid .row:nth-of-type(4) .col-xs-12:nth-of-type(1) div.autumn p:last-of-type {
   border-bottom: none;
@@ -760,7 +758,6 @@ body.es .navbar-collapse ul li:nth-of-type(4) a abbr {
   }
   html body header {
     margin: 23.33333333px;
-    margin-bottom: 21px;
     margin-top: 21px;
   }
   html body header:before,
@@ -945,8 +942,137 @@ body.es .navbar-collapse ul li:nth-of-type(4) a abbr {
   }
 }
 @media (min-width: 480px) {
-  div.summer a span {
+  div.summer .project-thumbnail {
+    z-index: 666666;
+  }
+  div.summer .project-thumbnail a {
+    display: block;
+    background-position: 50% 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-bottom: none;
+    mix-blend-mode: multiply;
+    position: relative;
+  }
+  div.summer .project-thumbnail a:hover {
+    opacity: 1;
+  }
+  div.summer .project-thumbnail a:hover span {
+    opacity: 1;
+  }
+  div.summer .project-thumbnail a:hover img {
+    opacity: 0;
+  }
+  div.summer .project-thumbnail a span {
+    font-family: BrixSansBold;
+    display: block;
+    -webkit-backface-visibility: hidden;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    -ms-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
     font-size: 16px !important;
+    height: auto;
+    width: 100%;
+    line-height: 1em;
+    padding: 0 16.66666667%;
+    position: absolute;
+    opacity: 0;
+    top: 50%;
+    left: 0;
+    text-align: center;
+    text-transform: uppercase;
+    transform: translateY(-50%);
+    white-space: pre;
+  }
+  div.summer .project-thumbnail a img {
+    -webkit-backface-visibility: hidden;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    -ms-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+    width: 100%;
+    mix-blend-mode: multiply;
+    opacity: 1;
+    /*
+        -webkit-filter: grayscale(1);
+           -moz-filter: grayscale(1);
+                filter: grayscale(1);
+                filter: gray;
+        */
+  }
+  div.summer .project-content {
+    background-color: #ffffff;
+    float: left;
+    height: auto;
+    width: 100%;
+    z-index: 999999999;
+  }
+  div.summer .project-content .project-excerpt {
+    margin: 23.33333333px;
+    position: relative;
+  }
+  div.summer .project-content .project-excerpt button {
+    background-color: transparent;
+    border: none;
+    float: right;
+    height: 40px;
+    width: 40px;
+    margin-top: -19.44444444px;
+    padding: 0;
+  }
+  div.summer .project-content .project-excerpt button:active,
+  div.summer .project-content .project-excerpt button:focus,
+  div.summer .project-content .project-excerpt button:hover,
+  div.summer .project-content .project-excerpt button:visited {
+    outline: -webkit-focus-ring-color auto 0;
+  }
+  div.summer .project-content .project-excerpt button svg {
+    fill: none;
+    height: 100%;
+    width: 100%;
+    stroke: #212322;
+  }
+  div.summer .project-content .project-excerpt h2 {
+    font-family: BrixSansBold;
+    font-size: 13px;
+    font-weight: normal;
+    margin: 0;
+    margin-bottom: 23.33333333px;
+    text-transform: uppercase;
+  }
+  div.summer .project-content .project-excerpt p {
+    font-family: BrixSlab-ExtraLight;
+    font-size: 14px;
+    line-height: 1.3em;
+    margin: 0;
+    margin-bottom: 1em;
+  }
+  div.summer .project-content ul {
+    height: auto;
+    width: 100%;
+    list-style-type: none;
+    list-style-position: inside;
+    margin: 0;
+    padding: 0 35px;
+  }
+  div.summer .project-content ul li {
+    height: auto;
+    width: 100%;
+    margin-bottom: 11.66666667px;
+  }
+  div.summer .project-content ul li:li:last-of-type {
+    margin-bottom: 0;
+  }
+  div.summer .project-content ul li img {
+    height: auto;
+    width: 100%;
   }
   html body {
     background: #ffffff;
@@ -954,7 +1080,6 @@ body.es .navbar-collapse ul li:nth-of-type(4) a abbr {
   }
   html body header {
     margin: 35px;
-    margin-bottom: 31.5px;
     margin-top: 31.5px;
   }
   html body header:before,
@@ -1132,7 +1257,6 @@ body.es .navbar-collapse ul li:nth-of-type(4) a abbr {
   }
   html body header {
     margin: 35px;
-    margin-bottom: 31.5px;
     margin-top: 31.5px;
   }
   html body header:before,
@@ -1310,7 +1434,6 @@ body.es .navbar-collapse ul li:nth-of-type(4) a abbr {
   }
   html body header {
     margin: 50px;
-    margin-bottom: 40.5px;
     margin-top: 40.5px;
   }
   html body header:before,
@@ -1488,7 +1611,6 @@ body.es .navbar-collapse ul li:nth-of-type(4) a abbr {
   }
   html body header {
     margin: 45px 60px;
-    margin-bottom: 40.5px;
     margin-top: 40.5px;
   }
   html body header:before,
@@ -1838,7 +1960,6 @@ body.es .navbar-collapse ul li:nth-of-type(4) a abbr {
   }
   html body header {
     margin: 45px 45px;
-    margin-bottom: 40.5px;
     margin-top: 40.5px;
   }
   html body header:before,
@@ -2061,7 +2182,6 @@ body.es .navbar-collapse ul li:nth-of-type(4) a abbr {
   }
   html body header {
     margin: 45px auto;
-    margin-bottom: 40.5px;
     margin-top: 40.5px;
     height: auto;
     width: 800px;
@@ -2294,7 +2414,6 @@ body.es .navbar-collapse ul li:nth-of-type(4) a abbr {
   }
   html body header {
     margin: 45px auto;
-    margin-bottom: 40.5px;
     margin-top: 40.5px;
     height: auto;
     width: 1120px;
@@ -2527,7 +2646,6 @@ body.es .navbar-collapse ul li:nth-of-type(4) a abbr {
   }
   html body header {
     margin: 45px auto;
-    margin-bottom: 40.5px;
     margin-top: 40.5px;
     height: auto;
     width: 1120px;

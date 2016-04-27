@@ -36,8 +36,8 @@ body.es {
 
 div.summer {
 
-  .post-thumbnail {
-    z-index: 666666;
+  .project-thumbnail {
+    z-index: 99999999;
 
     a {
       .show;
@@ -101,13 +101,13 @@ div.summer {
     }
   }
 
-  .post-content {
+  .project-content {
     background-color: @white;
     float: left;
     height: auto; width: 100%;
     z-index: 999999999;
 
-    .post-excerpt {
+    .project-excerpt {
       margin: 35px / 1.5;
       position: relative;
 
@@ -116,7 +116,7 @@ div.summer {
         border: none;
         float: right;
         height: 40px; width: 40px;
-        margin-top: (35px / 1.5) / 2;
+        margin-top: -(35px / 1.8);
         padding: 0;
 
         &:active,
@@ -135,12 +135,12 @@ div.summer {
 
       h2 {
         .BrixSans-Bold;
-        border-top: 1px solid @black;
+        //border-top: 1px solid @black;
         font-size: 13px;
         font-weight: normal;
         margin: 0;
         margin-bottom: 35px / 1.5;
-        padding-top: (35px / 1.5) * 1.5;
+        //padding-top: (35px / 1.5) * 1.5;
         text-transform: uppercase;
       }
 
@@ -208,7 +208,7 @@ div.summer {
       header {
         .clearfix;
         margin: 35px / 1.5;
-        margin-bottom: (35px / 1.5) - ((35px / 1.5) / 10);
+        //margin-bottom: (35px / 1.5) - ((35px / 1.5) / 10);
         margin-top: (35px / 1.5) - ((35px / 1.5) / 10);
 
         nav.navbar.navbar-default {
@@ -237,6 +237,7 @@ div.summer {
                 cursor: default;
 
                 &:hover {
+                  opacity: 1;
                 }
 
                 img {
@@ -573,11 +574,13 @@ body.es .navbar-collapse ul li {
   }
 }
 
+iframe {
+  .show;
+}
+
 .container-fluid {
 
   .row {
-    .clearfix;
-    position: relative;
 
     .col-xs-12 {
     }
@@ -589,6 +592,17 @@ body.es .navbar-collapse ul li {
     }
 
     &:nth-of-type(3) {
+
+      .row {
+
+        &:nth-of-type(1) {
+          background-color: @white;
+        }
+
+        &:nth-of-type(2) {
+          background-color: @white;
+        }
+      }
     }
 
     &:nth-of-type(4) {

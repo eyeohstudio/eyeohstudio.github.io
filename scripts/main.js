@@ -5,6 +5,18 @@ jQuery(document).ready(function ($) {
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
 
+  //WIP
+  // run test on initial page load
+  checkSize();
+
+  // run test on resize of the window
+  $(window).resize(checkSize);
+
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+
   // Can bootstrap tooltips be turned off based on device screen size?
   // http://stackoverflow.com/questions/23048990/can-bootstrap-tooltips-be-turned-off-based-on-device-screen-size
   if (!('ontouchstart' in window)) {
@@ -76,11 +88,15 @@ jQuery(document).ready(function ($) {
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
 
+  // WIP
   $(document).ready(function() {
     function setHeight() {
+
       windowHeight = $(window).innerHeight();
-      summerHeight = $('body .container-fluid .row:nth-of-type(2)').innerHeight();
       $('.winter').css('min-height', windowHeight);
+
+      // WIP
+      summerHeight = $('body .container-fluid .row:nth-of-type(2)').innerHeight();
       $('.summer .container-fluid .row:nth-of-type(2)').css('margin-top', -summerHeight);
     };
     setHeight();
@@ -143,34 +159,86 @@ jQuery(document).ready(function ($) {
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
 
-  $('.post-thumbnail a').click(function() {
+  // WIP
+  $('.project-thumbnail a').click(function() {
     $(this).each(function() {
-      var postName = $(this).attr('data-post-name');
-//      if ( $('.navbar-header button').attr('aria-expanded') == 'true' ) {
-//        $('.navbar-header button span').click();
-//      }
-      $('#' + postName).removeClass('hide').removeClass('slideDown').addClass('show').addClass('slideUp').attr('aria-expanded', 'true');
-      $('.post-thumbnail').parent().removeClass('show').addClass('hide');
+      var projectName = $(this).attr('data-project-name');
+      $('.summer > div > .row:nth-of-type(1)').addClass('invisible').css({'position': 'absolute', 'top': '0'});
+      $('#' + projectName).removeClass('hide').addClass('show').removeClass('slideDown').addClass('slideUp').attr('aria-expanded', 'true');
     });
   });
 
-  $('.post-content .post-excerpt button').click(function() {
-    $('.post-content').removeClass('slideUp').removeClass('show').addClass('slideDown').addClass('hide').attr('aria-expanded', 'true');
-    $('.post-thumbnail').parent().removeClass('hide').addClass('show');
+  $('.project-content .project-excerpt button').click(function() {
+    $('.summer > div > .row:nth-of-type(1)').removeClass('invisible').css({'position': 'relative'});
+    $('.project-content').removeClass('slideUp').addClass('slideDown').removeClass('show').addClass('hide').attr('aria-expanded', 'false');
+
   });
 
-//  $('.navbar-header button').click(function() {
-//    $('.post-content').removeClass('show').addClass('slideDown').addClass('hide').attr('aria-expanded', 'false');
-//    $('.post-thumbnail').parent().removeClass('hide').addClass('show');
-//  });
-
-
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
 
-  $('body').removeClass('hide').addClass('fadeIn');
+  // WIP
+  function checkSize(){
+    if ($('.project-content > ul').css('padding') == '0'){
+      var valueWidth = $('body').parent().width();
+      valueWidth *= 1;
+      var valueHeight = Math.round((valueWidth/16)*9);
+      $('iframe[src^="//player.vimeo.com"], object, embed').css({ 'min-height': valueHeight + 'px', 'min-width': valueWidth + 'px' });
+    }
+    if ($('.project-content > ul').css('padding') != '0'){
+      var valueWidth = $('header').innerWidth();
+      valueWidth *= 1;
+      var valueHeight = Math.round((valueWidth/16)*9);
+      $('iframe[src^="//player.vimeo.com"], object, embed').css({ 'min-height': valueHeight + 'px', 'min-width': valueWidth + 'px' });
+    }
+  }
+
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+
+  $(function() {
+
+    var $allVideos = $('iframe[src^="//player.vimeo.com"], object, embed'),
+        $fluidEl = $('figure');
+
+    $allVideos.each(function() {
+
+      $(this)
+        .attr('data-aspectRatio', this.height / this.width)
+        .removeAttr('height')
+        .removeAttr('width');
+      });
+
+      $(window).resize(function() {
+
+      var newWidth = $fluidEl.width();
+      $allVideos.each(function() {
+
+        var $el = $(this);
+        $el
+          .width(newWidth)
+          .height(newWidth * $el.attr('data-aspectRatio'));
+
+      });
+
+    }).resize();
+
+  });
+
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+
+  //$(window).load(function() {
+
+    $('body').removeClass('hide').addClass('show');
+
+  //});
 
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////

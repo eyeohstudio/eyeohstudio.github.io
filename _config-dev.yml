@@ -14,3 +14,10 @@ version:          0.0.0
 
 github:
   repo:           https://github.com/eyeohstudio/eyeohstudio.github.io
+
+# Collections
+collections:
+  projects:
+    output: true
+    values:
+      layout: project
