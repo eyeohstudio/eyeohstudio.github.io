@@ -80,9 +80,9 @@ layout: default
             </div>
           {% endfor %}
         </div>
-        <div class="row">
+        <div class="row" style="background-color: White;">
           {% for post in site.posts reversed %}
-            <div id="{{ post.url | remove: '/' | remove: '.html' }}" class="col-xs-12 post-content post-content-{{ post.url | remove: '/' | remove: '.html' }} hide" aria-expanded="false">
+            <div id="{{ post.url | remove: '/' | remove: '.html' }}" class="col-xs-12 post-content post-content-{{ post.url | remove: '/' | remove: '.html' }} hide" aria-expanded="false" style="background-color: rgba({{ post.hue }}, 0.4);">
               <div class="post-excerpt">
                 <button type="button" class="hidden-md">
                   <svg width="64" height="64" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
@@ -100,7 +100,7 @@ layout: default
                 <p lang="en">{{ post.excerptEn }}</p>
                 <p lang="es">{{ post.excerptEs }}</p>
               </div>
-              <ul style="background-color: #{{ post.hue }}">
+              <ul>
                 {{ post.content | remove: '<p>' | remove: '</p>' | remove: '<ul>' | remove: '</ul>' }}
               </ul>
             </div>
