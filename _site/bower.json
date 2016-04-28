@@ -15,6 +15,7 @@
     "bootstrap": "^3.3.6",
     "Snap.svg": "snap.svg#^0.4.1",
     "js-cookie": "js-cookie/js-cookie#^2.1.1",
-    "jquery-lang-js": "Irrelon/jquery-lang-js#^3.0.0"
+    "jquery-lang-js": "Irrelon/jquery-lang-js#^3.0.0",
+    "velocity": "julianshapiro/velocity#^1.2.3"
   }
 }
