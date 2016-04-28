@@ -11,7 +11,7 @@ titleCa: Pastís&#xa;ipsum dolor sit amet
 
 titleEn: Cupcake ipsum&#xa;dolor sit amet
 
-titleEs: Magdalena ipsum&#xa;dolor sit amet
+titleEs: Donut ipsum&#xa;dolor sit amet
 
 # Please, add a description or an excerpt about the project.
 excerptCa: Pastís ipsum dolor sit amet. Cheesecake cake cookie toffee tootsie roll. Cheesecake sweet chocolate liquorice tiramisu macaroon candy. Danish gummies gingerbread macaroon pudding.
