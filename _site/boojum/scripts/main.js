@@ -200,6 +200,11 @@ function pageFullyLoaded(e) {
   //////////////////////////////////////////////////////////////
   //////////////////////////////////////////////////////////////
 
+  $('svg').attr({
+    'xmlns': 'http://www.w3.org/2000/svg',
+    'xmlns:xlink': 'xmlns:xlink'
+  }).removeAttr('width').removeAttr('height');
+
   //
   var svgObjectId = $('svg').attr('id');
 
