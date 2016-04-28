@@ -20,5 +20,6 @@ featured_image: 00_thumbnails_prova.png
 
 ---
 * ![Cupcake ipsum dolor sit amet]({{ site.url }}/images/00_IO-posters-1.jpg)
+* ![Cupcake ipsum dolor sit amet]({{ site.url }}/images/00_IO-posters-1.jpg)
 * ![Cupcake ipsum dolor sit amet]({{ site.url }}/images/birch-and-waite-02.jpg)
 * ![Cupcake ipsum dolor sit amet]({{ site.url }}/images/birch-and-waite-03.jpg)
