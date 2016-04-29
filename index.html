@@ -70,7 +70,7 @@ layout: default
       <div class="container-fluid">
         <div class="row">
           {% for project in site.projects %}
-            <div class="col-xs-6 col-md-4 col-lg-3 project-thumbnail project-thumbnail-{{ project.url | remove: 'projects' | remove: '/' | remove: '.html' }}">
+            <div class="col-xs-6 col-md-4 col-lg-3 project-thumbnail {{ project.url | remove: 'projects' | remove: '/' | remove: '.html' }}">
               <a href="#" style="background-image: url({{ project.boojum }})" data-project-name="{{ project.url | remove: 'projects' | remove: '/' | remove: '.html' }}" title="$%&@#!">
                 <img src="{{ site.url}}/images/{{ project.featured_image }}" alt="$%&@#!" title="$%&@#!">
                 <span lang="ca">{{ project.titleCa }}</span>
@@ -82,7 +82,7 @@ layout: default
         </div>
         <div class="row">
           {% for project in site.projects %}
-            <div id="{{ project.url | remove: 'projects' | remove: '/' | remove: '.html' }}" class="col-xs-12 project-content project-content-{{ project.url | remove: 'projects' | remove: '/' | remove: '.html' }} hide" aria-expanded="false" style="background-color: rgba({{ project.hue }}, 0.4);">
+            <div id="{{ project.url | remove: 'projects' | remove: '/' | remove: '.html' }}" class="col-xs-12 project-content {{ project.url | remove: 'projects' | remove: '/' | remove: '.html' }} hide" aria-expanded="false" style="background-color: rgba({{ project.hue }}, 0.4);">
               <div class="project-excerpt">
                 <button type="button" class="hidden-md">
                   <svg width="64" height="64" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">

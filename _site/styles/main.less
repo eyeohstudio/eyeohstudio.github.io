@@ -37,7 +37,6 @@ body.es {
 div.summer {
 
   .project-thumbnail {
-    z-index: 99999999;
 
     a {
       .show;
@@ -105,7 +104,6 @@ div.summer {
     background-color: @white;
     float: left;
     height: auto; width: 100%;
-    z-index: 999999999;
 
     .project-excerpt {
       margin: 35px / 1.5;
@@ -579,6 +577,7 @@ iframe {
 }
 
 .container-fluid {
+  position: relative;
 
   .row {
 
@@ -597,10 +596,13 @@ iframe {
 
         &:nth-of-type(1) {
           background-color: @white;
+          position: absolute;
+          top: 0; left: 0;
         }
 
         &:nth-of-type(2) {
           background-color: @white;
+          position: relative;
         }
       }
     }

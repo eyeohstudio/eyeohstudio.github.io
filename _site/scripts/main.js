@@ -5,17 +5,24 @@ jQuery(document).ready(function ($) {
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
 
-  //WIP
-  // run test on initial page load
-  checkSize();
-
-  // run test on resize of the window
-  $(window).resize(checkSize);
+  $('body').removeClass('hide').addClass('show');
 
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
+
+ $(function() {
+
+    function resize() {
+      if ($(window).width() < 480) {
+        return $('html').removeClass('larger-than-four-hundred-eighty').addClass('smaller-than-four-hundred-eighty');
+      }
+
+      $('html').removeClass('smaller-than-four-hundred-eighty').addClass('larger-than-four-hundred-eighty');
+    }
+    $(window).resize(resize).trigger('resize');
+  });
 
   // Can bootstrap tooltips be turned off based on device screen size?
   // http://stackoverflow.com/questions/23048990/can-bootstrap-tooltips-be-turned-off-based-on-device-screen-size
@@ -96,8 +103,8 @@ jQuery(document).ready(function ($) {
       $('.winter').css('min-height', windowHeight);
 
       // WIP
-      summerHeight = $('body .container-fluid .row:nth-of-type(2)').innerHeight();
-      $('.summer .container-fluid .row:nth-of-type(2)').css('margin-top', -summerHeight);
+      //summerHeight = $('body .container-fluid .row:nth-of-type(2)').innerHeight();
+      //$('.summer .container-fluid .row:nth-of-type(2)').css('margin-top', -summerHeight);
     };
     setHeight();
 
@@ -159,41 +166,48 @@ jQuery(document).ready(function ($) {
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
 
-  // WIP
-  $('.project-thumbnail a').click(function() {
-    $(this).each(function() {
-      var projectName = $(this).attr('data-project-name');
-      $('.summer > div > .row:nth-of-type(1)').addClass('invisible').css({'position': 'absolute', 'top': '0'});
-      $('#' + projectName).removeClass('hide').addClass('show').removeClass('slideDown').addClass('slideUp').attr('aria-expanded', 'true');
+  var projectThumbnailHeight = $('.summer .container-fluid .row:nth-of-type(1)').outerHeight();
+  var projectContentHeight = $('.summer .container-fluid .row:nth-of-type(1)').outerHeight();
+
+  $('.summer .container-fluid .row:nth-of-type(2)').css('margin-top', projectThumbnailHeight);
+
+  ////////////////////////////////////////////////////////////////
+  ////////////////////////////////////////////////////////////////
+
+  $(window).resize(function() {
+
+    $('.project-thumbnail a').click(function(e) {
+      $(this).each(function(e) {
+        var projectName = $(this).attr('data-project-name');
+        $('#' + projectName).removeClass('hide').addClass('show').attr('aria-expanded', 'true').stop(true, true);
+        $('.summer .container-fluid .row:nth-of-type(2)').velocity({'margin-top': 0}, 300).stop(true, true);
+      });
     });
-  });
 
-  $('.project-content .project-excerpt button').click(function() {
-    $('.summer > div > .row:nth-of-type(1)').removeClass('invisible').css({'position': 'relative'});
-    $('.project-content').removeClass('slideUp').addClass('slideDown').removeClass('show').addClass('hide').attr('aria-expanded', 'false');
+    $('.project-content .project-excerpt button').click(function(e) {
+      $('.summer .container-fluid .row:nth-of-type(2)').velocity({'margin-top': projectThumbnailHeight}, 300, function() {
+        $('.project-content').removeClass('show').addClass('hide').attr('aria-expanded', 'false');
+      }).stop(true, true);
+    });
 
-  });
+    ////////////////////////////////////////////////////////////////
+    ////////////////////////////////////////////////////////////////
 
-////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////
-
-  // WIP
-  function checkSize(){
-    if ($('.project-content > ul').css('padding') == '0'){
+    // WIP
+    if ($('html').hasClass('smaller-than-four-hundred-eighty')){
       var valueWidth = $('body').parent().width();
       valueWidth *= 1;
       var valueHeight = Math.round((valueWidth/16)*9);
       $('iframe[src^="//player.vimeo.com"], object, embed').css({ 'min-height': valueHeight + 'px', 'min-width': valueWidth + 'px' });
     }
-    if ($('.project-content > ul').css('padding') != '0'){
+    if ($('html').hasClass('larger-than-four-hundred-eighty')){
       var valueWidth = $('header').innerWidth();
       valueWidth *= 1;
       var valueHeight = Math.round((valueWidth/16)*9);
       $('iframe[src^="//player.vimeo.com"], object, embed').css({ 'min-height': valueHeight + 'px', 'min-width': valueWidth + 'px' });
     }
-  }
+
+  });
 
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
@@ -228,17 +242,6 @@ jQuery(document).ready(function ($) {
     }).resize();
 
   });
-
-////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////
-
-  //$(window).load(function() {
-
-    $('body').removeClass('hide').addClass('show');
-
-  //});
 
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
