@@ -19,12 +19,7 @@ excerptEs: Identidad para Marring, empresa de eventos enfocados a declaraciones 
 featured_image: marring-ic-00t.jpg
 
 ---
-<<<<<<< HEAD
+
 * ![Cupcake ipsum dolor sit amet]({{ site.url }}/images/marring-w-01.jpg)
 * ![Cupcake ipsum dolor sit amet]({{ site.url }}/images/marring-w-02.jpg)
 * ![Cupcake ipsum dolor sit amet]({{ site.url }}/images/marring-w-03.jpg)
-=======
-* ![Cupcake ipsum dolor sit amet]({{ site.url }}/images/marring-ic-01.jpg)
-* ![Cupcake ipsum dolor sit amet]({{ site.url }}/images/marring-ic-02.jpg)
-* ![Cupcake ipsum dolor sit amet]({{ site.url }}/images/marring-ic-03.jpg)
->>>>>>> origin/sid
