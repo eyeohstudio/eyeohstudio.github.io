@@ -16,10 +16,10 @@ jQuery(document).ready(function ($) {
 
     function resize() {
       if ($(window).width() < 480) {
-        return $('html').addClass('smaller-than-four-hundred-eighty');
+        return $('html').removeClass('larger-than-four-hundred-eighty').addClass('smaller-than-four-hundred-eighty');
       }
 
-      $('html').removeClass('smaller-than-four-hundred-eighty');
+      $('html').removeClass('smaller-than-four-hundred-eighty').addClass('larger-than-four-hundred-eighty');
     }
     $(window).resize(resize).trigger('resize');
   });
@@ -194,13 +194,13 @@ jQuery(document).ready(function ($) {
     ////////////////////////////////////////////////////////////////
 
     // WIP
-    if ($('html').hasClass('smaller-than-four-hundred-eighty') == true){
+    if ($('html').hasClass('smaller-than-four-hundred-eighty')){
       var valueWidth = $('body').parent().width();
       valueWidth *= 1;
       var valueHeight = Math.round((valueWidth/16)*9);
       $('iframe[src^="//player.vimeo.com"], object, embed').css({ 'min-height': valueHeight + 'px', 'min-width': valueWidth + 'px' });
     }
-    if ($('html').hasClass('smaller-than-four-hundred-eighty') != false){
+    if ($('html').hasClass('larger-than-four-hundred-eighty')){
       var valueWidth = $('header').innerWidth();
       valueWidth *= 1;
       var valueHeight = Math.round((valueWidth/16)*9);
