@@ -4,11 +4,11 @@ boojum: data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJvYmplY3QtMDQyMS
 
 hue: 234, 196, 190
 
-titleCa: Marring
+titleCa: Marring&#xa;Identitat Corporativa
 
-titleEn: Marring
+titleEn: Marring&#xa;Corporative Identity
 
-titleEs: Marring
+titleEs: Marring&#xa;Identidad Corporativa
 
 excerptCa: Identidad para Marring, empresa de eventos enfocados a declaraciones de amor. La finalidad, resaltar el carcater innovador y sorprendete de la marca.
 
@@ -16,9 +16,15 @@ excerptEn: Identidad para Marring, empresa de eventos enfocados a declaraciones 
 
 excerptEs: Identidad para Marring, empresa de eventos enfocados a declaraciones de amor. La finalidad, resaltar el carcater innovador y sorprendete de la marca.
 
-featured_image: marring-w-00t.jpg
+featured_image: marring-ic-00t.jpg
 
 ---
+<<<<<<< HEAD
 * ![Cupcake ipsum dolor sit amet]({{ site.url }}/images/marring-w-01.jpg)
 * ![Cupcake ipsum dolor sit amet]({{ site.url }}/images/marring-w-02.jpg)
 * ![Cupcake ipsum dolor sit amet]({{ site.url }}/images/marring-w-03.jpg)
+=======
+* ![Cupcake ipsum dolor sit amet]({{ site.url }}/images/marring-ic-01.jpg)
+* ![Cupcake ipsum dolor sit amet]({{ site.url }}/images/marring-ic-02.jpg)
+* ![Cupcake ipsum dolor sit amet]({{ site.url }}/images/marring-ic-03.jpg)
+>>>>>>> origin/sid
