@@ -6,7 +6,7 @@ hue: 255, 193, 135
 
 titleCa: BAA&#xa;Barcelona Academy of Art
 
-titleEn: BAA&#xa;Barcelona Academy of Art
+titleEn: BAA&#xa;Barcelona&#xa; Academy of Art
 
 titleEs: BAA&#xa;Barcelona Academy of Art
 
