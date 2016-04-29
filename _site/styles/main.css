@@ -85,6 +85,7 @@
   text-shadow: 0 1px 0 rgba(0, 0, 0, 0.01);
 }
 .fadeIn {
+  visibility: visible;
   -webkit-animation-name: fadeIn;
   animation-name: fadeIn;
   -webkit-animation-duration: .5s;
@@ -109,6 +110,7 @@
   }
 }
 .fadeOut {
+  visibility: hidden;
   -webkit-animation-name: fadeOut;
   animation-name: fadeOut;
   -webkit-animation-duration: .5s;
@@ -286,7 +288,7 @@ div.summer .project-thumbnail a span {
   height: auto;
   width: 100%;
   line-height: 1em;
-  padding: 0 16.66666667%;
+  padding: 0 12.5%;
   position: absolute;
   opacity: 0;
   top: 50%;
