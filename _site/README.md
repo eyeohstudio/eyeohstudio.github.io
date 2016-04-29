@@ -1,7 +1,7 @@
 cmd + terminal
 
-$ cd ~/eyeohstudio.github.io
-$ bundle exec jekyll serve -w --config _config-dev.yml
+cd ~/eyeohstudio.github.io
+bundle exec jekyll serve -w --config _config-dev.yml
 
 ---
 
