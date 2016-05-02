@@ -72,7 +72,7 @@ div.summer {
         font-size: 12px;
         height: auto; width: 100%;
         line-height: 1em;
-        padding: 0 100% / 6;
+        padding: 0 100% / 8;
         position: absolute;
         opacity: 0;
         top: 50%; left: 0;
@@ -106,7 +106,8 @@ div.summer {
     height: auto; width: 100%;
 
     .project-excerpt {
-      margin: 35px / 1.5;
+      margin: 0;
+      padding: 35px / 1.5;
       position: relative;
 
       button {
@@ -122,6 +123,10 @@ div.summer {
         &:hover,
         &:visited {
           outline: -webkit-focus-ring-color auto 0;
+
+          -webkit-transform: scale(.9);
+             -moz-transform: scale(.9);
+                  transform: scale(.9);
         }
 
         svg {
@@ -137,7 +142,7 @@ div.summer {
         font-size: 13px;
         font-weight: normal;
         margin: 0;
-        margin-bottom: 35px / 1.5;
+        margin-bottom: (35px / 1.5) / 2;
         //padding-top: (35px / 1.5) * 1.5;
         text-transform: uppercase;
       }
@@ -147,7 +152,7 @@ div.summer {
         font-size: 14px;
         line-height: 1.3em;
         margin: 0;
-        margin-bottom: 1em;
+        margin-bottom: 0;
       }
     }
 
@@ -160,15 +165,61 @@ div.summer {
 
       li {
         height: auto; width: 100%;
-        margin-bottom: (35px / 1.5) / 2;
+        margin-bottom: (35px / 1.5) / 1.5;
 
-        &:li:last-of-type {
+        &:last-of-type {
           margin-bottom: 0;
+        }
+
+        figure {
+
+          iframe {
+            .show;
+            margin: 0 auto;
+          }
         }
 
         img {
           height: auto; width: 100%;
         }
+      }
+    }
+
+    a {
+      .BrixSlab-ExtraLight;
+      .show;
+      .transition;
+      border-bottom: 1px solid @black;
+      color: @black;
+      cursor: pointer;
+      font-size: 12px;
+      margin: 35px / 1.5;
+      margin-bottom: 0;
+      opacity: 1 !important;
+      padding: 0;
+      padding-bottom: 35px / 1.5;
+      text-align: center;
+      text-transform: uppercase;
+
+      &:hover {
+        opacity: 1 !important;
+
+        svg {
+          -webkit-transform: translateY(0);
+             -moz-transform: translateY(0);
+                  transform: translateY(0);
+        }
+      }
+
+      svg {
+        .transition;
+        fill: none;
+        height: 40px; width: 40px;
+        stroke: @black;
+
+        -webkit-transform: translateY(5px);
+           -moz-transform: translateY(5px);
+                transform: translateY(5px);
       }
     }
   }
@@ -572,10 +623,6 @@ body.es .navbar-collapse ul li {
   }
 }
 
-iframe {
-  .show;
-}
-
 .container-fluid {
   position: relative;
 
@@ -703,6 +750,13 @@ iframe {
     border-top-color: @black;
     bottom: -3px; left: 50%;
   }
+}
+
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+
+div.summer .project-content:nth-of-type(1) ul li:nth-of-type(1) {
+  background-color: @white;
 }
 
 ////////////////////////////////////////////////////////////////

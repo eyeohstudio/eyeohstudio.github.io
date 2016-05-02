@@ -22,4 +22,4 @@ featured_image: pips-w-00t.jpg
 
 * ![Cupcake ipsum dolor sit amet]({{ site.url }}/images/pips-w-01.jpg)
 * ![Cupcake ipsum dolor sit amet]({{ site.url }}/images/pips-w-02.jpg)
-* <figure><iframe src="//player.vimeo.com/video/158929706?badge=0&byline=0&color=fff&portrait=0&title=0" frameborder="0" width="320" height="180" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></figure>
+* <figure><iframe src="//player.vimeo.com/video/158929706?badge=0&byline=0&color=fff&portrait=0&title=0" frameborder="0" width="1280" height="720" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></figure>

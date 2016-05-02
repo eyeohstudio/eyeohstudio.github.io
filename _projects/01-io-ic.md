@@ -9,9 +9,9 @@ hue: 255, 232, 117
 # Please, add a title for the project. If you want to insert a break-line use the following HTML entity: &#xa;
 titleCa: I/O&#xa;Identitat Corporativa
 
-titleEn: I/O&#xa;Identidad Corporativa
+titleEn: I/O&#xa;Corporate Identity
 
-titleEs: I/O&#xa;Corporate Identity
+titleEs: I/O&#xa;Identidad Corporativa
 
 # Please, add a description or an excerpt about the project.
 excerptCa: Consiste en una identidad múltiple y dinámica que refuerza el caracter multidisciplinar del estudio. El punto de partida es una superficie modular de proporciones 3x1, que através de un motor generativo basado en dos parámetros ( I/O) crea una superficie modular de 64  formas y 64 colores, que cambian en función del input y output.
