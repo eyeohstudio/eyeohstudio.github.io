@@ -20,6 +20,6 @@ featured_image: marring-ic-00t.jpg
 
 ---
 
-* ![Cupcake ipsum dolor sit amet]({{ site.url }}/images/marring-w-01.jpg)
-* ![Cupcake ipsum dolor sit amet]({{ site.url }}/images/marring-w-02.jpg)
-* ![Cupcake ipsum dolor sit amet]({{ site.url }}/images/marring-w-03.jpg)
+* ![Cupcake ipsum dolor sit amet]({{ site.url }}/images/marring-ic-001.jpg)
+* ![Cupcake ipsum dolor sit amet]({{ site.url }}/images/marring-ic-02.jpg)
+* ![Cupcake ipsum dolor sit amet]({{ site.url }}/images/marring-ic-03.jpg)
