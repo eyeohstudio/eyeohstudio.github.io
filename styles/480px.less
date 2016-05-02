@@ -12,147 +12,46 @@
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
 
-div.summer {
+  div.summer {
 
-  .project-thumbnail {
-    z-index: 666666;
+    .project-thumbnail {
 
-    a {
-      .show;
-      background-position: 50% 0;
-      background-repeat: no-repeat;
-      background-size: cover;
-      border-bottom: none;
-      mix-blend-mode: multiply;
-      position: relative;
+      a {
 
-      &:active,
-      &:focus,
-      &:hover,
-      &:visited {
-      }
-
-      &:hover {
-        opacity: 1;
-      }
-
-      &:hover span {
-        opacity: 1;
-      }
-
-      &:hover img {
-        opacity: 0;
-      }
-
-      span {
-        .BrixSans-Bold;
-        .show;
-        .transition;
-        font-size: 16px !important;
-        height: auto; width: 100%;
-        line-height: 1em;
-        padding: 0 100% / 6;
-        position: absolute;
-        opacity: 0;
-        top: 50%; left: 0;
-        text-align: center;
-        text-transform: uppercase;
-        transform: translateY(-50%);
-        white-space: pre;
-      }
-
-      img {
-        .transition;
-        background-position: 0 0;
-        background-repeat: no-repeat;
-        background-size: cover;
-        height: auto; width: 100%;
-        mix-blend-mode: multiply;
-        opacity: 1;
-        /*
-        -webkit-filter: grayscale(1);
-           -moz-filter: grayscale(1);
-                filter: grayscale(1);
-                filter: gray;
-        */
+        span {
+          font-size: 16px !important;
+        }
       }
     }
-  }
 
-  .project-content {
-    background-color: @white;
-    float: left;
-    height: auto; width: 100%;
-    z-index: 999999999;
+    .project-content {
 
-    .project-excerpt {
-      margin: 35px / 1.5;
-      position: relative;
+      .project-excerpt {
+        margin: 0;
+        padding: 35px;
 
-      button {
-        background-color: transparent;
-        border: none;
-        float: right;
-        height: 40px; width: 40px;
-        margin-top: -(35px / 1.8);
+        h2 {
+          .BrixSans-Bold;
+          font-size: 20px;
+          margin-bottom: 35px / 2;
+        }
+
+        p {
+          .BrixSlab-ExtraLight;
+          font-size: 20px;
+        }
+      }
+
+      ul {
+        margin: 0;
         padding: 0;
 
-        &:active,
-        &:focus,
-        &:hover,
-        &:visited {
-          outline: -webkit-focus-ring-color auto 0;
-        }
-
-        svg {
-          fill: none;
-          height: 100%; width: 100%;
-          stroke: @black;
-        }
-      }
-
-      h2 {
-        .BrixSans-Bold;
-        //border-top: 1px solid @black;
-        font-size: 13px;
-        font-weight: normal;
-        margin: 0;
-        margin-bottom: 35px / 1.5;
-        //padding-top: (35px / 1.5) * 1.5;
-        text-transform: uppercase;
-      }
-
-      p {
-        .BrixSlab-ExtraLight;
-        font-size: 14px;
-        line-height: 1.3em;
-        margin: 0;
-        margin-bottom: 1em;
-      }
-    }
-
-    ul {
-      height: auto; width: 100%;
-      list-style-type: none;
-      list-style-position: inside;
-      margin: 0;
-      padding: 0 35px;
-
-      li {
-        height: auto; width: 100%;
-        margin-bottom: (35px / 1.5) / 2;
-
-        &:li:last-of-type {
-          margin-bottom: 0;
-        }
-
-        img {
-          height: auto; width: 100%;
+        li {
+          margin-bottom: (35px / 1.5) / 1.5;
         }
       }
     }
   }
-}
 
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////

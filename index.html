@@ -82,9 +82,9 @@ layout: default
         </div>
         <div class="row invisible">
           {% for project in site.projects %}
-            <div id="{{ project.url | remove: 'projects' | remove: '/' | remove: '.html' }}" class="col-xs-12 project-content {{ project.url | remove: 'projects' | remove: '/' | remove: '.html' }} hide" aria-expanded="false" style="background-color: rgba({{ project.hue }}, 0.4);">
-              <div class="project-excerpt">
-                <button type="button" class="hidden-md">
+            <div id="{{ project.url | remove: 'projects' | remove: '/' | remove: '.html' }}" class="col-xs-12 project-content {{ project.url | remove: 'projects' | remove: '/' | remove: '.html' }} hide invisible" aria-expanded="false">
+              <div class="project-excerpt" style="background-color: rgba({{ project.hue }}, 0.4);">
+                <button type="button">
                   <svg width="64" height="64" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
                     <g>
                       <path fill="none" stroke-width="5" stroke-linejoin="bevel" d="M 12.972944,50.936147 51.027056,12.882035" />
@@ -100,9 +100,17 @@ layout: default
                 <p lang="en">{{ project.excerptEn }}</p>
                 <p lang="es">{{ project.excerptEs }}</p>
               </div>
-              <ul>
+              <ul style="background-color: rgba({{ project.hue }}, 0.4);">
                 {{ project.content | remove: '<p>' | remove: '</p>' | remove: '<ul>' | remove: '</ul>' }}
               </ul>
+              <a type="button" data-button-label="[↑] Top">
+                <svg width="64" height="64" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+                  <g>
+                    <path fill="none" stroke-width="5" d="M 14.083963,30.420652 32.85761,7.258774 51.595463,30.420652"/>
+                      <path fill="none" stroke-width="5" stroke-linejoin="bevel" d="m 32.839713,56.901513 0,-49.803026"/>
+                  </g>
+                </svg>
+              </a>
             </div>
           {% endfor %}
         </div>
@@ -117,25 +125,36 @@ layout: default
       <h2>Projectes</h2>
       <p>Planifiquem, dissenyem, i desenvolupem projectes de comunicació visual multiplataforma i/o multimèdia: identitat corporativa, disseny editorial, direcció d’ art, instalacions, programació frontend i backend, interfícies gràfiques d’usuari, wayfinding, i serveis web.</p>
       <p>Som dissenyadors i desenvolupadors en defensa del disseny útil i innovador compromessos amb la millora progressiva i les tecnologies de codi obert.</p>
-      <p>Ens agrada experimentar amb noves estètiques i tècniques que  enfatitzin tant  l’aspecte com la funcionalitat i que segueixin els principis de <a href="http://lawsofsimplicity.com/" target="_blank" data-toggle="tooltip" data-placement="top" data-html="true" title="We turn against technology<br>that's too complicated">la simplicitat</a> i <a href="http://project.cyberpunk.ru/idb/hacker_ethics.html" target="_blank" data-toggle="tooltip" data-placement="top" data-html="true" title="We solve problems through<br>creativity and technology">el hacking</a>.</p>
-      <p>Col·laborem amb equips de coneixements complementaris, com fotògrafs, il·lustradors, animadors, i redactors per dur a bon port els projectes més exigents. Si ets creatiu i tens un tarannà proper al nostre, <a href="mailto:hello@wearestudio.io" target="_blank" data-toggle="tooltip" data-placement="top" data-html="true" title="...">contacta’ns</a>!</p>
     </div>
     <div class="autumn" lang="en">
       <h2>Work</h2>
       <p>We plan, design, and develop cross platform and/or multi-media visual communication projects: brand identity, editorial design, art direction, installation art, front end and back end development, graphic user interfaces, wayfinding, and web services.</p>
       <p>We are designers and developers in favor of useful and innovative design deeply committed to progressive enhancement and open source technologies.</p>
-      <p>We love playing with new aesthetics and techniques that emphasizes both the look and functionality, built around the principles of <a href="http://lawsofsimplicity.com/" target="_blank" data-toggle="tooltip" data-placement="top" data-html="true" title="We turn against technology<br>that's too complicated">simplicity</a> and <a href="http://project.cyberpunk.ru/idb/hacker_ethics.html" target="_blank" data-toggle="tooltip" data-placement="top" data-html="true" title="We solve problems through<br>creativity and technology">hacking</a>.</p>
-      <p>We collaborate with teams of complementary skills, including photographers, illustrators, motion designers, and copywriters to take demanding projects to the next level. If you feel the way we do, <a href="mailto:hello@wearestudio.io" target="_blank" data-toggle="tooltip" data-placement="top" data-html="true" title="...">contact us</a>!</p>
     </div>
     <div class="autumn" lang="es">
       <h2>Proyectos</h2>
       <p>Planificamos, diseñamos, y desarrollamos proyectos de comunicación visual multiplataforma y/o multimedia: identidad corporativa, diseño editorial, direción de arte, instalaciones, programación front-end y back-end, interfaces gráficas de usuario, wayfinding, y servicios web.</p>
       <p>Somos diseñadores y desarrolladores a favor del diseño útil e innovador comprometidos con la mejora progresiva y las tecnologías de código abierto.</p>
+    </div>
+  </div>
+  <div id="よん" class="col-xs-12 col-md-6">
+    <div class="autumn" lang="ca">
+      <h2>...</h2>
+      <p>Ens agrada experimentar amb noves estètiques i tècniques que  enfatitzin tant  l’aspecte com la funcionalitat i que segueixin els principis de <a href="http://lawsofsimplicity.com/" target="_blank" data-toggle="tooltip" data-placement="top" data-html="true" title="We turn against technology<br>that's too complicated">la simplicitat</a> i <a href="http://project.cyberpunk.ru/idb/hacker_ethics.html" target="_blank" data-toggle="tooltip" data-placement="top" data-html="true" title="We solve problems through<br>creativity and technology">el hacking</a>.</p>
+      <p>Col·laborem amb equips de coneixements complementaris, com fotògrafs, il·lustradors, animadors, i redactors per dur a bon port els projectes més exigents. Si ets creatiu i tens un tarannà proper al nostre, <a href="mailto:hello@wearestudio.io" target="_blank" data-toggle="tooltip" data-placement="top" data-html="true" title="...">contacta’ns</a>!</p>
+    </div>
+    <div class="autumn" lang="en">
+      <h2>...</h2>
+      <p>We love playing with new aesthetics and techniques that emphasizes both the look and functionality, built around the principles of <a href="http://lawsofsimplicity.com/" target="_blank" data-toggle="tooltip" data-placement="top" data-html="true" title="We turn against technology<br>that's too complicated">simplicity</a> and <a href="http://project.cyberpunk.ru/idb/hacker_ethics.html" target="_blank" data-toggle="tooltip" data-placement="top" data-html="true" title="We solve problems through<br>creativity and technology">hacking</a>.</p>
+      <p>We collaborate with teams of complementary skills, including photographers, illustrators, motion designers, and copywriters to take demanding projects to the next level. If you feel the way we do, <a href="mailto:hello@wearestudio.io" target="_blank" data-toggle="tooltip" data-placement="top" data-html="true" title="...">contact us</a>!</p>
+    </div>
+    <div class="autumn" lang="es">
+      <h2>...</h2>
       <p>Nos gusta experimentar con nuevas estéticas y técnicas que  enfaticen tanto  el aspecto como la funcionalidad y que sigan los principios de <a href="http://lawsofsimplicity.com/" target="_blank" data-toggle="tooltip" data-placement="top" data-html="true" title="We turn against technology<br>that's too complicated">la simplicidad</a> y <a href="http://project.cyberpunk.ru/idb/hacker_ethics.html" target="_blank" data-toggle="tooltip" data-placement="top" data-html="true" title="We solve problems through<br>creativity and technology">el hacking</a>.</p>
       <p>Colaboramos con equipos de habilidades complementarias, como fotógrafos, ilustradores, animadores, y redactores para atender como se merecen los proyectos más exigentes. Si eres creativo y tienes un temperamento parecido al nuestro, <a href="mailto:hello@wearestudio.io" target="_blank" data-toggle="tooltip" data-placement="top" data-html="true" title="...">contáctanos</a>!</p>
     </div>
   </div>
-  </div>
+</div>
 
 <hr class="hidden-xs hidden-sm">
 

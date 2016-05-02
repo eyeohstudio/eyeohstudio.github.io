@@ -5,6 +5,14 @@ jQuery(document).ready(function ($) {
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
 
+  var projectThumbnailHeight = $('.summer .container-fluid .row:nth-of-type(1)').outerHeight();
+  var springHeight = $('body > .container-fluid > .row:nth-of-type(2)').outerHeight();
+
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+
   function anchorLinkScrollAnimation() {
     $('.navbar-collapse ul li a[href*="#"]:not([href="#"])').click(function() {
       if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
@@ -25,11 +33,11 @@ jQuery(document).ready(function ($) {
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
 
-  function fourHundredEightyListerner() {
-    if ($(window).width() < 480) {
-      return $('html').removeClass('larger-than-four-hundred-eighty').addClass('smaller-than-four-hundred-eighty');
-    }
-    $('html').removeClass('smaller-than-four-hundred-eighty').addClass('larger-than-four-hundred-eighty');
+  function scrollToTop() {
+    $('.project-content > a[type="button"]').on('click', function(event) {
+      event.preventDefault();
+      $('html, body').stop().animate({scrollTop: 0}, 300);
+    });
   };
 
 ////////////////////////////////////////////////////////////////
@@ -106,40 +114,40 @@ jQuery(document).ready(function ($) {
     ////////////////////////////////////////////////////////////////
     ////////////////////////////////////////////////////////////////
 
-    // WIP
-    $('.project-thumbnail a').click(function() {
+    $('.project-thumbnail a').click(function(event) {
+      event.preventDefault();
 
-      $(this).each(function() {
+      var projectName = $(this).attr('data-project-name');
 
-        var projectName = $(this).attr('data-project-name');
-
-        $('#' + projectName).removeClass('hide').addClass('show').attr('aria-expanded', 'true', function () {
-          $('.summer .container-fluid .row:nth-of-type(2)').removeClass('invisible').addClass('visible').velocity({'margin-top': '0' - springHeight}, 300);
-        });
+      $('.summer .container-fluid .row:nth-of-type(2)').removeClass('invisible').addClass('visible').queue(function(next) {
+        $(this).stop().animate({'margin-top': '0' - springHeight}, 400);
+        $('#' + projectName).removeClass('hide imvisble').addClass('show visible').attr('aria-expanded', 'true');
+        next();
       });
-
+      return false;
     });
 
-    $('.project-content .project-excerpt button').click(function() {
-
-        var projectName = $('.project-content[aria-expanded="true"]').attr('id');
-
-        $('#' + projectName).removeClass('show').addClass('hide').attr('aria-expanded', 'false', function () {
-          $('.summer .container-fluid .row:nth-of-type(2)').removeClass('visible').addClass('invisible').velocity({'margin-top': projectThumbnailHeight}, 300);
-        });
-
+    $('.project-content .project-excerpt button').click(function(event) {
+      event.preventDefault();
+      var projectName = $('.project-content[aria-expanded="true"]').attr('id');
+      $('.summer .container-fluid .row:nth-of-type(2)').animate({'margin-top': projectThumbnailHeight}, 400).queue(function(next) {
+        $('#' + projectName).removeClass('show').addClass('hide').attr('aria-expanded', 'false');
+        $(this).stop().removeClass('visible').addClass('invisible');
+        next();
+      });
+      return false;
     });
 
     ////////////////////////////////////////////////////////////////
     ////////////////////////////////////////////////////////////////
 
-    if ($('html').hasClass('smaller-than-four-hundred-eighty')){
+    if ($('html').hasClass('smaller-than-six-hundred-forty')){
       var valueWidth = $('body').parent().width();
       valueWidth *= 1;
       var valueHeight = Math.round((valueWidth/16)*9);
       $('iframe[src^="//player.vimeo.com"], object, embed').css({ 'min-height': valueHeight + 'px', 'min-width': valueWidth + 'px' });
     }
-    if ($('html').hasClass('larger-than-four-hundred-eighty')){
+    if ($('html').hasClass('larger-than-six-hundred-forty')){
       var valueWidth = $('header').innerWidth();
       valueWidth *= 1;
       var valueHeight = Math.round((valueWidth/16)*9);
@@ -216,6 +224,18 @@ jQuery(document).ready(function ($) {
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
 
+  function sixHundredFortyListerner() {
+    if ($(window).width() < 640) {
+      return $('html').removeClass('larger-than-six-hundred-forty').addClass('smaller-than-six-hundred-forty');
+    }
+    $('html').removeClass('smaller-than-six-hundred-forty').addClass('larger-than-six-hundred-forty');
+  };
+
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+
   function tooltipToggle() {
     if (!('ontouchstart' in window)) {
       $('[data-toggle="tooltip"]').tooltip()
@@ -256,12 +276,13 @@ jQuery(document).ready(function ($) {
 ////////////////////////////////////////////////////////////////
 
   anchorLinkScrollAnimation();
-  fourHundredEightyListerner();
+  scrollToTop();
   hamburgerAnimation();
   langToggle();
   randomCity();
   randomWhat();
   setWinterHeight();
+  sixHundredFortyListerner();
   tooltipToggle();
   vimeoWhatever();
 
@@ -271,10 +292,8 @@ jQuery(document).ready(function ($) {
 ////////////////////////////////////////////////////////////////
 
   $(window).load(function() {
-
     projectStuff();
     $('body').removeClass('fadeOut').addClass('fadeIn');
-
   });
 
 ////////////////////////////////////////////////////////////////
@@ -284,12 +303,44 @@ jQuery(document).ready(function ($) {
 
   $(window).resize(function() {
 
-    fourHundredEightyListerner();
-    projectStuff();
-    setWinterHeight();
-    vimeoWhatever();
+    ////////////////////////////////////////////////////////////////
+    ////////////////////////////////////////////////////////////////
+
+    var projectThumbnailHeight = $('.summer .container-fluid .row:nth-of-type(1)').outerHeight();
+    var springHeight = $('body > .container-fluid > .row:nth-of-type(2)').outerHeight();
+
+    ////////////////////////////////////////////////////////////////
+    ////////////////////////////////////////////////////////////////
+
+    if ($('.summer .container-fluid .row:nth-of-type(2)').hasClass('invisible')){
+      $('.summer .container-fluid .row:nth-of-type(2)').css('margin-top', projectThumbnailHeight);
+    }
+    if ($('.summer .container-fluid .row:nth-of-type(2)').hasClass('visible')){
+      $('.summer .container-fluid .row:nth-of-type(2)').css('margin-top', '0' - springHeight);
+    }
+
+    ////////////////////////////////////////////////////////////////
+    ////////////////////////////////////////////////////////////////
 
   });
+
+  // Forever in debt with Alvaro Trigo
+  // http://alvarotrigo.com/blog/firing-resize-event-only-once-when-resizing-is-finished/
+  var resizeId;
+  $(window).resize(function() {
+    clearTimeout(resizeId);
+    resizeId = setTimeout(doneResizing, 300);
+  });
+
+  ////////////////////////////////////////////////////////////////
+  ////////////////////////////////////////////////////////////////
+
+  function doneResizing(){
+    projectStuff();
+    setWinterHeight();
+    sixHundredFortyListerner();
+    vimeoWhatever();
+  };
 
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
@@ -297,9 +348,7 @@ jQuery(document).ready(function ($) {
 ////////////////////////////////////////////////////////////////
 
   $('.language-change a').click(function() {
-
     projectStuff();
-
   });
 
 ////////////////////////////////////////////////////////////////
