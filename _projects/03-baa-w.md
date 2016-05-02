@@ -4,11 +4,11 @@ boojum: data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJvYmplY3QtMDQyMS
 
 hue: 255, 193, 135
 
-titleCa: BAA&#xa;Barcelona Academy of Art
+titleCa: Barcelona&#xa; Academy of Art
 
-titleEn: BAA&#xa;Barcelona&#xa; Academy of Art
+titleEn: Barcelona&#xa; Academy of Art
 
-titleEs: BAA&#xa;Barcelona Academy of Art
+titleEs: Barcelona&#xa; Academy of Art
 
 excerptCa: Desarrollo del nuevo apartado de matriculación y planificación del curso online.
 
