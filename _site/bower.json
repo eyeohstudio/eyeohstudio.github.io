@@ -16,6 +16,8 @@
     "Snap.svg": "snap.svg#^0.4.1",
     "js-cookie": "js-cookie/js-cookie#^2.1.1",
     "jquery-lang-js": "Irrelon/jquery-lang-js#^3.0.0",
-    "velocity": "julianshapiro/velocity#^1.2.3"
+    "velocity": "julianshapiro/velocity#^1.2.3",
+    "install": "^1.0.4",
+    "jquery-watch-dom": "^1.21.0"
   }
 }

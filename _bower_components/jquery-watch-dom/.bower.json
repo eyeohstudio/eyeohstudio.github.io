@@ -1,0 +1,30 @@
+{
+  "name": "jquery-watch-dom",
+  "version": "1.21.0",
+  "main": "jquery-watch.js",
+  "license": "MIT",
+  "ignore": [
+    "*.sln",
+    ".*",
+    "src",
+    "*.publishproj"
+  ],
+  "keywords": [
+    "json",
+    "date"
+  ],
+  "homepage": "https://github.com/RickStrahl/jquery-watch",
+  "dependencies": {
+    "jquery": "~2.2.0"
+  },
+  "_release": "1.21.0",
+  "_resolution": {
+    "type": "version",
+    "tag": "1.21.0",
+    "commit": "f2eaa84c727e17c63f2b09c21d2c5fbd1508bcf3"
+  },
+  "_source": "https://github.com/RickStrahl/jquery-watch.git",
+  "_target": "^1.21.0",
+  "_originalSource": "jquery-watch-dom",
+  "_direct": true
+}

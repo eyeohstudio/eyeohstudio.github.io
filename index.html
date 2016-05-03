@@ -68,7 +68,7 @@ layout: default
   <div id="に" class="col-xs-12">
     <div class="summer">
       <div class="container-fluid">
-        <div class="row">
+        <div class="row visible">
           {% for project in site.projects %}
             <div class="col-xs-6 col-md-4 col-lg-3 project-thumbnail {{ project.url | remove: 'projects' | remove: '/' | remove: '.html' }}">
               <a href="#" style="background-image: url({{ project.boojum }})" data-project-name="{{ project.url | remove: 'projects' | remove: '/' | remove: '.html' }}" title="">

@@ -99,16 +99,17 @@ jQuery(document).ready(function ($) {
   function projectStuff() {
     var projectThumbnailHeight = $('.summer .container-fluid .row:nth-of-type(1)').outerHeight();
     var springHeight = $('body > .container-fluid > .row:nth-of-type(2)').outerHeight();
-    $('.project-content').css('min-height', projectThumbnailHeight + springHeight);
 
     ////////////////////////////////////////////////////////////////
     ////////////////////////////////////////////////////////////////
 
     if ($('.summer .container-fluid .row:nth-of-type(2)').hasClass('invisible')){
       $('.summer .container-fluid .row:nth-of-type(2)').css('margin-top', projectThumbnailHeight);
+      $('.summer .container-fluid .row:nth-of-type(1)').removeClass('invisible').addClass('visible');
     }
     if ($('.summer .container-fluid .row:nth-of-type(2)').hasClass('visible')){
       $('.summer .container-fluid .row:nth-of-type(2)').css('margin-top', '0' - springHeight);
+      $('.summer .container-fluid .row:nth-of-type(1)').removeClass('visible').addClass('invisible');
     }
 
     ////////////////////////////////////////////////////////////////
@@ -122,6 +123,7 @@ jQuery(document).ready(function ($) {
       $('.summer .container-fluid .row:nth-of-type(2)').removeClass('invisible').addClass('visible').queue(function(next) {
         $(this).stop().animate({'margin-top': '0' - springHeight}, 400);
         $('#' + projectName).removeClass('hide imvisble').addClass('show visible').attr('aria-expanded', 'true');
+        $('.summer .container-fluid .row:nth-of-type(1)').removeClass('visible').addClass('invisible');
         next();
       });
       return false;
@@ -130,6 +132,7 @@ jQuery(document).ready(function ($) {
     $('.project-content .project-excerpt button').click(function(event) {
       event.preventDefault();
       var projectName = $('.project-content[aria-expanded="true"]').attr('id');
+      $('.summer .container-fluid .row:nth-of-type(1)').removeClass('invisible').addClass('visible');
       $('.summer .container-fluid .row:nth-of-type(2)').animate({'margin-top': projectThumbnailHeight}, 400).queue(function(next) {
         $('#' + projectName).removeClass('show').addClass('hide').attr('aria-expanded', 'false');
         $(this).stop().removeClass('visible').addClass('invisible');
@@ -293,7 +296,7 @@ jQuery(document).ready(function ($) {
 
   $(window).load(function() {
     projectStuff();
-    $('body').removeClass('fadeOut').addClass('fadeIn');
+    $('body').removeClass('invisible').addClass('visible');
   });
 
 ////////////////////////////////////////////////////////////////
@@ -309,14 +312,13 @@ jQuery(document).ready(function ($) {
     var projectThumbnailHeight = $('.summer .container-fluid .row:nth-of-type(1)').outerHeight();
     var springHeight = $('body > .container-fluid > .row:nth-of-type(2)').outerHeight();
 
-    ////////////////////////////////////////////////////////////////
-    ////////////////////////////////////////////////////////////////
-
     if ($('.summer .container-fluid .row:nth-of-type(2)').hasClass('invisible')){
       $('.summer .container-fluid .row:nth-of-type(2)').css('margin-top', projectThumbnailHeight);
+      $('.summer .container-fluid .row:nth-of-type(1)').removeClass('invisible').addClass('visible');
     }
     if ($('.summer .container-fluid .row:nth-of-type(2)').hasClass('visible')){
       $('.summer .container-fluid .row:nth-of-type(2)').css('margin-top', '0' - springHeight);
+      $('.summer .container-fluid .row:nth-of-type(1)').removeClass('visible').addClass('invisible');
     }
 
     ////////////////////////////////////////////////////////////////
@@ -340,6 +342,20 @@ jQuery(document).ready(function ($) {
     setWinterHeight();
     sixHundredFortyListerner();
     vimeoWhatever();
+
+    $('.project-content .project-excerpt button').click(function() {
+      var projectThumbnailHeight = $('.summer .container-fluid .row:nth-of-type(1)').outerHeight();
+      var springHeight = $('body > .container-fluid > .row:nth-of-type(2)').outerHeight();
+      event.preventDefault();
+      var projectName = $('.project-content[aria-expanded="true"]').attr('id');
+      $('.summer .container-fluid .row:nth-of-type(1)').removeClass('invisible').addClass('visible');
+      $('.summer .container-fluid .row:nth-of-type(2)').animate({'margin-top': projectThumbnailHeight}, 400).queue(function(next) {
+        $('#' + projectName).removeClass('show').addClass('hide').attr('aria-expanded', 'false');
+        $(this).stop().removeClass('visible').addClass('invisible');
+        next();
+      });
+      return false;
+    });
   };
 
 ////////////////////////////////////////////////////////////////
@@ -349,6 +365,20 @@ jQuery(document).ready(function ($) {
 
   $('.language-change a').click(function() {
     projectStuff();
+  });
+
+  $('.project-content .project-excerpt button').click(function() {
+    var projectThumbnailHeight = $('.summer .container-fluid .row:nth-of-type(1)').outerHeight();
+    var springHeight = $('body > .container-fluid > .row:nth-of-type(2)').outerHeight();
+    event.preventDefault();
+    var projectName = $('.project-content[aria-expanded="true"]').attr('id');
+    $('.summer .container-fluid .row:nth-of-type(1)').removeClass('invisible').addClass('visible');
+    $('.summer .container-fluid .row:nth-of-type(2)').animate({'margin-top': projectThumbnailHeight}, 400).queue(function(next) {
+      $('#' + projectName).removeClass('show').addClass('hide').attr('aria-expanded', 'false');
+      $(this).stop().removeClass('visible').addClass('invisible');
+      next();
+    });
+    return false;
   });
 
 ////////////////////////////////////////////////////////////////
