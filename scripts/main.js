@@ -34,7 +34,7 @@ jQuery(document).ready(function ($) {
 ////////////////////////////////////////////////////////////////
 
   function scrollToTop() {
-    $('.project-content > a[type="button"]').on('click', function(event) {
+    $('.project-content > a.scroll-to-top').on('click', function(event) {
       event.preventDefault();
       $('html, body').stop().animate({scrollTop: 0}, 300);
     });
@@ -268,9 +268,6 @@ jQuery(document).ready(function ($) {
       });
     };
 
-    ////////////////////////////////////////////////////////////////
-    ////////////////////////////////////////////////////////////////
-
   };
 
 ////////////////////////////////////////////////////////////////
@@ -306,11 +303,11 @@ jQuery(document).ready(function ($) {
 
   $(window).resize(function() {
 
-    ////////////////////////////////////////////////////////////////
-    ////////////////////////////////////////////////////////////////
-
     var projectThumbnailHeight = $('.summer .container-fluid .row:nth-of-type(1)').outerHeight();
     var springHeight = $('body > .container-fluid > .row:nth-of-type(2)').outerHeight();
+
+    ////////////////////////////////////////////////////////////////
+    ////////////////////////////////////////////////////////////////
 
     if ($('.summer .container-fluid .row:nth-of-type(2)').hasClass('invisible')){
       $('.summer .container-fluid .row:nth-of-type(2)').css('margin-top', projectThumbnailHeight);
@@ -321,10 +318,12 @@ jQuery(document).ready(function ($) {
       $('.summer .container-fluid .row:nth-of-type(1)').removeClass('visible').addClass('invisible');
     }
 
-    ////////////////////////////////////////////////////////////////
-    ////////////////////////////////////////////////////////////////
-
   });
+
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
 
   // Forever in debt with Alvaro Trigo
   // http://alvarotrigo.com/blog/firing-resize-event-only-once-when-resizing-is-finished/
@@ -338,14 +337,21 @@ jQuery(document).ready(function ($) {
   ////////////////////////////////////////////////////////////////
 
   function doneResizing(){
+
     projectStuff();
     setWinterHeight();
     sixHundredFortyListerner();
     vimeoWhatever();
 
+    ////////////////////////////////////////////////////////////////
+
     $('.project-content .project-excerpt button').click(function() {
+
       var projectThumbnailHeight = $('.summer .container-fluid .row:nth-of-type(1)').outerHeight();
       var springHeight = $('body > .container-fluid > .row:nth-of-type(2)').outerHeight();
+
+      ////////////////////////////////////////////////////////////////
+
       event.preventDefault();
       var projectName = $('.project-content[aria-expanded="true"]').attr('id');
       $('.summer .container-fluid .row:nth-of-type(1)').removeClass('invisible').addClass('visible');
@@ -367,9 +373,33 @@ jQuery(document).ready(function ($) {
     projectStuff();
   });
 
+  ////////////////////////////////////////////////////////////////
+  ////////////////////////////////////////////////////////////////
+
+  $('.project-thumbnail a').click(function() {
+
+    setTimeout(function() {
+
+      var projectExcerptHeight = $('.project-content[aria-expanded="true"] > .project-excerpt').outerHeight(true);
+      var projectFirstFigureHeight = $('.project-content[aria-expanded="true"] > ul > li:nth-of-type(1)').height();
+
+      $('.project-content[aria-expanded="true"] > .project-control').css({
+        'height': projectFirstFigureHeight,
+        'top': projectExcerptHeight
+      });
+    }, 300);
+  });
+
+  ////////////////////////////////////////////////////////////////
+  ////////////////////////////////////////////////////////////////
+
   $('.project-content .project-excerpt button').click(function() {
+
     var projectThumbnailHeight = $('.summer .container-fluid .row:nth-of-type(1)').outerHeight();
     var springHeight = $('body > .container-fluid > .row:nth-of-type(2)').outerHeight();
+
+    ////////////////////////////////////////////////////////////////
+
     event.preventDefault();
     var projectName = $('.project-content[aria-expanded="true"]').attr('id');
     $('.summer .container-fluid .row:nth-of-type(1)').removeClass('invisible').addClass('visible');

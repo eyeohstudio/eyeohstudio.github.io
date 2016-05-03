@@ -324,6 +324,7 @@ div.summer .project-content {
   float: left;
   height: auto;
   width: 100%;
+  position: relative;
 }
 div.summer .project-content .project-excerpt {
   margin: 0;
@@ -369,6 +370,9 @@ div.summer .project-content .project-excerpt p {
   margin: 0;
   margin-bottom: 0;
 }
+div.summer .project-content .project-control {
+  display: none;
+}
 div.summer .project-content ul {
   height: auto;
   width: 100%;
@@ -393,7 +397,7 @@ div.summer .project-content ul li img {
   height: auto;
   width: 100%;
 }
-div.summer .project-content a {
+div.summer .project-content a.scroll-to-top {
   font-family: BrixSlab-ExtraLight;
   display: block;
   -webkit-backface-visibility: hidden;
@@ -414,15 +418,15 @@ div.summer .project-content a {
   text-align: center;
   text-transform: uppercase;
 }
-div.summer .project-content a:hover {
+div.summer .project-content a.scroll-to-top:hover {
   opacity: 1 !important;
 }
-div.summer .project-content a:hover svg {
+div.summer .project-content a.scroll-to-top:hover svg {
   -webkit-transform: translateY(0);
   -moz-transform: translateY(0);
   transform: translateY(0);
 }
-div.summer .project-content a svg {
+div.summer .project-content a.scroll-to-top svg {
   -webkit-backface-visibility: hidden;
   -webkit-transition: .3s ease;
   -moz-transition: .3s ease;
@@ -1674,14 +1678,60 @@ div.summer .project-content:nth-of-type(1) ul li:nth-of-type(1) {
     margin-right: 5%;
     margin-left: 25%;
   }
+  div.summer .project-content .project-control {
+    display: block;
+    width: 100%;
+    position: absolute;
+  }
+  div.summer .project-content .project-control:before,
+  div.summer .project-content .project-control:after {
+    content: " ";
+    display: table;
+  }
+  div.summer .project-content .project-control:after {
+    clear: both;
+  }
+  div.summer .project-content .project-control a {
+    font-family: BrixSansExtraLight;
+    border-bottom: none;
+    font-size: 12px;
+    text-transform: uppercase;
+    white-space: nowrap;
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    -webkit-transform-origin: 50% 53%;
+    -moz-transform-origin: 50% 53%;
+    -ms-transform-origin: 50% 53%;
+    -o-transform-origin: 50% 53%;
+    transform-origin: 50% 53%;
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+  }
+  div.summer .project-content .project-control a:hover {
+    opacity: 1;
+  }
+  div.summer .project-content .project-control a.left-project-control {
+    float: left;
+  }
+  div.summer .project-content .project-control a.left-project-control:after {
+    content: " [↑]";
+  }
+  div.summer .project-content .project-control a.right-project-control {
+    float: right;
+  }
+  div.summer .project-content .project-control a.right-project-control:after {
+    content: " [↓]";
+  }
   div.summer .project-content ul {
     margin: 0;
     padding: 0 50px;
   }
   div.summer .project-content ul li {
-    margin-bottom: 15.55555556px;
+    margin-bottom: 23.33333333px;
   }
-  div.summer .project-content a {
+  div.summer .project-content a.scroll-to-top {
     font-family: BrixSansExtraLight;
     display: block;
     -webkit-backface-visibility: hidden;
@@ -1701,10 +1751,10 @@ div.summer .project-content:nth-of-type(1) ul li:nth-of-type(1) {
     text-align: center;
     text-transform: uppercase;
   }
-  div.summer .project-content a:before {
+  div.summer .project-content a.scroll-to-top:before {
     content: attr(data-button-label);
   }
-  div.summer .project-content a svg {
+  div.summer .project-content a.scroll-to-top svg {
     display: none;
   }
   html body {
@@ -2124,9 +2174,9 @@ div.summer .project-content:nth-of-type(1) ul li:nth-of-type(1) {
     padding: 0 45px;
   }
   div.summer .project-content ul li {
-    margin-bottom: 15px;
+    margin-bottom: 23.33333333px;
   }
-  div.summer .project-content a {
+  div.summer .project-content a.scroll-to-top {
     font-family: BrixSansExtraLight;
     display: block;
     -webkit-backface-visibility: hidden;
@@ -2147,13 +2197,13 @@ div.summer .project-content:nth-of-type(1) ul li:nth-of-type(1) {
     text-align: center;
     text-transform: uppercase;
   }
-  div.summer .project-content a:before {
+  div.summer .project-content a.scroll-to-top:before {
     content: attr(data-button-label);
   }
-  div.summer .project-content a:hover {
+  div.summer .project-content a.scroll-to-top:hover {
     opacity: 1;
   }
-  div.summer .project-content a svg {
+  div.summer .project-content a.scroll-to-top svg {
     display: none;
   }
   html body {
@@ -2444,10 +2494,10 @@ div.summer .project-content:nth-of-type(1) ul li:nth-of-type(1) {
   div.summer .project-content ul li {
     display: block;
     margin: 0 auto;
-    margin-bottom: 15px;
+    margin-bottom: 23.33333333px;
     width: 800px;
   }
-  div.summer .project-content a {
+  div.summer .project-content a.scroll-to-top {
     font-family: BrixSansExtraLight;
     display: block;
     -webkit-backface-visibility: hidden;
@@ -2469,13 +2519,13 @@ div.summer .project-content:nth-of-type(1) ul li:nth-of-type(1) {
     text-transform: uppercase;
     width: 800px;
   }
-  div.summer .project-content a:before {
+  div.summer .project-content a.scroll-to-top:before {
     content: attr(data-button-label);
   }
-  div.summer .project-content a:hover {
+  div.summer .project-content a.scroll-to-top:hover {
     opacity: 1;
   }
-  div.summer .project-content a svg {
+  div.summer .project-content a.scroll-to-top svg {
     display: none;
   }
   html body {
@@ -2776,10 +2826,10 @@ div.summer .project-content:nth-of-type(1) ul li:nth-of-type(1) {
   div.summer .project-content ul li {
     display: block;
     margin: 0 auto;
-    margin-bottom: 15px;
+    margin-bottom: 30px;
     width: 1120px;
   }
-  div.summer .project-content a {
+  div.summer .project-content a.scroll-to-top {
     font-family: BrixSansExtraLight;
     display: block;
     -webkit-backface-visibility: hidden;
@@ -2801,13 +2851,13 @@ div.summer .project-content:nth-of-type(1) ul li:nth-of-type(1) {
     text-transform: uppercase;
     width: 1120px;
   }
-  div.summer .project-content a:before {
+  div.summer .project-content a.scroll-to-top:before {
     content: attr(data-button-label);
   }
-  div.summer .project-content a:hover {
+  div.summer .project-content a.scroll-to-top:hover {
     opacity: 1;
   }
-  div.summer .project-content a svg {
+  div.summer .project-content a.scroll-to-top svg {
     display: none;
   }
   html body {
@@ -3108,10 +3158,10 @@ div.summer .project-content:nth-of-type(1) ul li:nth-of-type(1) {
   div.summer .project-content ul li {
     display: block;
     margin: 0 auto;
-    margin-bottom: 15px;
+    margin-bottom: 30px;
     width: 1120px;
   }
-  div.summer .project-content a {
+  div.summer .project-content a.scroll-to-top {
     font-family: BrixSansExtraLight;
     display: block;
     -webkit-backface-visibility: hidden;
@@ -3133,13 +3183,13 @@ div.summer .project-content:nth-of-type(1) ul li:nth-of-type(1) {
     text-transform: uppercase;
     width: 1120px;
   }
-  div.summer .project-content a:before {
+  div.summer .project-content a.scroll-to-top:before {
     content: attr(data-button-label);
   }
-  div.summer .project-content a:hover {
+  div.summer .project-content a.scroll-to-top:hover {
     opacity: 1;
   }
-  div.summer .project-content a svg {
+  div.summer .project-content a.scroll-to-top svg {
     display: none;
   }
   html body {

@@ -78,16 +78,68 @@
         }
       }
 
+      .project-control {
+        .clearfix;
+        .show;
+        width: 100%;
+        position: absolute;
+
+        a {
+          .BrixSans-ExtraLight;
+          border-bottom: none;
+          font-size: 12px;
+          text-transform: uppercase;
+          white-space: nowrap;
+
+          -webkit-transform: rotate(-90deg);
+             -moz-transform: rotate(-90deg);
+              -ms-transform: rotate(-90deg);
+               -o-transform: rotate(-90deg);
+                  transform: rotate(-90deg);
+
+          -webkit-transform-origin: 50% 53%;
+             -moz-transform-origin: 50% 53%;
+              -ms-transform-origin: 50% 53%;
+               -o-transform-origin: 50% 53%;
+                  transform-origin: 50% 53%;
+
+          filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+
+          &:after {
+          }
+
+          &:hover {
+            opacity: 1;
+          }
+
+          &.left-project-control {
+            float: left;
+
+            &:after {
+              content: " [↑]";
+            }
+          }
+
+          &.right-project-control {
+            float: right;
+
+            &:after {
+              content: " [↓]";
+            }
+          }
+        }
+      }
+
       ul {
         margin: 0;
         padding: 0 50px;
 
         li {
-          margin-bottom: (35px / 1.5) / 1.5;
+          margin-bottom: 35px / 1.5;
         }
       }
 
-      a {
+      a.scroll-to-top {
         .BrixSans-ExtraLight;
         .show;
         .transition;

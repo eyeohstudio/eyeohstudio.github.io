@@ -100,10 +100,26 @@ layout: default
                 <p lang="en">{{ project.excerptEn }}</p>
                 <p lang="es">{{ project.excerptEs }}</p>
               </div>
+              <div class="project-control">
+                {% if project.previous.titleCa %}
+                  <a class="left-project-control" href="#" role="button">
+                    <span lang="ca">{{ project.previous.titleCa }}</span>
+                    <span lang="en">{{ project.previous.titleEn }}</span>
+                    <span lang="es">{{ project.previous.titleEs }}</span>
+                  </a>
+                {% endif %}
+                {% if project.next.titleCa %}
+                  <a class="right-project-control" href="#" role="button">
+                    <span lang="ca">{{ project.next.titleCa }}</span>
+                    <span lang="en">{{ project.next.titleEn }}</span>
+                    <span lang="es">{{ project.next.titleEs }}</span>
+                  </a>
+                {% endif %}
+              </div>
               <ul style="background-color: rgba({{ project.hue }}, 0.4);">
                 {{ project.content | remove: '<p>' | remove: '</p>' | remove: '<ul>' | remove: '</ul>' }}
               </ul>
-              <a type="button" data-button-label="[↑] Top">
+              <a class="scroll-to-top" type="button" data-button-label="[↑] Top">
                 <svg width="64" height="64" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
                   <g>
                     <path fill="none" stroke-width="5" d="M 14.083963,30.420652 32.85761,7.258774 51.595463,30.420652"/>
