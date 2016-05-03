@@ -25,11 +25,7 @@ featured_image: io-ic-00t.jpg
 
 ---
 
-<<<<<<< Updated upstream
 * ![Cupcake ipsum dolor sit amet]({{ site.url }}/images/io-ic-01.jpg) ![Cupcake ipsum dolor sit amet]({{ site.url }}/images/io-ic-02.gif)
-=======
-* ![Cupcake ipsum dolor sit amet]({{ site.url }}/images/io-ic-01.jpg)![Cupcake ipsum dolor sit amet]({{ site.url }}/images/io-ic-02.gif)
->>>>>>> Stashed changes
 * ![Cupcake ipsum dolor sit amet]({{ site.url }}/images/io-ic-03.jpg)
 * ![Cupcake ipsum dolor sit amet]({{ site.url }}/images/io-ic-04.jpg)
 * ![Cupcake ipsum dolor sit amet]({{ site.url }}/images/io-ic-05.jpg)
