@@ -79,52 +79,54 @@
       }
 
       .project-control {
-        .clearfix;
         .show;
         width: 100%;
         position: absolute;
 
-        a {
-          .BrixSans-ExtraLight;
-          border-bottom: none;
-          font-size: 12px;
-          text-transform: uppercase;
-          white-space: nowrap;
+        .wrapper {
+          .clearfix;
+          .vertical-align;
+          height: auto;
+          margin: 0 auto;
 
-          -webkit-transform: rotate(-90deg);
-             -moz-transform: rotate(-90deg);
-              -ms-transform: rotate(-90deg);
-               -o-transform: rotate(-90deg);
-                  transform: rotate(-90deg);
+          a {
+            .BrixSans-ExtraLight;
+            border-bottom: none;
+            font-size: 12px;
+            text-align: right;
+            text-transform: uppercase;
+            white-space: nowrap;
+            writing-mode: tb-rl;
 
-          -webkit-transform-origin: 50% 53%;
-             -moz-transform-origin: 50% 53%;
-              -ms-transform-origin: 50% 53%;
-               -o-transform-origin: 50% 53%;
-                  transform-origin: 50% 53%;
-
-          filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
-
-          &:after {
-          }
-
-          &:hover {
-            opacity: 1;
-          }
-
-          &.left-project-control {
-            float: left;
+            -webkit-transform: rotate(-180deg);
+               -moz-transform: rotate(-180deg);
+                -ms-transform: rotate(-180deg);
+                 -o-transform: rotate(-180deg);
+                    transform: rotate(-180deg);
 
             &:after {
-              content: " [↑]";
             }
-          }
 
-          &.right-project-control {
-            float: right;
+            &:hover {
+              opacity: 1;
+            }
 
-            &:after {
-              content: " [↓]";
+            &.left-project-control {
+              float: left;
+              margin-left: (-60px - 17) / 2;
+
+              &:after {
+                content: " [↑]";
+              }
+            }
+
+            &.right-project-control {
+              float: right;
+              margin-right: (-60px - 17) / 2;
+
+              &:after {
+                content: " [↓]";
+              }
             }
           }
         }
@@ -132,7 +134,7 @@
 
       ul {
         margin: 0;
-        padding: 0 50px;
+        padding: 0 60px;
 
         li {
           margin-bottom: 35px / 1.5;

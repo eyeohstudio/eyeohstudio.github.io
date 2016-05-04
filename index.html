@@ -101,20 +101,22 @@ layout: default
                 <p lang="es">{{ project.excerptEs }}</p>
               </div>
               <div class="project-control">
-                {% if project.previous.titleCa %}
-                  <a class="left-project-control" href="#" role="button">
-                    <span lang="ca">{{ project.previous.titleCa }}</span>
-                    <span lang="en">{{ project.previous.titleEn }}</span>
-                    <span lang="es">{{ project.previous.titleEs }}</span>
-                  </a>
-                {% endif %}
-                {% if project.next.titleCa %}
-                  <a class="right-project-control" href="#" role="button">
-                    <span lang="ca">{{ project.next.titleCa }}</span>
-                    <span lang="en">{{ project.next.titleEn }}</span>
-                    <span lang="es">{{ project.next.titleEs }}</span>
-                  </a>
-                {% endif %}
+                <div class="wrapper">
+                  {% if project.previous.titleCa %}
+                    <a class="left-project-control" role="button" data-project-name="{{ project.previous.url | remove: 'projects' | remove: '/' | remove: '.html' }}">
+                      <span lang="ca">{{ project.previous.titleCa }}</span>
+                      <span lang="en">{{ project.previous.titleEn }}</span>
+                      <span lang="es">{{ project.previous.titleEs }}</span>
+                    </a>
+                  {% endif %}
+                  {% if project.next.titleCa %}
+                    <a class="right-project-control" role="button" data-project-name="{{ project.next.url | remove: 'projects' | remove: '/' | remove: '.html' }}">
+                      <span lang="ca">{{ project.next.titleCa }}</span>
+                      <span lang="en">{{ project.next.titleEn }}</span>
+                      <span lang="es">{{ project.next.titleEs }}</span>
+                    </a>
+                  {% endif %}
+                </div>
               </div>
               <ul style="background-color: rgba({{ project.hue }}, 0.4);">
                 {{ project.content | remove: '<p>' | remove: '</p>' | remove: '<ul>' | remove: '</ul>' }}

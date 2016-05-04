@@ -13,6 +13,64 @@ jQuery(document).ready(function ($) {
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
 
+  function projectControl() {
+
+    //var windowHeight = $(window).innerHeight();
+    var projectExcerptHeight = $('.project-content[aria-expanded="true"] > .project-excerpt').outerHeight(true);
+    //var projectContentVisibleAreaHeight = windowHeight - projectExcerptHeight
+    //var projectFirstFigureHeight = $('.project-content[aria-expanded="true"] > ul > li:nth-of-type(1)').height();
+    var projectFirstFigureWidth = $('.project-content[aria-expanded="true"] > ul > li:nth-of-type(1)').width();
+
+    ////////////////////////////////////////////////////////////////
+    ////////////////////////////////////////////////////////////////
+
+    $('.project-content[aria-expanded="true"] > .project-control > .wrapper').css({
+      'width': projectFirstFigureWidth,
+    });
+
+    ////////////////////////////////////////////////////////////////
+    ////////////////////////////////////////////////////////////////
+
+    $('.project-content[aria-expanded="true"] > .project-control').css({
+      'top': projectExcerptHeight
+    });
+  };
+
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+
+  function projectControlButtons() {
+
+    var currentProjectName = $('.project-content[aria-expanded="true"]').attr('id');
+    var previousProjectName = $('.project-content[aria-expanded="true"] .project-control a:nth-of-type(1)').attr('data-project-name');
+    var nextProjectName = $('.project-content[aria-expanded="true"] .project-control a:nth-of-type(2)').attr('data-project-name');
+
+    $('.project-control a:nth-of-type(1)').click(function() {
+      var currentProjectName = $('.project-content[aria-expanded="true"]').attr('id');
+      var previousProjectName = $('.project-content[aria-expanded="true"] .project-control a:nth-of-type(1)').attr('data-project-name');
+      var nextProjectName = $('.project-content[aria-expanded="true"] .project-control a:nth-of-type(2)').attr('data-project-name');
+
+      $('#' + currentProjectName).removeClass('show visble').addClass('hide invisible').attr('aria-expanded', 'false');
+      $('#' + previousProjectName).removeClass('hide invisble').addClass('show visible').attr('aria-expanded', 'true');
+    });
+
+    $('.project-control a:nth-of-type(2)').click(function() {
+      var currentProjectName = $('.project-content[aria-expanded="true"]').attr('id');
+      var previousProjectName = $('.project-content[aria-expanded="true"] .project-control a:nth-of-type(1)').attr('data-project-name');
+      var nextProjectName = $('.project-content[aria-expanded="true"] .project-control a:nth-of-type(2)').attr('data-project-name');
+
+      $('#' + currentProjectName).removeClass('show visble').addClass('hide invisible').attr('aria-expanded', 'false');
+      $('#' + nextProjectName).removeClass('hide invisble').addClass('show visible').attr('aria-expanded', 'true');
+    });
+  };
+
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+
   function anchorLinkScrollAnimation() {
     $('.navbar-collapse ul li a[href*="#"]:not([href="#"])').click(function() {
       if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
@@ -122,7 +180,7 @@ jQuery(document).ready(function ($) {
 
       $('.summer .container-fluid .row:nth-of-type(2)').removeClass('invisible').addClass('visible').queue(function(next) {
         $(this).stop().animate({'margin-top': '0' - springHeight}, 400);
-        $('#' + projectName).removeClass('hide imvisble').addClass('show visible').attr('aria-expanded', 'true');
+        $('#' + projectName).removeClass('hide invisble').addClass('show visible').attr('aria-expanded', 'true');
         $('.summer .container-fluid .row:nth-of-type(1)').removeClass('visible').addClass('invisible');
         next();
       });
@@ -328,6 +386,7 @@ jQuery(document).ready(function ($) {
   // Forever in debt with Alvaro Trigo
   // http://alvarotrigo.com/blog/firing-resize-event-only-once-when-resizing-is-finished/
   var resizeId;
+
   $(window).resize(function() {
     clearTimeout(resizeId);
     resizeId = setTimeout(doneResizing, 300);
@@ -338,6 +397,7 @@ jQuery(document).ready(function ($) {
 
   function doneResizing(){
 
+    projectControl();
     projectStuff();
     setWinterHeight();
     sixHundredFortyListerner();
@@ -369,38 +429,33 @@ jQuery(document).ready(function ($) {
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
 
-  $('.language-change a').click(function() {
+  $('.language-change a').on('click', function() {
     projectStuff();
   });
 
   ////////////////////////////////////////////////////////////////
   ////////////////////////////////////////////////////////////////
 
-  $('.project-thumbnail a').click(function() {
+  $('.project-thumbnail a').on('click', function() {
 
     setTimeout(function() {
 
-      var projectExcerptHeight = $('.project-content[aria-expanded="true"] > .project-excerpt').outerHeight(true);
-      var projectFirstFigureHeight = $('.project-content[aria-expanded="true"] > ul > li:nth-of-type(1)').height();
+      projectControl();
+      projectControlButtons();
 
-      $('.project-content[aria-expanded="true"] > .project-control').css({
-        'height': projectFirstFigureHeight,
-        'top': projectExcerptHeight
-      });
     }, 300);
   });
 
   ////////////////////////////////////////////////////////////////
   ////////////////////////////////////////////////////////////////
 
-  $('.project-content .project-excerpt button').click(function() {
+  $('.project-content .project-excerpt button').on('click', function() {
 
     var projectThumbnailHeight = $('.summer .container-fluid .row:nth-of-type(1)').outerHeight();
     var springHeight = $('body > .container-fluid > .row:nth-of-type(2)').outerHeight();
 
     ////////////////////////////////////////////////////////////////
 
-    event.preventDefault();
     var projectName = $('.project-content[aria-expanded="true"]').attr('id');
     $('.summer .container-fluid .row:nth-of-type(1)').removeClass('invisible').addClass('visible');
     $('.summer .container-fluid .row:nth-of-type(2)').animate({'margin-top': projectThumbnailHeight}, 400).queue(function(next) {
@@ -409,6 +464,16 @@ jQuery(document).ready(function ($) {
       next();
     });
     return false;
+  });
+
+  ////////////////////////////////////////////////////////////////
+  ////////////////////////////////////////////////////////////////
+
+  $('.project-control a[role="button"]').on('click', function() {
+
+      projectControl();
+      projectControlButtons();
+
   });
 
 ////////////////////////////////////////////////////////////////

@@ -229,6 +229,13 @@
   -o-transition: .3s ease;
   transition: .3s ease;
 }
+.vertical-align {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
 .visible {
   visibility: visible;
 }
@@ -1683,50 +1690,57 @@ div.summer .project-content:nth-of-type(1) ul li:nth-of-type(1) {
     width: 100%;
     position: absolute;
   }
-  div.summer .project-content .project-control:before,
-  div.summer .project-content .project-control:after {
+  div.summer .project-content .project-control .wrapper {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    height: auto;
+    margin: 0 auto;
+  }
+  div.summer .project-content .project-control .wrapper:before,
+  div.summer .project-content .project-control .wrapper:after {
     content: " ";
     display: table;
   }
-  div.summer .project-content .project-control:after {
+  div.summer .project-content .project-control .wrapper:after {
     clear: both;
   }
-  div.summer .project-content .project-control a {
+  div.summer .project-content .project-control .wrapper a {
     font-family: BrixSansExtraLight;
     border-bottom: none;
     font-size: 12px;
+    text-align: right;
     text-transform: uppercase;
     white-space: nowrap;
-    -webkit-transform: rotate(-90deg);
-    -moz-transform: rotate(-90deg);
-    -ms-transform: rotate(-90deg);
-    -o-transform: rotate(-90deg);
-    transform: rotate(-90deg);
-    -webkit-transform-origin: 50% 53%;
-    -moz-transform-origin: 50% 53%;
-    -ms-transform-origin: 50% 53%;
-    -o-transform-origin: 50% 53%;
-    transform-origin: 50% 53%;
-    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+    writing-mode: tb-rl;
+    -webkit-transform: rotate(-180deg);
+    -moz-transform: rotate(-180deg);
+    -ms-transform: rotate(-180deg);
+    -o-transform: rotate(-180deg);
+    transform: rotate(-180deg);
   }
-  div.summer .project-content .project-control a:hover {
+  div.summer .project-content .project-control .wrapper a:hover {
     opacity: 1;
   }
-  div.summer .project-content .project-control a.left-project-control {
+  div.summer .project-content .project-control .wrapper a.left-project-control {
     float: left;
+    margin-left: -38.5px;
   }
-  div.summer .project-content .project-control a.left-project-control:after {
+  div.summer .project-content .project-control .wrapper a.left-project-control:after {
     content: " [↑]";
   }
-  div.summer .project-content .project-control a.right-project-control {
+  div.summer .project-content .project-control .wrapper a.right-project-control {
     float: right;
+    margin-right: -38.5px;
   }
-  div.summer .project-content .project-control a.right-project-control:after {
+  div.summer .project-content .project-control .wrapper a.right-project-control:after {
     content: " [↓]";
   }
   div.summer .project-content ul {
     margin: 0;
-    padding: 0 50px;
+    padding: 0 60px;
   }
   div.summer .project-content ul li {
     margin-bottom: 23.33333333px;
