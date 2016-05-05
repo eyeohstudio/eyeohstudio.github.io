@@ -21,12 +21,13 @@ excerptEn: Consiste en una identidad múltiple y dinámica que refuerza el carac
 excerptEs: Consiste en una identidad múltiple y dinámica que refuerza el caracter multidisciplinar del estudio. El punto de partida es una superficie modular de proporciones 3x1, que através de un motor generativo basado en dos parámetros ( I/O) crea una superficie modular de 64  formas y 64 colores, que cambian en función del input y output.
 
 # Please, include the image file for the featured image for the project in the /images folder, then simply add the filename for the image you just included. Remember to submit a grayscale filtered picture!
-featured_image: io-ic-00t.jpg
+featured_image: io-ic-00t_3.jpg
 
 ---
 
 * ![Cupcake ipsum dolor sit amet]({{ site.url }}/images/io-ic-01.jpg) ![Cupcake ipsum dolor sit amet]({{ site.url }}/images/io-ic-02.gif)
 * ![Cupcake ipsum dolor sit amet]({{ site.url }}/images/io-ic-03.jpg)
-* ![Cupcake ipsum dolor sit amet]({{ site.url }}/images/io-ic-04.jpg)
+* ![Cupcake ipsum dolor sit amet]({{ site.url }}/images/io-ic-07.jpg)
 * ![Cupcake ipsum dolor sit amet]({{ site.url }}/images/io-ic-05.jpg)
+* ![Cupcake ipsum dolor sit amet]({{ site.url }}/images/io-ic-04.jpg)
 * ![Cupcake ipsum dolor sit amet]({{ site.url }}/images/io-ic-06.jpg)
