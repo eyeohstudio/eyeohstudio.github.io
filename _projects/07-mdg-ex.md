@@ -19,7 +19,14 @@ excerptEs: Publicación diseñada para la exposición “Sota la Paraula”. Mus
 featured_image: mdg-ex-00t.jpg
 
 ---
+* ![Cupcake ipsum dolor sit amet]({{ site.url }}/images/mdg-ca-01.jpg)
+* ![Cupcake ipsum dolor sit amet]({{ site.url }}/images/mdg-ca-02.jpg)
+* ![Cupcake ipsum dolor sit amet]({{ site.url }}/images/mdg-ca-03.jpg)
+* ![Cupcake ipsum dolor sit amet]({{ site.url }}/images/mdg-ca-04.jpg)
+* ![Cupcake ipsum dolor sit amet]({{ site.url }}/images/mdg-ca-05.jpg)
 * ![Cupcake ipsum dolor sit amet]({{ site.url }}/images/mdg-ex-01.jpg)
 * ![Cupcake ipsum dolor sit amet]({{ site.url }}/images/mdg-ex-02.jpg)
 * ![Cupcake ipsum dolor sit amet]({{ site.url }}/images/mdg-ex-03.jpg)
 * ![Cupcake ipsum dolor sit amet]({{ site.url }}/images/mdg-ex-04.jpg)
+* ![Cupcake ipsum dolor sit amet]({{ site.url }}/images/mdg-ex-05.jpg)
+* ![Cupcake ipsum dolor sit amet]({{ site.url }}/images/mdg-ex-06.jpg)
