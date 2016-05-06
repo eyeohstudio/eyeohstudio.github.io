@@ -411,7 +411,7 @@ jQuery(document).ready(function ($) {
 
   function doneResizing(){
 
-    projectControl();
+    //projectControl();
     projectStuff();
     setWinterHeight();
     sixHundredFortyListerner();
@@ -450,15 +450,15 @@ jQuery(document).ready(function ($) {
   ////////////////////////////////////////////////////////////////
   ////////////////////////////////////////////////////////////////
 
-  $('.project-thumbnail a').on('click', function() {
-
-    setTimeout(function() {
-
-      projectControl();
-      projectControlButtons();
-
-    }, 300);
-  });
+//  $('.project-thumbnail a').on('click', function() {
+//
+//    setTimeout(function() {
+//
+//      projectControl();
+//      projectControlButtons();
+//
+//    }, 300);
+//  });
 
   ////////////////////////////////////////////////////////////////
   ////////////////////////////////////////////////////////////////
@@ -483,12 +483,12 @@ jQuery(document).ready(function ($) {
   ////////////////////////////////////////////////////////////////
   ////////////////////////////////////////////////////////////////
 
-  $('.project-control a[role="button"]').on('click', function() {
-
-      projectControl();
-      projectControlButtons();
-
-  });
+//  $('.project-control a[role="button"]').on('click', function() {
+//
+//      projectControl();
+//      projectControlButtons();
+//
+//  });
 
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////

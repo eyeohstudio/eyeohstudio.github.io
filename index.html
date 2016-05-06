@@ -100,7 +100,7 @@ layout: default
                 <p lang="en">{{ project.excerptEn }}</p>
                 <p lang="es">{{ project.excerptEs }}</p>
               </div>
-              <div class="project-control">
+              <div class="project-control hide">
                 <div class="wrapper">
                   {% if project.previous.titleCa %}
                     <a class="left-project-control" rel="previous" role="button" data-project-name="{{ project.previous.url | remove: 'projects' | remove: '/' | remove: '.html' }}">
