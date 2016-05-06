@@ -1691,13 +1691,9 @@ div.summer .project-content:nth-of-type(1) ul li:nth-of-type(1) {
     position: absolute;
   }
   div.summer .project-content .project-control .wrapper {
-    position: relative;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
     height: auto;
     margin: 0 auto;
+    position: relative;
   }
   div.summer .project-content .project-control .wrapper:before,
   div.summer .project-content .project-control .wrapper:after {
@@ -1726,14 +1722,12 @@ div.summer .project-content:nth-of-type(1) ul li:nth-of-type(1) {
   }
   div.summer .project-content .project-control .wrapper a.left-project-control {
     float: left;
-    margin-left: -38.5px;
   }
   div.summer .project-content .project-control .wrapper a.left-project-control:after {
     content: " [↑]";
   }
   div.summer .project-content .project-control .wrapper a.right-project-control {
     float: right;
-    margin-right: -38.5px;
   }
   div.summer .project-content .project-control .wrapper a.right-project-control:after {
     content: " [↓]";

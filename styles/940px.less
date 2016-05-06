@@ -85,9 +85,10 @@
 
         .wrapper {
           .clearfix;
-          .vertical-align;
+          //.vertical-align;
           height: auto;
           margin: 0 auto;
+          position: relative;
 
           a {
             .BrixSans-ExtraLight;
@@ -113,7 +114,6 @@
 
             &.left-project-control {
               float: left;
-              margin-left: (-60px - 17) / 2;
 
               &:after {
                 content: " [↑]";
@@ -122,7 +122,6 @@
 
             &.right-project-control {
               float: right;
-              margin-right: (-60px - 17) / 2;
 
               &:after {
                 content: " [↓]";

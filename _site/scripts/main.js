@@ -15,24 +15,25 @@ jQuery(document).ready(function ($) {
 
   function projectControl() {
 
-    //var windowHeight = $(window).innerHeight();
+    var windowHeight = $(window).innerHeight();
     var projectExcerptHeight = $('.project-content[aria-expanded="true"] > .project-excerpt').outerHeight(true);
-    //var projectContentVisibleAreaHeight = windowHeight - projectExcerptHeight
+    var projectContentVisibleAreaHeight = windowHeight - projectExcerptHeight
     //var projectFirstFigureHeight = $('.project-content[aria-expanded="true"] > ul > li:nth-of-type(1)').height();
     var projectFirstFigureWidth = $('.project-content[aria-expanded="true"] > ul > li:nth-of-type(1)').width();
 
     ////////////////////////////////////////////////////////////////
     ////////////////////////////////////////////////////////////////
 
-    $('.project-content[aria-expanded="true"] > .project-control > .wrapper').css({
-      'width': projectFirstFigureWidth,
+    $('.project-content[aria-expanded="true"] > .project-control').css({
+      'height': projectContentVisibleAreaHeight,
+      'top': projectExcerptHeight
     });
 
     ////////////////////////////////////////////////////////////////
     ////////////////////////////////////////////////////////////////
 
-    $('.project-content[aria-expanded="true"] > .project-control').css({
-      'top': projectExcerptHeight
+    $('.project-content[aria-expanded="true"] > .project-control > .wrapper').css({
+      'width': projectFirstFigureWidth,
     });
   };
 
