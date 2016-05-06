@@ -14,6 +14,8 @@
   "dependencies": {
     "bootstrap": "^3.3.6",
     "Snap.svg": "snap.svg#^0.4.1",
-    "velocity": "julianshapiro/velocity#^1.2.3"
+    "velocity": "julianshapiro/velocity#^1.2.3",
+    "responsive-images.js": "kvendrik/responsive-images.js#^1.0.0",
+    "mapkey": "pixelmatrix/mapkey"
   }
 }

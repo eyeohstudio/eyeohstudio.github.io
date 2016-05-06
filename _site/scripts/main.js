@@ -154,6 +154,18 @@ jQuery(document).ready(function ($) {
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
 
+  function mapKeyboardChars() {
+    $('.project-excerpt button').mapKey('esc', {trigger: 'click'});
+    $('.left-project-control').mapKey('left', {trigger: 'click'});
+    $('.right-project-control').mapKey('right', {trigger: 'click'});
+    $('.scroll-to-top').mapKey('up', {trigger: 'click'});
+  };
+
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+
   function projectStuff() {
     var projectThumbnailHeight = $('.summer .container-fluid .row:nth-of-type(1)').outerHeight();
     var springHeight = $('body > .container-fluid > .row:nth-of-type(2)').outerHeight();
@@ -337,6 +349,7 @@ jQuery(document).ready(function ($) {
   scrollToTop();
   hamburgerAnimation();
   langToggle();
+  mapKeyboardChars();
   randomCity();
   randomWhat();
   setWinterHeight();
