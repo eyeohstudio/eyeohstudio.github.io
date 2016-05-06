@@ -18,7 +18,7 @@ excerptEn: Identity for [Marring](http://marring.es/), company focused on planni
 
 excerptEs: Identidad para [Marring](http://marring.es/), empresa de eventos enfocados a declaraciones de amor. Marca de carácter innovador y sorprendente.
 
-featured_image: marring-ic-00t.jpg
+featured_image: marring-ic-00-1t.jpg
 
 ---
 

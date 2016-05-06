@@ -16,7 +16,7 @@ excerptEn: Development of a custom extension for course management, schedule pla
 
 excerptEs: Desarrollo de la extensión personalizada para la gestión de los cursos, planificación del horario y proceso de matriculación que propone una experiencia actualizada para los alumnos a través de una interfaz mejorada al mismo tiempo que facilita las tareas administrativas del staff.
 
-featured_image: baa-w-001t.jpg
+featured_image: baa-w-00t.jpg
 
 ---
 

@@ -18,7 +18,7 @@ excerptEn: Image design for the charity event "Salta pels primats" organized by 
 
 excerptEs: Imagen para el acto solidario "Salta pels primats" organizado por la [Fundació Mona](http://fundacionmona.org/). Refleja el carácter festivo y familiar del acto donde la actividad destacada es lanzarse en paracaídas con el fin de recoger fondos por la causa.
 
-featured_image: fmona-p-001t.jpg
+featured_image: fmona-p-00t.jpg
 
 ---
 
