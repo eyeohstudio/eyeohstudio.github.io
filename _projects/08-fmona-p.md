@@ -16,7 +16,7 @@ excerptEn: Imágen para el acto solidario “Salta pels primats”organizado por
 
 excerptEs: Imágen para el acto solidario “Salta pels primats”organizado por la Fundació Mona. Refleja el carácter festivo y familiar del acto donde una de las acciones era  lanzarse en paracaídas con el fin de recoger fondos para la causa.
 
-featured_image: fmona-p-001t.jpg
+featured_image: fmona-p-00t.jpg
 
 ---
 

@@ -16,7 +16,7 @@ excerptEn: Identidad para Marring, empresa de eventos enfocados a declaraciones 
 
 excerptEs: Identidad para Marring, empresa de eventos enfocados a declaraciones de amor. La finalidad, resaltar el carcater innovador y sorprendete de la marca.
 
-featured_image: marring-ic-00t.jpg
+featured_image: marring-ic-00-1t.jpg
 
 ---
 

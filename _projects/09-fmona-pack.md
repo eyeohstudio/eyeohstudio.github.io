@@ -16,7 +16,7 @@ excerptEn: Imagen para Primats, el primer vino 100% solidario de la Fundación M
 
 excerptEs: Imagen para Primats, el primer vino 100% solidario de la Fundación Mona.  El emboltorio, inspirado en las hojas de las palmeras, permite en el interior reforzar el carácter solidario del producto y la fundación.
 
-featured_image: fmona-pack-00t_2.jpg
+featured_image: fmona-pack-00t.jpg
 
 ---
 * ![Cupcake ipsum dolor sit amet]({{ site.url }}/images/fmona-pack-01.jpg)

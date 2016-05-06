@@ -16,7 +16,7 @@ excerptEn: Desarrollo del nuevo apartado de matriculación y planificación del 
 
 excerptEs: Desarrollo del nuevo apartado de matriculación y planificación del curso online.
 
-featured_image: baa-w-001t.jpg
+featured_image: baa-w-00t.jpg
 
 ---
 
