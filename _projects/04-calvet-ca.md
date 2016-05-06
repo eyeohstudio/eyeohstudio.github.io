@@ -4,26 +4,26 @@ boojum: data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJvYmplY3QtMDYyMS
 
 hue: 223, 168, 123
 
-titleCa: Calvet&#xa;Catàleg d'art
+titleCa: Calvet.&#xa;Catàleg d'art
 
-titleEn: Calvet&#xa;Catálogo de arte
+titleEn: Calvet.&#xa;Art Catalogue
 
-titleEs: Calvet&#xa;Catálogo de arte
+titleEs: Calvet.&#xa;Catálogo de arte
 
-excerptCa: Catálogo editado en motivo de la exposición “Francesc Calvet.Fins Aquí”. Museu de Menorca. Retrospectiva del pintor  Francesc Calvet, que reune su obra más representativa pasando por las diferentes etapas artísticas del pintor.
+excerptCa: Catàleg editat en motiu de l'exposició “Francesc Calvet. Fins Aquí”. Museu de Menorca. Retrospectiva del Francesc Calvet, que reuneix la seva obra més representativa pasant per les diferents etapes artístiques del pintor.
 
-excerptEn: Catálogo editado en motivo de la exposición “Francesc Calvet.Fins Aquí”. Museu de Menorca. Retrospectiva del pintor  Francesc Calvet, que reune su obra más representativa pasando por las diferentes etapas artísticas del pintor.
+excerptEn: Catalogue edited for the exhibition “Francesc Calvet. Fins Aquí”. Museu de Menorca. Retrospective of Francesc Calvet, compiling his most repesentative work through the diferent artistic stages of the painter.
 
-excerptEs: Catálogo editado en motivo de la exposición “Francesc Calvet.Fins Aquí”. Museu de Menorca. Retrospectiva del pintor  Francesc Calvet, que reune su obra más representativa pasando por las diferentes etapas artísticas del pintor.
+excerptEs: Catálogo editado en motivo de la exposición “Francesc Calvet. Fins Aquí”. Museu de Menorca. Retrospectiva del pintor  Francesc Calvet, que reune su obra más representativa pasando por las diferentes etapas artísticas del pintor.
 
 featured_image: calvet-ca-00t.jpg
 
 ---
 
-* ![Cupcake ipsum dolor sit amet]({{ site.url }}/images/calvet-ca-01.jpg)
-* ![Cupcake ipsum dolor sit amet]({{ site.url }}/images/calvet-ca-02.jpg)
-* ![Cupcake ipsum dolor sit amet]({{ site.url }}/images/calvet-ca-03.jpg)
-* ![Cupcake ipsum dolor sit amet]({{ site.url }}/images/calvet-ca-04.jpg)
-* ![Cupcake ipsum dolor sit amet]({{ site.url }}/images/calvet-ca-05.jpg)
-* ![Cupcake ipsum dolor sit amet]({{ site.url }}/images/calvet-ca-06.jpg)
-* ![Cupcake ipsum dolor sit amet]({{ site.url }}/images/calvet-ca-07.jpg)
+* ![Francesc Calvet Cover]({{ site.url }}/images/calvet-ca-01.jpg)
+* ![Francesc Calvet Double Page]({{ site.url }}/images/calvet-ca-02.jpg)
+* ![Francesc Calvet Double Page]({{ site.url }}/images/calvet-ca-03.jpg)
+* ![Francesc Calvet Double Page]({{ site.url }}/images/calvet-ca-04.jpg)
+* ![Francesc Calvet Double Page]({{ site.url }}/images/calvet-ca-05.jpg)
+* ![Francesc Calvet Double Page]({{ site.url }}/images/calvet-ca-06.jpg)
+* ![Francesc Calvet Back Cover]({{ site.url }}/images/calvet-ca-07.jpg)

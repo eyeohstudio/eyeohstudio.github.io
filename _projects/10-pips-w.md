@@ -10,16 +10,16 @@ titleEn: Pips Abrera&#xa;Website
 
 titleEs: Pips Abrera&#xa;Website
 
-excerptCa: Promoción del parque industrial de proveedores Seat, Pips Abrera , a partir del diseño y desarrollo web.
+excerptCa: Promoció del parc industrial de proveidors Seat, Pips Abrera, a partir del disseny i desenvolupament web.
 
-excerptEn: Promoción del parque industrial de proveedores Seat, Pips Abrera , a partir del diseño y desarrollo web.
+excerptEn: Promotion of SEAT Suppliers Industrial Park, from the website design and development.
 
-excerptEs: Promoción del parque industrial de proveedores Seat, Pips Abrera , a partir del diseño y desarrollo web.
+excerptEs: Promoción del parque industrial de proveedores Seat, Pips Abrera, a partir del diseño y desarrollo web.
 
 featured_image: pips-w-00t.jpg
 
 ---
 
-* ![Cupcake ipsum dolor sit amet]({{ site.url }}/images/pips-w-01.jpg)
-* ![Cupcake ipsum dolor sit amet]({{ site.url }}/images/pips-w-02.jpg)
+* ![Pips Abrera Responsive Website Design]({{ site.url }}/images/pips-w-01.jpg)
+* ![Pips Abrera Website]({{ site.url }}/images/pips-w-02.jpg)
 * <figure><iframe src="//player.vimeo.com/video/158929706?badge=0&byline=0&color=fff&portrait=0&title=0" frameborder="0" width="1280" height="720" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></figure>

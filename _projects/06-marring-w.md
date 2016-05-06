@@ -4,23 +4,23 @@ boojum: data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJvYmplY3QtMDQyMS
 
 hue: 244, 195, 203
 
-titleCa: Marring&#xa;Identitat Corporativa
+titleCa: Marring.&#xa;Identitat Corporativa
 
-titleEn: Marring&#xa;Corporative Identity
+titleEn: Marring.&#xa;Corporative Identity
 
-titleEs: Marring&#xa;Identidad Corporativa
+titleEs: Marring.&#xa;Identidad Corporativa
 
-excerptCa: Identidad para Marring, empresa de eventos enfocados a declaraciones de amor. La finalidad, resaltar el carcater innovador y sorprendete de la marca.
+excerptCa: Identitat per a Marring, empresa d'events enfocats a declaracions d'amor. Marca de caràcter innovador i sorprenent.
 
-excerptEn: Identidad para Marring, empresa de eventos enfocados a declaraciones de amor. La finalidad, resaltar el carcater innovador y sorprendete de la marca.
+excerptEn: Identity for Marring, company dedicated on planning proposals and romantic dates. Brand with an innovative and surprising character.
 
-excerptEs: Identidad para Marring, empresa de eventos enfocados a declaraciones de amor. La finalidad, resaltar el carcater innovador y sorprendete de la marca.
+excerptEs: Identidad para Marring, empresa de eventos enfocados a declaraciones de amor. Marca de carácter innovador y sorprendente.
 
 featured_image: marring-ic-00t.jpg
 
 ---
 
-* ![Cupcake ipsum dolor sit amet]({{ site.url }}/images/marring-ic-01.jpg)
-* ![Cupcake ipsum dolor sit amet]({{ site.url }}/images/marring-ic-02.jpg)
-* ![Cupcake ipsum dolor sit amet]({{ site.url }}/images/marring-ic-04.jpg)
-* ![Cupcake ipsum dolor sit amet]({{ site.url }}/images/marring-ic-03.jpg)
+* ![Marring Logo]({{ site.url }}/images/marring-ic-01.jpg)
+* ![Marring Business cards]({{ site.url }}/images/marring-ic-02.jpg)
+* ![Marring Promotional Flyer]({{ site.url }}/images/marring-ic-04.jpg)
+* ![Marring Website]({{ site.url }}/images/marring-ic-03.jpg)
