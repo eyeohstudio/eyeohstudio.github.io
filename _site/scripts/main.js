@@ -13,6 +13,65 @@ jQuery(document).ready(function ($) {
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
 
+  function projectControl() {
+
+    var windowHeight = $(window).innerHeight();
+    var projectExcerptHeight = $('.project-content[aria-expanded="true"] > .project-excerpt').outerHeight(true);
+    var projectContentVisibleAreaHeight = windowHeight - projectExcerptHeight
+    //var projectFirstFigureHeight = $('.project-content[aria-expanded="true"] > ul > li:nth-of-type(1)').height();
+    var projectFirstFigureWidth = $('.project-content[aria-expanded="true"] > ul > li:nth-of-type(1)').width();
+
+    ////////////////////////////////////////////////////////////////
+    ////////////////////////////////////////////////////////////////
+
+    $('.project-content[aria-expanded="true"] > .project-control').css({
+      'height': projectContentVisibleAreaHeight,
+      'top': projectExcerptHeight
+    });
+
+    ////////////////////////////////////////////////////////////////
+    ////////////////////////////////////////////////////////////////
+
+    $('.project-content[aria-expanded="true"] > .project-control > .wrapper').css({
+      'width': projectFirstFigureWidth,
+    });
+  };
+
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+
+  function projectControlButtons() {
+
+    var currentProjectName = $('.project-content[aria-expanded="true"]').attr('id');
+    var previousProjectName = $('.project-content[aria-expanded="true"] .project-control a:nth-of-type(1)').attr('data-project-name');
+    var nextProjectName = $('.project-content[aria-expanded="true"] .project-control a:nth-of-type(2)').attr('data-project-name');
+
+    $('.project-control a:nth-of-type(1)').click(function() {
+      var currentProjectName = $('.project-content[aria-expanded="true"]').attr('id');
+      var previousProjectName = $('.project-content[aria-expanded="true"] .project-control a:nth-of-type(1)').attr('data-project-name');
+      var nextProjectName = $('.project-content[aria-expanded="true"] .project-control a:nth-of-type(2)').attr('data-project-name');
+
+      $('#' + currentProjectName).removeClass('show visble').addClass('hide invisible').attr('aria-expanded', 'false');
+      $('#' + previousProjectName).removeClass('hide invisble').addClass('show visible').attr('aria-expanded', 'true');
+    });
+
+    $('.project-control a:nth-of-type(2)').click(function() {
+      var currentProjectName = $('.project-content[aria-expanded="true"]').attr('id');
+      var previousProjectName = $('.project-content[aria-expanded="true"] .project-control a:nth-of-type(1)').attr('data-project-name');
+      var nextProjectName = $('.project-content[aria-expanded="true"] .project-control a:nth-of-type(2)').attr('data-project-name');
+
+      $('#' + currentProjectName).removeClass('show visble').addClass('hide invisible').attr('aria-expanded', 'false');
+      $('#' + nextProjectName).removeClass('hide invisble').addClass('show visible').attr('aria-expanded', 'true');
+    });
+  };
+
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+
   function anchorLinkScrollAnimation() {
     $('.navbar-collapse ul li a[href*="#"]:not([href="#"])').click(function() {
       if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
@@ -34,7 +93,7 @@ jQuery(document).ready(function ($) {
 ////////////////////////////////////////////////////////////////
 
   function scrollToTop() {
-    $('.project-content > a[type="button"]').on('click', function(event) {
+    $('.project-content > a.scroll-to-top').on('click', function(event) {
       event.preventDefault();
       $('html, body').stop().animate({scrollTop: 0}, 300);
     });
@@ -96,19 +155,32 @@ jQuery(document).ready(function ($) {
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
 
+  function mapKeyboardChars() {
+    $('.project-excerpt button').mapKey('esc', {trigger: 'click'});
+    $('.left-project-control').mapKey('left', {trigger: 'click'});
+    $('.right-project-control').mapKey('right', {trigger: 'click'});
+    $('.scroll-to-top').mapKey('up', {trigger: 'click'});
+  };
+
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+
   function projectStuff() {
     var projectThumbnailHeight = $('.summer .container-fluid .row:nth-of-type(1)').outerHeight();
     var springHeight = $('body > .container-fluid > .row:nth-of-type(2)').outerHeight();
-    $('.project-content').css('min-height', projectThumbnailHeight + springHeight);
 
     ////////////////////////////////////////////////////////////////
     ////////////////////////////////////////////////////////////////
 
     if ($('.summer .container-fluid .row:nth-of-type(2)').hasClass('invisible')){
       $('.summer .container-fluid .row:nth-of-type(2)').css('margin-top', projectThumbnailHeight);
+      $('.summer .container-fluid .row:nth-of-type(1)').removeClass('invisible').addClass('visible');
     }
     if ($('.summer .container-fluid .row:nth-of-type(2)').hasClass('visible')){
       $('.summer .container-fluid .row:nth-of-type(2)').css('margin-top', '0' - springHeight);
+      $('.summer .container-fluid .row:nth-of-type(1)').removeClass('visible').addClass('invisible');
     }
 
     ////////////////////////////////////////////////////////////////
@@ -121,7 +193,8 @@ jQuery(document).ready(function ($) {
 
       $('.summer .container-fluid .row:nth-of-type(2)').removeClass('invisible').addClass('visible').queue(function(next) {
         $(this).stop().animate({'margin-top': '0' - springHeight}, 400);
-        $('#' + projectName).removeClass('hide imvisble').addClass('show visible').attr('aria-expanded', 'true');
+        $('#' + projectName).removeClass('hide invisble').addClass('show visible').attr('aria-expanded', 'true');
+        $('.summer .container-fluid .row:nth-of-type(1)').removeClass('visible').addClass('invisible');
         next();
       });
       return false;
@@ -130,6 +203,7 @@ jQuery(document).ready(function ($) {
     $('.project-content .project-excerpt button').click(function(event) {
       event.preventDefault();
       var projectName = $('.project-content[aria-expanded="true"]').attr('id');
+      $('.summer .container-fluid .row:nth-of-type(1)').removeClass('invisible').addClass('visible');
       $('.summer .container-fluid .row:nth-of-type(2)').animate({'margin-top': projectThumbnailHeight}, 400).queue(function(next) {
         $('#' + projectName).removeClass('show').addClass('hide').attr('aria-expanded', 'false');
         $(this).stop().removeClass('visible').addClass('invisible');
@@ -265,9 +339,6 @@ jQuery(document).ready(function ($) {
       });
     };
 
-    ////////////////////////////////////////////////////////////////
-    ////////////////////////////////////////////////////////////////
-
   };
 
 ////////////////////////////////////////////////////////////////
@@ -279,6 +350,7 @@ jQuery(document).ready(function ($) {
   scrollToTop();
   hamburgerAnimation();
   langToggle();
+  mapKeyboardChars();
   randomCity();
   randomWhat();
   setWinterHeight();
@@ -293,7 +365,7 @@ jQuery(document).ready(function ($) {
 
   $(window).load(function() {
     projectStuff();
-    $('body').removeClass('fadeOut').addClass('fadeIn');
+    $('body').removeClass('invisible').addClass('visible');
   });
 
 ////////////////////////////////////////////////////////////////
@@ -302,9 +374,6 @@ jQuery(document).ready(function ($) {
 ////////////////////////////////////////////////////////////////
 
   $(window).resize(function() {
-
-    ////////////////////////////////////////////////////////////////
-    ////////////////////////////////////////////////////////////////
 
     var projectThumbnailHeight = $('.summer .container-fluid .row:nth-of-type(1)').outerHeight();
     var springHeight = $('body > .container-fluid > .row:nth-of-type(2)').outerHeight();
@@ -314,19 +383,24 @@ jQuery(document).ready(function ($) {
 
     if ($('.summer .container-fluid .row:nth-of-type(2)').hasClass('invisible')){
       $('.summer .container-fluid .row:nth-of-type(2)').css('margin-top', projectThumbnailHeight);
+      $('.summer .container-fluid .row:nth-of-type(1)').removeClass('invisible').addClass('visible');
     }
     if ($('.summer .container-fluid .row:nth-of-type(2)').hasClass('visible')){
       $('.summer .container-fluid .row:nth-of-type(2)').css('margin-top', '0' - springHeight);
+      $('.summer .container-fluid .row:nth-of-type(1)').removeClass('visible').addClass('invisible');
     }
 
-    ////////////////////////////////////////////////////////////////
-    ////////////////////////////////////////////////////////////////
-
   });
+
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
 
   // Forever in debt with Alvaro Trigo
   // http://alvarotrigo.com/blog/firing-resize-event-only-once-when-resizing-is-finished/
   var resizeId;
+
   $(window).resize(function() {
     clearTimeout(resizeId);
     resizeId = setTimeout(doneResizing, 300);
@@ -336,10 +410,32 @@ jQuery(document).ready(function ($) {
   ////////////////////////////////////////////////////////////////
 
   function doneResizing(){
+
+    //projectControl();
     projectStuff();
     setWinterHeight();
     sixHundredFortyListerner();
     vimeoWhatever();
+
+    ////////////////////////////////////////////////////////////////
+
+    $('.project-content .project-excerpt button').click(function() {
+
+      var projectThumbnailHeight = $('.summer .container-fluid .row:nth-of-type(1)').outerHeight();
+      var springHeight = $('body > .container-fluid > .row:nth-of-type(2)').outerHeight();
+
+      ////////////////////////////////////////////////////////////////
+
+      event.preventDefault();
+      var projectName = $('.project-content[aria-expanded="true"]').attr('id');
+      $('.summer .container-fluid .row:nth-of-type(1)').removeClass('invisible').addClass('visible');
+      $('.summer .container-fluid .row:nth-of-type(2)').animate({'margin-top': projectThumbnailHeight}, 400).queue(function(next) {
+        $('#' + projectName).removeClass('show').addClass('hide').attr('aria-expanded', 'false');
+        $(this).stop().removeClass('visible').addClass('invisible');
+        next();
+      });
+      return false;
+    });
   };
 
 ////////////////////////////////////////////////////////////////
@@ -347,9 +443,52 @@ jQuery(document).ready(function ($) {
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
 
-  $('.language-change a').click(function() {
+  $('.language-change a').on('click', function() {
     projectStuff();
   });
+
+  ////////////////////////////////////////////////////////////////
+  ////////////////////////////////////////////////////////////////
+
+//  $('.project-thumbnail a').on('click', function() {
+//
+//    setTimeout(function() {
+//
+//      projectControl();
+//      projectControlButtons();
+//
+//    }, 300);
+//  });
+
+  ////////////////////////////////////////////////////////////////
+  ////////////////////////////////////////////////////////////////
+
+  $('.project-content .project-excerpt button').on('click', function() {
+
+    var projectThumbnailHeight = $('.summer .container-fluid .row:nth-of-type(1)').outerHeight();
+    var springHeight = $('body > .container-fluid > .row:nth-of-type(2)').outerHeight();
+
+    ////////////////////////////////////////////////////////////////
+
+    var projectName = $('.project-content[aria-expanded="true"]').attr('id');
+    $('.summer .container-fluid .row:nth-of-type(1)').removeClass('invisible').addClass('visible');
+    $('.summer .container-fluid .row:nth-of-type(2)').animate({'margin-top': projectThumbnailHeight}, 400).queue(function(next) {
+      $('#' + projectName).removeClass('show').addClass('hide').attr('aria-expanded', 'false');
+      $(this).stop().removeClass('visible').addClass('invisible');
+      next();
+    });
+    return false;
+  });
+
+  ////////////////////////////////////////////////////////////////
+  ////////////////////////////////////////////////////////////////
+
+//  $('.project-control a[role="button"]').on('click', function() {
+//
+//      projectControl();
+//      projectControlButtons();
+//
+//  });
 
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////

@@ -78,16 +78,69 @@
         }
       }
 
-      ul {
-        margin: 0;
-        padding: 0 50px;
+      .project-control {
+        .hide;
+        width: 100%;
+        position: absolute;
 
-        li {
-          margin-bottom: (35px / 1.5) / 1.5;
+        .wrapper {
+          .clearfix;
+          //.vertical-align;
+          height: auto;
+          margin: 0 auto;
+          position: relative;
+
+          a {
+            .BrixSans-ExtraLight;
+            border-bottom: none;
+            font-size: 12px;
+            text-align: right;
+            text-transform: uppercase;
+            white-space: nowrap;
+            writing-mode: tb-rl;
+
+            -webkit-transform: rotate(-180deg);
+               -moz-transform: rotate(-180deg);
+                -ms-transform: rotate(-180deg);
+                 -o-transform: rotate(-180deg);
+                    transform: rotate(-180deg);
+
+            &:after {
+            }
+
+            &:hover {
+              opacity: 1;
+            }
+
+            &.left-project-control {
+              float: left;
+
+              &:after {
+                content: " [↑]";
+              }
+            }
+
+            &.right-project-control {
+              float: right;
+
+              &:after {
+                content: " [↓]";
+              }
+            }
+          }
         }
       }
 
-      a {
+      ul {
+        margin: 0;
+        padding: 0 60px;
+
+        li {
+          margin-bottom: 35px / 1.5;
+        }
+      }
+
+      a.scroll-to-top {
         .BrixSans-ExtraLight;
         .show;
         .transition;
