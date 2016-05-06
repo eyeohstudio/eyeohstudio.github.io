@@ -10,15 +10,18 @@ titleEn: Primats&#xa;Packaging
 
 titleEs: Primats&#xa;Packaging
 
-excerptCa: Imatge per a Primats, el primer vi 100% solidari de la Fundació Mona. L'envoltori, inspirat gràficament en les fulles dels plataners i formalment, plantejat com a peça de suport descriptiu, apropa al consumidor la tasca de la fundació.
+# Añadir vínculo a la web de la Fundació Mona
 
-excerptEn: Image for Primats, the first wine 100% charitable of Mona's Foundation. The wrapping paper, graphically inspired on banana tree leafs and formally, developed as an descriptive supporter item, aproaches the consumer to the Foundation tasks.
+excerptCa: Imatge per a "Primats", el primer vi 100% solidari de la [Fundació Mona](http://fundacionmona.org/). L'envoltori, inspirat gràficament en les fulles dels plataners i formalment plantejat com a peça de suport descriptiu, apropa la tasca de la fundació al consumidor.
 
-excerptEs: Imagen para Primats, el primer vino 100% solidario de la Fundación Mona. El envoltorio, inspirado gráficamente en las hojas de los plataneros y formalmente, planteado como pieza de soporte descriptiva, acerca al consumidor a la labor de la fundación .
+excerptEn: Image for "Primats", the first 100% charitable wine by [Fundació Mona](http://fundacionmona.org/). The wrapping paper graphically inspired on abanana plant's leaf and developed formally as a descriptive support item brings the tasks of the foundation close to the consumer.
+
+excerptEs: Imagen para "Primats", el primer vino 100% solidario de la [Fundació Mona](http://fundacionmona.org/). El envoltorio, inspirado gráficamente en las hojas de los plataneros y formalmente planteado como pieza de soporte descriptiva, acerca la labor de la fundació al consumidor.
 
 featured_image: fmona-pack-00t_2.jpg
 
 ---
+
 * ![Primats Wine Bottle Wrapped]({{ site.url }}/images/fmona-pack-01.jpg)
 * ![Primats Wine Bottle Wrapped]({{ site.url }}/images/fmona-pack-02.jpg)
 * ![Primats Wine Bottle Wrapping]({{ site.url }}/images/fmona-pack-03.jpg)

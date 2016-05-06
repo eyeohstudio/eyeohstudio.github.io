@@ -10,11 +10,11 @@ titleEn: Calvet.&#xa;Art Catalogue
 
 titleEs: Calvet.&#xa;Catálogo de arte
 
-excerptCa: Catàleg editat en motiu de l'exposició “Francesc Calvet. Fins Aquí”. Museu de Menorca. Retrospectiva del Francesc Calvet, que reuneix la seva obra més representativa pasant per les diferents etapes artístiques del pintor.
+excerptCa: Catàleg editat amb motiu de l'exposició "Francesc Calvet. Fins Aquí", Museu de Menorca. Retrospectiva del Francesc Calvet que reuneix la seva obra més representativa passant per les diferents etapes artístiques del pintor.
 
-excerptEn: Catalogue edited for the exhibition “Francesc Calvet. Fins Aquí”. Museu de Menorca. Retrospective of Francesc Calvet, compiling his most repesentative work through the diferent artistic stages of the painter.
+excerptEn: Catalogue edited for the exhibition "Francesc Calvet. Fins Aquí", Museu de Menorca. Retrospective of Francesc Calvet, compiling his most repesentative work through the different artistic stages of the painter.
 
-excerptEs: Catálogo editado en motivo de la exposición “Francesc Calvet. Fins Aquí”. Museu de Menorca. Retrospectiva del pintor  Francesc Calvet, que reune su obra más representativa pasando por las diferentes etapas artísticas del pintor.
+excerptEs: Catálogo editado con motivo de la exposición "Francesc Calvet, Fins Aquí". Museu de Menorca. Retrospectiva Francesc Calvet, que reúne su obra más representativa pasando por las diferentes etapas artísticas del pintor.
 
 featured_image: calvet-ca-00t.jpg
 

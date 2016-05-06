@@ -4,17 +4,17 @@ boojum: data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJvYmplY3QtMDUxMS
 
 hue: 212, 228, 88
 
-titleCa: I/O&#xa;Posters
+titleCa: I/O&#xa;Pòsters
 
 titleEn: I/O&#xa;Posters
 
 titleEs: I/O&#xa;Pósters
 
-excerptCa: Colecció de 3 posters que juguen amb la imatge gràfica de I/O. Cada pòster reflecteix de forma modular conceptes com el volum, l'estructura i el color.
+excerptCa: Col·lecció de 3 pòsters que juguen amb la imatge gràfica d'I/O. Cada pòster reflecteix de forma modular conceptes com el volum, l'estructura i el color.
 
-excerptEn: 3 posters set playing with the I/O graphic design identity. Each poster represents modularly concepts like volume, structure and color.
+excerptEn: 3 posters set experimenting with I/O graphic design identity. Each poster represents modularly concepts like volume, structure and color.
 
-excerptEs: Colección de 3 posters que juegan con la imagen gráfica de I/O. Cada póster refleja de forma modular conceptos como el volumen, la estructura  y el color.
+excerptEs: Colección de 3 pósters que juegan con la imagen gráfica de I/O. Cada póster refleja de forma modular conceptos como el volumen, la estructura y el color.
 
 featured_image: io-p-00t.jpg
 

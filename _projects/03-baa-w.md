@@ -4,17 +4,17 @@ boojum: data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJvYmplY3QtMDQyMS
 
 hue: 255, 183, 174
 
-titleCa: Barcelona&#xa; Academy of Art
+titleCa: Barcelona Academy of Art&#xa;Sistema de gestió de cursos
 
-titleEn: Barcelona&#xa; Academy of Art
+titleEn: Barcelona Academy of Art&#xa;Course Management System
 
-titleEs: Barcelona&#xa; Academy of Art
+titleEs: Barcelona Academy of Art&#xa;Sistema de gestión de cursos
 
-excerptCa: Desenvolupament del nou apartat de matriculació i planificació del curs online.
+excerptCa: Desenvolupament de l'extensió personalitzada per a la gestió dels cursos, planificació de l'horari i procés de matriculació que proposa una experiència actualitzada pels alumnes a través d'una interfície millorada alhora que facilita les tasques administratives del staff.
 
-excerptEn: Development of the new section for the registration form and schedule of courses.
+excerptEn: Development of a custom extension for course management, schedule planification and matriculation process featuring and updated experience for the students through an improved interface while easing regular management tasks performed by the staff.
 
-excerptEs: Desarrollo del nuevo apartado de matriculación y planificación del curso online.
+excerptEs: Desarrollo de la extensión personalizada para la gestión de los cursos, planificación del horario y proceso de matriculación que propone una experiencia actualizada para los alumnos a través de una interfaz mejorada al mismo tiempo que facilita las tareas administrativas del staff.
 
 featured_image: baa-w-001t.jpg
 

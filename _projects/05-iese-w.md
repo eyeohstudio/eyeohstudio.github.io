@@ -4,17 +4,17 @@ boojum: data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJvYmplY3QtMDIyMS
 
 hue: 202, 190, 150
 
-titleCa: IESE&#xa;Business School
+titleCa: IESE Business School&#xa;Online Cases App
 
-titleEn: IESE&#xa;Business School
+titleEn: IESE Business School&#xa;Online Cases App
 
-titleEs: IESE&#xa;Business School
+titleEs: IESE Business School&#xa;Online Cases App
 
-excerptCa: Business Cases & Teaching Materials. Disseny i desenvolupament de plataforma WordPress per a l'edició, gestió, publicació i distribució de casos didàctics online.
+excerptCa: Web App de gestió de publicacions per a la Unitat de Materials Didàctics d'IESE construïda a partir de WordPress així com d'altres tecnologies de codi obert.
 
-excerptEn: Business Cases & Teaching Materials. Design and development of a WordPress platform for the edition, management, publication and distribution of didactic case studies online.
+excerptEn: Publications Management System Web App for IESE Teaching Materials Unit built upon WordPress and many other open source technologies.
 
-excerptEs: Business Cases & Teaching Materials. Diseño y desarrolllo de plataforma WordPress para la edición, gestión, publicación y distribución de casos didácticos online.
+excerptEs: Web App de gestión de publicaciones para la Unidad de Materials Didácticos de IESE construida a partir de WordPress y otras tecnologías de código abierto.
 
 featured_image: iese-w-00t.jpg
 

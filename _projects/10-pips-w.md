@@ -10,11 +10,14 @@ titleEn: Pips Abrera&#xa;Website
 
 titleEs: Pips Abrera&#xa;Website
 
-excerptCa: Promoció del parc industrial de proveidors Seat, Pips Abrera, a partir del disseny i desenvolupament web.
+# La descripción es un poco ambigua y se menciona la realización del vídeo promocional
+# Añadir vínculo a la web de PIPS Abrera
 
-excerptEn: Promotion of SEAT Suppliers Industrial Park, from the website design and development.
+excerptCa: Promoció del [Parc Industrial de Proveïdors de Seat](pipsabrera.com) (PIPS Abrera), a partir del disseny i desenvolupament web.
 
-excerptEs: Promoción del parque industrial de proveedores Seat, Pips Abrera, a partir del diseño y desarrollo web.
+excerptEn: Promotion of [SEAT Suppliers Industrial Park](pipsabrera.com) (aka PIPS Abrera), as of website design and development.
+
+excerptEs: Promoción del [Parque Industrial de Proveedores de Seat](pipsabrera.com) (PIPS Abrera), a partir del diseño y desarrollo web.
 
 featured_image: pips-w-00t.jpg
 
