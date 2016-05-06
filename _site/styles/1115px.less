@@ -1,0 +1,423 @@
+// compress: false, main: main.less
+
+@import url('base.less');
+
+@media (min-width: 1115px) {
+
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////// THIS IS THE BEGINNING
+
+  div.summer {
+
+    .project-thumbnail {
+
+      a {
+
+        span {
+          font-size: 20px !important;
+        }
+      }
+    }
+
+    .project-content {
+      background-color: inherit !important;
+      width: 100%;
+
+      .project-excerpt {
+        background-color: @white !important;
+        border-top: 1px solid @black;
+        margin: 0 auto;
+        margin-top: 0;
+        padding: 45px 0;
+        width: 800px;
+
+        button {
+          .invisible;
+          .transition;
+          float: left;
+          opacity: 1;
+
+          &:before {
+            .BrixSans-ExtraLight;
+            .visible;
+            content:  "Esc [Back]";
+            font-size: 12px;
+            height: auto; width: 25%;
+            line-height: 4.5em;
+            white-space: nowrap;
+          }
+
+          &:hover {
+            opacity: .8;
+
+            -webkit-transform: scale(1);
+               -moz-transform: scale(1);
+                    transform: scale(1);
+          }
+
+          svg {
+            .hide;
+          }
+        }
+
+        h2 {
+          .BrixSans-Bold;
+          font-size: 18px;
+          font-weight: normal;
+          margin: 0;
+          margin-bottom: 45px / 2; margin-right: 5%; margin-left: 25%;
+
+        }
+
+        p {
+          .BrixSlab-ExtraLight;
+          font-size: 18px;
+          line-height: 1.3em;
+          margin: 0;
+          margin-right: 5%; margin-left: 25%;
+        }
+      }
+
+      ul {
+        margin: 0 auto;
+        padding: 0;
+
+        li {
+          .show;
+          margin: 0 auto;
+          margin-bottom: 35px / 1.5;
+          width: 800px;
+        }
+      }
+
+      a.scroll-to-top {
+        .BrixSans-ExtraLight;
+        .show;
+        .transition;
+        border-bottom: 1px solid @black;
+        color: @black;
+        cursor: pointer;
+        font-size: 12px;
+        margin: 45px auto;
+        margin-bottom: 0;
+        opacity: .8;
+        padding: 0;
+        padding-bottom: 45px;
+        text-align: center;
+        text-transform: uppercase;
+        width: 800px;
+
+        &:before {
+          content: attr(data-button-label);
+        }
+
+        &:hover {
+          opacity: 1;
+        }
+
+        svg {
+          .hide;
+        }
+      }
+    }
+  }
+
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+
+  html {
+
+    body {
+      background: @white;
+      color: @black;
+
+      header {
+        .clearfix;
+        margin: 45px auto;
+        //margin-bottom: 45px - (45 / 10);
+        margin-top: 45px - (45 / 10);
+        height: auto; width: 800px;
+
+        nav.navbar.navbar-default {
+          border: none;
+          background-color: transparent;
+          float: right;
+          margin-bottom: 0;
+          height: auto; width: 100%;
+          position: relative;
+
+          .navbar-header {
+            position: relative;
+            -webkit-transform-style: preserve-3d;
+               -moz-transform-style: preserve-3d;
+                    transform-style: preserve-3d;
+
+            h1 {
+              .show;
+              float: left;
+              height: auto; width: 150px;
+              margin-top: 0; margin-bottom: 0;
+
+              a {
+                .show;
+                border: none;
+
+                &:hover {
+                }
+
+                img {
+                  object-fit: contain;
+                }
+              }
+            }
+
+            button {
+              background-color: transparent;
+              border: none;
+              border-radius: 0;
+              float: right;
+              margin: 0;
+              padding: 0;
+            }
+          }
+
+          .navbar-collapse {
+            .clearfix;
+            border: none;
+            margin-top: 0; margin-bottom: -45px / 1.5;
+            padding-right: 0; padding-left: 0;
+            position: relative;
+
+            ul {
+              .clearfix;
+              margin: 0;
+              margin-top: 0;
+              position: absolute;
+              bottom: 0; right: 0;
+
+              li {
+                .BrixSans-Bold;
+                border-bottom: none;
+                display: inline-block;
+                font-size: 16px;
+                text-transform: uppercase;
+
+                &:nth-of-type(1) {
+                  border-top: none;
+
+                  &:after {
+                    content: "/";
+                    margin: 0 0.3em * 1.5 0 0.3em;
+                    font-style: italic;
+                  }
+                }
+
+                &:nth-of-type(2) {
+                  margin-right: -52px;
+                }
+
+                a {
+                  border: none;
+                  color: @black;
+                  display: inline;
+                  padding: 0;
+                  padding-top: 10px; padding-bottom: 10px;
+
+                  &:active,
+                  &:focus,
+                  &:hover,
+                  &:visited {
+                  }
+
+                  &:hover {
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+
+      div.spring {
+        margin: 45px auto;
+        margin-top: 45px - (45 / 10);
+        height: auto; width: 800px;
+
+        p {
+          .BrixSlab-ExtraLight;
+          .show;
+          font-size: 28px;
+          line-height: 1.3em;
+          margin: 0;
+          text-transform: uppercase;
+        }
+      }
+
+      div.summer {
+        margin-bottom: 0;
+        padding: 0;
+      }
+
+      div.autumn {
+        margin: 45px auto;
+        margin-bottom: 0;
+        height: auto; width: 800px / 2;
+
+        h2 {
+          .BrixSans-Bold;
+          font-size: 18px;
+          font-weight: normal;
+          margin: 0;
+          margin-bottom: 45px / 2;
+          text-transform: uppercase;
+        }
+
+        p {
+          .BrixSlab-ExtraLight;
+          font-size: 18px;
+          line-height: 1.3em;
+          margin: 0;
+          margin-bottom: 1em;
+
+          &:last-of-type {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 45px;
+          }
+
+          a {
+
+            &:hover {
+              opacity: 1;
+            }
+          }
+        }
+      }
+
+      hr {
+        border-top: 1px solid @black;
+        height: auto; width: 800px;
+        margin: 0 auto;
+      }
+
+      div.winter {
+        height: auto; width: 800px;
+        margin: 0 auto;
+        margin-bottom: 0;
+        padding-top: 45px;
+        position: relative;
+
+        p {
+          .BrixSlab-ExtraLight;
+          font-size: 20px;
+          line-height: 1.3em;
+          margin: 0;
+
+          span {
+            .show;
+
+            &:nth-of-type(1) {
+              .BrixSans-Bold;
+              margin-bottom: 45px / 10;
+            }
+          }
+        }
+
+        aside {
+          .BrixSans-Bold;
+          font-size: 16px;
+          margin-top: 45px / (1.25 * 1);
+          text-transform: uppercase;
+
+          a {
+            border: none;
+
+            &:hover {
+            }
+          }
+        }
+
+        footer {
+          height: auto; width: 100%;
+          padding-bottom: 45px;
+          position: absolute;
+          bottom: 0; left: 0;
+
+          small {
+            .show;
+            font-size: 0.5em;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+
+  ////////////////////////////////////////////////////////////////
+  ////////////////////////////////////////////////////////////////
+
+  .container-fluid {
+
+    .row {
+
+      .col-xs-12 {
+      }
+
+      &:nth-of-type(1) {
+      }
+
+      &:nth-of-type(2) {
+      }
+
+      &:nth-of-type(3) {
+      }
+
+      &:nth-of-type(4) {
+
+        .col-xs-12 {
+
+          &:nth-of-type(1) {
+
+            div.autumn {
+              margin-right: 0;
+              padding-right: 45px / 2;
+
+              h2 {
+              }
+
+              p:last-of-type {
+                border-bottom: none;
+                margin-bottom: 0;
+                padding-bottom: 45px;
+              }
+            }
+          }
+
+          &:nth-of-type(2) {
+
+            div.autumn {
+              margin-top: 45px; margin-left: 0;
+              padding-left: 45px / 2;
+
+              h2 {
+                .show;
+                .invisible;
+              }
+            }
+          }
+        }
+      }
+
+      &:nth-of-type(5) {
+      }
+    }
+  }
+
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////// THIS IS THE END
+
+}
