@@ -4,22 +4,22 @@ boojum: data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJvYmplY3QtMDkxMS
 
 hue: 183, 227, 148
 
-titleCa: Salta pels primats&#xa;Póster
+titleCa: Salta pels primats.&#xa;Póster
 
-titleEn: Salta pels primats&#xa;Póster
+titleEn: Salta pels primats.&#xa;Poster
 
-titleEs: Salta pels primats&#xa;Póster
+titleEs: Salta pels primats.&#xa;Póster
 
-excerptCa: Imágen para el acto solidario “Salta pels primats”organizado por la Fundació Mona. Refleja el carácter festivo y familiar del acto donde una de las acciones era  lanzarse en paracaídas con el fin de recoger fondos para la causa.
+excerptCa: Imatge per a l'acte solidari “Salta pels primats” organizat per la Fundació Mona. Reflecteix el caràcter festiu i familiar del event on l'activitat destacada era llançar-se en paracaigudes amb la finalitat de recollir fons per a la causa.
 
-excerptEn: Imágen para el acto solidario “Salta pels primats”organizado por la Fundació Mona. Refleja el carácter festivo y familiar del acto donde una de las acciones era  lanzarse en paracaídas con el fin de recoger fondos para la causa.
+excerptEn: Image design for the charity event “Salta pels primats” organized by Fundació Mona. It reflects the joyful and familiar character of the occasion where the main activity was the skydiving for the fundrasing cause.
 
-excerptEs: Imágen para el acto solidario “Salta pels primats”organizado por la Fundació Mona. Refleja el carácter festivo y familiar del acto donde una de las acciones era  lanzarse en paracaídas con el fin de recoger fondos para la causa.
+excerptEs: Imagen para el acto solidario “Salta pels primats”organizado por la Fundació Mona. Refleja el carácter festivo y familiar del acto donde la actividad destacada era lanzarse en paracaídas con el fin de recoger fondos por la causa.
 
 featured_image: fmona-p-00t.jpg
 
 ---
 
-* ![Cupcake ipsum dolor sit amet]({{ site.url }}/images/fmona-p-01.jpg)
-* ![Cupcake ipsum dolor sit amet]({{ site.url }}/images/fmona-p-02.jpg)
-* ![Cupcake ipsum dolor sit amet]({{ site.url }}/images/fmona-p-03.jpg)
+* ![Salta pels primats Poster]({{ site.url }}/images/fmona-p-01.jpg)
+* ![Salta pels primats Detall]({{ site.url }}/images/fmona-p-02.jpg)
+* ![Salta pels primats Lettering]({{ site.url }}/images/fmona-p-03.jpg)

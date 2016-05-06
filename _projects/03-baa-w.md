@@ -10,9 +10,9 @@ titleEn: Barcelona&#xa; Academy of Art
 
 titleEs: Barcelona&#xa; Academy of Art
 
-excerptCa: Desarrollo del nuevo apartado de matriculación y planificación del curso online.
+excerptCa: Desenvolupament del nou apartat de matriculació i planificació del curs online.
 
-excerptEn: Desarrollo del nuevo apartado de matriculación y planificación del curso online.
+excerptEn: Development of the new section for the registration form and schedule of courses.
 
 excerptEs: Desarrollo del nuevo apartado de matriculación y planificación del curso online.
 
@@ -20,7 +20,6 @@ featured_image: baa-w-00t.jpg
 
 ---
 
-* ![Cupcake ipsum dolor sit amet]({{ site.url }}/images/baa-w-01.jpg)
-* ![Cupcake ipsum dolor sit amet]({{ site.url }}/images/baa-w-02.jpg)
-* ![Cupcake ipsum dolor sit amet]({{ site.url }}/images/baa-w-03.jpg)
-* ![Cupcake ipsum dolor sit amet]({{ site.url }}/images/baa-w-04.jpg)
+* ![BAA's Home Page]({{ site.url }}/images/baa-w-01.jpg)
+* ![BAA's Schedule Page]({{ site.url }}/images/baa-w-02.jpg)
+* ![BAA's Registration Form Page]({{ site.url }}/images/baa-w-03.jpg)

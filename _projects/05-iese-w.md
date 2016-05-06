@@ -10,15 +10,15 @@ titleEn: IESE&#xa;Business School
 
 titleEs: IESE&#xa;Business School
 
-excerptCa: Business Cases & Teaching Materials. Diseño y desarrolllo de plataforma WordPress para la edición, gestión, publicación y distribución de casos didácticos online.
+excerptCa: Business Cases & Teaching Materials. Disseny i desenvolupament de plataforma WordPress per a l'edició, gestió, publicació i distribució de casos didàctics online.
 
-excerptEn: Business Cases & Teaching Materials. Diseño y desarrolllo de plataforma WordPress para la edición, gestión, publicación y distribución de casos didácticos online.
+excerptEn: Business Cases & Teaching Materials. Design and development of a WordPress platform for the edition, management, publication and distribution of didactic case studies online.
 
 excerptEs: Business Cases & Teaching Materials. Diseño y desarrolllo de plataforma WordPress para la edición, gestión, publicación y distribución de casos didácticos online.
 
 featured_image: iese-w-00t.jpg
 
 ---
-* ![Cupcake ipsum dolor sit amet]({{ site.url }}/images/iese-w-01.jpg)
-* ![Cupcake ipsum dolor sit amet]({{ site.url }}/images/iese-w-03.jpg)
-* ![Cupcake ipsum dolor sit amet]({{ site.url }}/images/iese-w-05-2.jpg)
+* ![IESE Responsive Design View ]({{ site.url }}/images/iese-w-01.jpg)
+* ![IESE Laptop design]({{ site.url }}/images/iese-w-03.jpg)
+* ![IESE Mobile design]({{ site.url }}/images/iese-w-05-2.jpg)
