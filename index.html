@@ -96,9 +96,9 @@ layout: default
                 <h2 lang="ca">{{ project.titleCa }}</h2>
                 <h2 lang="en">{{ project.titleEn }}</h2>
                 <h2 lang="es">{{ project.titleEs }}</h2>
-                <p lang="ca">{{ project.excerptCa }}</p>
-                <p lang="en">{{ project.excerptEn }}</p>
-                <p lang="es">{{ project.excerptEs }}</p>
+                <p lang="ca">{{ project.excerptCa | markdownify | remove: '<p>' | remove: '</p>' }}</p>
+                <p lang="en">{{ project.excerptEn | markdownify | remove: '<p>' | remove: '</p>' }}</p>
+                <p lang="es">{{ project.excerptEs | markdownify | remove: '<p>' | remove: '</p>' }}</p>
               </div>
               <div class="project-control hide">
                 <div class="wrapper">
