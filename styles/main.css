@@ -13,11 +13,11 @@
  * URL: http://www.myfonts.com/fonts/hvdfonts/brix-sans/bold/
  * Copyright: Copyright (c) 2014 by Hannes von Doehren, Livius Dietzel. All rights reserved.
  *
- * Webfont: BrixSansExtraLight by HVD Fonts
+ * Webfont: BrixSans; .normal; by HVD Fonts
  * URL: http://www.myfonts.com/fonts/hvdfonts/brix-sans/extra-light/
  * Copyright: Copyright (c) 2014 by Hannes von Doehren, Livius Dietzel. All rights reserved.
  *
- * Webfont: BrixSlabExtraLight by HVD Fonts
+ * Webfont: BrixSlab; .normal; by HVD Fonts
  * URL: http://www.myfonts.com/fonts/hvdfonts/brix-slab/ex-light/
  * Copyright: Copyright (c) 2011 by Hannes von Doehren, Livius Dietzel. All rights reserved.
  *
@@ -28,28 +28,34 @@
  * © 2016 MyFonts Inc
 */
 @font-face {
-  font-family: 'BrixSansBold';
-  src: url('../fonts/30BB4B_0_0.eot');
-  src: url('../fonts/30BB4B_0_0.eot?#iefix') format('embedded-opentype'), url('../fonts/30BB4B_0_0.woff2') format('woff2'), url('../fonts/30BB4B_0_0.woff') format('woff'), url('../fonts/30BB4B_0_0.ttf') format('truetype');
+  font-family: 'BrixSans';
+  font-weight: bold;
+  font-style: normal;
+  src: url('../fonts/3110D0_0_0.eot');
+  src: url('../fonts/3110D0_0_0.eot?#iefix') format('embedded-opentype'), url('../fonts/3110D0_0_0.woff2') format('woff2'), url('../fonts/3110D0_0_0.woff') format('woff'), url('../fonts/3110D0_0_0.ttf') format('truetype'), url('../fonts/3110D0_0_0.svg#wf') format('svg');
 }
 @font-face {
-  font-family: 'BrixSansExtraLight';
-  src: url('../fonts/30BB4A_0_0.eot');
-  src: url('../fonts/30BB4A_0_0.eot?#iefix') format('embedded-opentype'), url('../fonts/30BB4A_0_0.woff2') format('woff2'), url('../fonts/30BB4A_0_0.woff') format('woff'), url('../fonts/30BB4A_0_0.ttf') format('truetype');
+  font-family: 'BrixSans';
+  font-weight: normal;
+  font-style: normal;
+  src: url('../fonts/3110D0_1_0.eot');
+  src: url('../fonts/3110D0_1_0.eot?#iefix') format('embedded-opentype'), url('../fonts/3110D0_1_0.woff2') format('woff2'), url('../fonts/3110D0_1_0.woff') format('woff'), url('../fonts/3110D0_1_0.ttf') format('truetype'), url('../fonts/3110D0_1_0.svg#wf') format('svg');
 }
 @font-face {
-  font-family: 'BrixSlabExtraLight';
-  src: url('../fonts/30BB4B_1_0.eot');
-  src: url('../fonts/30BB4B_1_0.eot?#iefix') format('embedded-opentype'), url('../fonts/30BB4B_1_0.woff2') format('woff2'), url('../fonts/30BB4B_1_0.woff') format('woff'), url('../fonts/30BB4B_1_0.ttf') format('truetype');
+  font-family: 'BrixSlab';
+  font-weight: normal;
+  font-style: normal;
+  src: url('../fonts/3110D0_2_0.eot');
+  src: url('../fonts/3110D0_2_0.eot?#iefix') format('embedded-opentype'), url('../fonts/3110D0_2_0.woff2') format('woff2'), url('../fonts/3110D0_2_0.woff') format('woff'), url('../fonts/3110D0_2_0.ttf') format('truetype'), url('../fonts/3110D0_2_0.svg#wf') format('svg');
 }
 .BrixSans-Bold {
   font-family: BrixSansBold;
 }
-.BrixSans-ExtraLight {
-  font-family: BrixSansExtraLight;
+.BrixSans; .normal; {
+  font-family: BrixSans; .normal;;
 }
-.BrixSlab-ExtraLight {
-  font-family: BrixSlab-ExtraLight;
+.BrixSlab; .normal; {
+  font-family: BrixSlab; .normal;;
 }
 .thin {
   font-weight: 100;
@@ -371,7 +377,7 @@ div.summer .project-content .project-excerpt h2 {
   text-transform: uppercase;
 }
 div.summer .project-content .project-excerpt p {
-  font-family: BrixSlab-ExtraLight;
+  font-family: BrixSlab; .normal;;
   font-size: 14px;
   line-height: 1.3em;
   margin: 0;
@@ -405,7 +411,7 @@ div.summer .project-content ul li img {
   width: 100%;
 }
 div.summer .project-content a.scroll-to-top {
-  font-family: BrixSlab-ExtraLight;
+  font-family: BrixSlab; .normal;;
   display: block;
   -webkit-backface-visibility: hidden;
   -webkit-transition: .3s ease;
@@ -598,7 +604,7 @@ html body div.spring {
   margin-top: 21px;
 }
 html body div.spring p {
-  font-family: BrixSlab-ExtraLight;
+  font-family: BrixSlab; .normal;;
   display: block;
   font-size: 18px;
   line-height: 1.3em;
@@ -622,7 +628,7 @@ html body div.autumn h2 {
   text-transform: uppercase;
 }
 html body div.autumn p {
-  font-family: BrixSlab-ExtraLight;
+  font-family: BrixSlab; .normal;;
   font-size: 13px;
   line-height: 1.3em;
   margin: 0;
@@ -643,7 +649,7 @@ html body div.winter {
   position: relative;
 }
 html body div.winter p {
-  font-family: BrixSlab-ExtraLight;
+  font-family: BrixSlab; .normal;;
   font-size: 13px;
   line-height: 1.3em;
   margin: 0;
@@ -820,7 +826,7 @@ body.es .navbar-collapse ul li:nth-of-type(4) a abbr {
   left: 50%;
 }
 div.summer .project-content:nth-of-type(1) ul li:nth-of-type(1) {
-  background-color: #ffffff;
+  background-color: #fafafa;
 }
 @media (min-width: 375px) {
   div.summer .project-thumbnail a span {
@@ -836,7 +842,7 @@ div.summer .project-content:nth-of-type(1) ul li:nth-of-type(1) {
     margin-bottom: 11.66666667px;
   }
   div.summer .project-content .project-excerpt p {
-    font-family: BrixSlab-ExtraLight;
+    font-family: BrixSlab; .normal;;
     font-size: 16px;
   }
   div.summer .project-content ul {
@@ -939,7 +945,7 @@ div.summer .project-content:nth-of-type(1) ul li:nth-of-type(1) {
     margin-top: 21px;
   }
   html body div.spring p {
-    font-family: BrixSlab-ExtraLight;
+    font-family: BrixSlab; .normal;;
     display: block;
     font-size: 20px;
     line-height: 1.3em;
@@ -963,7 +969,7 @@ div.summer .project-content:nth-of-type(1) ul li:nth-of-type(1) {
     text-transform: uppercase;
   }
   html body div.autumn p {
-    font-family: BrixSlab-ExtraLight;
+    font-family: BrixSlab; .normal;;
     font-size: 16px;
     line-height: 1.3em;
     margin: 0;
@@ -984,7 +990,7 @@ div.summer .project-content:nth-of-type(1) ul li:nth-of-type(1) {
     position: relative;
   }
   html body div.winter p {
-    font-family: BrixSlab-ExtraLight;
+    font-family: BrixSlab; .normal;;
     font-size: 16px;
     line-height: 1.3em;
     margin: 0;
@@ -1049,7 +1055,7 @@ div.summer .project-content:nth-of-type(1) ul li:nth-of-type(1) {
     margin-bottom: 17.5px;
   }
   div.summer .project-content .project-excerpt p {
-    font-family: BrixSlab-ExtraLight;
+    font-family: BrixSlab; .normal;;
     font-size: 20px;
   }
   div.summer .project-content ul {
@@ -1152,7 +1158,7 @@ div.summer .project-content:nth-of-type(1) ul li:nth-of-type(1) {
     margin-top: 31.5px;
   }
   html body div.spring p {
-    font-family: BrixSlab-ExtraLight;
+    font-family: BrixSlab; .normal;;
     display: block;
     font-size: 26px;
     line-height: 1.3em;
@@ -1176,7 +1182,7 @@ div.summer .project-content:nth-of-type(1) ul li:nth-of-type(1) {
     text-transform: uppercase;
   }
   html body div.autumn p {
-    font-family: BrixSlab-ExtraLight;
+    font-family: BrixSlab; .normal;;
     font-size: 20px;
     line-height: 1.3em;
     margin: 0;
@@ -1197,7 +1203,7 @@ div.summer .project-content:nth-of-type(1) ul li:nth-of-type(1) {
     position: relative;
   }
   html body div.winter p {
-    font-family: BrixSlab-ExtraLight;
+    font-family: BrixSlab; .normal;;
     font-size: 20px;
     line-height: 1.3em;
     margin: 0;
@@ -1246,7 +1252,7 @@ div.summer .project-content:nth-of-type(1) ul li:nth-of-type(1) {
     margin-bottom: 17.5px;
   }
   div.summer .project-content .project-excerpt p {
-    font-family: BrixSlab-ExtraLight;
+    font-family: BrixSlab; .normal;;
     font-size: 22px;
   }
   div.summer .project-content ul {
@@ -1349,7 +1355,7 @@ div.summer .project-content:nth-of-type(1) ul li:nth-of-type(1) {
     margin-top: 31.5px;
   }
   html body div.spring p {
-    font-family: BrixSlab-ExtraLight;
+    font-family: BrixSlab; .normal;;
     display: block;
     font-size: 30px;
     line-height: 1.3em;
@@ -1373,7 +1379,7 @@ div.summer .project-content:nth-of-type(1) ul li:nth-of-type(1) {
     text-transform: uppercase;
   }
   html body div.autumn p {
-    font-family: BrixSlab-ExtraLight;
+    font-family: BrixSlab; .normal;;
     font-size: 22px;
     line-height: 1.3em;
     margin: 0;
@@ -1394,7 +1400,7 @@ div.summer .project-content:nth-of-type(1) ul li:nth-of-type(1) {
     position: relative;
   }
   html body div.winter p {
-    font-family: BrixSlab-ExtraLight;
+    font-family: BrixSlab; .normal;;
     font-size: 22px;
     line-height: 1.3em;
     margin: 0;
@@ -1443,7 +1449,7 @@ div.summer .project-content:nth-of-type(1) ul li:nth-of-type(1) {
     margin-bottom: 25px;
   }
   div.summer .project-content .project-excerpt p {
-    font-family: BrixSlab-ExtraLight;
+    font-family: BrixSlab; .normal;;
     font-size: 20px;
   }
   div.summer .project-content ul {
@@ -1546,7 +1552,7 @@ div.summer .project-content:nth-of-type(1) ul li:nth-of-type(1) {
     margin-top: 40.5px;
   }
   html body div.spring p {
-    font-family: BrixSlab-ExtraLight;
+    font-family: BrixSlab; .normal;;
     display: block;
     font-size: 28px;
     line-height: 1.3em;
@@ -1570,7 +1576,7 @@ div.summer .project-content:nth-of-type(1) ul li:nth-of-type(1) {
     text-transform: uppercase;
   }
   html body div.autumn p {
-    font-family: BrixSlab-ExtraLight;
+    font-family: BrixSlab; .normal;;
     font-size: 20px;
     line-height: 1.3em;
     margin: 0;
@@ -1591,7 +1597,7 @@ div.summer .project-content:nth-of-type(1) ul li:nth-of-type(1) {
     position: relative;
   }
   html body div.winter p {
-    font-family: BrixSlab-ExtraLight;
+    font-family: BrixSlab; .normal;;
     font-size: 20px;
     line-height: 1.3em;
     margin: 0;
@@ -1647,11 +1653,13 @@ div.summer .project-content:nth-of-type(1) ul li:nth-of-type(1) {
     -o-transition: .3s ease;
     transition: .3s ease;
     float: left;
+    height: auto;
+    width: auto;
     opacity: 1 !important;
     overflow: visible;
   }
   div.summer .project-content .project-excerpt button:before {
-    font-family: BrixSansExtraLight;
+    font-family: BrixSans; .normal;;
     visibility: visible;
     content: "Esc [Back]";
     font-size: 12px;
@@ -1679,7 +1687,7 @@ div.summer .project-content:nth-of-type(1) ul li:nth-of-type(1) {
     margin-left: 25%;
   }
   div.summer .project-content .project-excerpt p {
-    font-family: BrixSlab-ExtraLight;
+    font-family: BrixSlab; .normal;;
     font-size: 18px;
     line-height: 1.3em;
     margin: 0;
@@ -1705,7 +1713,7 @@ div.summer .project-content:nth-of-type(1) ul li:nth-of-type(1) {
     clear: both;
   }
   div.summer .project-content .project-control .wrapper a {
-    font-family: BrixSansExtraLight;
+    font-family: BrixSans; .normal;;
     border-bottom: none;
     font-size: 12px;
     text-align: right;
@@ -1741,7 +1749,7 @@ div.summer .project-content:nth-of-type(1) ul li:nth-of-type(1) {
     margin-bottom: 23.33333333px;
   }
   div.summer .project-content a.scroll-to-top {
-    font-family: BrixSansExtraLight;
+    font-family: BrixSans; .normal;;
     display: block;
     -webkit-backface-visibility: hidden;
     -webkit-transition: .3s ease;
@@ -1882,7 +1890,7 @@ div.summer .project-content:nth-of-type(1) ul li:nth-of-type(1) {
     margin-top: 40.5px;
   }
   html body div.spring p {
-    font-family: BrixSlab-ExtraLight;
+    font-family: BrixSlab; .normal;;
     display: block;
     font-size: 28px;
     line-height: 1.3em;
@@ -1906,7 +1914,7 @@ div.summer .project-content:nth-of-type(1) ul li:nth-of-type(1) {
     text-transform: uppercase;
   }
   html body div.autumn p {
-    font-family: BrixSlab-ExtraLight;
+    font-family: BrixSlab; .normal;;
     font-size: 18px;
     line-height: 1.3em;
     margin: 0;
@@ -1931,7 +1939,7 @@ div.summer .project-content:nth-of-type(1) ul li:nth-of-type(1) {
     position: relative;
   }
   html body div.winter p {
-    font-family: BrixSlab-ExtraLight;
+    font-family: BrixSlab; .normal;;
     font-size: 20px;
     line-height: 1.3em;
     margin: 0;
@@ -1990,7 +1998,7 @@ div.summer .project-content:nth-of-type(1) ul li:nth-of-type(1) {
   }
   body.ca .navbar-collapse ul li:nth-of-type(4),
   body.ca .navbar-collapse ul li:nth-of-type(5) {
-    font-family: BrixSansExtraLight !important;
+    font-family: BrixSans; .normal; !important;
     display: block !important;
     font-size: 12px !important;
     line-height: 1.3em !important;
@@ -2027,7 +2035,7 @@ div.summer .project-content:nth-of-type(1) ul li:nth-of-type(1) {
   }
   body.en .navbar-collapse ul li:nth-of-type(3),
   body.en .navbar-collapse ul li:nth-of-type(5) {
-    font-family: BrixSansExtraLight !important;
+    font-family: BrixSans; .normal; !important;
     display: block !important;
     font-size: 12px !important;
     line-height: 1.3em !important;
@@ -2064,7 +2072,7 @@ div.summer .project-content:nth-of-type(1) ul li:nth-of-type(1) {
   }
   body.es .navbar-collapse ul li:nth-of-type(3),
   body.es .navbar-collapse ul li:nth-of-type(4) {
-    font-family: BrixSansExtraLight !important;
+    font-family: BrixSans; .normal; !important;
     display: block !important;
     font-size: 12px !important;
     line-height: 1.3em !important;
@@ -2143,7 +2151,7 @@ div.summer .project-content:nth-of-type(1) ul li:nth-of-type(1) {
     opacity: 1;
   }
   div.summer .project-content .project-excerpt button:before {
-    font-family: BrixSansExtraLight;
+    font-family: BrixSans; .normal;;
     visibility: visible;
     content: "Esc [Back]";
     font-size: 12px;
@@ -2171,7 +2179,7 @@ div.summer .project-content:nth-of-type(1) ul li:nth-of-type(1) {
     margin-left: 25%;
   }
   div.summer .project-content .project-excerpt p {
-    font-family: BrixSlab-ExtraLight;
+    font-family: BrixSlab; .normal;;
     font-size: 18px;
     line-height: 1.3em;
     margin: 0;
@@ -2186,7 +2194,7 @@ div.summer .project-content:nth-of-type(1) ul li:nth-of-type(1) {
     margin-bottom: 23.33333333px;
   }
   div.summer .project-content a.scroll-to-top {
-    font-family: BrixSansExtraLight;
+    font-family: BrixSans; .normal;;
     display: block;
     -webkit-backface-visibility: hidden;
     -webkit-transition: .3s ease;
@@ -2331,7 +2339,7 @@ div.summer .project-content:nth-of-type(1) ul li:nth-of-type(1) {
     margin-top: 40.5px;
   }
   html body div.spring p {
-    font-family: BrixSlab-ExtraLight;
+    font-family: BrixSlab; .normal;;
     display: block;
     font-size: 28px;
     line-height: 1.3em;
@@ -2355,7 +2363,7 @@ div.summer .project-content:nth-of-type(1) ul li:nth-of-type(1) {
     text-transform: uppercase;
   }
   html body div.autumn p {
-    font-family: BrixSlab-ExtraLight;
+    font-family: BrixSlab; .normal;;
     font-size: 18px;
     line-height: 1.3em;
     margin: 0;
@@ -2380,7 +2388,7 @@ div.summer .project-content:nth-of-type(1) ul li:nth-of-type(1) {
     position: relative;
   }
   html body div.winter p {
-    font-family: BrixSlab-ExtraLight;
+    font-family: BrixSlab; .normal;;
     font-size: 20px;
     line-height: 1.3em;
     margin: 0;
@@ -2461,7 +2469,7 @@ div.summer .project-content:nth-of-type(1) ul li:nth-of-type(1) {
     opacity: 1;
   }
   div.summer .project-content .project-excerpt button:before {
-    font-family: BrixSansExtraLight;
+    font-family: BrixSans; .normal;;
     visibility: visible;
     content: "Esc [Back]";
     font-size: 12px;
@@ -2489,7 +2497,7 @@ div.summer .project-content:nth-of-type(1) ul li:nth-of-type(1) {
     margin-left: 25%;
   }
   div.summer .project-content .project-excerpt p {
-    font-family: BrixSlab-ExtraLight;
+    font-family: BrixSlab; .normal;;
     font-size: 18px;
     line-height: 1.3em;
     margin: 0;
@@ -2507,7 +2515,7 @@ div.summer .project-content:nth-of-type(1) ul li:nth-of-type(1) {
     width: 800px;
   }
   div.summer .project-content a.scroll-to-top {
-    font-family: BrixSansExtraLight;
+    font-family: BrixSans; .normal;;
     display: block;
     -webkit-backface-visibility: hidden;
     -webkit-transition: .3s ease;
@@ -2657,7 +2665,7 @@ div.summer .project-content:nth-of-type(1) ul li:nth-of-type(1) {
     width: 800px;
   }
   html body div.spring p {
-    font-family: BrixSlab-ExtraLight;
+    font-family: BrixSlab; .normal;;
     display: block;
     font-size: 28px;
     line-height: 1.3em;
@@ -2683,7 +2691,7 @@ div.summer .project-content:nth-of-type(1) ul li:nth-of-type(1) {
     text-transform: uppercase;
   }
   html body div.autumn p {
-    font-family: BrixSlab-ExtraLight;
+    font-family: BrixSlab; .normal;;
     font-size: 18px;
     line-height: 1.3em;
     margin: 0;
@@ -2712,7 +2720,7 @@ div.summer .project-content:nth-of-type(1) ul li:nth-of-type(1) {
     position: relative;
   }
   html body div.winter p {
-    font-family: BrixSlab-ExtraLight;
+    font-family: BrixSlab; .normal;;
     font-size: 20px;
     line-height: 1.3em;
     margin: 0;
@@ -2793,7 +2801,7 @@ div.summer .project-content:nth-of-type(1) ul li:nth-of-type(1) {
     opacity: 1;
   }
   div.summer .project-content .project-excerpt button:before {
-    font-family: BrixSansExtraLight;
+    font-family: BrixSans; .normal;;
     visibility: visible;
     content: "Esc [Back]";
     font-size: 12px;
@@ -2821,7 +2829,7 @@ div.summer .project-content:nth-of-type(1) ul li:nth-of-type(1) {
     margin-left: 25%;
   }
   div.summer .project-content .project-excerpt p {
-    font-family: BrixSlab-ExtraLight;
+    font-family: BrixSlab; .normal;;
     font-size: 18px;
     line-height: 1.3em;
     margin: 0;
@@ -2839,7 +2847,7 @@ div.summer .project-content:nth-of-type(1) ul li:nth-of-type(1) {
     width: 1120px;
   }
   div.summer .project-content a.scroll-to-top {
-    font-family: BrixSansExtraLight;
+    font-family: BrixSans; .normal;;
     display: block;
     -webkit-backface-visibility: hidden;
     -webkit-transition: .3s ease;
@@ -2989,7 +2997,7 @@ div.summer .project-content:nth-of-type(1) ul li:nth-of-type(1) {
     width: 1120px;
   }
   html body div.spring p {
-    font-family: BrixSlab-ExtraLight;
+    font-family: BrixSlab; .normal;;
     display: block;
     font-size: 28px;
     line-height: 1.3em;
@@ -3015,7 +3023,7 @@ div.summer .project-content:nth-of-type(1) ul li:nth-of-type(1) {
     text-transform: uppercase;
   }
   html body div.autumn p {
-    font-family: BrixSlab-ExtraLight;
+    font-family: BrixSlab; .normal;;
     font-size: 18px;
     line-height: 1.3em;
     margin: 0;
@@ -3044,7 +3052,7 @@ div.summer .project-content:nth-of-type(1) ul li:nth-of-type(1) {
     position: relative;
   }
   html body div.winter p {
-    font-family: BrixSlab-ExtraLight;
+    font-family: BrixSlab; .normal;;
     font-size: 20px;
     line-height: 1.3em;
     margin: 0;
@@ -3125,7 +3133,7 @@ div.summer .project-content:nth-of-type(1) ul li:nth-of-type(1) {
     opacity: 1;
   }
   div.summer .project-content .project-excerpt button:before {
-    font-family: BrixSansExtraLight;
+    font-family: BrixSans; .normal;;
     visibility: visible;
     content: "Esc [Back]";
     font-size: 12px;
@@ -3153,7 +3161,7 @@ div.summer .project-content:nth-of-type(1) ul li:nth-of-type(1) {
     margin-left: 25%;
   }
   div.summer .project-content .project-excerpt p {
-    font-family: BrixSlab-ExtraLight;
+    font-family: BrixSlab; .normal;;
     font-size: 18px;
     line-height: 1.3em;
     margin: 0;
@@ -3171,7 +3179,7 @@ div.summer .project-content:nth-of-type(1) ul li:nth-of-type(1) {
     width: 1120px;
   }
   div.summer .project-content a.scroll-to-top {
-    font-family: BrixSansExtraLight;
+    font-family: BrixSans; .normal;;
     display: block;
     -webkit-backface-visibility: hidden;
     -webkit-transition: .3s ease;
@@ -3322,7 +3330,7 @@ div.summer .project-content:nth-of-type(1) ul li:nth-of-type(1) {
     width: 1120px;
   }
   html body div.spring p {
-    font-family: BrixSlab-ExtraLight;
+    font-family: BrixSlab; .normal;;
     display: block;
     font-size: 28px;
     line-height: 1.3em;
@@ -3348,7 +3356,7 @@ div.summer .project-content:nth-of-type(1) ul li:nth-of-type(1) {
     text-transform: uppercase;
   }
   html body div.autumn p {
-    font-family: BrixSlab-ExtraLight;
+    font-family: BrixSlab; .normal;;
     font-size: 18px;
     line-height: 1.3em;
     margin: 0;
@@ -3377,7 +3385,7 @@ div.summer .project-content:nth-of-type(1) ul li:nth-of-type(1) {
     position: relative;
   }
   html body div.winter p {
-    font-family: BrixSlab-ExtraLight;
+    font-family: BrixSlab; .normal;;
     font-size: 20px;
     line-height: 1.3em;
     margin: 0;
