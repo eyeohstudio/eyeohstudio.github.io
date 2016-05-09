@@ -16,6 +16,8 @@
     "Snap.svg": "snap.svg#^0.4.1",
     "velocity": "julianshapiro/velocity#^1.2.3",
     "responsive-images.js": "kvendrik/responsive-images.js#^1.0.0",
-    "mapkey": "pixelmatrix/mapkey"
+    "mapkey": "pixelmatrix/mapkey",
+    "jquery.transit": "rstacruz/jquery.transit#^0.9.12",
+    "benbarnett/jQuery-Animate-Enhanced": "benbarnett/jquery-animate-enhanced#^1.1.0"
   }
 }
