@@ -35,10 +35,11 @@
           .invisible;
           .transition;
           float: left;
+          height: auto; width: auto;
           opacity: 1 !important;
 
           &:before {
-            .BrixSans-ExtraLight;
+            .BrixSans; .normal;
             .visible;
             content:  "Esc [Back]";
             font-size: 12px;
@@ -61,16 +62,16 @@
         }
 
         h2 {
-          .BrixSans-Bold;
+          .BrixSans; .bold;
           font-size: 18px;
-          font-weight: normal;
+          
           margin: 0;
           margin-bottom: 35px / 1.5; margin-right: 5%; margin-left: 25%;
 
         }
 
         p {
-          .BrixSlab-ExtraLight;
+          .BrixSlab; .normal;;
           font-size: 18px;
           line-height: 1.3em;
           margin: 0;
@@ -91,7 +92,7 @@
           position: relative;
 
           a {
-            .BrixSans-ExtraLight;
+            .BrixSans; .normal;
             border-bottom: none;
             font-size: 12px;
             text-align: right;
@@ -141,7 +142,7 @@
       }
 
       a.scroll-to-top {
-        .BrixSans-ExtraLight;
+        .BrixSans; .normal;
         .show;
         .transition;
         border-bottom: 1px solid @black;
@@ -242,7 +243,7 @@
               bottom: 0; right: 0;
 
               li {
-                .BrixSans-Bold;
+                .BrixSans; .bold;
                 border-bottom: none;
                 display: inline-block;
                 font-size: 16px;
@@ -289,7 +290,7 @@
         margin-top: 45px - (45 / 10);
 
         p {
-          .BrixSlab-ExtraLight;
+          .BrixSlab; .normal;;
           .show;
           font-size: 28px;
           line-height: 1.3em;
@@ -308,16 +309,16 @@
         margin-bottom: 0;
 
         h2 {
-          .BrixSans-Bold;
+          .BrixSans; .bold;
           font-size: 18px;
-          font-weight: normal;
+          
           margin: 0;
           margin-bottom: 60px / 2;
           text-transform: uppercase;
         }
 
         p {
-          .BrixSlab-ExtraLight;
+          .BrixSlab; .normal;;
           font-size: 18px;
           line-height: 1.3em;
           margin: 0;
@@ -350,7 +351,7 @@
         position: relative;
 
         p {
-          .BrixSlab-ExtraLight;
+          .BrixSlab; .normal;;
           font-size: 20px;
           line-height: 1.3em;
           margin: 0;
@@ -359,14 +360,14 @@
             .show;
 
             &:nth-of-type(1) {
-              .BrixSans-Bold;
+              .BrixSans; .bold;
               margin-bottom: 60px / 10;
             }
           }
         }
 
         aside {
-          .BrixSans-Bold;
+          .BrixSans; .bold;
           font-size: 16px;
           margin-top: 60px / (1.25 * 1);
           text-transform: uppercase;
@@ -450,7 +451,7 @@
 
     &:nth-of-type(4),
     &:nth-of-type(5) {
-      .BrixSans-ExtraLight !important;
+      .BrixSans !important; .normal !important;
       .show !important;
       font-size: 12px !important;
       line-height: 1.3em !important;
@@ -494,7 +495,7 @@
 
     &:nth-of-type(3),
     &:nth-of-type(5) {
-      .BrixSans-ExtraLight !important;
+      .BrixSans !important; .normal !important;
       .show !important;
       font-size: 12px !important;
       line-height: 1.3em !important;
@@ -538,7 +539,7 @@
 
     &:nth-of-type(3),
     &:nth-of-type(4) {
-      .BrixSans-ExtraLight !important;
+      .BrixSans !important; .normal !important;
       .show !important;
       font-size: 12px !important;
       line-height: 1.3em !important;

@@ -66,7 +66,7 @@ div.summer {
       }
 
       span {
-        .BrixSans-Bold;
+        .BrixSans; .bold;
         .show;
         .transition;
         font-size: 12px;
@@ -123,6 +123,7 @@ div.summer {
         &:focus,
         &:hover,
         &:visited {
+          .animClass;
           outline: -webkit-focus-ring-color auto 0;
 
           -webkit-transform: scale(.9);
@@ -138,10 +139,9 @@ div.summer {
       }
 
       h2 {
-        .BrixSans-Bold;
+        .BrixSans; .bold;
         //border-top: 1px solid @black;
         font-size: 13px;
-        font-weight: normal;
         margin: 0;
         margin-bottom: (35px / 1.5) / 2;
         //padding-top: (35px / 1.5) * 1.5;
@@ -149,7 +149,7 @@ div.summer {
       }
 
       p {
-        .BrixSlab-ExtraLight;
+        .BrixSlab; .normal;;
         font-size: 14px;
         line-height: 1.3em;
         margin: 0;
@@ -191,7 +191,7 @@ div.summer {
     }
 
     a.scroll-to-top {
-      .BrixSlab-ExtraLight;
+      .BrixSlab; .normal;;
       .show;
       .transition;
       border-bottom: 1px solid @black;
@@ -210,6 +210,7 @@ div.summer {
         opacity: 1 !important;
 
         svg {
+          .animClass;
           -webkit-transform: translateY(0);
              -moz-transform: translateY(0);
                   transform: translateY(0);
@@ -217,6 +218,7 @@ div.summer {
       }
 
       svg {
+        .animClass;
         .transition;
         fill: none;
         height: 40px; width: 40px;
@@ -275,6 +277,7 @@ div.summer {
           position: relative;
 
           .navbar-header {
+            .animClass;
             position: relative;
             -webkit-transform-style: preserve-3d;
                -moz-transform-style: preserve-3d;
@@ -323,6 +326,7 @@ div.summer {
 
                   .top-bread,
                   .bottom-bread {
+                    .animClass;
                     -webkit-backface-visibility: hidden; // fix for transition flickering
                     -webkit-transition: .1s ease;
                        -moz-transition: .1s ease;
@@ -344,7 +348,7 @@ div.summer {
               margin-top: ((35px / 1.5) - ((35px / 1.5) / 10)) * 2;
 
               li {
-                .BrixSans-Bold;
+                .BrixSans; .bold;
                 border-bottom: 1px solid @black;
                 font-size: 14px;
                 text-transform: uppercase;
@@ -400,7 +404,7 @@ div.summer {
         margin-top: (35px / 1.5) - ((35px / 1.5) / 10);
 
         p {
-          .BrixSlab-ExtraLight;
+          .BrixSlab; .normal;;
           .show;
           font-size: 18px;
           line-height: 1.3em;
@@ -419,16 +423,15 @@ div.summer {
         margin-bottom: 0;
 
         h2 {
-          .BrixSans-Bold;
+          .BrixSans; .bold;
           font-size: 14px;
-          font-weight: normal;
           margin: 0;
           margin-bottom: (35px / 1.5) / 2;
           text-transform: uppercase;
         }
 
         p {
-          .BrixSlab-ExtraLight;
+          .BrixSlab; .normal;;
           font-size: 13px;
           line-height: 1.3em;
           margin: 0;
@@ -456,7 +459,7 @@ div.summer {
         position: relative;
 
         p {
-          .BrixSlab-ExtraLight;
+          .BrixSlab; .normal;;
           font-size: 13px;
           line-height: 1.3em;
           margin: 0;
@@ -465,7 +468,7 @@ div.summer {
             .show;
 
             &:nth-of-type(1) {
-              .BrixSans-Bold;
+              .BrixSans; .bold;
               margin-bottom: 35px / 10;
             }
 
@@ -506,7 +509,7 @@ div.summer {
         }
 
         aside {
-          .BrixSans-Bold;
+          .BrixSans; .bold;
           font-size: 10px;
           margin-top: 35px / (1.5 * 2);
           text-transform: uppercase;
@@ -699,31 +702,35 @@ body.es .navbar-collapse ul li {
 }
 
 .top-bread-in {
+  .animClass;
   -webkit-transform: translateY(-5px);
      -moz-transform: translateY(-5px);
           transform: translateY(-5px);
 }
 
 .top-bread-out {
+  .animClass;
   -webkit-transform: translateY(0);
      -moz-transform: translateY(0);
           transform: translateY(0);
 }
 
 .bottom-bread-in {
+  .animClass;
   -webkit-transform: translateY(5px);
      -moz-transform: translateY(5px);
           transform: translateY(5px);
 }
 
 .bottom-bread-out {
+  .animClass;
   -webkit-transform: translateY(0);
      -moz-transform: translateY(0);
           transform: translateY(0);
 }
 
 .tooltip {
-  .BrixSans-Bold;
+  .BrixSans; .bold;
   font-size: 12px;
 
   .tooltip-arrow {
@@ -761,8 +768,46 @@ body.es .navbar-collapse ul li {
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
 
+<<<<<<< HEAD
 div.summer .project-content:nth-of-type(1) ul li:nth-of-type(1) {
   background-color: #fafafa;
+=======
+.project-content[id="01-io-ic"] ul li:nth-of-type(1) {
+  background-color: #fafafa;
+}
+
+.project-content[id="07-mdg-ex"] ul li:nth-of-type(7),
+.project-content[id="07-mdg-ex"] ul li:nth-of-type(8),
+.project-content[id="07-mdg-ex"] ul li:nth-of-type(9),
+.project-content[id="07-mdg-ex"] ul li:nth-of-type(10) {
+  float: left;
+  height: auto; width: 50% !important;
+}
+
+.project-content[id="07-mdg-ex"] ul li:nth-of-type(7),
+.project-content[id="07-mdg-ex"] ul li:nth-of-type(8) {
+  margin-bottom: 0 !important;
+}
+
+.project-content[id="07-mdg-ex"] ul li:nth-of-type(7) img,
+.project-content[id="07-mdg-ex"] ul li:nth-of-type(8) img {
+  padding-bottom: 4px;
+}
+
+.project-content[id="07-mdg-ex"] ul li:nth-of-type(9) img,
+.project-content[id="07-mdg-ex"] ul li:nth-of-type(10) img {
+  padding-top: 4px;
+}
+
+.project-content[id="07-mdg-ex"] ul li:nth-of-type(7) img,
+.project-content[id="07-mdg-ex"] ul li:nth-of-type(9) img {
+  padding-right: 4px;
+}
+
+.project-content[id="07-mdg-ex"] ul li:nth-of-type(8) img,
+.project-content[id="07-mdg-ex"] ul li:nth-of-type(10) img {
+  padding-left: 4px;
+>>>>>>> origin/sid
 }
 
 ////////////////////////////////////////////////////////////////
