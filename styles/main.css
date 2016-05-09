@@ -1648,6 +1648,7 @@ div.summer .project-content:nth-of-type(1) ul li:nth-of-type(1) {
     transition: .3s ease;
     float: left;
     opacity: 1 !important;
+    overflow: visible;
   }
   div.summer .project-content .project-excerpt button:before {
     font-family: BrixSansExtraLight;
@@ -1686,7 +1687,7 @@ div.summer .project-content:nth-of-type(1) ul li:nth-of-type(1) {
     margin-left: 25%;
   }
   div.summer .project-content .project-control {
-    display: block;
+    display: none;
     width: 100%;
     position: absolute;
   }
