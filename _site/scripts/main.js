@@ -450,15 +450,17 @@ jQuery(document).ready(function ($) {
   ////////////////////////////////////////////////////////////////
   ////////////////////////////////////////////////////////////////
 
-//  $('.project-thumbnail a').on('click', function() {
-//
-//    setTimeout(function() {
-//
-//      projectControl();
-//      projectControlButtons();
-//
-//    }, 300);
-//  });
+  $('.project-thumbnail a').on('click', function() {
+
+    $('html, body').stop().animate({scrollTop: 0}, 300);
+
+    setTimeout(function() {
+
+      //projectControl();
+      //projectControlButtons();
+
+    }, 300);
+  });
 
   ////////////////////////////////////////////////////////////////
   ////////////////////////////////////////////////////////////////
