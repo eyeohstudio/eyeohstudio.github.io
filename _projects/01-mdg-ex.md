@@ -10,8 +10,6 @@ titleEn: Sota la paraula.&#xa;Exhibition
 
 titleEs: Sota la paraula.&#xa;Exposición
 
-# Añadir vínculo a la web del Museu de Granollers y a la página de la exposición si existe.
-
 excerptCa: Publicació dissenyada per a l'exposició "Sota la Paraula", [Museu de Granollers](http://www.museugranollers.org/). Aquesta peça recull les reflexions de Jordi Marrugat a partir de les obres del pintor Pere Salinas suscitant un debat sobre l'art i la condició humana.
 
 excerptEn: Publication design for "Sota la Paraula", [Museu de Granollers](http://www.museugranollers.org/). This piece contains the observations of Jordi Marrugat on the works of the painter Pere Salinas and raises a global discussion about art and the human condition.
@@ -29,6 +27,9 @@ featured_image: mdg-00t.jpg
 * ![Sota la Paraula Exhibition]({{ site.url }}/images/mdg-ex-01.jpg)
 * ![Sota la Paraula Exhibition]({{ site.url }}/images/mdg-ex-02.jpg)
 * ![Sota la Paraula Exhibition]({{ site.url }}/images/mdg-ex-03.jpg)
+
+<br>
+
 * ![Sota la Paraula Exhibition]({{ site.url }}/images/mdg-ex-04.jpg)
 * ![Sota la Paraula Exhibition]({{ site.url }}/images/mdg-ex-05.jpg)
 * ![Sota la Paraula Exhibition]({{ site.url }}/images/mdg-ex-06.jpg)

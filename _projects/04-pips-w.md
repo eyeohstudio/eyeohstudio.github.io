@@ -10,9 +10,6 @@ titleEn: Pips Abrera&#xa;Website / Spot
 
 titleEs: Pips Abrera&#xa;Website / Spot
 
-# La descripción es un poco ambigua y se menciona la realización del vídeo promocional
-# Añadir vínculo a la web de PIPS Abrera
-
 excerptCa: Promoció del [Parc Industrial de Proveïdors de Seat](pipsabrera.com) (PIPS Abrera), mitjançant el disseny, desenvolupament web i Spot comercial.
 
 excerptEn: Promotion of [SEAT Suppliers Industrial Park](pipsabrera.com) (aka PIPS Abrera), as of website design and development and spot.
