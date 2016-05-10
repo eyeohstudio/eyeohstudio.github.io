@@ -12,7 +12,7 @@ titleEs: I/O&#xa;Pósters
 
 excerptCa: Col·lecció de 3 pòsters que juguen amb la imatge gràfica d'I/O. Cada pòster reflecteix de forma modular conceptes com el volum, l'estructura i el color.
 
-excerptEn: 3 posters set experimenting with I/O graphic design identity. Each poster represents modularly concepts like volume, structure and color.
+excerptEn: 3 posters set playing with I/O graphic design identity. Each poster represents modularly concepts like volume, structure and color.
 
 excerptEs: Colección de 3 pósters que juegan con la imagen gráfica de I/O. Cada póster refleja de forma modular conceptos como el volumen, la estructura y el color.
 
@@ -21,8 +21,8 @@ featured_image: io-p-00t.jpg
 ---
 
 * ![I/O Poster set]({{ site.url }}/images/io-p-01.jpg)
-* ![I/O Volume's Poster]({{ site.url }}/images/io-p-06.jpg)
-* ![I/O Volume's Poster Detail]({{ site.url }}/images/io-p-09.jpg)
-* ![I/O Structure's Poster]({{ site.url }}/images/io-p-07.jpg)
-* ![I/O Structure's Poster Detail]({{ site.url }}/images/io-p-04.jpg)
-* ![I/O Color's Poster]({{ site.url }}/images/io-p-08.jpg)
+* ![I/O Volume's Poster]({{ site.url }}/images/io-p-02.jpg)
+* ![I/O Volume's Poster Detail]({{ site.url }}/images/io-p-03.jpg)
+* ![I/O Structure's Poster]({{ site.url }}/images/io-p-04.jpg)
+* ![I/O Structure's Poster Detail]({{ site.url }}/images/io-p-05.jpg)
+* ![I/O Color's Poster]({{ site.url }}/images/io-p-06.jpg)
