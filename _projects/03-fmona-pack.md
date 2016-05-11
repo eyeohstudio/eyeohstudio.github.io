@@ -16,7 +16,7 @@ excerptEn: Primats, the first 100% charitable wine by [Fundació Mona](http://fu
 
 excerptEs: Primats, el primer vino 100% solidario de la [Fundació Mona](http://fundacionmona.org/). El envoltorio, inspirado gráficamente en las hojas de los plataneros y formalmente planteado como pieza de soporte descriptiva, acerca la labor de la fundació al consumidor.
 
-featured_image: fmona-pack-00t.jpg
+featured_image: fmona-pack-00t
 
 ---
 

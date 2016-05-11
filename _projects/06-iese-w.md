@@ -16,7 +16,7 @@ excerptEn: Publications Management System Web App for IESE Teaching Materials Un
 
 excerptEs: Web App de gestión de publicaciones para la Unidad de Materials Didácticos de IESE construida a partir de WordPress y otras tecnologías de código abierto.
 
-featured_image: iese-w-00t.jpg
+featured_image: iese-w-00t
 
 ---
 * ![IESE Responsive Design View ]({{ site.url }}/images/iese-w-01.jpg)

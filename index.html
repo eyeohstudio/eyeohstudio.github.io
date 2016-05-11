@@ -72,7 +72,12 @@ layout: default
           {% for project in site.projects %}
             <div class="col-xs-6 col-md-4 col-lg-3 project-thumbnail {{ project.url | remove: 'projects' | remove: '/' | remove: '.html' }}">
               <a href="#" style="background-image: url({{ project.boojum }})" data-project-name="{{ project.url | remove: 'projects' | remove: '/' | remove: '.html' }}" title="">
-                <img src="{{ site.url}}/images/{{ project.featured_image }}" alt="" title="">
+                <img alt="" data-src-base="{{ site.url}}/images/thumbnails/" data-src="
+                                                                                      <320:{{ project.featured_image }}_160.jpg,
+                                                                                      <480:{{ project.featured_image }}_240.jpg,
+                                                                                      <640:{{ project.featured_image }}_320.jpg,
+                                                                                      <960:{{ project.featured_image }}_480.jpg,
+                                                                                      >960:{{ project.featured_image }}_560.jpg ">
                 <span lang="ca">{{ project.titleCa | remove: '.' }}</span>
                 <span lang="en">{{ project.titleEn | remove: '.' }}</span>
                 <span lang="es">{{ project.titleEs | remove: '.' }}</span>

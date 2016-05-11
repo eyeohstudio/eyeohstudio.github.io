@@ -16,7 +16,7 @@ excerptEn: Publication design for "Sota la Paraula", [Museu de Granollers](http:
 
 excerptEs: Publicación diseñada para la exposición "Sota la Paraula", [Museu de Granollers](http://www.museugranollers.org/). Esta pieza recoge las reflexiones de Jordi Marrugat a partir de las obras del pintor Pere Salinas suscitando un debate sobre el arte y la condición humana.
 
-featured_image: mdg-00t.jpg
+featured_image: mdg-00t
 
 ---
 * ![Sota la Paraula Cover]({{ site.url }}/images/mdg-ca-01.jpg)

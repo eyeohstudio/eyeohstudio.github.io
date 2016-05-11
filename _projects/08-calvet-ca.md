@@ -16,7 +16,7 @@ excerptEn: Catalogue edited for the exhibition "Francesc Calvet. Fins Aquí", Mu
 
 excerptEs: Catálogo editado con motivo de la exposición "Francesc Calvet, Fins Aquí". Museu de Menorca. Retrospectiva Francesc Calvet, que reúne su obra más representativa pasando por las diferentes etapas artísticas del pintor.
 
-featured_image: calvet-ca-00t.jpg
+featured_image: calvet-ca-00t
 
 ---
 

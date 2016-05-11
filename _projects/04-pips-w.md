@@ -16,7 +16,7 @@ excerptEn: Promotion of [SEAT Suppliers Industrial Park](pipsabrera.com) (aka PI
 
 excerptEs: Promoción del [Parque Industrial de Proveedores de Seat](pipsabrera.com) (PIPS Abrera), a partir del diseño, desarrollo web y spot comercial.
 
-featured_image: pips-w-00t.jpg
+featured_image: pips-w-00t
 
 ---
 
