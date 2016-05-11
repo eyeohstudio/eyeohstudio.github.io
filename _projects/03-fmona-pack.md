@@ -10,15 +10,13 @@ titleEn: Primats&#xa;Packaging
 
 titleEs: Primats&#xa;Packaging
 
-# Añadir vínculo a la web de la Fundació Mona
-
 excerptCa: Primats, el primer vi 100% solidari de la [Fundació Mona](http://fundacionmona.org/). L'envoltori, inspirat gràficament en les fulles dels plataners i formalment plantejat com a peça de suport descriptiu, apropa la tasca de la fundació al consumidor.
 
 excerptEn: Primats, the first 100% charitable wine by [Fundació Mona](http://fundacionmona.org/). The wrapping paper graphically inspired on abanana plant's leaf and developed formally as a descriptive support item brings the tasks of the foundation close to the consumer.
 
 excerptEs: Primats, el primer vino 100% solidario de la [Fundació Mona](http://fundacionmona.org/). El envoltorio, inspirado gráficamente en las hojas de los plataneros y formalmente planteado como pieza de soporte descriptiva, acerca la labor de la fundació al consumidor.
 
-featured_image: fmona-pack-00t.jpg
+featured_image: fmona-pack-00t
 
 ---
 
