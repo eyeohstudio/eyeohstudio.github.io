@@ -10,15 +10,13 @@ titleEn: Salta pels primats.&#xa;Poster
 
 titleEs: Salta pels primats.&#xa;Póster
 
-# Añadir vínculo a la web de la Fundació Mona
-
 excerptCa: Imatge per a l'acte solidari "Salta pels primats" organizat per la [Fundació Mona](http://fundacionmona.org/). Reflecteix el caràcter festiu i familiar de l'event on l'activitat destacada és llançar-se en paracaigudes amb la finalitat de recollir fons per a la causa.
 
 excerptEn: Image design for the charity event "Salta pels primats" organized by [Fundació Mona](http://fundacionmona.org/). It reflects the occasion joyful and familiar nature where skydiving is the main activity towards the fundrasing cause.
 
 excerptEs: Imagen para el acto solidario "Salta pels primats" organizado por la [Fundació Mona](http://fundacionmona.org/). Refleja el carácter festivo y familiar del acto donde la actividad destacada es lanzarse en paracaídas con el fin de recoger fondos por la causa.
 
-featured_image: fmona-p-00t.jpg
+featured_image: fmona-p-00t
 
 ---
 

@@ -10,15 +10,13 @@ titleEn: Marring.&#xa;Corporative Identity
 
 titleEs: Marring.&#xa;Identidad Corporativa
 
-# Añadir vínculo a la web de Marring
-
 excerptCa: Identitat per a Marring, empresa d'events enfocats a declaracions d'amor. Marca de caràcter innovador i sorprenent.
 
 excerptEn: Identity for Marring, company focused on planning proposals and romantic dates. Brand with an innovative and surprising nature.
 
 excerptEs: Identidad para Marring, empresa de eventos enfocados a declaraciones de amor. Marca de carácter innovador y sorprendente.
 
-featured_image: marring-ic-00-1t.jpg
+featured_image: marring-ic-00t
 
 ---
 

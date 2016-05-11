@@ -16,7 +16,7 @@ excerptEn: Multiple and dynamic identity strengthening the multidisciplinar natu
 
 excerptEs: Identidad múltiple y dinámica que refuerza el carácter multidisciplinar del estudio. El punto de partida es una superficie modular de proporciones 3x1, que a través de un método procedural de generación automática basado en dos parámetros (I/O) origina una superficie modular de 64 formas y 64 colores que cambian en función del input y output.
 
-featured_image: io-ic-00t.jpg
+featured_image: io-ic-00t
 
 ---
 

@@ -16,7 +16,7 @@ excerptEn: 3 posters set playing with I/O graphic design identity. Each poster r
 
 excerptEs: Colección de 3 pósters que juegan con la imagen gráfica de I/O. Cada póster refleja de forma modular conceptos como el volumen, la estructura y el color.
 
-featured_image: io-p-00t.jpg
+featured_image: io-p-00t
 
 ---
 
