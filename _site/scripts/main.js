@@ -485,6 +485,12 @@ jQuery(document).ready(function ($) {
   ////////////////////////////////////////////////////////////////
   ////////////////////////////////////////////////////////////////
 
+  $('.project-thumbnail.01-mdg-ex a').on('click', function() {
+
+    $('#01-mdg-ex.project-content > ul > li').slice(6,10).wrapAll('<li><ul class="wrapper" />');
+
+  });
+
 //  $('.project-control a[role="button"]').on('click', function() {
 //
 //      projectControl();

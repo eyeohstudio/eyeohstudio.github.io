@@ -27,9 +27,6 @@ featured_image: mdg-00t
 * ![Sota la Paraula Exhibition]({{ site.url }}/images/mdg-ex-01.jpg)
 * ![Sota la Paraula Exhibition]({{ site.url }}/images/mdg-ex-02.jpg)
 * ![Sota la Paraula Exhibition]({{ site.url }}/images/mdg-ex-03.jpg)
-
-<br>
-
 * ![Sota la Paraula Exhibition]({{ site.url }}/images/mdg-ex-04.jpg)
 * ![Sota la Paraula Exhibition]({{ site.url }}/images/mdg-ex-05.jpg)
 * ![Sota la Paraula Exhibition]({{ site.url }}/images/mdg-ex-06.jpg)
