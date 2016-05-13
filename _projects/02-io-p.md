@@ -18,6 +18,8 @@ excerptEs: Colección de 3 pósters que juegan con la imagen gráfica de I/O. Ca
 
 featured_image: io-p-00t
 
+slug: our-posters
+
 ---
 
 * ![I/O Poster set]({{ site.url }}/images/io-p-01.jpg)

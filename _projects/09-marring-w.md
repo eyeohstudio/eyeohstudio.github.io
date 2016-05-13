@@ -18,6 +18,8 @@ excerptEs: Identidad para Marring, empresa de eventos enfocados a declaraciones 
 
 featured_image: marring-ic-00t
 
+slug: marring
+
 ---
 
 * ![Marring Logo]({{ site.url }}/images/marring-ic-01.jpg)

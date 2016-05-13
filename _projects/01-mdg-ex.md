@@ -18,6 +18,8 @@ excerptEs: Publicación diseñada para la exposición "Sota la Paraula", [Museu 
 
 featured_image: mdg-00t
 
+slug: sota-la-paraula
+
 ---
 * ![Sota la Paraula Cover]({{ site.url }}/images/mdg-ca-01.jpg)
 * ![Sota la Paraula Cover and Back]({{ site.url }}/images/mdg-ca-02.jpg)

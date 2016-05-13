@@ -18,6 +18,8 @@ excerptEs: Imagen para el acto solidario "Salta pels primats" organizado por la 
 
 featured_image: fmona-p-00t
 
+slug: salta-pel-primats
+
 ---
 
 * ![Salta pels primats Poster]({{ site.url }}/images/fmona-p-01.jpg)

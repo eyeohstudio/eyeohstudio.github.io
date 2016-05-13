@@ -18,6 +18,8 @@ excerptEs: Promoción del [Parque Industrial de Proveedores de Seat](pipsabrera.
 
 featured_image: pips-w-00t
 
+slug: pips-abrera
+
 ---
 
 * ![Pips Abrera Responsive Website Design]({{ site.url }}/images/pips-w-01.jpg)
