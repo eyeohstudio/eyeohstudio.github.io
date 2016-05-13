@@ -14,11 +14,10 @@ jQuery(document).ready(function ($) {
 ////////////////////////////////////////////////////////////////
 
 function fireHash() {
-  var hash = window.location.hash.slice(1); // get the hash, and strip out the "#"
-
-  if ( window.location.hash ) {
-    $('a').attr('data-project-name', hash).trigger('click');
-  }
+	if ( window.location.hash ) {
+		var hash = window.location.hash.slice(1); // get the hash, and strip out the "#"
+    $('.project-thumbnail a[data-project-name="' + hash + '"]').attr('data-project-name', hash).trigger('click');
+	}
 };
 
 ////////////////////////////////////////////////////////////////
@@ -408,7 +407,6 @@ function hashStuff() {
 
   $(window).load(function() {
 
-    fireHash();
     makeImagesResponsive(); // responsive-img.min.js
 
     ////////////////////////////////////////////////////////////////
@@ -416,6 +414,7 @@ function hashStuff() {
 
     setTimeout(function() {
       projectStuff();
+			fireHash();
       $('body').removeClass('invisible').addClass('visible');
     }, 300);
   });
