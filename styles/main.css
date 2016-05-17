@@ -439,7 +439,6 @@ div.summer .project-content a.scroll-to-top {
   padding: 0;
   padding-bottom: 23.33333333px;
   text-align: center;
-  text-transform: uppercase;
 }
 div.summer .project-content a.scroll-to-top:hover {
   opacity: 1 !important;
@@ -534,6 +533,7 @@ html body header nav.navbar.navbar-default .navbar-header {
   -webkit-transform-style: preserve-3d;
   -moz-transform-style: preserve-3d;
   transform-style: preserve-3d;
+  z-index: 999999999;
 }
 html body header nav.navbar.navbar-default .navbar-header h1 {
   display: block;
@@ -546,7 +546,6 @@ html body header nav.navbar.navbar-default .navbar-header h1 {
 html body header nav.navbar.navbar-default .navbar-header h1 a {
   display: block;
   border: none;
-  cursor: default;
 }
 html body header nav.navbar.navbar-default .navbar-header h1 a:hover {
   opacity: 1;
@@ -589,6 +588,7 @@ html body header nav.navbar.navbar-default .navbar-collapse {
   border: none;
   padding-right: 0;
   padding-left: 0;
+  z-index: 88888888;
 }
 html body header nav.navbar.navbar-default .navbar-collapse ul {
   margin: 0;
@@ -723,8 +723,9 @@ html body div.winter footer {
   left: 0;
 }
 html body div.winter footer small {
+  font-family: BrixSlab;
   display: block;
-  font-size: 0.5em;
+  font-size: 10px;
   text-align: center;
 }
 a[data-toggle="tooltip"] {
@@ -865,36 +866,41 @@ body.es .navbar-collapse ul li:nth-of-type(4) a abbr {
   bottom: -3px;
   left: 50%;
 }
-.project-content[id="14-io-ic"] ul li:nth-of-type(1) {
+.project-content[id="our-identity"] ul li:nth-of-type(1) {
   background-color: #fafafa;
 }
-.project-content[id="01-mdg-ex"] ul li:nth-of-type(7),
-.project-content[id="01-mdg-ex"] ul li:nth-of-type(8),
-.project-content[id="01-mdg-ex"] ul li:nth-of-type(9),
-.project-content[id="01-mdg-ex"] ul li:nth-of-type(10) {
+.project-content[id="sota-la-paraula"] ul li:nth-of-type(7) .wrapper {
+  margin: 0;
+  padding: 0;
+}
+.project-content[id="sota-la-paraula"] ul li:nth-of-type(7) .wrapper:before,
+.project-content[id="sota-la-paraula"] ul li:nth-of-type(7) .wrapper:after {
+  content: " ";
+  display: table;
+}
+.project-content[id="sota-la-paraula"] ul li:nth-of-type(7) .wrapper:after {
+  clear: both;
+}
+.project-content[id="sota-la-paraula"] ul li:nth-of-type(7) .wrapper li {
   float: left;
   height: auto;
-  width: 50% !important;
-}
-.project-content[id="01-mdg-ex"] ul li:nth-of-type(7),
-.project-content[id="01-mdg-ex"] ul li:nth-of-type(8) {
+  width: 50%;
   margin-bottom: 0;
+}
+.project-content[id="sota-la-paraula"] ul li:nth-of-type(7) .wrapper li:nth-of-type(1) {
+  padding-right: 4px;
   padding-bottom: 4px;
 }
-.project-content[id="01-mdg-ex"] ul li:nth-of-type(7) img,
-.project-content[id="01-mdg-ex"] ul li:nth-of-type(8) img {
+.project-content[id="sota-la-paraula"] ul li:nth-of-type(7) .wrapper li:nth-of-type(2) {
   padding-bottom: 4px;
+  padding-left: 4px;
 }
-.project-content[id="01-mdg-ex"] ul li:nth-of-type(9) img,
-.project-content[id="01-mdg-ex"] ul li:nth-of-type(10) img {
+.project-content[id="sota-la-paraula"] ul li:nth-of-type(7) .wrapper li:nth-of-type(3) {
   padding-top: 4px;
-}
-.project-content[id="01-mdg-ex"] ul li:nth-of-type(7) img,
-.project-content[id="01-mdg-ex"] ul li:nth-of-type(9) img {
   padding-right: 4px;
 }
-.project-content[id="01-mdg-ex"] ul li:nth-of-type(8) img,
-.project-content[id="01-mdg-ex"] ul li:nth-of-type(10) img {
+.project-content[id="sota-la-paraula"] ul li:nth-of-type(7) .wrapper li:nth-of-type(4) {
+  padding-top: 4px;
   padding-left: 4px;
 }
 @media (min-width: 375px) {
@@ -1093,8 +1099,9 @@ body.es .navbar-collapse ul li:nth-of-type(4) a abbr {
     left: 0;
   }
   html body div.winter footer small {
+    font-family: BrixSlab;
     display: block;
-    font-size: 0.5em;
+    font-size: 12px;
     text-align: center;
   }
   .si-icons {
@@ -1310,8 +1317,9 @@ body.es .navbar-collapse ul li:nth-of-type(4) a abbr {
     left: 0;
   }
   html body div.winter footer small {
+    font-family: BrixSlab;
     display: block;
-    font-size: 0.5em;
+    font-size: 12px;
     text-align: center;
   }
 }
@@ -1511,8 +1519,9 @@ body.es .navbar-collapse ul li:nth-of-type(4) a abbr {
     left: 0;
   }
   html body div.winter footer small {
+    font-family: BrixSlab;
     display: block;
-    font-size: 0.5em;
+    font-size: 12px;
     text-align: center;
   }
 }
@@ -1712,8 +1721,9 @@ body.es .navbar-collapse ul li:nth-of-type(4) a abbr {
     left: 0;
   }
   html body div.winter footer small {
+    font-family: BrixSlab;
     display: block;
-    font-size: 0.5em;
+    font-size: 14px;
     text-align: center;
   }
 }
@@ -1747,7 +1757,6 @@ body.es .navbar-collapse ul li:nth-of-type(4) a abbr {
   div.summer .project-content .project-excerpt button:before {
     font-family: BrixSans;
     visibility: visible;
-    content: "Esc [Back]";
     font-size: 12px;
     height: auto;
     width: 25%;
@@ -1854,7 +1863,6 @@ body.es .navbar-collapse ul li:nth-of-type(4) a abbr {
     padding: 0;
     padding-bottom: 45px;
     text-align: center;
-    text-transform: uppercase;
   }
   div.summer .project-content a.scroll-to-top:before {
     content: attr(data-button-label);
@@ -2060,18 +2068,19 @@ body.es .navbar-collapse ul li:nth-of-type(4) a abbr {
     left: 0;
   }
   html body div.winter footer small {
+    font-family: BrixSlab;
     display: block;
-    font-size: 0.5em;
+    font-size: 14px;
     text-align: center;
   }
   body.ca div.summer .project-content .project-excerpt button:before {
-    content: "Esc [ENRERE]";
+    content: "[ esc ] Enrere";
   }
   body.en div.summer .project-content .project-excerpt button:before {
-    content: "Esc [BACK]";
+    content: "[ esc ] Back";
   }
   body.es div.summer .project-content .project-excerpt button:before {
-    content: "Esc [ATRÁS]";
+    content: "[ esc ] Atrás";
   }
   body.ca .navbar-collapse ul li:nth-of-type(4) {
     float: left !important;
@@ -2246,7 +2255,6 @@ body.es .navbar-collapse ul li:nth-of-type(4) a abbr {
   div.summer .project-content .project-excerpt button:before {
     font-family: BrixSans;
     visibility: visible;
-    content: "Esc [Back]";
     font-size: 12px;
     height: auto;
     width: 25%;
@@ -2307,7 +2315,6 @@ body.es .navbar-collapse ul li:nth-of-type(4) a abbr {
     padding: 0;
     padding-bottom: 45px;
     text-align: center;
-    text-transform: uppercase;
   }
   div.summer .project-content a.scroll-to-top:before {
     content: attr(data-button-label);
@@ -2516,8 +2523,9 @@ body.es .navbar-collapse ul li:nth-of-type(4) a abbr {
     left: 0;
   }
   html body div.winter footer small {
+    font-family: BrixSlab;
     display: block;
-    font-size: 0.5em;
+    font-size: 14px;
     text-align: center;
   }
   .container-fluid .row:nth-of-type(4) .col-xs-12:nth-of-type(1) div.autumn {
@@ -2571,7 +2579,6 @@ body.es .navbar-collapse ul li:nth-of-type(4) a abbr {
   div.summer .project-content .project-excerpt button:before {
     font-family: BrixSans;
     visibility: visible;
-    content: "Esc [Back]";
     font-size: 12px;
     height: auto;
     width: 25%;
@@ -2635,7 +2642,6 @@ body.es .navbar-collapse ul li:nth-of-type(4) a abbr {
     padding: 0;
     padding-bottom: 45px;
     text-align: center;
-    text-transform: uppercase;
     width: 800px;
   }
   div.summer .project-content a.scroll-to-top:before {
@@ -2855,8 +2861,9 @@ body.es .navbar-collapse ul li:nth-of-type(4) a abbr {
     left: 0;
   }
   html body div.winter footer small {
+    font-family: BrixSlab;
     display: block;
-    font-size: 0.5em;
+    font-size: 14px;
     text-align: center;
   }
   .container-fluid .row:nth-of-type(4) .col-xs-12:nth-of-type(1) div.autumn {
@@ -2877,34 +2884,38 @@ body.es .navbar-collapse ul li:nth-of-type(4) a abbr {
     display: block;
     visibility: hidden;
   }
-  .project-content[id="01-mdg-ex"] ul li:nth-of-type(7),
-  .project-content[id="01-mdg-ex"] ul li:nth-of-type(8),
-  .project-content[id="01-mdg-ex"] ul li:nth-of-type(9),
-  .project-content[id="01-mdg-ex"] ul li:nth-of-type(10) {
-    display: inline-block;
-    float: none;
+  .project-content[id="sota-la-paraula"] ul li:nth-of-type(7) .wrapper {
+    margin: 0;
+    padding: 0;
+  }
+  .project-content[id="sota-la-paraula"] ul li:nth-of-type(7) .wrapper:before,
+  .project-content[id="sota-la-paraula"] ul li:nth-of-type(7) .wrapper:after {
+    content: " ";
+    display: table;
+  }
+  .project-content[id="sota-la-paraula"] ul li:nth-of-type(7) .wrapper:after {
+    clear: both;
+  }
+  .project-content[id="sota-la-paraula"] ul li:nth-of-type(7) .wrapper li {
+    float: left;
     height: auto;
     width: 400px !important;
-  }
-  .project-content[id="01-mdg-ex"] ul li:nth-of-type(7),
-  .project-content[id="01-mdg-ex"] ul li:nth-of-type(8) {
     margin-bottom: 0;
+  }
+  .project-content[id="sota-la-paraula"] ul li:nth-of-type(7) .wrapper li:nth-of-type(1) {
+    padding-right: 4px;
     padding-bottom: 4px;
   }
-  .project-content[id="01-mdg-ex"] ul li:nth-of-type(7) img,
-  .project-content[id="01-mdg-ex"] ul li:nth-of-type(8) img {
+  .project-content[id="sota-la-paraula"] ul li:nth-of-type(7) .wrapper li:nth-of-type(2) {
     padding-bottom: 4px;
+    padding-left: 4px;
   }
-  .project-content[id="01-mdg-ex"] ul li:nth-of-type(9) img,
-  .project-content[id="01-mdg-ex"] ul li:nth-of-type(10) img {
+  .project-content[id="sota-la-paraula"] ul li:nth-of-type(7) .wrapper li:nth-of-type(3) {
     padding-top: 4px;
-  }
-  .project-content[id="01-mdg-ex"] ul li:nth-of-type(7) img,
-  .project-content[id="01-mdg-ex"] ul li:nth-of-type(9) img {
     padding-right: 4px;
   }
-  .project-content[id="01-mdg-ex"] ul li:nth-of-type(8) img,
-  .project-content[id="01-mdg-ex"] ul li:nth-of-type(10) img {
+  .project-content[id="sota-la-paraula"] ul li:nth-of-type(7) .wrapper li:nth-of-type(4) {
+    padding-top: 4px;
     padding-left: 4px;
   }
 }
@@ -2940,7 +2951,6 @@ body.es .navbar-collapse ul li:nth-of-type(4) a abbr {
   div.summer .project-content .project-excerpt button:before {
     font-family: BrixSans;
     visibility: visible;
-    content: "Esc [Back]";
     font-size: 12px;
     height: auto;
     width: 25%;
@@ -3004,7 +3014,6 @@ body.es .navbar-collapse ul li:nth-of-type(4) a abbr {
     padding: 0;
     padding-bottom: 45px;
     text-align: center;
-    text-transform: uppercase;
     width: 1120px;
   }
   div.summer .project-content a.scroll-to-top:before {
@@ -3224,8 +3233,9 @@ body.es .navbar-collapse ul li:nth-of-type(4) a abbr {
     left: 0;
   }
   html body div.winter footer small {
+    font-family: BrixSlab;
     display: block;
-    font-size: 0.5em;
+    font-size: 14px;
     text-align: center;
   }
   .container-fluid .row:nth-of-type(4) .col-xs-12:nth-of-type(1) div.autumn {
@@ -3246,34 +3256,38 @@ body.es .navbar-collapse ul li:nth-of-type(4) a abbr {
     display: block;
     visibility: hidden;
   }
-  .project-content[id="01-mdg-ex"] ul li:nth-of-type(7),
-  .project-content[id="01-mdg-ex"] ul li:nth-of-type(8),
-  .project-content[id="01-mdg-ex"] ul li:nth-of-type(9),
-  .project-content[id="01-mdg-ex"] ul li:nth-of-type(10) {
-    display: inline-block;
-    float: none;
+  .project-content[id="sota-la-paraula"] ul li:nth-of-type(7) .wrapper {
+    margin: 0;
+    padding: 0;
+  }
+  .project-content[id="sota-la-paraula"] ul li:nth-of-type(7) .wrapper:before,
+  .project-content[id="sota-la-paraula"] ul li:nth-of-type(7) .wrapper:after {
+    content: " ";
+    display: table;
+  }
+  .project-content[id="sota-la-paraula"] ul li:nth-of-type(7) .wrapper:after {
+    clear: both;
+  }
+  .project-content[id="sota-la-paraula"] ul li:nth-of-type(7) .wrapper li {
+    float: left;
     height: auto;
     width: 560px !important;
-  }
-  .project-content[id="01-mdg-ex"] ul li:nth-of-type(7),
-  .project-content[id="01-mdg-ex"] ul li:nth-of-type(8) {
     margin-bottom: 0;
+  }
+  .project-content[id="sota-la-paraula"] ul li:nth-of-type(7) .wrapper li:nth-of-type(1) {
+    padding-right: 4px;
     padding-bottom: 4px;
   }
-  .project-content[id="01-mdg-ex"] ul li:nth-of-type(7) img,
-  .project-content[id="01-mdg-ex"] ul li:nth-of-type(8) img {
+  .project-content[id="sota-la-paraula"] ul li:nth-of-type(7) .wrapper li:nth-of-type(2) {
     padding-bottom: 4px;
+    padding-left: 4px;
   }
-  .project-content[id="01-mdg-ex"] ul li:nth-of-type(9) img,
-  .project-content[id="01-mdg-ex"] ul li:nth-of-type(10) img {
+  .project-content[id="sota-la-paraula"] ul li:nth-of-type(7) .wrapper li:nth-of-type(3) {
     padding-top: 4px;
-  }
-  .project-content[id="01-mdg-ex"] ul li:nth-of-type(7) img,
-  .project-content[id="01-mdg-ex"] ul li:nth-of-type(9) img {
     padding-right: 4px;
   }
-  .project-content[id="01-mdg-ex"] ul li:nth-of-type(8) img,
-  .project-content[id="01-mdg-ex"] ul li:nth-of-type(10) img {
+  .project-content[id="sota-la-paraula"] ul li:nth-of-type(7) .wrapper li:nth-of-type(4) {
+    padding-top: 4px;
     padding-left: 4px;
   }
 }
@@ -3309,7 +3323,6 @@ body.es .navbar-collapse ul li:nth-of-type(4) a abbr {
   div.summer .project-content .project-excerpt button:before {
     font-family: BrixSans;
     visibility: visible;
-    content: "Esc [Back]";
     font-size: 12px;
     height: auto;
     width: 25%;
@@ -3373,7 +3386,6 @@ body.es .navbar-collapse ul li:nth-of-type(4) a abbr {
     padding: 0;
     padding-bottom: 45px;
     text-align: center;
-    text-transform: uppercase;
     width: 1120px;
   }
   div.summer .project-content a.scroll-to-top:before {
@@ -3594,8 +3606,9 @@ body.es .navbar-collapse ul li:nth-of-type(4) a abbr {
     left: 0;
   }
   html body div.winter footer small {
+    font-family: BrixSlab;
     display: block;
-    font-size: 0.5em;
+    font-size: 14px;
     text-align: center;
   }
   .container-fluid .row:nth-of-type(4) .col-xs-12:nth-of-type(1) div.autumn {

@@ -205,7 +205,6 @@ div.summer {
       padding: 0;
       padding-bottom: 35px / 1.5;
       text-align: center;
-      text-transform: uppercase;
 
       &:hover {
         opacity: 1 !important;
@@ -284,6 +283,8 @@ div.summer {
                -moz-transform-style: preserve-3d;
                     transform-style: preserve-3d;
 
+            z-index: 999999999;
+
             h1 {
               .show;
               float: left;
@@ -293,7 +294,6 @@ div.summer {
               a {
                 .show;
                 border: none;
-                cursor: default;
 
                 &:hover {
                   opacity: 1;
@@ -343,6 +343,7 @@ div.summer {
           .navbar-collapse {
             border: none;
             padding-right: 0; padding-left: 0;
+            z-index: 88888888;
 
             ul {
               margin: 0;
@@ -530,8 +531,9 @@ div.summer {
           bottom: 0; left: 0;
 
           small {
+            .BrixSlab; .normal;
             .show;
-            font-size: 0.5em;
+            font-size: 10px;
             text-align: center;
           }
         }
@@ -769,42 +771,39 @@ body.es .navbar-collapse ul li {
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
 
-.project-content[id="14-io-ic"] ul li:nth-of-type(1) {
+.project-content[id="our-identity"] ul li:nth-of-type(1) {
   background-color: #fafafa;
 }
 
-.project-content[id="01-mdg-ex"] ul li:nth-of-type(7),
-.project-content[id="01-mdg-ex"] ul li:nth-of-type(8),
-.project-content[id="01-mdg-ex"] ul li:nth-of-type(9),
-.project-content[id="01-mdg-ex"] ul li:nth-of-type(10) {
-  float: left;
-  height: auto; width: 50% !important;
-}
+.project-content[id="sota-la-paraula"] ul li:nth-of-type(7) {
 
-.project-content[id="01-mdg-ex"] ul li:nth-of-type(7),
-.project-content[id="01-mdg-ex"] ul li:nth-of-type(8) {
-  margin-bottom: 0;
-  padding-bottom: 4px;
-}
+  .wrapper {
+    .clearfix;
+    margin: 0;
+    padding: 0;
 
-.project-content[id="01-mdg-ex"] ul li:nth-of-type(7) img,
-.project-content[id="01-mdg-ex"] ul li:nth-of-type(8) img {
-  padding-bottom: 4px;
-}
+    li {
+      float: left;
+      height: auto; width: 50%;
+      margin-bottom: 0;
 
-.project-content[id="01-mdg-ex"] ul li:nth-of-type(9) img,
-.project-content[id="01-mdg-ex"] ul li:nth-of-type(10) img {
-  padding-top: 4px;
-}
+      &:nth-of-type(1) {
+        padding-right: 4px; padding-bottom: 4px;
+      }
 
-.project-content[id="01-mdg-ex"] ul li:nth-of-type(7) img,
-.project-content[id="01-mdg-ex"] ul li:nth-of-type(9) img {
-  padding-right: 4px;
-}
+      &:nth-of-type(2) {
+        padding-bottom: 4px; padding-left: 4px;
+      }
 
-.project-content[id="01-mdg-ex"] ul li:nth-of-type(8) img,
-.project-content[id="01-mdg-ex"] ul li:nth-of-type(10) img {
-  padding-left: 4px;
+      &:nth-of-type(3) {
+        padding-top: 4px; padding-right: 4px;
+      }
+
+      &:nth-of-type(4) {
+        padding-top: 4px; padding-left: 4px;
+      }
+    }
+  }
 }
 
 ////////////////////////////////////////////////////////////////

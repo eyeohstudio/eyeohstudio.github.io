@@ -5,14 +5,6 @@ jQuery(document).ready(function ($) {
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
 
-  var projectThumbnailHeight = $('.summer .container-fluid .row:nth-of-type(1)').outerHeight();
-  var springHeight = $('body > .container-fluid > .row:nth-of-type(2)').outerHeight();
-
-////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////
-
   function projectControl() {
 
     var windowHeight = $(window).innerHeight();
@@ -66,6 +58,11 @@ jQuery(document).ready(function ($) {
       $('#' + nextProjectName).removeClass('hide invisble').addClass('show visible').attr('aria-expanded', 'true');
     });
   };
+	
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
 
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
@@ -73,6 +70,7 @@ jQuery(document).ready(function ($) {
 ////////////////////////////////////////////////////////////////
 
   function anchorLinkScrollAnimation() {
+		
     $('.navbar-collapse ul li a[href*="#"]:not([href="#"])').click(function() {
       if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
         var target = $(this.hash);
@@ -86,18 +84,19 @@ jQuery(document).ready(function ($) {
       }
     });
   };
-
+	
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
 
-  function scrollToTop() {
-    $('.project-content > a.scroll-to-top').on('click', function(event) {
-      event.preventDefault();
-      $('html, body').stop().animate({scrollTop: 0}, 300);
-    });
-  };
+	function fireHash() {
+		
+		if ( window.location.hash ) {
+			var hash = window.location.hash.slice(1); // get the hash, and strip out the "#"
+			$('.project-thumbnail a[data-project-name="' + hash + '"]').attr('data-project-name', hash).trigger('click');
+		}
+	};
 
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
@@ -105,6 +104,7 @@ jQuery(document).ready(function ($) {
 ////////////////////////////////////////////////////////////////
 
   function hamburgerAnimation() {
+		
     $('.navbar-toggle.collapsed').hover(
       function () {
         $('.navbar-toggle.collapsed svg .top-bread').removeClass('top-bread-out').addClass('top-bread-in');
@@ -114,6 +114,10 @@ jQuery(document).ready(function ($) {
         $('.navbar-toggle.collapsed svg .bottom-bread').removeClass('bottom-bread-in').addClass('bottom-bread-out');
       }
     );
+		
+		////////////////////////////////////////////////////////////////
+  	////////////////////////////////////////////////////////////////
+		
     $('.navbar-toggle.collapsed').click(
       function () {
         $('.navbar-toggle.collapsed svg .top-bread').removeClass('top-bread-in').addClass('top-bread-out');
@@ -121,6 +125,29 @@ jQuery(document).ready(function ($) {
       }
     );
   };
+	
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+
+function hashStuff() {
+
+  $('.project-thumbnail a').click(function(e){
+    e.preventDefault();
+    var slug = $(this).attr('data-project-name');
+    window.location.hash = slug;
+  })
+
+  ////////////////////////////////////////////////////////////////
+  ////////////////////////////////////////////////////////////////
+
+  $('.project-content .project-excerpt button').click(function(e){
+    e.preventDefault();
+    window.location.hash = ''; // for older browsers, leaves the '#' behind
+    history.pushState('', document.title, window.location.pathname); // nice and clean
+  })
+};
 
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
@@ -128,12 +155,16 @@ jQuery(document).ready(function ($) {
 ////////////////////////////////////////////////////////////////
 
   function langToggle() {
+		
     $('.language-change-ca a').click(function() {
       $('html').attr('xml:lang', 'ca').attr('lang', 'ca');
       $('body').removeClass('en').addClass('ca');
       $('body').removeClass('es').addClass('ca');
       return false;
     });
+		
+		////////////////////////////////////////////////////////////////
+  	////////////////////////////////////////////////////////////////
 
     $('.language-change-en a').click(function() {
       $('html').attr('xml:lang', 'en').attr('lang', 'en');
@@ -141,6 +172,9 @@ jQuery(document).ready(function ($) {
       $('body').removeClass('es').addClass('en');
       return false;
     });
+		
+		////////////////////////////////////////////////////////////////
+  	////////////////////////////////////////////////////////////////
 
     $('.language-change-es a').click(function() {
       $('html').attr('xml:lang', 'es').attr('lang', 'es');
@@ -156,10 +190,17 @@ jQuery(document).ready(function ($) {
 ////////////////////////////////////////////////////////////////
 
   function mapKeyboardChars() {
+		
     $('.project-excerpt button').mapKey('esc', {trigger: 'click'});
     $('.left-project-control').mapKey('left', {trigger: 'click'});
     $('.right-project-control').mapKey('right', {trigger: 'click'});
     $('.scroll-to-top').mapKey('up', {trigger: 'click'});
+    $('.language-change-ca a').mapKey('lang_ca', {trigger: 'click'});
+    $('.language-change-en a').mapKey('lang_en', {trigger: 'click'});
+    $('.language-change-es a').mapKey('lang_es', {trigger: 'click'});
+    $('.nav li:nth-of-type(1) a').mapKey('p', {trigger: 'click'});
+    $('.nav li:nth-of-type(1) a').mapKey('w', {trigger: 'click'});
+    $('.nav li:nth-of-type(2) a').mapKey('c', {trigger: 'click'});
   };
 
 ////////////////////////////////////////////////////////////////
@@ -168,6 +209,7 @@ jQuery(document).ready(function ($) {
 ////////////////////////////////////////////////////////////////
 
   function projectStuff() {
+		
     var projectThumbnailHeight = $('.summer .container-fluid .row:nth-of-type(1)').outerHeight();
     var springHeight = $('body > .container-fluid > .row:nth-of-type(2)').outerHeight();
 
@@ -187,9 +229,11 @@ jQuery(document).ready(function ($) {
     ////////////////////////////////////////////////////////////////
 
     $('.project-thumbnail a').click(function(event) {
+			
       event.preventDefault();
-
       var projectName = $(this).attr('data-project-name');
+			
+			////////////////////////////////////////////////////////////////
 
       $('.summer .container-fluid .row:nth-of-type(2)').removeClass('invisible').addClass('visible').queue(function(next) {
         $(this).stop().animate({'margin-top': '0' - springHeight}, 400);
@@ -197,18 +241,31 @@ jQuery(document).ready(function ($) {
         $('.summer .container-fluid .row:nth-of-type(1)').removeClass('visible').addClass('invisible');
         next();
       });
+			
+			////////////////////////////////////////////////////////////////
+			
       return false;
     });
+		
+		////////////////////////////////////////////////////////////////
+  	////////////////////////////////////////////////////////////////
 
     $('.project-content .project-excerpt button').click(function(event) {
+			
       event.preventDefault();
       var projectName = $('.project-content[aria-expanded="true"]').attr('id');
+			
+			////////////////////////////////////////////////////////////////
+			
       $('.summer .container-fluid .row:nth-of-type(1)').removeClass('invisible').addClass('visible');
       $('.summer .container-fluid .row:nth-of-type(2)').animate({'margin-top': projectThumbnailHeight}, 400).queue(function(next) {
         $('#' + projectName).removeClass('show').addClass('hide').attr('aria-expanded', 'false');
         $(this).stop().removeClass('visible').addClass('invisible');
         next();
       });
+			
+			////////////////////////////////////////////////////////////////
+			
       return false;
     });
 
@@ -221,6 +278,10 @@ jQuery(document).ready(function ($) {
       var valueHeight = Math.round((valueWidth/16)*9);
       $('iframe[src^="//player.vimeo.com"], object, embed').css({ 'min-height': valueHeight + 'px', 'min-width': valueWidth + 'px' });
     }
+		
+		////////////////////////////////////////////////////////////////
+  	////////////////////////////////////////////////////////////////
+		
     if ($('html').hasClass('larger-than-six-hundred-forty')){
       var valueWidth = $('header').innerWidth();
       valueWidth *= 1;
@@ -239,6 +300,7 @@ jQuery(document).ready(function ($) {
 ////////////////////////////////////////////////////////////////
 
   function randomCity() {
+		
     var city01 = new Array('Fons de Bikini', 'Bikini Bottom', 'Fondo de Bikini')
     var city02 = new Array('Coruscant', 'Coruscant', 'Coruscant')
     var city03 = new Array('Ciutat Maragda','Emerald City','Ciudad Esmeralda')
@@ -269,6 +331,7 @@ jQuery(document).ready(function ($) {
 ////////////////////////////////////////////////////////////////
 
   function randomWhat() {
+		
     var what01 = new Array('imaginatiu', 'imaginative', 'e imaginativo')
     var what02 = new Array('innovador', 'innovative', 'e innovador')
     var what03 = new Array('poc convencional', 'unconventional', 'y poco convencional')
@@ -282,6 +345,19 @@ jQuery(document).ready(function ($) {
     $('.randomWhatEn').text(randomWhat[1]);
     $('.randomWhatEs').text(randomWhat[2]);
   };
+	
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+
+  function scrollToTop() {
+		
+    $('.project-content > a.scroll-to-top').on('click', function(event) {
+      event.preventDefault();
+      $('html, body').stop().animate({scrollTop: 0}, 300);
+    });
+  };
 
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
@@ -289,6 +365,7 @@ jQuery(document).ready(function ($) {
 ////////////////////////////////////////////////////////////////
 
   function setWinterHeight() {
+		
     windowHeight = $(window).innerHeight();
     $('.winter').css('min-height', windowHeight);
   };
@@ -299,6 +376,7 @@ jQuery(document).ready(function ($) {
 ////////////////////////////////////////////////////////////////
 
   function sixHundredFortyListerner() {
+		
     if ($(window).width() < 640) {
       return $('html').removeClass('larger-than-six-hundred-forty').addClass('smaller-than-six-hundred-forty');
     }
@@ -311,6 +389,7 @@ jQuery(document).ready(function ($) {
 ////////////////////////////////////////////////////////////////
 
   function tooltipToggle() {
+		
     if (!('ontouchstart' in window)) {
       $('[data-toggle="tooltip"]').tooltip()
     }
@@ -322,6 +401,7 @@ jQuery(document).ready(function ($) {
 ////////////////////////////////////////////////////////////////
 
   function vimeoWhatever() {
+		
     var $allVideos = $('iframe[src^="//player.vimeo.com"], object, embed'),
         $fluidEl = $('figure');
     $allVideos.each(function() {
@@ -332,6 +412,7 @@ jQuery(document).ready(function ($) {
     ////////////////////////////////////////////////////////////////
 
     function vimeoWhateverResponsive() {
+			
       var newWidth = $fluidEl.width();
       $allVideos.each(function() {
         var $el = $(this);
@@ -347,13 +428,14 @@ jQuery(document).ready(function ($) {
 ////////////////////////////////////////////////////////////////
 
   anchorLinkScrollAnimation();
-  scrollToTop();
   hamburgerAnimation();
+  hashStuff();
   langToggle();
   mapKeyboardChars();
   randomCity();
   randomWhat();
   setWinterHeight();
+  scrollToTop();
   sixHundredFortyListerner();
   tooltipToggle();
   vimeoWhatever();
@@ -364,8 +446,17 @@ jQuery(document).ready(function ($) {
 ////////////////////////////////////////////////////////////////
 
   $(window).load(function() {
-    projectStuff();
-    $('body').removeClass('invisible').addClass('visible');
+
+    makeImagesResponsive(); // responsive-img.min.js
+
+    ////////////////////////////////////////////////////////////////
+    ////////////////////////////////////////////////////////////////
+
+    setTimeout(function() {
+      projectStuff();
+			fireHash();
+      $('body').removeClass('invisible').addClass('visible');
+    }, 300);
   });
 
 ////////////////////////////////////////////////////////////////
@@ -374,6 +465,11 @@ jQuery(document).ready(function ($) {
 ////////////////////////////////////////////////////////////////
 
   $(window).resize(function() {
+
+    makeImagesResponsive(); // responsive-img.min.js
+
+    ////////////////////////////////////////////////////////////////
+    ////////////////////////////////////////////////////////////////
 
     var projectThumbnailHeight = $('.summer .container-fluid .row:nth-of-type(1)').outerHeight();
     var springHeight = $('body > .container-fluid > .row:nth-of-type(2)').outerHeight();
@@ -434,6 +530,9 @@ jQuery(document).ready(function ($) {
         $(this).stop().removeClass('visible').addClass('invisible');
         next();
       });
+			
+			////////////////////////////////////////////////////////////////
+			
       return false;
     });
   };
@@ -444,7 +543,9 @@ jQuery(document).ready(function ($) {
 ////////////////////////////////////////////////////////////////
 
   $('.language-change a').on('click', function() {
+		
     projectStuff();
+		
   });
 
   ////////////////////////////////////////////////////////////////
@@ -479,6 +580,9 @@ jQuery(document).ready(function ($) {
       $(this).stop().removeClass('visible').addClass('invisible');
       next();
     });
+		
+		////////////////////////////////////////////////////////////////
+		
     return false;
   });
 
@@ -491,6 +595,15 @@ jQuery(document).ready(function ($) {
 //      projectControlButtons();
 //
 //  });
+
+  ////////////////////////////////////////////////////////////////
+  ////////////////////////////////////////////////////////////////
+
+  $('.project-thumbnail.sota-la-paraula a').on('click', function() {
+
+    $('#sota-la-paraula > ul > li').slice(6,10).wrapAll('<li><ul class="wrapper" />');
+
+  });
 
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////

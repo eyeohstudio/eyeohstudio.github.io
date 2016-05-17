@@ -39,7 +39,6 @@
           &:before {
             .BrixSans; .normal;
             .visible;
-            content:  "Esc [Back]";
             font-size: 12px;
             height: auto; width: 25%;
             line-height: 4.5em;
@@ -100,7 +99,6 @@
         padding: 0;
         padding-bottom: 45px;
         text-align: center;
-        text-transform: uppercase;
 
         &:before {
           content: attr(data-button-label);
@@ -334,8 +332,9 @@
           bottom: 0; left: 0;
 
           small {
+            .BrixSlab; .normal;
             .show;
-            font-size: 0.5em;
+            font-size: 14px;
             text-align: center;
           }
         }

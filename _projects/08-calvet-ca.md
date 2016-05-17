@@ -18,6 +18,8 @@ excerptEs: Catálogo editado con motivo de la exposición "Francesc Calvet, Fins
 
 featured_image: calvet-ca-00t
 
+slug: calvet-catalogue
+
 ---
 
 * ![Francesc Calvet Cover]({{ site.url }}/images/calvet-ca-01.jpg)
