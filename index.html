@@ -105,7 +105,7 @@ layout: default
                 <p lang="en">{{ project.excerptEn | markdownify | remove: '<p>' | remove: '</p>' }}</p>
                 <p lang="es">{{ project.excerptEs | markdownify | remove: '<p>' | remove: '</p>' }}</p>
               </div>
-              <div class="project-control hide">
+              <div class="project-control">
                 <div class="wrapper">
                   {% if project.previous.titleCa %}
                     <a class="left-project-control" rel="previous" role="button" data-project-name="{{ project.previous.slug }}">

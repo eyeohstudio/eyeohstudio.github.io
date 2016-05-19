@@ -1790,11 +1790,18 @@ body.es .navbar-collapse ul li:nth-of-type(4) a abbr {
     margin-left: 25%;
   }
   div.summer .project-content .project-control {
-    display: none;
+    display: block;
     width: 100%;
     position: absolute;
   }
   div.summer .project-content .project-control .wrapper {
+    -webkit-transform: translate3d(0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    -webkit-perspective: 1000;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
     height: auto;
     margin: 0 auto;
     position: relative;
@@ -1814,7 +1821,7 @@ body.es .navbar-collapse ul li:nth-of-type(4) a abbr {
     text-align: right;
     text-transform: uppercase;
     white-space: nowrap;
-    writing-mode: tb-rl;
+    writing-mode: vertical-lr;
     -webkit-transform: rotate(-180deg);
     -moz-transform: rotate(-180deg);
     -ms-transform: rotate(-180deg);
@@ -1828,13 +1835,13 @@ body.es .navbar-collapse ul li:nth-of-type(4) a abbr {
     float: left;
   }
   div.summer .project-content .project-control .wrapper a.left-project-control:after {
-    content: " [↑]";
+    content: " [ ↑ ]";
   }
   div.summer .project-content .project-control .wrapper a.right-project-control {
     float: right;
   }
   div.summer .project-content .project-control .wrapper a.right-project-control:after {
-    content: " [↓]";
+    content: " [ ↓ ]";
   }
   div.summer .project-content ul {
     margin: 0;
@@ -2610,6 +2617,72 @@ body.es .navbar-collapse ul li:nth-of-type(4) a abbr {
     margin: 0;
     margin-right: 5%;
     margin-left: 25%;
+  }
+  div.summer .project-content .project-control {
+    display: block;
+    width: 100%;
+    position: absolute;
+  }
+  div.summer .project-content .project-control .wrapper {
+    -webkit-transform: translate3d(0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    -webkit-perspective: 1000;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    height: auto;
+    margin: 0 auto;
+    position: relative;
+  }
+  div.summer .project-content .project-control .wrapper:before,
+  div.summer .project-content .project-control .wrapper:after {
+    content: " ";
+    display: table;
+  }
+  div.summer .project-content .project-control .wrapper:after {
+    clear: both;
+  }
+  div.summer .project-content .project-control .wrapper a {
+    font-family: BrixSans;
+    border-bottom: none;
+    font-size: 12px;
+    padding: 0 30px;
+    text-align: right;
+    text-transform: uppercase;
+    white-space: normal;
+    writing-mode: horizontal-tb;
+    -webkit-transform: rotate(0);
+    -moz-transform: rotate(0);
+    -ms-transform: rotate(0);
+    -o-transform: rotate(0);
+    transform: rotate(0);
+  }
+  div.summer .project-content .project-control .wrapper a:hover {
+    opacity: 1;
+  }
+  div.summer .project-content .project-control .wrapper a.left-project-control {
+    float: left;
+    text-align: right;
+  }
+  div.summer .project-content .project-control .wrapper a.left-project-control:after {
+    display: none;
+  }
+  div.summer .project-content .project-control .wrapper a.left-project-control:before {
+    display: block;
+    content: " [ ← ]";
+  }
+  div.summer .project-content .project-control .wrapper a.right-project-control {
+    float: right;
+    margin-right: 0;
+    text-align: left;
+  }
+  div.summer .project-content .project-control .wrapper a.right-project-control:after {
+    display: none;
+  }
+  div.summer .project-content .project-control .wrapper a.right-project-control:before {
+    display: block;
+    content: " [ → ]";
   }
   div.summer .project-content ul {
     margin: 0 auto;
