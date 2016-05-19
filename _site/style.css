@@ -1,9 +1,18 @@
-/*
-Twinkle, twinkle little bat
-How I wonder what you're at!
-Up above the world you fly,
-Like a tea-tray in the sky.
-*/
-
 @import url('styles/bootstrap.min.css');
+@import url('styles/syntax.css');
 @import url('styles/main.css');
+
+/*
+ * For the Snark was a Boojum, you see. */
+
+.boojum {
+  background-image: url('../objects/W&0422.svg');
+  background-position: left bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.no-svg
+#boojum {
+  background-image: url('../images/W&0422.png'); /* fallback */
+}

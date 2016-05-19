@@ -1,9 +1,9 @@
 # Permalinks
-permalink:        none
+permalink:        pretty
 
 # Setup
 title:            I/O studio
-url:              http://127.0.0.1:4000
+url:              http://localhost
 
 author:
   name:           'Eye Oh Design Studio, SL'
@@ -14,10 +14,3 @@ version:          0.0.0
 
 github:
   repo:           https://github.com/eyeohstudio/eyeohstudio.github.io
-
-# Collections
-collections:
-  projects:
-    output: true
-    values:
-      layout: project

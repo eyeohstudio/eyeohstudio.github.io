@@ -9,13 +9,17 @@
   "private": true,
   "ignore": [
     "**/.*",
-    "_bower_components"
+    "node_modules",
+    "_bower_components",
+    "test",
+    "tests",
+    "bower_components"
   ],
   "dependencies": {
-    "bootstrap": "^3.3.6",
-    "Snap.svg": "snap.svg#^0.4.1",
-    "velocity": "julianshapiro/velocity#^1.2.3",
-    "responsive-images.js": "kvendrik/responsive-images.js#^1.0.0",
-    "mapkey": "pixelmatrix/mapkey"
+    "bootstrap": "~3.3.4",
+    "jquery": "~2.1.3",
+    "poole": "poole/poole#~1.1.0",
+    "hyde": "poole/hyde#~2.0.0",
+    "Modernizr": "Modernizr/Modernizr#~2.8.3"
   }
 }
