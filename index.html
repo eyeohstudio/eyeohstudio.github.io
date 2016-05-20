@@ -108,14 +108,14 @@ layout: default
               <div class="project-control">
                 <div class="wrapper">
                   {% if project.previous.titleCa %}
-                    <a class="left-project-control" rel="previous" role="button" data-project-name="{{ project.previous.slug }}">
+                    <a href="#{{ project.previous.slug }}" class="left-project-control" rel="previous" role="button" data-project-name="{{ project.previous.slug }}">
                       <span lang="ca">{{ project.previous.titleCa }}</span>
                       <span lang="en">{{ project.previous.titleEn }}</span>
                       <span lang="es">{{ project.previous.titleEs }}</span>
                     </a>
                   {% endif %}
                   {% if project.next.titleCa %}
-                    <a class="right-project-control" rel="next" role="button" data-project-name="{{ project.next.slug }}">
+                    <a href="#{{ project.next.slug }}" class="right-project-control" rel="next" role="button" data-project-name="{{ project.next.slug }}">
                       <span lang="ca">{{ project.next.titleCa }}</span>
                       <span lang="en">{{ project.next.titleEn }}</span>
                       <span lang="es">{{ project.next.titleEs }}</span>
