@@ -5,121 +5,6 @@ jQuery(document).ready(function ($) {
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
 
-  function projectControl() {
-
-    var windowHeight = $(window).outerHeight(true);
-    var headerHeight = $('header').outerHeight(true);
-    var projectExcerptHeight = $('.project-content[aria-expanded="true"] > .project-excerpt').outerHeight(true);
-    var projectContentVisibleAreaHeight = windowHeight - (headerHeight + projectExcerptHeight)
-    var projectFirstFigureWidth = $('.project-content[aria-expanded="true"] > ul > li:nth-of-type(1)').width();
-
-    $('.project-content[aria-expanded="true"] > .project-control').css({
-      'height': projectContentVisibleAreaHeight,
-      'top': projectExcerptHeight
-    });
-
-    $('.project-content[aria-expanded="true"] > .project-control > .wrapper').css({
-      'width': projectFirstFigureWidth,
-    });
-  };
-
-////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////
-
-  function projectControlButtons() {
-
-    var wrapperWidthTrue = $('.project-content[aria-expanded="true"] > .project-control > .wrapper').outerWidth(true);
-    var wrapperWidth = $('.project-content[aria-expanded="true"] > .project-control > .wrapper').innerWidth();
-    var wrapperMargin = (wrapperWidthTrue - wrapperWidth) / 3;
-
-    $('.smaller-than-one-thousand-one-hundred-fifteen .project-content[aria-expanded="true"] > .project-control > .wrapper > .left-project-control').css({
-      'width': 'auto',
-      'margin-left': -wrapperMargin
-    });
-    $('.smaller-than-one-thousand-one-hundred-fifteen .project-content[aria-expanded="true"] > .project-control > .wrapper > .right-project-control').css({
-      'width': 'auto',
-      'margin-right': -wrapperMargin
-    });
-
-    $('.larger-than-one-thousand-one-hundred-fifteen .project-content[aria-expanded="true"] > .project-control > .wrapper > .left-project-control').css({
-      'width': (wrapperWidthTrue - wrapperWidth) / 2,
-      'margin-left': -(wrapperWidthTrue - wrapperWidth) / 2
-    });
-    $('.larger-than-one-thousand-one-hundred-fifteen .project-content[aria-expanded="true"] > .project-control > .wrapper > .right-project-control').css({
-      'width': (wrapperWidthTrue - wrapperWidth) / 2,
-      'margin-right': -(wrapperWidthTrue - wrapperWidth) / 2
-    });
-  };
-
-////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////
-
-  function projectControlClick() {
-
-    $('.project-control a.right-project-control').click(function () {
-
-      var nextProject = $(this).attr('href');
-      var $curr = $('.project-content[aria-expanded="true"]');
-      var $next = $(nextProject);
-
-      $curr.removeClass('show visible').addClass('hide invisible').attr('aria-expanded', 'false');
-      $next.removeClass('hide invisble').addClass('show visible').attr('aria-expanded', 'true');
-    });
-
-    $('.project-control a.left-project-control').click(function () {
-
-      var previousProject = $(this).attr('href');
-      var $curr = $('.project-content[aria-expanded="true"]');
-      var $previous = $(previousProject);
-
-      $curr.removeClass('show visible').addClass('hide invisible').attr('aria-expanded', 'false');
-      $previous.removeClass('hide invisble').addClass('show visible').attr('aria-expanded', 'true');
-    });
-
-//    var currentProject = $('.project-content[aria-expanded="true"]');
-//    var previousProject = currentProject.prev();
-//    var nextProject = currentProject.next();
-//
-//    $('.project-control a:nth-of-type(1)').click(function() {
-//      $('.project-content[aria-expanded="true"]').removeClass('show visible').addClass('hide invisible').attr('aria-expanded', 'false');
-//      $(previousProject).removeClass('hide invisble').addClass('show visible').attr('aria-expanded', 'true');
-//      return false;
-//    });
-//
-//    $('.project-control a:nth-of-type(2)').click(function() {
-//      $('.project-content[aria-expanded="true"]').removeClass('show visible').addClass('hide invisible').attr('aria-expanded', 'false');
-//      $(nextProjectName).removeClass('hide invisble').addClass('show visible').attr('aria-expanded', 'true');
-//      return false;
-//    });
-
-//    $('.project-control a.left-project-control').click(function () {
-//      var $curr = $('.project-content[aria-expanded="true"]'),
-//          $prev = ($curr.prev().length) ? $curr.prev() : $curr;
-//
-//     $curr.removeClass('show visible').addClass('hide invisible').attr('aria-expanded', 'false');
-//     $prev.removeClass('hide invisble').addClass('show visible').attr('aria-expanded', 'true');
-//    });
-//
-//    $('.project-control a.right-project-control').click(function () {
-//
-//     var $curr = $('.project-content[aria-expanded="true"]'),
-//         $next = ($curr.next().length) ? $curr.next() : $curr;
-//
-//     $curr.removeClass('show visible').addClass('hide invisible').attr('aria-expanded', 'false');
-//     $next.removeClass('hide invisble').addClass('show visible').attr('aria-expanded', 'true');
-//   });
-
-  };
-
-////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////
-
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
@@ -250,6 +135,9 @@ function hashStuff() {
     var siteUrl = document.domain + ':4000';
     $('.project-content[aria-expanded="true"] ul li img').attr('data-src-base', 'http://' + siteUrl + '/images/temp/');
 
+    ////////////////////////////////////////////////////////////////
+    ////////////////////////////////////////////////////////////////
+
     $('.project-content[aria-expanded="true"] ul li img').each(function() {
 
       var fileFullname = $(this).attr('src').split('/')[4];
@@ -265,7 +153,6 @@ function hashStuff() {
 
       $(this).attr('data-src', '<320:' + newFileFullname320 + ', <480:' + newFileFullname480 + ', <640:' + newFileFullname640 + ', <800:' + newFileFullname800 + ', <1024:' + newFileFullname1024 + ', >1024:' + newFileFullname1120);
     });
-
   };
 
 ////////////////////////////////////////////////////////////////
@@ -305,13 +192,117 @@ function hashStuff() {
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
 
+  function projectControl() {
+
+    var windowHeight = $(window).outerHeight(true);
+    var headerHeight = $('header').outerHeight(true);
+    var projectExcerptHeight = $('.project-content[aria-expanded="true"] > .project-excerpt').outerHeight(true);
+    var projectContentVisibleAreaHeight = windowHeight - (headerHeight + projectExcerptHeight)
+    var projectFirstFigureWidth = $('.project-content[aria-expanded="true"] > ul > li:nth-of-type(1)').width();
+
+    $('.project-content[aria-expanded="true"] > .project-control').css({
+      'height': projectContentVisibleAreaHeight,
+      'top': projectExcerptHeight
+    });
+
+    $('.project-content[aria-expanded="true"] > .project-control > .wrapper').css({
+      'width': projectFirstFigureWidth,
+    });
+  };
+
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+
+  function projectControlButtons() {
+
+    var wrapperWidthTrue = $('.project-content[aria-expanded="true"] > .project-control > .wrapper').outerWidth(true);
+    var wrapperWidth = $('.project-content[aria-expanded="true"] > .project-control > .wrapper').innerWidth();
+    var wrapperMargin = (wrapperWidthTrue - wrapperWidth) / 3;
+
+    $('.smaller-than-one-thousand-one-hundred-fifteen .project-content[aria-expanded="true"] > .project-control > .wrapper > .left-project-control').css({
+      'width': 'auto',
+      'margin-left': -wrapperMargin
+    });
+    $('.smaller-than-one-thousand-one-hundred-fifteen .project-content[aria-expanded="true"] > .project-control > .wrapper > .right-project-control').css({
+      'width': 'auto',
+      'margin-right': -wrapperMargin
+    });
+    $('.larger-than-one-thousand-one-hundred-fifteen .project-content[aria-expanded="true"] > .project-control > .wrapper > .left-project-control').css({
+      'width': (wrapperWidthTrue - wrapperWidth) / 2,
+      'margin-left': -(wrapperWidthTrue - wrapperWidth) / 2
+    });
+    $('.larger-than-one-thousand-one-hundred-fifteen .project-content[aria-expanded="true"] > .project-control > .wrapper > .right-project-control').css({
+      'width': (wrapperWidthTrue - wrapperWidth) / 2,
+      'margin-right': -(wrapperWidthTrue - wrapperWidth) / 2
+    });
+  };
+
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+
+  function projectControlClick() {
+
+    $('.project-control a.right-project-control').click(function () {
+
+      $('.project-content ul li img').each(function() {
+
+        var src1stPart = $(this).attr('src').split('_')[0];
+        var src2ndPart = $(this).attr('src').split('_')[1];
+        var fileName = src1stPart.replace('/temp', '');
+        var fileExtension = src2ndPart.substr(src2ndPart.length - 4);
+
+        $(this).attr('src', fileName + fileExtension);
+      });
+
+      ////////////////////////////////////////////////////////////////
+
+      var nextProject = $(this).attr('href');
+      var $curr = $('.project-content[aria-expanded="true"]');
+      var $next = $(nextProject);
+
+      $curr.removeClass('show visible').addClass('hide invisible').attr('aria-expanded', 'false');
+      $next.removeClass('hide invisble').addClass('show visible').attr('aria-expanded', 'true');
+    });
+
+    ////////////////////////////////////////////////////////////////
+    ////////////////////////////////////////////////////////////////
+
+    $('.project-control a.left-project-control').click(function () {
+
+      $('.project-content ul li img').each(function() {
+
+        var src1stPart = $(this).attr('src').split('_')[0];
+        var src2ndPart = $(this).attr('src').split('_')[1];
+        var fileName = src1stPart.replace('/temp', '');
+        var fileExtension = src2ndPart.substr(src2ndPart.length - 4);
+
+        $(this).attr('src', fileName + fileExtension);
+      });
+
+      ////////////////////////////////////////////////////////////////
+
+      var previousProject = $(this).attr('href');
+      var $curr = $('.project-content[aria-expanded="true"]');
+      var $previous = $(previousProject);
+
+      $curr.removeClass('show visible').addClass('hide invisible').attr('aria-expanded', 'false');
+      $previous.removeClass('hide invisble').addClass('show visible').attr('aria-expanded', 'true');
+    });
+  };
+
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+
   function projectStuff() {
 
     var projectThumbnailHeight = $('.summer .container-fluid .row:nth-of-type(1)').outerHeight();
     var springHeight = $('body > .container-fluid > .row:nth-of-type(2)').outerHeight();
-
-    ////////////////////////////////////////////////////////////////
-    ////////////////////////////////////////////////////////////////
 
     if ($('.summer .container-fluid .row:nth-of-type(2)').hasClass('invisible')){
       $('.summer .container-fluid .row:nth-of-type(2)').css('margin-top', projectThumbnailHeight);
@@ -329,8 +320,6 @@ function hashStuff() {
 
       event.preventDefault();
       var projectName = $(this).attr('data-project-name');
-
-      ////////////////////////////////////////////////////////////////
 
       $('.summer .container-fluid .row:nth-of-type(2)').removeClass('invisible').addClass('visible').queue(function(next) {
         $(this).stop().animate({'margin-top': '0' - springHeight}, 400);
@@ -351,8 +340,6 @@ function hashStuff() {
 
       event.preventDefault();
       var projectName = $('.project-content[aria-expanded="true"]').attr('id');
-
-      ////////////////////////////////////////////////////////////////
 
       $('.summer .container-fluid .row:nth-of-type(1)').removeClass('invisible').addClass('visible');
       $('.summer .container-fluid .row:nth-of-type(2)').animate({'margin-top': projectThumbnailHeight}, 400).queue(function(next) {
@@ -524,6 +511,11 @@ function hashStuff() {
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
 
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+
   anchorLinkScrollAnimation();
   hamburgerAnimation();
   hashStuff();
@@ -572,9 +564,6 @@ function hashStuff() {
     var projectThumbnailHeight = $('.summer .container-fluid .row:nth-of-type(1)').outerHeight();
     var springHeight = $('body > .container-fluid > .row:nth-of-type(2)').outerHeight();
 
-    ////////////////////////////////////////////////////////////////
-    ////////////////////////////////////////////////////////////////
-
     if ($('.summer .container-fluid .row:nth-of-type(2)').hasClass('invisible')){
       $('.summer .container-fluid .row:nth-of-type(2)').css('margin-top', projectThumbnailHeight);
       $('.summer .container-fluid .row:nth-of-type(1)').removeClass('invisible').addClass('visible');
@@ -614,28 +603,28 @@ function hashStuff() {
     sixHundredFortyListerner();
     vimeoWhatever();
 
-    ////////////////////////////////////////////////////////////////
-
-    $('.project-content .project-excerpt button').click(function() {
-
-      var projectThumbnailHeight = $('.summer .container-fluid .row:nth-of-type(1)').outerHeight();
-      var springHeight = $('body > .container-fluid > .row:nth-of-type(2)').outerHeight();
-
-      ////////////////////////////////////////////////////////////////
-
-      event.preventDefault();
-      var projectName = $('.project-content[aria-expanded="true"]').attr('id');
-      $('.summer .container-fluid .row:nth-of-type(1)').removeClass('invisible').addClass('visible');
-      $('.summer .container-fluid .row:nth-of-type(2)').animate({'margin-top': projectThumbnailHeight}, 400).queue(function(next) {
-        $('#' + projectName).removeClass('show').addClass('hide').attr('aria-expanded', 'false');
-        $(this).stop().removeClass('visible').addClass('invisible');
-        next();
-      });
-
-      ////////////////////////////////////////////////////////////////
-
-      return false;
-    });
+//    ////////////////////////////////////////////////////////////////
+//
+//    $('.project-content .project-excerpt button').click(function() {
+//
+//      var projectThumbnailHeight = $('.summer .container-fluid .row:nth-of-type(1)').outerHeight();
+//      var springHeight = $('body > .container-fluid > .row:nth-of-type(2)').outerHeight();
+//
+//      ////////////////////////////////////////////////////////////////
+//
+//      event.preventDefault();
+//      var projectName = $('.project-content[aria-expanded="true"]').attr('id');
+//      $('.summer .container-fluid .row:nth-of-type(1)').removeClass('invisible').addClass('visible');
+//      $('.summer .container-fluid .row:nth-of-type(2)').animate({'margin-top': projectThumbnailHeight}, 400).queue(function(next) {
+//        $('#' + projectName).removeClass('show').addClass('hide').attr('aria-expanded', 'false');
+//        $(this).stop().removeClass('visible').addClass('invisible');
+//        next();
+//      });
+//
+//      ////////////////////////////////////////////////////////////////
+//
+//      return false;
+//    });
   };
 
 ////////////////////////////////////////////////////////////////
@@ -662,7 +651,6 @@ function hashStuff() {
     setTimeout(function() {
 
       largeImages();
-      makeImagesResponsive(); // responsive-img.min.js
       projectControl();
       projectControlButtons();
       projectControlClick();
@@ -674,8 +662,6 @@ function hashStuff() {
   ////////////////////////////////////////////////////////////////
 
   $('.project-content .project-excerpt button').on('click', function() {
-
-    ////////////////////////////////////////////////////////////////
 
     $('.project-content[aria-expanded="true"] ul li img').each(function() {
 
@@ -691,8 +677,6 @@ function hashStuff() {
 
     var projectThumbnailHeight = $('.summer .container-fluid .row:nth-of-type(1)').outerHeight();
     var springHeight = $('body > .container-fluid > .row:nth-of-type(2)').outerHeight();
-
-    ////////////////////////////////////////////////////////////////
 
     var projectName = $('.project-content[aria-expanded="true"]').attr('id');
     $('.summer .container-fluid .row:nth-of-type(1)').removeClass('invisible').addClass('visible');
@@ -712,19 +696,17 @@ function hashStuff() {
 
   $('.project-control a[role="button"]').on('click', function() {
 
-    ////////////////////////////////////////////////////////////////
-
-    $('.project-content[aria-expanded="true"] ul li img').each(function() {
-
-      var src1stPart = $(this).attr('src').split('_')[0];
-      var src2ndPart = $(this).attr('src').split('_')[1];
-      var fileName = src1stPart.replace('/temp', '');
-      var fileExtension = src2ndPart.substr(src2ndPart.length - 4);
-
-      $(this).attr('src', fileName + fileExtension);
-    });
-
-    ////////////////////////////////////////////////////////////////
+//    $('.project-content[aria-expanded="true"] ul li img').each(function() {
+//
+//      var src1stPart = $(this).attr('src').split('_')[0];
+//      var src2ndPart = $(this).attr('src').split('_')[1];
+//      var fileName = src1stPart.replace('/temp', '');
+//      var fileExtension = src2ndPart.substr(src2ndPart.length - 4);
+//
+//      $(this).attr('src', fileName + fileExtension);
+//    });
+//
+//    ////////////////////////////////////////////////////////////////
 
     var slug = $(this).attr('data-project-name');
     window.location.hash = slug;
@@ -737,11 +719,11 @@ function hashStuff() {
 
     setTimeout(function() {
 
-      makeImagesResponsive(); // responsive-img.min.js
+      //largeImages();
+      //makeImagesResponsive(); // responsive-img.min.js
       projectControl();
       projectControlButtons();
       projectControlClick();
-      largeImages();
 
     }, 300);
 
