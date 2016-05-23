@@ -18,6 +18,8 @@ excerptEs: Desarrollo de la extensión personalizada para la gestión de los cur
 
 featured_image: baa-w-00t
 
+slug: barcelona-academy-of-art
+
 ---
 
 * ![BAA's Home Page]({{ site.url }}/images/baa-w-01.jpg)

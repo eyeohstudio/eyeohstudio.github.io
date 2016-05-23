@@ -17,6 +17,11 @@ excerptEn: Identity for Marring, company focused on planning proposals and roman
 excerptEs: Identidad para Marring, empresa de eventos enfocados a declaraciones de amor. Marca de carácter innovador y sorprendente.
 
 featured_image: marring-ic-00t
+<<<<<<< HEAD
+=======
+
+slug: marring
+>>>>>>> origin/sid
 
 ---
 

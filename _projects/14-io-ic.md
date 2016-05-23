@@ -18,6 +18,8 @@ excerptEs: Identidad múltiple y dinámica que refuerza el carácter multidiscip
 
 featured_image: io-ic-00t
 
+slug: our-identity
+
 ---
 
 * ![I/O Corporate Identity Logo]({{ site.url }}/images/io-ic-01.jpg) ![I/O Corporate Identity Logo]({{ site.url }}/images/io-ic-02.gif)

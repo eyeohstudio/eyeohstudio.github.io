@@ -42,7 +42,6 @@
           &:before {
             .BrixSans; .normal;
             .visible;
-            content:  "Esc [Back]";
             font-size: 12px;
             height: auto; width: 25%;
             line-height: 4.5em;
@@ -106,7 +105,6 @@
         padding: 0;
         padding-bottom: 45px;
         text-align: center;
-        text-transform: uppercase;
         width: 1120px;
 
         &:before {
@@ -346,8 +344,9 @@
           bottom: 0; left: 0;
 
           small {
+            .BrixSlab; .normal;
             .show;
-            font-size: 0.5em;
+            font-size: 14px;
             text-align: center;
           }
         }
@@ -418,39 +417,35 @@
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
 
-.project-content[id="01-mdg-ex"] ul li:nth-of-type(7),
-.project-content[id="01-mdg-ex"] ul li:nth-of-type(8),
-.project-content[id="01-mdg-ex"] ul li:nth-of-type(9),
-.project-content[id="01-mdg-ex"] ul li:nth-of-type(10) {
-  display: inline-block;
-  float: none;
-  height: auto; width: 1120px / 2 !important;
-}
+.project-content[id="sota-la-paraula"] ul li:nth-of-type(7) {
 
-.project-content[id="01-mdg-ex"] ul li:nth-of-type(7),
-.project-content[id="01-mdg-ex"] ul li:nth-of-type(8) {
-  margin-bottom: 0;
-  padding-bottom: 4px;
-}
+  .wrapper {
+    .clearfix;
+    margin: 0;
+    padding: 0;
 
-.project-content[id="01-mdg-ex"] ul li:nth-of-type(7) img,
-.project-content[id="01-mdg-ex"] ul li:nth-of-type(8) img {
-  padding-bottom: 4px;
-}
+    li {
+      float: left;
+      height: auto; width: 1120px / 2 !important;
+      margin-bottom: 0;
 
-.project-content[id="01-mdg-ex"] ul li:nth-of-type(9) img,
-.project-content[id="01-mdg-ex"] ul li:nth-of-type(10) img {
-  padding-top: 4px;
-}
+      &:nth-of-type(1) {
+        padding-right: 4px; padding-bottom: 4px;
+      }
 
-.project-content[id="01-mdg-ex"] ul li:nth-of-type(7) img,
-.project-content[id="01-mdg-ex"] ul li:nth-of-type(9) img {
-  padding-right: 4px;
-}
+      &:nth-of-type(2) {
+        padding-bottom: 4px; padding-left: 4px;
+      }
 
-.project-content[id="01-mdg-ex"] ul li:nth-of-type(8) img,
-.project-content[id="01-mdg-ex"] ul li:nth-of-type(10) img {
-  padding-left: 4px;
+      &:nth-of-type(3) {
+        padding-top: 4px; padding-right: 4px;
+      }
+
+      &:nth-of-type(4) {
+        padding-top: 4px; padding-left: 4px;
+      }
+    }
+  }
 }
 
 ////////////////////////////////////////////////////////////////

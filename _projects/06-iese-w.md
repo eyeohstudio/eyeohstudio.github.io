@@ -18,6 +18,8 @@ excerptEs: Web App de gesti√≥n de publicaciones para la Unidad de Materials Did√
 
 featured_image: iese-w-00t
 
+slug: iese-online-cases
+
 ---
 * ![IESE Responsive Design View ]({{ site.url }}/images/iese-w-01.jpg)
 * ![IESE Laptop design]({{ site.url }}/images/iese-w-02.jpg)

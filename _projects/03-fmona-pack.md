@@ -18,6 +18,8 @@ excerptEs: Primats, el primer vino 100% solidario de la [Fundació Mona](http://
 
 featured_image: fmona-pack-00t
 
+slug: primats
+
 ---
 
 * ![Primats Wine Bottle Wrapped]({{ site.url }}/images/fmona-pack-01.jpg)
