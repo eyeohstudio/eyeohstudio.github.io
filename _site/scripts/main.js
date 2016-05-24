@@ -5,65 +5,6 @@ jQuery(document).ready(function ($) {
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
 
-  function projectControl() {
-
-    var windowHeight = $(window).innerHeight();
-    var projectExcerptHeight = $('.project-content[aria-expanded="true"] > .project-excerpt').outerHeight(true);
-    var projectContentVisibleAreaHeight = windowHeight - projectExcerptHeight
-    //var projectFirstFigureHeight = $('.project-content[aria-expanded="true"] > ul > li:nth-of-type(1)').height();
-    var projectFirstFigureWidth = $('.project-content[aria-expanded="true"] > ul > li:nth-of-type(1)').width();
-
-    ////////////////////////////////////////////////////////////////
-    ////////////////////////////////////////////////////////////////
-
-    $('.project-content[aria-expanded="true"] > .project-control').css({
-      'height': projectContentVisibleAreaHeight,
-      'top': projectExcerptHeight
-    });
-
-    ////////////////////////////////////////////////////////////////
-    ////////////////////////////////////////////////////////////////
-
-    $('.project-content[aria-expanded="true"] > .project-control > .wrapper').css({
-      'width': projectFirstFigureWidth,
-    });
-  };
-
-////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////
-
-  function projectControlButtons() {
-
-    var currentProjectName = $('.project-content[aria-expanded="true"]').attr('id');
-    var previousProjectName = $('.project-content[aria-expanded="true"] .project-control a:nth-of-type(1)').attr('data-project-name');
-    var nextProjectName = $('.project-content[aria-expanded="true"] .project-control a:nth-of-type(2)').attr('data-project-name');
-
-    $('.project-control a:nth-of-type(1)').click(function() {
-      var currentProjectName = $('.project-content[aria-expanded="true"]').attr('id');
-      var previousProjectName = $('.project-content[aria-expanded="true"] .project-control a:nth-of-type(1)').attr('data-project-name');
-      var nextProjectName = $('.project-content[aria-expanded="true"] .project-control a:nth-of-type(2)').attr('data-project-name');
-
-      $('#' + currentProjectName).removeClass('show visble').addClass('hide invisible').attr('aria-expanded', 'false');
-      $('#' + previousProjectName).removeClass('hide invisble').addClass('show visible').attr('aria-expanded', 'true');
-    });
-
-    $('.project-control a:nth-of-type(2)').click(function() {
-      var currentProjectName = $('.project-content[aria-expanded="true"]').attr('id');
-      var previousProjectName = $('.project-content[aria-expanded="true"] .project-control a:nth-of-type(1)').attr('data-project-name');
-      var nextProjectName = $('.project-content[aria-expanded="true"] .project-control a:nth-of-type(2)').attr('data-project-name');
-
-      $('#' + currentProjectName).removeClass('show visble').addClass('hide invisible').attr('aria-expanded', 'false');
-      $('#' + nextProjectName).removeClass('hide invisble').addClass('show visible').attr('aria-expanded', 'true');
-    });
-  };
-
-////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////
-
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
@@ -90,13 +31,13 @@ jQuery(document).ready(function ($) {
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
 
-	function fireHash() {
+  function fireHash() {
 
-		if ( window.location.hash ) {
-			var hash = window.location.hash.slice(1); // get the hash, and strip out the "#"
-			$('.project-thumbnail a[data-project-name="' + hash + '"]').attr('data-project-name', hash).trigger('click');
-		}
-	};
+    if ( window.location.hash ) {
+      var hash = window.location.hash.slice(1); // get the hash, and strip out the "#"
+      $('.project-thumbnail a[data-project-name="' + hash + '"]').attr('data-project-name', hash).trigger('click');
+    }
+  };
 
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
@@ -115,8 +56,8 @@ jQuery(document).ready(function ($) {
       }
     );
 
-		////////////////////////////////////////////////////////////////
-  	////////////////////////////////////////////////////////////////
+    ////////////////////////////////////////////////////////////////
+    ////////////////////////////////////////////////////////////////
 
     $('.navbar-toggle.collapsed').click(
       function () {
@@ -163,8 +104,8 @@ function hashStuff() {
       return false;
     });
 
-		////////////////////////////////////////////////////////////////
-  	////////////////////////////////////////////////////////////////
+    ////////////////////////////////////////////////////////////////
+    ////////////////////////////////////////////////////////////////
 
     $('.language-change-en a').click(function() {
       $('html').attr('xml:lang', 'en').attr('lang', 'en');
@@ -172,9 +113,9 @@ function hashStuff() {
       $('body').removeClass('es').addClass('en');
       return false;
     });
-
-		////////////////////////////////////////////////////////////////
-  	////////////////////////////////////////////////////////////////
+		
+    ////////////////////////////////////////////////////////////////
+    ////////////////////////////////////////////////////////////////
 
     $('.language-change-es a').click(function() {
       $('html').attr('xml:lang', 'es').attr('lang', 'es');
@@ -189,11 +130,41 @@ function hashStuff() {
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
 
+  function largeImages() {
+
+    var siteUrl = document.domain + ':4000';
+    $('.project-content[aria-expanded="true"] ul li img').attr('data-src-base', 'http://' + siteUrl + '/images/temp/');
+
+    ////////////////////////////////////////////////////////////////
+    ////////////////////////////////////////////////////////////////
+
+    $('.project-content[aria-expanded="true"] ul li img').each(function() {
+
+      var fileFullname = $(this).attr('src').split('/')[4];
+      var fileName = fileFullname.slice(0,-4);
+      var fileExtension = fileFullname.substr(fileFullname.length - 4);
+
+      var newFileFullname320 = fileName + '_320' + fileExtension;
+      var newFileFullname480 = fileName + '_480' + fileExtension;
+      var newFileFullname640 = fileName + '_640' + fileExtension;
+      var newFileFullname800 = fileName + '_800' + fileExtension;
+      var newFileFullname1024 = fileName + '_1024' + fileExtension;
+      var newFileFullname1120 = fileName + '_1120' + fileExtension;
+
+      $(this).attr('data-src', '<320:' + newFileFullname320 + ', <480:' + newFileFullname480 + ', <640:' + newFileFullname640 + ', <800:' + newFileFullname800 + ', <1024:' + newFileFullname1024 + ', >1024:' + newFileFullname1120);
+    });
+  };
+
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+
   function mapKeyboardChars() {
 
-    $('.project-excerpt button').mapKey('esc', {trigger: 'click'});
-    $('.left-project-control').mapKey('left', {trigger: 'click'});
-    $('.right-project-control').mapKey('right', {trigger: 'click'});
+    $('.project-content[aria-expanded="true"] .project-excerpt button').mapKey('esc', {trigger: 'click'});
+    $('.project-content[aria-expanded="true"] .left-project-control').mapKey('left', {trigger: 'click'});
+    $('.project-content[aria-expanded="true"] .right-project-control').mapKey('right', {trigger: 'click'});
     $('.scroll-to-top').mapKey('up', {trigger: 'click'});
     $('.language-change-ca a').mapKey('lang_ca', {trigger: 'click'});
     $('.language-change-en a').mapKey('lang_en', {trigger: 'click'});
@@ -208,13 +179,130 @@ function hashStuff() {
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
 
+  function oneThousandOneHundredFifteen() {
+
+    if ($(window).width() < 1115) {
+      return $('html').removeClass('larger-than-one-thousand-one-hundred-fifteen').addClass('smaller-than-one-thousand-one-hundred-fifteen');
+    }
+    $('html').removeClass('smaller-than-one-thousand-one-hundred-fifteen').addClass('larger-than-one-thousand-one-hundred-fifteen');
+  };
+
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+
+  function projectControl() {
+
+    var windowHeight = $(window).outerHeight(true);
+    var headerHeight = $('header').outerHeight(true);
+    var projectExcerptHeight = $('.project-content[aria-expanded="true"] > .project-excerpt').outerHeight(true);
+    var projectContentVisibleAreaHeight = windowHeight - (headerHeight + projectExcerptHeight)
+    var projectFirstFigureWidth = $('.project-content[aria-expanded="true"] > ul > li:nth-of-type(1)').width();
+
+    $('.project-content[aria-expanded="true"] > .project-control').css({
+      'height': projectContentVisibleAreaHeight,
+      'top': projectExcerptHeight
+    });
+
+    $('.project-content[aria-expanded="true"] > .project-control > .wrapper').css({
+      'width': projectFirstFigureWidth,
+    });
+  };
+
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+
+  function projectControlButtons() {
+
+    var wrapperWidthTrue = $('.project-content[aria-expanded="true"] > .project-control > .wrapper').outerWidth(true);
+    var wrapperWidth = $('.project-content[aria-expanded="true"] > .project-control > .wrapper').innerWidth();
+    var wrapperMargin = (wrapperWidthTrue - wrapperWidth) / 3;
+
+    $('.smaller-than-one-thousand-one-hundred-fifteen .project-content[aria-expanded="true"] > .project-control > .wrapper > .left-project-control').css({
+      'width': 'auto',
+      'margin-left': -wrapperMargin
+    });
+    $('.smaller-than-one-thousand-one-hundred-fifteen .project-content[aria-expanded="true"] > .project-control > .wrapper > .right-project-control').css({
+      'width': 'auto',
+      'margin-right': -wrapperMargin
+    });
+    $('.larger-than-one-thousand-one-hundred-fifteen .project-content[aria-expanded="true"] > .project-control > .wrapper > .left-project-control').css({
+      'width': (wrapperWidthTrue - wrapperWidth) / 2,
+      'margin-left': -(wrapperWidthTrue - wrapperWidth) / 2
+    });
+    $('.larger-than-one-thousand-one-hundred-fifteen .project-content[aria-expanded="true"] > .project-control > .wrapper > .right-project-control').css({
+      'width': (wrapperWidthTrue - wrapperWidth) / 2,
+      'margin-right': -(wrapperWidthTrue - wrapperWidth) / 2
+    });
+  };
+
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+
+  function projectControlClick() {
+
+    $('.project-control a.right-project-control').click(function () {
+
+      $('.project-content ul li img').each(function() {
+
+        var src1stPart = $(this).attr('src').split('_')[0];
+        var src2ndPart = $(this).attr('src').split('_')[1];
+        var fileName = src1stPart.replace('/temp', '');
+        var fileExtension = src2ndPart.substr(src2ndPart.length - 4);
+
+        $(this).attr('src', fileName + fileExtension);
+      });
+
+      ////////////////////////////////////////////////////////////////
+
+      var nextProject = $(this).attr('href');
+      var $curr = $('.project-content[aria-expanded="true"]');
+      var $next = $(nextProject);
+
+      $curr.removeClass('show visible').addClass('hide invisible').attr('aria-expanded', 'false');
+      $next.removeClass('hide invisble').addClass('show visible').attr('aria-expanded', 'true');
+    });
+
+    ////////////////////////////////////////////////////////////////
+    ////////////////////////////////////////////////////////////////
+
+    $('.project-control a.left-project-control').click(function () {
+
+      $('.project-content ul li img').each(function() {
+
+        var src1stPart = $(this).attr('src').split('_')[0];
+        var src2ndPart = $(this).attr('src').split('_')[1];
+        var fileName = src1stPart.replace('/temp', '');
+        var fileExtension = src2ndPart.substr(src2ndPart.length - 4);
+
+        $(this).attr('src', fileName + fileExtension);
+      });
+
+      ////////////////////////////////////////////////////////////////
+
+      var previousProject = $(this).attr('href');
+      var $curr = $('.project-content[aria-expanded="true"]');
+      var $previous = $(previousProject);
+
+      $curr.removeClass('show visible').addClass('hide invisible').attr('aria-expanded', 'false');
+      $previous.removeClass('hide invisble').addClass('show visible').attr('aria-expanded', 'true');
+    });
+  };
+
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+
   function projectStuff() {
 
     var projectThumbnailHeight = $('.summer .container-fluid .row:nth-of-type(1)').outerHeight();
     var springHeight = $('body > .container-fluid > .row:nth-of-type(2)').outerHeight();
-
-    ////////////////////////////////////////////////////////////////
-    ////////////////////////////////////////////////////////////////
 
     if ($('.summer .container-fluid .row:nth-of-type(2)').hasClass('invisible')){
       $('.summer .container-fluid .row:nth-of-type(2)').css('margin-top', projectThumbnailHeight);
@@ -242,13 +330,13 @@ function hashStuff() {
         next();
       });
 
-			////////////////////////////////////////////////////////////////
+      ////////////////////////////////////////////////////////////////
 
       return false;
     });
 
-		////////////////////////////////////////////////////////////////
-  	////////////////////////////////////////////////////////////////
+    ////////////////////////////////////////////////////////////////
+    ////////////////////////////////////////////////////////////////
 
     $('.project-content .project-excerpt button').click(function(event) {
 
@@ -264,7 +352,7 @@ function hashStuff() {
         next();
       });
 
-			////////////////////////////////////////////////////////////////
+      ////////////////////////////////////////////////////////////////
 
       return false;
     });
@@ -279,8 +367,8 @@ function hashStuff() {
       $('iframe[src^="//player.vimeo.com"], object, embed').css({ 'min-height': valueHeight + 'px', 'min-width': valueWidth + 'px' });
     }
 
-		////////////////////////////////////////////////////////////////
-  	////////////////////////////////////////////////////////////////
+    ////////////////////////////////////////////////////////////////
+    ////////////////////////////////////////////////////////////////
 
     if ($('html').hasClass('larger-than-six-hundred-forty')){
       var valueWidth = $('header').innerWidth();
@@ -427,11 +515,17 @@ function hashStuff() {
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
 
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+
   anchorLinkScrollAnimation();
   hamburgerAnimation();
   hashStuff();
   langToggle();
   mapKeyboardChars();
+  oneThousandOneHundredFifteen();
   randomCity();
   randomWhat();
   setWinterHeight();
@@ -454,7 +548,7 @@ function hashStuff() {
 
     setTimeout(function() {
       projectStuff();
-			fireHash();
+      fireHash();
       $('body').removeClass('invisible').addClass('visible');
     }, 300);
   });
@@ -473,9 +567,6 @@ function hashStuff() {
 
     var projectThumbnailHeight = $('.summer .container-fluid .row:nth-of-type(1)').outerHeight();
     var springHeight = $('body > .container-fluid > .row:nth-of-type(2)').outerHeight();
-
-    ////////////////////////////////////////////////////////////////
-    ////////////////////////////////////////////////////////////////
 
     if ($('.summer .container-fluid .row:nth-of-type(2)').hasClass('invisible')){
       $('.summer .container-fluid .row:nth-of-type(2)').css('margin-top', projectThumbnailHeight);
@@ -507,34 +598,37 @@ function hashStuff() {
 
   function doneResizing(){
 
-    //projectControl();
+    oneThousandOneHundredFifteen();
+    projectControl();
+    projectControlButtons();
+    projectControlClick();
     projectStuff();
     setWinterHeight();
     sixHundredFortyListerner();
     vimeoWhatever();
 
-    ////////////////////////////////////////////////////////////////
-
-    $('.project-content .project-excerpt button').click(function() {
-
-      var projectThumbnailHeight = $('.summer .container-fluid .row:nth-of-type(1)').outerHeight();
-      var springHeight = $('body > .container-fluid > .row:nth-of-type(2)').outerHeight();
-
-      ////////////////////////////////////////////////////////////////
-
-      event.preventDefault();
-      var projectName = $('.project-content[aria-expanded="true"]').attr('id');
-      $('.summer .container-fluid .row:nth-of-type(1)').removeClass('invisible').addClass('visible');
-      $('.summer .container-fluid .row:nth-of-type(2)').animate({'margin-top': projectThumbnailHeight}, 400).queue(function(next) {
-        $('#' + projectName).removeClass('show').addClass('hide').attr('aria-expanded', 'false');
-        $(this).stop().removeClass('visible').addClass('invisible');
-        next();
-      });
-
-			////////////////////////////////////////////////////////////////
-
-      return false;
-    });
+//    ////////////////////////////////////////////////////////////////
+//
+//    $('.project-content .project-excerpt button').click(function() {
+//
+//      var projectThumbnailHeight = $('.summer .container-fluid .row:nth-of-type(1)').outerHeight();
+//      var springHeight = $('body > .container-fluid > .row:nth-of-type(2)').outerHeight();
+//
+//      ////////////////////////////////////////////////////////////////
+//
+//      event.preventDefault();
+//      var projectName = $('.project-content[aria-expanded="true"]').attr('id');
+//      $('.summer .container-fluid .row:nth-of-type(1)').removeClass('invisible').addClass('visible');
+//      $('.summer .container-fluid .row:nth-of-type(2)').animate({'margin-top': projectThumbnailHeight}, 400).queue(function(next) {
+//        $('#' + projectName).removeClass('show').addClass('hide').attr('aria-expanded', 'false');
+//        $(this).stop().removeClass('visible').addClass('invisible');
+//        next();
+//      });
+//
+//      ////////////////////////////////////////////////////////////////
+//
+//      return false;
+//    });
   };
 
 ////////////////////////////////////////////////////////////////
@@ -545,6 +639,9 @@ function hashStuff() {
   $('.language-change a').on('click', function() {
 
     projectStuff();
+    projectControl();
+    projectControlButtons();
+    projectControlClick();
 
   });
 
@@ -557,10 +654,12 @@ function hashStuff() {
 
     setTimeout(function() {
 
-      //projectControl();
-      //projectControlButtons();
+      largeImages();
+      projectControl();
+      projectControlButtons();
+      projectControlClick();
 
-    }, 300);
+    }, 50);
   });
 
   ////////////////////////////////////////////////////////////////
@@ -568,10 +667,20 @@ function hashStuff() {
 
   $('.project-content .project-excerpt button').on('click', function() {
 
-    var projectThumbnailHeight = $('.summer .container-fluid .row:nth-of-type(1)').outerHeight();
-    var springHeight = $('body > .container-fluid > .row:nth-of-type(2)').outerHeight();
+    $('.project-content[aria-expanded="true"] ul li img').each(function() {
+
+      var src1stPart = $(this).attr('src').split('_')[0];
+      var src2ndPart = $(this).attr('src').split('_')[1];
+      var fileName = src1stPart.replace('/temp', '');
+      var fileExtension = src2ndPart.substr(src2ndPart.length - 4);
+
+      $(this).attr('src', fileName + fileExtension);
+    });
 
     ////////////////////////////////////////////////////////////////
+
+    var projectThumbnailHeight = $('.summer .container-fluid .row:nth-of-type(1)').outerHeight();
+    var springHeight = $('body > .container-fluid > .row:nth-of-type(2)').outerHeight();
 
     var projectName = $('.project-content[aria-expanded="true"]').attr('id');
     $('.summer .container-fluid .row:nth-of-type(1)').removeClass('invisible').addClass('visible');
@@ -581,7 +690,7 @@ function hashStuff() {
       next();
     });
 
-		////////////////////////////////////////////////////////////////
+    ////////////////////////////////////////////////////////////////
 
     return false;
   });
@@ -589,12 +698,43 @@ function hashStuff() {
   ////////////////////////////////////////////////////////////////
   ////////////////////////////////////////////////////////////////
 
-//  $('.project-control a[role="button"]').on('click', function() {
+  $('.project-control a[role="button"]').on('click', function() {
+
+//    $('.project-content[aria-expanded="true"] ul li img').each(function() {
 //
-//      projectControl();
-//      projectControlButtons();
+//      var src1stPart = $(this).attr('src').split('_')[0];
+//      var src2ndPart = $(this).attr('src').split('_')[1];
+//      var fileName = src1stPart.replace('/temp', '');
+//      var fileExtension = src2ndPart.substr(src2ndPart.length - 4);
 //
-//  });
+//      $(this).attr('src', fileName + fileExtension);
+//    });
+//
+//    ////////////////////////////////////////////////////////////////
+
+    var slug = $(this).attr('data-project-name');
+    window.location.hash = slug;
+
+    ////////////////////////////////////////////////////////////////
+
+    $('html, body').stop().animate({scrollTop: 0}, 300);
+
+    ////////////////////////////////////////////////////////////////
+
+    setTimeout(function() {
+
+      //largeImages();
+      //makeImagesResponsive(); // responsive-img.min.js
+      projectControl();
+      projectControlButtons();
+      projectControlClick();
+
+    }, 300);
+
+    ////////////////////////////////////////////////////////////////
+
+    return false;
+  });
 
   ////////////////////////////////////////////////////////////////
   ////////////////////////////////////////////////////////////////
