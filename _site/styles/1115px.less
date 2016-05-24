@@ -79,6 +79,73 @@
         }
       }
 
+      .project-control {
+        .show;
+        width: 100%;
+        position: absolute;
+
+        .wrapper {
+          .clearfix;
+          .vertical-align;
+          height: auto;
+          margin: 0 auto;
+          position: relative;
+
+          a {
+            .BrixSans; .normal;
+            border-bottom: none;
+            font-size: 12px;
+            padding: 0 30px;
+            text-align: right;
+            text-transform: uppercase;
+            white-space: normal;
+            writing-mode: horizontal-tb;
+
+            -webkit-transform: rotate(0);
+               -moz-transform: rotate(0);
+                -ms-transform: rotate(0);
+                 -o-transform: rotate(0);
+                    transform: rotate(0);
+
+            &:after {
+            }
+
+            &:hover {
+              opacity: 1;
+            }
+
+            &.left-project-control {
+              float: left;
+              text-align: right;
+
+              &:after {
+                .hide;
+              }
+
+              &:before {
+                .show;
+                content: " [ ← ]";
+              }
+            }
+
+            &.right-project-control {
+              float: right;
+              margin-right: 0;
+              text-align: left;
+
+              &:after {
+                .hide;
+              }
+
+              &:before {
+                .show;
+                content: " [ → ]";
+              }
+            }
+          }
+        }
+      }
+
       ul {
         margin: 0 auto;
         padding: 0;
