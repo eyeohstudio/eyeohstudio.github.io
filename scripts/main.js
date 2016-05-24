@@ -5,68 +5,6 @@ jQuery(document).ready(function ($) {
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
 
-<<<<<<< HEAD
-  function projectControl() {
-
-    var windowHeight = $(window).innerHeight();
-    var projectExcerptHeight = $('.project-content[aria-expanded="true"] > .project-excerpt').outerHeight(true);
-    var projectContentVisibleAreaHeight = windowHeight - projectExcerptHeight
-    //var projectFirstFigureHeight = $('.project-content[aria-expanded="true"] > ul > li:nth-of-type(1)').height();
-    var projectFirstFigureWidth = $('.project-content[aria-expanded="true"] > ul > li:nth-of-type(1)').width();
-
-    ////////////////////////////////////////////////////////////////
-    ////////////////////////////////////////////////////////////////
-
-    $('.project-content[aria-expanded="true"] > .project-control').css({
-      'height': projectContentVisibleAreaHeight,
-      'top': projectExcerptHeight
-    });
-
-    ////////////////////////////////////////////////////////////////
-    ////////////////////////////////////////////////////////////////
-
-    $('.project-content[aria-expanded="true"] > .project-control > .wrapper').css({
-      'width': projectFirstFigureWidth,
-    });
-  };
-
-////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////
-
-  function projectControlButtons() {
-
-    var currentProjectName = $('.project-content[aria-expanded="true"]').attr('id');
-    var previousProjectName = $('.project-content[aria-expanded="true"] .project-control a:nth-of-type(1)').attr('data-project-name');
-    var nextProjectName = $('.project-content[aria-expanded="true"] .project-control a:nth-of-type(2)').attr('data-project-name');
-
-    $('.project-control a:nth-of-type(1)').click(function() {
-      var currentProjectName = $('.project-content[aria-expanded="true"]').attr('id');
-      var previousProjectName = $('.project-content[aria-expanded="true"] .project-control a:nth-of-type(1)').attr('data-project-name');
-      var nextProjectName = $('.project-content[aria-expanded="true"] .project-control a:nth-of-type(2)').attr('data-project-name');
-
-      $('#' + currentProjectName).removeClass('show visble').addClass('hide invisible').attr('aria-expanded', 'false');
-      $('#' + previousProjectName).removeClass('hide invisble').addClass('show visible').attr('aria-expanded', 'true');
-    });
-
-    $('.project-control a:nth-of-type(2)').click(function() {
-      var currentProjectName = $('.project-content[aria-expanded="true"]').attr('id');
-      var previousProjectName = $('.project-content[aria-expanded="true"] .project-control a:nth-of-type(1)').attr('data-project-name');
-      var nextProjectName = $('.project-content[aria-expanded="true"] .project-control a:nth-of-type(2)').attr('data-project-name');
-
-      $('#' + currentProjectName).removeClass('show visble').addClass('hide invisible').attr('aria-expanded', 'false');
-      $('#' + nextProjectName).removeClass('hide invisble').addClass('show visible').attr('aria-expanded', 'true');
-    });
-  };
-
-////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////
-
-=======
->>>>>>> unstable
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
@@ -93,15 +31,6 @@ jQuery(document).ready(function ($) {
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
 
-<<<<<<< HEAD
-	function fireHash() {
-
-		if ( window.location.hash ) {
-			var hash = window.location.hash.slice(1); // get the hash, and strip out the "#"
-			$('.project-thumbnail a[data-project-name="' + hash + '"]').attr('data-project-name', hash).trigger('click');
-		}
-	};
-=======
   function fireHash() {
 
     if ( window.location.hash ) {
@@ -109,7 +38,6 @@ jQuery(document).ready(function ($) {
       $('.project-thumbnail a[data-project-name="' + hash + '"]').attr('data-project-name', hash).trigger('click');
     }
   };
->>>>>>> unstable
 
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
@@ -128,13 +56,8 @@ jQuery(document).ready(function ($) {
       }
     );
 
-<<<<<<< HEAD
-		////////////////////////////////////////////////////////////////
-  	////////////////////////////////////////////////////////////////
-=======
     ////////////////////////////////////////////////////////////////
     ////////////////////////////////////////////////////////////////
->>>>>>> unstable
 
     $('.navbar-toggle.collapsed').click(
       function () {
@@ -181,13 +104,8 @@ function hashStuff() {
       return false;
     });
 
-<<<<<<< HEAD
-		////////////////////////////////////////////////////////////////
-  	////////////////////////////////////////////////////////////////
-=======
     ////////////////////////////////////////////////////////////////
     ////////////////////////////////////////////////////////////////
->>>>>>> unstable
 
     $('.language-change-en a').click(function() {
       $('html').attr('xml:lang', 'en').attr('lang', 'en');
@@ -195,14 +113,9 @@ function hashStuff() {
       $('body').removeClass('es').addClass('en');
       return false;
     });
-
-<<<<<<< HEAD
-		////////////////////////////////////////////////////////////////
-  	////////////////////////////////////////////////////////////////
-=======
+		
     ////////////////////////////////////////////////////////////////
     ////////////////////////////////////////////////////////////////
->>>>>>> unstable
 
     $('.language-change-es a').click(function() {
       $('html').attr('xml:lang', 'es').attr('lang', 'es');
@@ -249,15 +162,9 @@ function hashStuff() {
 
   function mapKeyboardChars() {
 
-<<<<<<< HEAD
-    $('.project-excerpt button').mapKey('esc', {trigger: 'click'});
-    $('.left-project-control').mapKey('left', {trigger: 'click'});
-    $('.right-project-control').mapKey('right', {trigger: 'click'});
-=======
     $('.project-content[aria-expanded="true"] .project-excerpt button').mapKey('esc', {trigger: 'click'});
     $('.project-content[aria-expanded="true"] .left-project-control').mapKey('left', {trigger: 'click'});
     $('.project-content[aria-expanded="true"] .right-project-control').mapKey('right', {trigger: 'click'});
->>>>>>> unstable
     $('.scroll-to-top').mapKey('up', {trigger: 'click'});
     $('.language-change-ca a').mapKey('lang_ca', {trigger: 'click'});
     $('.language-change-en a').mapKey('lang_en', {trigger: 'click'});
@@ -272,12 +179,6 @@ function hashStuff() {
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
 
-<<<<<<< HEAD
-  function projectStuff() {
-
-    var projectThumbnailHeight = $('.summer .container-fluid .row:nth-of-type(1)').outerHeight();
-    var springHeight = $('body > .container-fluid > .row:nth-of-type(2)').outerHeight();
-=======
   function oneThousandOneHundredFifteen() {
 
     if ($(window).width() < 1115) {
@@ -366,7 +267,6 @@ function hashStuff() {
       $curr.removeClass('show visible').addClass('hide invisible').attr('aria-expanded', 'false');
       $next.removeClass('hide invisble').addClass('show visible').attr('aria-expanded', 'true');
     });
->>>>>>> unstable
 
     ////////////////////////////////////////////////////////////////
     ////////////////////////////////////////////////////////////////
@@ -420,11 +320,8 @@ function hashStuff() {
 
       event.preventDefault();
       var projectName = $(this).attr('data-project-name');
-<<<<<<< HEAD
 
 			////////////////////////////////////////////////////////////////
-=======
->>>>>>> unstable
 
       $('.summer .container-fluid .row:nth-of-type(2)').removeClass('invisible').addClass('visible').queue(function(next) {
         $(this).stop().animate({'margin-top': '0' - springHeight}, 400);
@@ -433,33 +330,21 @@ function hashStuff() {
         next();
       });
 
-<<<<<<< HEAD
-			////////////////////////////////////////////////////////////////
-=======
       ////////////////////////////////////////////////////////////////
->>>>>>> unstable
 
       return false;
     });
 
-<<<<<<< HEAD
-		////////////////////////////////////////////////////////////////
-  	////////////////////////////////////////////////////////////////
-=======
     ////////////////////////////////////////////////////////////////
     ////////////////////////////////////////////////////////////////
->>>>>>> unstable
 
     $('.project-content .project-excerpt button').click(function(event) {
 
       event.preventDefault();
       var projectName = $('.project-content[aria-expanded="true"]').attr('id');
 
-<<<<<<< HEAD
 			////////////////////////////////////////////////////////////////
 
-=======
->>>>>>> unstable
       $('.summer .container-fluid .row:nth-of-type(1)').removeClass('invisible').addClass('visible');
       $('.summer .container-fluid .row:nth-of-type(2)').animate({'margin-top': projectThumbnailHeight}, 400).queue(function(next) {
         $('#' + projectName).removeClass('show').addClass('hide').attr('aria-expanded', 'false');
@@ -467,11 +352,7 @@ function hashStuff() {
         next();
       });
 
-<<<<<<< HEAD
-			////////////////////////////////////////////////////////////////
-=======
       ////////////////////////////////////////////////////////////////
->>>>>>> unstable
 
       return false;
     });
@@ -486,13 +367,8 @@ function hashStuff() {
       $('iframe[src^="//player.vimeo.com"], object, embed').css({ 'min-height': valueHeight + 'px', 'min-width': valueWidth + 'px' });
     }
 
-<<<<<<< HEAD
-		////////////////////////////////////////////////////////////////
-  	////////////////////////////////////////////////////////////////
-=======
     ////////////////////////////////////////////////////////////////
     ////////////////////////////////////////////////////////////////
->>>>>>> unstable
 
     if ($('html').hasClass('larger-than-six-hundred-forty')){
       var valueWidth = $('header').innerWidth();
@@ -731,30 +607,6 @@ function hashStuff() {
     sixHundredFortyListerner();
     vimeoWhatever();
 
-<<<<<<< HEAD
-    ////////////////////////////////////////////////////////////////
-
-    $('.project-content .project-excerpt button').click(function() {
-
-      var projectThumbnailHeight = $('.summer .container-fluid .row:nth-of-type(1)').outerHeight();
-      var springHeight = $('body > .container-fluid > .row:nth-of-type(2)').outerHeight();
-
-      ////////////////////////////////////////////////////////////////
-
-      event.preventDefault();
-      var projectName = $('.project-content[aria-expanded="true"]').attr('id');
-      $('.summer .container-fluid .row:nth-of-type(1)').removeClass('invisible').addClass('visible');
-      $('.summer .container-fluid .row:nth-of-type(2)').animate({'margin-top': projectThumbnailHeight}, 400).queue(function(next) {
-        $('#' + projectName).removeClass('show').addClass('hide').attr('aria-expanded', 'false');
-        $(this).stop().removeClass('visible').addClass('invisible');
-        next();
-      });
-
-			////////////////////////////////////////////////////////////////
-
-      return false;
-    });
-=======
 //    ////////////////////////////////////////////////////////////////
 //
 //    $('.project-content .project-excerpt button').click(function() {
@@ -777,7 +629,6 @@ function hashStuff() {
 //
 //      return false;
 //    });
->>>>>>> unstable
   };
 
 ////////////////////////////////////////////////////////////////
@@ -788,12 +639,9 @@ function hashStuff() {
   $('.language-change a').on('click', function() {
 
     projectStuff();
-<<<<<<< HEAD
-=======
     projectControl();
     projectControlButtons();
     projectControlClick();
->>>>>>> unstable
 
   });
 
@@ -842,11 +690,7 @@ function hashStuff() {
       next();
     });
 
-<<<<<<< HEAD
-		////////////////////////////////////////////////////////////////
-=======
     ////////////////////////////////////////////////////////////////
->>>>>>> unstable
 
     return false;
   });
