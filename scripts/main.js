@@ -5,11 +5,6 @@ jQuery(document).ready(function ($) {
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
 
-////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////
-
   function anchorLinkScrollAnimation() {
 
     $('.navbar-collapse ul li a[href*="#"]:not([href="#"])').click(function() {
@@ -133,7 +128,7 @@ function hashStuff() {
   function largeImages() {
 
     var siteUrl = document.domain + ':4000';
-    $('.project-content[aria-expanded="true"] ul li img').attr('data-src-base', 'http://' + siteUrl + '/images/temp/');
+    $('.project-content[aria-expanded="true"] ul li img').attr('data-src-base', 'http://' + siteUrl + '/images/projects/');
 
     ////////////////////////////////////////////////////////////////
     ////////////////////////////////////////////////////////////////
@@ -192,7 +187,7 @@ function hashStuff() {
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
 
-  function projectControl() {
+  function projectControlBox() {
 
     var windowHeight = $(window).outerHeight(true);
     var headerHeight = $('header').outerHeight(true);
@@ -248,17 +243,22 @@ function hashStuff() {
 
     $('.project-control a.right-project-control').click(function () {
 
-      $('.project-content ul li img').each(function() {
-
-        var src1stPart = $(this).attr('src').split('_')[0];
-        var src2ndPart = $(this).attr('src').split('_')[1];
-        var fileName = src1stPart.replace('/temp', '');
-        var fileExtension = src2ndPart.substr(src2ndPart.length - 4);
-
-        $(this).attr('src', fileName + fileExtension);
-      });
+//      $('.project-content ul li img').each(function() {
+//
+//        var src1stPart = $(this).attr('src').split('_')[0];
+//        var src2ndPart = $(this).attr('src').split('_')[1];
+//        var fileName = src1stPart.replace('/projects', '');
+//        var fileExtension = src2ndPart.substr(src2ndPart.length - 4);
+//
+//        $(this).attr('src', fileName + fileExtension);
+//      });
 
       ////////////////////////////////////////////////////////////////
+
+//      var nextProject = $(this).attr('data-project-name');
+//
+//      $('.project-content[aria-expanded="true"]').removeClass('show visible').addClass('hide invisible').attr('aria-expanded', 'false');
+//      $('.project-content#' + nextProject).removeClass('hide invisble').addClass('show visible').attr('aria-expanded', 'true');
 
       var nextProject = $(this).attr('href');
       var $curr = $('.project-content[aria-expanded="true"]');
@@ -273,15 +273,15 @@ function hashStuff() {
 
     $('.project-control a.left-project-control').click(function () {
 
-      $('.project-content ul li img').each(function() {
-
-        var src1stPart = $(this).attr('src').split('_')[0];
-        var src2ndPart = $(this).attr('src').split('_')[1];
-        var fileName = src1stPart.replace('/temp', '');
-        var fileExtension = src2ndPart.substr(src2ndPart.length - 4);
-
-        $(this).attr('src', fileName + fileExtension);
-      });
+//      $('.project-content ul li img').each(function() {
+//
+//        var src1stPart = $(this).attr('src').split('_')[0];
+//        var src2ndPart = $(this).attr('src').split('_')[1];
+//        var fileName = src1stPart.replace('/projects', '');
+//        var fileExtension = src2ndPart.substr(src2ndPart.length - 4);
+//
+//        $(this).attr('src', fileName + fileExtension);
+//      });
 
       ////////////////////////////////////////////////////////////////
 
@@ -312,26 +312,6 @@ function hashStuff() {
       $('.summer .container-fluid .row:nth-of-type(2)').css('margin-top', '0' - springHeight);
       $('.summer .container-fluid .row:nth-of-type(1)').removeClass('visible').addClass('invisible');
     }
-
-    ////////////////////////////////////////////////////////////////
-    ////////////////////////////////////////////////////////////////
-
-    $('.project-thumbnail a').click(function(event) {
-
-      event.preventDefault();
-      var projectName = $(this).attr('data-project-name');
-
-      $('.summer .container-fluid .row:nth-of-type(2)').removeClass('invisible').addClass('visible').queue(function(next) {
-        $(this).stop().animate({'margin-top': '0' - springHeight}, 400);
-        $('#' + projectName).removeClass('hide invisble').addClass('show visible').attr('aria-expanded', 'true');
-        $('.summer .container-fluid .row:nth-of-type(1)').removeClass('visible').addClass('invisible');
-        next();
-      });
-
-      ////////////////////////////////////////////////////////////////
-
-      return false;
-    });
 
     ////////////////////////////////////////////////////////////////
     ////////////////////////////////////////////////////////////////
@@ -543,9 +523,11 @@ function hashStuff() {
     ////////////////////////////////////////////////////////////////
 
     setTimeout(function() {
+
       projectStuff();
       fireHash();
       $('body').removeClass('invisible').addClass('visible');
+
     }, 300);
   });
 
@@ -557,6 +539,8 @@ function hashStuff() {
   $(window).resize(function() {
 
     makeImagesResponsive(); // responsive-img.min.js
+    projectControlBox();
+    projectControlButtons();
 
     ////////////////////////////////////////////////////////////////
     ////////////////////////////////////////////////////////////////
@@ -595,9 +579,6 @@ function hashStuff() {
   function doneResizing(){
 
     oneThousandOneHundredFifteen();
-    projectControl();
-    projectControlButtons();
-    projectControlClick();
     projectStuff();
     setWinterHeight();
     sixHundredFortyListerner();
@@ -635,7 +616,7 @@ function hashStuff() {
   $('.language-change a').on('click', function() {
 
     projectStuff();
-    projectControl();
+    projectControlBox();
     projectControlButtons();
     projectControlClick();
 
@@ -644,18 +625,37 @@ function hashStuff() {
   ////////////////////////////////////////////////////////////////
   ////////////////////////////////////////////////////////////////
 
-  $('.project-thumbnail a').on('click', function() {
+  $('.project-thumbnail a').on('click', function(event) {
+    event.preventDefault();
+
+    ////////////////////////////////////////////////////////////////
 
     $('html, body').stop().animate({scrollTop: 0}, 300);
+
+    ////////////////////////////////////////////////////////////////
+
+    var projectName = $(this).attr('data-project-name');
+    $('.summer .container-fluid .row:nth-of-type(2)').removeClass('invisible').addClass('visible').queue(function(next) {
+      $(this).stop().animate({'margin-top': '0' - springHeight}, 400);
+      $('#' + projectName).removeClass('hide invisble').addClass('show visible').attr('aria-expanded', 'true');
+      $('.summer .container-fluid .row:nth-of-type(1)').removeClass('visible').addClass('invisible');
+      next();
+    });
+
+    ////////////////////////////////////////////////////////////////
 
     setTimeout(function() {
 
       largeImages();
-      projectControl();
+      projectControlBox();
       projectControlButtons();
       projectControlClick();
 
     }, 50);
+
+    ////////////////////////////////////////////////////////////////
+
+    return false;
   });
 
   ////////////////////////////////////////////////////////////////
@@ -663,15 +663,15 @@ function hashStuff() {
 
   $('.project-content .project-excerpt button').on('click', function() {
 
-    $('.project-content[aria-expanded="true"] ul li img').each(function() {
-
-      var src1stPart = $(this).attr('src').split('_')[0];
-      var src2ndPart = $(this).attr('src').split('_')[1];
-      var fileName = src1stPart.replace('/temp', '');
-      var fileExtension = src2ndPart.substr(src2ndPart.length - 4);
-
-      $(this).attr('src', fileName + fileExtension);
-    });
+//    $('.project-content[aria-expanded="true"] ul li img').each(function() {
+//
+//      var src1stPart = $(this).attr('src').split('_')[0];
+//      var src2ndPart = $(this).attr('src').split('_')[1];
+//      var fileName = src1stPart.replace('/projects', '');
+//      var fileExtension = src2ndPart.substr(src2ndPart.length - 4);
+//
+//      $(this).attr('src', fileName + fileExtension);
+//    });
 
     ////////////////////////////////////////////////////////////////
 
@@ -700,7 +700,7 @@ function hashStuff() {
 //
 //      var src1stPart = $(this).attr('src').split('_')[0];
 //      var src2ndPart = $(this).attr('src').split('_')[1];
-//      var fileName = src1stPart.replace('/temp', '');
+//      var fileName = src1stPart.replace('/projects', '');
 //      var fileExtension = src2ndPart.substr(src2ndPart.length - 4);
 //
 //      $(this).attr('src', fileName + fileExtension);
@@ -719,9 +719,9 @@ function hashStuff() {
 
     setTimeout(function() {
 
-      //largeImages();
-      //makeImagesResponsive(); // responsive-img.min.js
-      projectControl();
+      largeImages();
+      makeImagesResponsive(); // responsive-img.min.js
+      projectControlBox();
       projectControlButtons();
       projectControlClick();
 
@@ -739,6 +739,9 @@ function hashStuff() {
 
     $('#sota-la-paraula > ul > li').slice(6,10).wrapAll('<li><ul class="wrapper" />');
 
+    ////////////////////////////////////////////////////////////////
+
+    return false;
   });
 
 ////////////////////////////////////////////////////////////////
