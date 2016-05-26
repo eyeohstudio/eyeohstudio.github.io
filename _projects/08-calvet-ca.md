@@ -22,10 +22,65 @@ slug: calvet-catalogue
 
 ---
 
-* ![Francesc Calvet Cover]({{ site.url }}/images/calvet-ca-01.jpg)
-* ![Francesc Calvet Double Page]({{ site.url }}/images/calvet-ca-02.jpg)
-* ![Francesc Calvet Double Page]({{ site.url }}/images/calvet-ca-03.jpg)
-* ![Francesc Calvet Double Page]({{ site.url }}/images/calvet-ca-04.jpg)
-* ![Francesc Calvet Double Page]({{ site.url }}/images/calvet-ca-05.jpg)
-* ![Francesc Calvet Double Page]({{ site.url }}/images/calvet-ca-06.jpg)
-* ![Francesc Calvet Back Cover]({{ site.url }}/images/calvet-ca-07.jpg)
+<li><img data-src-base="{{ site.url}}/images/projects/" data-src="
+<320:calvet-ca-01_320.jpg,
+<480:calvet-ca-01_480.jpg,
+<640:calvet-ca-01_640.jpg,
+<800:calvet-ca-01_800.jpg,
+<1024:calvet-ca-01_1024.jpg,
+>1024:calvet-ca-01_1120.jpg
+"></li>
+
+<li><img data-src-base="{{ site.url}}/images/projects/" data-src="
+<320:calvet-ca-02_320.jpg,
+<480:calvet-ca-02_480.jpg,
+<640:calvet-ca-02_640.jpg,
+<800:calvet-ca-02_800.jpg,
+<1024:calvet-ca-02_1024.jpg,
+>1024:calvet-ca-02_1120.jpg
+"></li>
+
+<li><img data-src-base="{{ site.url}}/images/projects/" data-src="
+<320:calvet-ca-03_320.jpg,
+<480:calvet-ca-03_480.jpg,
+<640:calvet-ca-03_640.jpg,
+<800:calvet-ca-03_800.jpg,
+<1024:calvet-ca-03_1024.jpg,
+>1024:calvet-ca-03_1120.jpg
+"></li>
+
+<li><img data-src-base="{{ site.url}}/images/projects/" data-src="
+<320:calvet-ca-04_320.jpg,
+<480:calvet-ca-04_480.jpg,
+<640:calvet-ca-04_640.jpg,
+<800:calvet-ca-04_800.jpg,
+<1024:calvet-ca-04_1024.jpg,
+>1024:calvet-ca-04_1120.jpg
+"></li>
+
+<li><img data-src-base="{{ site.url}}/images/projects/" data-src="
+<320:calvet-ca-05_320.jpg,
+<480:calvet-ca-05_480.jpg,
+<640:calvet-ca-05_640.jpg,
+<800:calvet-ca-05_800.jpg,
+<1024:calvet-ca-05_1024.jpg,
+>1024:calvet-ca-05_1120.jpg
+"></li>
+
+<li><img data-src-base="{{ site.url}}/images/projects/" data-src="
+<320:calvet-ca-06_320.jpg,
+<480:calvet-ca-06_480.jpg,
+<640:calvet-ca-06_640.jpg,
+<800:calvet-ca-06_800.jpg,
+<1024:calvet-ca-06_1024.jpg,
+>1024:calvet-ca-06_1120.jpg
+"></li>
+
+<li><img data-src-base="{{ site.url}}/images/projects/" data-src="
+<320:calvet-ca-07_320.jpg,
+<480:calvet-ca-07_480.jpg,
+<640:calvet-ca-07_640.jpg,
+<800:calvet-ca-07_800.jpg,
+<1024:calvet-ca-07_1024.jpg,
+>1024:calvet-ca-07_1120.jpg
+"></li>

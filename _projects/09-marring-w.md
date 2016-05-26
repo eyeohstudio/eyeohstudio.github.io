@@ -22,7 +22,38 @@ slug: marring
 
 ---
 
-* ![Marring Logo]({{ site.url }}/images/marring-ic-01.jpg)
-* ![Marring Business cards]({{ site.url }}/images/marring-ic-02.jpg)
-* ![Marring Promotional Flyer]({{ site.url }}/images/marring-ic-03.jpg)
-* ![Marring Website]({{ site.url }}/images/marring-ic-04.jpg)
+<li><img data-src-base="{{ site.url}}/images/projects/" data-src="
+<320:marring-ic-01_320.jpg,
+<480:marring-ic-01_480.jpg,
+<640:marring-ic-01_640.jpg,
+<800:marring-ic-01_800.jpg,
+<1024:marring-ic-01_1024.jpg,
+>1024:marring-ic-01_1120.jpg
+"></li>
+
+<li><img data-src-base="{{ site.url}}/images/projects/" data-src="
+<320:marring-ic-02_320.jpg,
+<480:marring-ic-02_480.jpg,
+<640:marring-ic-02_640.jpg,
+<800:marring-ic-02_800.jpg,
+<1024:marring-ic-02_1024.jpg,
+>1024:marring-ic-02_1120.jpg
+"></li>
+
+<li><img data-src-base="{{ site.url}}/images/projects/" data-src="
+<320:marring-ic-03_320.jpg,
+<480:marring-ic-03_480.jpg,
+<640:marring-ic-03_640.jpg,
+<800:marring-ic-03_800.jpg,
+<1024:marring-ic-03_1024.jpg,
+>1024:marring-ic-03_1120.jpg
+"></li>
+
+<li><img data-src-base="{{ site.url}}/images/projects/" data-src="
+<320:marring-ic-04_320.jpg,
+<480:marring-ic-04_480.jpg,
+<640:marring-ic-04_640.jpg,
+<800:marring-ic-04_800.jpg,
+<1024:marring-ic-04_1024.jpg,
+>1024:marring-ic-04_1120.jpg
+"></li>

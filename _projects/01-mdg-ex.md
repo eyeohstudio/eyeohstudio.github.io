@@ -21,14 +21,102 @@ featured_image: mdg-00t
 slug: sota-la-paraula
 
 ---
-* ![Sota la Paraula Cover]({{ site.url }}/images/mdg-ca-01.jpg)
-* ![Sota la Paraula Cover and Back]({{ site.url }}/images/mdg-ca-02.jpg)
-* ![Sota la Paraula Double Page]({{ site.url }}/images/mdg-ca-03.jpg)
-* ![Sota la Paraula Double Page]({{ site.url }}/images/mdg-ca-04.jpg)
-* ![Sota la Paraula Double Page]({{ site.url }}/images/mdg-ca-05.jpg)
-* ![Sota la Paraula Exhibition]({{ site.url }}/images/mdg-ex-01.jpg)
-* ![Sota la Paraula Exhibition]({{ site.url }}/images/mdg-ex-02.jpg)
-* ![Sota la Paraula Exhibition]({{ site.url }}/images/mdg-ex-03.jpg)
-* ![Sota la Paraula Exhibition]({{ site.url }}/images/mdg-ex-04.jpg)
-* ![Sota la Paraula Exhibition]({{ site.url }}/images/mdg-ex-05.jpg)
-* ![Sota la Paraula Exhibition]({{ site.url }}/images/mdg-ex-06.jpg)
+
+<li><img data-src-base="{{ site.url}}/images/projects/" data-src="
+<320:mdg-ca-01_320.jpg,
+<480:mdg-ca-01_480.jpg,
+<640:mdg-ca-01_640.jpg,
+<800:mdg-ca-01_800.jpg,
+<1024:mdg-ca-01_1024.jpg,
+>1024:mdg-ca-01_1120.jpg
+"></li>
+
+<li><img data-src-base="{{ site.url}}/images/projects/" data-src="
+<320:mdg-ca-02_320.jpg,
+<480:mdg-ca-02_480.jpg,
+<640:mdg-ca-02_640.jpg,
+<800:mdg-ca-02_800.jpg,
+<1024:mdg-ca-02_1024.jpg,
+>1024:mdg-ca-02_1120.jpg
+"></li>
+
+<li><img data-src-base="{{ site.url}}/images/projects/" data-src="
+<320:mdg-ca-03_320.jpg,
+<480:mdg-ca-03_480.jpg,
+<640:mdg-ca-03_640.jpg,
+<800:mdg-ca-03_800.jpg,
+<1024:mdg-ca-03_1024.jpg,
+>1024:mdg-ca-03_1120.jpg
+"></li>
+
+<li><img data-src-base="{{ site.url}}/images/projects/" data-src="
+<320:mdg-ca-04_320.jpg,
+<480:mdg-ca-04_480.jpg,
+<640:mdg-ca-04_640.jpg,
+<800:mdg-ca-04_800.jpg,
+<1024:mdg-ca-04_1024.jpg,
+>1024:mdg-ca-04_1120.jpg
+"></li>
+
+<li><img data-src-base="{{ site.url}}/images/projects/" data-src="
+<320:mdg-ca-05_320.jpg,
+<480:mdg-ca-05_480.jpg,
+<640:mdg-ca-05_640.jpg,
+<800:mdg-ca-05_800.jpg,
+<1024:mdg-ca-05_1024.jpg,
+>1024:mdg-ca-05_1120.jpg
+"></li>
+
+<li><img data-src-base="{{ site.url}}/images/projects/" data-src="
+<320:mdg-ex-01_320.jpg,
+<480:mdg-ex-01_480.jpg,
+<640:mdg-ex-01_640.jpg,
+<800:mdg-ex-01_800.jpg,
+<1024:mdg-ex-01_1024.jpg,
+>1024:mdg-ex-01_1120.jpg
+"></li>
+
+<li><img data-src-base="{{ site.url}}/images/projects/" data-src="
+<320:mdg-ex-02_320.jpg,
+<480:mdg-ex-02_480.jpg,
+<640:mdg-ex-02_640.jpg,
+<800:mdg-ex-02_800.jpg,
+<1024:mdg-ex-02_1024.jpg,
+>1024:mdg-ex-02_1120.jpg
+"></li>
+
+<li><img data-src-base="{{ site.url}}/images/projects/" data-src="
+<320:mdg-ex-03_320.jpg,
+<480:mdg-ex-03_480.jpg,
+<640:mdg-ex-03_640.jpg,
+<800:mdg-ex-03_800.jpg,
+<1024:mdg-ex-03_1024.jpg,
+>1024:mdg-ex-03_1120.jpg
+"></li>
+
+<li><img data-src-base="{{ site.url}}/images/projects/" data-src="
+<320:mdg-ex-04_320.jpg,
+<480:mdg-ex-04_480.jpg,
+<640:mdg-ex-04_640.jpg,
+<800:mdg-ex-04_800.jpg,
+<1024:mdg-ex-04_1024.jpg,
+>1024:mdg-ex-04_1120.jpg
+"></li>
+
+<li><img data-src-base="{{ site.url}}/images/projects/" data-src="
+<320:mdg-ex-05_320.jpg,
+<480:mdg-ex-05_480.jpg,
+<640:mdg-ex-05_640.jpg,
+<800:mdg-ex-05_800.jpg,
+<1024:mdg-ex-05_1024.jpg,
+>1024:mdg-ex-05_1120.jpg
+"></li>
+
+<li><img data-src-base="{{ site.url}}/images/projects/" data-src="
+<320:mdg-ex-06_320.jpg,
+<480:mdg-ex-06_480.jpg,
+<640:mdg-ex-06_640.jpg,
+<800:mdg-ex-06_800.jpg,
+<1024:mdg-ex-06_1024.jpg,
+>1024:mdg-ex-06_1120.jpg
+"></li>
