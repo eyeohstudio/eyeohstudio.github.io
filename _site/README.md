@@ -1,3 +1,0 @@
-# wearestudio.io
-
-:)
