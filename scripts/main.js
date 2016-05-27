@@ -14,7 +14,7 @@ jQuery(document).ready(function ($) {
         if (target.length) {
           $('html, body').stop().animate({
             scrollTop: target.offset().top + 1
-          }, 1000);
+          }, 900);
           return false;
         }
       }
@@ -448,8 +448,6 @@ que ve al temps de la calor. */
   $(window).load(function() {
 
     makeImagesResponsive(); // responsive-img.min.js
-    projectContentContainerHeight();
-    projectControlContainerSize();
     vimeoCustom();
 
     ////////////////////////////////////////////////////////////////
@@ -464,9 +462,17 @@ que ve al temps de la calor. */
 
       ////////////////////////////////////////////////////////////////
 
-      $('body').removeClass('invisible').addClass('visible');
+      $('.summer .container-fluid .row:nth-of-type(1)').removeClass('invisible').addClass('visible');
 
     }, 300);
+
+    setTimeout(function() {
+
+      projectContentContainerHeight();
+
+      $('body').removeClass('invisible').addClass('visible');
+
+    }, 1000);
   });
 
 ////////////////////////////////////////////////////////////////
@@ -474,7 +480,28 @@ que ve al temps de la calor. */
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
 
+//  $(window).resize(function() {
+//
+//  });
+
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+
+  // Forever in debt with Alvaro Trigo
+  // http://alvarotrigo.com/blog/firing-resize-event-only-once-when-resizing-is-finished/
+  var resizeId;
+
   $(window).resize(function() {
+    clearTimeout(resizeId);
+    resizeId = setTimeout(doneResizing, 300);
+  });
+
+  ////////////////////////////////////////////////////////////////
+  ////////////////////////////////////////////////////////////////
+
+  function doneResizing(){
 
     ListernerSixHundredForty();
     ListenerOneThousandOneHundredFifteen();
@@ -485,28 +512,7 @@ que ve al temps de la calor. */
     setWinterHeight();
     vimeoCustom();
 
-  });
-
-////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////
-
-//  // Forever in debt with Alvaro Trigo
-//  // http://alvarotrigo.com/blog/firing-resize-event-only-once-when-resizing-is-finished/
-//  var resizeId;
-//
-//  $(window).resize(function() {
-//    clearTimeout(resizeId);
-//    resizeId = setTimeout(doneResizing, 300);
-//  });
-//
-//  ////////////////////////////////////////////////////////////////
-//  ////////////////////////////////////////////////////////////////
-//
-//  function doneResizing(){
-//
-//  };
+  };
 
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
@@ -528,22 +534,24 @@ que ve al temps de la calor. */
 
   $('.project-thumbnail a').on('click', function() {
 
-    $('html, body').stop().animate({scrollTop: 0}, 300);
-
-    ////////////////////////////////////////////////////////////////
-
     var slug = $(this).attr('data-project-name');
     window.location.hash = slug;
 
     ////////////////////////////////////////////////////////////////
 
+    $('html, body').stop().animate({scrollTop: 0}, 300);
+
+    ////////////////////////////////////////////////////////////////
+
     var springHeight = $('body > .container-fluid > .row:nth-of-type(2)').outerHeight();
     var projectName = $(this).attr('data-project-name');
-    $('.summer .container-fluid .row:nth-of-type(2)').removeClass('invisible').addClass('visible').queue(function(next) {
-      $(this).stop().animate({'margin-top': '0' - springHeight}, 400);
-      $('#' + projectName).removeClass('hide invisible').addClass('show visible').attr('aria-expanded', 'true');
-      $('.summer .container-fluid .row:nth-of-type(1)').removeClass('visible').addClass('invisible');
-      next();
+    $('.summer .container-fluid .row:nth-of-type(2)').removeClass('invisible').addClass('visible').queue(function() {
+      $(this).animate({'margin-top': '0' - springHeight}, 300).queue(function() {
+        $('#' + projectName).removeClass('hide invisible').addClass('show visible').attr('aria-expanded', 'true');
+        $('.summer .container-fluid .row:nth-of-type(1)').removeClass('visible').addClass('invisible');
+        $(this).dequeue();
+      });
+      $(this).dequeue();
     });
 
     ////////////////////////////////////////////////////////////////
@@ -568,10 +576,6 @@ que ve al temps de la calor. */
 
   $('.project-content .project-excerpt button').on('click', function() {
 
-    // EMPTY
-
-    ////////////////////////////////////////////////////////////////
-
     window.location.hash = ''; // for older browsers, leaves the '#' behind
     history.pushState('', document.title, window.location.pathname); // nice and clean
 
@@ -580,19 +584,11 @@ que ve al temps de la calor. */
     var projectThumbnailContainerHeight = $('.summer .container-fluid .row:nth-of-type(1)').outerHeight();
     var projectName = $('.project-content.show.visible').attr('id');
     $('.summer .container-fluid .row:nth-of-type(1)').removeClass('invisible').addClass('visible');
-    $('.summer .container-fluid .row:nth-of-type(2)').stop().animate({'margin-top': projectThumbnailContainerHeight}, 400).queue(function(next) {
-      $('#' + projectName).removeClass('show').addClass('hide').attr('aria-expanded', 'false');
-      $(this).stop().removeClass('visible').addClass('invisible');
+    $('.summer .container-fluid .row:nth-of-type(2)').stop().animate({'margin-top': projectThumbnailContainerHeight}, 300).queue(function(next) {
+      $('#' + projectName).removeClass('show visible').addClass('hide invisible').attr('aria-expanded', 'false');
+      $(this).removeClass('visible').addClass('invisible');
       next();
     });
-
-    ////////////////////////////////////////////////////////////////
-
-    setTimeout(function() {
-
-      // EMPTY
-
-    }, 300);
   });
 
 ////////////////////////////////////////////////////////////////
@@ -615,6 +611,7 @@ que ve al temps de la calor. */
 
       linkExternal();
       mapKeyboardChars();
+      projectContentContainerHeight();
       projectControlContainerSize();
       projectControlButtonsPosition();
       projectControlButtonsClick();
