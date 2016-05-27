@@ -5,6 +5,19 @@ jQuery(document).ready(function ($) {
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
 
+  function isTouchDevice(){
+    return true == ('ontouchstart' in window || window.DocumentTouch && document instanceof DocumentTouch);
+  }
+
+  if(isTouchDevice()===true) {
+    $('footer').hide();
+  }
+
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+
   function anchorLinkScrollAnimation() {
 
     $('.navbar-collapse ul li a[href*="#"]:not([href="#"])').click(function() {
@@ -98,6 +111,15 @@ jQuery(document).ready(function ($) {
       $('body').removeClass('en').addClass('es');
       return false;
     });
+  };
+
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+
+  function linkExternal() {
+    $('.project-excerpt p a').attr('target', '_blank');
   };
 
 ////////////////////////////////////////////////////////////////
@@ -523,6 +545,7 @@ jQuery(document).ready(function ($) {
 
     setTimeout(function() {
 
+      linkExternal();
       mapKeyboardChars();
       projectControlContainerSize();
       projectControlButtonsPosition();
@@ -583,6 +606,7 @@ jQuery(document).ready(function ($) {
 
     setTimeout(function() {
 
+      linkExternal();
       mapKeyboardChars();
       projectControlContainerSize();
       projectControlButtonsPosition();
