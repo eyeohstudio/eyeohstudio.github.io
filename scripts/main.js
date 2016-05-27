@@ -437,7 +437,6 @@ que ve al temps de la calor. */
   randomWhat();
   setWinterHeight();
   tooltipTouchRemove();
-  vimeoCustom();
   ListernerSixHundredForty();
   ListenerOneThousandOneHundredFifteen();
 
@@ -449,6 +448,7 @@ que ve al temps de la calor. */
   $(window).load(function() {
 
     makeImagesResponsive(); // responsive-img.min.js
+    projectContentContainerHeight();
     projectControlContainerSize();
     vimeoCustom();
 
@@ -458,7 +458,6 @@ que ve al temps de la calor. */
     setTimeout(function() {
 
       mapKeyboardChars();
-      projectContentContainerHeight();
       projectControlButtonsPosition();
       projectControlButtonsClick();
       windowLocationHashOpenProject();
@@ -477,42 +476,37 @@ que ve al temps de la calor. */
 
   $(window).resize(function() {
 
-    makeImagesResponsive(); // responsive-img.min.js
-    projectControlContainerSize();
-    projectControlButtonsPosition();
-    projectControlButtonsClick();
-
-  });
-
-////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////
-
-  // Forever in debt with Alvaro Trigo
-  // http://alvarotrigo.com/blog/firing-resize-event-only-once-when-resizing-is-finished/
-  var resizeId;
-
-  $(window).resize(function() {
-    clearTimeout(resizeId);
-    resizeId = setTimeout(doneResizing, 300);
-  });
-
-  ////////////////////////////////////////////////////////////////
-  ////////////////////////////////////////////////////////////////
-
-  function doneResizing(){
-
     ListernerSixHundredForty();
     ListenerOneThousandOneHundredFifteen();
+    makeImagesResponsive(); // responsive-img.min.js
     projectContentContainerHeight();
     projectControlContainerSize();
     projectControlButtonsPosition();
-    projectControlButtonsClick();
     setWinterHeight();
     vimeoCustom();
 
-  };
+  });
+
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+
+//  // Forever in debt with Alvaro Trigo
+//  // http://alvarotrigo.com/blog/firing-resize-event-only-once-when-resizing-is-finished/
+//  var resizeId;
+//
+//  $(window).resize(function() {
+//    clearTimeout(resizeId);
+//    resizeId = setTimeout(doneResizing, 300);
+//  });
+//
+//  ////////////////////////////////////////////////////////////////
+//  ////////////////////////////////////////////////////////////////
+//
+//  function doneResizing(){
+//
+//  };
 
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
