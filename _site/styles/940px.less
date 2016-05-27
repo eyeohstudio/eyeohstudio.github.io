@@ -97,7 +97,12 @@
             text-align: right;
             text-transform: uppercase;
             white-space: nowrap;
-            writing-mode: vertical-lr;
+
+            -webkit-writing-mode: vertical-rl;
+               -moz-writing-mode: vertical-rl;
+                -ms-writing-mode: vertical-rl;
+                -ms-writing-mode: tb-rl;
+                    writing-mode: vertical-rl;
 
             -webkit-transform: rotate(-180deg);
                -moz-transform: rotate(-180deg);

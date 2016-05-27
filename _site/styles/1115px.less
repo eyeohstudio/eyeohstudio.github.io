@@ -99,7 +99,12 @@
             text-align: right;
             text-transform: uppercase;
             white-space: normal;
-            writing-mode: horizontal-tb;
+
+            -webkit-writing-mode: horizontal-tb;
+               -moz-writing-mode: horizontal-tb;
+                -ms-writing-mode: horizontal-tb;
+                -ms-writing-mode: lr-tb;
+                    writing-mode: horizontal-tb;
 
             -webkit-transform: rotate(0);
                -moz-transform: rotate(0);

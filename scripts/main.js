@@ -5,19 +5,6 @@ jQuery(document).ready(function ($) {
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
 
-  function isTouchDevice(){
-    return true == ('ontouchstart' in window || window.DocumentTouch && document instanceof DocumentTouch);
-  }
-
-  if(isTouchDevice()===true) {
-    $('footer').hide();
-  }
-
-////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////
-
   function anchorLinkScrollAnimation() {
 
     $('.navbar-collapse ul li a[href*="#"]:not([href="#"])').click(function() {
@@ -25,7 +12,7 @@ jQuery(document).ready(function ($) {
         var target = $(this.hash);
         target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
         if (target.length) {
-          $('html, body').animate({
+          $('html, body').stop().animate({
             scrollTop: target.offset().top + 1
           }, 1000);
           return false;
@@ -362,6 +349,28 @@ jQuery(document).ready(function ($) {
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
 
+  function swipeProjects() {
+
+    $('.project-content[aria-expanded="true"]').swipe( {
+      swipeLeft:function(event, direction, distance, duration, fingerCount, fingerData) {
+        $('.project-content[aria-expanded="true"] .right-project-control').trigger('click');
+      },
+      threshold:0
+    });
+
+    $('.project-content[aria-expanded="true"]').swipe( {
+      swipeRight:function(event, direction, distance, duration, fingerCount, fingerData) {
+        $('.project-content[aria-expanded="true"] .left-project-control').trigger('click');
+      },
+      threshold:0
+    });
+  };
+
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+
   function tooltipTouchRemove() {
 
     if (!('ontouchstart' in window)) {
@@ -407,6 +416,12 @@ jQuery(document).ready(function ($) {
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
+
+/*
+La ginesta altra vegada
+la ginesta amb tanta olor
+es la meva enamorada
+que ve al temps de la calor. */
 
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
@@ -519,10 +534,6 @@ jQuery(document).ready(function ($) {
 
   $('.project-thumbnail a').on('click', function() {
 
-    projectContentContainerHeight();
-
-    ////////////////////////////////////////////////////////////////
-
     $('html, body').stop().animate({scrollTop: 0}, 300);
 
     ////////////////////////////////////////////////////////////////
@@ -547,9 +558,11 @@ jQuery(document).ready(function ($) {
 
       linkExternal();
       mapKeyboardChars();
+      projectContentContainerHeight();
       projectControlContainerSize();
       projectControlButtonsPosition();
       projectControlButtonsClick();
+      swipeProjects();
 
     }, 300);
   });
@@ -573,7 +586,7 @@ jQuery(document).ready(function ($) {
     var projectThumbnailContainerHeight = $('.summer .container-fluid .row:nth-of-type(1)').outerHeight();
     var projectName = $('.project-content.show.visible').attr('id');
     $('.summer .container-fluid .row:nth-of-type(1)').removeClass('invisible').addClass('visible');
-    $('.summer .container-fluid .row:nth-of-type(2)').animate({'margin-top': projectThumbnailContainerHeight}, 400).queue(function(next) {
+    $('.summer .container-fluid .row:nth-of-type(2)').stop().animate({'margin-top': projectThumbnailContainerHeight}, 400).queue(function(next) {
       $('#' + projectName).removeClass('show').addClass('hide').attr('aria-expanded', 'false');
       $(this).stop().removeClass('visible').addClass('invisible');
       next();
@@ -611,6 +624,7 @@ jQuery(document).ready(function ($) {
       projectControlContainerSize();
       projectControlButtonsPosition();
       projectControlButtonsClick();
+      swipeProjects();
 
     }, 300);
   });
@@ -624,6 +638,20 @@ jQuery(document).ready(function ($) {
 
     $('#sota-la-paraula > ul > li').slice(6,10).wrapAll('<li><ul class="wrapper" />');
   });
+
+
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+
+  function isTouchDevice(){
+    return true == ('ontouchstart' in window || window.DocumentTouch && document instanceof DocumentTouch);
+  }
+
+  if(isTouchDevice()===true) {
+    $('footer').hide();
+  }
 
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////

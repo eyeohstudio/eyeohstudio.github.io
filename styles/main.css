@@ -1753,7 +1753,11 @@ body.es .navbar-collapse ul li:nth-of-type(4) a abbr {
     text-align: right;
     text-transform: uppercase;
     white-space: nowrap;
-    writing-mode: vertical-lr;
+    -webkit-writing-mode: vertical-rl;
+    -moz-writing-mode: vertical-rl;
+    -ms-writing-mode: vertical-rl;
+    -ms-writing-mode: tb-rl;
+    writing-mode: vertical-rl;
     -webkit-transform: rotate(-180deg);
     -moz-transform: rotate(-180deg);
     -ms-transform: rotate(-180deg);
@@ -2572,6 +2576,10 @@ body.es .navbar-collapse ul li:nth-of-type(4) a abbr {
     text-align: right;
     text-transform: uppercase;
     white-space: normal;
+    -webkit-writing-mode: horizontal-tb;
+    -moz-writing-mode: horizontal-tb;
+    -ms-writing-mode: horizontal-tb;
+    -ms-writing-mode: lr-tb;
     writing-mode: horizontal-tb;
     -webkit-transform: rotate(0);
     -moz-transform: rotate(0);
