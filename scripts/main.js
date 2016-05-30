@@ -246,8 +246,8 @@ jQuery(document).ready(function ($) {
       var $curr = $('.project-content.show.visible');
       var $next = $(nextProject);
 
-      $curr.removeClass('show visible').addClass('hide invisible').attr('aria-expanded', 'false');
-      $next.removeClass('hide invisible').addClass('show visible').attr('aria-expanded', 'true');
+      $curr.removeClass('show visible goRight').addClass('hide invisible goLeft').attr('aria-expanded', 'false');
+      $next.removeClass('hide invisible goRight').addClass('show visible goLeft').attr('aria-expanded', 'true');
     });
 
   ////////////////////////////////////////////////////////////////
@@ -259,8 +259,8 @@ jQuery(document).ready(function ($) {
       var $curr = $('.project-content.show.visible');
       var $previous = $(previousProject);
 
-      $curr.removeClass('show visible').addClass('hide invisible').attr('aria-expanded', 'false');
-      $previous.removeClass('hide invisible').addClass('show visible').attr('aria-expanded', 'true');
+      $curr.removeClass('show visible goLeft').addClass('hide invisible goRight').attr('aria-expanded', 'false');
+      $previous.removeClass('hide invisible goLeft').addClass('show visible goRight').attr('aria-expanded', 'true');
     });
   };
 
