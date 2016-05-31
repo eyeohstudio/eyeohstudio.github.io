@@ -240,27 +240,32 @@ jQuery(document).ready(function ($) {
 
   function projectControlButtonsClick() {
 
-    $('.project-content[aria-expanded="true"] .right-project-control').on('click', function() {
+    $('.project-content.slick-slide.slick-current.slick-active .right-project-control').on('click', function() {
 
-      var nextProject = $(this).attr('href');
-      var $curr = $('.project-content.show.visible');
-      var $next = $(nextProject);
+      $('.slider').slick('slickNext');
 
-      $curr.removeClass('show visible goRight').addClass('hide invisible goLeft').attr('aria-expanded', 'false');
-      $next.removeClass('hide invisible goRight').addClass('show visible goLeft').attr('aria-expanded', 'true');
+      //var nextProject = $(this).attr('href');
+      //var $curr = $('.project-content.show.visible');
+      //var $next = $(nextProject);
+      //
+      //$curr.removeClass('show visible goRight').addClass('hide invisible goLeft').attr('aria-expanded', 'false');
+      //$next.removeClass('hide invisible goRight').addClass('show visible goLeft').attr('aria-expanded', 'true');
+
     });
 
   ////////////////////////////////////////////////////////////////
   ////////////////////////////////////////////////////////////////
 
-    $('.project-content[aria-expanded="true"] .left-project-control').on('click', function() {
+    $('.project-content.slick-slide.slick-current.slick-active .left-project-control').on('click', function() {
 
-      var previousProject = $(this).attr('href');
-      var $curr = $('.project-content.show.visible');
-      var $previous = $(previousProject);
+      $('.slider').slick('slickPrev');
 
-      $curr.removeClass('show visible goLeft').addClass('hide invisible goRight').attr('aria-expanded', 'false');
-      $previous.removeClass('hide invisible goLeft').addClass('show visible goRight').attr('aria-expanded', 'true');
+      //var previousProject = $(this).attr('href');
+      //var $curr = $('.project-content.show.visible');
+      //var $previous = $(previousProject);
+      //
+      //$curr.removeClass('show visible goLeft').addClass('hide invisible goRight').attr('aria-expanded', 'false');
+      //$previous.removeClass('hide invisible goLeft').addClass('show visible goRight').attr('aria-expanded', 'true');
     });
   };
 
@@ -349,22 +354,22 @@ jQuery(document).ready(function ($) {
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
 
-  function swipeProjects() {
-
-    $('.project-content[aria-expanded="true"]').swipe( {
-      swipeLeft:function(event, direction, distance, duration, fingerCount, fingerData) {
-        $('.project-content[aria-expanded="true"] .right-project-control').trigger('click');
-      },
-      threshold:0
-    });
-
-    $('.project-content[aria-expanded="true"]').swipe( {
-      swipeRight:function(event, direction, distance, duration, fingerCount, fingerData) {
-        $('.project-content[aria-expanded="true"] .left-project-control').trigger('click');
-      },
-      threshold:0
-    });
-  };
+//  function swipeProjects() {
+//
+//    $('.project-content[aria-expanded="true"]').swipe( {
+//      swipeLeft:function(event, direction, distance, duration, fingerCount, fingerData) {
+//        $('.project-content[aria-expanded="true"] .right-project-control').trigger('click');
+//      },
+//      threshold:0
+//    });
+//
+//    $('.project-content[aria-expanded="true"]').swipe( {
+//      swipeRight:function(event, direction, distance, duration, fingerCount, fingerData) {
+//        $('.project-content[aria-expanded="true"] .left-project-control').trigger('click');
+//      },
+//      threshold:0
+//    });
+//  };
 
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
@@ -539,7 +544,7 @@ que ve al temps de la calor. */
 
     ////////////////////////////////////////////////////////////////
 
-    $('html, body').stop().animate({scrollTop: 0}, 300);
+    //$('html, body').stop().animate({scrollTop: 0}, 300);
 
     ////////////////////////////////////////////////////////////////
 
@@ -556,6 +561,17 @@ que ve al temps de la calor. */
 
     ////////////////////////////////////////////////////////////////
 
+    $('.slider').slick({
+      adaptiveHeight: true,
+      arrows: false,
+      infinite: false
+    });
+
+    var goToTabindex = $(this).parent().attr('tabindex');
+    $('.slider').slick('slickGoTo', goToTabindex);
+
+    ////////////////////////////////////////////////////////////////
+
     setTimeout(function() {
 
       linkExternal();
@@ -564,7 +580,13 @@ que ve al temps de la calor. */
       projectControlContainerSize();
       projectControlButtonsPosition();
       projectControlButtonsClick();
-      swipeProjects();
+      //swipeProjects();
+      $('.slider').slick({
+        accessibility: false,
+        adaptiveHeight: true,
+        arrows: false,
+        infinite: false
+      });
 
     }, 300);
   });
@@ -603,7 +625,7 @@ que ve al temps de la calor. */
 
     ////////////////////////////////////////////////////////////////
 
-    $('html, body').stop().animate({scrollTop: 0}, 300);
+    //$('html, body').stop().animate({scrollTop: 0}, 300);
 
     ////////////////////////////////////////////////////////////////
 
@@ -615,7 +637,7 @@ que ve al temps de la calor. */
       projectControlContainerSize();
       projectControlButtonsPosition();
       projectControlButtonsClick();
-      swipeProjects();
+      //swipeProjects();
 
     }, 300);
   });
@@ -648,5 +670,9 @@ que ve al temps de la calor. */
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
+
+  $('.summer .container-fluid .row:nth-of-type(1) .project-thumbnail').each(function(n) {
+    $(this).attr('tabindex', n);
+  });
 
 });
