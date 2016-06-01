@@ -1819,7 +1819,7 @@ body.es .navbar-collapse ul li:nth-of-type(4) a abbr {
     margin-left: 25%;
   }
   div.summer .project-content .project-control {
-    display: block;
+    display: none;
     width: 100%;
     position: absolute;
   }
