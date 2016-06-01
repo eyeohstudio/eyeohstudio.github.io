@@ -456,8 +456,8 @@ que ve al temps de la calor. */
     setTimeout(function() {
 
       mapKeyboardChars();
-      projectControlButtonsPosition();
-      projectControlButtonsClick();
+//      projectControlButtonsPosition();
+//      projectControlButtonsClick();
       windowLocationHashOpenProject();
 
       ////////////////////////////////////////////////////////////////
@@ -507,8 +507,8 @@ que ve al temps de la calor. */
     ListenerOneThousandOneHundredFifteen();
     makeImagesResponsive(); // responsive-img.min.js
     projectContentContainerHeight();
-    projectControlContainerSize();
-    projectControlButtonsPosition();
+//    projectControlContainerSize();
+//    projectControlButtonsPosition();
     setWinterHeight();
     vimeoCustom();
 
@@ -522,8 +522,8 @@ que ve al temps de la calor. */
   $('.language-change a').on('click', function() {
 
     projectContentContainerHeight();
-    projectControlContainerSize();
-    projectControlButtonsPosition();
+//    projectControlContainerSize();
+//    projectControlButtonsPosition();
 
   });
 
@@ -561,10 +561,10 @@ que ve al temps de la calor. */
       linkExternal();
       mapKeyboardChars();
       projectContentContainerHeight();
-      projectControlContainerSize();
-      projectControlButtonsPosition();
-      projectControlButtonsClick();
-      swipeProjects();
+//      projectControlContainerSize();
+//      projectControlButtonsPosition();
+//      projectControlButtonsClick();
+//      swipeProjects();
 
     }, 300);
   });
@@ -612,10 +612,10 @@ que ve al temps de la calor. */
       linkExternal();
       mapKeyboardChars();
       projectContentContainerHeight();
-      projectControlContainerSize();
-      projectControlButtonsPosition();
-      projectControlButtonsClick();
-      swipeProjects();
+//      projectControlContainerSize();
+//      projectControlButtonsPosition();
+//      projectControlButtonsClick();
+//      swipeProjects();
 
     }, 300);
   });
