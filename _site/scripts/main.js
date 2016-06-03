@@ -535,14 +535,7 @@ jQuery(document).ready(function ($) {
     ////////////////////////////////////////////////////////////////
 
     setTimeout(function() {
-<<<<<<< HEAD
-
-      mapKeyboardChars();
-//      projectControlButtonsPosition();
-//      projectControlButtonsClick();
-=======
       projectContentContainerHeight();
->>>>>>> mad
       windowLocationHashOpenProject();
 
       ////////////////////////////////////////////////////////////////
@@ -577,14 +570,9 @@ jQuery(document).ready(function ($) {
     ListenerOneThousandOneHundredFifteen();
     makeImagesResponsive(); // responsive-img.min.js
     projectContentContainerHeight();
-<<<<<<< HEAD
-//    projectControlContainerSize();
-//    projectControlButtonsPosition();
-=======
     projectControlContainerSize();
     projectControlButtonsPosition();
     projectControlButtonsClick();
->>>>>>> mad
     setWinterHeight();
     vimeoResponsive();
 
@@ -606,15 +594,9 @@ jQuery(document).ready(function ($) {
 
   $('.language-change a').on('click', function() {
     projectContentContainerHeight();
-<<<<<<< HEAD
-//    projectControlContainerSize();
-//    projectControlButtonsPosition();
-
-=======
     projectControlContainerSize();
     projectControlButtonsPosition();
     projectControlButtonsClick();
->>>>>>> mad
   });
 
 ////////////////////////////////////////////////////////////////
@@ -657,17 +639,9 @@ jQuery(document).ready(function ($) {
       keydownTrigger();
       mapKeyboardChars();
       projectContentContainerHeight();
-<<<<<<< HEAD
-//      projectControlContainerSize();
-//      projectControlButtonsPosition();
-//      projectControlButtonsClick();
-//      swipeProjects();
-
-=======
       projectControlContainerSize();
       projectControlButtonsPosition();
       projectControlButtonsClick();
->>>>>>> mad
     }, 300);
   });
 
@@ -718,17 +692,9 @@ jQuery(document).ready(function ($) {
       addTargetBlank();
       keydownTrigger();
       projectContentContainerHeight();
-<<<<<<< HEAD
-//      projectControlContainerSize();
-//      projectControlButtonsPosition();
-//      projectControlButtonsClick();
-//      swipeProjects();
-
-=======
       projectControlContainerSize();
       projectControlButtonsPosition();
       projectControlButtonsClick();
->>>>>>> mad
     }, 300);
   });
 
