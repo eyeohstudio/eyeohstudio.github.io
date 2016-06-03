@@ -524,7 +524,9 @@ jQuery(document).ready(function ($) {
     $('.slider').slick({
       adaptiveHeight: true,
       arrows: false,
-      infinite: false
+      infinite: false,
+      respondTo: 'min',
+      slidesToShow: 99
     });
   };
 
@@ -595,7 +597,6 @@ jQuery(document).ready(function ($) {
 ////////////////////////////////////////////////////////////////
 
 //  $(window).resize(function() {
-//
 //  });
 
 ////////////////////////////////////////////////////////////////
