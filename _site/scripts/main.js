@@ -581,9 +581,12 @@ jQuery(document).ready(function ($) {
     }, 300);
 
     setTimeout(function() {
-      projectContentContainerHeight();
       $('body').removeClass('invisible').addClass('visible');
     }, 900);
+
+    setTimeout(function() {
+      projectContentContainerHeight();
+    }, 1800);
   });
 
 ////////////////////////////////////////////////////////////////
