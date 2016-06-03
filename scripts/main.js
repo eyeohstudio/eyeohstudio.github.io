@@ -1,5 +1,12 @@
 jQuery(document).ready(function ($) {
 
+function isiPhone(){
+  return (
+    (navigator.platform.indexOf('iPhone') != -1) ||
+    (navigator.platform.indexOf('iPod') != -1)
+  );
+};
+
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
@@ -511,6 +518,7 @@ jQuery(document).ready(function ($) {
   anchorLinkScrollAnimation();
   backToTop();
   hamburgerButtonAnimation();
+  isiPhone();
   isTouchDevice();
   languageChange();
   mapKeyboardChars();
@@ -719,6 +727,10 @@ jQuery(document).ready(function ($) {
 //  if ($('.no-svg .navbar-collapse.collapse.in')) {
 //    $('.no-svg navbar-header button span .menu-cross').removeClass('hide').addClass('show');
 //  }
+
+if(isiPhone()){
+   $('html').addClass('f_cking-iphone');
+}
 
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////

@@ -3835,46 +3835,57 @@ body.es .navbar-collapse ul li:nth-of-type(4) a abbr {
     visibility: hidden;
   }
 }
+.f_cking-iphone .project-thumbnail > a,
 .no-backgroundblendmode .project-thumbnail > a,
 .no-svg .project-thumbnail > a {
   mix-blend-mode: normal !important;
 }
+.f_cking-iphone .project-thumbnail > a.fresh,
 .no-backgroundblendmode .project-thumbnail > a.fresh,
 .no-svg .project-thumbnail > a.fresh {
   display: none;
 }
+.f_cking-iphone .project-thumbnail > a.fallback,
 .no-backgroundblendmode .project-thumbnail > a.fallback,
 .no-svg .project-thumbnail > a.fallback {
   display: block;
 }
+.f_cking-iphone .project-thumbnail > a img,
 .no-backgroundblendmode .project-thumbnail > a img,
 .no-svg .project-thumbnail > a img {
   mix-blend-mode: normal !important;
 }
+.f_cking-iphone .navbar-header h1 a img:nth-of-type(1),
 .no-backgroundblendmode .navbar-header h1 a img:nth-of-type(1),
 .no-svg .navbar-header h1 a img:nth-of-type(1) {
   display: none;
 }
+.f_cking-iphone .navbar-header h1 a img:nth-of-type(2),
 .no-backgroundblendmode .navbar-header h1 a img:nth-of-type(2),
 .no-svg .navbar-header h1 a img:nth-of-type(2) {
   display: block;
 }
+.f_cking-iphone .navbar-header h1 a img:nth-of-type(3),
 .no-backgroundblendmode .navbar-header h1 a img:nth-of-type(3),
 .no-svg .navbar-header h1 a img:nth-of-type(3) {
   display: none;
 }
+.f_cking-iphone .navbar-header button span,
 .no-backgroundblendmode .navbar-header button span,
 .no-svg .navbar-header button span {
   position: relative;
 }
+.f_cking-iphone .navbar-header button span:hover .menu-default,
 .no-backgroundblendmode .navbar-header button span:hover .menu-default,
 .no-svg .navbar-header button span:hover .menu-default {
   display: none;
 }
+.f_cking-iphone .navbar-header button span:hover .menu-over,
 .no-backgroundblendmode .navbar-header button span:hover .menu-over,
 .no-svg .navbar-header button span:hover .menu-over {
   display: block;
 }
+.f_cking-iphone .navbar-header button span img,
 .no-backgroundblendmode .navbar-header button span img,
 .no-svg .navbar-header button span img {
   display: block;
@@ -3885,36 +3896,44 @@ body.es .navbar-collapse ul li:nth-of-type(4) a abbr {
   -o-transition: .3s ease;
   transition: .3s ease;
 }
+.f_cking-iphone .navbar-header button span img.menu-default,
 .no-backgroundblendmode .navbar-header button span img.menu-default,
 .no-svg .navbar-header button span img.menu-default {
   display: block;
 }
+.f_cking-iphone .navbar-header button span img.menu-over,
 .no-backgroundblendmode .navbar-header button span img.menu-over,
 .no-svg .navbar-header button span img.menu-over {
   display: none;
 }
+.f_cking-iphone .navbar-header button span img.menu-active,
 .no-backgroundblendmode .navbar-header button span img.menu-active,
 .no-svg .navbar-header button span img.menu-active {
   display: none;
 }
+.f_cking-iphone .navbar-header button span svg,
 .no-backgroundblendmode .navbar-header button span svg,
 .no-svg .navbar-header button span svg {
   display: none;
 }
+.f_cking-iphone .scroll-to-top svg,
 .no-backgroundblendmode .scroll-to-top svg,
 .no-svg .scroll-to-top svg {
   display: none;
 }
+.f_cking-iphone .scroll-to-top:hover,
 .no-backgroundblendmode .scroll-to-top:hover,
 .no-svg .scroll-to-top:hover {
   opacity: 1 !important;
 }
+.f_cking-iphone .scroll-to-top:hover img,
 .no-backgroundblendmode .scroll-to-top:hover img,
 .no-svg .scroll-to-top:hover img {
   -webkit-transform: translateY(0);
   -moz-transform: translateY(0);
   transform: translateY(0);
 }
+.f_cking-iphone .scroll-to-top img,
 .no-backgroundblendmode .scroll-to-top img,
 .no-svg .scroll-to-top img {
   display: block;
@@ -3932,12 +3951,18 @@ body.es .navbar-collapse ul li:nth-of-type(4) a abbr {
   transform: translateY(5px);
 }
 @media (min-width: 375px) {
+  .f_cking-iphone .navbar-header h1 a img:nth-of-type(1),
+  .no-backgroundblendmode .navbar-header h1 a img:nth-of-type(1),
   .no-svg .navbar-header h1 a img:nth-of-type(1) {
     display: none;
   }
+  .f_cking-iphone .navbar-header h1 a img:nth-of-type(2),
+  .no-backgroundblendmode .navbar-header h1 a img:nth-of-type(2),
   .no-svg .navbar-header h1 a img:nth-of-type(2) {
     display: none;
   }
+  .f_cking-iphone .navbar-header h1 a img:nth-of-type(3),
+  .no-backgroundblendmode .navbar-header h1 a img:nth-of-type(3),
   .no-svg .navbar-header h1 a img:nth-of-type(3) {
     display: block;
   }
