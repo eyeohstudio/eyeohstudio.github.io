@@ -578,11 +578,11 @@ jQuery(document).ready(function ($) {
       ////////////////////////////////////////////////////////////////
 
       $('.summer .container-fluid .row:nth-of-type(1)').removeClass('invisible').addClass('visible');
-    }, 300);
+    }, 900);
 
     setTimeout(function() {
       $('body').removeClass('invisible').addClass('visible');
-    }, 900);
+    }, 1200);
   });
 
 ////////////////////////////////////////////////////////////////
