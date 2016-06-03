@@ -4,39 +4,39 @@ jQuery(document).ready(function ($) {
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
-	
-	function addBodyClass() {
-	
-		if ($('.slider').hasClass('hide')){
+
+  function addBodyClass() {
+
+    if ($('.slider').hasClass('hide')){
       $('body').removeClass('slider-is-open').addClass('slider-is-closed');
     }
     if ($('.slider').hasClass('show')){
       $('body').removeClass('slider-is-closed').addClass('slider-is-open');
     }
-	};
-	
+  };
+
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
 
-	function addDataSlickIndex() {
-		
-		$('.summer .project-thumbnail').each(function(n) {
-			$(this).attr('data-slick-index', n);
-		});
-	};
-	
+  function addDataSlickIndex() {
+
+    $('.summer .project-thumbnail').each(function(n) {
+      $(this).attr('data-slick-index', n);
+    });
+  };
+
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
 
   function addTargetBlank() {
-		
+
     $('.project-excerpt p a').attr('target', '_blank');
   };
-	
+
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
@@ -98,7 +98,7 @@ jQuery(document).ready(function ($) {
       }
     );
   };
-	
+
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
@@ -107,7 +107,7 @@ jQuery(document).ready(function ($) {
   function isTouchDevice() {
     return true == ('ontouchstart' in window || window.DocumentTouch && document instanceof DocumentTouch);
   }
-	
+
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
@@ -167,13 +167,13 @@ jQuery(document).ready(function ($) {
       return $('html').removeClass('larger-than-one-thousand-one-hundred-fifteen').addClass('smaller-than-one-thousand-one-hundred-fifteen');
     }
     $('html').removeClass('smaller-than-one-thousand-one-hundred-fifteen').addClass('larger-than-one-thousand-one-hundred-fifteen');
-  };	
+  };
 
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
-	
+
   function randomCity() {
 
     var city01 = new Array('Fons de Bikini', 'Bikini Bottom', 'Fondo de Bikini')
@@ -231,7 +231,7 @@ jQuery(document).ready(function ($) {
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
 
-	function tooltipTouchRemove() {
+  function tooltipTouchRemove() {
 
     if (!('ontouchstart' in window)) {
       $('[data-toggle="tooltip"]').tooltip()
@@ -276,12 +276,12 @@ jQuery(document).ready(function ($) {
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
-	
+
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
-	
+
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
@@ -311,61 +311,61 @@ jQuery(document).ready(function ($) {
 //      $(this).attr('data-src', '<320:' + newFileFullname320 + ', <480:' + newFileFullname480 + ', <640:' + newFileFullname640 + ', <800:' + newFileFullname800 + ', <1024:' + newFileFullname1024 + ', >1024:' + newFileFullname1120);
 //    });
 //  };
-	
-////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////
-	
-	function simulateRightKeyPress() {
-		
-		var e = $.Event('keydown');
-		e.which = 39;
-		$('.slider').trigger(e);
-	};
 
-	function simulateLeftKeyPress() {
-		
-		var e = $.Event('keydown');
-		e.which = 37;
-		$('.slider').trigger(e);
-	};
-	
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
 
-	function keydownTrigger() {
-				
-		$('.slider').on('swipe', function(event, slick, direction){
-			setTimeout(function() {
-				var scrollmem = $('html,body').scrollTop();
-				var slug = $('.project-content.slick-slide.slick-current.slick-active').attr('id');
-				window.location.hash = slug;
-				$('html,body').scrollTop(scrollmem);
-			}, 300);
-		});
-	
-		$('body.slider-is-open').keydown(function(e) {
-			if (e.which == 39){
-				setTimeout(function() {
-					var scrollmem = $('html,body').scrollTop();
-					var slug = $('.project-content.slick-slide.slick-current.slick-active').attr('id');
-					window.location.hash = slug;
-					$('html,body').scrollTop(scrollmem);
-				}, 300);
-			}
-			if (e.which == 37){
-				setTimeout(function() {
-					var scrollmem = $('html,body').scrollTop();
-					var slug = $('.project-content.slick-slide.slick-current.slick-active').attr('id');
-					window.location.hash = slug;
-					$('html,body').scrollTop(scrollmem);
-				}, 300);
-			}
-		});
-	};
+  function simulateRightKeyPress() {
+
+    var e = $.Event('keydown');
+    e.which = 39;
+    $('.slider').trigger(e);
+  };
+
+  function simulateLeftKeyPress() {
+
+    var e = $.Event('keydown');
+    e.which = 37;
+    $('.slider').trigger(e);
+  };
+
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+
+  function keydownTrigger() {
+
+    $('.slider').on('swipe', function(event, slick, direction){
+      setTimeout(function() {
+        var scrollmem = $('html,body').scrollTop();
+        var slug = $('.project-content.slick-slide.slick-current.slick-active').attr('id');
+        window.location.hash = slug;
+        $('html,body').scrollTop(scrollmem);
+      }, 300);
+    });
+
+    $('body.slider-is-open').keydown(function(e) {
+      if (e.which == 39){
+        setTimeout(function() {
+          var scrollmem = $('html,body').scrollTop();
+          var slug = $('.project-content.slick-slide.slick-current.slick-active').attr('id');
+          window.location.hash = slug;
+          $('html,body').scrollTop(scrollmem);
+        }, 300);
+      }
+      if (e.which == 37){
+        setTimeout(function() {
+          var scrollmem = $('html,body').scrollTop();
+          var slug = $('.project-content.slick-slide.slick-current.slick-active').attr('id');
+          window.location.hash = slug;
+          $('html,body').scrollTop(scrollmem);
+        }, 300);
+      }
+    });
+  };
 
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
@@ -443,14 +443,14 @@ jQuery(document).ready(function ($) {
   function projectControlButtonsClick() {
 
     $('.project-content.slick-slide.slick-current.slick-active .right-project-control').click(function(e) {
-			//simulateRightKeyPress();
+      //simulateRightKeyPress();
     });
 
   ////////////////////////////////////////////////////////////////
   ////////////////////////////////////////////////////////////////
 
     $('.project-content.slick-slide.slick-current.slick-active .left-project-control').click(function(e) {
-			//simulateLeftKeyPress();
+      //simulateLeftKeyPress();
     });
   };
 
@@ -481,37 +481,37 @@ jQuery(document).ready(function ($) {
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
-	
-	function sliderInit() {
-		
-		$('.slider').slick({
+
+  function sliderInit() {
+
+    $('.slider').slick({
       adaptiveHeight: true,
-			arrows: false,
+      arrows: false,
       infinite: false
-		});
-	};
+    });
+  };
 
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
-	
-////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////
-	
+
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
 
-	addBodyClass();
-	addDataSlickIndex();
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+
+  addBodyClass();
+  addDataSlickIndex();
   anchorLinkScrollAnimation();
   backToTop();
   hamburgerButtonAnimation();
-	isTouchDevice();
+  isTouchDevice();
   languageChange();
   mapKeyboardChars();
   randomCity();
@@ -529,13 +529,13 @@ jQuery(document).ready(function ($) {
   $(window).load(function() {
     makeImagesResponsive(); // responsive-img.min.js
     vimeoResponsive();
-		sliderInit();
-		
+    sliderInit();
+
     ////////////////////////////////////////////////////////////////
     ////////////////////////////////////////////////////////////////
 
     setTimeout(function() {
-			projectContentContainerHeight();
+      projectContentContainerHeight();
       windowLocationHashOpenProject();
 
       ////////////////////////////////////////////////////////////////
@@ -563,8 +563,8 @@ jQuery(document).ready(function ($) {
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
-	
-	function doneResizing(){
+
+  function doneResizing(){
 
     ListernerSixHundredForty();
     ListenerOneThousandOneHundredFifteen();
@@ -572,15 +572,15 @@ jQuery(document).ready(function ($) {
     projectContentContainerHeight();
     projectControlContainerSize();
     projectControlButtonsPosition();
-		projectControlButtonsClick();
+    projectControlButtonsClick();
     setWinterHeight();
     vimeoResponsive();
 
   };
-	
-	////////////////////////////////////////////////////////////////
+
   ////////////////////////////////////////////////////////////////
-	
+  ////////////////////////////////////////////////////////////////
+
   var resizeId;
   $(window).resize(function() {
     clearTimeout(resizeId);
@@ -596,7 +596,7 @@ jQuery(document).ready(function ($) {
     projectContentContainerHeight();
     projectControlContainerSize();
     projectControlButtonsPosition();
-		projectControlButtonsClick();
+    projectControlButtonsClick();
   });
 
 ////////////////////////////////////////////////////////////////
@@ -605,7 +605,7 @@ jQuery(document).ready(function ($) {
 ////////////////////////////////////////////////////////////////
 
   $('.project-thumbnail a').on('click', function(e) {
-		e.preventDefault();
+    e.preventDefault();
 
     var slug = $(this).attr('data-project-name');
     window.location.hash = slug;
@@ -615,33 +615,33 @@ jQuery(document).ready(function ($) {
     $('html, body').stop().animate({scrollTop: 0}, 300);
 
     ////////////////////////////////////////////////////////////////
-		
-		var springHeight = $('body > .container-fluid > .row:nth-of-type(2)').outerHeight();
+
+    var springHeight = $('body > .container-fluid > .row:nth-of-type(2)').outerHeight();
     $('.summer .container-fluid .row:nth-of-type(2)').removeClass('invisible').addClass('visible').queue(function() {
       $(this).stop().animate({'margin-top': '0' - springHeight}, 300).queue(function() {
         $('.summer .container-fluid .row:nth-of-type(1)').removeClass('visible').addClass('invisible');
-				$('.slider').removeClass('hide').addClass('show');
+        $('.slider').removeClass('hide').addClass('show');
         $(this).dequeue();
       });
       $(this).dequeue();
     });
-		
-		////////////////////////////////////////////////////////////////
-		
-		var dataSlickIndex = $(this).parent().attr('data-slick-index');
-		$('.slider').slick('slickGoTo', dataSlickIndex);
+
+    ////////////////////////////////////////////////////////////////
+
+    var dataSlickIndex = $(this).parent().attr('data-slick-index');
+    $('.slider').slick('slickGoTo', dataSlickIndex);
 
     ////////////////////////////////////////////////////////////////
 
     setTimeout(function() {
-			addBodyClass();
+      addBodyClass();
       addTargetBlank();
-			keydownTrigger();
-			mapKeyboardChars();
+      keydownTrigger();
+      mapKeyboardChars();
       projectContentContainerHeight();
       projectControlContainerSize();
       projectControlButtonsPosition();
-			projectControlButtonsClick();
+      projectControlButtonsClick();
     }, 300);
   });
 
@@ -660,15 +660,15 @@ jQuery(document).ready(function ($) {
     var projectThumbnailContainerHeight = $('.summer .container-fluid .row:nth-of-type(1)').outerHeight();
     $('.summer .container-fluid .row:nth-of-type(1)').removeClass('invisible').addClass('visible');
     $('.summer .container-fluid .row:nth-of-type(2)').stop().animate({'margin-top': projectThumbnailContainerHeight}, 300).queue(function() {
-			$('.summer .container-fluid .row:nth-of-type(2)').removeClass('visible').addClass('invisible');
-			$('.slider').removeClass('show').addClass('hide');
-			$(this).dequeue();
+      $('.summer .container-fluid .row:nth-of-type(2)').removeClass('visible').addClass('invisible');
+      $('.slider').removeClass('show').addClass('hide');
+      $(this).dequeue();
     });
-		
-		////////////////////////////////////////////////////////////////
+
+    ////////////////////////////////////////////////////////////////
 
     setTimeout(function() {
-			addBodyClass();
+      addBodyClass();
     }, 300);
   });
 
@@ -678,26 +678,26 @@ jQuery(document).ready(function ($) {
 ////////////////////////////////////////////////////////////////
 
   $('.project-control a[role="button"]').click(function(e) {
-		e.preventDefault();
-		
-		var scrollmem = $('html,body').scrollTop();
+    e.preventDefault();
+
+    var scrollmem = $('html,body').scrollTop();
     var slug = $(this).attr('data-project-name');
     window.location.hash = slug;
-		$('html,body').scrollTop(scrollmem);
+    $('html,body').scrollTop(scrollmem);
 
     ////////////////////////////////////////////////////////////////
 
     setTimeout(function() {
       addBodyClass();
       addTargetBlank();
-			keydownTrigger();
+      keydownTrigger();
       projectContentContainerHeight();
       projectControlContainerSize();
       projectControlButtonsPosition();
-			projectControlButtonsClick();
+      projectControlButtonsClick();
     }, 300);
   });
-	
+
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
@@ -706,6 +706,18 @@ jQuery(document).ready(function ($) {
   $('.project-thumbnail.sota-la-paraula a').on('click', function() {
     $('#sota-la-paraula > ul > li').slice(6,10).wrapAll('<li><ul class="wrapper" />');
   });
+
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+
+//  if ($('.no-svg .navbar-collapse.collapse')) {
+//    $('.no-svg navbar-header button span .menu-cross').removeClass('hide').addClass('show');
+//  }
+//  if ($('.no-svg .navbar-collapse.collapse.in')) {
+//    $('.no-svg navbar-header button span .menu-cross').removeClass('hide').addClass('show');
+//  }
 
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
