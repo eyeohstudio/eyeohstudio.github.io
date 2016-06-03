@@ -317,25 +317,6 @@ jQuery(document).ready(function ($) {
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
 
-  function simulateRightKeyPress() {
-
-    var e = $.Event('keydown');
-    e.which = 39;
-    $('.slider').trigger(e);
-  };
-
-  function simulateLeftKeyPress() {
-
-    var e = $.Event('keydown');
-    e.which = 37;
-    $('.slider').trigger(e);
-  };
-
-////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////
-
   function keydownTrigger() {
 
     $('.slider').on('swipe', function(event, slick, direction){
@@ -345,6 +326,14 @@ jQuery(document).ready(function ($) {
         window.location.hash = slug;
         $('html,body').scrollTop(scrollmem);
       }, 300);
+
+      setTimeout(function() {
+        addTargetBlank();
+        projectContentContainerHeight();
+        projectControlContainerSize();
+        projectControlButtonsPosition();
+        projectControlButtonsClick();
+      }, 600);
     });
 
     $('body.slider-is-open').keydown(function(e) {
@@ -355,6 +344,14 @@ jQuery(document).ready(function ($) {
           window.location.hash = slug;
           $('html,body').scrollTop(scrollmem);
         }, 300);
+
+        setTimeout(function() {
+          addTargetBlank();
+          projectContentContainerHeight();
+          projectControlContainerSize();
+          projectControlButtonsPosition();
+          projectControlButtonsClick();
+        }, 600);
       }
       if (e.which == 37){
         setTimeout(function() {
@@ -363,6 +360,14 @@ jQuery(document).ready(function ($) {
           window.location.hash = slug;
           $('html,body').scrollTop(scrollmem);
         }, 300);
+
+        setTimeout(function() {
+          addTargetBlank();
+          projectContentContainerHeight();
+          projectControlContainerSize();
+          projectControlButtonsPosition();
+          projectControlButtonsClick();
+        }, 600);
       }
     });
   };
@@ -375,8 +380,8 @@ jQuery(document).ready(function ($) {
   function mapKeyboardChars() {
 
     $('.project-content.slick-slide.slick-current.slick-active .project-excerpt button').mapKey('esc', {trigger: 'click'});
-    //$('.project-content.show.visible .left-project-control').mapKey('left', {trigger: 'click'});
-    //$('.project-content.show.visible .right-project-control').mapKey('right', {trigger: 'click'});
+    //$('.project-content.slick-slide.slick-current.slick-active .left-project-control').mapKey('left', {trigger: 'click'});
+    //$('.project-content.slick-slide.slick-current.slick-active .right-project-control').mapKey('right', {trigger: 'click'});
     $('.scroll-to-top').mapKey('up', {trigger: 'click'});
     $('.language-change-ca a').mapKey('lang_ca', {trigger: 'click'});
     $('.language-change-en a').mapKey('lang_en', {trigger: 'click'});
@@ -413,23 +418,23 @@ jQuery(document).ready(function ($) {
 
   function projectControlButtonsPosition() {
 
-    var wrapperWidthTrue = $('.project-content.show.visible > .project-control > .wrapper').outerWidth(true);
-    var wrapperWidth = $('.project-content.show.visible > .project-control > .wrapper').innerWidth();
+    var wrapperWidthTrue = $('.project-content.slick-slide.slick-current.slick-active > .project-control > .wrapper').outerWidth(true);
+    var wrapperWidth = $('.project-content.slick-slide.slick-current.slick-active > .project-control > .wrapper').innerWidth();
     var wrapperMargin = (wrapperWidthTrue - wrapperWidth) / 3;
 
-    $('.smaller-than-one-thousand-one-hundred-fifteen .project-content.show.visible > .project-control > .wrapper > .left-project-control').css({
+    $('.smaller-than-one-thousand-one-hundred-fifteen .project-content.slick-slide.slick-current.slick-active > .project-control > .wrapper > .left-project-control').css({
       'width': 'auto',
       'margin-left': -wrapperMargin
     });
-    $('.smaller-than-one-thousand-one-hundred-fifteen .project-content.show.visible > .project-control > .wrapper > .right-project-control').css({
+    $('.smaller-than-one-thousand-one-hundred-fifteen .project-content.slick-slide.slick-current.slick-active > .project-control > .wrapper > .right-project-control').css({
       'width': 'auto',
       'margin-right': -wrapperMargin
     });
-    $('.larger-than-one-thousand-one-hundred-fifteen .project-content.show.visible > .project-control > .wrapper > .left-project-control').css({
+    $('.larger-than-one-thousand-one-hundred-fifteen .project-content.slick-slide.slick-current.slick-active > .project-control > .wrapper > .left-project-control').css({
       'width': (wrapperWidthTrue - wrapperWidth) / 2,
       'margin-left': -(wrapperWidthTrue - wrapperWidth) / 2
     });
-    $('.larger-than-one-thousand-one-hundred-fifteen .project-content.show.visible > .project-control > .wrapper > .right-project-control').css({
+    $('.larger-than-one-thousand-one-hundred-fifteen .project-content.slick-slide.slick-current.slick-active > .project-control > .wrapper > .right-project-control').css({
       'width': (wrapperWidthTrue - wrapperWidth) / 2,
       'margin-right': -(wrapperWidthTrue - wrapperWidth) / 2
     });
@@ -443,14 +448,46 @@ jQuery(document).ready(function ($) {
   function projectControlButtonsClick() {
 
     $('.project-content.slick-slide.slick-current.slick-active .right-project-control').click(function(e) {
-      //simulateRightKeyPress();
+      e.preventDefault();
+      $('.slider').slick('slickNext');
+
+      setTimeout(function() {
+        var scrollmem = $('html,body').scrollTop();
+        var slug = $('.project-content.slick-slide.slick-current.slick-active').attr('id');
+        window.location.hash = slug;
+        $('html,body').scrollTop(scrollmem);
+      }, 300);
+
+      setTimeout(function() {
+        addTargetBlank();
+        projectContentContainerHeight();
+        projectControlContainerSize();
+        projectControlButtonsPosition();
+        projectControlButtonsClick();
+      }, 600);
     });
 
   ////////////////////////////////////////////////////////////////
   ////////////////////////////////////////////////////////////////
 
     $('.project-content.slick-slide.slick-current.slick-active .left-project-control').click(function(e) {
-      //simulateLeftKeyPress();
+      e.preventDefault();
+      $('.slider').slick('slickPrev');
+
+      setTimeout(function() {
+        var scrollmem = $('html,body').scrollTop();
+        var slug = $('.project-content.slick-slide.slick-current.slick-active').attr('id');
+        window.location.hash = slug;
+        $('html,body').scrollTop(scrollmem);
+      }, 300);
+
+      setTimeout(function() {
+        addTargetBlank();
+        projectContentContainerHeight();
+        projectControlContainerSize();
+        projectControlButtonsPosition();
+        projectControlButtonsClick();
+      }, 600);
     });
   };
 
@@ -463,15 +500,15 @@ jQuery(document).ready(function ($) {
 
     var windowHeight = $(window).outerHeight(true);
     var headerHeight = $('header').outerHeight(true);
-    var projectExcerptHeight = $('.project-content.show.visible > .project-excerpt').outerHeight(true);
+    var projectExcerptHeight = $('.project-content.slick-slide.slick-current.slick-active > .project-excerpt').outerHeight(true);
     var projectContentVisibleAreaHeight = windowHeight - (headerHeight + projectExcerptHeight)
-    var projectFirstFigureWidth = $('.project-content.show.visible > ul > li:nth-of-type(1)').width();
+    var projectFirstFigureWidth = $('.project-content.slick-slide.slick-current.slick-active > ul > li:nth-of-type(1)').width();
 
-    $('.project-content.show.visible > .project-control').css({
+    $('.project-content.slick-slide.slick-current.slick-active > .project-control').css({
         'height': projectContentVisibleAreaHeight,
         'top': projectExcerptHeight
     });
-    $('.project-content.show.visible > .project-control > .wrapper').css({
+    $('.project-content.slick-slide.slick-current.slick-active > .project-control > .wrapper').css({
         'width': projectFirstFigureWidth,
     });
 
@@ -541,12 +578,10 @@ jQuery(document).ready(function ($) {
       ////////////////////////////////////////////////////////////////
 
       $('.summer .container-fluid .row:nth-of-type(1)').removeClass('invisible').addClass('visible');
-
     }, 300);
 
     setTimeout(function() {
       $('body').removeClass('invisible').addClass('visible');
-
     }, 900);
   });
 
@@ -642,7 +677,7 @@ jQuery(document).ready(function ($) {
       projectControlContainerSize();
       projectControlButtonsPosition();
       projectControlButtonsClick();
-    }, 300);
+    }, 600);
   });
 
 ////////////////////////////////////////////////////////////////
@@ -677,26 +712,24 @@ jQuery(document).ready(function ($) {
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
 
-  $('.project-control a[role="button"]').click(function(e) {
-    e.preventDefault();
-
-    var scrollmem = $('html,body').scrollTop();
-    var slug = $(this).attr('data-project-name');
-    window.location.hash = slug;
-    $('html,body').scrollTop(scrollmem);
-
-    ////////////////////////////////////////////////////////////////
-
-    setTimeout(function() {
-      addBodyClass();
-      addTargetBlank();
-      keydownTrigger();
-      projectContentContainerHeight();
-      projectControlContainerSize();
-      projectControlButtonsPosition();
-      projectControlButtonsClick();
-    }, 300);
-  });
+//  $('.project-control a[role="button"]').click(function(e) {
+//    e.preventDefault();
+//
+//    var scrollmem = $('html,body').scrollTop();
+//    var slug = $(this).attr('data-project-name');
+//    window.location.hash = slug;
+//    $('html,body').scrollTop(scrollmem);
+//
+//    ////////////////////////////////////////////////////////////////
+//
+//    setTimeout(function() {
+//      addTargetBlank();
+//      projectContentContainerHeight();
+//      projectControlContainerSize();
+//      projectControlButtonsPosition();
+//      projectControlButtonsClick();
+//    }, 600);
+//  });
 
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////

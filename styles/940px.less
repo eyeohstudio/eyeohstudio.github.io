@@ -22,26 +22,26 @@
     }
 
     .project-content {
-			
+
 //			&[aria-expanded="true"] {
-//				
+//
 //				.project-excerpt {
-//					
+//
 //					button {
-//						
+//
 //						&:before {
 //							.visible;
 //						}
 //					}
 //				}
 //			}
-//			
+//
 //			&[aria-expanded="false"] {
-//				
+//
 //				.project-excerpt {
-//					
+//
 //					button {
-//						
+//
 //						&:before {
 //							.invisible;
 //						}
@@ -66,7 +66,7 @@
 
           &:before {
             .BrixSans; .normal;
-						.visible;
+            .visible;
             font-size: 12px;
             height: auto; width: 25%;
             line-height: 4.5em;
@@ -136,13 +136,10 @@
                  -o-transform: rotate(-180deg);
                     transform: rotate(-180deg);
 
-            &:after {
+            &:focus {
+              outline: none;
+              outline-offset: 0;
             }
-						
-						&:focus {
-							outline: none;
-							outline-offset: 0;
-						}
 
             &:hover {
               opacity: 1;
