@@ -324,44 +324,43 @@
  * @source http://nicolasgallagher.com/micro-clearfix-hack/
  */
 #slider-wrap {
-  position: relative;
   overflow: hidden;
+  position: relative;
 }
 #slider-wrap ul#slider {
-  width: 100%;
   height: 100%;
+  left: 0;
   position: absolute;
   top: 0;
-  left: 0;
+  width: 100%;
 }
 #slider-wrap ul#slider li {
   float: left;
   position: relative;
 }
 #slider-wrap ul#slider li > div {
+  left: 35px;
   position: absolute;
   top: 20px;
-  left: 35px;
 }
 #slider-wrap ul#slider li i {
   display: block;
   width: 100%;
 }
-/*btns*/
 .btns {
-  position: absolute;
-  width: 50px;
-  height: 60px;
-  top: 50%;
-  margin-top: -25px;
-  line-height: 57px;
-  text-align: center;
-  cursor: pointer;
   background: rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  height: 60px;
+  line-height: 57px;
+  margin-top: -25px;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  width: 50px;
   z-index: 100;
   -webkit-user-select: none;
-  -moz-user-select: none;
   -khtml-user-select: none;
+  -moz-user-select: none;
   -ms-user-select: none;
   -webkit-transition: all 0.1s ease;
   -moz-transition: all 0.1s ease;
@@ -381,10 +380,10 @@
   border-radius: 0px 7px 7px 7px;
 }
 #counter {
-  top: 30px;
-  right: 35px;
-  width: auto;
   position: absolute;
+  right: 35px;
+  top: 30px;
+  width: auto;
 }
 #slider-wrap.active #next {
   right: 0px;
@@ -392,13 +391,12 @@
 #slider-wrap.active #previous {
   left: 0px;
 }
-/*bar*/
 #pagination-wrap {
-  min-width: 20px;
-  margin-top: 350px;
+  height: 15px;
   margin-left: auto;
   margin-right: auto;
-  height: 15px;
+  margin-top: 350px;
+  min-width: 20px;
   position: relative;
   text-align: center;
 }
@@ -406,24 +404,23 @@
   width: 100%;
 }
 #pagination-wrap ul li {
-  margin: 0 4px;
-  display: inline-block;
-  width: 5px;
-  height: 5px;
-  border-radius: 50%;
   background: #fff;
+  border-radius: 50%;
+  display: inline-block;
+  height: 5px;
+  margin: 0 4px;
   opacity: 0.5;
   position: relative;
   top: 0;
+  width: 5px;
 }
 #pagination-wrap ul li.active {
-  width: 12px;
-  height: 12px;
-  top: 3px;
-  opacity: 1;
   box-shadow: rgba(0, 0, 0, 0.1) 1px 1px 0px;
+  height: 12px;
+  opacity: 1;
+  top: 3px;
+  width: 12px;
 }
-/*ANIMATION*/
 #slider-wrap ul,
 #pagination-wrap ul li {
   -webkit-transition: all 0.3s cubic-bezier(1, 0.01, 0.32, 1);
@@ -605,6 +602,10 @@ div.summer .project-content a.scroll-to-top {
   padding: 0;
   padding-bottom: 23.33333333px;
   text-align: center;
+}
+div.summer .project-content a.scroll-to-top:focus {
+  outline: none;
+  outline-offset: 0;
 }
 div.summer .project-content a.scroll-to-top:hover {
   opacity: 1 !important;
@@ -879,6 +880,11 @@ html body div.winter footer small {
   display: block;
   font-size: 10px;
   text-align: center;
+}
+a:focus,
+.slider:focus {
+  outline: none;
+  outline-offset: 0;
 }
 a[data-toggle="tooltip"] {
   white-space: nowrap;
@@ -1966,6 +1972,10 @@ body.es .navbar-collapse ul li:nth-of-type(4) a abbr {
     -ms-transform: rotate(-180deg);
     -o-transform: rotate(-180deg);
     transform: rotate(-180deg);
+  }
+  div.summer .project-content .project-control .wrapper a:focus {
+    outline: none;
+    outline-offset: 0;
   }
   div.summer .project-content .project-control .wrapper a:hover {
     opacity: 1;
@@ -3825,7 +3835,6 @@ body.es .navbar-collapse ul li:nth-of-type(4) a abbr {
     visibility: hidden;
   }
 }
-/* Slider */
 .slick-slider {
   position: relative;
   display: block;
