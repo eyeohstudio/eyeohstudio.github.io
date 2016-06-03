@@ -22,6 +22,32 @@
     }
 
     .project-content {
+			
+//			&[aria-expanded="true"] {
+//				
+//				.project-excerpt {
+//					
+//					button {
+//						
+//						&:before {
+//							.visible;
+//						}
+//					}
+//				}
+//			}
+//			
+//			&[aria-expanded="false"] {
+//				
+//				.project-excerpt {
+//					
+//					button {
+//						
+//						&:before {
+//							.invisible;
+//						}
+//					}
+//				}
+//			}
 
       .project-excerpt {
         background-color: @white !important;
@@ -40,7 +66,7 @@
 
           &:before {
             .BrixSans; .normal;
-            .visible;
+						.visible;
             font-size: 12px;
             height: auto; width: 25%;
             line-height: 4.5em;
@@ -112,6 +138,11 @@
 
             &:after {
             }
+						
+						&:focus {
+							outline: none;
+							outline-offset: 0;
+						}
 
             &:hover {
               opacity: 1;

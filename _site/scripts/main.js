@@ -5,6 +5,43 @@ jQuery(document).ready(function ($) {
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
 
+  function addBodyClass() {
+
+    if ($('.slider').hasClass('hide')){
+      $('body').removeClass('slider-is-open').addClass('slider-is-closed');
+    }
+    if ($('.slider').hasClass('show')){
+      $('body').removeClass('slider-is-closed').addClass('slider-is-open');
+    }
+  };
+
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+
+  function addDataSlickIndex() {
+
+    $('.summer .project-thumbnail').each(function(n) {
+      $(this).attr('data-slick-index', n);
+    });
+  };
+
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+
+  function addTargetBlank() {
+
+    $('.project-excerpt p a').attr('target', '_blank');
+  };
+
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+
   function anchorLinkScrollAnimation() {
 
     $('.navbar-collapse ul li a[href*="#"]:not([href="#"])').click(function() {
@@ -67,6 +104,15 @@ jQuery(document).ready(function ($) {
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
 
+  function isTouchDevice() {
+    return true == ('ontouchstart' in window || window.DocumentTouch && document instanceof DocumentTouch);
+  }
+
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+
   function languageChange() {
 
     $('.language-change-ca a').click(function(e) {
@@ -74,7 +120,6 @@ jQuery(document).ready(function ($) {
       $('html').attr('xml:lang', 'ca').attr('lang', 'ca');
       $('body').removeClass('en').addClass('ca');
       $('body').removeClass('es').addClass('ca');
-      return false;
     });
 
     ////////////////////////////////////////////////////////////////
@@ -85,7 +130,6 @@ jQuery(document).ready(function ($) {
       $('html').attr('xml:lang', 'en').attr('lang', 'en');
       $('body').removeClass('ca').addClass('en');
       $('body').removeClass('es').addClass('en');
-      return false;
     });
 
     ////////////////////////////////////////////////////////////////
@@ -96,17 +140,7 @@ jQuery(document).ready(function ($) {
       $('html').attr('xml:lang', 'es').attr('lang', 'es');
       $('body').removeClass('ca').addClass('es');
       $('body').removeClass('en').addClass('es');
-      return false;
     });
-  };
-
-////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////
-
-  function linkExternal() {
-    $('.project-excerpt p a').attr('target', '_blank');
   };
 
 ////////////////////////////////////////////////////////////////
@@ -134,6 +168,119 @@ jQuery(document).ready(function ($) {
     }
     $('html').removeClass('smaller-than-one-thousand-one-hundred-fifteen').addClass('larger-than-one-thousand-one-hundred-fifteen');
   };
+
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+
+  function randomCity() {
+
+    var city01 = new Array('Fons de Bikini', 'Bikini Bottom', 'Fondo de Bikini')
+    var city02 = new Array('Coruscant', 'Coruscant', 'Coruscant')
+    var city03 = new Array('Ciutat Maragda','Emerald City','Ciudad Esmeralda')
+    var city04 = new Array('Ciutat Gotham', 'Gotham City', 'Gotham City')
+    var city05 = new Array('Hivèrnia', 'Winterfell', 'Invernalia')
+    var city06 = new Array('Metropolis', 'Metropolis', 'Metropolis')
+    var city07 = new Array('Neo Tokyo', 'Neo Tokyo', 'Neo Tokyo')
+    var city08 = new Array('Nova Nova York', 'New New York', 'Nueva Nueva York')
+    var city09 = new Array('Raccoon City', 'Raccoon City', 'Raccoon City')
+    var city10 = new Array('San Fransokyo', 'San Fransokyo', 'San Fransokyo')
+    var city11 = new Array('Twin Peaks', 'Twin Peaks', 'Twin Peaks')
+    var city12 = new Array('la Vila del Pingüí', 'Penguin Village', 'Villa Pingüino')
+    var city13 = new Array('Port Reial', 'King\'s Landing', 'Desembarco del Rey')
+    var city00 = new Array(city01, city02, city03, city04, city05, city06, city07, city08, city09, city10, city11, city12, city13)
+
+    randomCity = city00[Math.floor(Math.random() * city00.length)];
+    $('.randomCityCa').text(randomCity[0]);
+    $('.randomCityEn').text(randomCity[1]);
+    $('.randomCityEs').text(randomCity[2]);
+  };
+
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+
+  function randomWhat() {
+
+    var what01 = new Array('imaginatiu', 'imaginative', 'e imaginativo')
+    var what02 = new Array('innovador', 'innovative', 'e innovador')
+    var what03 = new Array('poc convencional', 'unconventional', 'y poco convencional')
+    var what00 = new Array(what01, what02, what03)
+
+    randomWhat = what00[Math.floor(Math.random() * what00.length)];
+    $('.randomWhatCa').text(randomWhat[0]);
+    $('.randomWhatEn').text(randomWhat[1]);
+    $('.randomWhatEs').text(randomWhat[2]);
+  };
+
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+
+  function setWinterHeight() {
+
+    windowHeight = $(window).innerHeight();
+    $('.winter').css('min-height', windowHeight);
+  };
+
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+
+  function tooltipTouchRemove() {
+
+    if (!('ontouchstart' in window)) {
+      $('[data-toggle="tooltip"]').tooltip()
+    }
+  };
+
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+
+  function vimeoResponsive() {
+
+    if ($('html').hasClass('smaller-than-six-hundred-forty')){
+      var valueWidth = $('body').parent().width();
+      valueWidth *= 1;
+      var valueHeight = Math.round((valueWidth/16)*9);
+      $('iframe[src^="//player.vimeo.com"], object, embed').css({ 'min-height': valueHeight + 'px', 'min-width': valueWidth + 'px' });
+    }
+    if ($('html').hasClass('larger-than-six-hundred-forty')){
+      var valueWidth = $('header').innerWidth();
+      valueWidth *= 1;
+      var valueHeight = Math.round((valueWidth/16)*9);
+      $('iframe[src^="//player.vimeo.com"], object, embed').css({ 'min-height': valueHeight + 'px', 'min-width': valueWidth + 'px' });
+    }
+  };
+
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+
+  function windowLocationHashOpenProject() {
+
+    if ( window.location.hash ) {
+      var hash = window.location.hash.slice(1); // get the hash, and strip out the "#"
+      $('.project-thumbnail a[data-project-name="' + hash + '"]').attr('data-project-name', hash).trigger('click');
+    }
+  };
+
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
 
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
@@ -170,11 +317,66 @@ jQuery(document).ready(function ($) {
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
 
+  function simulateRightKeyPress() {
+
+    var e = $.Event('keydown');
+    e.which = 39;
+    $('.slider').trigger(e);
+  };
+
+  function simulateLeftKeyPress() {
+
+    var e = $.Event('keydown');
+    e.which = 37;
+    $('.slider').trigger(e);
+  };
+
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+
+  function keydownTrigger() {
+
+    $('.slider').on('swipe', function(event, slick, direction){
+      setTimeout(function() {
+        var scrollmem = $('html,body').scrollTop();
+        var slug = $('.project-content.slick-slide.slick-current.slick-active').attr('id');
+        window.location.hash = slug;
+        $('html,body').scrollTop(scrollmem);
+      }, 300);
+    });
+
+    $('body.slider-is-open').keydown(function(e) {
+      if (e.which == 39){
+        setTimeout(function() {
+          var scrollmem = $('html,body').scrollTop();
+          var slug = $('.project-content.slick-slide.slick-current.slick-active').attr('id');
+          window.location.hash = slug;
+          $('html,body').scrollTop(scrollmem);
+        }, 300);
+      }
+      if (e.which == 37){
+        setTimeout(function() {
+          var scrollmem = $('html,body').scrollTop();
+          var slug = $('.project-content.slick-slide.slick-current.slick-active').attr('id');
+          window.location.hash = slug;
+          $('html,body').scrollTop(scrollmem);
+        }, 300);
+      }
+    });
+  };
+
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+
   function mapKeyboardChars() {
 
-    $('.project-content.show.visible .project-excerpt button').mapKey('esc', {trigger: 'click'});
-    $('.project-content.show.visible .left-project-control').mapKey('left', {trigger: 'click'});
-    $('.project-content.show.visible .right-project-control').mapKey('right', {trigger: 'click'});
+    $('.project-content.slick-slide.slick-current.slick-active .project-excerpt button').mapKey('esc', {trigger: 'click'});
+    //$('.project-content.show.visible .left-project-control').mapKey('left', {trigger: 'click'});
+    //$('.project-content.show.visible .right-project-control').mapKey('right', {trigger: 'click'});
     $('.scroll-to-top').mapKey('up', {trigger: 'click'});
     $('.language-change-ca a').mapKey('lang_ca', {trigger: 'click'});
     $('.language-change-en a').mapKey('lang_en', {trigger: 'click'});
@@ -240,27 +442,15 @@ jQuery(document).ready(function ($) {
 
   function projectControlButtonsClick() {
 
-    $('.project-content[aria-expanded="true"] .right-project-control').on('click', function() {
-
-      var nextProject = $(this).attr('href');
-      var $curr = $('.project-content.show.visible');
-      var $next = $(nextProject);
-
-      $curr.removeClass('show visible goRight').addClass('hide invisible goLeft').attr('aria-expanded', 'false');
-      $next.removeClass('hide invisible goRight').addClass('show visible goLeft').attr('aria-expanded', 'true');
+    $('.project-content.slick-slide.slick-current.slick-active .right-project-control').click(function(e) {
+      //simulateRightKeyPress();
     });
 
   ////////////////////////////////////////////////////////////////
   ////////////////////////////////////////////////////////////////
 
-    $('.project-content[aria-expanded="true"] .left-project-control').on('click', function() {
-
-      var previousProject = $(this).attr('href');
-      var $curr = $('.project-content.show.visible');
-      var $previous = $(previousProject);
-
-      $curr.removeClass('show visible goLeft').addClass('hide invisible goRight').attr('aria-expanded', 'false');
-      $previous.removeClass('hide invisible goLeft').addClass('show visible goRight').attr('aria-expanded', 'true');
+    $('.project-content.slick-slide.slick-current.slick-active .left-project-control').click(function(e) {
+      //simulateLeftKeyPress();
     });
   };
 
@@ -292,77 +482,12 @@ jQuery(document).ready(function ($) {
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
 
-  function randomCity() {
+  function sliderInit() {
 
-    var city01 = new Array('Fons de Bikini', 'Bikini Bottom', 'Fondo de Bikini')
-    var city02 = new Array('Coruscant', 'Coruscant', 'Coruscant')
-    var city03 = new Array('Ciutat Maragda','Emerald City','Ciudad Esmeralda')
-    var city04 = new Array('Ciutat Gotham', 'Gotham City', 'Gotham City')
-    var city05 = new Array('Hivèrnia', 'Winterfell', 'Invernalia')
-    var city06 = new Array('Metropolis', 'Metropolis', 'Metropolis')
-    var city07 = new Array('Neo Tokyo', 'Neo Tokyo', 'Neo Tokyo')
-    var city08 = new Array('Nova Nova York', 'New New York', 'Nueva Nueva York')
-    var city09 = new Array('Raccoon City', 'Raccoon City', 'Raccoon City')
-    var city10 = new Array('San Fransokyo', 'San Fransokyo', 'San Fransokyo')
-    var city11 = new Array('Twin Peaks', 'Twin Peaks', 'Twin Peaks')
-    var city12 = new Array('la Vila del Pingüí', 'Penguin Village', 'Villa Pingüino')
-    var city13 = new Array('Port Reial', 'King\'s Landing', 'Desembarco del Rey')
-    var city00 = new Array(city01, city02, city03, city04, city05, city06, city07, city08, city09, city10, city11, city12, city13)
-
-    randomCity = city00[Math.floor(Math.random() * city00.length)];
-    $('.randomCityCa').text(randomCity[0]);
-    $('.randomCityEn').text(randomCity[1]);
-    $('.randomCityEs').text(randomCity[2]);
-  };
-
-////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////
-
-  function randomWhat() {
-
-    var what01 = new Array('imaginatiu', 'imaginative', 'e imaginativo')
-    var what02 = new Array('innovador', 'innovative', 'e innovador')
-    var what03 = new Array('poc convencional', 'unconventional', 'y poco convencional')
-    var what00 = new Array(what01, what02, what03)
-
-    randomWhat = what00[Math.floor(Math.random() * what00.length)];
-    $('.randomWhatCa').text(randomWhat[0]);
-    $('.randomWhatEn').text(randomWhat[1]);
-    $('.randomWhatEs').text(randomWhat[2]);
-  };
-
-////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////
-
-  function setWinterHeight() {
-
-    windowHeight = $(window).innerHeight();
-    $('.winter').css('min-height', windowHeight);
-  };
-
-////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////
-
-  function swipeProjects() {
-
-    $('.project-content[aria-expanded="true"]').swipe( {
-      swipeLeft:function(event, direction, distance, duration, fingerCount, fingerData) {
-        $('.project-content[aria-expanded="true"] .right-project-control').trigger('click');
-      },
-      threshold:0
-    });
-
-    $('.project-content[aria-expanded="true"]').swipe( {
-      swipeRight:function(event, direction, distance, duration, fingerCount, fingerData) {
-        $('.project-content[aria-expanded="true"] .left-project-control').trigger('click');
-      },
-      threshold:0
+    $('.slider').slick({
+      adaptiveHeight: true,
+      arrows: false,
+      infinite: false
     });
   };
 
@@ -371,66 +496,22 @@ jQuery(document).ready(function ($) {
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
 
-  function tooltipTouchRemove() {
-
-    if (!('ontouchstart' in window)) {
-      $('[data-toggle="tooltip"]').tooltip()
-    }
-  };
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
 
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
 
-  function vimeoCustom() {
-
-    if ($('html').hasClass('smaller-than-six-hundred-forty')){
-      var valueWidth = $('body').parent().width();
-      valueWidth *= 1;
-      var valueHeight = Math.round((valueWidth/16)*9);
-      $('iframe[src^="//player.vimeo.com"], object, embed').css({ 'min-height': valueHeight + 'px', 'min-width': valueWidth + 'px' });
-    }
-    if ($('html').hasClass('larger-than-six-hundred-forty')){
-      var valueWidth = $('header').innerWidth();
-      valueWidth *= 1;
-      var valueHeight = Math.round((valueWidth/16)*9);
-      $('iframe[src^="//player.vimeo.com"], object, embed').css({ 'min-height': valueHeight + 'px', 'min-width': valueWidth + 'px' });
-    }
-  };
-
-////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////
-
-  function windowLocationHashOpenProject() {
-
-    if ( window.location.hash ) {
-      var hash = window.location.hash.slice(1); // get the hash, and strip out the "#"
-      $('.project-thumbnail a[data-project-name="' + hash + '"]').attr('data-project-name', hash).trigger('click');
-    }
-  };
-
-////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////
-
-/*
-La ginesta altra vegada
-la ginesta amb tanta olor
-es la meva enamorada
-que ve al temps de la calor. */
-
-////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////
-
+  addBodyClass();
+  addDataSlickIndex();
   anchorLinkScrollAnimation();
   backToTop();
   hamburgerButtonAnimation();
+  isTouchDevice();
   languageChange();
   mapKeyboardChars();
   randomCity();
@@ -446,18 +527,15 @@ que ve al temps de la calor. */
 ////////////////////////////////////////////////////////////////
 
   $(window).load(function() {
-
     makeImagesResponsive(); // responsive-img.min.js
-    vimeoCustom();
+    vimeoResponsive();
+    sliderInit();
 
     ////////////////////////////////////////////////////////////////
     ////////////////////////////////////////////////////////////////
 
     setTimeout(function() {
-
-      mapKeyboardChars();
-      projectControlButtonsPosition();
-      projectControlButtonsClick();
+      projectContentContainerHeight();
       windowLocationHashOpenProject();
 
       ////////////////////////////////////////////////////////////////
@@ -467,12 +545,9 @@ que ve al temps de la calor. */
     }, 300);
 
     setTimeout(function() {
-
-      projectContentContainerHeight();
-
       $('body').removeClass('invisible').addClass('visible');
 
-    }, 1000);
+    }, 900);
   });
 
 ////////////////////////////////////////////////////////////////
@@ -489,18 +564,6 @@ que ve al temps de la calor. */
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
 
-  // Forever in debt with Alvaro Trigo
-  // http://alvarotrigo.com/blog/firing-resize-event-only-once-when-resizing-is-finished/
-  var resizeId;
-
-  $(window).resize(function() {
-    clearTimeout(resizeId);
-    resizeId = setTimeout(doneResizing, 300);
-  });
-
-  ////////////////////////////////////////////////////////////////
-  ////////////////////////////////////////////////////////////////
-
   function doneResizing(){
 
     ListernerSixHundredForty();
@@ -509,22 +572,19 @@ que ve al temps de la calor. */
     projectContentContainerHeight();
     projectControlContainerSize();
     projectControlButtonsPosition();
+    projectControlButtonsClick();
     setWinterHeight();
-    vimeoCustom();
+    vimeoResponsive();
 
   };
 
-////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////
+  ////////////////////////////////////////////////////////////////
+  ////////////////////////////////////////////////////////////////
 
-  $('.language-change a').on('click', function() {
-
-    projectContentContainerHeight();
-    projectControlContainerSize();
-    projectControlButtonsPosition();
-
+  var resizeId;
+  $(window).resize(function() {
+    clearTimeout(resizeId);
+    resizeId = setTimeout(doneResizing, 300);
   });
 
 ////////////////////////////////////////////////////////////////
@@ -532,7 +592,20 @@ que ve al temps de la calor. */
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
 
-  $('.project-thumbnail a').on('click', function() {
+  $('.language-change a').on('click', function() {
+    projectContentContainerHeight();
+    projectControlContainerSize();
+    projectControlButtonsPosition();
+    projectControlButtonsClick();
+  });
+
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+
+  $('.project-thumbnail a').on('click', function(e) {
+    e.preventDefault();
 
     var slug = $(this).attr('data-project-name');
     window.location.hash = slug;
@@ -544,11 +617,10 @@ que ve al temps de la calor. */
     ////////////////////////////////////////////////////////////////
 
     var springHeight = $('body > .container-fluid > .row:nth-of-type(2)').outerHeight();
-    var projectName = $(this).attr('data-project-name');
     $('.summer .container-fluid .row:nth-of-type(2)').removeClass('invisible').addClass('visible').queue(function() {
-      $(this).animate({'margin-top': '0' - springHeight}, 300).queue(function() {
-        $('#' + projectName).removeClass('hide invisible').addClass('show visible').attr('aria-expanded', 'true');
+      $(this).stop().animate({'margin-top': '0' - springHeight}, 300).queue(function() {
         $('.summer .container-fluid .row:nth-of-type(1)').removeClass('visible').addClass('invisible');
+        $('.slider').removeClass('hide').addClass('show');
         $(this).dequeue();
       });
       $(this).dequeue();
@@ -556,16 +628,20 @@ que ve al temps de la calor. */
 
     ////////////////////////////////////////////////////////////////
 
-    setTimeout(function() {
+    var dataSlickIndex = $(this).parent().attr('data-slick-index');
+    $('.slider').slick('slickGoTo', dataSlickIndex);
 
-      linkExternal();
+    ////////////////////////////////////////////////////////////////
+
+    setTimeout(function() {
+      addBodyClass();
+      addTargetBlank();
+      keydownTrigger();
       mapKeyboardChars();
       projectContentContainerHeight();
       projectControlContainerSize();
       projectControlButtonsPosition();
       projectControlButtonsClick();
-      swipeProjects();
-
     }, 300);
   });
 
@@ -582,13 +658,18 @@ que ve al temps de la calor. */
     ////////////////////////////////////////////////////////////////
 
     var projectThumbnailContainerHeight = $('.summer .container-fluid .row:nth-of-type(1)').outerHeight();
-    var projectName = $('.project-content.show.visible').attr('id');
     $('.summer .container-fluid .row:nth-of-type(1)').removeClass('invisible').addClass('visible');
-    $('.summer .container-fluid .row:nth-of-type(2)').stop().animate({'margin-top': projectThumbnailContainerHeight}, 300).queue(function(next) {
-      $('#' + projectName).removeClass('show visible').addClass('hide invisible').attr('aria-expanded', 'false');
-      $(this).removeClass('visible').addClass('invisible');
-      next();
+    $('.summer .container-fluid .row:nth-of-type(2)').stop().animate({'margin-top': projectThumbnailContainerHeight}, 300).queue(function() {
+      $('.summer .container-fluid .row:nth-of-type(2)').removeClass('visible').addClass('invisible');
+      $('.slider').removeClass('show').addClass('hide');
+      $(this).dequeue();
     });
+
+    ////////////////////////////////////////////////////////////////
+
+    setTimeout(function() {
+      addBodyClass();
+    }, 300);
   });
 
 ////////////////////////////////////////////////////////////////
@@ -596,27 +677,24 @@ que ve al temps de la calor. */
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
 
-  $('.project-control a[role="button"]').on('click', function() {
+  $('.project-control a[role="button"]').click(function(e) {
+    e.preventDefault();
 
+    var scrollmem = $('html,body').scrollTop();
     var slug = $(this).attr('data-project-name');
     window.location.hash = slug;
-
-    ////////////////////////////////////////////////////////////////
-
-    $('html, body').stop().animate({scrollTop: 0}, 300);
+    $('html,body').scrollTop(scrollmem);
 
     ////////////////////////////////////////////////////////////////
 
     setTimeout(function() {
-
-      linkExternal();
-      mapKeyboardChars();
+      addBodyClass();
+      addTargetBlank();
+      keydownTrigger();
       projectContentContainerHeight();
       projectControlContainerSize();
       projectControlButtonsPosition();
       projectControlButtonsClick();
-      swipeProjects();
-
     }, 300);
   });
 
@@ -626,23 +704,20 @@ que ve al temps de la calor. */
 ////////////////////////////////////////////////////////////////
 
   $('.project-thumbnail.sota-la-paraula a').on('click', function() {
-
     $('#sota-la-paraula > ul > li').slice(6,10).wrapAll('<li><ul class="wrapper" />');
   });
 
-
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
 
-  function isTouchDevice(){
-    return true == ('ontouchstart' in window || window.DocumentTouch && document instanceof DocumentTouch);
-  }
-
-  if(isTouchDevice()===true) {
-    $('footer').hide();
-  }
+//  if ($('.no-svg .navbar-collapse.collapse')) {
+//    $('.no-svg navbar-header button span .menu-cross').removeClass('hide').addClass('show');
+//  }
+//  if ($('.no-svg .navbar-collapse.collapse.in')) {
+//    $('.no-svg navbar-header button span .menu-cross').removeClass('hide').addClass('show');
+//  }
 
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
