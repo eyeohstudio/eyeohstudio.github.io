@@ -3967,32 +3967,26 @@ body.es .navbar-collapse ul li:nth-of-type(4) a abbr {
     display: block !important;
   }
 }
-.f_cking-iphone .project-thumbnail > a.fresh,
 .backgroundblendmode .project-thumbnail > a.fresh,
 .svg .project-thumbnail > a.fresh {
   display: block !important;
 }
-.f_cking-iphone .project-thumbnail > a.fallback,
 .backgroundblendmode .project-thumbnail > a.fallback,
 .svg .project-thumbnail > a.fallback {
   display: none !important;
 }
-.f_cking-iphone .navbar-header h1 a img.fallback,
 .backgroundblendmode .navbar-header h1 a img.fallback,
 .svg .navbar-header h1 a img.fallback {
   display: none !important;
 }
-.f_cking-iphone .navbar-header button span svg,
 .backgroundblendmode .navbar-header button span svg,
 .svg .navbar-header button span svg {
   display: block !important;
 }
-.f_cking-iphone .navbar-header button span img,
 .backgroundblendmode .navbar-header button span img,
 .svg .navbar-header button span img {
   display: none !important;
 }
-.f_cking-iphone .scroll-to-top img,
 .backgroundblendmode .scroll-to-top img,
 .svg .scroll-to-top img {
   display: none !important;
