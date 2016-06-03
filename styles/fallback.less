@@ -16,11 +16,11 @@
       mix-blend-mode: normal !important;
 
       &.fresh {
-        .hide;
+        .hide !important;
       }
 
       &.fallback {
-        .show;
+        .show !important;
       }
 
       img {
@@ -41,15 +41,15 @@
         img {
 
           &:nth-of-type(1) {
-            .hide;
+            .hide !important;
           }
 
           &:nth-of-type(2) {
-            .show;
+            .show !important;
           }
 
           &:nth-of-type(3) {
-            .hide;
+            .hide !important;
           }
         }
       }
@@ -58,38 +58,38 @@
     button {
 
       span {
-        position: relative;
+        position: relative !important;
 
         &:hover {
 
           .menu-default {
-            .hide;
+            .hide !important;
           }
 
           .menu-over {
-            .show;
+            .show !important;
           }
         }
 
         img {
-          .show;
-          .transition;
+          .show !important;
+          .transition !important;
 
           &.menu-default {
-            .show;
+            .show !important;
           }
 
           &.menu-over {
-            .hide;
+            .hide !important;
           }
 
           &.menu-active {
-            .hide;
+            .hide !important;
           }
         }
 
         svg {
-          .hide;
+          .hide !important;
         }
       }
     }
@@ -98,28 +98,28 @@
   .scroll-to-top {
 
     svg {
-      .hide;
+      .hide !important;
     }
 
     &:hover {
       opacity: 1 !important;
 
       img {
-        -webkit-transform: translateY(0);
-           -moz-transform: translateY(0);
-                transform: translateY(0);
+        -webkit-transform: translateY(0) !important;
+           -moz-transform: translateY(0) !important;
+                transform: translateY(0) !important;
       }
     }
 
     img {
-      .show;
-      .transition;
-      height: 40px; width: 40px;
-      margin: 0 auto;
+      .show !important;
+      .transition !important;
+      height: 40px; width: 40px !important;
+      margin: 0 auto !important;
 
-      -webkit-transform: translateY(5px);
-         -moz-transform: translateY(5px);
-              transform: translateY(5px);
+      -webkit-transform: translateY(5px) !important;
+         -moz-transform: translateY(5px) !important;
+              transform: translateY(5px) !important;
     }
   }
 }
@@ -138,15 +138,15 @@
           img {
 
             &:nth-of-type(1) {
-              .hide;
+              .hide !important;
             }
 
             &:nth-of-type(2) {
-              .hide;
+              .hide !important;
             }
 
             &:nth-of-type(3) {
-              .show;
+              .show !important;
             }
           }
         }
@@ -166,11 +166,11 @@
     > a {
 
       &.fresh {
-        .show;
+        .show !important;
       }
 
       &.fallback {
-        .hide;
+        .hide !important;
       }
     }
   }
@@ -187,7 +187,7 @@
         img {
 
           &.fallback {
-            .hide;
+            .hide !important;
           }
         }
       }
@@ -198,11 +198,11 @@
       span {
 
         svg {
-          .show;
+          .show !important;
         }
 
         img {
-          .hide;
+          .hide !important;
         }
       }
     }
@@ -211,7 +211,7 @@
   .scroll-to-top {
 
     img {
-      .hide;
+      .hide !important;
     }
   }
 }
