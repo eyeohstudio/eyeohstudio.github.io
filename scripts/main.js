@@ -572,17 +572,19 @@ jQuery(document).ready(function ($) {
     ////////////////////////////////////////////////////////////////
 
     setTimeout(function() {
-      projectContentContainerHeight();
+      projectContentContainerHeight(function() {
+        $('.summer .container-fluid .row:nth-of-type(1)').removeClass('invisible').addClass('visible');
+      });
       windowLocationHashOpenProject();
 
       ////////////////////////////////////////////////////////////////
 
-      $('.summer .container-fluid .row:nth-of-type(1)').removeClass('invisible').addClass('visible');
-    }, 900);
+      //$('.summer .container-fluid .row:nth-of-type(1)').removeClass('invisible').addClass('visible');
+    }, 300);
 
     setTimeout(function() {
       $('body').removeClass('invisible').addClass('visible');
-    }, 1200);
+    }, 900);
   });
 
 ////////////////////////////////////////////////////////////////
