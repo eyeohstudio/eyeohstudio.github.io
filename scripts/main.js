@@ -572,17 +572,16 @@ jQuery(document).ready(function ($) {
     ////////////////////////////////////////////////////////////////
 
     setTimeout(function() {
-      projectContentContainerHeight(function() {
-        $('.summer .container-fluid .row:nth-of-type(1)').removeClass('invisible').addClass('visible');
-      });
+      projectContentContainerHeight();
       windowLocationHashOpenProject();
 
       ////////////////////////////////////////////////////////////////
 
-      //$('.summer .container-fluid .row:nth-of-type(1)').removeClass('invisible').addClass('visible');
+      $('.summer .container-fluid .row:nth-of-type(1)').removeClass('invisible').addClass('visible');
     }, 300);
 
     setTimeout(function() {
+      projectContentContainerHeight();
       $('body').removeClass('invisible').addClass('visible');
     }, 900);
   });
