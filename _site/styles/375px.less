@@ -1,0 +1,299 @@
+// compress: false, main: main.less
+
+@import url('base.less');
+
+@media (min-width: 375px) {
+
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////// THIS IS THE BEGINNING
+
+  div.summer {
+
+    .project-thumbnail {
+
+      a {
+
+        span {
+          font-size: 14px !important;
+        }
+      }
+    }
+
+    .project-content {
+
+      .project-excerpt {
+        margin: 0;
+        padding: 35px / 1.5;
+
+        h2 {
+          .BrixSans; .bold;
+          font-size: 18px;
+          margin-bottom: (35px / 1.5) / 2;
+        }
+
+        p {
+          .BrixSlab; .normal;;
+          font-size: 16px;
+        }
+      }
+
+      ul {
+        margin: 0;
+        padding: 0;
+
+        li {
+          margin-bottom: (35px / 1.5) / 1.5;
+        }
+      }
+    }
+  }
+
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+
+  html {
+
+    body {
+      background: @white;
+      color: @black;
+
+      header {
+        .clearfix;
+        margin: 35px / 1.5;
+        //margin-bottom: ((35px / 1.5) - ((35px / 1.5) / 10));
+        margin-top: (35px / 1.5) - ((35px / 1.5) / 10);
+
+        nav.navbar.navbar-default {
+          border: none;
+          background-color: transparent;
+          float: right;
+          margin-bottom: 0;
+          height: auto; width: 100%;
+          position: relative;
+
+          .navbar-header {
+            position: relative;
+            -webkit-transform-style: preserve-3d;
+               -moz-transform-style: preserve-3d;
+                    transform-style: preserve-3d;
+
+            h1 {
+              .show;
+              float: left;
+              height: 55px; width: 150px;
+              margin-top: 0; margin-bottom: 0;
+
+              a {
+                .show;
+                border: none;
+
+                &:hover {
+                }
+
+                img {
+                  object-fit: contain;
+                }
+              }
+            }
+
+            button {
+              background-color: transparent;
+              border: none;
+              border-radius: 0;
+              float: right;
+              margin: 0;
+              padding: 0;
+            }
+          }
+
+          .navbar-collapse {
+            border: none;
+            padding-right: 0; padding-left: 0;
+
+            ul {
+              margin: 0;
+              margin-top: ((35px / 1.5) - ((35px / 1.5) / 10)) * 2;
+
+              li {
+                .BrixSans; .bold;
+                border-bottom: 1px solid @black;
+                font-size: 16px;
+                text-transform: uppercase;
+
+                &:nth-of-type(1) {
+                  border-top: 1px solid @black;
+                }
+
+                &:nth-of-type(3),
+                &:nth-of-type(4) {
+
+                  a {
+
+                    &:after {
+                      .show;
+                      content: attr(alt);
+                    }
+
+                    abbr {
+                      .hide;
+                    }
+                  }
+                }
+
+                a {
+                  border: none;
+                  color: @black;
+                  padding: 0;
+                  padding-top: 4px; padding-bottom: 4px;
+
+                  &:active,
+                  &:focus,
+                  &:hover,
+                  &:visited {
+                  }
+
+                  &:hover {
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+
+      div.spring {
+        margin: 35px / 1.5;
+        margin-top: (35px / 1.5) - ((35px / 1.5) / 10);
+
+        p {
+          .BrixSlab; .normal;;
+          .show;
+          font-size: 20px;
+          line-height: 1.3em;
+          margin: 0;
+          text-transform: uppercase;
+        }
+      }
+
+      div.summer {
+        margin-bottom: 0;
+        padding: 0;
+      }
+
+      div.autumn {
+        margin: 35px / 1.5;
+        margin-bottom: 0;
+
+        h2 {
+          .BrixSans; .bold;
+          font-size: 18px;
+          margin: 0;
+          margin-bottom: (35px / 1.5) / 2;
+          text-transform: uppercase;
+        }
+
+        p {
+          .BrixSlab; .normal;;
+          font-size: 16px;
+          line-height: 1.3em;
+          margin: 0;
+          margin-bottom: 1em;
+
+          &:last-of-type {
+            border-bottom: 1px solid @black;
+            margin-bottom: 0;
+            padding-bottom: 35px / 1.5;
+          }
+
+          a {
+
+            &:hover {
+              opacity: 1;
+            }
+          }
+        }
+      }
+
+      div.winter {
+        margin: 0 35px / 1.5;
+        margin-bottom: 0;
+        padding-top: 35px / 1.5;
+        position: relative;
+
+        p {
+          .BrixSlab; .normal;;
+          font-size: 16px;
+          line-height: 1.3em;
+          margin: 0;
+
+          span {
+            .show;
+
+            &:nth-of-type(1) {
+              .BrixSans; .bold;
+              margin-bottom: 35px / 10;
+            }
+          }
+        }
+
+        aside {
+          .BrixSans; .bold;
+          font-size: 13px;
+          margin-top: 35px / (1.5 * 1);
+          text-transform: uppercase;
+
+          a {
+            border: none;
+
+            &:hover {
+            }
+          }
+        }
+
+        footer {
+          height: auto; width: 100%;
+          padding-bottom: (35px / 1.5) / 2;
+          position: absolute;
+          bottom: 0; left: 0;
+
+          small {
+            .BrixSlab; .normal;
+            .show;
+            font-size: 12px;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+
+  .si-icons {
+    .show;
+    margin: 0;
+    margin-top: 8px !important;
+    padding: 0;
+
+    span {
+      .show;
+      background-repeat: no-repeat;
+      background-position: center center;
+      cursor: pointer;
+
+      svg {
+        fill: none;
+        stroke: @black;
+      }
+    }
+  }
+
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////// THIS IS THE END
+
+}
