@@ -1,0 +1,22 @@
+{
+  "name": "wearestudio.io",
+  "version": "0.0.0",
+  "homepage": "http://wearestudio.io",
+  "authors": [
+    "I/O studio"
+  ],
+  "license": "CC BY-NC-SA 4.0",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "_bower_components"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.6",
+    "Snap.svg": "snap.svg#^0.4.1",
+    "responsive-images.js": "kvendrik/responsive-images.js#^1.0.0",
+    "mapkey": "pixelmatrix/mapkey",
+    "jquery-touchswipe": "^1.6.18",
+    "modernizr": "^3.3.1"
+  }
+}
