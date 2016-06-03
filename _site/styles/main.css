@@ -3932,12 +3932,15 @@ body.es .navbar-collapse ul li:nth-of-type(4) a abbr {
   transform: translateY(5px);
 }
 @media (min-width: 375px) {
+  .no-backgroundblendmode .navbar-header h1 a img:nth-of-type(1),
   .no-svg .navbar-header h1 a img:nth-of-type(1) {
     display: none;
   }
+  .no-backgroundblendmode .navbar-header h1 a img:nth-of-type(2),
   .no-svg .navbar-header h1 a img:nth-of-type(2) {
     display: none;
   }
+  .no-backgroundblendmode .navbar-header h1 a img:nth-of-type(3),
   .no-svg .navbar-header h1 a img:nth-of-type(3) {
     display: block;
   }
