@@ -538,7 +538,7 @@ jQuery(document).ready(function ($) {
       adaptiveHeight: true,
       arrows: false,
       infinite: false,
-      focusOnSelect: true
+      focusOnSelect: false
     });
   };
 
