@@ -661,7 +661,7 @@ jQuery(document).ready(function ($) {
 
     ////////////////////////////////////////////////////////////////
 
-    $('.slider').focus();
+    //$('.slider').focus();
 
     ////////////////////////////////////////////////////////////////
 
@@ -770,6 +770,10 @@ jQuery(document).ready(function ($) {
 //  if ($('.no-svg .navbar-collapse.collapse.in')) {
 //    $('.no-svg navbar-header button span .menu-cross').removeClass('hide').addClass('show');
 //  }
+
+if ('ontouchstart' in document.documentElement) {
+  $('footer').hide();
+}
 
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
