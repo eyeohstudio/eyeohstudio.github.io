@@ -540,6 +540,10 @@ jQuery(document).ready(function ($) {
       infinite: false,
       useTransform: false
     });
+
+    setTimeout(function() {
+      $('.slider').focus();
+    }, 900);
   };
 
 ////////////////////////////////////////////////////////////////
@@ -596,6 +600,7 @@ jQuery(document).ready(function ($) {
 
     setTimeout(function() {
       $('body').removeClass('invisible').addClass('visible');
+      $('.slider').focus();
     }, 900);
   });
 
@@ -679,7 +684,6 @@ jQuery(document).ready(function ($) {
 
     var dataSlickIndex = $(this).parent().attr('data-slick-index');
     $('.slider').slick('slickGoTo', dataSlickIndex);
-    $('.slider').focus();
 
     ////////////////////////////////////////////////////////////////
 
@@ -693,6 +697,10 @@ jQuery(document).ready(function ($) {
       projectControlButtonsPosition();
       projectControlButtonsClick();
     }, 600);
+
+    setTimeout(function() {
+      $('.slider').focus();
+    }, 900);
   });
 
 ////////////////////////////////////////////////////////////////
