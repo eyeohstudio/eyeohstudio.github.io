@@ -542,7 +542,7 @@ jQuery(document).ready(function ($) {
     });
 
     setTimeout(function() {
-      $('.slider').focus();
+      $('.slick-slide').focus();
     }, 900);
   };
 
@@ -600,7 +600,7 @@ jQuery(document).ready(function ($) {
 
     setTimeout(function() {
       $('body').removeClass('invisible').addClass('visible');
-      $('.slider').focus();
+      $('.slick-slide').focus();
     }, 900);
   });
 
@@ -699,7 +699,7 @@ jQuery(document).ready(function ($) {
     }, 600);
 
     setTimeout(function() {
-      $('.slider').focus();
+      $('.slick-slide').focus();
     }, 900);
   });
 
