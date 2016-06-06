@@ -321,52 +321,61 @@ jQuery(document).ready(function ($) {
 
     $('.slider').on('swipe', function(event, slick, direction){
       setTimeout(function() {
-        var scrollmem = $('html,body').scrollTop();
-        var slug = $('.project-content.slick-slide.slick-current.slick-active').attr('id');
-        window.location.hash = slug;
-        $('html,body').scrollTop(scrollmem);
-      }, 300);
-
-      setTimeout(function() {
         addTargetBlank();
         projectContentContainerHeight();
         projectControlContainerSize();
         projectControlButtonsPosition();
         projectControlButtonsClick();
+      }, 300);
+
+      ////////////////////////////////////////////////////////////////
+
+      setTimeout(function() {
+        var scrollmem = $('html,body').scrollTop();
+        var slug = $('.project-content.slick-slide.slick-current.slick-active').attr('id');
+        window.location.hash = slug;
+        $('html,body').scrollTop(scrollmem);
       }, 600);
     });
+
+    ////////////////////////////////////////////////////////////////
+    ////////////////////////////////////////////////////////////////
 
     $('body.slider-is-open').keydown(function(e) {
       if (e.which == 39){
         setTimeout(function() {
-          var scrollmem = $('html,body').scrollTop();
-          var slug = $('.project-content.slick-slide.slick-current.slick-active').attr('id');
-          window.location.hash = slug;
-          $('html,body').scrollTop(scrollmem);
-        }, 300);
-
-        setTimeout(function() {
           addTargetBlank();
           projectContentContainerHeight();
           projectControlContainerSize();
           projectControlButtonsPosition();
           projectControlButtonsClick();
+        }, 300);
+
+        ////////////////////////////////////////////////////////////////
+
+        setTimeout(function() {
+          var scrollmem = $('html,body').scrollTop();
+          var slug = $('.project-content.slick-slide.slick-current.slick-active').attr('id');
+          window.location.hash = slug;
+          $('html,body').scrollTop(scrollmem);
         }, 600);
       }
       if (e.which == 37){
         setTimeout(function() {
-          var scrollmem = $('html,body').scrollTop();
-          var slug = $('.project-content.slick-slide.slick-current.slick-active').attr('id');
-          window.location.hash = slug;
-          $('html,body').scrollTop(scrollmem);
-        }, 300);
-
-        setTimeout(function() {
           addTargetBlank();
           projectContentContainerHeight();
           projectControlContainerSize();
           projectControlButtonsPosition();
           projectControlButtonsClick();
+        }, 300);
+
+        ////////////////////////////////////////////////////////////////
+
+        setTimeout(function() {
+          var scrollmem = $('html,body').scrollTop();
+          var slug = $('.project-content.slick-slide.slick-current.slick-active').attr('id');
+          window.location.hash = slug;
+          $('html,body').scrollTop(scrollmem);
         }, 600);
       }
     });
@@ -452,18 +461,20 @@ jQuery(document).ready(function ($) {
       $('.slider').slick('slickNext');
 
       setTimeout(function() {
-        var scrollmem = $('html,body').scrollTop();
-        var slug = $('.project-content.slick-slide.slick-current.slick-active').attr('id');
-        window.location.hash = slug;
-        $('html,body').scrollTop(scrollmem);
-      }, 300);
-
-      setTimeout(function() {
         addTargetBlank();
         projectContentContainerHeight();
         projectControlContainerSize();
         projectControlButtonsPosition();
         projectControlButtonsClick();
+      }, 300);
+
+      ////////////////////////////////////////////////////////////////
+
+      setTimeout(function() {
+        var scrollmem = $('html,body').scrollTop();
+        var slug = $('.project-content.slick-slide.slick-current.slick-active').attr('id');
+        window.location.hash = slug;
+        $('html,body').scrollTop(scrollmem);
       }, 600);
     });
 
@@ -475,18 +486,20 @@ jQuery(document).ready(function ($) {
       $('.slider').slick('slickPrev');
 
       setTimeout(function() {
-        var scrollmem = $('html,body').scrollTop();
-        var slug = $('.project-content.slick-slide.slick-current.slick-active').attr('id');
-        window.location.hash = slug;
-        $('html,body').scrollTop(scrollmem);
-      }, 300);
-
-      setTimeout(function() {
         addTargetBlank();
         projectContentContainerHeight();
         projectControlContainerSize();
         projectControlButtonsPosition();
         projectControlButtonsClick();
+      }, 300);
+
+      ////////////////////////////////////////////////////////////////
+
+        setTimeout(function() {
+        var scrollmem = $('html,body').scrollTop();
+        var slug = $('.project-content.slick-slide.slick-current.slick-active').attr('id');
+        window.location.hash = slug;
+        $('html,body').scrollTop(scrollmem);
       }, 600);
     });
   };
@@ -524,7 +537,8 @@ jQuery(document).ready(function ($) {
     $('.slider').slick({
       adaptiveHeight: true,
       arrows: false,
-      infinite: false
+      infinite: false,
+      useTransform: false
     });
   };
 
