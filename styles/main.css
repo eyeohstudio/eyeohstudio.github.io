@@ -540,6 +540,9 @@ div.summer .project-content .project-excerpt button svg {
   width: 100%;
   stroke: #212322;
 }
+div.summer .project-content .project-excerpt .temp {
+  display: none;
+}
 div.summer .project-content .project-excerpt h2 {
   font-family: BrixSans;
   font-weight: bold;
@@ -1886,6 +1889,7 @@ body.es .navbar-collapse ul li:nth-of-type(4) a abbr {
     padding-top: 45px;
   }
   div.summer .project-content .project-excerpt button {
+    display: none;
     visibility: hidden;
     -webkit-backface-visibility: hidden;
     -webkit-transition: .3s ease;
@@ -1915,6 +1919,25 @@ body.es .navbar-collapse ul li:nth-of-type(4) a abbr {
   }
   div.summer .project-content .project-excerpt button svg {
     display: none;
+  }
+  div.summer .project-content .project-excerpt .temp {
+    font-family: BrixSans;
+    display: block;
+    -webkit-backface-visibility: hidden;
+    -webkit-transition: .3s ease;
+    -moz-transition: .3s ease;
+    -ms-transition: .3s ease;
+    -o-transition: .3s ease;
+    transition: .3s ease;
+    float: left;
+    height: auto;
+    width: auto;
+    font-size: 12px;
+    opacity: 1 !important;
+    white-space: nowrap;
+  }
+  div.summer .project-content .project-excerpt .temp span {
+    display: block;
   }
   div.summer .project-content .project-excerpt h2 {
     font-family: BrixSans;
