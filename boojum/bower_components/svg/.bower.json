@@ -1,0 +1,15 @@
+{
+  "name": "svg",
+  "homepage": "https://github.com/kbwood/svg",
+  "version": "1.5.0",
+  "_release": "1.5.0",
+  "_resolution": {
+    "type": "version",
+    "tag": "1.5.0",
+    "commit": "82f6162b9ac69ea3b87c1b4533c15060f427cdd6"
+  },
+  "_source": "git://github.com/kbwood/svg.git",
+  "_target": "~1.5.0",
+  "_originalSource": "kbwood/svg",
+  "_direct": true
+}
