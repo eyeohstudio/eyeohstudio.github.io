@@ -1,0 +1,677 @@
+// compress: false, main: main.less
+
+@import url('base.less');
+
+@media (min-width: 940px) {
+
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////// THIS IS THE BEGINNING
+
+  div.summer {
+
+    .project-thumbnail {
+
+      a {
+
+        span {
+          font-size: 20px !important;
+        }
+      }
+    }
+
+    .project-content {
+
+//			&[aria-expanded="true"] {
+//
+//				.project-excerpt {
+//
+//					button {
+//
+//						&:before {
+//							.visible;
+//						}
+//					}
+//				}
+//			}
+//
+//			&[aria-expanded="false"] {
+//
+//				.project-excerpt {
+//
+//					button {
+//
+//						&:before {
+//							.invisible;
+//						}
+//					}
+//				}
+//			}
+
+      .project-excerpt {
+        background-color: @white !important;
+        border-top: 1px solid @black;
+        margin: 50px 60px;
+        margin-top: 0;
+        padding: 0;
+        padding-top: 45px;
+
+        button {
+          .invisible;
+          .transition;
+          float: left;
+          height: auto; width: auto;
+          opacity: 1 !important;
+
+          &:before {
+            .BrixSans; .normal;
+            .visible;
+            font-size: 12px;
+            height: auto; width: 25%;
+            line-height: 4.5em;
+            white-space: nowrap;
+          }
+
+          &:hover {
+            opacity: 1 !important;
+
+            -webkit-transform: scale(1);
+               -moz-transform: scale(1);
+                    transform: scale(1);
+          }
+
+          svg {
+            .hide;
+          }
+        }
+
+        h2 {
+          .BrixSans; .bold;
+          font-size: 18px;
+
+          margin: 0;
+          margin-bottom: 35px / 1.5; margin-right: 5%; margin-left: 25%;
+
+        }
+
+        p {
+          .BrixSlab; .normal;;
+          font-size: 18px;
+          line-height: 1.3em;
+          margin: 0;
+          margin-right: 5%; margin-left: 25%;
+        }
+      }
+
+      .project-control {
+        .show;
+        width: 100%;
+        position: absolute;
+
+        .wrapper {
+          .clearfix;
+          .vertical-align;
+          height: auto;
+          margin: 0 auto;
+          position: relative;
+
+          a {
+            .BrixSans; .normal;
+            border-bottom: none;
+            font-size: 12px;
+            text-align: right;
+            text-transform: uppercase;
+            white-space: nowrap;
+
+            -webkit-writing-mode: vertical-rl;
+               -moz-writing-mode: vertical-rl;
+                -ms-writing-mode: vertical-rl;
+                -ms-writing-mode: tb-rl;
+                    writing-mode: vertical-rl;
+
+            -webkit-transform: rotate(-180deg);
+               -moz-transform: rotate(-180deg);
+                -ms-transform: rotate(-180deg);
+                 -o-transform: rotate(-180deg);
+                    transform: rotate(-180deg);
+
+            &:focus {
+              outline: none;
+              outline-offset: 0;
+            }
+
+            &:hover {
+              opacity: 1;
+            }
+
+            &.left-project-control {
+              float: left;
+
+              &:after {
+                content: " [ ↑ ]";
+              }
+            }
+
+            &.right-project-control {
+              float: right;
+
+              &:after {
+                content: " [ ↓ ]";
+              }
+            }
+          }
+        }
+      }
+
+      ul {
+        margin: 0;
+        padding: 0 60px;
+
+        li {
+          margin-bottom: 35px / 1.5;
+        }
+      }
+
+      a.scroll-to-top {
+        .BrixSans; .normal;
+        .show;
+        .transition;
+        border-bottom: 1px solid @black;
+        color: @black;
+        cursor: pointer;
+        font-size: 12px;
+        margin: 45px 60px;
+        margin-bottom: 0;
+        padding: 0;
+        padding-bottom: 45px;
+        text-align: center;
+
+        &:before {
+          content: attr(data-button-label);
+        }
+
+        &:hover {
+        }
+
+        svg {
+          .hide;
+        }
+      }
+    }
+  }
+
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+
+  html {
+
+    body {
+      background: @white;
+      color: @black;
+
+      header {
+        .clearfix;
+        margin: 45px 60px;
+        //margin-bottom: 45px - (45 / 10);
+        margin-top: 45px - (45 / 10);
+
+        nav.navbar.navbar-default {
+          border: none;
+          background-color: transparent;
+          float: right;
+          margin-bottom: 0;
+          height: auto; width: 100%;
+          position: relative;
+
+          .navbar-header {
+            position: relative;
+            -webkit-transform-style: preserve-3d;
+               -moz-transform-style: preserve-3d;
+                    transform-style: preserve-3d;
+
+            h1 {
+              .show;
+              float: left;
+              height: auto; width: 150px;
+              margin-top: 0; margin-bottom: 0;
+
+              a {
+                .show;
+                border: none;
+
+                &:hover {
+                }
+
+                img {
+                  object-fit: contain;
+                }
+              }
+            }
+
+            button {
+              background-color: transparent;
+              border: none;
+              border-radius: 0;
+              float: right;
+              margin: 0;
+              padding: 0;
+            }
+          }
+
+          .navbar-collapse {
+            .clearfix;
+            border: none;
+            margin-top: 0; margin-bottom: -60px / 1.5;
+            padding-right: 0; padding-left: 0;
+            position: relative;
+
+            ul {
+              .clearfix;
+              margin: 0;
+              margin-top: 0;
+              position: absolute;
+              bottom: 0; right: 0;
+
+              li {
+                .BrixSans; .bold;
+                border-bottom: none;
+                display: inline-block;
+                font-size: 16px;
+                text-transform: uppercase;
+
+                &:nth-of-type(1) {
+                  border-top: none;
+
+                  &:after {
+                    content: "/";
+                    margin: 0 0.3em * 1.5 0 0.3em;
+                    font-style: italic;
+                  }
+                }
+
+                &:nth-of-type(2) {
+                  margin-right: -52px;
+                }
+
+                a {
+                  border: none;
+                  color: @black;
+                  display: inline;
+                  padding: 0;
+                  padding-top: 10px; padding-bottom: 10px;
+
+                  &:active,
+                  &:focus,
+                  &:hover,
+                  &:visited {
+                  }
+
+                  &:hover {
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+
+      div.spring {
+        margin: 60px;
+        margin-top: 45px - (45 / 10);
+
+        p {
+          .BrixSlab; .normal;;
+          .show;
+          font-size: 28px;
+          line-height: 1.3em;
+          margin: 0;
+          text-transform: uppercase;
+        }
+      }
+
+      div.summer {
+        margin-bottom: 0;
+        padding: 0;
+      }
+
+      div.autumn {
+        margin: 60px;
+        margin-bottom: 0;
+
+        h2 {
+          .BrixSans; .bold;
+          font-size: 18px;
+
+          margin: 0;
+          margin-bottom: 60px / 2;
+          text-transform: uppercase;
+        }
+
+        p {
+          .BrixSlab; .normal;;
+          font-size: 18px;
+          line-height: 1.3em;
+          margin: 0;
+          margin-bottom: 1em;
+
+          &:last-of-type {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 60px;
+          }
+
+          a {
+
+            &:hover {
+              opacity: 1;
+            }
+          }
+        }
+      }
+
+      hr {
+        border-top: 1px solid @black;
+        margin: 0 60px;
+      }
+
+      div.winter {
+        margin: 0 60px;
+        margin-bottom: 0;
+        padding-top: 60px;
+        position: relative;
+
+        p {
+          .BrixSlab; .normal;;
+          font-size: 20px;
+          line-height: 1.3em;
+          margin: 0;
+
+          span {
+            .show;
+
+            &:nth-of-type(1) {
+              .BrixSans; .bold;
+              margin-bottom: 60px / 10;
+            }
+          }
+        }
+
+        aside {
+          .BrixSans; .bold;
+          font-size: 16px;
+          margin-top: 60px / (1.25 * 1);
+          text-transform: uppercase;
+
+          a {
+            border: none;
+
+            &:hover {
+            }
+          }
+        }
+
+        footer {
+          height: auto; width: 100%;
+          padding-bottom: 60px / 2;
+          position: absolute;
+          bottom: 0; left: 0;
+
+          small {
+            .BrixSlab; .normal;
+            .show;
+            font-size: 14px;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+
+  ////////////////////////////////////////////////////////////////
+  ////////////////////////////////////////////////////////////////
+
+  body.ca div.summer .project-content .project-excerpt {
+
+    button {
+
+      &:before {
+        content:  "[ esc ] Enrere";
+      }
+    }
+  }
+
+  body.en div.summer .project-content .project-excerpt {
+
+    button {
+
+      &:before {
+        content:  "[ esc ] Back";
+      }
+    }
+  }
+
+  body.es div.summer .project-content .project-excerpt {
+
+    button {
+
+      &:before {
+        content:  "[ esc ] Atrás";
+      }
+    }
+  }
+
+  body.ca .navbar-collapse ul li {
+
+    &:nth-of-type(4) {
+      float: left !important;
+
+      &:after {
+        content: "/" !important;
+        margin: 0 0.3em * 1.5 0 0 !important;
+        font-style: italic !important;
+      }
+    }
+
+    &:nth-of-type(3) {
+      .hide !important;
+    }
+
+    &:nth-of-type(5) {
+      float: right !important;
+    }
+
+    &:nth-of-type(4),
+    &:nth-of-type(5) {
+      .BrixSans !important; .normal !important;
+      .show !important;
+      font-size: 12px !important;
+      line-height: 1.3em !important;
+      margin-top: -38px !important;
+
+      a {
+        display: inline-block !important;
+        padding-top: 0 !important; padding-bottom: 0 !important;
+
+        &:after {
+          .hide !important;
+          content: attr(alt) !important;
+        }
+
+        abbr {
+          .show !important;
+        }
+      }
+    }
+  }
+
+  body.en .navbar-collapse ul li {
+
+    &:nth-of-type(3) {
+      float: left !important;
+
+      &:after {
+        content: "/" !important;
+        margin: 0 0.3em * 1.5 0 0 !important;
+        font-style: italic !important;
+      }
+    }
+
+    &:nth-of-type(4) {
+      .hide !important;
+    }
+
+    &:nth-of-type(5) {
+      float: right !important;
+    }
+
+    &:nth-of-type(3),
+    &:nth-of-type(5) {
+      .BrixSans !important; .normal !important;
+      .show !important;
+      font-size: 12px !important;
+      line-height: 1.3em !important;
+      margin-top: -38px !important;
+
+      a {
+        display: inline-block !important;
+        padding-top: 0 !important; padding-bottom: 0 !important;
+
+        &:after {
+          .hide !important;
+          content: attr(alt) !important;
+        }
+
+        abbr {
+          .show !important;
+        }
+      }
+    }
+  }
+
+  body.es .navbar-collapse ul li {
+
+    &:nth-of-type(3) {
+      float: left !important;
+
+      &:after {
+        content: "/" !important;
+        margin: 0 0.3em * 1.5 0 0 !important;
+        font-style: italic !important;
+      }
+    }
+
+    &:nth-of-type(5) {
+      .hide !important;
+    }
+
+    &:nth-of-type(4) {
+      float: right !important;
+    }
+
+    &:nth-of-type(3),
+    &:nth-of-type(4) {
+      .BrixSans !important; .normal !important;
+      .show !important;
+      font-size: 12px !important;
+      line-height: 1.3em !important;
+      margin-top: -38px !important;
+
+      a {
+        display: inline-block !important;
+        padding-top: 0 !important; padding-bottom: 0 !important;
+
+        &:after {
+          .hide !important;
+          content: attr(alt) !important;
+        }
+
+        abbr {
+          .show !important;
+        }
+      }
+    }
+  }
+
+  .container-fluid {
+
+    .row {
+
+      .col-xs-12 {
+      }
+
+      &:nth-of-type(1) {
+      }
+
+      &:nth-of-type(2) {
+      }
+
+      &:nth-of-type(3) {
+      }
+
+      &:nth-of-type(4) {
+
+        .col-xs-12 {
+
+          &:nth-of-type(1) {
+
+            div.autumn {
+              margin-right: 0;
+              padding-right: 45px / 2;
+
+              h2 {
+              }
+
+              p:last-of-type {
+                border-bottom: none;
+                margin-bottom: 0;
+                padding-bottom: 60px;
+              }
+            }
+          }
+
+          &:nth-of-type(2) {
+
+            div.autumn {
+              margin-top: 60px; margin-left: 0;
+              padding-left: 45px / 2;
+
+              h2 {
+                .show;
+                .invisible;
+              }
+            }
+          }
+        }
+      }
+
+      &:nth-of-type(5) {
+      }
+    }
+  }
+
+  .si-icons {
+    .hide;
+    margin: 0;
+    margin-top: 6px !important;
+    padding: 0;
+
+    span {
+      .show;
+      background-repeat: no-repeat;
+      background-position: center center;
+      cursor: pointer;
+
+      svg {
+        fill: none;
+        stroke: @black;
+      }
+    }
+  }
+
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////// THIS IS THE END
+
+}
