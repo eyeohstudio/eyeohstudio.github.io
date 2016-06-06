@@ -510,6 +510,7 @@ div.summer .project-content {
   height: auto;
   width: 100%;
   position: relative;
+  outline: none !important;
 }
 div.summer .project-content .project-excerpt {
   margin: 0;
