@@ -537,9 +537,7 @@ jQuery(document).ready(function ($) {
     $('.slider').slick({
       adaptiveHeight: true,
       arrows: false,
-      infinite: false,
-      useTransform: false,
-      focusOnSelect: false
+      infinite: false
     });
   };
 
@@ -662,7 +660,7 @@ jQuery(document).ready(function ($) {
 
     ////////////////////////////////////////////////////////////////
 
-    $('.slider').focus();
+    //$('.slider').focus();
 
     ////////////////////////////////////////////////////////////////
 
