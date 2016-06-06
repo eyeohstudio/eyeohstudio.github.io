@@ -537,7 +537,8 @@ jQuery(document).ready(function ($) {
     $('.slider').slick({
       adaptiveHeight: true,
       arrows: false,
-      infinite: false
+      infinite: false,
+      focusOnSelect: true
     });
   };
 
