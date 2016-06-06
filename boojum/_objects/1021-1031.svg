@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg id="object-1021-1031" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 360 360" enable-background="new 0 0 360 360" xml:space="preserve">
+    <g>
+        <!-- 1st row -->
+        <polygon class="p01 white" points="60,0 0,0 0,60"/>
+        <polygon class="p02 white" points="0,60 60,60 60,0"/>
+        <polygon class="p03 white" points="120,0 60,0 60,60"/>
+        <polygon class="p04 white" points="60,60 120,60 120,0"/>
+        <polygon class="p05 white" points="180,0 120,0 120,60"/>
+        <polygon class="p06 white" points="120,60 180,60 180,0"/>
+        <polygon class="p07 white" points="240,0 180,0 180,60"/>
+        <polygon class="p08 white" points="180,60 240,60 240,0"/>
+        <polygon class="p09 white" points="300,0 240,0 240,60"/>
+        <polygon class="p10 white" points="240,60 300,60 300,0"/>
+        <polygon class="p11 white" points="360,0 300,0 300,60"/>
+        <polygon class="p12 color" points="300,60 360,60 360,0"/>
+        <!-- 2nd row -->
+        <polygon class="p13 white" points="60,60 0,60 0,120"/>
+        <polygon class="p14 white" points="0,120 60,120 60,60"/>
+        <polygon class="p15 white" points="120,60 60,60 60,120"/>
+        <polygon class="p16 white" points="60,120 120,120 120,60"/>
+        <polygon class="p17 white" points="180,60 120,60 120,120"/>
+        <polygon class="p18 white" points="120,120 180,120 180,60"/>
+        <polygon class="p19 white" points="240,60 180,60 180,120"/>
+        <polygon class="p20 white" points="180,120 240,120 240,60"/>
+        <polygon class="p21 white" points="300,60 240,60 240,120"/>
+        <polygon class="p22 color" points="240,120 300,120 300,60"/>
+        <polygon class="p23 color" points="360,60 300,60 300,120"/>
+        <polygon class="p24 color" points="300,120 360,120 360,60"/>
+        <!-- 3rd row -->
+        <polygon class="p25 white" points="60,120 0,120 0,180"/>
+        <polygon class="p26 white" points="0,180 60,180 60,120"/>
+        <polygon class="p27 white" points="120,120 60,120 60,180"/>
+        <polygon class="p28 hue" points="60,180 120,180 120,120"/>
+        <polygon class="p29 hue" points="180,120 120,120 120,180"/>
+        <polygon class="p30 hue" points="120,180 180,180 180,120"/>
+        <polygon class="p31 hue" points="240,120 180,120 180,180"/>
+        <polygon class="p32 color" points="180,180 240,180 240,120"/>
+        <polygon class="p33 color" points="300,120 240,120 240,180"/>
+        <polygon class="p34 color" points="240,180 300,180 300,120"/>
+        <polygon class="p35 color" points="360,120 300,120 300,180"/>
+        <polygon class="p36 white" points="300,180 360,180 360,120"/>
+        <!-- 4th row -->
+        <polygon class="p37 white" points="60,180 0,180 0,240"/>
+        <polygon class="p38 hue" points="0,240 60,240 60,180"/>
+        <polygon class="p39 hue" points="120,180 60,180 60,240"/>
+        <polygon class="p40 hue" points="60,240 120,240 120,180"/>
+        <polygon class="p41 hue" points="180,180 120,180 120,240"/>
+        <polygon class="p42 color" points="120,240 180,240 180,180"/>
+        <polygon class="p43 color" points="240,180 180,180 180,240"/>
+        <polygon class="p44 color" points="180,240 240,240 240,180"/>
+        <polygon class="p45 color" points="300,180 240,180 240,240"/>
+        <polygon class="p46 white" points="240,240 300,240 300,180"/>
+        <polygon class="p47 white" points="360,180 300,180 300,240"/>
+        <polygon class="p48 white" points="300,240 360,240 360,180"/>
+        <!-- 5th row -->
+        <polygon class="p49 hue" points="60,240 0,240 0,300"/>
+        <polygon class="p50 hue" points="0,300 60,300 60,240"/>
+        <polygon class="p51 hue" points="120,240 60,240 60,300"/>
+        <polygon class="p52 color" points="60,300 120,300 120,240"/>
+        <polygon class="p53 color" points="180,240 120,240 120,300"/>
+        <polygon class="p54 color" points="120,300 180,300 180,240"/>
+        <polygon class="p55 color" points="240,240 180,240 180,300"/>
+        <polygon class="p56 hue" points="180,300 240,300 240,240"/>
+        <polygon class="p57 white" points="300,240 240,240 240,300"/>
+        <polygon class="p58 white" points="240,300 300,300 300,240"/>
+        <polygon class="p59 white" points="360,240 300,240 300,300"/>
+        <polygon class="p60 white" points="300,300 360,300 360,240"/>
+        <!-- 6th row -->
+        <polygon class="p61 hue" points="60,300 0,300 0,360"/>
+        <polygon class="p62 color" points="0,360 60,360 60,300"/>
+        <polygon class="p63 color" points="120,300 60,300 60,360"/>
+        <polygon class="p64 color" points="60,360 120,360 120,300"/>
+        <polygon class="p65 color" points="180,300 120,300 120,360"/>
+        <polygon class="p66 hue" points="120,360 180,360 180,300"/>
+        <polygon class="p67 hue" points="240,300 180,300 180,360"/>
+        <polygon class="p68 hue" points="180,360 240,360 240,300"/>
+        <polygon class="p69 white" points="300,300 240,300 240,360"/>
+        <polygon class="p70 white" points="240,360 300,360 300,300"/>
+        <polygon class="p71 white" points="360,300 300,300 300,360"/>
+        <polygon class="p72 white" points="300,360 360,360 360,300"/>
+    </g>
+</svg>
