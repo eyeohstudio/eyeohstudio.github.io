@@ -682,6 +682,7 @@ jQuery(document).ready(function ($) {
 
     var dataSlickIndex = $(this).parent().attr('data-slick-index');
     $('.slider').slick('slickGoTo', dataSlickIndex);
+    $('.slick-slide[data-slick-index="' + dataSlickIndex + '"]').focus();
 
     ////////////////////////////////////////////////////////////////
 
