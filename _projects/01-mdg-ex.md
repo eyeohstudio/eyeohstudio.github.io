@@ -76,7 +76,7 @@ slug: sota-la-paraula
 >1024:mdg-ex-01_1120.jpg
 "></li>
 
-<li>
+<li class="show">
   <ul class="wrapper" />
     <li><img data-src-base="{{ site.url}}/images/projects/" data-src="
     <320:mdg-ex-02_320.jpg,
