@@ -22,7 +22,6 @@ slug: calvet-catalogue
 
 ---
 
-<ul>
 <li><img data-src-base="{{ site.url}}/images/projects/" data-src="
 <320:calvet-ca-01_320.jpg,
 <480:calvet-ca-01_480.jpg,
@@ -85,4 +84,3 @@ slug: calvet-catalogue
 <1024:calvet-ca-07_1024.jpg,
 >1024:calvet-ca-07_1120.jpg
 "></li>
-</ul>

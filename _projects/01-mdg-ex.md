@@ -22,7 +22,6 @@ slug: sota-la-paraula
 
 ---
 
-<ul>
 <li><img data-src-base="{{ site.url}}/images/projects/" data-src="
 <320:mdg-ca-01_320.jpg,
 <480:mdg-ca-01_480.jpg,
@@ -125,4 +124,3 @@ slug: sota-la-paraula
 <1024:mdg-ex-06_1024.jpg,
 >1024:mdg-ex-06_1120.jpg
 "></li>
-</ul>

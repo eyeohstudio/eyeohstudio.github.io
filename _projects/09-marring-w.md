@@ -22,7 +22,6 @@ slug: marring
 
 ---
 
-<ul>
 <li><img data-src-base="{{ site.url}}/images/projects/" data-src="
 <320:marring-ic-01_320.jpg,
 <480:marring-ic-01_480.jpg,
@@ -58,4 +57,3 @@ slug: marring
 <1024:marring-ic-04_1024.jpg,
 >1024:marring-ic-04_1120.jpg
 "></li>
-</ul>

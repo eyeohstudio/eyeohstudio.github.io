@@ -22,7 +22,6 @@ slug: iese-online-cases
 
 ---
 
-<ul>
 <li><img data-src-base="{{ site.url}}/images/projects/" data-src="
 <320:iese-w-01_320.jpg,
 <480:iese-w-01_480.jpg,
@@ -49,4 +48,3 @@ slug: iese-online-cases
 <1024:iese-w-03_1024.jpg,
 >1024:iese-w-03_1120.jpg
 "></li>
-</ul>

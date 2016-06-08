@@ -22,7 +22,6 @@ slug: salta-pel-primats
 
 ---
 
-<ul>
 <li><img data-src-base="{{ site.url}}/images/projects/" data-src="
 <320:fmona-p-01_320.jpg,
 <480:fmona-p-01_480.jpg,
@@ -49,4 +48,3 @@ slug: salta-pel-primats
 <1024:fmona-p-03_1024.jpg,
 >1024:fmona-p-03_1120.jpg
 "></li>
-</ul>

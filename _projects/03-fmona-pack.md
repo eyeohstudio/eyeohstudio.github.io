@@ -22,7 +22,6 @@ slug: primats
 
 ---
 
-<ul>
 <li><img data-src-base="{{ site.url}}/images/projects/" data-src="
 <320:fmona-pack-01_320.jpg,
 <480:fmona-pack-01_480.jpg,
@@ -76,4 +75,3 @@ slug: primats
 <1024:fmona-pack-06_1024.jpg,
 >1024:fmona-pack-06_1120.jpg
 "></li>
-</ul>
