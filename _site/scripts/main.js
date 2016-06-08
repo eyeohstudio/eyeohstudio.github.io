@@ -610,6 +610,11 @@ jQuery(document).ready(function ($) {
     setTimeout(function() {
       $('body').removeClass('invisible').addClass('visible');
     }, 900);
+
+    setTimeout(function() {
+      projectContentContainerHeight();
+      $('#sota-la-paraula > ul > li').slice(6,10).wrapAll('<li><ul class="wrapper" />');
+    }, 1200);
   });
 
 ////////////////////////////////////////////////////////////////
@@ -714,6 +719,7 @@ jQuery(document).ready(function ($) {
 
     setTimeout(function() {
       projectContentContainerHeight();
+      $('#sota-la-paraula > ul > li').slice(6,10).wrapAll('<li><ul class="wrapper" />');
     }, 1200);
   });
 
