@@ -590,7 +590,6 @@ jQuery(document).ready(function ($) {
 ////////////////////////////////////////////////////////////////
 
   $(window).load(function() {
-    projectContentContainerHeight();
     makeImagesResponsive(); // responsive-img.min.js
     vimeoResponsive();
     sliderInit();
@@ -609,12 +608,9 @@ jQuery(document).ready(function ($) {
     }, 300);
 
     setTimeout(function() {
+      projectContentContainerHeight();
       $('body').removeClass('invisible').addClass('visible');
     }, 900);
-
-    setTimeout(function() {
-      projectContentContainerHeight();
-    }, 1200);
   });
 
 ////////////////////////////////////////////////////////////////
@@ -673,9 +669,6 @@ jQuery(document).ready(function ($) {
 
   $('.project-thumbnail a').on('click', function(e) {
     e.preventDefault();
-
-    projectContentContainerHeight();
-
     ////////////////////////////////////////////////////////////////
 
     var slug = $(this).attr('data-project-name');
