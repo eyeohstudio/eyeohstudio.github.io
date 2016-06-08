@@ -590,6 +590,7 @@ jQuery(document).ready(function ($) {
 ////////////////////////////////////////////////////////////////
 
   $(window).load(function() {
+    projectContentContainerHeight();
     makeImagesResponsive(); // responsive-img.min.js
     vimeoResponsive();
     sliderInit();
@@ -613,7 +614,6 @@ jQuery(document).ready(function ($) {
 
     setTimeout(function() {
       projectContentContainerHeight();
-      $('#sota-la-paraula > ul > li').slice(6,10).wrapAll('<li><ul class="wrapper" />');
     }, 1200);
   });
 
@@ -674,6 +674,10 @@ jQuery(document).ready(function ($) {
   $('.project-thumbnail a').on('click', function(e) {
     e.preventDefault();
 
+    projectContentContainerHeight();
+
+    ////////////////////////////////////////////////////////////////
+
     var slug = $(this).attr('data-project-name');
     window.location.hash = slug;
 
@@ -714,12 +718,10 @@ jQuery(document).ready(function ($) {
 
     setTimeout(function() {
       projectContentContainerHeight();
-      $('#sota-la-paraula > ul > li').slice(6,10).wrapAll('<li><ul class="wrapper" />');
     }, 900);
 
     setTimeout(function() {
       projectContentContainerHeight();
-      $('#sota-la-paraula > ul > li').slice(6,10).wrapAll('<li><ul class="wrapper" />');
     }, 1200);
   });
 
