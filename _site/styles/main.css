@@ -1020,8 +1020,8 @@ body.es .navbar-collapse ul li:nth-of-type(4) a abbr {
   background-color: #fafafa;
 }
 #sota-la-paraula.project-content > ul > li:nth-of-type(7) .wrapper {
-  margin: 0;
-  padding: 0;
+  margin: 0 !important;
+  padding: 0 !important;
 }
 #sota-la-paraula.project-content > ul > li:nth-of-type(7) .wrapper:before,
 #sota-la-paraula.project-content > ul > li:nth-of-type(7) .wrapper:after {
@@ -3125,8 +3125,8 @@ body.es .navbar-collapse ul li:nth-of-type(4) a abbr {
     visibility: hidden;
   }
   #sota-la-paraula.project-content > ul > li:nth-of-type(7) .wrapper {
-    margin: 0;
-    padding: 0;
+    margin: 0 !important;
+    padding: 0 !important;
   }
   #sota-la-paraula.project-content > ul > li:nth-of-type(7) .wrapper:before,
   #sota-la-paraula.project-content > ul > li:nth-of-type(7) .wrapper:after {
@@ -3493,8 +3493,8 @@ body.es .navbar-collapse ul li:nth-of-type(4) a abbr {
     visibility: hidden;
   }
   #sota-la-paraula.project-content > ul > li:nth-of-type(7) .wrapper {
-    margin: 0;
-    padding: 0;
+    margin: 0 !important;
+    padding: 0 !important;
   }
   #sota-la-paraula.project-content > ul > li:nth-of-type(7) .wrapper:before,
   #sota-la-paraula.project-content > ul > li:nth-of-type(7) .wrapper:after {
