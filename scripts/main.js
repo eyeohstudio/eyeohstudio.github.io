@@ -591,6 +591,7 @@ jQuery(document).ready(function ($) {
 
   $(window).load(function() {
     makeImagesResponsive(); // responsive-img.min.js
+    projectContentContainerHeight();
     vimeoResponsive();
     sliderInit();
 
@@ -605,10 +606,12 @@ jQuery(document).ready(function ($) {
       ////////////////////////////////////////////////////////////////
 
       $('.summer .container-fluid .row:nth-of-type(1)').removeClass('invisible').addClass('visible');
+      projectContentContainerHeight();
     }, 300);
 
     setTimeout(function() {
       $('body').removeClass('invisible').addClass('visible');
+      projectContentContainerHeight();
     }, 900);
   });
 
@@ -669,6 +672,10 @@ jQuery(document).ready(function ($) {
   $('.project-thumbnail a').on('click', function(e) {
     e.preventDefault();
 
+    projectContentContainerHeight();
+
+    ////////////////////////////////////////////////////////////////
+
     var slug = $(this).attr('data-project-name');
     window.location.hash = slug;
 
@@ -714,6 +721,10 @@ jQuery(document).ready(function ($) {
 ////////////////////////////////////////////////////////////////
 
   $('.project-content .project-excerpt button').on('click', function() {
+
+    projectContentContainerHeight();
+
+    ////////////////////////////////////////////////////////////////
 
     window.location.hash = ''; // for older browsers, leaves the '#' behind
     history.pushState('', document.title, window.location.pathname); // nice and clean
