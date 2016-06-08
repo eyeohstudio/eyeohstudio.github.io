@@ -22,6 +22,7 @@ slug: pips-abrera
 
 ---
 
+<ul>
 <li><img data-src-base="{{ site.url}}/images/projects/" data-src="
 <320:pips-w-01_320.jpg,
 <480:pips-w-01_480.jpg,
@@ -41,3 +42,4 @@ slug: pips-abrera
 "></li>
 
 <li><figure><iframe src="//player.vimeo.com/video/158929706?badge=0&byline=0&color=fff&portrait=0&title=0" frameborder="0" width="1280" height="720" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></figure></li>
+</ul>

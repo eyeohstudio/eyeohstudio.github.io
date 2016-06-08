@@ -22,6 +22,7 @@ slug: our-identity
 
 ---
 
+<ul>
 <li><img data-src-base="{{ site.url}}/images/projects/" data-src="
 <320:io-ic-01_320.jpg,
 <480:io-ic-01_480.jpg,
@@ -83,3 +84,4 @@ slug: our-identity
 <1024:io-ic-07_1024.jpg,
 >1024:io-ic-07_1120.jpg
 "></li>
+</ul>

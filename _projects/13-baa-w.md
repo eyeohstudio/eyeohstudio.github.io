@@ -22,6 +22,7 @@ slug: barcelona-academy-of-art
 
 ---
 
+<ul>
 <li><img data-src-base="{{ site.url}}/images/projects/" data-src="
 <320:baa-w-01_320.jpg,
 <480:baa-w-01_480.jpg,
@@ -48,3 +49,4 @@ slug: barcelona-academy-of-art
 <1024:baa-w-03_1024.jpg,
 >1024:baa-w-03_1120.jpg
 "></li>
+</ul>

@@ -22,6 +22,7 @@ slug: our-posters
 
 ---
 
+<ul>
 <li><img data-src-base="{{ site.url}}/images/projects/" data-src="
 <320:io-p-01_320.jpg,
 <480:io-p-01_480.jpg,
@@ -75,3 +76,4 @@ slug: our-posters
 <1024:io-p-06_1024.jpg,
 >1024:io-p-06_1120.jpg
 "></li>
+</ul>
