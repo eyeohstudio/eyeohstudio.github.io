@@ -547,8 +547,8 @@ jQuery(document).ready(function ($) {
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
 
-  function hideFooter {
-    if (!('ontouchstart' in window)) {
+  function hideFooter() {
+    if ('ontouchstart' in window) {
       $('footer').addClass('hide');
     }
   };
