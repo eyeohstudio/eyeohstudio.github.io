@@ -61,15 +61,7 @@
   -webkit-text-stroke: 1px transparent;
   text-shadow: 0 1px 0 rgba(0, 0, 0, 0.01);
 }
-.animClass {
-  -webkit-transform: translate3d(0, 0, 0);
-  -webkit-backface-visibility: hidden;
-  -webkit-perspective: 1000;
-}
 .fadeIn {
-  -webkit-transform: translate3d(0, 0, 0);
-  -webkit-backface-visibility: hidden;
-  -webkit-perspective: 1000;
   visibility: visible;
   -webkit-animation-name: fadeIn;
   animation-name: fadeIn;
@@ -95,9 +87,6 @@
   }
 }
 .fadeOut {
-  -webkit-transform: translate3d(0, 0, 0);
-  -webkit-backface-visibility: hidden;
-  -webkit-perspective: 1000;
   visibility: hidden;
   -webkit-animation-name: fadeOut;
   animation-name: fadeOut;
@@ -123,9 +112,6 @@
   }
 }
 .fliph {
-  -webkit-transform: translate3d(0, 0, 0);
-  -webkit-backface-visibility: hidden;
-  -webkit-perspective: 1000;
   -webkit-transform: scaleX(-1);
   -moz-transform: scaleX(-1);
   -o-transform: scaleX(-1);
@@ -134,9 +120,6 @@
   filter: FlipH;
 }
 .flipv {
-  -webkit-transform: translate3d(0, 0, 0);
-  -webkit-backface-visibility: hidden;
-  -webkit-perspective: 1000;
   -webkit-transform: scaleY(-1);
   -moz-transform: scaleY(-1);
   -o-transform: scaleY(-1);
@@ -158,9 +141,6 @@
   display: block;
 }
 .slideDown {
-  -webkit-transform: translate3d(0, 0, 0);
-  -webkit-backface-visibility: hidden;
-  -webkit-perspective: 1000;
   visibility: hidden;
   -webkit-animation-name: slideDown;
   animation-name: slideDown;
@@ -186,9 +166,6 @@
   }
 }
 .slideUp {
-  -webkit-transform: translate3d(0, 0, 0);
-  -webkit-backface-visibility: hidden;
-  -webkit-perspective: 1000;
   visibility: visible;
   -webkit-animation-name: slideUp;
   animation-name: slideUp;
@@ -222,8 +199,6 @@
   filter: alpha(opacity=0);
 }
 .transition {
-  -webkit-transform: translate3d(0, 0, 0);
-  -webkit-perspective: 1000;
   -webkit-backface-visibility: hidden;
   -webkit-transition: .3s ease;
   -moz-transition: .3s ease;
@@ -232,9 +207,6 @@
   transition: .3s ease;
 }
 .vertical-align {
-  -webkit-transform: translate3d(0, 0, 0);
-  -webkit-backface-visibility: hidden;
-  -webkit-perspective: 1000;
   position: relative;
   top: 50%;
   -webkit-transform: translateY(-50%);
@@ -291,8 +263,6 @@ div.summer .project-thumbnail a span {
   font-family: BrixSans;
   font-weight: bold;
   display: block;
-  -webkit-transform: translate3d(0, 0, 0);
-  -webkit-perspective: 1000;
   -webkit-backface-visibility: hidden;
   -webkit-transition: .3s ease;
   -moz-transition: .3s ease;
@@ -314,8 +284,6 @@ div.summer .project-thumbnail a span {
   white-space: pre;
 }
 div.summer .project-thumbnail a img {
-  -webkit-transform: translate3d(0, 0, 0);
-  -webkit-perspective: 1000;
   -webkit-backface-visibility: hidden;
   -webkit-transition: .3s ease;
   -moz-transition: .3s ease;
@@ -361,9 +329,6 @@ div.summer .project-content .project-excerpt button:active,
 div.summer .project-content .project-excerpt button:focus,
 div.summer .project-content .project-excerpt button:hover,
 div.summer .project-content .project-excerpt button:visited {
-  -webkit-transform: translate3d(0, 0, 0);
-  -webkit-backface-visibility: hidden;
-  -webkit-perspective: 1000;
   outline: -webkit-focus-ring-color auto 0;
   -webkit-transform: scale(0.9);
   -moz-transform: scale(0.9);
@@ -421,8 +386,6 @@ div.summer .project-content ul li img {
 div.summer .project-content a.scroll-to-top {
   font-family: BrixSlab;
   display: block;
-  -webkit-transform: translate3d(0, 0, 0);
-  -webkit-perspective: 1000;
   -webkit-backface-visibility: hidden;
   -webkit-transition: .3s ease;
   -moz-transition: .3s ease;
@@ -444,16 +407,11 @@ div.summer .project-content a.scroll-to-top:hover {
   opacity: 1 !important;
 }
 div.summer .project-content a.scroll-to-top:hover svg {
-  -webkit-transform: translate3d(0, 0, 0);
-  -webkit-backface-visibility: hidden;
-  -webkit-perspective: 1000;
   -webkit-transform: translateY(0);
   -moz-transform: translateY(0);
   transform: translateY(0);
 }
 div.summer .project-content a.scroll-to-top svg {
-  -webkit-transform: translate3d(0, 0, 0);
-  -webkit-perspective: 1000;
   -webkit-backface-visibility: hidden;
   -webkit-transition: .3s ease;
   -moz-transition: .3s ease;
@@ -469,8 +427,6 @@ div.summer .project-content a.scroll-to-top svg {
   transform: translateY(5px);
 }
 html body {
-  -webkit-transform: translate3d(0, 0, 0);
-  -webkit-perspective: 1000;
   -webkit-backface-visibility: hidden;
   -webkit-transition: .3s ease;
   -moz-transition: .3s ease;
@@ -481,8 +437,6 @@ html body {
   color: #212322;
 }
 html body a {
-  -webkit-transform: translate3d(0, 0, 0);
-  -webkit-perspective: 1000;
   -webkit-backface-visibility: hidden;
   -webkit-transition: .3s ease;
   -moz-transition: .3s ease;
@@ -526,9 +480,6 @@ html body header nav.navbar.navbar-default {
   position: relative;
 }
 html body header nav.navbar.navbar-default .navbar-header {
-  -webkit-transform: translate3d(0, 0, 0);
-  -webkit-backface-visibility: hidden;
-  -webkit-perspective: 1000;
   position: relative;
   -webkit-transform-style: preserve-3d;
   -moz-transform-style: preserve-3d;
@@ -575,8 +526,6 @@ html body header nav.navbar.navbar-default .navbar-header button span svg {
 }
 html body header nav.navbar.navbar-default .navbar-header button span svg .top-bread,
 html body header nav.navbar.navbar-default .navbar-header button span svg .bottom-bread {
-  -webkit-transform: translate3d(0, 0, 0);
-  -webkit-perspective: 1000;
   -webkit-backface-visibility: hidden;
   -webkit-transition: .1s ease;
   -moz-transition: .1s ease;
@@ -801,33 +750,21 @@ body.es .navbar-collapse ul li:nth-of-type(4) a abbr {
   visibility: hidden;
 }
 .top-bread-in {
-  -webkit-transform: translate3d(0, 0, 0);
-  -webkit-backface-visibility: hidden;
-  -webkit-perspective: 1000;
   -webkit-transform: translateY(-5px);
   -moz-transform: translateY(-5px);
   transform: translateY(-5px);
 }
 .top-bread-out {
-  -webkit-transform: translate3d(0, 0, 0);
-  -webkit-backface-visibility: hidden;
-  -webkit-perspective: 1000;
   -webkit-transform: translateY(0);
   -moz-transform: translateY(0);
   transform: translateY(0);
 }
 .bottom-bread-in {
-  -webkit-transform: translate3d(0, 0, 0);
-  -webkit-backface-visibility: hidden;
-  -webkit-perspective: 1000;
   -webkit-transform: translateY(5px);
   -moz-transform: translateY(5px);
   transform: translateY(5px);
 }
 .bottom-bread-out {
-  -webkit-transform: translate3d(0, 0, 0);
-  -webkit-backface-visibility: hidden;
-  -webkit-perspective: 1000;
   -webkit-transform: translateY(0);
   -moz-transform: translateY(0);
   transform: translateY(0);
@@ -1741,8 +1678,6 @@ body.es .navbar-collapse ul li:nth-of-type(4) a abbr {
   }
   div.summer .project-content .project-excerpt button {
     visibility: hidden;
-    -webkit-transform: translate3d(0, 0, 0);
-    -webkit-perspective: 1000;
     -webkit-backface-visibility: hidden;
     -webkit-transition: .3s ease;
     -moz-transition: .3s ease;
@@ -1790,11 +1725,15 @@ body.es .navbar-collapse ul li:nth-of-type(4) a abbr {
     margin-left: 25%;
   }
   div.summer .project-content .project-control {
-    display: none;
+    display: block;
     width: 100%;
     position: absolute;
   }
   div.summer .project-content .project-control .wrapper {
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
     height: auto;
     margin: 0 auto;
     position: relative;
@@ -1814,7 +1753,7 @@ body.es .navbar-collapse ul li:nth-of-type(4) a abbr {
     text-align: right;
     text-transform: uppercase;
     white-space: nowrap;
-    writing-mode: tb-rl;
+    writing-mode: vertical-lr;
     -webkit-transform: rotate(-180deg);
     -moz-transform: rotate(-180deg);
     -ms-transform: rotate(-180deg);
@@ -1828,13 +1767,13 @@ body.es .navbar-collapse ul li:nth-of-type(4) a abbr {
     float: left;
   }
   div.summer .project-content .project-control .wrapper a.left-project-control:after {
-    content: " [↑]";
+    content: " [ ↑ ]";
   }
   div.summer .project-content .project-control .wrapper a.right-project-control {
     float: right;
   }
   div.summer .project-content .project-control .wrapper a.right-project-control:after {
-    content: " [↓]";
+    content: " [ ↓ ]";
   }
   div.summer .project-content ul {
     margin: 0;
@@ -1846,8 +1785,6 @@ body.es .navbar-collapse ul li:nth-of-type(4) a abbr {
   div.summer .project-content a.scroll-to-top {
     font-family: BrixSans;
     display: block;
-    -webkit-transform: translate3d(0, 0, 0);
-    -webkit-perspective: 1000;
     -webkit-backface-visibility: hidden;
     -webkit-transition: .3s ease;
     -moz-transition: .3s ease;
@@ -2241,8 +2178,6 @@ body.es .navbar-collapse ul li:nth-of-type(4) a abbr {
   }
   div.summer .project-content .project-excerpt button {
     visibility: hidden;
-    -webkit-transform: translate3d(0, 0, 0);
-    -webkit-perspective: 1000;
     -webkit-backface-visibility: hidden;
     -webkit-transition: .3s ease;
     -moz-transition: .3s ease;
@@ -2297,8 +2232,6 @@ body.es .navbar-collapse ul li:nth-of-type(4) a abbr {
   div.summer .project-content a.scroll-to-top {
     font-family: BrixSans;
     display: block;
-    -webkit-transform: translate3d(0, 0, 0);
-    -webkit-perspective: 1000;
     -webkit-backface-visibility: hidden;
     -webkit-transition: .3s ease;
     -moz-transition: .3s ease;
@@ -2565,8 +2498,6 @@ body.es .navbar-collapse ul li:nth-of-type(4) a abbr {
   }
   div.summer .project-content .project-excerpt button {
     visibility: hidden;
-    -webkit-transform: translate3d(0, 0, 0);
-    -webkit-perspective: 1000;
     -webkit-backface-visibility: hidden;
     -webkit-transition: .3s ease;
     -moz-transition: .3s ease;
@@ -2611,6 +2542,69 @@ body.es .navbar-collapse ul li:nth-of-type(4) a abbr {
     margin-right: 5%;
     margin-left: 25%;
   }
+  div.summer .project-content .project-control {
+    display: block;
+    width: 100%;
+    position: absolute;
+  }
+  div.summer .project-content .project-control .wrapper {
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    height: auto;
+    margin: 0 auto;
+    position: relative;
+  }
+  div.summer .project-content .project-control .wrapper:before,
+  div.summer .project-content .project-control .wrapper:after {
+    content: " ";
+    display: table;
+  }
+  div.summer .project-content .project-control .wrapper:after {
+    clear: both;
+  }
+  div.summer .project-content .project-control .wrapper a {
+    font-family: BrixSans;
+    border-bottom: none;
+    font-size: 12px;
+    padding: 0 30px;
+    text-align: right;
+    text-transform: uppercase;
+    white-space: normal;
+    writing-mode: horizontal-tb;
+    -webkit-transform: rotate(0);
+    -moz-transform: rotate(0);
+    -ms-transform: rotate(0);
+    -o-transform: rotate(0);
+    transform: rotate(0);
+  }
+  div.summer .project-content .project-control .wrapper a:hover {
+    opacity: 1;
+  }
+  div.summer .project-content .project-control .wrapper a.left-project-control {
+    float: left;
+    text-align: right;
+  }
+  div.summer .project-content .project-control .wrapper a.left-project-control:after {
+    display: none;
+  }
+  div.summer .project-content .project-control .wrapper a.left-project-control:before {
+    display: block;
+    content: " [ ← ]";
+  }
+  div.summer .project-content .project-control .wrapper a.right-project-control {
+    float: right;
+    margin-right: 0;
+    text-align: left;
+  }
+  div.summer .project-content .project-control .wrapper a.right-project-control:after {
+    display: none;
+  }
+  div.summer .project-content .project-control .wrapper a.right-project-control:before {
+    display: block;
+    content: " [ → ]";
+  }
   div.summer .project-content ul {
     margin: 0 auto;
     padding: 0;
@@ -2624,8 +2618,6 @@ body.es .navbar-collapse ul li:nth-of-type(4) a abbr {
   div.summer .project-content a.scroll-to-top {
     font-family: BrixSans;
     display: block;
-    -webkit-transform: translate3d(0, 0, 0);
-    -webkit-perspective: 1000;
     -webkit-backface-visibility: hidden;
     -webkit-transition: .3s ease;
     -moz-transition: .3s ease;
@@ -2937,8 +2929,6 @@ body.es .navbar-collapse ul li:nth-of-type(4) a abbr {
   }
   div.summer .project-content .project-excerpt button {
     visibility: hidden;
-    -webkit-transform: translate3d(0, 0, 0);
-    -webkit-perspective: 1000;
     -webkit-backface-visibility: hidden;
     -webkit-transition: .3s ease;
     -moz-transition: .3s ease;
@@ -2996,8 +2986,6 @@ body.es .navbar-collapse ul li:nth-of-type(4) a abbr {
   div.summer .project-content a.scroll-to-top {
     font-family: BrixSans;
     display: block;
-    -webkit-transform: translate3d(0, 0, 0);
-    -webkit-perspective: 1000;
     -webkit-backface-visibility: hidden;
     -webkit-transition: .3s ease;
     -moz-transition: .3s ease;
@@ -3309,8 +3297,6 @@ body.es .navbar-collapse ul li:nth-of-type(4) a abbr {
   }
   div.summer .project-content .project-excerpt button {
     visibility: hidden;
-    -webkit-transform: translate3d(0, 0, 0);
-    -webkit-perspective: 1000;
     -webkit-backface-visibility: hidden;
     -webkit-transition: .3s ease;
     -moz-transition: .3s ease;
@@ -3368,8 +3354,6 @@ body.es .navbar-collapse ul li:nth-of-type(4) a abbr {
   div.summer .project-content a.scroll-to-top {
     font-family: BrixSans;
     display: block;
-    -webkit-transform: translate3d(0, 0, 0);
-    -webkit-perspective: 1000;
     -webkit-backface-visibility: hidden;
     -webkit-transition: .3s ease;
     -moz-transition: .3s ease;

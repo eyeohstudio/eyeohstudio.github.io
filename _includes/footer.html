@@ -3,7 +3,6 @@
     <script src='{{ site.url }}/scripts/jquery.mapkey.min.js'></script>
     <script src='{{ site.url }}/scripts/responsive-img.min.js'></script>
     <script src="{{ site.url }}/scripts/svgicons.js"></script>
-    <script src="{{ site.url }}/scripts/velocity.min.js"></script>
     <script src="{{ site.url }}/scripts/main.js"></script>
     <script>
       var svgIconConfig = {
@@ -46,6 +45,22 @@
           });
         });
       })();
+    </script>
+    <script>
+      var $allVideos = $('iframe[src^="//player.vimeo.com"], object, embed'),
+          $fluidEl = $('figure');
+
+      $allVideos.each(function() {
+        $(this).attr('data-aspectRatio', this.height / this.width).removeAttr('height').removeAttr('width');
+      });
+
+      $(window).resize(function() {
+        var newWidth = $fluidEl.width();
+        $allVideos.each(function() {
+          var $el = $(this);
+          $el.width(newWidth).height(newWidth * $el.attr('data-aspectRatio'));
+        });
+      }).resize();
     </script>
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

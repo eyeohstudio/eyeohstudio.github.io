@@ -105,17 +105,17 @@ layout: default
                 <p lang="en">{{ project.excerptEn | markdownify | remove: '<p>' | remove: '</p>' }}</p>
                 <p lang="es">{{ project.excerptEs | markdownify | remove: '<p>' | remove: '</p>' }}</p>
               </div>
-              <div class="project-control hide">
+              <div class="project-control">
                 <div class="wrapper">
                   {% if project.previous.titleCa %}
-                    <a class="left-project-control" rel="previous" role="button" data-project-name="{{ project.previous.slug }}">
+                    <a href="#{{ project.previous.slug }}" class="left-project-control" rel="previous" role="button" data-project-name="{{ project.previous.slug }}">
                       <span lang="ca">{{ project.previous.titleCa }}</span>
                       <span lang="en">{{ project.previous.titleEn }}</span>
                       <span lang="es">{{ project.previous.titleEs }}</span>
                     </a>
                   {% endif %}
                   {% if project.next.titleCa %}
-                    <a class="right-project-control" rel="next" role="button" data-project-name="{{ project.next.slug }}">
+                    <a href="#{{ project.next.slug }}" class="right-project-control" rel="next" role="button" data-project-name="{{ project.next.slug }}">
                       <span lang="ca">{{ project.next.titleCa }}</span>
                       <span lang="en">{{ project.next.titleEn }}</span>
                       <span lang="es">{{ project.next.titleEs }}</span>
@@ -208,13 +208,13 @@ layout: default
         <span><a href="tel:+34934103368" target="_blank">(+34) 934 103 368</a> / <a href="tel:+34618261598" target="_blank">(+34) 618 261 598</a></span>
         <span><a href="mailto:hello@wearestudio.io" target="_blank">hello@wearestudio.io</a></span>
       </p>
-      <aside class="hide">
+      <aside>
         <a href="http://behance.net/eyeohstudio" target="_blank">Bēhance</a>, <a href="http://github.com/eyeohstudio" target="_blank">GitHub</a>, <a href="http://instagram.com/eyeohstudio/" target="_blank">Instagram</a>
       </aside>
       <footer>
-        <small lang="ca">[ & ] English [ ñ ] Español [ ç ] Català [ c ] Contacte [ p ] Projectes [esc] Enrere [ ← ] Anterior [ → ] Següent [ ↑ ] Puja</small>
-        <small lang="en">[ & ] English [ ñ ] Español [ ç ] Català [ c ] Contact [ w ] Work [esc] Back [ ← ] Previous [ → ] Next [ ↑ ] Top</small>
-        <small lang="es">[ & ] English [ ñ ] Español [ ç ] Català [ c ] Contacto [ p ] Proyectos [esc] Atrás [ ← ] Anterior [ → ] Siguiente [ ↑ ] Arriba</small>
+        <small lang="ca">[ &amp; ] English [ ñ ] Español [ ç ] Català [ c ] Contacte [ p ] Projectes [esc] Enrere [ ← ] Anterior [ → ] Següent [ ↑ ] Puja</small>
+        <small lang="en">[ &amp; ] English [ ñ ] Español [ ç ] Català [ c ] Contact [ w ] Work [esc] Back [ ← ] Previous [ → ] Next [ ↑ ] Top</small>
+        <small lang="es">[ &amp; ] English [ ñ ] Español [ ç ] Català [ c ] Contacto [ p ] Proyectos [esc] Atrás [ ← ] Anterior [ → ] Siguiente [ ↑ ] Arriba</small>
       </footer>
     </div>
   </div>

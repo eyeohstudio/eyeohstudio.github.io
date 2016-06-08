@@ -79,13 +79,13 @@
       }
 
       .project-control {
-        .hide;
+        .show;
         width: 100%;
         position: absolute;
 
         .wrapper {
           .clearfix;
-          //.vertical-align;
+          .vertical-align;
           height: auto;
           margin: 0 auto;
           position: relative;
@@ -97,7 +97,7 @@
             text-align: right;
             text-transform: uppercase;
             white-space: nowrap;
-            writing-mode: tb-rl;
+            writing-mode: vertical-lr;
 
             -webkit-transform: rotate(-180deg);
                -moz-transform: rotate(-180deg);
@@ -116,7 +116,7 @@
               float: left;
 
               &:after {
-                content: " [↑]";
+                content: " [ ↑ ]";
               }
             }
 
@@ -124,7 +124,7 @@
               float: right;
 
               &:after {
-                content: " [↓]";
+                content: " [ ↓ ]";
               }
             }
           }

@@ -22,9 +22,56 @@ slug: primats
 
 ---
 
-* ![Primats Wine Bottle Wrapped]({{ site.url }}/images/fmona-pack-01.jpg)
-* ![Primats Wine Bottle Wrapped]({{ site.url }}/images/fmona-pack-02.jpg)
-* ![Primats Wine Bottle Wrapping]({{ site.url }}/images/fmona-pack-03.jpg)
-* ![Primats Wine Bottle Inside Wrapping paper]({{ site.url }}/images/fmona-pack-04.jpg)
-* ![Primats Wine Bottle Graphic design Wrapping paper]({{ site.url }}/images/fmona-pack-05.jpg)
-* ![Primats Wine Bottle]({{ site.url }}/images/fmona-pack-06.jpg)
+<li><img data-src-base="{{ site.url}}/images/projects/" data-src="
+<320:fmona-pack-01_320.jpg,
+<480:fmona-pack-01_480.jpg,
+<640:fmona-pack-01_640.jpg,
+<800:fmona-pack-01_800.jpg,
+<1024:fmona-pack-01_1024.jpg,
+>1024:fmona-pack-01_1120.jpg
+"></li>
+
+<li><img data-src-base="{{ site.url}}/images/projects/" data-src="
+<320:fmona-pack-02_320.jpg,
+<480:fmona-pack-02_480.jpg,
+<640:fmona-pack-02_640.jpg,
+<800:fmona-pack-02_800.jpg,
+<1024:fmona-pack-02_1024.jpg,
+>1024:fmona-pack-02_1120.jpg
+"></li>
+
+<li><img data-src-base="{{ site.url}}/images/projects/" data-src="
+<320:fmona-pack-03_320.jpg,
+<480:fmona-pack-03_480.jpg,
+<640:fmona-pack-03_640.jpg,
+<800:fmona-pack-03_800.jpg,
+<1024:fmona-pack-03_1024.jpg,
+>1024:fmona-pack-03_1120.jpg
+"></li>
+
+<li><img data-src-base="{{ site.url}}/images/projects/" data-src="
+<320:fmona-pack-04_320.jpg,
+<480:fmona-pack-04_480.jpg,
+<640:fmona-pack-04_640.jpg,
+<800:fmona-pack-04_800.jpg,
+<1024:fmona-pack-04_1024.jpg,
+>1024:fmona-pack-04_1120.jpg
+"></li>
+
+<li><img data-src-base="{{ site.url}}/images/projects/" data-src="
+<320:fmona-pack-05_320.jpg,
+<480:fmona-pack-05_480.jpg,
+<640:fmona-pack-05_640.jpg,
+<800:fmona-pack-05_800.jpg,
+<1024:fmona-pack-05_1024.jpg,
+>1024:fmona-pack-05_1120.jpg
+"></li>
+
+<li><img data-src-base="{{ site.url}}/images/projects/" data-src="
+<320:fmona-pack-06_320.jpg,
+<480:fmona-pack-06_480.jpg,
+<640:fmona-pack-06_640.jpg,
+<800:fmona-pack-06_800.jpg,
+<1024:fmona-pack-06_1024.jpg,
+>1024:fmona-pack-06_1120.jpg
+"></li>

@@ -22,6 +22,22 @@ slug: pips-abrera
 
 ---
 
-* ![Pips Abrera Responsive Website Design]({{ site.url }}/images/pips-w-01.jpg)
-* ![Pips Abrera Website]({{ site.url }}/images/pips-w-02.jpg)
-* <figure><iframe src="//player.vimeo.com/video/158929706?badge=0&byline=0&color=fff&portrait=0&title=0" frameborder="0" width="1280" height="720" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></figure>
+<li><img data-src-base="{{ site.url}}/images/projects/" data-src="
+<320:pips-w-01_320.jpg,
+<480:pips-w-01_480.jpg,
+<640:pips-w-01_640.jpg,
+<800:pips-w-01_800.jpg,
+<1024:pips-w-01_1024.jpg,
+>1024:pips-w-01_1120.jpg
+"></li>
+
+<li><img data-src-base="{{ site.url}}/images/projects/" data-src="
+<320:pips-w-02_320.jpg,
+<480:pips-w-02_480.jpg,
+<640:pips-w-02_640.jpg,
+<800:pips-w-02_800.jpg,
+<1024:pips-w-02_1024.jpg,
+>1024:pips-w-02_1120.jpg
+"></li>
+
+<li><figure><iframe src="//player.vimeo.com/video/158929706?badge=0&byline=0&color=fff&portrait=0&title=0" frameborder="0" width="1280" height="720" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></figure></li>
