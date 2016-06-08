@@ -674,10 +674,6 @@ jQuery(document).ready(function ($) {
 
     ////////////////////////////////////////////////////////////////
 
-    //$('.slider').focus();
-
-    ////////////////////////////////////////////////////////////////
-
     $('html, body').stop().animate({scrollTop: 0}, 300);
 
     ////////////////////////////////////////////////////////////////
@@ -710,6 +706,15 @@ jQuery(document).ready(function ($) {
       projectControlButtonsPosition();
       projectControlButtonsClick();
     }, 600);
+
+    setTimeout(function() {
+      projectContentContainerHeight();
+      $('#sota-la-paraula > ul > li').slice(6,10).wrapAll('<li><ul class="wrapper" />');
+    }, 900);
+
+    setTimeout(function() {
+      projectContentContainerHeight();
+    }, 1200);
   });
 
 ////////////////////////////////////////////////////////////////
@@ -768,9 +773,9 @@ jQuery(document).ready(function ($) {
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
 
-  $('.project-thumbnail.sota-la-paraula a').on('click', function() {
-    $('#sota-la-paraula > ul > li').slice(6,10).wrapAll('<li><ul class="wrapper" />');
-  });
+//  $('.project-thumbnail.sota-la-paraula a').on('click', function() {
+//    $('#sota-la-paraula > ul > li').slice(6,10).wrapAll('<li><ul class="wrapper" />');
+//  });
 
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
