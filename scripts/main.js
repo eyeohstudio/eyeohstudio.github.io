@@ -88,15 +88,21 @@ jQuery(document).ready(function ($) {
       return false;
     });
 <<<<<<< HEAD
+<<<<<<< HEAD
 		
     ////////////////////////////////////////////////////////////////
     ////////////////////////////////////////////////////////////////
 
 =======
+=======
+>>>>>>> origin/sid
 
     ////////////////////////////////////////////////////////////////
     ////////////////////////////////////////////////////////////////
 
+<<<<<<< HEAD
+>>>>>>> origin/sid
+=======
 >>>>>>> origin/sid
     $('.language-change-es a').click(function(e) {
       e.preventDefault();
@@ -202,6 +208,7 @@ jQuery(document).ready(function ($) {
     }
   };
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
@@ -266,10 +273,14 @@ jQuery(document).ready(function ($) {
 =======
 
 >>>>>>> origin/sid
+=======
+
+>>>>>>> origin/sid
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
+<<<<<<< HEAD
 <<<<<<< HEAD
 
   function projectControlContainerSize() {
@@ -354,9 +365,52 @@ jQuery(document).ready(function ($) {
     $('.larger-than-one-thousand-one-hundred-fifteen .project-content.show.visible > .project-control > .wrapper > .right-project-control').css({
       'width': (wrapperWidthTrue - wrapperWidth) / 2,
       'margin-right': -(wrapperWidthTrue - wrapperWidth) / 2
+=======
+
+  function projectControlButtonsPosition() {
+
+    var wrapperWidthTrue = $('.project-content.show.visible > .project-control > .wrapper').outerWidth(true);
+    var wrapperWidth = $('.project-content.show.visible > .project-control > .wrapper').innerWidth();
+    var wrapperMargin = (wrapperWidthTrue - wrapperWidth) / 3;
+
+    $('.smaller-than-one-thousand-one-hundred-fifteen .project-content.show.visible > .project-control > .wrapper > .left-project-control').css({
+      'width': 'auto',
+      'margin-left': -wrapperMargin
+    });
+    $('.smaller-than-one-thousand-one-hundred-fifteen .project-content.show.visible > .project-control > .wrapper > .right-project-control').css({
+      'width': 'auto',
+      'margin-right': -wrapperMargin
+    });
+    $('.larger-than-one-thousand-one-hundred-fifteen .project-content.show.visible > .project-control > .wrapper > .left-project-control').css({
+      'width': (wrapperWidthTrue - wrapperWidth) / 2,
+      'margin-left': -(wrapperWidthTrue - wrapperWidth) / 2
+    });
+    $('.larger-than-one-thousand-one-hundred-fifteen .project-content.show.visible > .project-control > .wrapper > .right-project-control').css({
+      'width': (wrapperWidthTrue - wrapperWidth) / 2,
+      'margin-right': -(wrapperWidthTrue - wrapperWidth) / 2
     });
   };
 
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+
+  function projectControlButtonsClick() {
+
+    $('.project-content[aria-expanded="true"] .right-project-control').on('click', function() {
+
+      var nextProject = $(this).attr('href');
+      var $curr = $('.project-content.show.visible');
+      var $next = $(nextProject);
+
+      $curr.removeClass('show visible').addClass('hide invisible').attr('aria-expanded', 'false');
+      $next.removeClass('hide invisible').addClass('show visible').attr('aria-expanded', 'true');
+>>>>>>> origin/sid
+    });
+  };
+
+<<<<<<< HEAD
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
@@ -379,6 +433,13 @@ jQuery(document).ready(function ($) {
 
     $('.project-content[aria-expanded="true"] .left-project-control').on('click', function() {
 
+=======
+  ////////////////////////////////////////////////////////////////
+  ////////////////////////////////////////////////////////////////
+
+    $('.project-content[aria-expanded="true"] .left-project-control').on('click', function() {
+
+>>>>>>> origin/sid
       var previousProject = $(this).attr('href');
       var $curr = $('.project-content.show.visible');
       var $previous = $(previousProject);
@@ -407,6 +468,9 @@ jQuery(document).ready(function ($) {
     });
     $('.project-content.show.visible > .project-control > .wrapper').css({
         'width': projectFirstFigureWidth,
+<<<<<<< HEAD
+>>>>>>> origin/sid
+=======
 >>>>>>> origin/sid
     });
 
@@ -673,6 +737,7 @@ jQuery(document).ready(function ($) {
   $('.project-content .project-excerpt button').on('click', function() {
 
     // EMPTY
+<<<<<<< HEAD
 
     ////////////////////////////////////////////////////////////////
 
@@ -681,6 +746,16 @@ jQuery(document).ready(function ($) {
 
     ////////////////////////////////////////////////////////////////
 
+=======
+
+    ////////////////////////////////////////////////////////////////
+
+    window.location.hash = ''; // for older browsers, leaves the '#' behind
+    history.pushState('', document.title, window.location.pathname); // nice and clean
+
+    ////////////////////////////////////////////////////////////////
+
+>>>>>>> origin/sid
     var projectThumbnailContainerHeight = $('.summer .container-fluid .row:nth-of-type(1)').outerHeight();
     var projectName = $('.project-content.show.visible').attr('id');
     $('.summer .container-fluid .row:nth-of-type(1)').removeClass('invisible').addClass('visible');
