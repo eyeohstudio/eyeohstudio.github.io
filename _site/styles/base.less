@@ -72,14 +72,7 @@
   text-shadow: 0 1px 0 rgba(0,0,0,0.01);
 }
 
-.animClass {
-  -webkit-transform: translate3d(0, 0, 0);
-  -webkit-backface-visibility: hidden;
-  -webkit-perspective: 1000;
-}
-
 .fadeIn {
-  .animClass;
   .visible;
 
   -webkit-animation-name: fadeIn;
@@ -103,7 +96,6 @@
 }
 
 .fadeOut {
-  .animClass;
   .invisible;
 
   -webkit-animation-name: fadeOut;
@@ -127,7 +119,6 @@
 }
 
 .fliph {
-  .animClass;
   -webkit-transform: scaleX(-1);
      -moz-transform: scaleX(-1);
        -o-transform: scaleX(-1);
@@ -137,7 +128,6 @@
 }
 
 .flipv {
-  .animClass;
   -webkit-transform: scaleY(-1);
      -moz-transform: scaleY(-1);
        -o-transform: scaleY(-1);
@@ -164,7 +154,6 @@
 }
 
 .slideDown{
-  .animClass;
   .invisible;
 
   -webkit-animation-name: slideDown;
@@ -188,7 +177,6 @@
 }
 
 .slideUp{
-  .animClass;
   .visible;
 
   -webkit-animation-name: slideUp;
@@ -222,7 +210,6 @@
 }
 
 .transition {
-  .animClass;
   -webkit-backface-visibility: hidden; // fix for transition flickering
   -webkit-transition: .3s ease;
      -moz-transition: .3s ease;
@@ -232,7 +219,6 @@
 }
 
 .vertical-align {
-  .animClass;
   position: relative;
   top: 50%;
   -webkit-transform: translateY(-50%);

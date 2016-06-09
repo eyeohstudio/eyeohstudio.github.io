@@ -22,9 +22,64 @@ slug: our-identity
 
 ---
 
-* ![I/O Corporate Identity Logo]({{ site.url }}/images/io-ic-01.jpg) ![I/O Corporate Identity Logo]({{ site.url }}/images/io-ic-02.gif)
-* ![I/O Corporate Stationery]({{ site.url }}/images/io-ic-03.jpg)
-* ![I/O Corporate Business Cards]({{ site.url }}/images/io-ic-04.jpg)
-* ![I/O Corporate Envelope detail]({{ site.url }}/images/io-ic-05.jpg)
-* ![I/O Corporate Material]({{ site.url }}/images/io-ic-06.jpg)
-* ![I/O Corporate Tote Bag]({{ site.url }}/images/io-ic-07.jpg)
+<li><img data-src-base="{{ site.url}}/images/projects/" data-src="
+<320:io-ic-01_320.jpg,
+<480:io-ic-01_480.jpg,
+<640:io-ic-01_640.jpg,
+<800:io-ic-01_800.jpg,
+<1024:io-ic-01_1024.jpg,
+>1024:io-ic-01_1120.jpg
+">
+    <img data-src-base="{{ site.url}}/images/projects/" data-src="
+<320:io-ic-02_320.gif,
+<480:io-ic-02_480.gif,
+<640:io-ic-02_640.gif,
+<800:io-ic-02_800.gif,
+<1024:io-ic-02_1024.gif,
+>1024:io-ic-02_1120.gif
+"></li>
+
+<li><img data-src-base="{{ site.url}}/images/projects/" data-src="
+<320:io-ic-03_320.jpg,
+<480:io-ic-03_480.jpg,
+<640:io-ic-03_640.jpg,
+<800:io-ic-03_800.jpg,
+<1024:io-ic-03_1024.jpg,
+>1024:io-ic-03_1120.jpg
+"></li>
+
+<li><img data-src-base="{{ site.url}}/images/projects/" data-src="
+<320:io-ic-04_320.jpg,
+<480:io-ic-04_480.jpg,
+<640:io-ic-04_640.jpg,
+<800:io-ic-04_800.jpg,
+<1024:io-ic-04_1024.jpg,
+>1024:io-ic-04_1120.jpg
+"></li>
+
+<li><img data-src-base="{{ site.url}}/images/projects/" data-src="
+<320:io-ic-05_320.jpg,
+<480:io-ic-05_480.jpg,
+<640:io-ic-05_640.jpg,
+<800:io-ic-05_800.jpg,
+<1024:io-ic-05_1024.jpg,
+>1024:io-ic-05_1120.jpg
+"></li>
+
+<li><img data-src-base="{{ site.url}}/images/projects/" data-src="
+<320:io-ic-06_320.jpg,
+<480:io-ic-06_480.jpg,
+<640:io-ic-06_640.jpg,
+<800:io-ic-06_800.jpg,
+<1024:io-ic-06_1024.jpg,
+>1024:io-ic-06_1120.jpg
+"></li>
+
+<li><img data-src-base="{{ site.url}}/images/projects/" data-src="
+<320:io-ic-07_320.jpg,
+<480:io-ic-07_480.jpg,
+<640:io-ic-07_640.jpg,
+<800:io-ic-07_800.jpg,
+<1024:io-ic-07_1024.jpg,
+>1024:io-ic-07_1120.jpg
+"></li>

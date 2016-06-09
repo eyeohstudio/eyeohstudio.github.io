@@ -22,6 +22,29 @@ slug: barcelona-academy-of-art
 
 ---
 
-* ![BAA's Home Page]({{ site.url }}/images/baa-w-01.jpg)
-* ![BAA's Schedule Page]({{ site.url }}/images/baa-w-02.jpg)
-* ![BAA's Registration Form Page]({{ site.url }}/images/baa-w-03.jpg)
+<li><img data-src-base="{{ site.url}}/images/projects/" data-src="
+<320:baa-w-01_320.jpg,
+<480:baa-w-01_480.jpg,
+<640:baa-w-01_640.jpg,
+<800:baa-w-01_800.jpg,
+<1024:baa-w-01_1024.jpg,
+>1024:baa-w-01_1120.jpg
+"></li>
+
+<li><img data-src-base="{{ site.url}}/images/projects/" data-src="
+<320:baa-w-02_320.jpg,
+<480:baa-w-02_480.jpg,
+<640:baa-w-02_640.jpg,
+<800:baa-w-02_800.jpg,
+<1024:baa-w-02_1024.jpg,
+>1024:baa-w-02_1120.jpg
+"></li>
+
+<li><img data-src-base="{{ site.url}}/images/projects/" data-src="
+<320:baa-w-03_320.jpg,
+<480:baa-w-03_480.jpg,
+<640:baa-w-03_640.jpg,
+<800:baa-w-03_800.jpg,
+<1024:baa-w-03_1024.jpg,
+>1024:baa-w-03_1120.jpg
+"></li>

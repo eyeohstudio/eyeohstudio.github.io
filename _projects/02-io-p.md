@@ -22,9 +22,56 @@ slug: our-posters
 
 ---
 
-* ![I/O Poster set]({{ site.url }}/images/io-p-01.jpg)
-* ![I/O Volume's Poster]({{ site.url }}/images/io-p-02.jpg)
-* ![I/O Volume's Poster Detail]({{ site.url }}/images/io-p-03.jpg)
-* ![I/O Structure's Poster]({{ site.url }}/images/io-p-04.jpg)
-* ![I/O Structure's Poster Detail]({{ site.url }}/images/io-p-05.jpg)
-* ![I/O Color's Poster]({{ site.url }}/images/io-p-06.jpg)
+<li><img data-src-base="{{ site.url}}/images/projects/" data-src="
+<320:io-p-01_320.jpg,
+<480:io-p-01_480.jpg,
+<640:io-p-01_640.jpg,
+<800:io-p-01_800.jpg,
+<1024:io-p-01_1024.jpg,
+>1024:io-p-01_1120.jpg
+"></li>
+
+<li><img data-src-base="{{ site.url}}/images/projects/" data-src="
+<320:io-p-02_320.jpg,
+<480:io-p-02_480.jpg,
+<640:io-p-02_640.jpg,
+<800:io-p-02_800.jpg,
+<1024:io-p-02_1024.jpg,
+>1024:io-p-02_1120.jpg
+"></li>
+
+<li><img data-src-base="{{ site.url}}/images/projects/" data-src="
+<320:io-p-03_320.jpg,
+<480:io-p-03_480.jpg,
+<640:io-p-03_640.jpg,
+<800:io-p-03_800.jpg,
+<1024:io-p-03_1024.jpg,
+>1024:io-p-03_1120.jpg
+"></li>
+
+<li><img data-src-base="{{ site.url}}/images/projects/" data-src="
+<320:io-p-04_320.jpg,
+<480:io-p-04_480.jpg,
+<640:io-p-04_640.jpg,
+<800:io-p-04_800.jpg,
+<1024:io-p-04_1024.jpg,
+>1024:io-p-04_1120.jpg
+"></li>
+
+<li><img data-src-base="{{ site.url}}/images/projects/" data-src="
+<320:io-p-05_320.jpg,
+<480:io-p-05_480.jpg,
+<640:io-p-05_640.jpg,
+<800:io-p-05_800.jpg,
+<1024:io-p-05_1024.jpg,
+>1024:io-p-05_1120.jpg
+"></li>
+
+<li><img data-src-base="{{ site.url}}/images/projects/" data-src="
+<320:io-p-06_320.jpg,
+<480:io-p-06_480.jpg,
+<640:io-p-06_640.jpg,
+<800:io-p-06_800.jpg,
+<1024:io-p-06_1024.jpg,
+>1024:io-p-06_1120.jpg
+"></li>

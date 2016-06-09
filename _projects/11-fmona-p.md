@@ -22,6 +22,29 @@ slug: salta-pel-primats
 
 ---
 
-* ![Salta pels primats Poster]({{ site.url }}/images/fmona-p-01.jpg)
-* ![Salta pels primats Detall]({{ site.url }}/images/fmona-p-02.jpg)
-* ![Salta pels primats Lettering]({{ site.url }}/images/fmona-p-03.jpg)
+<li><img data-src-base="{{ site.url}}/images/projects/" data-src="
+<320:fmona-p-01_320.jpg,
+<480:fmona-p-01_480.jpg,
+<640:fmona-p-01_640.jpg,
+<800:fmona-p-01_800.jpg,
+<1024:fmona-p-01_1024.jpg,
+>1024:fmona-p-01_1120.jpg
+"></li>
+
+<li><img data-src-base="{{ site.url}}/images/projects/" data-src="
+<320:fmona-p-02_320.jpg,
+<480:fmona-p-02_480.jpg,
+<640:fmona-p-02_640.jpg,
+<800:fmona-p-02_800.jpg,
+<1024:fmona-p-02_1024.jpg,
+>1024:fmona-p-02_1120.jpg
+"></li>
+
+<li><img data-src-base="{{ site.url}}/images/projects/" data-src="
+<320:fmona-p-03_320.jpg,
+<480:fmona-p-03_480.jpg,
+<640:fmona-p-03_640.jpg,
+<800:fmona-p-03_800.jpg,
+<1024:fmona-p-03_1024.jpg,
+>1024:fmona-p-03_1120.jpg
+"></li>

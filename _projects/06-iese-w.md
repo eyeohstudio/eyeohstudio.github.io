@@ -21,6 +21,30 @@ featured_image: iese-w-00t
 slug: iese-online-cases
 
 ---
-* ![IESE Responsive Design View ]({{ site.url }}/images/iese-w-01.jpg)
-* ![IESE Laptop design]({{ site.url }}/images/iese-w-02.jpg)
-* ![IESE Mobile design]({{ site.url }}/images/iese-w-03.jpg)
+
+<li><img data-src-base="{{ site.url}}/images/projects/" data-src="
+<320:iese-w-01_320.jpg,
+<480:iese-w-01_480.jpg,
+<640:iese-w-01_640.jpg,
+<800:iese-w-01_800.jpg,
+<1024:iese-w-01_1024.jpg,
+>1024:iese-w-01_1120.jpg
+"></li>
+
+<li><img data-src-base="{{ site.url}}/images/projects/" data-src="
+<320:iese-w-02_320.jpg,
+<480:iese-w-02_480.jpg,
+<640:iese-w-02_640.jpg,
+<800:iese-w-02_800.jpg,
+<1024:iese-w-02_1024.jpg,
+>1024:iese-w-02_1120.jpg
+"></li>
+
+<li><img data-src-base="{{ site.url}}/images/projects/" data-src="
+<320:iese-w-03_320.jpg,
+<480:iese-w-03_480.jpg,
+<640:iese-w-03_640.jpg,
+<800:iese-w-03_800.jpg,
+<1024:iese-w-03_1024.jpg,
+>1024:iese-w-03_1120.jpg
+"></li>
