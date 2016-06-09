@@ -6,11 +6,14 @@ jQuery(document).ready(function ($) {
 ////////////////////////////////////////////////////////////////
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
 
+=======
+>>>>>>> origin/sid
 =======
 >>>>>>> origin/sid
   function anchorLinkScrollAnimation() {
@@ -35,7 +38,11 @@ jQuery(document).ready(function ($) {
 ////////////////////////////////////////////////////////////////
 
 <<<<<<< HEAD
+<<<<<<< HEAD
   function fireHash() {
+=======
+  function backToTop() {
+>>>>>>> origin/sid
 =======
   function backToTop() {
 >>>>>>> origin/sid
@@ -100,10 +107,16 @@ jQuery(document).ready(function ($) {
       return false;
     });
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> origin/sid
 		
     ////////////////////////////////////////////////////////////////
     ////////////////////////////////////////////////////////////////
+
 =======
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 		
@@ -118,6 +131,14 @@ jQuery(document).ready(function ($) {
     ////////////////////////////////////////////////////////////////
 >>>>>>> origin/sid
 
+=======
+=======
+>>>>>>> origin/sid
+
+    ////////////////////////////////////////////////////////////////
+    ////////////////////////////////////////////////////////////////
+
+>>>>>>> origin/sid
 <<<<<<< HEAD
 >>>>>>> origin/sid
 =======
@@ -195,9 +216,15 @@ jQuery(document).ready(function ($) {
   function mapKeyboardChars() {
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     $('.project-content[aria-expanded="true"] .project-excerpt button').mapKey('esc', {trigger: 'click'});
     $('.project-content[aria-expanded="true"] .left-project-control').mapKey('left', {trigger: 'click'});
     $('.project-content[aria-expanded="true"] .right-project-control').mapKey('right', {trigger: 'click'});
+=======
+    $('.project-content.show.visible .project-excerpt button').mapKey('esc', {trigger: 'click'});
+    $('.project-content.show.visible .left-project-control').mapKey('left', {trigger: 'click'});
+    $('.project-content.show.visible .right-project-control').mapKey('right', {trigger: 'click'});
+>>>>>>> origin/sid
 =======
     $('.project-content.show.visible .project-excerpt button').mapKey('esc', {trigger: 'click'});
     $('.project-content.show.visible .left-project-control').mapKey('left', {trigger: 'click'});
@@ -218,7 +245,11 @@ jQuery(document).ready(function ($) {
 ////////////////////////////////////////////////////////////////
 
 <<<<<<< HEAD
+<<<<<<< HEAD
   function oneThousandOneHundredFifteen() {
+=======
+  function projectContentContainerHeight() {
+>>>>>>> origin/sid
 =======
   function projectContentContainerHeight() {
 >>>>>>> origin/sid
@@ -334,13 +365,19 @@ jQuery(document).ready(function ($) {
       ////////////////////////////////////////////////////////////////
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> origin/sid
     var windowHeight = $(window).outerHeight(true);
     var headerHeight = $('header').outerHeight(true);
     var projectExcerptHeight = $('.project-content.show.visible > .project-excerpt').outerHeight(true);
     var projectContentVisibleAreaHeight = windowHeight - (headerHeight + projectExcerptHeight)
     var projectFirstFigureWidth = $('.project-content.show.visible > ul > li:nth-of-type(1)').width();
 >>>>>>> origin/sid
+<<<<<<< HEAD
+>>>>>>> origin/sid
+=======
 >>>>>>> origin/sid
 
     $('.project-content.show.visible > .project-control').css({
@@ -384,6 +421,7 @@ jQuery(document).ready(function ($) {
     $('.smaller-than-one-thousand-one-hundred-fifteen .project-content.show.visible > .project-control > .wrapper > .left-project-control').css({
       'width': 'auto',
       'margin-left': -wrapperMargin
+<<<<<<< HEAD
     });
     $('.smaller-than-one-thousand-one-hundred-fifteen .project-content.show.visible > .project-control > .wrapper > .right-project-control').css({
       'width': 'auto',
@@ -393,6 +431,17 @@ jQuery(document).ready(function ($) {
       'width': (wrapperWidthTrue - wrapperWidth) / 2,
       'margin-left': -(wrapperWidthTrue - wrapperWidth) / 2
     });
+=======
+    });
+    $('.smaller-than-one-thousand-one-hundred-fifteen .project-content.show.visible > .project-control > .wrapper > .right-project-control').css({
+      'width': 'auto',
+      'margin-right': -wrapperMargin
+    });
+    $('.larger-than-one-thousand-one-hundred-fifteen .project-content.show.visible > .project-control > .wrapper > .left-project-control').css({
+      'width': (wrapperWidthTrue - wrapperWidth) / 2,
+      'margin-left': -(wrapperWidthTrue - wrapperWidth) / 2
+    });
+>>>>>>> origin/sid
     $('.larger-than-one-thousand-one-hundred-fifteen .project-content.show.visible > .project-control > .wrapper > .right-project-control').css({
       'width': (wrapperWidthTrue - wrapperWidth) / 2,
       'margin-right': -(wrapperWidthTrue - wrapperWidth) / 2
@@ -465,8 +514,14 @@ jQuery(document).ready(function ($) {
     $('.project-content[aria-expanded="true"] .left-project-control').on('click', function() {
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     ////////////////////////////////////////////////////////////////
     ////////////////////////////////////////////////////////////////
+=======
+=======
+  ////////////////////////////////////////////////////////////////
+  ////////////////////////////////////////////////////////////////
+>>>>>>> origin/sid
 =======
 =======
   ////////////////////////////////////////////////////////////////
@@ -708,6 +763,7 @@ jQuery(document).ready(function ($) {
     projectControlButtonsClick();
     setWinterHeight();
 <<<<<<< HEAD
+<<<<<<< HEAD
     sixHundredFortyListerner();
     vimeoWhatever();
 
@@ -737,6 +793,10 @@ jQuery(document).ready(function ($) {
     vimeoCustom();
 
 >>>>>>> origin/sid
+=======
+    vimeoCustom();
+
+>>>>>>> origin/sid
   };
 
 ////////////////////////////////////////////////////////////////
@@ -747,10 +807,16 @@ jQuery(document).ready(function ($) {
   $('.language-change a').on('click', function() {
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     projectStuff();
     projectControl();
     projectControlButtons();
     projectControlClick();
+=======
+    projectContentContainerHeight();
+    projectControlContainerSize();
+    projectControlButtonsPosition();
+>>>>>>> origin/sid
 =======
     projectContentContainerHeight();
     projectControlContainerSize();
