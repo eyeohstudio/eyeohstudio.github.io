@@ -6,6 +6,12 @@ jQuery(document).ready(function ($) {
 ////////////////////////////////////////////////////////////////
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> sid
   function addBodyClass() {
 
     if ($('.slider').hasClass('hide')){
@@ -38,9 +44,13 @@ jQuery(document).ready(function ($) {
     $('.project-excerpt p a').attr('target', '_blank');
   };
 
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
+>>>>>>> sid
+=======
+>>>>>>> master
 >>>>>>> sid
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
@@ -49,10 +59,18 @@ jQuery(document).ready(function ($) {
 
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
 =======
 >>>>>>> origin/sid
 =======
 >>>>>>> origin/sid
+>>>>>>> sid
+=======
+>>>>>>> origin/sid
+=======
+>>>>>>> origin/sid
+=======
+>>>>>>> master
 >>>>>>> sid
   function anchorLinkScrollAnimation() {
 
@@ -79,11 +97,19 @@ jQuery(document).ready(function ($) {
 <<<<<<< HEAD
   function fireHash() {
 =======
+<<<<<<< HEAD
   function backToTop() {
 >>>>>>> origin/sid
 =======
   function backToTop() {
 >>>>>>> origin/sid
+=======
+  function backToTop() {
+>>>>>>> origin/sid
+=======
+  function backToTop() {
+>>>>>>> origin/sid
+>>>>>>> sid
 
     $('.project-content > a.scroll-to-top').on('click', function(event) {
       event.preventDefault();
@@ -442,10 +468,13 @@ jQuery(document).ready(function ($) {
   function mapKeyboardChars() {
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     $('.project-content.slick-slide.slick-current.slick-active .project-excerpt button').mapKey('esc', {trigger: 'click'});
     //$('.project-content.slick-slide.slick-current.slick-active .left-project-control').mapKey('left', {trigger: 'click'});
     //$('.project-content.slick-slide.slick-current.slick-active .right-project-control').mapKey('right', {trigger: 'click'});
 =======
+=======
+>>>>>>> sid
 <<<<<<< HEAD
 <<<<<<< HEAD
     $('.project-content[aria-expanded="true"] .project-excerpt button').mapKey('esc', {trigger: 'click'});
@@ -461,6 +490,14 @@ jQuery(document).ready(function ($) {
     $('.project-content.show.visible .left-project-control').mapKey('left', {trigger: 'click'});
     $('.project-content.show.visible .right-project-control').mapKey('right', {trigger: 'click'});
 >>>>>>> origin/sid
+<<<<<<< HEAD
+>>>>>>> sid
+=======
+=======
+    $('.project-content.slick-slide.slick-current.slick-active .project-excerpt button').mapKey('esc', {trigger: 'click'});
+    //$('.project-content.slick-slide.slick-current.slick-active .left-project-control').mapKey('left', {trigger: 'click'});
+    //$('.project-content.slick-slide.slick-current.slick-active .right-project-control').mapKey('right', {trigger: 'click'});
+>>>>>>> master
 >>>>>>> sid
     $('.scroll-to-top').mapKey('up', {trigger: 'click'});
     $('.language-change-ca a').mapKey('lang_ca', {trigger: 'click'});
@@ -480,11 +517,19 @@ jQuery(document).ready(function ($) {
 <<<<<<< HEAD
   function oneThousandOneHundredFifteen() {
 =======
+<<<<<<< HEAD
   function projectContentContainerHeight() {
 >>>>>>> origin/sid
 =======
   function projectContentContainerHeight() {
 >>>>>>> origin/sid
+=======
+  function projectContentContainerHeight() {
+>>>>>>> origin/sid
+=======
+  function projectContentContainerHeight() {
+>>>>>>> origin/sid
+>>>>>>> sid
 
     var projectThumbnailContainerHeight = $('.summer .container-fluid .row:nth-of-type(1)').outerHeight();
     var springHeight = $('body > .container-fluid > .row:nth-of-type(2)').outerHeight();
@@ -630,14 +675,23 @@ jQuery(document).ready(function ($) {
     var projectExcerptHeight = $('.project-content.slick-slide.slick-current.slick-active > .project-excerpt').outerHeight(true);
     var projectContentVisibleAreaHeight = windowHeight - (headerHeight + projectExcerptHeight)
 <<<<<<< HEAD
+<<<<<<< HEAD
     var projectFirstFigureWidth = $('.project-content.slick-slide.slick-current.slick-active > ul > li:nth-of-type(1)').width();
 =======
+=======
+>>>>>>> sid
     var projectFirstFigureWidth = $('.project-content.show.visible > ul > li:nth-of-type(1)').width();
 >>>>>>> origin/sid
 <<<<<<< HEAD
 >>>>>>> origin/sid
 =======
 >>>>>>> origin/sid
+<<<<<<< HEAD
+>>>>>>> sid
+=======
+=======
+    var projectFirstFigureWidth = $('.project-content.slick-slide.slick-current.slick-active > ul > li:nth-of-type(1)').width();
+>>>>>>> master
 >>>>>>> sid
 
     $('.project-content.slick-slide.slick-current.slick-active > .project-control').css({
@@ -645,8 +699,11 @@ jQuery(document).ready(function ($) {
         'top': projectExcerptHeight
     });
 <<<<<<< HEAD
+<<<<<<< HEAD
     $('.project-content.slick-slide.slick-current.slick-active > .project-control > .wrapper').css({
 =======
+=======
+>>>>>>> sid
 <<<<<<< HEAD
 
     ////////////////////////////////////////////////////////////////
@@ -671,6 +728,12 @@ jQuery(document).ready(function ($) {
       return false;
 =======
     $('.project-content.show.visible > .project-control > .wrapper').css({
+<<<<<<< HEAD
+>>>>>>> sid
+=======
+=======
+    $('.project-content.slick-slide.slick-current.slick-active > .project-control > .wrapper').css({
+>>>>>>> master
 >>>>>>> sid
         'width': projectFirstFigureWidth,
 >>>>>>> origin/sid
@@ -712,11 +775,19 @@ jQuery(document).ready(function ($) {
 =======
 
   function projectControlButtonsPosition() {
+<<<<<<< HEAD
 
     var wrapperWidthTrue = $('.project-content.show.visible > .project-control > .wrapper').outerWidth(true);
     var wrapperWidth = $('.project-content.show.visible > .project-control > .wrapper').innerWidth();
     var wrapperMargin = (wrapperWidthTrue - wrapperWidth) / 3;
 
+=======
+
+    var wrapperWidthTrue = $('.project-content.show.visible > .project-control > .wrapper').outerWidth(true);
+    var wrapperWidth = $('.project-content.show.visible > .project-control > .wrapper').innerWidth();
+    var wrapperMargin = (wrapperWidthTrue - wrapperWidth) / 3;
+
+>>>>>>> sid
     $('.smaller-than-one-thousand-one-hundred-fifteen .project-content.show.visible > .project-control > .wrapper > .left-project-control').css({
       'width': 'auto',
       'margin-left': -wrapperMargin
@@ -944,8 +1015,11 @@ jQuery(document).ready(function ($) {
     projectControlButtonsClick();
     setWinterHeight();
 <<<<<<< HEAD
+<<<<<<< HEAD
     vimeoResponsive();
 =======
+=======
+>>>>>>> sid
 <<<<<<< HEAD
 <<<<<<< HEAD
     sixHundredFortyListerner();
@@ -974,14 +1048,27 @@ jQuery(document).ready(function ($) {
 //      return false;
 //    });
 =======
+<<<<<<< HEAD
     vimeoCustom();
 
 >>>>>>> origin/sid
 =======
+=======
+>>>>>>> sid
     vimeoCustom();
 >>>>>>> sid
 
 >>>>>>> origin/sid
+<<<<<<< HEAD
+=======
+=======
+    vimeoCustom();
+=======
+    vimeoResponsive();
+>>>>>>> master
+
+>>>>>>> origin/sid
+>>>>>>> sid
   };
 
   ////////////////////////////////////////////////////////////////
@@ -1000,11 +1087,14 @@ jQuery(document).ready(function ($) {
 
   $('.language-change a').on('click', function() {
 <<<<<<< HEAD
+<<<<<<< HEAD
     projectContentContainerHeight();
     projectControlContainerSize();
     projectControlButtonsPosition();
     projectControlButtonsClick();
 =======
+=======
+>>>>>>> sid
 
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1013,16 +1103,34 @@ jQuery(document).ready(function ($) {
     projectControlButtons();
     projectControlClick();
 =======
+<<<<<<< HEAD
     projectContentContainerHeight();
     projectControlContainerSize();
     projectControlButtonsPosition();
 >>>>>>> origin/sid
+=======
+=======
+>>>>>>> sid
+    projectContentContainerHeight();
+    projectControlContainerSize();
+    projectControlButtonsPosition();
+>>>>>>> origin/sid
+<<<<<<< HEAD
+
+>>>>>>> sid
+=======
 =======
     projectContentContainerHeight();
     projectControlContainerSize();
     projectControlButtonsPosition();
 >>>>>>> origin/sid
 
+=======
+    projectContentContainerHeight();
+    projectControlContainerSize();
+    projectControlButtonsPosition();
+    projectControlButtonsClick();
+>>>>>>> master
 >>>>>>> sid
   });
 
@@ -1062,9 +1170,15 @@ jQuery(document).ready(function ($) {
     var dataSlickIndex = $(this).parent().attr('data-slick-index');
     $('.slider').slick('slickGoTo', dataSlickIndex);
     $('.slick-slide[data-slick-index="' + dataSlickIndex + '"]').focus();
+<<<<<<< HEAD
 
     ////////////////////////////////////////////////////////////////
 
+=======
+
+    ////////////////////////////////////////////////////////////////
+
+>>>>>>> sid
     setTimeout(function() {
       addBodyClass();
       addTargetBlank();
@@ -1085,6 +1199,7 @@ jQuery(document).ready(function ($) {
   $('.project-content .project-excerpt button').on('click', function() {
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     projectContentContainerHeight();
 =======
     // EMPTY
@@ -1099,6 +1214,10 @@ jQuery(document).ready(function ($) {
 
 =======
 >>>>>>> sid
+=======
+    // EMPTY
+<<<<<<< HEAD
+>>>>>>> sid
 
     ////////////////////////////////////////////////////////////////
 
@@ -1107,6 +1226,21 @@ jQuery(document).ready(function ($) {
 
     ////////////////////////////////////////////////////////////////
 
+<<<<<<< HEAD
+=======
+=======
+=======
+    projectContentContainerHeight();
+>>>>>>> master
+
+    ////////////////////////////////////////////////////////////////
+
+    window.location.hash = ''; // for older browsers, leaves the '#' behind
+    history.pushState('', document.title, window.location.pathname); // nice and clean
+
+    ////////////////////////////////////////////////////////////////
+
+>>>>>>> sid
 >>>>>>> origin/sid
     var projectThumbnailContainerHeight = $('.summer .container-fluid .row:nth-of-type(1)').outerHeight();
     $('.summer .container-fluid .row:nth-of-type(1)').removeClass('invisible').addClass('visible');
