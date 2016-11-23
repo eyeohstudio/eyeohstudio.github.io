@@ -1,23 +1,38 @@
-cmd + terminal
+1. cmd + terminal
 
+<<<<<<< HEAD
 cd ~/eyeohstudio.github.io
 bundle exec jekyll serve -w --config _config-127.0.0.1.yml
+=======
+2. cd ~/eyeohstudio.github.io
+
+3A. bundle exec jekyll serve -w --config _config-127.0.0.1.yml (LOCAL HOST)
+
+3B. bundle exec jekyll serve -w --config _config.yml (REMOTE HOST)
+>>>>>>> master
 
 ---
 
-cmd + [browser]
+1. cmd + github
 
-http://127.0.0.1:4000/
+2. Commit Changes (branch MASTER)
 
----
-
-cmd + atom
+3. Synch (branch MASTER)
 
 ---
 
-Finder ~/eyeohstudio.github.io/_projects
-Finder ~/eyeohstudio.github.io/images
+1. cmd + [browser]
+
+2A. http://127.0.0.1:4000 (LOCAL HOST)
+
+2B. http://wearestudio.io (REMOTE HOST)
 
 ---
 
-http://127.0.0.1:4000/boojum/?keyword=EXAMPLE&date=0131
+1. cmd + terminal
+
+2. cd ~/eyeohstudio.github.io
+
+3. bundle exec jekyll serve -w --config _config-127.0.0.1.yml (LOCAL HOST)
+
+4. http://127.0.0.1:4000/boojum/?keyword=EXAMPLE&date=0131

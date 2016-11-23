@@ -23,15 +23,45 @@
 
     .project-content {
 
+//			&[aria-expanded="true"] {
+//
+//				.project-excerpt {
+//
+//					button {
+//
+//						&:before {
+//							.visible;
+//						}
+//					}
+//				}
+//			}
+//
+//			&[aria-expanded="false"] {
+//
+//				.project-excerpt {
+//
+//					button {
+//
+//						&:before {
+//							.invisible;
+//						}
+//					}
+//				}
+//			}
+
       .project-excerpt {
         background-color: @white !important;
         border-top: 1px solid @black;
         margin: 50px 60px;
+        margin-bottom: 60px / 2;
         margin-top: 0;
+        max-height: 205px;
+        min-height: 205px;
         padding: 0;
         padding-top: 45px;
 
         button {
+          .hide;
           .invisible;
           .transition;
           float: left;
@@ -57,6 +87,21 @@
 
           svg {
             .hide;
+          }
+        }
+
+        .temp {
+          .BrixSans; .normal;
+          .show;
+          .transition;
+          float: left;
+          height: auto; width: auto;
+          font-size: 12px;
+          opacity: 1 !important;
+          white-space: nowrap;
+
+          span {
+            .show;
           }
         }
 
@@ -97,7 +142,12 @@
             text-align: right;
             text-transform: uppercase;
             white-space: nowrap;
-            writing-mode: vertical-lr;
+
+            -webkit-writing-mode: vertical-rl;
+               -moz-writing-mode: vertical-rl;
+                -ms-writing-mode: vertical-rl;
+                -ms-writing-mode: tb-rl;
+                    writing-mode: vertical-rl;
 
             -webkit-transform: rotate(-180deg);
                -moz-transform: rotate(-180deg);
@@ -105,7 +155,9 @@
                  -o-transform: rotate(-180deg);
                     transform: rotate(-180deg);
 
-            &:after {
+            &:focus {
+              outline: none;
+              outline-offset: 0;
             }
 
             &:hover {

@@ -76,41 +76,45 @@ slug: sota-la-paraula
 >1024:mdg-ex-01_1120.jpg
 "></li>
 
-<li><img data-src-base="{{ site.url}}/images/projects/" data-src="
-<320:mdg-ex-02_320.jpg,
-<480:mdg-ex-02_480.jpg,
-<640:mdg-ex-02_640.jpg,
-<800:mdg-ex-02_800.jpg,
-<1024:mdg-ex-02_1024.jpg,
->1024:mdg-ex-02_1120.jpg
-"></li>
+<li class="mdg-ex">
+  <ul class="wrapper">
+    <li><img data-src-base="{{ site.url}}/images/projects/" data-src="
+    <320:mdg-ex-02_320.jpg,
+    <480:mdg-ex-02_480.jpg,
+    <640:mdg-ex-02_640.jpg,
+    <800:mdg-ex-02_800.jpg,
+    <1024:mdg-ex-02_1024.jpg,
+    >1024:mdg-ex-02_1120.jpg
+    "></li>
 
-<li><img data-src-base="{{ site.url}}/images/projects/" data-src="
-<320:mdg-ex-03_320.jpg,
-<480:mdg-ex-03_480.jpg,
-<640:mdg-ex-03_640.jpg,
-<800:mdg-ex-03_800.jpg,
-<1024:mdg-ex-03_1024.jpg,
->1024:mdg-ex-03_1120.jpg
-"></li>
+    <li><img data-src-base="{{ site.url}}/images/projects/" data-src="
+    <320:mdg-ex-03_320.jpg,
+    <480:mdg-ex-03_480.jpg,
+    <640:mdg-ex-03_640.jpg,
+    <800:mdg-ex-03_800.jpg,
+    <1024:mdg-ex-03_1024.jpg,
+    >1024:mdg-ex-03_1120.jpg
+    "></li>
 
-<li><img data-src-base="{{ site.url}}/images/projects/" data-src="
-<320:mdg-ex-04_320.jpg,
-<480:mdg-ex-04_480.jpg,
-<640:mdg-ex-04_640.jpg,
-<800:mdg-ex-04_800.jpg,
-<1024:mdg-ex-04_1024.jpg,
->1024:mdg-ex-04_1120.jpg
-"></li>
+    <li><img data-src-base="{{ site.url}}/images/projects/" data-src="
+    <320:mdg-ex-04_320.jpg,
+    <480:mdg-ex-04_480.jpg,
+    <640:mdg-ex-04_640.jpg,
+    <800:mdg-ex-04_800.jpg,
+    <1024:mdg-ex-04_1024.jpg,
+    >1024:mdg-ex-04_1120.jpg
+    "></li>
 
-<li><img data-src-base="{{ site.url}}/images/projects/" data-src="
-<320:mdg-ex-05_320.jpg,
-<480:mdg-ex-05_480.jpg,
-<640:mdg-ex-05_640.jpg,
-<800:mdg-ex-05_800.jpg,
-<1024:mdg-ex-05_1024.jpg,
->1024:mdg-ex-05_1120.jpg
-"></li>
+    <li><img data-src-base="{{ site.url}}/images/projects/" data-src="
+    <320:mdg-ex-05_320.jpg,
+    <480:mdg-ex-05_480.jpg,
+    <640:mdg-ex-05_640.jpg,
+    <800:mdg-ex-05_800.jpg,
+    <1024:mdg-ex-05_1024.jpg,
+    >1024:mdg-ex-05_1120.jpg
+    "></li>
+  </ul>
+</li>
 
 <li><img data-src-base="{{ site.url}}/images/projects/" data-src="
 <320:mdg-ex-06_320.jpg,
