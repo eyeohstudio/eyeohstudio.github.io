@@ -5,6 +5,7 @@ jQuery(document).ready(function ($) {
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
 
+<<<<<<< HEAD
   function addBodyClass() {
 
     if ($('.slider').hasClass('hide')){
@@ -37,11 +38,22 @@ jQuery(document).ready(function ($) {
     $('.project-excerpt p a').attr('target', '_blank');
   };
 
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> sid
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
 
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> origin/sid
+=======
+>>>>>>> origin/sid
+>>>>>>> sid
   function anchorLinkScrollAnimation() {
 
     $('.navbar-collapse ul li a[href*="#"]:not([href="#"])').click(function() {
@@ -63,7 +75,15 @@ jQuery(document).ready(function ($) {
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+  function fireHash() {
+=======
   function backToTop() {
+>>>>>>> origin/sid
+=======
+  function backToTop() {
+>>>>>>> origin/sid
 
     $('.project-content > a.scroll-to-top').on('click', function(event) {
       event.preventDefault();
@@ -131,10 +151,43 @@ jQuery(document).ready(function ($) {
       $('body').removeClass('ca').addClass('en');
       $('body').removeClass('es').addClass('en');
     });
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> origin/sid
+		
+    ////////////////////////////////////////////////////////////////
+    ////////////////////////////////////////////////////////////////
+
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+		
+    ////////////////////////////////////////////////////////////////
+    ////////////////////////////////////////////////////////////////
+
+=======
+=======
+>>>>>>> origin/sid
+
+    ////////////////////////////////////////////////////////////////
+    ////////////////////////////////////////////////////////////////
+>>>>>>> origin/sid
+
+=======
+=======
+>>>>>>> origin/sid
 
     ////////////////////////////////////////////////////////////////
     ////////////////////////////////////////////////////////////////
 
+>>>>>>> origin/sid
+<<<<<<< HEAD
+>>>>>>> origin/sid
+=======
+>>>>>>> origin/sid
     $('.language-change-es a').click(function(e) {
       e.preventDefault();
       $('html').attr('xml:lang', 'es').attr('lang', 'es');
@@ -388,9 +441,27 @@ jQuery(document).ready(function ($) {
 
   function mapKeyboardChars() {
 
+<<<<<<< HEAD
     $('.project-content.slick-slide.slick-current.slick-active .project-excerpt button').mapKey('esc', {trigger: 'click'});
     //$('.project-content.slick-slide.slick-current.slick-active .left-project-control').mapKey('left', {trigger: 'click'});
     //$('.project-content.slick-slide.slick-current.slick-active .right-project-control').mapKey('right', {trigger: 'click'});
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+    $('.project-content[aria-expanded="true"] .project-excerpt button').mapKey('esc', {trigger: 'click'});
+    $('.project-content[aria-expanded="true"] .left-project-control').mapKey('left', {trigger: 'click'});
+    $('.project-content[aria-expanded="true"] .right-project-control').mapKey('right', {trigger: 'click'});
+=======
+    $('.project-content.show.visible .project-excerpt button').mapKey('esc', {trigger: 'click'});
+    $('.project-content.show.visible .left-project-control').mapKey('left', {trigger: 'click'});
+    $('.project-content.show.visible .right-project-control').mapKey('right', {trigger: 'click'});
+>>>>>>> origin/sid
+=======
+    $('.project-content.show.visible .project-excerpt button').mapKey('esc', {trigger: 'click'});
+    $('.project-content.show.visible .left-project-control').mapKey('left', {trigger: 'click'});
+    $('.project-content.show.visible .right-project-control').mapKey('right', {trigger: 'click'});
+>>>>>>> origin/sid
+>>>>>>> sid
     $('.scroll-to-top').mapKey('up', {trigger: 'click'});
     $('.language-change-ca a').mapKey('lang_ca', {trigger: 'click'});
     $('.language-change-en a').mapKey('lang_en', {trigger: 'click'});
@@ -405,7 +476,15 @@ jQuery(document).ready(function ($) {
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+  function oneThousandOneHundredFifteen() {
+=======
   function projectContentContainerHeight() {
+>>>>>>> origin/sid
+=======
+  function projectContentContainerHeight() {
+>>>>>>> origin/sid
 
     var projectThumbnailContainerHeight = $('.summer .container-fluid .row:nth-of-type(1)').outerHeight();
     var springHeight = $('body > .container-fluid > .row:nth-of-type(2)').outerHeight();
@@ -419,6 +498,8 @@ jQuery(document).ready(function ($) {
       $('.summer .container-fluid .row:nth-of-type(1)').removeClass('visible').addClass('invisible');
     }
   };
+<<<<<<< HEAD
+<<<<<<< HEAD
 
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
@@ -504,6 +585,225 @@ jQuery(document).ready(function ($) {
     });
   };
 
+=======
+
+>>>>>>> origin/sid
+=======
+
+>>>>>>> origin/sid
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+  function projectControlContainerSize() {
+
+<<<<<<< HEAD
+    ////////////////////////////////////////////////////////////////
+    ////////////////////////////////////////////////////////////////
+
+    $('.project-thumbnail a').click(function(event) {
+
+      event.preventDefault();
+      var projectName = $(this).attr('data-project-name');
+
+			////////////////////////////////////////////////////////////////
+
+      $('.summer .container-fluid .row:nth-of-type(2)').removeClass('invisible').addClass('visible').queue(function(next) {
+        $(this).stop().animate({'margin-top': '0' - springHeight}, 400);
+        $('#' + projectName).removeClass('hide invisble').addClass('show visible').attr('aria-expanded', 'true');
+        $('.summer .container-fluid .row:nth-of-type(1)').removeClass('visible').addClass('invisible');
+        next();
+      });
+
+      ////////////////////////////////////////////////////////////////
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> origin/sid
+    var windowHeight = $(window).outerHeight(true);
+    var headerHeight = $('header').outerHeight(true);
+    var projectExcerptHeight = $('.project-content.slick-slide.slick-current.slick-active > .project-excerpt').outerHeight(true);
+    var projectContentVisibleAreaHeight = windowHeight - (headerHeight + projectExcerptHeight)
+<<<<<<< HEAD
+    var projectFirstFigureWidth = $('.project-content.slick-slide.slick-current.slick-active > ul > li:nth-of-type(1)').width();
+=======
+    var projectFirstFigureWidth = $('.project-content.show.visible > ul > li:nth-of-type(1)').width();
+>>>>>>> origin/sid
+<<<<<<< HEAD
+>>>>>>> origin/sid
+=======
+>>>>>>> origin/sid
+>>>>>>> sid
+
+    $('.project-content.slick-slide.slick-current.slick-active > .project-control').css({
+        'height': projectContentVisibleAreaHeight,
+        'top': projectExcerptHeight
+    });
+<<<<<<< HEAD
+    $('.project-content.slick-slide.slick-current.slick-active > .project-control > .wrapper').css({
+=======
+<<<<<<< HEAD
+
+    ////////////////////////////////////////////////////////////////
+    ////////////////////////////////////////////////////////////////
+
+    $('.project-content .project-excerpt button').click(function(event) {
+
+      event.preventDefault();
+      var projectName = $('.project-content[aria-expanded="true"]').attr('id');
+
+			////////////////////////////////////////////////////////////////
+
+      $('.summer .container-fluid .row:nth-of-type(1)').removeClass('invisible').addClass('visible');
+      $('.summer .container-fluid .row:nth-of-type(2)').animate({'margin-top': projectThumbnailHeight}, 400).queue(function(next) {
+        $('#' + projectName).removeClass('show').addClass('hide').attr('aria-expanded', 'false');
+        $(this).stop().removeClass('visible').addClass('invisible');
+        next();
+      });
+
+      ////////////////////////////////////////////////////////////////
+
+      return false;
+=======
+    $('.project-content.show.visible > .project-control > .wrapper').css({
+>>>>>>> sid
+        'width': projectFirstFigureWidth,
+>>>>>>> origin/sid
+=======
+
+  function projectControlButtonsPosition() {
+
+    var wrapperWidthTrue = $('.project-content.show.visible > .project-control > .wrapper').outerWidth(true);
+    var wrapperWidth = $('.project-content.show.visible > .project-control > .wrapper').innerWidth();
+    var wrapperMargin = (wrapperWidthTrue - wrapperWidth) / 3;
+
+    $('.smaller-than-one-thousand-one-hundred-fifteen .project-content.show.visible > .project-control > .wrapper > .left-project-control').css({
+      'width': 'auto',
+      'margin-left': -wrapperMargin
+<<<<<<< HEAD
+    });
+    $('.smaller-than-one-thousand-one-hundred-fifteen .project-content.show.visible > .project-control > .wrapper > .right-project-control').css({
+      'width': 'auto',
+      'margin-right': -wrapperMargin
+    });
+    $('.larger-than-one-thousand-one-hundred-fifteen .project-content.show.visible > .project-control > .wrapper > .left-project-control').css({
+      'width': (wrapperWidthTrue - wrapperWidth) / 2,
+      'margin-left': -(wrapperWidthTrue - wrapperWidth) / 2
+    });
+=======
+    });
+    $('.smaller-than-one-thousand-one-hundred-fifteen .project-content.show.visible > .project-control > .wrapper > .right-project-control').css({
+      'width': 'auto',
+      'margin-right': -wrapperMargin
+    });
+    $('.larger-than-one-thousand-one-hundred-fifteen .project-content.show.visible > .project-control > .wrapper > .left-project-control').css({
+      'width': (wrapperWidthTrue - wrapperWidth) / 2,
+      'margin-left': -(wrapperWidthTrue - wrapperWidth) / 2
+    });
+>>>>>>> origin/sid
+    $('.larger-than-one-thousand-one-hundred-fifteen .project-content.show.visible > .project-control > .wrapper > .right-project-control').css({
+      'width': (wrapperWidthTrue - wrapperWidth) / 2,
+      'margin-right': -(wrapperWidthTrue - wrapperWidth) / 2
+=======
+
+  function projectControlButtonsPosition() {
+
+    var wrapperWidthTrue = $('.project-content.show.visible > .project-control > .wrapper').outerWidth(true);
+    var wrapperWidth = $('.project-content.show.visible > .project-control > .wrapper').innerWidth();
+    var wrapperMargin = (wrapperWidthTrue - wrapperWidth) / 3;
+
+    $('.smaller-than-one-thousand-one-hundred-fifteen .project-content.show.visible > .project-control > .wrapper > .left-project-control').css({
+      'width': 'auto',
+      'margin-left': -wrapperMargin
+    });
+    $('.smaller-than-one-thousand-one-hundred-fifteen .project-content.show.visible > .project-control > .wrapper > .right-project-control').css({
+      'width': 'auto',
+      'margin-right': -wrapperMargin
+    });
+    $('.larger-than-one-thousand-one-hundred-fifteen .project-content.show.visible > .project-control > .wrapper > .left-project-control').css({
+      'width': (wrapperWidthTrue - wrapperWidth) / 2,
+      'margin-left': -(wrapperWidthTrue - wrapperWidth) / 2
+    });
+    $('.larger-than-one-thousand-one-hundred-fifteen .project-content.show.visible > .project-control > .wrapper > .right-project-control').css({
+      'width': (wrapperWidthTrue - wrapperWidth) / 2,
+      'margin-right': -(wrapperWidthTrue - wrapperWidth) / 2
+    });
+  };
+
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+
+  function projectControlButtonsClick() {
+
+    $('.project-content[aria-expanded="true"] .right-project-control').on('click', function() {
+
+      var nextProject = $(this).attr('href');
+      var $curr = $('.project-content.show.visible');
+      var $next = $(nextProject);
+
+      $curr.removeClass('show visible').addClass('hide invisible').attr('aria-expanded', 'false');
+      $next.removeClass('hide invisible').addClass('show visible').attr('aria-expanded', 'true');
+>>>>>>> origin/sid
+    });
+  };
+
+<<<<<<< HEAD
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+
+  function projectControlButtonsClick() {
+
+    $('.project-content[aria-expanded="true"] .right-project-control').on('click', function() {
+
+      var nextProject = $(this).attr('href');
+      var $curr = $('.project-content.show.visible');
+      var $next = $(nextProject);
+
+      $curr.removeClass('show visible').addClass('hide invisible').attr('aria-expanded', 'false');
+      $next.removeClass('hide invisible').addClass('show visible').attr('aria-expanded', 'true');
+    });
+
+  ////////////////////////////////////////////////////////////////
+  ////////////////////////////////////////////////////////////////
+
+    $('.project-content[aria-expanded="true"] .left-project-control').on('click', function() {
+
+<<<<<<< HEAD
+<<<<<<< HEAD
+    ////////////////////////////////////////////////////////////////
+    ////////////////////////////////////////////////////////////////
+=======
+=======
+  ////////////////////////////////////////////////////////////////
+  ////////////////////////////////////////////////////////////////
+>>>>>>> origin/sid
+=======
+=======
+  ////////////////////////////////////////////////////////////////
+  ////////////////////////////////////////////////////////////////
+>>>>>>> origin/sid
+
+    $('.project-content[aria-expanded="true"] .left-project-control').on('click', function() {
+
+>>>>>>> origin/sid
+      var previousProject = $(this).attr('href');
+      var $curr = $('.project-content.show.visible');
+      var $previous = $(previousProject);
+
+      $curr.removeClass('show visible').addClass('hide invisible').attr('aria-expanded', 'false');
+      $previous.removeClass('hide invisible').addClass('show visible').attr('aria-expanded', 'true');
+    });
+  };
+
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
@@ -513,16 +813,20 @@ jQuery(document).ready(function ($) {
 
     var windowHeight = $(window).outerHeight(true);
     var headerHeight = $('header').outerHeight(true);
-    var projectExcerptHeight = $('.project-content.slick-slide.slick-current.slick-active > .project-excerpt').outerHeight(true);
+    var projectExcerptHeight = $('.project-content.show.visible > .project-excerpt').outerHeight(true);
     var projectContentVisibleAreaHeight = windowHeight - (headerHeight + projectExcerptHeight)
-    var projectFirstFigureWidth = $('.project-content.slick-slide.slick-current.slick-active > ul > li:nth-of-type(1)').width();
+    var projectFirstFigureWidth = $('.project-content.show.visible > ul > li:nth-of-type(1)').width();
 
-    $('.project-content.slick-slide.slick-current.slick-active > .project-control').css({
+    $('.project-content.show.visible > .project-control').css({
         'height': projectContentVisibleAreaHeight,
         'top': projectExcerptHeight
     });
-    $('.project-content.slick-slide.slick-current.slick-active > .project-control > .wrapper').css({
+    $('.project-content.show.visible > .project-control > .wrapper').css({
         'width': projectFirstFigureWidth,
+<<<<<<< HEAD
+>>>>>>> origin/sid
+=======
+>>>>>>> origin/sid
     });
 
   };
@@ -639,8 +943,45 @@ jQuery(document).ready(function ($) {
     projectControlButtonsPosition();
     projectControlButtonsClick();
     setWinterHeight();
+<<<<<<< HEAD
     vimeoResponsive();
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+    sixHundredFortyListerner();
+    vimeoWhatever();
 
+//    ////////////////////////////////////////////////////////////////
+//
+//    $('.project-content .project-excerpt button').click(function() {
+//
+//      var projectThumbnailHeight = $('.summer .container-fluid .row:nth-of-type(1)').outerHeight();
+//      var springHeight = $('body > .container-fluid > .row:nth-of-type(2)').outerHeight();
+//
+//      ////////////////////////////////////////////////////////////////
+//
+//      event.preventDefault();
+//      var projectName = $('.project-content[aria-expanded="true"]').attr('id');
+//      $('.summer .container-fluid .row:nth-of-type(1)').removeClass('invisible').addClass('visible');
+//      $('.summer .container-fluid .row:nth-of-type(2)').animate({'margin-top': projectThumbnailHeight}, 400).queue(function(next) {
+//        $('#' + projectName).removeClass('show').addClass('hide').attr('aria-expanded', 'false');
+//        $(this).stop().removeClass('visible').addClass('invisible');
+//        next();
+//      });
+//
+//      ////////////////////////////////////////////////////////////////
+//
+//      return false;
+//    });
+=======
+    vimeoCustom();
+
+>>>>>>> origin/sid
+=======
+    vimeoCustom();
+>>>>>>> sid
+
+>>>>>>> origin/sid
   };
 
   ////////////////////////////////////////////////////////////////
@@ -658,10 +999,31 @@ jQuery(document).ready(function ($) {
 ////////////////////////////////////////////////////////////////
 
   $('.language-change a').on('click', function() {
+<<<<<<< HEAD
     projectContentContainerHeight();
     projectControlContainerSize();
     projectControlButtonsPosition();
     projectControlButtonsClick();
+=======
+
+<<<<<<< HEAD
+<<<<<<< HEAD
+    projectStuff();
+    projectControl();
+    projectControlButtons();
+    projectControlClick();
+=======
+    projectContentContainerHeight();
+    projectControlContainerSize();
+    projectControlButtonsPosition();
+>>>>>>> origin/sid
+=======
+    projectContentContainerHeight();
+    projectControlContainerSize();
+    projectControlButtonsPosition();
+>>>>>>> origin/sid
+
+>>>>>>> sid
   });
 
 ////////////////////////////////////////////////////////////////
@@ -722,7 +1084,11 @@ jQuery(document).ready(function ($) {
 
   $('.project-content .project-excerpt button').on('click', function() {
 
+<<<<<<< HEAD
     projectContentContainerHeight();
+=======
+    // EMPTY
+<<<<<<< HEAD
 
     ////////////////////////////////////////////////////////////////
 
@@ -731,6 +1097,17 @@ jQuery(document).ready(function ($) {
 
     ////////////////////////////////////////////////////////////////
 
+=======
+>>>>>>> sid
+
+    ////////////////////////////////////////////////////////////////
+
+    window.location.hash = ''; // for older browsers, leaves the '#' behind
+    history.pushState('', document.title, window.location.pathname); // nice and clean
+
+    ////////////////////////////////////////////////////////////////
+
+>>>>>>> origin/sid
     var projectThumbnailContainerHeight = $('.summer .container-fluid .row:nth-of-type(1)').outerHeight();
     $('.summer .container-fluid .row:nth-of-type(1)').removeClass('invisible').addClass('visible');
     $('.summer .container-fluid .row:nth-of-type(2)').stop().animate({'margin-top': projectThumbnailContainerHeight}, 300).queue(function() {
