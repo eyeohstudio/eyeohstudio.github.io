@@ -1,15 +1,10 @@
 1. cmd + terminal
 
-<<<<<<< HEAD
-cd ~/eyeohstudio.github.io
-bundle exec jekyll serve -w --config _config-127.0.0.1.yml
-=======
 2. cd ~/eyeohstudio.github.io
 
 3A. bundle exec jekyll serve -w --config _config-127.0.0.1.yml (LOCAL HOST)
 
 3B. bundle exec jekyll serve -w --config _config.yml (REMOTE HOST)
->>>>>>> master
 
 ---
 
