@@ -5,21 +5,6 @@ jQuery(document).ready(function ($) {
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> sid
-=======
-<<<<<<< HEAD
-=======
->>>>>>> sid
-=======
->>>>>>> sid
   function addBodyClass() {
 
     if ($('.slider').hasClass('hide')){
@@ -52,54 +37,11 @@ jQuery(document).ready(function ($) {
     $('.project-excerpt p a').attr('target', '_blank');
   };
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> sid
-=======
->>>>>>> master
->>>>>>> sid
-=======
->>>>>>> master
->>>>>>> sid
-=======
->>>>>>> master
->>>>>>> sid
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> origin/sid
-=======
->>>>>>> origin/sid
->>>>>>> sid
-=======
-=======
->>>>>>> sid
-=======
->>>>>>> sid
->>>>>>> origin/sid
-=======
->>>>>>> origin/sid
-=======
->>>>>>> master
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> sid
-=======
->>>>>>> sid
-=======
->>>>>>> sid
   function anchorLinkScrollAnimation() {
 
     $('.navbar-collapse ul li a[href*="#"]:not([href="#"])').click(function() {
@@ -121,39 +63,7 @@ jQuery(document).ready(function ($) {
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-  function fireHash() {
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
   function backToTop() {
->>>>>>> origin/sid
-=======
-  function backToTop() {
->>>>>>> origin/sid
-=======
-  function backToTop() {
->>>>>>> origin/sid
-=======
-  function backToTop() {
->>>>>>> origin/sid
->>>>>>> sid
-=======
-  function backToTop() {
->>>>>>> origin/sid
-=======
-  function backToTop() {
->>>>>>> origin/sid
->>>>>>> sid
-=======
-  function backToTop() {
->>>>>>> origin/sid
-=======
-  function backToTop() {
->>>>>>> origin/sid
->>>>>>> sid
 
     $('.project-content > a.scroll-to-top').on('click', function(event) {
       event.preventDefault();
@@ -221,57 +131,10 @@ jQuery(document).ready(function ($) {
       $('body').removeClass('ca').addClass('en');
       $('body').removeClass('es').addClass('en');
     });
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> origin/sid
-		
-    ////////////////////////////////////////////////////////////////
-    ////////////////////////////////////////////////////////////////
-
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-		
-    ////////////////////////////////////////////////////////////////
-    ////////////////////////////////////////////////////////////////
-
-=======
-=======
->>>>>>> origin/sid
-<<<<<<< HEAD
-=======
-
-    ////////////////////////////////////////////////////////////////
-    ////////////////////////////////////////////////////////////////
->>>>>>> origin/sid
-
-=======
-=======
->>>>>>> origin/sid
->>>>>>> sid
-
-    ////////////////////////////////////////////////////////////////
-    ////////////////////////////////////////////////////////////////
->>>>>>> origin/sid
-
-<<<<<<< HEAD
-=======
-=======
->>>>>>> origin/sid
 
     ////////////////////////////////////////////////////////////////
     ////////////////////////////////////////////////////////////////
 
-=======
->>>>>>> sid
->>>>>>> origin/sid
-<<<<<<< HEAD
->>>>>>> origin/sid
-=======
->>>>>>> origin/sid
     $('.language-change-es a').click(function(e) {
       e.preventDefault();
       $('html').attr('xml:lang', 'es').attr('lang', 'es');
@@ -525,64 +388,9 @@ jQuery(document).ready(function ($) {
 
   function mapKeyboardChars() {
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
     $('.project-content.slick-slide.slick-current.slick-active .project-excerpt button').mapKey('esc', {trigger: 'click'});
     //$('.project-content.slick-slide.slick-current.slick-active .left-project-control').mapKey('left', {trigger: 'click'});
     //$('.project-content.slick-slide.slick-current.slick-active .right-project-control').mapKey('right', {trigger: 'click'});
-=======
-=======
->>>>>>> sid
-<<<<<<< HEAD
-=======
->>>>>>> sid
-<<<<<<< HEAD
-=======
->>>>>>> sid
-    $('.project-content[aria-expanded="true"] .project-excerpt button').mapKey('esc', {trigger: 'click'});
-    $('.project-content[aria-expanded="true"] .left-project-control').mapKey('left', {trigger: 'click'});
-    $('.project-content[aria-expanded="true"] .right-project-control').mapKey('right', {trigger: 'click'});
-=======
-<<<<<<< HEAD
-=======
-    $('.project-content.show.visible .project-excerpt button').mapKey('esc', {trigger: 'click'});
-    $('.project-content.show.visible .left-project-control').mapKey('left', {trigger: 'click'});
-    $('.project-content.show.visible .right-project-control').mapKey('right', {trigger: 'click'});
->>>>>>> origin/sid
-=======
->>>>>>> sid
-    $('.project-content.show.visible .project-excerpt button').mapKey('esc', {trigger: 'click'});
-    $('.project-content.show.visible .left-project-control').mapKey('left', {trigger: 'click'});
-    $('.project-content.show.visible .right-project-control').mapKey('right', {trigger: 'click'});
->>>>>>> origin/sid
-=======
-<<<<<<< HEAD
-    $('.project-content.show.visible .project-excerpt button').mapKey('esc', {trigger: 'click'});
-    $('.project-content.show.visible .left-project-control').mapKey('left', {trigger: 'click'});
-    $('.project-content.show.visible .right-project-control').mapKey('right', {trigger: 'click'});
->>>>>>> origin/sid
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> sid
-=======
-=======
->>>>>>> sid
-=======
-=======
->>>>>>> sid
-    $('.project-content.slick-slide.slick-current.slick-active .project-excerpt button').mapKey('esc', {trigger: 'click'});
-    //$('.project-content.slick-slide.slick-current.slick-active .left-project-control').mapKey('left', {trigger: 'click'});
-    //$('.project-content.slick-slide.slick-current.slick-active .right-project-control').mapKey('right', {trigger: 'click'});
->>>>>>> master
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> sid
-=======
->>>>>>> sid
-=======
->>>>>>> sid
     $('.scroll-to-top').mapKey('up', {trigger: 'click'});
     $('.language-change-ca a').mapKey('lang_ca', {trigger: 'click'});
     $('.language-change-en a').mapKey('lang_en', {trigger: 'click'});
@@ -597,39 +405,7 @@ jQuery(document).ready(function ($) {
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-  function oneThousandOneHundredFifteen() {
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
   function projectContentContainerHeight() {
->>>>>>> origin/sid
-=======
-  function projectContentContainerHeight() {
->>>>>>> origin/sid
-=======
-  function projectContentContainerHeight() {
->>>>>>> origin/sid
-=======
-  function projectContentContainerHeight() {
->>>>>>> origin/sid
->>>>>>> sid
-=======
-  function projectContentContainerHeight() {
->>>>>>> origin/sid
-=======
-  function projectContentContainerHeight() {
->>>>>>> origin/sid
->>>>>>> sid
-=======
-  function projectContentContainerHeight() {
->>>>>>> origin/sid
-=======
-  function projectContentContainerHeight() {
->>>>>>> origin/sid
->>>>>>> sid
 
     var projectThumbnailContainerHeight = $('.summer .container-fluid .row:nth-of-type(1)').outerHeight();
     var springHeight = $('body > .container-fluid > .row:nth-of-type(2)').outerHeight();
@@ -643,8 +419,6 @@ jQuery(document).ready(function ($) {
       $('.summer .container-fluid .row:nth-of-type(1)').removeClass('visible').addClass('invisible');
     }
   };
-<<<<<<< HEAD
-<<<<<<< HEAD
 
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
@@ -730,465 +504,27 @@ jQuery(document).ready(function ($) {
     });
   };
 
-=======
-
->>>>>>> origin/sid
-=======
-
->>>>>>> origin/sid
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
-<<<<<<< HEAD
-<<<<<<< HEAD
 
   function projectControlContainerSize() {
 
-<<<<<<< HEAD
-    ////////////////////////////////////////////////////////////////
-    ////////////////////////////////////////////////////////////////
-
-    $('.project-thumbnail a').click(function(event) {
-
-      event.preventDefault();
-      var projectName = $(this).attr('data-project-name');
-
-			////////////////////////////////////////////////////////////////
-
-      $('.summer .container-fluid .row:nth-of-type(2)').removeClass('invisible').addClass('visible').queue(function(next) {
-        $(this).stop().animate({'margin-top': '0' - springHeight}, 400);
-        $('#' + projectName).removeClass('hide invisble').addClass('show visible').attr('aria-expanded', 'true');
-        $('.summer .container-fluid .row:nth-of-type(1)').removeClass('visible').addClass('invisible');
-        next();
-      });
-
-      ////////////////////////////////////////////////////////////////
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-=======
->>>>>>> origin/sid
     var windowHeight = $(window).outerHeight(true);
     var headerHeight = $('header').outerHeight(true);
     var projectExcerptHeight = $('.project-content.slick-slide.slick-current.slick-active > .project-excerpt').outerHeight(true);
     var projectContentVisibleAreaHeight = windowHeight - (headerHeight + projectExcerptHeight)
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
     var projectFirstFigureWidth = $('.project-content.slick-slide.slick-current.slick-active > ul > li:nth-of-type(1)').width();
-=======
-=======
->>>>>>> sid
-=======
->>>>>>> sid
-=======
->>>>>>> sid
-    var projectFirstFigureWidth = $('.project-content.show.visible > ul > li:nth-of-type(1)').width();
->>>>>>> origin/sid
-<<<<<<< HEAD
->>>>>>> origin/sid
-=======
->>>>>>> origin/sid
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> sid
-=======
-=======
-    var projectFirstFigureWidth = $('.project-content.slick-slide.slick-current.slick-active > ul > li:nth-of-type(1)').width();
->>>>>>> master
->>>>>>> sid
-=======
-=======
-    var projectFirstFigureWidth = $('.project-content.slick-slide.slick-current.slick-active > ul > li:nth-of-type(1)').width();
->>>>>>> master
->>>>>>> sid
-=======
-=======
-    var projectFirstFigureWidth = $('.project-content.slick-slide.slick-current.slick-active > ul > li:nth-of-type(1)').width();
->>>>>>> master
->>>>>>> sid
 
     $('.project-content.slick-slide.slick-current.slick-active > .project-control').css({
         'height': projectContentVisibleAreaHeight,
         'top': projectExcerptHeight
     });
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
     $('.project-content.slick-slide.slick-current.slick-active > .project-control > .wrapper').css({
-=======
-=======
->>>>>>> sid
-<<<<<<< HEAD
-
-    ////////////////////////////////////////////////////////////////
-    ////////////////////////////////////////////////////////////////
-=======
-=======
-
-    ////////////////////////////////////////////////////////////////
-    ////////////////////////////////////////////////////////////////
-
-    $('.project-content .project-excerpt button').click(function(event) {
-
-      event.preventDefault();
-      var projectName = $('.project-content[aria-expanded="true"]').attr('id');
-
-			////////////////////////////////////////////////////////////////
-
-      $('.summer .container-fluid .row:nth-of-type(1)').removeClass('invisible').addClass('visible');
-      $('.summer .container-fluid .row:nth-of-type(2)').animate({'margin-top': projectThumbnailHeight}, 400).queue(function(next) {
-        $('#' + projectName).removeClass('show').addClass('hide').attr('aria-expanded', 'false');
-        $(this).stop().removeClass('visible').addClass('invisible');
-        next();
-      });
-
-      ////////////////////////////////////////////////////////////////
-
-      return false;
-=======
-    $('.project-content.show.visible > .project-control > .wrapper').css({
-=======
-    $('.project-content.slick-slide.slick-current.slick-active > .project-control > .wrapper').css({
->>>>>>> master
         'width': projectFirstFigureWidth,
->>>>>>> origin/sid
-=======
-
-  function projectControlButtonsPosition() {
-
-    var wrapperWidthTrue = $('.project-content.show.visible > .project-control > .wrapper').outerWidth(true);
-    var wrapperWidth = $('.project-content.show.visible > .project-control > .wrapper').innerWidth();
-    var wrapperMargin = (wrapperWidthTrue - wrapperWidth) / 3;
-
-    $('.smaller-than-one-thousand-one-hundred-fifteen .project-content.show.visible > .project-control > .wrapper > .left-project-control').css({
-      'width': 'auto',
-      'margin-left': -wrapperMargin
-<<<<<<< HEAD
-    });
-    $('.smaller-than-one-thousand-one-hundred-fifteen .project-content.show.visible > .project-control > .wrapper > .right-project-control').css({
-      'width': 'auto',
-      'margin-right': -wrapperMargin
-    });
-    $('.larger-than-one-thousand-one-hundred-fifteen .project-content.show.visible > .project-control > .wrapper > .left-project-control').css({
-      'width': (wrapperWidthTrue - wrapperWidth) / 2,
-      'margin-left': -(wrapperWidthTrue - wrapperWidth) / 2
-    });
-=======
-    });
-    $('.smaller-than-one-thousand-one-hundred-fifteen .project-content.show.visible > .project-control > .wrapper > .right-project-control').css({
-      'width': 'auto',
-      'margin-right': -wrapperMargin
-    });
-    $('.larger-than-one-thousand-one-hundred-fifteen .project-content.show.visible > .project-control > .wrapper > .left-project-control').css({
-      'width': (wrapperWidthTrue - wrapperWidth) / 2,
-      'margin-left': -(wrapperWidthTrue - wrapperWidth) / 2
-    });
->>>>>>> origin/sid
-    $('.larger-than-one-thousand-one-hundred-fifteen .project-content.show.visible > .project-control > .wrapper > .right-project-control').css({
-      'width': (wrapperWidthTrue - wrapperWidth) / 2,
-      'margin-right': -(wrapperWidthTrue - wrapperWidth) / 2
-=======
-
-  function projectControlButtonsPosition() {
-
-    var wrapperWidthTrue = $('.project-content.show.visible > .project-control > .wrapper').outerWidth(true);
-    var wrapperWidth = $('.project-content.show.visible > .project-control > .wrapper').innerWidth();
-    var wrapperMargin = (wrapperWidthTrue - wrapperWidth) / 3;
-
-    $('.smaller-than-one-thousand-one-hundred-fifteen .project-content.show.visible > .project-control > .wrapper > .left-project-control').css({
-      'width': 'auto',
-      'margin-left': -wrapperMargin
-    });
-    $('.smaller-than-one-thousand-one-hundred-fifteen .project-content.show.visible > .project-control > .wrapper > .right-project-control').css({
-      'width': 'auto',
-      'margin-right': -wrapperMargin
-    });
-    $('.larger-than-one-thousand-one-hundred-fifteen .project-content.show.visible > .project-control > .wrapper > .left-project-control').css({
-      'width': (wrapperWidthTrue - wrapperWidth) / 2,
-      'margin-left': -(wrapperWidthTrue - wrapperWidth) / 2
-    });
-    $('.larger-than-one-thousand-one-hundred-fifteen .project-content.show.visible > .project-control > .wrapper > .right-project-control').css({
-      'width': (wrapperWidthTrue - wrapperWidth) / 2,
-      'margin-right': -(wrapperWidthTrue - wrapperWidth) / 2
-    });
-  };
->>>>>>> sid
-
-    ////////////////////////////////////////////////////////////////
-    ////////////////////////////////////////////////////////////////
-
-<<<<<<< HEAD
-    $('.project-content .project-excerpt button').click(function(event) {
-
-      event.preventDefault();
-      var projectName = $('.project-content[aria-expanded="true"]').attr('id');
-
-			////////////////////////////////////////////////////////////////
-
-      $('.summer .container-fluid .row:nth-of-type(1)').removeClass('invisible').addClass('visible');
-      $('.summer .container-fluid .row:nth-of-type(2)').animate({'margin-top': projectThumbnailHeight}, 400).queue(function(next) {
-        $('#' + projectName).removeClass('show').addClass('hide').attr('aria-expanded', 'false');
-        $(this).stop().removeClass('visible').addClass('invisible');
-        next();
-      });
-
-      ////////////////////////////////////////////////////////////////
-
-      return false;
-=======
-    $('.project-content.show.visible > .project-control > .wrapper').css({
-=======
-    $('.project-content.slick-slide.slick-current.slick-active > .project-control > .wrapper').css({
->>>>>>> master
-        'width': projectFirstFigureWidth,
->>>>>>> origin/sid
-=======
-
-  function projectControlButtonsPosition() {
-
-    var wrapperWidthTrue = $('.project-content.show.visible > .project-control > .wrapper').outerWidth(true);
-    var wrapperWidth = $('.project-content.show.visible > .project-control > .wrapper').innerWidth();
-    var wrapperMargin = (wrapperWidthTrue - wrapperWidth) / 3;
-
-    $('.smaller-than-one-thousand-one-hundred-fifteen .project-content.show.visible > .project-control > .wrapper > .left-project-control').css({
-      'width': 'auto',
-      'margin-left': -wrapperMargin
-<<<<<<< HEAD
-    });
-    $('.smaller-than-one-thousand-one-hundred-fifteen .project-content.show.visible > .project-control > .wrapper > .right-project-control').css({
-      'width': 'auto',
-      'margin-right': -wrapperMargin
-    });
-    $('.larger-than-one-thousand-one-hundred-fifteen .project-content.show.visible > .project-control > .wrapper > .left-project-control').css({
-      'width': (wrapperWidthTrue - wrapperWidth) / 2,
-      'margin-left': -(wrapperWidthTrue - wrapperWidth) / 2
-    });
-=======
-    });
-    $('.smaller-than-one-thousand-one-hundred-fifteen .project-content.show.visible > .project-control > .wrapper > .right-project-control').css({
-      'width': 'auto',
-      'margin-right': -wrapperMargin
-    });
-    $('.larger-than-one-thousand-one-hundred-fifteen .project-content.show.visible > .project-control > .wrapper > .left-project-control').css({
-      'width': (wrapperWidthTrue - wrapperWidth) / 2,
-      'margin-left': -(wrapperWidthTrue - wrapperWidth) / 2
-    });
->>>>>>> origin/sid
-    $('.larger-than-one-thousand-one-hundred-fifteen .project-content.show.visible > .project-control > .wrapper > .right-project-control').css({
-      'width': (wrapperWidthTrue - wrapperWidth) / 2,
-      'margin-right': -(wrapperWidthTrue - wrapperWidth) / 2
-=======
-
-  function projectControlButtonsPosition() {
-
-    var wrapperWidthTrue = $('.project-content.show.visible > .project-control > .wrapper').outerWidth(true);
-    var wrapperWidth = $('.project-content.show.visible > .project-control > .wrapper').innerWidth();
-    var wrapperMargin = (wrapperWidthTrue - wrapperWidth) / 3;
-
-    $('.smaller-than-one-thousand-one-hundred-fifteen .project-content.show.visible > .project-control > .wrapper > .left-project-control').css({
-      'width': 'auto',
-      'margin-left': -wrapperMargin
-    });
-    $('.smaller-than-one-thousand-one-hundred-fifteen .project-content.show.visible > .project-control > .wrapper > .right-project-control').css({
-      'width': 'auto',
-      'margin-right': -wrapperMargin
-    });
-    $('.larger-than-one-thousand-one-hundred-fifteen .project-content.show.visible > .project-control > .wrapper > .left-project-control').css({
-      'width': (wrapperWidthTrue - wrapperWidth) / 2,
-      'margin-left': -(wrapperWidthTrue - wrapperWidth) / 2
-    });
-    $('.larger-than-one-thousand-one-hundred-fifteen .project-content.show.visible > .project-control > .wrapper > .right-project-control').css({
-      'width': (wrapperWidthTrue - wrapperWidth) / 2,
-      'margin-right': -(wrapperWidthTrue - wrapperWidth) / 2
-    });
-  };
->>>>>>> sid
-
-    $('.project-content .project-excerpt button').click(function(event) {
-
-<<<<<<< HEAD
-      event.preventDefault();
-      var projectName = $('.project-content[aria-expanded="true"]').attr('id');
-
-			////////////////////////////////////////////////////////////////
-
-      $('.summer .container-fluid .row:nth-of-type(1)').removeClass('invisible').addClass('visible');
-      $('.summer .container-fluid .row:nth-of-type(2)').animate({'margin-top': projectThumbnailHeight}, 400).queue(function(next) {
-        $('#' + projectName).removeClass('show').addClass('hide').attr('aria-expanded', 'false');
-        $(this).stop().removeClass('visible').addClass('invisible');
-        next();
-      });
-
-      ////////////////////////////////////////////////////////////////
-
-      return false;
-=======
-    $('.project-content.show.visible > .project-control > .wrapper').css({
-<<<<<<< HEAD
->>>>>>> sid
-=======
-=======
-    $('.project-content.slick-slide.slick-current.slick-active > .project-control > .wrapper').css({
->>>>>>> master
->>>>>>> sid
-        'width': projectFirstFigureWidth,
->>>>>>> origin/sid
-=======
-
-  function projectControlButtonsPosition() {
-
-    var wrapperWidthTrue = $('.project-content.show.visible > .project-control > .wrapper').outerWidth(true);
-    var wrapperWidth = $('.project-content.show.visible > .project-control > .wrapper').innerWidth();
-    var wrapperMargin = (wrapperWidthTrue - wrapperWidth) / 3;
-
-    $('.smaller-than-one-thousand-one-hundred-fifteen .project-content.show.visible > .project-control > .wrapper > .left-project-control').css({
-      'width': 'auto',
-      'margin-left': -wrapperMargin
-<<<<<<< HEAD
-    });
-    $('.smaller-than-one-thousand-one-hundred-fifteen .project-content.show.visible > .project-control > .wrapper > .right-project-control').css({
-      'width': 'auto',
-      'margin-right': -wrapperMargin
-    });
-    $('.larger-than-one-thousand-one-hundred-fifteen .project-content.show.visible > .project-control > .wrapper > .left-project-control').css({
-      'width': (wrapperWidthTrue - wrapperWidth) / 2,
-      'margin-left': -(wrapperWidthTrue - wrapperWidth) / 2
-    });
-=======
-    });
-    $('.smaller-than-one-thousand-one-hundred-fifteen .project-content.show.visible > .project-control > .wrapper > .right-project-control').css({
-      'width': 'auto',
-      'margin-right': -wrapperMargin
-    });
-    $('.larger-than-one-thousand-one-hundred-fifteen .project-content.show.visible > .project-control > .wrapper > .left-project-control').css({
-      'width': (wrapperWidthTrue - wrapperWidth) / 2,
-      'margin-left': -(wrapperWidthTrue - wrapperWidth) / 2
-    });
->>>>>>> origin/sid
-    $('.larger-than-one-thousand-one-hundred-fifteen .project-content.show.visible > .project-control > .wrapper > .right-project-control').css({
-      'width': (wrapperWidthTrue - wrapperWidth) / 2,
-      'margin-right': -(wrapperWidthTrue - wrapperWidth) / 2
-=======
-
-  function projectControlButtonsPosition() {
-<<<<<<< HEAD
-
-    var wrapperWidthTrue = $('.project-content.show.visible > .project-control > .wrapper').outerWidth(true);
-    var wrapperWidth = $('.project-content.show.visible > .project-control > .wrapper').innerWidth();
-    var wrapperMargin = (wrapperWidthTrue - wrapperWidth) / 3;
-
-=======
-
-    var wrapperWidthTrue = $('.project-content.show.visible > .project-control > .wrapper').outerWidth(true);
-    var wrapperWidth = $('.project-content.show.visible > .project-control > .wrapper').innerWidth();
-    var wrapperMargin = (wrapperWidthTrue - wrapperWidth) / 3;
-
->>>>>>> sid
-    $('.smaller-than-one-thousand-one-hundred-fifteen .project-content.show.visible > .project-control > .wrapper > .left-project-control').css({
-      'width': 'auto',
-      'margin-left': -wrapperMargin
-    });
-    $('.smaller-than-one-thousand-one-hundred-fifteen .project-content.show.visible > .project-control > .wrapper > .right-project-control').css({
-      'width': 'auto',
-      'margin-right': -wrapperMargin
-    });
-    $('.larger-than-one-thousand-one-hundred-fifteen .project-content.show.visible > .project-control > .wrapper > .left-project-control').css({
-      'width': (wrapperWidthTrue - wrapperWidth) / 2,
-      'margin-left': -(wrapperWidthTrue - wrapperWidth) / 2
-    });
-    $('.larger-than-one-thousand-one-hundred-fifteen .project-content.show.visible > .project-control > .wrapper > .right-project-control').css({
-      'width': (wrapperWidthTrue - wrapperWidth) / 2,
-      'margin-right': -(wrapperWidthTrue - wrapperWidth) / 2
-=======
-  function projectControlButtonsClick() {
-
-    $('.project-content[aria-expanded="true"] .right-project-control').on('click', function() {
-
-      var nextProject = $(this).attr('href');
-      var $curr = $('.project-content.show.visible');
-      var $next = $(nextProject);
-
-      $curr.removeClass('show visible').addClass('hide invisible').attr('aria-expanded', 'false');
-      $next.removeClass('hide invisible').addClass('show visible').attr('aria-expanded', 'true');
->>>>>>> origin/sid
-    });
-  };
-
-<<<<<<< HEAD
-////////////////////////////////////////////////////////////////
-=======
-  function projectControlButtonsClick() {
-
-    $('.project-content[aria-expanded="true"] .right-project-control').on('click', function() {
-
-      var nextProject = $(this).attr('href');
-      var $curr = $('.project-content.show.visible');
-      var $next = $(nextProject);
-
-      $curr.removeClass('show visible').addClass('hide invisible').attr('aria-expanded', 'false');
-      $next.removeClass('hide invisible').addClass('show visible').attr('aria-expanded', 'true');
->>>>>>> origin/sid
-    });
-  };
-
-<<<<<<< HEAD
->>>>>>> sid
-////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////
-
-  function projectControlButtonsClick() {
-
-    $('.project-content[aria-expanded="true"] .right-project-control').on('click', function() {
-
-      var nextProject = $(this).attr('href');
-      var $curr = $('.project-content.show.visible');
-      var $next = $(nextProject);
-
-      $curr.removeClass('show visible').addClass('hide invisible').attr('aria-expanded', 'false');
-      $next.removeClass('hide invisible').addClass('show visible').attr('aria-expanded', 'true');
     });
 
-  ////////////////////////////////////////////////////////////////
-  ////////////////////////////////////////////////////////////////
-
-    $('.project-content[aria-expanded="true"] .left-project-control').on('click', function() {
-
-<<<<<<< HEAD
-<<<<<<< HEAD
-    ////////////////////////////////////////////////////////////////
-    ////////////////////////////////////////////////////////////////
-=======
-=======
-  ////////////////////////////////////////////////////////////////
-  ////////////////////////////////////////////////////////////////
->>>>>>> origin/sid
-=======
-=======
-  ////////////////////////////////////////////////////////////////
-  ////////////////////////////////////////////////////////////////
->>>>>>> origin/sid
-
-    $('.project-content[aria-expanded="true"] .left-project-control').on('click', function() {
-
->>>>>>> origin/sid
-      var previousProject = $(this).attr('href');
-      var $curr = $('.project-content.show.visible');
-      var $previous = $(previousProject);
-
-      $curr.removeClass('show visible').addClass('hide invisible').attr('aria-expanded', 'false');
-      $previous.removeClass('hide invisible').addClass('show visible').attr('aria-expanded', 'true');
-<<<<<<< HEAD
->>>>>>> sid
-=======
->>>>>>> sid
-    });
   };
 
 ////////////////////////////////////////////////////////////////
@@ -1196,178 +532,6 @@ jQuery(document).ready(function ($) {
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-  function projectControlButtonsClick() {
-
-    $('.project-content[aria-expanded="true"] .right-project-control').on('click', function() {
-
-      var nextProject = $(this).attr('href');
-      var $curr = $('.project-content.show.visible');
-      var $next = $(nextProject);
-
-      $curr.removeClass('show visible').addClass('hide invisible').attr('aria-expanded', 'false');
-      $next.removeClass('hide invisible').addClass('show visible').attr('aria-expanded', 'true');
->>>>>>> origin/sid
-    });
-=======
-  function projectControlContainerSize() {
-
-    var windowHeight = $(window).outerHeight(true);
-    var headerHeight = $('header').outerHeight(true);
-    var projectExcerptHeight = $('.project-content.show.visible > .project-excerpt').outerHeight(true);
-    var projectContentVisibleAreaHeight = windowHeight - (headerHeight + projectExcerptHeight)
-    var projectFirstFigureWidth = $('.project-content.show.visible > ul > li:nth-of-type(1)').width();
-
-    $('.project-content.show.visible > .project-control').css({
-        'height': projectContentVisibleAreaHeight,
-        'top': projectExcerptHeight
-    });
-    $('.project-content.show.visible > .project-control > .wrapper').css({
-        'width': projectFirstFigureWidth,
-<<<<<<< HEAD
->>>>>>> origin/sid
-=======
->>>>>>> origin/sid
-    });
-
->>>>>>> sid
-=======
-  function projectControlContainerSize() {
-
-    var windowHeight = $(window).outerHeight(true);
-    var headerHeight = $('header').outerHeight(true);
-    var projectExcerptHeight = $('.project-content.show.visible > .project-excerpt').outerHeight(true);
-    var projectContentVisibleAreaHeight = windowHeight - (headerHeight + projectExcerptHeight)
-    var projectFirstFigureWidth = $('.project-content.show.visible > ul > li:nth-of-type(1)').width();
-
-    $('.project-content.show.visible > .project-control').css({
-        'height': projectContentVisibleAreaHeight,
-        'top': projectExcerptHeight
-    });
-    $('.project-content.show.visible > .project-control > .wrapper').css({
-        'width': projectFirstFigureWidth,
-<<<<<<< HEAD
->>>>>>> origin/sid
-=======
->>>>>>> origin/sid
-    });
-
->>>>>>> sid
-  };
-
-<<<<<<< HEAD
-////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////
-
-<<<<<<< HEAD
-<<<<<<< HEAD
-  function projectControlButtonsClick() {
-
-    $('.project-content[aria-expanded="true"] .right-project-control').on('click', function() {
-
-      var nextProject = $(this).attr('href');
-      var $curr = $('.project-content.show.visible');
-      var $next = $(nextProject);
-
-      $curr.removeClass('show visible').addClass('hide invisible').attr('aria-expanded', 'false');
-      $next.removeClass('hide invisible').addClass('show visible').attr('aria-expanded', 'true');
-    });
-
-  ////////////////////////////////////////////////////////////////
-  ////////////////////////////////////////////////////////////////
-
-    $('.project-content[aria-expanded="true"] .left-project-control').on('click', function() {
-
-<<<<<<< HEAD
-<<<<<<< HEAD
-    ////////////////////////////////////////////////////////////////
-    ////////////////////////////////////////////////////////////////
-=======
-=======
-  ////////////////////////////////////////////////////////////////
-  ////////////////////////////////////////////////////////////////
->>>>>>> origin/sid
-=======
-=======
-  ////////////////////////////////////////////////////////////////
-  ////////////////////////////////////////////////////////////////
->>>>>>> origin/sid
-
-    $('.project-content[aria-expanded="true"] .left-project-control').on('click', function() {
-
->>>>>>> origin/sid
-      var previousProject = $(this).attr('href');
-      var $curr = $('.project-content.show.visible');
-      var $previous = $(previousProject);
-
-      $curr.removeClass('show visible').addClass('hide invisible').attr('aria-expanded', 'false');
-      $previous.removeClass('hide invisible').addClass('show visible').attr('aria-expanded', 'true');
-=======
-  function sliderInit() {
-
-=======
-  function sliderInit() {
-
->>>>>>> sid
-    $('.slider').slick({
-      adaptiveHeight: true,
-      arrows: false,
-      infinite: false,
-      focusOnSelect: false
-<<<<<<< HEAD
->>>>>>> sid
-=======
->>>>>>> sid
-    });
-  };
-
-////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////
-
-<<<<<<< HEAD
-<<<<<<< HEAD
-  function projectControlContainerSize() {
-
-    var windowHeight = $(window).outerHeight(true);
-    var headerHeight = $('header').outerHeight(true);
-    var projectExcerptHeight = $('.project-content.show.visible > .project-excerpt').outerHeight(true);
-    var projectContentVisibleAreaHeight = windowHeight - (headerHeight + projectExcerptHeight)
-    var projectFirstFigureWidth = $('.project-content.show.visible > ul > li:nth-of-type(1)').width();
-
-    $('.project-content.show.visible > .project-control').css({
-        'height': projectContentVisibleAreaHeight,
-        'top': projectExcerptHeight
-    });
-    $('.project-content.show.visible > .project-control > .wrapper').css({
-        'width': projectFirstFigureWidth,
-<<<<<<< HEAD
->>>>>>> origin/sid
-=======
->>>>>>> origin/sid
-    });
-
-=======
-=======
->>>>>>> sid
-  function hideFooter() {
-    if ('ontouchstart' in window) {
-      $('footer').addClass('hide');
-    }
->>>>>>> sid
-  };
-
-////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////
-
-<<<<<<< HEAD
-<<<<<<< HEAD
   function sliderInit() {
 
     $('.slider').slick({
@@ -1389,10 +553,6 @@ jQuery(document).ready(function ($) {
     }
   };
 
-=======
->>>>>>> sid
-=======
->>>>>>> sid
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
@@ -1403,17 +563,11 @@ jQuery(document).ready(function ($) {
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
 
-=======
->>>>>>> sid
-=======
->>>>>>> sid
   addBodyClass();
   addDataSlickIndex();
   anchorLinkScrollAnimation();
@@ -1485,85 +639,8 @@ jQuery(document).ready(function ($) {
     projectControlButtonsPosition();
     projectControlButtonsClick();
     setWinterHeight();
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
     vimeoResponsive();
-=======
-=======
->>>>>>> sid
-<<<<<<< HEAD
-=======
->>>>>>> sid
-<<<<<<< HEAD
-=======
->>>>>>> sid
-    sixHundredFortyListerner();
-    vimeoWhatever();
 
-//    ////////////////////////////////////////////////////////////////
-//
-//    $('.project-content .project-excerpt button').click(function() {
-//
-//      var projectThumbnailHeight = $('.summer .container-fluid .row:nth-of-type(1)').outerHeight();
-//      var springHeight = $('body > .container-fluid > .row:nth-of-type(2)').outerHeight();
-//
-//      ////////////////////////////////////////////////////////////////
-//
-//      event.preventDefault();
-//      var projectName = $('.project-content[aria-expanded="true"]').attr('id');
-//      $('.summer .container-fluid .row:nth-of-type(1)').removeClass('invisible').addClass('visible');
-//      $('.summer .container-fluid .row:nth-of-type(2)').animate({'margin-top': projectThumbnailHeight}, 400).queue(function(next) {
-//        $('#' + projectName).removeClass('show').addClass('hide').attr('aria-expanded', 'false');
-//        $(this).stop().removeClass('visible').addClass('invisible');
-//        next();
-//      });
-//
-//      ////////////////////////////////////////////////////////////////
-//
-//      return false;
-//    });
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> sid
-=======
->>>>>>> sid
-    vimeoCustom();
-
->>>>>>> origin/sid
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> sid
-    vimeoCustom();
->>>>>>> sid
-
->>>>>>> origin/sid
-<<<<<<< HEAD
-=======
-=======
-=======
->>>>>>> sid
-=======
->>>>>>> sid
-    vimeoCustom();
-=======
-    vimeoResponsive();
->>>>>>> master
-
->>>>>>> origin/sid
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> sid
-=======
->>>>>>> sid
-=======
->>>>>>> sid
   };
 
   ////////////////////////////////////////////////////////////////
@@ -1581,91 +658,10 @@ jQuery(document).ready(function ($) {
 ////////////////////////////////////////////////////////////////
 
   $('.language-change a').on('click', function() {
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
     projectContentContainerHeight();
     projectControlContainerSize();
     projectControlButtonsPosition();
     projectControlButtonsClick();
-=======
-=======
->>>>>>> sid
-=======
->>>>>>> sid
-
-<<<<<<< HEAD
-<<<<<<< HEAD
-    projectStuff();
-    projectControl();
-    projectControlButtons();
-    projectControlClick();
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-    projectContentContainerHeight();
-    projectControlContainerSize();
-    projectControlButtonsPosition();
->>>>>>> origin/sid
-=======
-=======
->>>>>>> sid
-    projectContentContainerHeight();
-    projectControlContainerSize();
-    projectControlButtonsPosition();
->>>>>>> origin/sid
-<<<<<<< HEAD
-
->>>>>>> sid
-=======
-=======
-=======
->>>>>>> sid
-    projectContentContainerHeight();
-    projectControlContainerSize();
-    projectControlButtonsPosition();
->>>>>>> origin/sid
-<<<<<<< HEAD
-=======
-=======
-=======
-
-<<<<<<< HEAD
-<<<<<<< HEAD
-    projectStuff();
-    projectControl();
-    projectControlButtons();
-    projectControlClick();
-=======
-    projectContentContainerHeight();
-    projectControlContainerSize();
-    projectControlButtonsPosition();
->>>>>>> origin/sid
-=======
->>>>>>> sid
-    projectContentContainerHeight();
-    projectControlContainerSize();
-    projectControlButtonsPosition();
->>>>>>> origin/sid
-<<<<<<< HEAD
->>>>>>> sid
-=======
->>>>>>> sid
-
-=======
-    projectContentContainerHeight();
-    projectControlContainerSize();
-    projectControlButtonsPosition();
-    projectControlButtonsClick();
->>>>>>> master
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> sid
-=======
->>>>>>> sid
-=======
->>>>>>> sid
   });
 
 ////////////////////////////////////////////////////////////////
@@ -1704,27 +700,9 @@ jQuery(document).ready(function ($) {
     var dataSlickIndex = $(this).parent().attr('data-slick-index');
     $('.slider').slick('slickGoTo', dataSlickIndex);
     $('.slick-slide[data-slick-index="' + dataSlickIndex + '"]').focus();
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 
     ////////////////////////////////////////////////////////////////
 
-=======
-
-    ////////////////////////////////////////////////////////////////
-
->>>>>>> sid
-=======
-
-    ////////////////////////////////////////////////////////////////
-
->>>>>>> sid
-=======
-
-    ////////////////////////////////////////////////////////////////
-
->>>>>>> sid
     setTimeout(function() {
       addBodyClass();
       addTargetBlank();
@@ -1744,18 +722,7 @@ jQuery(document).ready(function ($) {
 
   $('.project-content .project-excerpt button').on('click', function() {
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
     projectContentContainerHeight();
-=======
-=======
->>>>>>> sid
-=======
->>>>>>> sid
-    // EMPTY
-<<<<<<< HEAD
 
     ////////////////////////////////////////////////////////////////
 
@@ -1764,36 +731,6 @@ jQuery(document).ready(function ($) {
 
     ////////////////////////////////////////////////////////////////
 
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> sid
-=======
-    // EMPTY
-<<<<<<< HEAD
->>>>>>> sid
-
-    ////////////////////////////////////////////////////////////////
-
-    window.location.hash = ''; // for older browsers, leaves the '#' behind
-    history.pushState('', document.title, window.location.pathname); // nice and clean
-
-    ////////////////////////////////////////////////////////////////
-=======
-=======
->>>>>>> sid
-=======
-    projectContentContainerHeight();
->>>>>>> master
-
-    ////////////////////////////////////////////////////////////////
-
-    window.location.hash = ''; // for older browsers, leaves the '#' behind
-    history.pushState('', document.title, window.location.pathname); // nice and clean
-
-    ////////////////////////////////////////////////////////////////
-
->>>>>>> origin/sid
     var projectThumbnailContainerHeight = $('.summer .container-fluid .row:nth-of-type(1)').outerHeight();
     $('.summer .container-fluid .row:nth-of-type(1)').removeClass('invisible').addClass('visible');
     $('.summer .container-fluid .row:nth-of-type(2)').stop().animate({'margin-top': projectThumbnailContainerHeight}, 300).queue(function() {
@@ -1808,91 +745,12 @@ jQuery(document).ready(function ($) {
       addBodyClass();
     }, 300);
   });
->>>>>>> sid
-
-<<<<<<< HEAD
-=======
-=======
-=======
-    projectContentContainerHeight();
->>>>>>> master
-
-<<<<<<< HEAD
-<<<<<<< HEAD
-    ////////////////////////////////////////////////////////////////
-
-    window.location.hash = ''; // for older browsers, leaves the '#' behind
-    history.pushState('', document.title, window.location.pathname); // nice and clean
-
-    ////////////////////////////////////////////////////////////////
-
->>>>>>> sid
->>>>>>> origin/sid
-    var projectThumbnailContainerHeight = $('.summer .container-fluid .row:nth-of-type(1)').outerHeight();
-    $('.summer .container-fluid .row:nth-of-type(1)').removeClass('invisible').addClass('visible');
-    $('.summer .container-fluid .row:nth-of-type(2)').stop().animate({'margin-top': projectThumbnailContainerHeight}, 300).queue(function() {
-      $('.summer .container-fluid .row:nth-of-type(2)').removeClass('visible').addClass('invisible');
-      $('.slider').removeClass('show').addClass('hide');
-      $(this).dequeue();
-    });
-
-    ////////////////////////////////////////////////////////////////
-
-    setTimeout(function() {
-      addBodyClass();
-    }, 300);
-  });
-=======
-=======
->>>>>>> sid
-//  $('.project-control a[role="button"]').click(function(e) {
-//    e.preventDefault();
-//
-//    var scrollmem = $('html,body').scrollTop();
-//    var slug = $(this).attr('data-project-name');
-//    window.location.hash = slug;
-//    $('html,body').scrollTop(scrollmem);
-//
-//    ////////////////////////////////////////////////////////////////
-//
-//    setTimeout(function() {
-//      addTargetBlank();
-//      projectContentContainerHeight();
-//      projectControlContainerSize();
-//      projectControlButtonsPosition();
-//      projectControlButtonsClick();
-//    }, 600);
-//  });
-<<<<<<< HEAD
-=======
 
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
 
-//  $('.project-thumbnail.sota-la-paraula a').on('click', function() {
-//    $('#sota-la-paraula > ul > li').slice(6,10).wrapAll('<li><ul class="wrapper" />');
-//  });
->>>>>>> sid
-
-////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////
-
-<<<<<<< HEAD
-//  $('.project-thumbnail.sota-la-paraula a').on('click', function() {
-//    $('#sota-la-paraula > ul > li').slice(6,10).wrapAll('<li><ul class="wrapper" />');
-//  });
->>>>>>> sid
-
-////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////
-
-<<<<<<< HEAD
 //  $('.project-control a[role="button"]').click(function(e) {
 //    e.preventDefault();
 //
@@ -1926,10 +784,6 @@ jQuery(document).ready(function ($) {
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
 
-=======
->>>>>>> sid
-=======
->>>>>>> sid
 //  if ($('.no-svg .navbar-collapse.collapse')) {
 //    $('.no-svg navbar-header button span .menu-cross').removeClass('hide').addClass('show');
 //  }
