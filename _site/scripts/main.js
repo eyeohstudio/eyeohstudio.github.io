@@ -8,17 +8,20 @@ jQuery(document).ready(function ($) {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
-=======
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+=======
 <<<<<<< HEAD
-=======
->>>>>>> sid
-=======
 <<<<<<< HEAD
 =======
 >>>>>>> sid
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> sid
+>>>>>>> master
+=======
 >>>>>>> master
   function addBodyClass() {
 
@@ -53,6 +56,7 @@ jQuery(document).ready(function ($) {
   };
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> master
 =======
 <<<<<<< HEAD
@@ -67,6 +71,8 @@ jQuery(document).ready(function ($) {
 =======
 >>>>>>> master
 >>>>>>> sid
+>>>>>>> master
+=======
 >>>>>>> master
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
@@ -74,6 +80,7 @@ jQuery(document).ready(function ($) {
 ////////////////////////////////////////////////////////////////
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -99,6 +106,8 @@ jQuery(document).ready(function ($) {
 >>>>>>> sid
 =======
 >>>>>>> sid
+>>>>>>> master
+=======
 >>>>>>> master
   function anchorLinkScrollAnimation() {
 
@@ -529,6 +538,7 @@ jQuery(document).ready(function ($) {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     $('.project-content.slick-slide.slick-current.slick-active .project-excerpt button').mapKey('esc', {trigger: 'click'});
     //$('.project-content.slick-slide.slick-current.slick-active .left-project-control').mapKey('left', {trigger: 'click'});
@@ -582,6 +592,11 @@ jQuery(document).ready(function ($) {
 >>>>>>> sid
 =======
 >>>>>>> sid
+>>>>>>> master
+=======
+    $('.project-content.slick-slide.slick-current.slick-active .project-excerpt button').mapKey('esc', {trigger: 'click'});
+    //$('.project-content.slick-slide.slick-current.slick-active .left-project-control').mapKey('left', {trigger: 'click'});
+    //$('.project-content.slick-slide.slick-current.slick-active .right-project-control').mapKey('right', {trigger: 'click'});
 >>>>>>> master
     $('.scroll-to-top').mapKey('up', {trigger: 'click'});
     $('.language-change-ca a').mapKey('lang_ca', {trigger: 'click'});
@@ -693,9 +708,15 @@ jQuery(document).ready(function ($) {
         projectControlButtonsPosition();
         projectControlButtonsClick();
       }, 300);
+<<<<<<< HEAD
 
       ////////////////////////////////////////////////////////////////
 
+=======
+
+      ////////////////////////////////////////////////////////////////
+
+>>>>>>> master
       setTimeout(function() {
         var scrollmem = $('html,body').scrollTop();
         var slug = $('.project-content.slick-slide.slick-current.slick-active').attr('id');
@@ -710,6 +731,7 @@ jQuery(document).ready(function ($) {
     $('.project-content.slick-slide.slick-current.slick-active .left-project-control').click(function(e) {
       e.preventDefault();
       $('.slider').slick('slickPrev');
+<<<<<<< HEAD
 
       setTimeout(function() {
         addTargetBlank();
@@ -721,6 +743,19 @@ jQuery(document).ready(function ($) {
 
       ////////////////////////////////////////////////////////////////
 
+=======
+
+      setTimeout(function() {
+        addTargetBlank();
+        projectContentContainerHeight();
+        projectControlContainerSize();
+        projectControlButtonsPosition();
+        projectControlButtonsClick();
+      }, 300);
+
+      ////////////////////////////////////////////////////////////////
+
+>>>>>>> master
         setTimeout(function() {
         var scrollmem = $('html,body').scrollTop();
         var slug = $('.project-content.slick-slide.slick-current.slick-active').attr('id');
@@ -776,6 +811,7 @@ jQuery(document).ready(function ($) {
     var projectContentVisibleAreaHeight = windowHeight - (headerHeight + projectExcerptHeight)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -810,6 +846,9 @@ jQuery(document).ready(function ($) {
     var projectFirstFigureWidth = $('.project-content.slick-slide.slick-current.slick-active > ul > li:nth-of-type(1)').width();
 >>>>>>> master
 >>>>>>> sid
+>>>>>>> master
+=======
+    var projectFirstFigureWidth = $('.project-content.slick-slide.slick-current.slick-active > ul > li:nth-of-type(1)').width();
 >>>>>>> master
 
     $('.project-content.slick-slide.slick-current.slick-active > .project-control').css({
@@ -819,6 +858,7 @@ jQuery(document).ready(function ($) {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
     ////////////////////////////////////////////////////////////////
     ////////////////////////////////////////////////////////////////
@@ -845,6 +885,9 @@ jQuery(document).ready(function ($) {
 =======
     $('.project-content.slick-slide.slick-current.slick-active > .project-control > .wrapper').css({
 >>>>>>> master
+=======
+    $('.project-content.slick-slide.slick-current.slick-active > .project-control > .wrapper').css({
+>>>>>>> master
         'width': projectFirstFigureWidth,
 >>>>>>> origin/sid
 =======
@@ -855,6 +898,7 @@ jQuery(document).ready(function ($) {
     var wrapperWidth = $('.project-content.show.visible > .project-control > .wrapper').innerWidth();
     var wrapperMargin = (wrapperWidthTrue - wrapperWidth) / 3;
 
+<<<<<<< HEAD
     $('.smaller-than-one-thousand-one-hundred-fifteen .project-content.show.visible > .project-control > .wrapper > .left-project-control').css({
       'width': 'auto',
       'margin-left': -wrapperMargin
@@ -1312,11 +1356,16 @@ jQuery(document).ready(function ($) {
   function sliderInit() {
 
 >>>>>>> master
+=======
+  function sliderInit() {
+
+>>>>>>> master
     $('.slider').slick({
       adaptiveHeight: true,
       arrows: false,
       infinite: false,
       focusOnSelect: false
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> sid
@@ -1359,6 +1408,9 @@ jQuery(document).ready(function ($) {
       $('footer').addClass('hide');
     }
 >>>>>>> sid
+=======
+    });
+>>>>>>> master
   };
 
 ////////////////////////////////////////////////////////////////
@@ -1366,6 +1418,7 @@ jQuery(document).ready(function ($) {
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -1377,6 +1430,12 @@ jQuery(document).ready(function ($) {
       infinite: false,
       focusOnSelect: false
     });
+=======
+  function hideFooter() {
+    if ('ontouchstart' in window) {
+      $('footer').addClass('hide');
+    }
+>>>>>>> master
   };
 
 ////////////////////////////////////////////////////////////////
@@ -1384,6 +1443,7 @@ jQuery(document).ready(function ($) {
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
 
+<<<<<<< HEAD
   function hideFooter() {
     if ('ontouchstart' in window) {
       $('footer').addClass('hide');
@@ -1398,6 +1458,8 @@ jQuery(document).ready(function ($) {
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
 
+=======
+>>>>>>> master
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
@@ -1411,8 +1473,11 @@ jQuery(document).ready(function ($) {
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
 
+<<<<<<< HEAD
 =======
 >>>>>>> sid
+>>>>>>> master
+=======
 >>>>>>> master
   addBodyClass();
   addDataSlickIndex();
@@ -1489,6 +1554,7 @@ jQuery(document).ready(function ($) {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     vimeoResponsive();
 =======
@@ -1533,6 +1599,9 @@ jQuery(document).ready(function ($) {
 >>>>>>> sid
 >>>>>>> master
     vimeoCustom();
+=======
+    vimeoResponsive();
+>>>>>>> master
 
 >>>>>>> origin/sid
 =======
@@ -1583,6 +1652,7 @@ jQuery(document).ready(function ($) {
   $('.language-change a').on('click', function() {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1665,6 +1735,12 @@ jQuery(document).ready(function ($) {
 >>>>>>> sid
 =======
 >>>>>>> sid
+>>>>>>> master
+=======
+    projectContentContainerHeight();
+    projectControlContainerSize();
+    projectControlButtonsPosition();
+    projectControlButtonsClick();
 >>>>>>> master
   });
 
@@ -1705,6 +1781,7 @@ jQuery(document).ready(function ($) {
     $('.slider').slick('slickGoTo', dataSlickIndex);
     $('.slick-slide[data-slick-index="' + dataSlickIndex + '"]').focus();
 <<<<<<< HEAD
+<<<<<<< HEAD
 
     ////////////////////////////////////////////////////////////////
 
@@ -1724,6 +1801,11 @@ jQuery(document).ready(function ($) {
     ////////////////////////////////////////////////////////////////
 
 >>>>>>> sid
+>>>>>>> master
+=======
+
+    ////////////////////////////////////////////////////////////////
+
 >>>>>>> master
     setTimeout(function() {
       addBodyClass();
@@ -1746,6 +1828,7 @@ jQuery(document).ready(function ($) {
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1785,6 +1868,9 @@ jQuery(document).ready(function ($) {
 =======
     projectContentContainerHeight();
 >>>>>>> master
+=======
+    projectContentContainerHeight();
+>>>>>>> master
 
     ////////////////////////////////////////////////////////////////
 
@@ -1806,6 +1892,7 @@ jQuery(document).ready(function ($) {
 
     setTimeout(function() {
       addBodyClass();
+<<<<<<< HEAD
     }, 300);
   });
 >>>>>>> sid
@@ -1841,6 +1928,8 @@ jQuery(document).ready(function ($) {
 
     setTimeout(function() {
       addBodyClass();
+=======
+>>>>>>> master
     }, 300);
   });
 =======
@@ -1870,6 +1959,7 @@ jQuery(document).ready(function ($) {
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
 
+<<<<<<< HEAD
 //  $('.project-thumbnail.sota-la-paraula a').on('click', function() {
 //    $('#sota-la-paraula > ul > li').slice(6,10).wrapAll('<li><ul class="wrapper" />');
 //  });
@@ -1894,6 +1984,8 @@ jQuery(document).ready(function ($) {
 ////////////////////////////////////////////////////////////////
 
 <<<<<<< HEAD
+=======
+>>>>>>> master
 //  $('.project-control a[role="button"]').click(function(e) {
 //    e.preventDefault();
 //
@@ -1927,8 +2019,11 @@ jQuery(document).ready(function ($) {
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
 
+<<<<<<< HEAD
 =======
 >>>>>>> sid
+>>>>>>> master
+=======
 >>>>>>> master
 //  if ($('.no-svg .navbar-collapse.collapse')) {
 //    $('.no-svg navbar-header button span .menu-cross').removeClass('hide').addClass('show');

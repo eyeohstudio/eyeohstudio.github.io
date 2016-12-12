@@ -2,14 +2,18 @@
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+>>>>>>> master
 2. cd ~/eyeohstudio.github.io
 
 3A. bundle exec jekyll serve -w --config _config-127.0.0.1.yml (LOCAL HOST)
 
 3B. bundle exec jekyll serve -w --config _config.yml (REMOTE HOST)
+<<<<<<< HEAD
 =======
 cd ~/eyeohstudio.github.io
 bundle exec jekyll serve -w --config _config-127.0.0.1.yml
@@ -33,14 +37,22 @@ bundle exec jekyll serve -w --config _config-127.0.0.1.yml
 >>>>>>> sid
 =======
 >>>>>>> sid
+>>>>>>> master
+=======
 >>>>>>> master
 
 ---
 
 1. cmd + github
+<<<<<<< HEAD
 
 2. Commit Changes (branch MASTER)
 
+=======
+
+2. Commit Changes (branch MASTER)
+
+>>>>>>> master
 3. Synch (branch MASTER)
 
 ---
