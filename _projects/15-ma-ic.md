@@ -19,7 +19,7 @@ excerptEn: Identity design for Mabrian, a travel intelligence platform using Art
 excerptEs: Diseño de indentidad para Mabrian, una plataforma de travel intelligence que utiliza tecnologías de Inteligencia Artificial y Big Data. La nueva marca refleja atributos como la capacidad analítica, la profundidad y la precisión.
 
 
-featured_image: io-ic-00t
+featured_image: ma-ic-00t
 
 slug: mabrian
 
