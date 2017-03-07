@@ -18,44 +18,44 @@ excerptEn: Identity design and website development for ‘Experience Menorca’.
 excerptEs: Diseño de identidad y desarrollo del website para ‘Experience Menorca’. Escuela de Español que ofrece cursos para extranjeros en Menorca, practicando el idioma aprendido combinando la cultura con la diversión.
 
 
-featured_image: ex-ic-00t
+featured_image: ex-w-00t
 
 slug: experiene_menorca
 
 ---
 
 <li><img data-src-base="{{ site.url}}/images/projects/" data-src="
-<320:ex-W-01_320.jpg,
-<480:ex-W-01_480.jpg,
-<640:ex-W-01_640.jpg,
-<800:ex-W-01_800.jpg,
-<1024:ex-W-01_1024.jpg,
->1024:ex-W-01_1120.jpg
+<320:ex-w-01_320.jpg,
+<480:ex-w-01_480.jpg,
+<640:ex-w-01_640.jpg,
+<800:ex-w-01_800.jpg,
+<1024:ex-w-01_1024.jpg,
+>1024:ex-w-01_1120.jpg
 "></li>
 
 <li><img data-src-base="{{ site.url}}/images/projects/" data-src="
-<320:ex-W-02_320.jpg,
-<480:ex-W-02_480.jpg,
-<640:ex-W-02_640.jpg,
-<800:ex-W-02_800.jpg,
-<1024:ex-W-02_1024.jpg,
->1024:ex-W-02_1120.jpg
+<320:ex-w-02_320.jpg,
+<480:ex-w-02_480.jpg,
+<640:ex-w-02_640.jpg,
+<800:ex-w-02_800.jpg,
+<1024:ex-w-02_1024.jpg,
+>1024:ex-w-02_1120.jpg
 "></li>
 
 <li><img data-src-base="{{ site.url}}/images/projects/" data-src="
-<320:ex-W-03_320.jpg,
-<480:ex-W-03_480.jpg,
-<640:ex-W-03_640.jpg,
-<800:ex-W-03_800.jpg,
-<1024:ex-W-03_1024.jpg,
->1024:ex-W-03_1120.jpg
+<320:ex-w-03_320.jpg,
+<480:ex-w-03_480.jpg,
+<640:ex-w-03_640.jpg,
+<800:ex-w-03_800.jpg,
+<1024:ex-w-03_1024.jpg,
+>1024:ex-w-03_1120.jpg
 "></li>
 
 <li><img data-src-base="{{ site.url}}/images/projects/" data-src="
-<320:ex-W-04_320.jpg,
-<480:ex-W-04_480.jpg,
-<640:ex-W-04_640.jpg,
-<800:ex-W-04_800.jpg,
-<1024:ex-W-04_1024.jpg,
->1024:ex-W-04_1120.jpg
+<320:ex-w-04_320.jpg,
+<480:ex-w-04_480.jpg,
+<640:ex-w-04_640.jpg,
+<800:ex-w-04_800.jpg,
+<1024:ex-w-04_1024.jpg,
+>1024:ex-w-04_1120.jpg
 "></li>
