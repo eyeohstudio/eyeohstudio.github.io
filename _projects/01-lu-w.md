@@ -33,7 +33,7 @@ slug: experiene_menorca
 <1024:lu-w-01_1024.jpg,
 >1024:lu-w-01_1120.jpg
 "></li>
-º
+
 <li><img data-src-base="{{ site.url}}/images/projects/" data-src="
 <320:lu-w-02_320.jpg,
 <480:lu-w-02_480.jpg,
