@@ -10,13 +10,13 @@ titleEn: Mabrian&#xa;Corporate Identity
 
 titleEs: Mabrian&#xa;Identidad Corporativa
 
-excerptCa: Diseño de indentidad para Mabrian, una plataforma de travel intelligence que utiliza tecnologías de Inteligencia Artificial y Big Data. La nueva marca refleja atributos como la capacidad analítica, la profundidad y la precisión.
+excerptCa: Disseny d'indentitat per 'Mabrian', una plataforma de travel intelligence que utilitza tecnologies d'Intel·ligència Artificial i Big Data. La nova marca reflecteix atributs com la capacitat analítica, la profunditat i la precisió.
 
 
-excerptEn: Identity design for Mabrian, a travel intelligence platform using Artificial Intelligence and Big Data technologies. The new brand reflects attributes such as analytical ability, depth and precision.
+excerptEn: Identity design for 'Mabrian', a travel intelligence platform using Artificial Intelligence and Big Data technologies. The new brand reflects attributes such as analytical ability, depth and precision.
 
 
-excerptEs: Diseño de indentidad para Mabrian, una plataforma de travel intelligence que utiliza tecnologías de Inteligencia Artificial y Big Data. La nueva marca refleja atributos como la capacidad analítica, la profundidad y la precisión.
+excerptEs: Diseño de indentidad para 'Mabrian', una plataforma de travel intelligence que utiliza tecnologías de Inteligencia Artificial y Big Data. La nueva marca refleja atributos como la capacidad analítica, la profundidad y la precisión.
 
 
 featured_image: io-ic-00t
