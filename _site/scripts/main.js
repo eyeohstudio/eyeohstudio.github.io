@@ -6,6 +6,8 @@ jQuery(document).ready(function ($) {
 ////////////////////////////////////////////////////////////////
 
 <<<<<<< HEAD
+<<<<<<< Updated upstream
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -21,6 +23,10 @@ jQuery(document).ready(function ($) {
 =======
 >>>>>>> sid
 >>>>>>> master
+=======
+>>>>>>> master
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> master
   function addBodyClass() {
@@ -56,6 +62,8 @@ jQuery(document).ready(function ($) {
   };
 
 <<<<<<< HEAD
+<<<<<<< Updated upstream
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> master
 =======
@@ -72,6 +80,10 @@ jQuery(document).ready(function ($) {
 >>>>>>> master
 >>>>>>> sid
 >>>>>>> master
+=======
+>>>>>>> master
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> master
 ////////////////////////////////////////////////////////////////
@@ -80,6 +92,8 @@ jQuery(document).ready(function ($) {
 ////////////////////////////////////////////////////////////////
 
 <<<<<<< HEAD
+<<<<<<< Updated upstream
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -107,6 +121,10 @@ jQuery(document).ready(function ($) {
 =======
 >>>>>>> sid
 >>>>>>> master
+=======
+>>>>>>> master
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> master
   function anchorLinkScrollAnimation() {
@@ -130,39 +148,7 @@ jQuery(document).ready(function ($) {
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-  function fireHash() {
-=======
-<<<<<<< HEAD
   function backToTop() {
->>>>>>> origin/sid
-=======
-  function backToTop() {
->>>>>>> origin/sid
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-  function backToTop() {
->>>>>>> origin/sid
-=======
-  function backToTop() {
->>>>>>> origin/sid
-=======
-  function backToTop() {
->>>>>>> origin/sid
-=======
-  function backToTop() {
->>>>>>> origin/sid
->>>>>>> sid
-=======
-  function backToTop() {
->>>>>>> origin/sid
-=======
-  function backToTop() {
->>>>>>> origin/sid
->>>>>>> sid
->>>>>>> master
 
     $('.project-content > a.scroll-to-top').on('click', function(event) {
       event.preventDefault();
@@ -230,57 +216,10 @@ jQuery(document).ready(function ($) {
       $('body').removeClass('ca').addClass('en');
       $('body').removeClass('es').addClass('en');
     });
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> origin/sid
-		
-    ////////////////////////////////////////////////////////////////
-    ////////////////////////////////////////////////////////////////
-
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-		
-    ////////////////////////////////////////////////////////////////
-    ////////////////////////////////////////////////////////////////
-
-=======
-=======
->>>>>>> origin/sid
-<<<<<<< HEAD
-
-    ////////////////////////////////////////////////////////////////
-    ////////////////////////////////////////////////////////////////
->>>>>>> origin/sid
-
-=======
-=======
->>>>>>> origin/sid
-=======
->>>>>>> master
-
-    ////////////////////////////////////////////////////////////////
-    ////////////////////////////////////////////////////////////////
->>>>>>> origin/sid
-
-<<<<<<< HEAD
-=======
-=======
-=======
->>>>>>> origin/sid
 
     ////////////////////////////////////////////////////////////////
     ////////////////////////////////////////////////////////////////
 
->>>>>>> master
->>>>>>> origin/sid
-<<<<<<< HEAD
->>>>>>> origin/sid
-=======
->>>>>>> origin/sid
     $('.language-change-es a').click(function(e) {
       e.preventDefault();
       $('html').attr('xml:lang', 'es').attr('lang', 'es');
@@ -535,6 +474,8 @@ jQuery(document).ready(function ($) {
   function mapKeyboardChars() {
 
 <<<<<<< HEAD
+<<<<<<< Updated upstream
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -598,6 +539,16 @@ jQuery(document).ready(function ($) {
     //$('.project-content.slick-slide.slick-current.slick-active .left-project-control').mapKey('left', {trigger: 'click'});
     //$('.project-content.slick-slide.slick-current.slick-active .right-project-control').mapKey('right', {trigger: 'click'});
 >>>>>>> master
+=======
+    $('.project-content.slick-slide.slick-current.slick-active .project-excerpt button').mapKey('esc', {trigger: 'click'});
+    //$('.project-content.slick-slide.slick-current.slick-active .left-project-control').mapKey('left', {trigger: 'click'});
+    //$('.project-content.slick-slide.slick-current.slick-active .right-project-control').mapKey('right', {trigger: 'click'});
+>>>>>>> Stashed changes
+=======
+    $('.project-content.slick-slide.slick-current.slick-active .project-excerpt button').mapKey('esc', {trigger: 'click'});
+    //$('.project-content.slick-slide.slick-current.slick-active .left-project-control').mapKey('left', {trigger: 'click'});
+    //$('.project-content.slick-slide.slick-current.slick-active .right-project-control').mapKey('right', {trigger: 'click'});
+>>>>>>> master
     $('.scroll-to-top').mapKey('up', {trigger: 'click'});
     $('.language-change-ca a').mapKey('lang_ca', {trigger: 'click'});
     $('.language-change-en a').mapKey('lang_en', {trigger: 'click'});
@@ -612,39 +563,7 @@ jQuery(document).ready(function ($) {
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-  function oneThousandOneHundredFifteen() {
-=======
-<<<<<<< HEAD
   function projectContentContainerHeight() {
->>>>>>> origin/sid
-=======
-  function projectContentContainerHeight() {
->>>>>>> origin/sid
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-  function projectContentContainerHeight() {
->>>>>>> origin/sid
-=======
-  function projectContentContainerHeight() {
->>>>>>> origin/sid
-=======
-  function projectContentContainerHeight() {
->>>>>>> origin/sid
-=======
-  function projectContentContainerHeight() {
->>>>>>> origin/sid
->>>>>>> sid
-=======
-  function projectContentContainerHeight() {
->>>>>>> origin/sid
-=======
-  function projectContentContainerHeight() {
->>>>>>> origin/sid
->>>>>>> sid
->>>>>>> master
 
     var projectThumbnailContainerHeight = $('.summer .container-fluid .row:nth-of-type(1)').outerHeight();
     var springHeight = $('body > .container-fluid > .row:nth-of-type(2)').outerHeight();
@@ -658,8 +577,6 @@ jQuery(document).ready(function ($) {
       $('.summer .container-fluid .row:nth-of-type(1)').removeClass('visible').addClass('invisible');
     }
   };
-<<<<<<< HEAD
-<<<<<<< HEAD
 
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
@@ -709,9 +626,15 @@ jQuery(document).ready(function ($) {
         projectControlButtonsClick();
       }, 300);
 <<<<<<< HEAD
+<<<<<<< HEAD
 
       ////////////////////////////////////////////////////////////////
 
+=======
+
+      ////////////////////////////////////////////////////////////////
+
+>>>>>>> master
 =======
 
       ////////////////////////////////////////////////////////////////
@@ -732,6 +655,7 @@ jQuery(document).ready(function ($) {
       e.preventDefault();
       $('.slider').slick('slickPrev');
 <<<<<<< HEAD
+<<<<<<< HEAD
 
       setTimeout(function() {
         addTargetBlank();
@@ -743,6 +667,19 @@ jQuery(document).ready(function ($) {
 
       ////////////////////////////////////////////////////////////////
 
+=======
+
+      setTimeout(function() {
+        addTargetBlank();
+        projectContentContainerHeight();
+        projectControlContainerSize();
+        projectControlButtonsPosition();
+        projectControlButtonsClick();
+      }, 300);
+
+      ////////////////////////////////////////////////////////////////
+
+>>>>>>> master
 =======
 
       setTimeout(function() {
@@ -765,50 +702,19 @@ jQuery(document).ready(function ($) {
     });
   };
 
-=======
-
->>>>>>> origin/sid
-=======
-
->>>>>>> origin/sid
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
-<<<<<<< HEAD
-<<<<<<< HEAD
 
   function projectControlContainerSize() {
 
-<<<<<<< HEAD
-    ////////////////////////////////////////////////////////////////
-    ////////////////////////////////////////////////////////////////
-
-    $('.project-thumbnail a').click(function(event) {
-
-      event.preventDefault();
-      var projectName = $(this).attr('data-project-name');
-
-			////////////////////////////////////////////////////////////////
-
-      $('.summer .container-fluid .row:nth-of-type(2)').removeClass('invisible').addClass('visible').queue(function(next) {
-        $(this).stop().animate({'margin-top': '0' - springHeight}, 400);
-        $('#' + projectName).removeClass('hide invisble').addClass('show visible').attr('aria-expanded', 'true');
-        $('.summer .container-fluid .row:nth-of-type(1)').removeClass('visible').addClass('invisible');
-        next();
-      });
-
-      ////////////////////////////////////////////////////////////////
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-=======
->>>>>>> origin/sid
     var windowHeight = $(window).outerHeight(true);
     var headerHeight = $('header').outerHeight(true);
     var projectExcerptHeight = $('.project-content.slick-slide.slick-current.slick-active > .project-excerpt').outerHeight(true);
     var projectContentVisibleAreaHeight = windowHeight - (headerHeight + projectExcerptHeight)
+<<<<<<< HEAD
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -847,6 +753,12 @@ jQuery(document).ready(function ($) {
 >>>>>>> master
 >>>>>>> sid
 >>>>>>> master
+=======
+    var projectFirstFigureWidth = $('.project-content.slick-slide.slick-current.slick-active > ul > li:nth-of-type(1)').width();
+>>>>>>> master
+=======
+    var projectFirstFigureWidth = $('.project-content.slick-slide.slick-current.slick-active > ul > li:nth-of-type(1)').width();
+>>>>>>> Stashed changes
 =======
     var projectFirstFigureWidth = $('.project-content.slick-slide.slick-current.slick-active > ul > li:nth-of-type(1)').width();
 >>>>>>> master
@@ -856,219 +768,19 @@ jQuery(document).ready(function ($) {
         'top': projectExcerptHeight
     });
 <<<<<<< HEAD
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
-
-    ////////////////////////////////////////////////////////////////
-    ////////////////////////////////////////////////////////////////
-
-    $('.project-content .project-excerpt button').click(function(event) {
-
-      event.preventDefault();
-      var projectName = $('.project-content[aria-expanded="true"]').attr('id');
-
-			////////////////////////////////////////////////////////////////
-
-      $('.summer .container-fluid .row:nth-of-type(1)').removeClass('invisible').addClass('visible');
-      $('.summer .container-fluid .row:nth-of-type(2)').animate({'margin-top': projectThumbnailHeight}, 400).queue(function(next) {
-        $('#' + projectName).removeClass('show').addClass('hide').attr('aria-expanded', 'false');
-        $(this).stop().removeClass('visible').addClass('invisible');
-        next();
-      });
-
-      ////////////////////////////////////////////////////////////////
-
-      return false;
-=======
-    $('.project-content.show.visible > .project-control > .wrapper').css({
+<<<<<<< HEAD
 =======
     $('.project-content.slick-slide.slick-current.slick-active > .project-control > .wrapper').css({
->>>>>>> master
-=======
-    $('.project-content.slick-slide.slick-current.slick-active > .project-control > .wrapper').css({
->>>>>>> master
         'width': projectFirstFigureWidth,
->>>>>>> origin/sid
-=======
-
-  function projectControlButtonsPosition() {
-
-    var wrapperWidthTrue = $('.project-content.show.visible > .project-control > .wrapper').outerWidth(true);
-    var wrapperWidth = $('.project-content.show.visible > .project-control > .wrapper').innerWidth();
-    var wrapperMargin = (wrapperWidthTrue - wrapperWidth) / 3;
-
-<<<<<<< HEAD
-    $('.smaller-than-one-thousand-one-hundred-fifteen .project-content.show.visible > .project-control > .wrapper > .left-project-control').css({
-      'width': 'auto',
-      'margin-left': -wrapperMargin
-<<<<<<< HEAD
     });
-    $('.smaller-than-one-thousand-one-hundred-fifteen .project-content.show.visible > .project-control > .wrapper > .right-project-control').css({
-      'width': 'auto',
-      'margin-right': -wrapperMargin
-    });
-    $('.larger-than-one-thousand-one-hundred-fifteen .project-content.show.visible > .project-control > .wrapper > .left-project-control').css({
-      'width': (wrapperWidthTrue - wrapperWidth) / 2,
-      'margin-left': -(wrapperWidthTrue - wrapperWidth) / 2
-    });
-=======
-    });
-    $('.smaller-than-one-thousand-one-hundred-fifteen .project-content.show.visible > .project-control > .wrapper > .right-project-control').css({
-      'width': 'auto',
-      'margin-right': -wrapperMargin
-    });
-    $('.larger-than-one-thousand-one-hundred-fifteen .project-content.show.visible > .project-control > .wrapper > .left-project-control').css({
-      'width': (wrapperWidthTrue - wrapperWidth) / 2,
-      'margin-left': -(wrapperWidthTrue - wrapperWidth) / 2
-    });
->>>>>>> origin/sid
-    $('.larger-than-one-thousand-one-hundred-fifteen .project-content.show.visible > .project-control > .wrapper > .right-project-control').css({
-      'width': (wrapperWidthTrue - wrapperWidth) / 2,
-      'margin-right': -(wrapperWidthTrue - wrapperWidth) / 2
-=======
-
-  function projectControlButtonsPosition() {
-
-    var wrapperWidthTrue = $('.project-content.show.visible > .project-control > .wrapper').outerWidth(true);
-    var wrapperWidth = $('.project-content.show.visible > .project-control > .wrapper').innerWidth();
-    var wrapperMargin = (wrapperWidthTrue - wrapperWidth) / 3;
-
-    $('.smaller-than-one-thousand-one-hundred-fifteen .project-content.show.visible > .project-control > .wrapper > .left-project-control').css({
-      'width': 'auto',
-      'margin-left': -wrapperMargin
-    });
-    $('.smaller-than-one-thousand-one-hundred-fifteen .project-content.show.visible > .project-control > .wrapper > .right-project-control').css({
-      'width': 'auto',
-      'margin-right': -wrapperMargin
-    });
-    $('.larger-than-one-thousand-one-hundred-fifteen .project-content.show.visible > .project-control > .wrapper > .left-project-control').css({
-      'width': (wrapperWidthTrue - wrapperWidth) / 2,
-      'margin-left': -(wrapperWidthTrue - wrapperWidth) / 2
-    });
-    $('.larger-than-one-thousand-one-hundred-fifteen .project-content.show.visible > .project-control > .wrapper > .right-project-control').css({
-      'width': (wrapperWidthTrue - wrapperWidth) / 2,
-      'margin-right': -(wrapperWidthTrue - wrapperWidth) / 2
-    });
-  };
-=======
-<<<<<<< HEAD
-    $('.project-content.slick-slide.slick-current.slick-active > .project-control > .wrapper').css({
-=======
-=======
->>>>>>> sid
-<<<<<<< HEAD
-
-    ////////////////////////////////////////////////////////////////
-    ////////////////////////////////////////////////////////////////
-=======
 >>>>>>> master
 
     ////////////////////////////////////////////////////////////////
     ////////////////////////////////////////////////////////////////
-
-<<<<<<< HEAD
-  function projectControlButtonsClick() {
-
-    $('.project-content[aria-expanded="true"] .right-project-control').on('click', function() {
-
-      var nextProject = $(this).attr('href');
-      var $curr = $('.project-content.show.visible');
-      var $next = $(nextProject);
-
-      $curr.removeClass('show visible').addClass('hide invisible').attr('aria-expanded', 'false');
-      $next.removeClass('hide invisible').addClass('show visible').attr('aria-expanded', 'true');
->>>>>>> origin/sid
-    });
-  };
-
-<<<<<<< HEAD
-=======
-    $('.project-content .project-excerpt button').click(function(event) {
-
-      event.preventDefault();
-      var projectName = $('.project-content[aria-expanded="true"]').attr('id');
-
-			////////////////////////////////////////////////////////////////
-
-      $('.summer .container-fluid .row:nth-of-type(1)').removeClass('invisible').addClass('visible');
-      $('.summer .container-fluid .row:nth-of-type(2)').animate({'margin-top': projectThumbnailHeight}, 400).queue(function(next) {
-        $('#' + projectName).removeClass('show').addClass('hide').attr('aria-expanded', 'false');
-        $(this).stop().removeClass('visible').addClass('invisible');
-        next();
-      });
-
-      ////////////////////////////////////////////////////////////////
-
-      return false;
-=======
-    $('.project-content.show.visible > .project-control > .wrapper').css({
-=======
-    $('.project-content.slick-slide.slick-current.slick-active > .project-control > .wrapper').css({
->>>>>>> master
-        'width': projectFirstFigureWidth,
->>>>>>> origin/sid
-=======
-
-  function projectControlButtonsPosition() {
-
-    var wrapperWidthTrue = $('.project-content.show.visible > .project-control > .wrapper').outerWidth(true);
-    var wrapperWidth = $('.project-content.show.visible > .project-control > .wrapper').innerWidth();
-    var wrapperMargin = (wrapperWidthTrue - wrapperWidth) / 3;
-
-    $('.smaller-than-one-thousand-one-hundred-fifteen .project-content.show.visible > .project-control > .wrapper > .left-project-control').css({
-      'width': 'auto',
-      'margin-left': -wrapperMargin
-<<<<<<< HEAD
-    });
-    $('.smaller-than-one-thousand-one-hundred-fifteen .project-content.show.visible > .project-control > .wrapper > .right-project-control').css({
-      'width': 'auto',
-      'margin-right': -wrapperMargin
-    });
-    $('.larger-than-one-thousand-one-hundred-fifteen .project-content.show.visible > .project-control > .wrapper > .left-project-control').css({
-      'width': (wrapperWidthTrue - wrapperWidth) / 2,
-      'margin-left': -(wrapperWidthTrue - wrapperWidth) / 2
-    });
-=======
-    });
-    $('.smaller-than-one-thousand-one-hundred-fifteen .project-content.show.visible > .project-control > .wrapper > .right-project-control').css({
-      'width': 'auto',
-      'margin-right': -wrapperMargin
-    });
-    $('.larger-than-one-thousand-one-hundred-fifteen .project-content.show.visible > .project-control > .wrapper > .left-project-control').css({
-      'width': (wrapperWidthTrue - wrapperWidth) / 2,
-      'margin-left': -(wrapperWidthTrue - wrapperWidth) / 2
-    });
->>>>>>> origin/sid
-    $('.larger-than-one-thousand-one-hundred-fifteen .project-content.show.visible > .project-control > .wrapper > .right-project-control').css({
-      'width': (wrapperWidthTrue - wrapperWidth) / 2,
-      'margin-right': -(wrapperWidthTrue - wrapperWidth) / 2
-=======
-
-  function projectControlButtonsPosition() {
-
-    var wrapperWidthTrue = $('.project-content.show.visible > .project-control > .wrapper').outerWidth(true);
-    var wrapperWidth = $('.project-content.show.visible > .project-control > .wrapper').innerWidth();
-    var wrapperMargin = (wrapperWidthTrue - wrapperWidth) / 3;
-
-    $('.smaller-than-one-thousand-one-hundred-fifteen .project-content.show.visible > .project-control > .wrapper > .left-project-control').css({
-      'width': 'auto',
-      'margin-left': -wrapperMargin
-    });
-    $('.smaller-than-one-thousand-one-hundred-fifteen .project-content.show.visible > .project-control > .wrapper > .right-project-control').css({
-      'width': 'auto',
-      'margin-right': -wrapperMargin
-    });
-    $('.larger-than-one-thousand-one-hundred-fifteen .project-content.show.visible > .project-control > .wrapper > .left-project-control').css({
-      'width': (wrapperWidthTrue - wrapperWidth) / 2,
-      'margin-left': -(wrapperWidthTrue - wrapperWidth) / 2
-    });
-    $('.larger-than-one-thousand-one-hundred-fifteen .project-content.show.visible > .project-control > .wrapper > .right-project-control').css({
-      'width': (wrapperWidthTrue - wrapperWidth) / 2,
-      'margin-right': -(wrapperWidthTrue - wrapperWidth) / 2
-    });
-  };
->>>>>>> sid
 
     $('.project-content .project-excerpt button').click(function(event) {
 
@@ -1090,13 +802,12 @@ jQuery(document).ready(function ($) {
       return false;
 =======
     $('.project-content.show.visible > .project-control > .wrapper').css({
-<<<<<<< HEAD
->>>>>>> sid
-=======
 =======
     $('.project-content.slick-slide.slick-current.slick-active > .project-control > .wrapper').css({
 >>>>>>> master
->>>>>>> sid
+=======
+    $('.project-content.slick-slide.slick-current.slick-active > .project-control > .wrapper').css({
+>>>>>>> master
         'width': projectFirstFigureWidth,
 >>>>>>> origin/sid
 =======
@@ -1107,6 +818,7 @@ jQuery(document).ready(function ($) {
     var wrapperWidth = $('.project-content.show.visible > .project-control > .wrapper').innerWidth();
     var wrapperMargin = (wrapperWidthTrue - wrapperWidth) / 3;
 
+<<<<<<< HEAD
     $('.smaller-than-one-thousand-one-hundred-fifteen .project-content.show.visible > .project-control > .wrapper > .left-project-control').css({
       'width': 'auto',
       'margin-left': -wrapperMargin
@@ -1137,19 +849,11 @@ jQuery(document).ready(function ($) {
 =======
 
   function projectControlButtonsPosition() {
-<<<<<<< HEAD
 
     var wrapperWidthTrue = $('.project-content.show.visible > .project-control > .wrapper').outerWidth(true);
     var wrapperWidth = $('.project-content.show.visible > .project-control > .wrapper').innerWidth();
     var wrapperMargin = (wrapperWidthTrue - wrapperWidth) / 3;
 
-=======
-
-    var wrapperWidthTrue = $('.project-content.show.visible > .project-control > .wrapper').outerWidth(true);
-    var wrapperWidth = $('.project-content.show.visible > .project-control > .wrapper').innerWidth();
-    var wrapperMargin = (wrapperWidthTrue - wrapperWidth) / 3;
-
->>>>>>> sid
     $('.smaller-than-one-thousand-one-hundred-fifteen .project-content.show.visible > .project-control > .wrapper > .left-project-control').css({
       'width': 'auto',
       'margin-left': -wrapperMargin
@@ -1165,142 +869,28 @@ jQuery(document).ready(function ($) {
     $('.larger-than-one-thousand-one-hundred-fifteen .project-content.show.visible > .project-control > .wrapper > .right-project-control').css({
       'width': (wrapperWidthTrue - wrapperWidth) / 2,
       'margin-right': -(wrapperWidthTrue - wrapperWidth) / 2
-=======
-  function projectControlButtonsClick() {
-
-    $('.project-content[aria-expanded="true"] .right-project-control').on('click', function() {
-
-      var nextProject = $(this).attr('href');
-      var $curr = $('.project-content.show.visible');
-      var $next = $(nextProject);
-
-      $curr.removeClass('show visible').addClass('hide invisible').attr('aria-expanded', 'false');
-      $next.removeClass('hide invisible').addClass('show visible').attr('aria-expanded', 'true');
->>>>>>> origin/sid
     });
   };
-
-<<<<<<< HEAD
-////////////////////////////////////////////////////////////////
->>>>>>> master
-////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////
-
-  function projectControlButtonsClick() {
-
-    $('.project-content[aria-expanded="true"] .right-project-control').on('click', function() {
-
-      var nextProject = $(this).attr('href');
-      var $curr = $('.project-content.show.visible');
-      var $next = $(nextProject);
-
-      $curr.removeClass('show visible').addClass('hide invisible').attr('aria-expanded', 'false');
-      $next.removeClass('hide invisible').addClass('show visible').attr('aria-expanded', 'true');
-    });
-
-  ////////////////////////////////////////////////////////////////
-  ////////////////////////////////////////////////////////////////
-
-    $('.project-content[aria-expanded="true"] .left-project-control').on('click', function() {
-
-<<<<<<< HEAD
-<<<<<<< HEAD
-    ////////////////////////////////////////////////////////////////
-    ////////////////////////////////////////////////////////////////
 =======
-=======
-  ////////////////////////////////////////////////////////////////
-  ////////////////////////////////////////////////////////////////
->>>>>>> origin/sid
-=======
-=======
-  ////////////////////////////////////////////////////////////////
-  ////////////////////////////////////////////////////////////////
->>>>>>> origin/sid
-
-    $('.project-content[aria-expanded="true"] .left-project-control').on('click', function() {
-
->>>>>>> origin/sid
-      var previousProject = $(this).attr('href');
-      var $curr = $('.project-content.show.visible');
-      var $previous = $(previousProject);
-
-      $curr.removeClass('show visible').addClass('hide invisible').attr('aria-expanded', 'false');
-      $previous.removeClass('hide invisible').addClass('show visible').attr('aria-expanded', 'true');
 <<<<<<< HEAD
 =======
->>>>>>> sid
->>>>>>> master
-    });
-  };
-
-////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////
-
-<<<<<<< HEAD
-  function projectControlContainerSize() {
-
-    var windowHeight = $(window).outerHeight(true);
-    var headerHeight = $('header').outerHeight(true);
-    var projectExcerptHeight = $('.project-content.show.visible > .project-excerpt').outerHeight(true);
-    var projectContentVisibleAreaHeight = windowHeight - (headerHeight + projectExcerptHeight)
-    var projectFirstFigureWidth = $('.project-content.show.visible > ul > li:nth-of-type(1)').width();
-
-    $('.project-content.show.visible > .project-control').css({
-        'height': projectContentVisibleAreaHeight,
-        'top': projectExcerptHeight
-    });
-    $('.project-content.show.visible > .project-control > .wrapper').css({
+>>>>>>> Stashed changes
+    $('.project-content.slick-slide.slick-current.slick-active > .project-control > .wrapper').css({
         'width': projectFirstFigureWidth,
-<<<<<<< HEAD
->>>>>>> origin/sid
-=======
->>>>>>> origin/sid
     });
 
 =======
-<<<<<<< HEAD
-  function projectControlButtonsClick() {
+  function sliderInit() {
 
-    $('.project-content[aria-expanded="true"] .right-project-control').on('click', function() {
-
-      var nextProject = $(this).attr('href');
-      var $curr = $('.project-content.show.visible');
-      var $next = $(nextProject);
-
-      $curr.removeClass('show visible').addClass('hide invisible').attr('aria-expanded', 'false');
-      $next.removeClass('hide invisible').addClass('show visible').attr('aria-expanded', 'true');
->>>>>>> origin/sid
+    $('.slider').slick({
+      adaptiveHeight: true,
+      arrows: false,
+      infinite: false,
+      focusOnSelect: false
     });
-=======
-  function projectControlContainerSize() {
-
-    var windowHeight = $(window).outerHeight(true);
-    var headerHeight = $('header').outerHeight(true);
-    var projectExcerptHeight = $('.project-content.show.visible > .project-excerpt').outerHeight(true);
-    var projectContentVisibleAreaHeight = windowHeight - (headerHeight + projectExcerptHeight)
-    var projectFirstFigureWidth = $('.project-content.show.visible > ul > li:nth-of-type(1)').width();
-
-    $('.project-content.show.visible > .project-control').css({
-        'height': projectContentVisibleAreaHeight,
-        'top': projectExcerptHeight
-    });
-    $('.project-content.show.visible > .project-control > .wrapper').css({
-        'width': projectFirstFigureWidth,
-<<<<<<< HEAD
->>>>>>> origin/sid
-=======
->>>>>>> origin/sid
-    });
-
->>>>>>> sid
 >>>>>>> master
   };
 
-<<<<<<< HEAD
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
@@ -1309,6 +899,7 @@ jQuery(document).ready(function ($) {
 <<<<<<< HEAD
   function sliderInit() {
 
+<<<<<<< Updated upstream
 =======
 <<<<<<< HEAD
   function projectControlButtonsClick() {
@@ -1360,16 +951,21 @@ jQuery(document).ready(function ($) {
   function sliderInit() {
 
 >>>>>>> master
+=======
+>>>>>>> Stashed changes
     $('.slider').slick({
       adaptiveHeight: true,
       arrows: false,
       infinite: false,
       focusOnSelect: false
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> sid
 >>>>>>> master
+=======
+>>>>>>> Stashed changes
     });
   };
 
@@ -1377,29 +973,6 @@ jQuery(document).ready(function ($) {
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
-
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-  function projectControlContainerSize() {
-
-    var windowHeight = $(window).outerHeight(true);
-    var headerHeight = $('header').outerHeight(true);
-    var projectExcerptHeight = $('.project-content.show.visible > .project-excerpt').outerHeight(true);
-    var projectContentVisibleAreaHeight = windowHeight - (headerHeight + projectExcerptHeight)
-    var projectFirstFigureWidth = $('.project-content.show.visible > ul > li:nth-of-type(1)').width();
-
-    $('.project-content.show.visible > .project-control').css({
-        'height': projectContentVisibleAreaHeight,
-        'top': projectExcerptHeight
-    });
-    $('.project-content.show.visible > .project-control > .wrapper').css({
-        'width': projectFirstFigureWidth,
-<<<<<<< HEAD
->>>>>>> origin/sid
-=======
->>>>>>> origin/sid
-    });
 
 =======
 >>>>>>> master
@@ -1407,10 +980,13 @@ jQuery(document).ready(function ($) {
     if ('ontouchstart' in window) {
       $('footer').addClass('hide');
     }
+<<<<<<< Updated upstream
 >>>>>>> sid
 =======
     });
 >>>>>>> master
+=======
+>>>>>>> Stashed changes
   };
 
 ////////////////////////////////////////////////////////////////
@@ -1418,6 +994,8 @@ jQuery(document).ready(function ($) {
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
 
+<<<<<<< HEAD
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -1453,6 +1031,8 @@ jQuery(document).ready(function ($) {
 =======
 >>>>>>> sid
 >>>>>>> master
+=======
+>>>>>>> Stashed changes
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
@@ -1460,11 +1040,14 @@ jQuery(document).ready(function ($) {
 
 =======
 >>>>>>> master
+=======
+>>>>>>> master
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
 
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -1473,10 +1056,15 @@ jQuery(document).ready(function ($) {
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> sid
 >>>>>>> master
+=======
+>>>>>>> master
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> master
   addBodyClass();
@@ -1551,23 +1139,18 @@ jQuery(document).ready(function ($) {
     projectControlButtonsClick();
     setWinterHeight();
 <<<<<<< HEAD
+<<<<<<< Updated upstream
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+=======
+>>>>>>> Stashed changes
     vimeoResponsive();
-=======
-=======
->>>>>>> sid
-<<<<<<< HEAD
-=======
->>>>>>> sid
-<<<<<<< HEAD
->>>>>>> master
-    sixHundredFortyListerner();
-    vimeoWhatever();
 
+<<<<<<< Updated upstream
 //    ////////////////////////////////////////////////////////////////
 //
 //    $('.project-content .project-excerpt button').click(function() {
@@ -1633,6 +1216,12 @@ jQuery(document).ready(function ($) {
 =======
 >>>>>>> sid
 >>>>>>> master
+=======
+>>>>>>> Stashed changes
+=======
+    vimeoResponsive();
+
+>>>>>>> master
   };
 
   ////////////////////////////////////////////////////////////////
@@ -1651,6 +1240,8 @@ jQuery(document).ready(function ($) {
 
   $('.language-change a').on('click', function() {
 <<<<<<< HEAD
+<<<<<<< Updated upstream
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 
@@ -1724,18 +1315,29 @@ jQuery(document).ready(function ($) {
 >>>>>>> master
 
 =======
+=======
+>>>>>>> Stashed changes
+    projectContentContainerHeight();
+    projectControlContainerSize();
+    projectControlButtonsPosition();
+    projectControlButtonsClick();
+<<<<<<< Updated upstream
+>>>>>>> master
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> sid
+=======
+>>>>>>> sid
+>>>>>>> master
+=======
     projectContentContainerHeight();
     projectControlContainerSize();
     projectControlButtonsPosition();
     projectControlButtonsClick();
 >>>>>>> master
-<<<<<<< HEAD
 =======
-<<<<<<< HEAD
->>>>>>> sid
-=======
->>>>>>> sid
->>>>>>> master
+>>>>>>> Stashed changes
 =======
     projectContentContainerHeight();
     projectControlContainerSize();
@@ -1781,6 +1383,8 @@ jQuery(document).ready(function ($) {
     $('.slider').slick('slickGoTo', dataSlickIndex);
     $('.slick-slide[data-slick-index="' + dataSlickIndex + '"]').focus();
 <<<<<<< HEAD
+<<<<<<< Updated upstream
+<<<<<<< HEAD
 <<<<<<< HEAD
 
     ////////////////////////////////////////////////////////////////
@@ -1802,6 +1406,16 @@ jQuery(document).ready(function ($) {
 
 >>>>>>> sid
 >>>>>>> master
+=======
+
+    ////////////////////////////////////////////////////////////////
+
+>>>>>>> master
+=======
+
+    ////////////////////////////////////////////////////////////////
+
+>>>>>>> Stashed changes
 =======
 
     ////////////////////////////////////////////////////////////////
@@ -1827,6 +1441,8 @@ jQuery(document).ready(function ($) {
   $('.project-content .project-excerpt button').on('click', function() {
 
 <<<<<<< HEAD
+<<<<<<< Updated upstream
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -1871,42 +1487,10 @@ jQuery(document).ready(function ($) {
 =======
     projectContentContainerHeight();
 >>>>>>> master
-
-    ////////////////////////////////////////////////////////////////
-
-    window.location.hash = ''; // for older browsers, leaves the '#' behind
-    history.pushState('', document.title, window.location.pathname); // nice and clean
-
-    ////////////////////////////////////////////////////////////////
-
->>>>>>> origin/sid
-    var projectThumbnailContainerHeight = $('.summer .container-fluid .row:nth-of-type(1)').outerHeight();
-    $('.summer .container-fluid .row:nth-of-type(1)').removeClass('invisible').addClass('visible');
-    $('.summer .container-fluid .row:nth-of-type(2)').stop().animate({'margin-top': projectThumbnailContainerHeight}, 300).queue(function() {
-      $('.summer .container-fluid .row:nth-of-type(2)').removeClass('visible').addClass('invisible');
-      $('.slider').removeClass('show').addClass('hide');
-      $(this).dequeue();
-    });
-
-    ////////////////////////////////////////////////////////////////
-
-    setTimeout(function() {
-      addBodyClass();
-<<<<<<< HEAD
-    }, 300);
-  });
->>>>>>> sid
-
-<<<<<<< HEAD
-=======
-=======
 =======
     projectContentContainerHeight();
 >>>>>>> master
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
     ////////////////////////////////////////////////////////////////
 
     window.location.hash = ''; // for older browsers, leaves the '#' behind
@@ -1914,8 +1498,40 @@ jQuery(document).ready(function ($) {
 
     ////////////////////////////////////////////////////////////////
 
->>>>>>> sid
 >>>>>>> origin/sid
+    var projectThumbnailContainerHeight = $('.summer .container-fluid .row:nth-of-type(1)').outerHeight();
+    $('.summer .container-fluid .row:nth-of-type(1)').removeClass('invisible').addClass('visible');
+    $('.summer .container-fluid .row:nth-of-type(2)').stop().animate({'margin-top': projectThumbnailContainerHeight}, 300).queue(function() {
+      $('.summer .container-fluid .row:nth-of-type(2)').removeClass('visible').addClass('invisible');
+      $('.slider').removeClass('show').addClass('hide');
+      $(this).dequeue();
+    });
+
+    ////////////////////////////////////////////////////////////////
+
+    setTimeout(function() {
+      addBodyClass();
+<<<<<<< HEAD
+<<<<<<< HEAD
+    }, 300);
+  });
+>>>>>>> sid
+
+<<<<<<< HEAD
+=======
+=======
+=======
+=======
+>>>>>>> Stashed changes
+    projectContentContainerHeight();
+
+    ////////////////////////////////////////////////////////////////
+
+    window.location.hash = ''; // for older browsers, leaves the '#' behind
+    history.pushState('', document.title, window.location.pathname); // nice and clean
+
+    ////////////////////////////////////////////////////////////////
+
     var projectThumbnailContainerHeight = $('.summer .container-fluid .row:nth-of-type(1)').outerHeight();
     $('.summer .container-fluid .row:nth-of-type(1)').removeClass('invisible').addClass('visible');
     $('.summer .container-fluid .row:nth-of-type(2)').stop().animate({'margin-top': projectThumbnailContainerHeight}, 300).queue(function() {
@@ -1930,8 +1546,11 @@ jQuery(document).ready(function ($) {
       addBodyClass();
 =======
 >>>>>>> master
+=======
+>>>>>>> master
     }, 300);
   });
+<<<<<<< Updated upstream
 =======
 >>>>>>> master
 //  $('.project-control a[role="button"]').click(function(e) {
@@ -1960,6 +1579,7 @@ jQuery(document).ready(function ($) {
 ////////////////////////////////////////////////////////////////
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 //  $('.project-thumbnail.sota-la-paraula a').on('click', function() {
 //    $('#sota-la-paraula > ul > li').slice(6,10).wrapAll('<li><ul class="wrapper" />');
 //  });
@@ -1977,13 +1597,20 @@ jQuery(document).ready(function ($) {
 //    $('#sota-la-paraula > ul > li').slice(6,10).wrapAll('<li><ul class="wrapper" />');
 //  });
 >>>>>>> sid
+=======
+>>>>>>> Stashed changes
 
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
 
+<<<<<<< Updated upstream
 <<<<<<< HEAD
+=======
+>>>>>>> master
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> master
 //  $('.project-control a[role="button"]').click(function(e) {
@@ -2020,9 +1647,15 @@ jQuery(document).ready(function ($) {
 ////////////////////////////////////////////////////////////////
 
 <<<<<<< HEAD
+<<<<<<< Updated upstream
+<<<<<<< HEAD
 =======
 >>>>>>> sid
 >>>>>>> master
+=======
+>>>>>>> master
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> master
 //  if ($('.no-svg .navbar-collapse.collapse')) {

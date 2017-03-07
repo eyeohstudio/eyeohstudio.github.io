@@ -2,7 +2,11 @@
 
 boojum: data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJvYmplY3QtMDcxMS0wNzIwIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDMyMCAxMzIiIHhtbDpzcGFjZT0icHJlc2VydmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9InhtbG5zOnhsaW5rIj4KICAgIDxnPgogICAgICAgIDxnPgogICAgICAgICAgICA8cG9seWdvbiBjbGFzcz0iaHVlIiBwb2ludHM9IjIyNiwwIDE4MiwwIDE2MCwyMiAxNjAsNjYiLz4KICAgICAgICAgICAgPHBvbHlnb24gY2xhc3M9Imh1ZSIgcG9pbnRzPSIxNjAsMTEwIDIwNCwxMTAgMjI2LDg4IDIyNiw0NCIvPgogICAgICAgIDwvZz4KICAgICAgICA8Zz4KICAgICAgICAgICAgPHBvbHlnb24gY2xhc3M9ImNvbG9yIiBwb2ludHM9Ijk0LDEzMiAxMzgsMTMyIDIyNiw0NCAyMjYsMCAiLz4KICAgICAgICA8L2c+CiAgICA8L2c+CjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+LmNvbG9yLCAuaHVlIHsgZmlsbDogI2E3ZDRlZTsgfSAqIHsgc3Ryb2tlLXdpZHRoOiAwOyB9IC5odWUgeyBvcGFjaXR5OiAuNDsgfTwvc3R5bGU+PC9zdmc+
 
+<<<<<<< HEAD
 hue: 212, 228, 88
+=======
+hue: 220, 238, 248
+>>>>>>> master
 
 titleCa: Mabrian&#xa;Identitat Corporativa
 
@@ -10,6 +14,7 @@ titleEn: Mabrian&#xa;Corporate Identity
 
 titleEs: Mabrian&#xa;Identidad Corporativa
 
+<<<<<<< HEAD
 excerptCa: Disseny d'indentitat per 'Mabrian', una plataforma de travel intelligence que utilitza tecnologies d'Intel·ligència Artificial i Big Data. La nova marca reflecteix atributs com la capacitat analítica, la profunditat i la precisió.
 
 
@@ -20,6 +25,18 @@ excerptEs: Diseño de indentidad para 'Mabrian', una plataforma de travel intell
 
 
 featured_image: io-ic-00t
+=======
+excerptCa: Diseño de indentidad para Mabrian, una plataforma de travel intelligence que utiliza tecnologías de Inteligencia Artificial y Big Data. La nueva marca refleja atributos como la capacidad analítica, la profundidad y la precisión.
+
+
+excerptEn: Identity design for Mabrian, a travel intelligence platform using Artificial Intelligence and Big Data technologies. The new brand reflects attributes such as analytical ability, depth and precision.
+
+
+excerptEs: Diseño de indentidad para Mabrian, una plataforma de travel intelligence que utiliza tecnologías de Inteligencia Artificial y Big Data. La nueva marca refleja atributos como la capacidad analítica, la profundidad y la precisión.
+
+
+featured_image: ma-ic-00t
+>>>>>>> master
 
 slug: mabrian
 
