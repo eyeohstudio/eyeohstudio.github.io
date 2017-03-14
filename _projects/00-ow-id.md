@@ -61,10 +61,10 @@ slug: owel
 "></li>
 
 <li><img data-src-base="{{ site.url}}/images/projects/" data-src="
-<320:ow-id-04_320.jpg,
-<480:ow-id-04_480.jpg,
-<640:ow-id-04_640.jpg,
-<800:ow-id-04_800.jpg,
-<1024:ow-id-04_1024.jpg,
->1024:ow-id-04_1120.jpg
+<320:ow-id-05_320.jpg,
+<480:ow-id-05_480.jpg,
+<640:ow-id-05_640.jpg,
+<800:ow-id-05_800.jpg,
+<1024:ow-id-05_1024.jpg,
+>1024:ow-id-05_1120.jpg
 "></li>
