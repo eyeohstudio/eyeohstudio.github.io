@@ -21,7 +21,7 @@ excerptEs: Diseño de identidad y desarrollo del website para 'Lupercales. Light
 
 featured_image: lu-w-00t
 
-slug: experiene_menorca
+slug: lupercales
 
 ---
 
