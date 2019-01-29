@@ -30,7 +30,7 @@ slug: neos-product-line
 <640:neos-ip-01_640.jpg,
 <800:neos-ip-01_800.jpg,
 <1024:neos-ip-01_1024.jpg,
->1024:ow-id-01_1120.jpg
+>1024:neos-ip-01_1120.jpg
 "></li>
 
 <li><img data-src-base="{{ site.url}}/images/projects/" data-src="
@@ -39,7 +39,7 @@ slug: neos-product-line
 <640:neos-ip-02_640.jpg,
 <800:neos-ip-02_800.jpg,
 <1024:neos-ip-02_1024.jpg,
->1024:ow-id-02_1120.jpg
+>1024:neos-ip-02_1120.jpg
 "></li>
 
 <li><img data-src-base="{{ site.url}}/images/projects/" data-src="
@@ -48,7 +48,7 @@ slug: neos-product-line
 <640:neos-ip-03_640.jpg,
 <800:neos-ip-03_800.jpg,
 <1024:neos-ip-03_1024.jpg,
->1024:ow-id-03_1120.jpg
+>1024:neos-ip-03_1120.jpg
 "></li>
 
 <li><img data-src-base="{{ site.url}}/images/projects/" data-src="
@@ -57,5 +57,5 @@ slug: neos-product-line
 <640:neos-ip-04_640.jpg,
 <800:neos-ip-04_800.jpg,
 <1024:neos-ip-04_1024.jpg,
->1024:ow-id-04_1120.jpg
+>1024:neos-ip-04_1120.jpg
 "></li>
