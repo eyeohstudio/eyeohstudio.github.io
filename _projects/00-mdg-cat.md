@@ -4,9 +4,9 @@ boojum: data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJvYmplY3QtMDMxMS
 
 hue: 121, 147, 165
 
-titleCa: La llum que et va tocar &#xa; Website
-titleEn: La llum que et va tocar &#xa; Website
-titleEs: La llum que et va tocar &#xa; Website
+titleCa: La llum &#xa; Website
+titleEn: La llum &#xa; Website
+titleEs: La llum &#xa; Website
 
 excerptCa: Publicació dissenyada per a l'exposició “La llum que et va tocar”. Aquesta peça recull les reflexions d'Eva Vàzquez a partir de les sèries de Lluís Estopiñan, dedicades a fer aflorar en imatges allò que es resisteix a ser mostrat: el pas del temps.
 
