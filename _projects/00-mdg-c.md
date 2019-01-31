@@ -4,15 +4,15 @@ boojum: data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJvYmplY3QtMTIxMS
 
 hue: 255, 211, 120
 
-titleCa: Neos Surgery &#xa; Website
-titleEn: Neos Surgery &#xa; Website
-titleEs: Neos Surgery &#xa; Website
+titleCa: La llum que et va tocar &#xa; Website
+titleEn: La llum que et va tocar &#xa; Website
+titleEs: La llum que et va tocar &#xa; Website
 
-excerptCa: Disseny i desenvolupament de website corporatiu de Neos Surgery.
+excerptCa: Publicació dissenyada per a l'exposició “La llum que et va tocar”. [Museu de Granollers](http://www.museugranollers.org/). Aquesta peça recull les reflexions d'Eva Vàzquez a partir de les sèries de Lluís Estopiñan, dedicades a fer aflorar en imatges allò que es resisteix a ser mostrat: el pas del temps.
 
-excerptEn: Design and development of the corporate website of Neos Surgery.
+excerptEn: Publication design for “La llum que et va tocar”. [Museu de Granollers](http://www.museugranollers.org/). This piece collects the reflections of Eva Vázquez from the series by Lluís Estopiñan, dedicated to bringing out in images that which resists being shown: the passage of time.
 
-excerptEs: Diseño y desarrolllo de website corporativo de Neos Surgery.
+excerptEs: Publicación diseñada para la exposición “La llum que et va tocar”. [Museu de Granollers](http://www.museugranollers.org/). Esta pieza recoge las reflexiones de Eva Vázquez a partir de las series de Lluís Estopiñan, dedicadas a hacer aflorar en imágenes aquello que se resiste a ser mostrado: el paso del tiempo.
 
 
 
