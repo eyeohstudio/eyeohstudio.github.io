@@ -19,7 +19,7 @@ excerptEs: Publicación diseñada para la exposición “La llum que et va tocar
 
 featured_image: mdg2-00t
 
-slug: La-llum-que-et-va-tocar
+slug: la-llum-que-et-va-tocar
 
 ---
 
