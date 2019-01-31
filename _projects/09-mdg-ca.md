@@ -4,23 +4,21 @@ boojum: data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJvYmplY3QtMDQxMS
 
 hue: 121, 147, 165
 
-titleCa: La llum que et va tocar.&#xa; Catàleg / Exposició
+titleCa: Sota la paraula.&#xa;Exposició
 
-titleEn: La llum que et va tocar.&#xa; Catalog / Exhibition
+titleEn: Sota la paraula.&#xa;Exhibition
 
-titleEs: La llum que et va tocar.&#xa; Catálogo / Exposición
+titleEs: Sota la paraula.&#xa;Exposición
 
-excerptCa: Publicació dissenyada per a l'exposició “La llum que et va tocar”. [Museu de Granollers](http://www.museugranollers.org/). Aquesta peça recull les reflexions d'Eva Vàzquez a partir de les sèries de Lluís Estopiñan, dedicades a fer aflorar en imatges allò que es resisteix a ser mostrat: el pas del temps.
+excerptCa: Publicació dissenyada per a l'exposició "Sota la Paraula", [Museu de Granollers](http://www.museugranollers.org/). Aquesta peça recull les reflexions de Jordi Marrugat a partir de les obres del pintor Pere Salinas suscitant un debat sobre l'art i la condició humana.
 
-excerptEn: Publication design for “La llum que et va tocar”. [Museu de Granollers](http://www.museugranollers.org/). This piece collects the reflections of Eva Vázquez from the series by Lluís Estopiñan, dedicated to bringing out in images that which resists being shown: the passage of time.
+excerptEn: Publication design for "Sota la Paraula", [Museu de Granollers](http://www.museugranollers.org/). This piece contains the observations of Jordi Marrugat on the works of the painter Pere Salinas and raises a global discussion about art and the human condition.
 
-
-excerptEs: Publicación diseñada para la exposición “La llum que et va tocar”. [Museu de Granollers](http://www.museugranollers.org/). Esta pieza recoge las reflexiones de Eva Vázquez a partir de las series de Lluís Estopiñan, dedicadas a hacer aflorar en imágenes aquello que se resiste a ser mostrado: el paso del tiempo.
-
+excerptEs: Publicación diseñada para la exposición "Sota la Paraula", [Museu de Granollers](http://www.museugranollers.org/). Esta pieza recoge las reflexiones de Jordi Marrugat a partir de las obras del pintor Pere Salinas suscitando un debate sobre el arte y la condición humana.
 
 featured_image: mdg-00t
 
-slug: la-llum-que-et-va-tocar
+slug: sota-la-paraula
 
 ---
 
