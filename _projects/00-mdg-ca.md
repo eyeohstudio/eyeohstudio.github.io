@@ -4,11 +4,11 @@ boojum: data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJvYmplY3QtMDQxMS
 
 hue: 121, 147, 165
 
-titleCa: La llum que et va tocar.&#xa; Catàleg / Exposició
+titleCa: La llum que et va tocar.&#xa; Catàleg
 
-titleEn: La llum que et va tocar.&#xa; Catalog / Exhibition
+titleEn: La llum que et va tocar.&#xa; Catalog
 
-titleEs: La llum que et va tocar.&#xa; Catálogo / Exposición
+titleEs: La llum que et va tocar.&#xa; Catálogo
 
 excerptCa: Publicació dissenyada per a l'exposició "La llum que et va tocar". [Museu de Granollers](http://www.museugranollers.org/). Aquesta peça recull les reflexions d'Eva Vàzquez a partir de les sèries de Lluís Estopiñan, dedicades a fer aflorar en imatges allò que es resisteix a ser mostrat: el pas del temps.
 
@@ -20,7 +20,8 @@ excerptEs: Publicación diseñada para la exposición "La llum que et va tocar".
 
 featured_image: mdg-ca-00t
 
-slug: la-llum-tocar
+slug: cataleg
+
 ---
 
 <li><img data-src-base="{{ site.url}}/images/projects/" data-src="
