@@ -17,7 +17,8 @@ excerptEn: Publication design for “La llum que et va tocar”. [Museu de Grano
 
 excerptEs: Publicación diseñada para la exposición “La llum que et va tocar”. [Museu de Granollers](http://www.museugranollers.org/). Esta pieza recoge las reflexiones de Eva Vázquez a partir de las series de Lluís Estopiñan, dedicadas a hacer aflorar en imágenes aquello que se resiste a ser mostrado: el paso del tiempo.
 
-featured_image: mdg-ca-00t
+
+featured_image: mdg-00t
 
 slug: la-llum-que-et-va-tocar
 
