@@ -1,14 +1,14 @@
 ---
 
-boojum: data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJvYmplY3QtMDMxMS0wMzIwIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDMyMCAxMzIiIHhtbDpzcGFjZT0icHJlc2VydmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9InhtbG5zOnhsaW5rIj4KICAgIDxnPgogICAgICAgIDxnPgogICAgICAgICAgICA8cG9seWdvbiBjbGFzcz0iaHVlIiBwb2ludHM9IjEzOCw4OCAyMjYsODggMjI2LDAiLz4KICAgICAgICA8L2c+CiAgICAgICAgPGc+CiAgICAgICAgICAgIDxwb2x5Z29uIGNsYXNzPSJjb2xvciIgcG9pbnRzPSIxODIsMCA5NCw4OCA5NCwxMzIgMjI2LDAgIi8+CiAgICAgICAgPC9nPgogICAgPC9nPgo8c3R5bGUgdHlwZT0idGV4dC9jc3MiPi5jb2xvciwgLmh1ZSB7IGZpbGw6ICM3OTkzYTU7IH0gKiB7IHN0cm9rZS13aWR0aDogMDsgfSAuaHVlIHsgb3BhY2l0eTogLjQ7IH08L3N0eWxlPjwvc3ZnPg==
+boojum: data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJvYmplY3QtMDQxMS0wNDIwIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDMyMCAxMzIiIHhtbDpzcGFjZT0icHJlc2VydmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9InhtbG5zOnhsaW5rIj4KICAgIDxnPgogICAgICAgIDxnPgogICAgICAgICAgICA8cG9seWdvbiBjbGFzcz0iaHVlIiBwb2ludHM9Ijk0LDEzMiAxMzgsMTMyIDIwNCw2NiAyMDQsMjIiLz4KICAgICAgICA8L2c+CiAgICAgICAgPGc+CiAgICAgICAgICAgIDxwb2x5Z29uIGNsYXNzPSJjb2xvciIgcG9pbnRzPSIxODIsMCA5NCw4OCA5NCwxMzIgMjI2LDAgIi8+CiAgICAgICAgPC9nPgogICAgPC9nPgo8c3R5bGUgdHlwZT0idGV4dC9jc3MiPi5jb2xvciwgLmh1ZSB7IGZpbGw6ICM3OTkzYTU7IH0gKiB7IHN0cm9rZS13aWR0aDogMDsgfSAuaHVlIHsgb3BhY2l0eTogLjQ7IH08L3N0eWxlPjwvc3ZnPg==
 
 hue: 121, 147, 165
 
-titleCa: La llum que et va tocar.&#xa;Catàleg / Exposició
+titleCa: La llum que et va tocar.&#xa; Catàleg / Exposició
 
-titleEn: La llum que et va tocar.&#xa;Catalog / Exhibition
+titleEn: La llum que et va tocar.&#xa; Catalog / Exhibition
 
-titleEs: La llum que et va tocar.&#xa;Catálogo / Exposición
+titleEs: La llum que et va tocar.&#xa; Catálogo / Exposición
 
 excerptCa: Publicació dissenyada per a l'exposició “La llum que et va tocar”. [Museu de Granollers](http://www.museugranollers.org/). Aquesta peça recull les reflexions d'Eva Vàzquez a partir de les sèries de Lluís Estopiñan, dedicades a fer aflorar en imatges allò que es resisteix a ser mostrat: el pas del temps.
 
