@@ -19,9 +19,9 @@ excerptEs: Diseño y desarrolllo de website corporativo de Neos Surgery.
 
 
 
-featured_image: mdg-ca-00t
+featured_image: neos-w-00t
 
-slug: cataleg
+slug: neos-website
 
 ---
 
