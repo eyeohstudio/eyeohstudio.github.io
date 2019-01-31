@@ -19,9 +19,9 @@ excerptEs: Publicación diseñada para la exposición “La llum que et va tocar
 
 
 
-featured_image: neos-w-00t
+featured_image: mdg-ca-00t
 
-slug: neos-website
+slug: cataleg
 
 ---
 
