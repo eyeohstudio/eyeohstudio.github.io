@@ -8,18 +8,15 @@ titleCa: La llum &#xa; Website
 titleEn: La llum &#xa; Website
 titleEs: La llum &#xa; Website
 
-excerptCa: ublicació dissenyada per a l'exposició “La llum que et va tocar”. Aquesta peça recull les reflexions d'Eva Vàzquez a partir de les sèries de Lluís Estopiñan, dedicades a fer aflorar en imatges allò que es resisteix a ser mostrat: el pas del temps.
+excerptCa: Col·lecció de 3 pòsters que juguen amb la imatge gràfica d'I/O. Cada pòster reflecteix de forma modular conceptes com el volum, l'estructura i el color.
 
-excerptEn: Publication design for “La llum que et va tocar”. This piece collects the reflections of Eva Vázquez from the series by Lluís Estopiñan, dedicated to bringing out in images that which resists being shown: the passage of time.
+excerptEn: 3 posters set playing with I/O graphic design identity. Each poster represents modularly concepts like volume, structure and color.
 
-excerptEs: Publicación diseñada para la exposición “La llum que et va tocar”. Esta pieza recoge las reflexiones de Eva Vázquez a partir de las series de Lluís Estopiñan, dedicadas a hacer aflorar en imágenes aquello que se resiste a ser mostrado: el paso del tiempo.
+excerptEs: Colección de 3 pósters que juegan con la imagen gráfica de I/O. Cada póster refleja de forma modular conceptos como el volumen, la estructura y el color.
 
+featured_image: io-p-00t
 
-
-
-featured_image: mdg-ca-00t
-
-slug: cataleg
+slug: our-posters
 
 ---
 
