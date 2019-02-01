@@ -6,7 +6,7 @@ hue: 121, 147, 165
 
 titleCa: La llum que et va tocar&#xa;Catàleg / Exposició
 
-titleEn: La llum que et va tocar#xa;Catalog / Exhibition 
+titleEn: La llum que et va tocar#xa;Catalog / Exhibition
 
 titleEs: La llum que et va tocar#xa;Catálogo / Exposición
 
@@ -16,7 +16,7 @@ excerptEn: Publication design for “La llum que et va tocar”. Museu de Granol
 
 excerptEs: Publicación diseñada para la exposición “La llum que et va tocar”. Museu de Granollers. Esta pieza recoge las reflexiones de Eva Vázquez a partir de las series de Lluís Estopiñan, dedicadas a hacer aflorar en imágenes aquello que se resiste a ser mostrado: el paso del tiempo.
 
-featured_image: io-p-00t
+featured_image: mdg-ce-00t
 
 slug: cataleg
 
