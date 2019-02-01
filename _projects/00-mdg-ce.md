@@ -1,24 +1,24 @@
 ---
 
-boojum: data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJvYmplY3QtMDUxMS0wNTIwIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDMyMCAxMzIiIHhtbDpzcGFjZT0icHJlc2VydmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9InhtbG5zOnhsaW5rIj4gCiAgICA8Zz4KICAgICAgICA8Zz4KICAgICAgICAgICAgPHBvbHlnb24gY2xhc3M9ImNvbG9yIiBwb2ludHM9IjE4MiwwIDk0LDg4IDk0LDEzMiAyMjYsMCIvPgogICAgICAgIDwvZz4KICAgICAgICA8Zz4KICAgICAgICAgICAgPHBvbHlnb24gY2xhc3M9Imh1ZSIgcG9pbnRzPSIxMzgsNDQgMTM4LDAgOTQsNDQgOTQsODgiLz4KICAgICAgICAgICAgPHBvbHlnb24gY2xhc3M9Imh1ZSIgcG9pbnRzPSI5NCwxMzIgMTM4LDEzMiAxNjAsMTEwIDE2MCw2NiIvPgogICAgICAgIDwvZz4KICAgIDwvZz4KPHN0eWxlIHR5cGU9InRleHQvY3NzIj4uY29sb3IsIC5odWUgeyBmaWxsOiAjZDRlNDU4OyB9ICogeyBzdHJva2Utd2lkdGg6IDA7IH0gLmh1ZSB7IG9wYWNpdHk6IC40OyB9PC9zdHlsZT48L3N2Zz4=
+boojum: data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJvYmplY3QtMDQxMS0wNDIwIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDMyMCAxMzIiIHhtbDpzcGFjZT0icHJlc2VydmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9InhtbG5zOnhsaW5rIj4KICAgIDxnPgogICAgICAgIDxnPgogICAgICAgICAgICA8cG9seWdvbiBjbGFzcz0iaHVlIiBwb2ludHM9Ijk0LDEzMiAxMzgsMTMyIDIwNCw2NiAyMDQsMjIiLz4KICAgICAgICA8L2c+CiAgICAgICAgPGc+CiAgICAgICAgICAgIDxwb2x5Z29uIGNsYXNzPSJjb2xvciIgcG9pbnRzPSIxODIsMCA5NCw4OCA5NCwxMzIgMjI2LDAgIi8+CiAgICAgICAgPC9nPgogICAgPC9nPgo8c3R5bGUgdHlwZT0idGV4dC9jc3MiPi5jb2xvciwgLmh1ZSB7IGZpbGw6ICM3OTkzYTU7IH0gKiB7IHN0cm9rZS13aWR0aDogMDsgfSAuaHVlIHsgb3BhY2l0eTogLjQ7IH08L3N0eWxlPjwvc3ZnPg==
 
-hue: 212, 228, 88
+hue: 121, 147, 165
 
-titleCa: I/O&#xa;Pòsters
+titleCa: La llum que et va tocar&#xa;Catàleg / Exposició
 
-titleEn: I/O&#xa;Posters
+titleEn: La llum que et va tocar#xa;Catalog / Exhibition 
 
-titleEs: I/O&#xa;Pósters
+titleEs: La llum que et va tocar#xa;Catálogo / Exposición
 
-excerptCa: Col·lecció de 3 pòsters que juguen amb la imatge gràfica d'I/O. Cada pòster reflecteix de forma modular conceptes com el volum, l'estructura i el color.
+excerptCa: Publicació dissenyada per a l'exposició “La llum que et va tocar”. Museu de Granollers. Aquesta peça recull les reflexions d'Eva Vàzquez a partir de les sèries de Lluís Estopiñan, dedicades a fer aflorar en imatges allò que es resisteix a ser mostrat: el pas del temps.
 
-excerptEn: 3 posters set playing with I/O graphic design identity. Each poster represents modularly concepts like volume, structure and color.
+excerptEn: Publication design for “La llum que et va tocar”. Museu de Granollers. This piece collects the reflections of Eva Vázquez from the series by Lluís Estopiñan, dedicated to bringing out in images that which resists being shown: the passage of time.
 
-excerptEs: Colección de 3 pósters que juegan con la imagen gráfica de I/O. Cada póster refleja de forma modular conceptos como el volumen, la estructura y el color.
+excerptEs: Publicación diseñada para la exposición “La llum que et va tocar”. Museu de Granollers. Esta pieza recoge las reflexiones de Eva Vázquez a partir de las series de Lluís Estopiñan, dedicadas a hacer aflorar en imágenes aquello que se resiste a ser mostrado: el paso del tiempo.
 
 featured_image: io-p-00t
 
-slug: our-posters
+slug: cataleg
 
 ---
 
