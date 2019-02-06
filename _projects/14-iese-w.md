@@ -4,11 +4,11 @@ boojum: data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJvYmplY3QtMDIyMS
 
 hue: 202, 190, 150
 
-titleCa: IESE Business School&#xa;Online Cases App
+titleCa: IESE Business School.&#xa;Online Cases App
 
-titleEn: IESE Business School&#xa;Online Cases App
+titleEn: IESE Business School.&#xa;Online Cases App
 
-titleEs: IESE Business School&#xa;Online Cases App
+titleEs: IESE Business School.&#xa;Online Cases App
 
 excerptCa: Web App de gestió de publicacions per a la Unitat de Materials Didàctics d'IESE construïda a partir de WordPress així com d'altres tecnologies de codi obert.
 

@@ -4,11 +4,11 @@ boojum: data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJvYmplY3QtMDcxMS
 
 hue: 167, 212, 238
 
-titleCa: Mabrian&#xa;Identitat Corporativa
+titleCa: Mabrian. &#xa;Identitat Corporativa
 
-titleEn: Mabrian&#xa;Corporate Identity
+titleEn: Mabrian. &#xa;Corporate Identity
 
-titleEs: Mabrian&#xa;Identidad Corporativa
+titleEs: Mabrian. &#xa;Identidad Corporativa
 
 excerptCa: Disseny d'indentitat per Mabrian, una plataforma de travel intelligence que utilitza tecnologies d'Intel·ligència Artificial i Big Data. La nova marca reflecteix atributs com la capacitat analítica, la profunditat i la precisió.
 

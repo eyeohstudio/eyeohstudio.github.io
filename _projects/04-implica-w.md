@@ -4,9 +4,9 @@ boojum: data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJvYmplY3QtMDEwMS
 
 hue: 207, 143, 164
 
-titleCa: Implica &#xa; Website
-titleEn: Implica &#xa; Website
-titleEs: Implica &#xa; Website
+titleCa: Implica. &#xa; Website
+titleEn: Implica. &#xa; Website
+titleEs: Implica. &#xa; Website
 
 excerptCa: Disseny i desenvolupament de website per Implica, empresa de Gestió immobiliària.
 

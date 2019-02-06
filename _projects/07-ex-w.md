@@ -4,10 +4,10 @@ boojum: data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJvYmplY3QtMTAxMS
 
 hue: 103, 165, 191
 
-titleCa: Experience Menorca&#xa;Identitat/Website
-titleEn: Experience Menorca&#xa;Identity//Website
+titleCa: Experience Menorca.&#xa;Identitat/Website
+titleEn: Experience Menorca.&#xa;Identity//Website
 
-titleEs: Experience Menorca&#xa;Identidad/Website
+titleEs: Experience Menorca.&#xa;Identidad/Website
 
 excerptCa: Disseny d'identitat i desenvolupament del website per ‘Experience Menorca’. Escola d'Espanyol que ofereix cursos per a estrangers a Menorca, practicant l'idioma après combinant la cultura amb la diversió.
 

@@ -4,9 +4,9 @@ boojum: data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJvYmplY3QtMTIxMS
 
 hue: 255, 211, 120
 
-titleCa: Neos Surgery &#xa; Website
-titleEn: Neos Surgery &#xa; Website
-titleEs: Neos Surgery &#xa; Website
+titleCa: Neos Surgery. &#xa; Website
+titleEn: Neos Surgery. &#xa; Website
+titleEs: Neos Surgery. &#xa; Website
 
 excerptCa: Disseny i desenvolupament de website corporatiu de Neos Surgery.
 

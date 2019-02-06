@@ -4,9 +4,9 @@ boojum: data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJvYmplY3QtMDMxMS
 
 hue: 255, 211, 120
 
-titleCa: Neos Surgery &#xa; Identitat / Producte
-titleEn: Neos Surgery &#xa; Identity / Product
-titleEs: Neos Surgery &#xa; Identidad / Producto
+titleCa: Neos Surgery. &#xa; Identitat / Producte
+titleEn: Neos Surgery. &#xa; Identity / Product
+titleEs: Neos Surgery. &#xa; Identidad / Producto
 
 excerptCa: Disseny d’identitat i desenvolupament de línia de producte per Neos Surgery. Empresa tecnològica innovadora, dedicada al desenvolupament, fabricació i comercialització de dispositius mèdics en el camp quirúrgic.
 

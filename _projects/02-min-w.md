@@ -4,9 +4,9 @@ boojum: data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJvYmplY3QtMDIxMS
 
 hue: 255, 156, 118
 
-titleCa: Minúcia Teatre  &#xa; Website
-titleEn: Minúcia Teatre  &#xa; Website
-titleEs: Minúcia Teatre  &#xa; Website
+titleCa: Minúcia Teatre.  &#xa; Website
+titleEn: Minúcia Teatre. &#xa; Website
+titleEs: Minúcia Teatre.  &#xa; Website
 
 excerptCa: Disseny i desenvolupament de website corporatiu de la Companyia  Minúcia Teatre.
 

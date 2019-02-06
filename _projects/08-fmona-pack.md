@@ -4,11 +4,11 @@ boojum: data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJvYmplY3QtMTIxMS
 
 hue: 183, 227, 148
 
-titleCa: Primats&#xa;Packaging
+titleCa: Primats. &#xa;Packaging
 
-titleEn: Primats&#xa;Packaging
+titleEn: Primats. &#xa;Packaging
 
-titleEs: Primats&#xa;Packaging
+titleEs: Primats. &#xa;Packaging
 
 excerptCa: Primats, el primer vi 100% solidari de la [Fundació Mona](http://fundacionmona.org/). L'envoltori, inspirat gràficament en les fulles dels plataners i formalment plantejat com a peça de suport descriptiu, apropa la tasca de la fundació al consumidor.
 

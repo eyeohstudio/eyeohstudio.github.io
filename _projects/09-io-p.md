@@ -4,11 +4,11 @@ boojum: data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJvYmplY3QtMDUxMS
 
 hue: 212, 228, 88
 
-titleCa: I/O&#xa;Pòsters
+titleCa: I/O. &#xa;Pòsters
 
-titleEn: I/O&#xa;Posters
+titleEn: I/O. &#xa;Posters
 
-titleEs: I/O&#xa;Pósters
+titleEs: I/O. &#xa;Pósters
 
 excerptCa: Col·lecció de 3 pòsters que juguen amb la imatge gràfica d'I/O. Cada pòster reflecteix de forma modular conceptes com el volum, l'estructura i el color.
 
