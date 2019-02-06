@@ -8,12 +8,12 @@ titleCa: La llum. &#xa; Catàleg / Exposició
 titleEn: La llum. &#xa; Catalog / Exhibition
 titleEs: La llum. &#xa; Catálogo / Exposición
 
-excerptCa: Publicació dissenyada per a l'exposició "La llum que et va tocar", [Museu de Granollers](http://www.museugranollers.org/). Aquesta peça recull les reflexions d'Eva Vàzquez a partir de les sèries de Lluís Estopiñan, dedicades a fer aflorar en imatges allò que es resisteix a ser mostrat, el pas del temps.
+excerptCa: Publicació dissenyada per a l'exposició "La llum que et va tocar", [Museu de Granollers](http://www.museugranollers.org/). Aquesta peça recull les reflexions d'Eva Vàzquez a partir de les sèries de Lluís Estopinan, dedicades a fer aflorar en imatges allò que es resisteix a ser mostrat, el pas del temps.
 
 
-excerptEn: Publication design for "La llum que et va tocar", [Museu de Granollers](http://www.museugranollers.org/). This piece collects the reflections of Eva Vázquez from the series by Lluís Estopiñan, dedicated to bringing out in images that which resists being shown, the passage of time.
+excerptEn: Publication design for "La llum que et va tocar", [Museu de Granollers](http://www.museugranollers.org/). This piece collects the reflections of Eva Vázquez from the series by Lluís Estopinan, dedicated to bringing out in images that which resists being shown, the passage of time.
 
-excerptEs: Publicación diseñada para la exposición "La llum que et va tocar", [Museu de Granollers](http://www.museugranollers.org/). Esta pieza recoge las reflexiones de Eva Vázquez a partir de las series de Lluís Estopiñan, dedicadas a hacer aflorar en imágenes aquello que se resiste a ser mostrado, el paso del tiempo.
+excerptEs: Publicación diseñada para la exposición "La llum que et va tocar", [Museu de Granollers](http://www.museugranollers.org/). Esta pieza recoge las reflexiones de Eva Vázquez a partir de las series de Lluís Estopinan, dedicadas a hacer aflorar en imágenes aquello que se resiste a ser mostrado, el paso del tiempo.
 
 
 
