@@ -19,10 +19,9 @@ excerptEs: Publicación diseñada para la exposición 'La llum que et va tocar'.
 
 
 
-featured_image: mdg-ca2-00t
+featured_image: mdg-00t
 
-slug: cataleg
-
+slug: sota-la-paraula
 ---
 
 <li><img data-src-base="{{ site.url}}/images/projects/" data-src="

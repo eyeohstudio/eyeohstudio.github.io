@@ -4,9 +4,9 @@ boojum: data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJvYmplY3QtMTIxMS
 
 hue: 202, 190, 150
 
-titleCa: Owel &#xa; Identitat
-titleEn: Owel &#xa; Identity
-titleEs: Owel &#xa; Identidad
+titleCa: Owel. &#xa; Identitat
+titleEn: Owel. &#xa; Identity
+titleEs: Owel. &#xa; Identidad
 
 excerptCa: Naming i identitat de marca per a una nova línia de sabates per a noia. El perfil de la marca es caracteritza per ser un producte jove, flexible i femení.
 

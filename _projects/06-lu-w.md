@@ -4,9 +4,9 @@ boojum: data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJvYmplY3QtMDExMS
 
 hue: 107, 217, 222
 
-titleCa: Lupercales.Lighting tactics&#xa;Website
-titleEn: Lupercales.Lighting tactics&#xa;Website
-titleEs: Lupercales.Lighting tactics&#xa;Website
+titleCa: Lupercales.Lighting tactics.&#xa;Website
+titleEn: Lupercales.Lighting tactics.&#xa;Website
+titleEs: Lupercales.Lighting tactics.&#xa;Website
 
 excerptCa: Disseny d'identitat i desenvolupament del website per 'Lupercales. Lighting tactics'. Col·lectiu que empra la il·luminació arquitectònica com una eina de qüestionament dels processos de producció i planificació urbana.
 
