@@ -4,11 +4,11 @@ boojum: data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJvYmplY3QtMDQxMS
 
 hue: 255, 232, 117
 
-titleCa: Pips Abrera. &#xa;Website / Spot
+titleCa: Pips Abrera. &#xa; Website / Spot
 
-titleEn: Pips Abrera. &#xa;Website / Spot
+titleEn: Pips Abrera. &#xa; Website / Spot
 
-titleEs: Pips Abrera. &#xa;Website / Spot
+titleEs: Pips Abrera. &#xa; Website / Spot
 
 excerptCa: Promoció del [Parc Industrial de Proveïdors de Seat](pipsabrera.com) (PIPS Abrera), mitjançant el disseny, desenvolupament web i Spot comercial.
 
