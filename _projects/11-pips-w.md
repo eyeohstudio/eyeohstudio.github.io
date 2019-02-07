@@ -8,8 +8,7 @@ titleCa: Pips Abrera. &#xa;Website / Spot
 
 titleEn: Pips Abrera. &#xa;Website / Spot
 
-titleEs: Pips Abrera.
-&#xa;Website / Spot
+titleEs: Pips Abrera. &#xa;Website / Spot
 
 excerptCa: Promoció del [Parc Industrial de Proveïdors de Seat](pipsabrera.com) (PIPS Abrera), mitjançant el disseny, desenvolupament web i Spot comercial.
 
