@@ -8,11 +8,11 @@ titleCa: Implica. &#xa; Website
 titleEn: Implica. &#xa; Website
 titleEs: Implica. &#xa; Website
 
-excerptCa: Disseny i desenvolupament de website per Implica, empresa de Gestió immobiliària.
+excerptCa: Disseny i desenvolupament de website per a Implica, empresa de Gestió immobiliària.
 
-excerptEn: Design and development of website for ‘Implica’, company of real-estate Management.
+excerptEn: Design and development of website for ‘Implica’, real estate management company.
 
-excerptEs: Diseño y desarrollo de website por Implica, empresa de Gestión inmobiliaria.
+excerptEs: Diseño y desarrollo de website para Implica, empresa de Gestión inmobiliaria.
 
 
 

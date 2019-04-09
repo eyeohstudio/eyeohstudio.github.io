@@ -25,7 +25,7 @@ excerptEs: Revisió de la marca de sabates Redlove. Creació d’identitat visua
 
 featured_image: red-id-00t
 
-slug: webteca-inclusiva
+slug: redlove
 ---
 
 <li><img data-src-base="{{ site.url}}/images/projects/" data-src="
