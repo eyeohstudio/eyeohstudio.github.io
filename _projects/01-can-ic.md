@@ -5,7 +5,7 @@ boojum: data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJvYmplY3QtMDYyMS
 hue: 255, 183, 174
 
 titleCa: Ca n’Oliver. &#xa; Identitat Corporativa
-titleEn: Ca n’Oliver. &#xa; Corporative Identity
+titleEn: Ca n’Oliver. &#xa; Corporate Identity
 titleEs: Ca n’Oliver. &#xa; Identidad Corporativa
 
 excerptCa: Revisió de la identitat corporativa del Museu Ca n’Oliver a Menorca. La finalitat, crear una nova versió més delicada i elegant, on logotip i descriptiu convisquin de forma harmoniosa.
@@ -26,7 +26,7 @@ excerptEs: Revisión de la identidad corporativa del Museo Ca n’Oliver en Meno
 
 featured_image: can-ic-00t
 
-slug: canoliver
+slug: can-oliver
 ---
 
 <li><img data-src-base="{{ site.url}}/images/projects/" data-src="

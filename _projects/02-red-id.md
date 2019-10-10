@@ -5,8 +5,8 @@ boojum: data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJvYmplY3QtMDYwMS
 hue: 234, 196, 190
 
 titleCa: Redlove. &#xa; Direcció d’art
-titleEn: Redlove. &#xa; Dirección de arte
-titleEs: Redlove. &#xa; Art direction
+titleEn: Redlove. &#xa; Art direction
+titleEs: Redlove. &#xa; Dirección de arte
 
 excerptCa: Revisió de la marca de sabates Redlove. Creació d’identitat visual i campanya primavera -estiu ‘18.
 
