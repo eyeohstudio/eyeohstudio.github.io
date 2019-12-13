@@ -8,11 +8,11 @@ titleCa: Brugúes. &#xa; Bon Nadal
 titleEn: Brugúes. &#xa; Feliz Navidad
 titleEs: Brugúes. &#xa; Merry Christmas
 
-excerptCa:
+excerptCa: Disseny de felicitació de Nadal i Feliç Any Nou 2019.
 
-excerptEn:
+excerptEn: Christmas and Happy New Year 2019 greeting design.
 
-excerptEs:
+excerptEs: Diseño de felicitación de Navidad y Feliz Año Nuevo 2019.
 
 
 
