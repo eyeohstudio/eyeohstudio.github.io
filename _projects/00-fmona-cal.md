@@ -5,14 +5,14 @@ boojum: data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJvYmplY3QtMTAyMS
 hue: 183, 227, 148
 
 titleCa: Fundació Mona. &#xa; Calendari
-titleEn: Fundació Mona. &#xa; Calendario
-titleEs: Fundació Mona. &#xa; Calendar
+titleEn: Fundació Mona. &#xa; Calendar
+titleEs: Fundació Mona. &#xa; Calendario
 
-excerptCa:
+excerptCa: Disseny del Calendari solidari que la Fundació Mona edita cada any. Fotògraf Héctor Jácome.
 
-excerptEn:
+excerptEn: Design of the solidarity calendar that the Mona Foundation publishes every year. Photographer Héctor Jácome.
 
-excerptEs:
+excerptEs: Diseño del Calendario solidario que la Fundación Mona edita cada año. Fotógrafo Héctor Jácome.
 
 
 

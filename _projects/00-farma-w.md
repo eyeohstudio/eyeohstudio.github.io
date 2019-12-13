@@ -8,11 +8,11 @@ titleCa: Sa Farmàcia. &#xa; E-commerce
 titleEn: Sa Farmàcia. &#xa; E-commerce
 titleEs: Sa Farmàcia. &#xa; E-commerce
 
-excerptCa:
+excerptCa: Disseny i desenvolupament de l'e-commerce per a la farmàcia d'És Castell ["Sa Farmàcia"](https://www.safarmacia.com/).
 
-excerptEn:
+excerptEn: Design and development of e-commerce for the pharmacy of Es castell ["Sa Farmàcia"](https://www.safarmacia.com/).
 
-excerptEs:
+excerptEs: Diseño y desarrollo del e-commerce para la farmacia de Es Castell ["Sa Farmàcia"](https://www.safarmacia.com/).
 
 
 
