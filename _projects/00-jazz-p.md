@@ -56,6 +56,7 @@ slug: jazz-festival
 >1024:jazz-p-03_1120.jpg
 "></li>
 
+<li><img data-src-base="{{ site.url}}/images/projects/" data-src="
 <320:jazz-p-04_320.jpg,
 <480:jazz-p-04_480.jpg,
 <640:jazz-p-04_640.jpg,
