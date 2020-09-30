@@ -17,12 +17,6 @@ excerptEs: Diseño del Calendario solidario que la Fundación Mona edita cada a�
 
 
 
-
-
-
-
-
-
 featured_image: fmona-cal-00t
 
 slug: fundacio-mona-calendar
