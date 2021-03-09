@@ -1,20 +1,18 @@
 ---
 
-boojum: data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJvYmplY3QtMTAwMS0xMDEwIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDMyMCAxMzIiIHhtbDpzcGFjZT0icHJlc2VydmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9InhtbG5zOnhsaW5rIj4KICAgIDxnPgogICAgICAgIDxnPgogICAgICAgICAgICA8cG9seWdvbiBjbGFzcz0iaHVlIiBwb2ludHM9IjE2MCwyMiA5NCw4OCA5NCwxMzIgMjA0LDIyIi8+CiAgICAgICAgPC9nPgogICAgICAgIDxnPgogICAgICAgICAgICA8cG9seWdvbiBjbGFzcz0iY29sb3IiIHBvaW50cz0iOTQsMTMyIDEzOCwxMzIgMjI2LDQ0IDIyNiwwICIvPgogICAgICAgIDwvZz4KICAgIDwvZz4KPHN0eWxlIHR5cGU9InRleHQvY3NzIj4uY29sb3IsIC5odWUgeyBmaWxsOiAjZWViYWU5OyB9ICogeyBzdHJva2Utd2lkdGg6IDA7IH0gLmh1ZSB7IG9wYWNpdHk6IC40OyB9PC9zdHlsZT48L3N2Zz4=
+boojum: data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJvYmplY3QtMDQxMS0wNDIwIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDMyMCAxMzIiIHhtbDpzcGFjZT0icHJlc2VydmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9InhtbG5zOnhsaW5rIj4KICAgIDxnPgogICAgICAgIDxnPgogICAgICAgICAgICA8cG9seWdvbiBjbGFzcz0iaHVlIiBwb2ludHM9Ijk0LDEzMiAxMzgsMTMyIDIwNCw2NiAyMDQsMjIiLz4KICAgICAgICA8L2c+CiAgICAgICAgPGc+CiAgICAgICAgICAgIDxwb2x5Z29uIGNsYXNzPSJjb2xvciIgcG9pbnRzPSIxODIsMCA5NCw4OCA5NCwxMzIgMjI2LDAgIi8+CiAgICAgICAgPC9nPgogICAgPC9nPgo8c3R5bGUgdHlwZT0idGV4dC9jc3MiPi5jb2xvciwgLmh1ZSB7IGZpbGw6ICNmZmQzNzg7IH0gKiB7IHN0cm9rZS13aWR0aDogMDsgfSAuaHVlIHsgb3BhY2l0eTogLjQ7IH08L3N0eWxlPjwvc3ZnPg==
 
-hue: 238, 186, 233
+hue: 255, 211, 120
 
-titleCa: Sa Farmàcia. &#xa; E-commerce
-titleEn: Sa Farmàcia. &#xa; E-commerce
-titleEs: Sa Farmàcia. &#xa; E-commerce
+titleCa: Cranial Cover. &#xa; Identitat / Producte
+titleEn: Cranial Cover. &#xa; Identity / Product
+titleEs: Cranial Cover. &#xa; Identidad / Producto
 
-excerptCa: Disseny i desenvolupament de l'e-commerce per a la farmàcia d'És Castell ["Sa Farmàcia"](https://www.safarmacia.com/).
+excerptCa: Disseny d'identitat i desenvolupament de línia de producte per a Neos Surgery. Cranial COVER és un sistema de cobertura de forat cranial postoperatori fet de PEEK-OPTIMA™
 
-excerptEn: Design and development of e-commerce for the pharmacy of Es castell ["Sa Farmàcia"](https://www.safarmacia.com/).
+excerptEn: Identity design and product line development for Neos Surgery. Cranial COVER is a postoperative cranial burr hole cover system made of PEEK-OPTIMA™
 
-excerptEs: Diseño y desarrollo del e-commerce para la farmacia de Es Castell ["Sa Farmàcia"](https://www.safarmacia.com/).
-
-
+excerptEs: Diseño de identidad y desarrollo de línea de producto para Neos Surgery. Cranial COVER es un sistema de tapa de orificio de trépano craneal posoperatorio hecho de PEEK-OPTIMA™
 
 
 
@@ -23,43 +21,54 @@ excerptEs: Diseño y desarrollo del e-commerce para la farmacia de Es Castell ["
 
 
 
-featured_image: safarma-w-00t
 
-slug: sa-farmacia
+
+featured_image: cover-ip-00t
+
+slug: cranial-cover
 ---
 
 <li><img data-src-base="{{ site.url}}/images/projects/" data-src="
-<320:safarma-w-01_320.jpg,
-<480:safarma-w-01_480.jpg,
-<640:safarma-w-01_640.jpg,
-<800:safarma-w-01_800.jpg,
-<1024:safarma-w-01_1024.jpg,
->1024:safarma-w-01_1120.jpg
+<320:cover-ip-01_320.jpg,
+<480:cover-ip-01_480.jpg,
+<640:cover-ip-01_640.jpg,
+<800:cover-ip-01_800.jpg,
+<1024:cover-ip-01_1024.jpg,
+>1024:cover-ip-01_1120.jpg
 "></li>
 
 <li><img data-src-base="{{ site.url}}/images/projects/" data-src="
-<320:safarma-w-02_320.jpg,
-<480:safarma-w-02_480.jpg,
-<640:safarma-w-02_640.jpg,
-<800:safarma-w-02_800.jpg,
-<1024:safarma-w-02_1024.jpg,
->1024:safarma-w-02_1120.jpg
+<320:cover-ip-02_320.jpg,
+<480:cover-ip-02_480.jpg,
+<640:cover-ip-02_640.jpg,
+<800:cover-ip-02_800.jpg,
+<1024:cover-ip-02_1024.jpg,
+>1024:cover-ip-02_1120.jpg
 "></li>
 
 <li><img data-src-base="{{ site.url}}/images/projects/" data-src="
-<320:safarma-w-03_320.jpg,
-<480:safarma-w-03_480.jpg,
-<640:safarma-w-03_640.jpg,
-<800:safarma-w-03_800.jpg,
-<1024:safarma-w-03_1024.jpg,
->1024:safarma-w-03-1120.jpg
+<320:cover-ip-03_320.jpg,
+<480:cover-ip-03_480.jpg,
+<640:cover-ip-03_640.jpg,
+<800:cover-ip-03_800.jpg,
+<1024:cover-ip-03_1024.jpg,
+>1024:cover-ip-03-1120.jpg
 "></li>
 
 <li><img data-src-base="{{ site.url}}/images/projects/" data-src="
-<320:safarma-w-04_320.jpg,
-<480:safarma-w-04_480.jpg,
-<640:safarma-w-04_640.jpg,
-<800:safarma-w-04_800.jpg,
-<1024:safarma-w-04_1024.jpg,
->1024:safarma-w-04_1120.jpg
+<320:cover-ip-04_320.jpg,
+<480:cover-ip-04_480.jpg,
+<640:cover-ip-04_640.jpg,
+<800:cover-ip-04_800.jpg,
+<1024:cover-ip-04_1024.jpg,
+>1024:cover-ip-04_1120.jpg
+"></li>
+
+<li><img data-src-base="{{ site.url}}/images/projects/" data-src="
+<320:cover-ip-05_320.jpg,
+<480:cover-ip-05_480.jpg,
+<640:cover-ip-05_640.jpg,
+<800:cover-ip-05_800.jpg,
+<1024:cover-ip-05_1024.jpg,
+>1024:cover-ip-05_1120.jpg
 "></li>
