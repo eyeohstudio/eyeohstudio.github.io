@@ -52,7 +52,7 @@ slug: sa-farmacia
 <640:safarma-w-03_640.jpg,
 <800:safarma-w-03_800.jpg,
 <1024:safarma-w-03_1024.jpg,
->1024:safarma-w-03-1120.jpg
+>1024:safarma-w-03_1120.jpg
 "></li>
 
 <li><img data-src-base="{{ site.url}}/images/projects/" data-src="

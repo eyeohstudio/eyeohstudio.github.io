@@ -8,11 +8,11 @@ titleCa: Petjada i vincle. &#xa; Pòster
 titleEn: Petjada i vincle. &#xa; Poster
 titleEs: Petjada i vincle. &#xa; Póster
 
-excerptCa: Imatge per a l'exposició "Natura: petjada i vincle" organitzat per Ca n'Oliver. Projecte realitzat per a l'Agència.
+excerptCa: Imatge per a l'exposició "Natura&#58; petjada i vincle" organitzat per Ca n'Oliver. Projecte realitzat per a l'Agència.
 
-excerptEn: Image design for the exhibition “Natura: petjada i vincle” organized by Ca n'Oliver. Project carried out for The Agency.
+excerptEn: Image design for the exhibition “Natura&#58; petjada i vincle” organized by Ca n'Oliver. Project carried out for The Agency.
 
-excerptEs: Imagen para la exposición “Natura: petjada i vincle” organizado por Ca n'Oliver. Proyecto realizado para La Agencia.
+excerptEs: Imagen para la exposición “Natura&#58; petjada i vincle” organizado por Ca n'Oliver. Proyecto realizado para La Agencia.
 
 
 
@@ -52,5 +52,5 @@ slug: natura-poster
 <640:la-np-03_640.jpg,
 <800:la-np-03_800.jpg,
 <1024:la-np-03_1024.jpg,
->1024:la-np-03-1120.jpg
+>1024:la-np-03_1120.jpg
 "></li>

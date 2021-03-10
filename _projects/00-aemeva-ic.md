@@ -52,7 +52,7 @@ slug: emeva-salamandra
 <640:em-ic-03_640.jpg,
 <800:em-ic-03_800.jpg,
 <1024:em-ic-03_1024.jpg,
->1024:em-ic-03-1120.jpg
+>1024:em-ic-03_1120.jpg
 "></li>
 
 <li><img data-src-base="{{ site.url}}/images/projects/" data-src="
