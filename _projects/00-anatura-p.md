@@ -4,9 +4,9 @@ boojum: data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJvYmplY3QtMDExMS
 
 hue: 223, 168, 123
 
-titleCa: Natura: petjada i vincle. &#xa; Pòster
-titleEn: Natura: petjada i vincle. &#xa; Poster
-titleEs: Natura: petjada i vincle. &#xa; Póster
+titleCa: Petjada i vincle. &#xa; Pòster
+titleEn: Petjada i vincle. &#xa; Poster
+titleEs: Petjada i vincle. &#xa; Póster
 
 excerptCa: Imatge per a l'exposició "Natura: petjada i vincle" organitzat per Ca n'Oliver. Projecte realitzat per a l'Agència.
 
