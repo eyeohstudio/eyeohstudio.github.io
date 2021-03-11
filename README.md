@@ -31,3 +31,5 @@
 3. bundle exec jekyll serve -w --config _config-127.0.0.1.yml (LOCAL HOST)
 
 4. http://127.0.0.1:4000/boojum/?keyword=EXAMPLE&date=0131
+
+:)
