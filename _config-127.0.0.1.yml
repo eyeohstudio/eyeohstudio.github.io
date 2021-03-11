@@ -3,11 +3,11 @@ permalink:        none
 
 # Setup
 title:            I/O studio
-url:              http://127.0.0.1:4000
+url:              https://127.0.0.1:4000
 
 author:
   name:           'Eye Oh Design Studio, SL'
-  url:            http://wearestudio.io
+  url:            https://wearestudio.io
 
 # Custom vars
 version:          0.0.0

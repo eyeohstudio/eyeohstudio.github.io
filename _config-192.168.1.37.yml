@@ -3,11 +3,11 @@ permalink:        none
 
 # Setup
 title:            I/O studio
-url:              http://192.168.1.37/eyeohstudio.github.io
+url:              https://192.168.1.37/eyeohstudio.github.io
 
 author:
   name:           'Eye Oh Design Studio, SL'
-  url:            http://wearestudio.io
+  url:            https://wearestudio.io
 
 # Custom vars
 version:          0.0.0
